@@ -109,7 +109,7 @@ export default function Home() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            variants={fadeUp}
+            variants={fadeUp as any}
             className="card p-7 group cursor-default"
           >
             <div

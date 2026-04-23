@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════════
+   ISTQB Mastery — Design System (Tailwind v4)
+   ═══════════════════════════════════════════════════════════════ */
+
+@theme {
+  /* ── Colors ─────────────────────────────────────────────── */
+  --color-surface: #ffffff;
+  --color-surface-raised: #f9fafb;
+  --color-surface-sunken: #f3f4f6;
+  --color-border: rgba(0, 0, 0, 0.06);
+
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+  --color-text-muted: #9ca3af;
+
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-accent-soft: rgba(37, 99, 235, 0.08);
+  --color-accent-medium: rgba(37, 99, 235, 0.15);
+
+  --color-success: #059669;
+  --color-success-soft: rgba(5, 150, 105, 0.1);
+  --color-danger: #dc2626;
+  --color-danger-soft: rgba(220, 38, 38, 0.08);
+  --color-warning: #f59e0b;
+  --color-purple: #7c3aed;
+  --color-purple-soft: rgba(124, 58, 237, 0.08);
+
+  /* ── Typography ─────────────────────────────────────────── */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* ── Radii ──────────────────────────────────────────────── */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ────────────────────────────────────────────── */
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.03);
+  --shadow-card-hover: 0 4px 24px rgba(0,0,0,0.08);
+  --shadow-glow: 0 0 40px rgba(37, 99, 235, 0.15);
+
+  /* ── Animations ─────────────────────────────────────────── */
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+}
+
+/* ── Dark Mode ────────────────────────────────────────────── */
+.dark {
+  --color-surface: #09090b;
+  --color-surface-raised: #18181b;
+  --color-surface-sunken: #0f0f12;
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
+
+  --color-accent-soft: rgba(96, 165, 250, 0.12);
+  --color-accent-medium: rgba(96, 165, 250, 0.2);
+  --color-success-soft: rgba(52, 211, 153, 0.12);
+  --color-danger-soft: rgba(248, 113, 113, 0.12);
+  --color-purple-soft: rgba(167, 139, 250, 0.12);
+
+  --shadow-card: 0 1px 3px rgba(0,0,0,0.3), 0 4px 16px rgba(0,0,0,0.2);
+  --shadow-card-hover: 0 4px 24px rgba(0,0,0,0.4);
+  --shadow-glow: 0 0 60px rgba(96, 165, 250, 0.2);
+}
+
+/* ── Base ─────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ── Utility Classes ──────────────────────────────────────── */
+.card {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-hover);
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
+}
+
+.btn-secondary {
+  background: var(--color-surface-sunken);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+}
+
+.btn-secondary:hover {
+  background: var(--color-border);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--color-text-secondary);
+}
+
+.btn-ghost:hover {
+  color: var(--color-text-primary);
+  background: var(--color-accent-soft);
+}
+
+/* ── Gradient Text ────────────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-accent), var(--color-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Scrollbar ────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-text-muted); }

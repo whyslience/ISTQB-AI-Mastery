@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String    @id @default(cuid())
+  email     String?   @unique
+  name      String?
+  attempts  Attempt[]
+  createdAt DateTime  @default(now())
+}
+
+model Question {
+  id          String   @id @default(cuid())
+  topic       String
+  difficulty  String
+  question    String   @unique
+  options     String[]
+  correct     String
+  explanation String
+  createdAt   DateTime @default(now())
+}
+
+model Attempt {
+  id          String   @id @default(cuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id])
+  score       Int
+  totalQs     Int
+  answers     Json     // { qId: string, userAns: string, isCorrect: boolean }[]
+  aiFeedback  String?  @db.Text
+  createdAt   DateTime @default(now())
+}

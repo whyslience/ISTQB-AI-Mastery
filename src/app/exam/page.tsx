@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import type { Question } from "@/types";
 
 const TOPICS = [
+  "Full Exam",
   "Fundamentals of Testing",
   "Testing Throughout the SDLC",
   "Static Testing",
@@ -40,10 +41,13 @@ export default function ExamPage() {
     setLoading(true);
     setError(null);
     try {
+      const isFullExam = topic === "Full Exam";
+      const reqCount = isFullExam ? 40 : 5;
+      const reqDiff = isFullExam ? "all" : difficulty;
       const res = await fetch("/api/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ topic, difficulty, count: 5 }),
+        body: JSON.stringify({ topic, difficulty: reqDiff, count: reqCount }),
       });
       if (!res.ok) throw new Error("Failed to load questions");
       const data = await res.json();
@@ -122,32 +126,36 @@ export default function ExamPage() {
           </div>
 
           {/* Difficulty picker */}
-          <label
-            className="block text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: "var(--color-text-muted)" }}
-          >
-            Difficulty
-          </label>
-          <div className="flex gap-3 mb-10">
-            {DIFFICULTIES.map((d) => {
-              const dc = DIFF_COLORS[d];
-              return (
-                <button
-                  key={d}
-                  onClick={() => setDifficulty(d)}
-                  className="flex-1 py-3 rounded-2xl text-sm font-bold capitalize transition-all duration-200"
-                  style={{
-                    background: difficulty === d ? dc.bg : "var(--color-surface-raised)",
-                    color: difficulty === d ? dc.color : "var(--color-text-muted)",
-                    border: `2px solid ${difficulty === d ? dc.color : "var(--color-border)"}`,
-                    cursor: "pointer",
-                  }}
-                >
-                  {d}
-                </button>
-              );
-            })}
-          </div>
+          {topic !== "Full Exam" && (
+            <>
+              <label
+                className="block text-xs font-bold uppercase tracking-widest mb-3"
+                style={{ color: "var(--color-text-muted)" }}
+              >
+                Difficulty
+              </label>
+              <div className="flex gap-3 mb-10">
+                {DIFFICULTIES.map((d) => {
+                  const dc = DIFF_COLORS[d];
+                  return (
+                    <button
+                      key={d}
+                      onClick={() => setDifficulty(d)}
+                      className="flex-1 py-3 rounded-2xl text-sm font-bold capitalize transition-all duration-200"
+                      style={{
+                        background: difficulty === d ? dc.bg : "var(--color-surface-raised)",
+                        color: difficulty === d ? dc.color : "var(--color-text-muted)",
+                        border: `2px solid ${difficulty === d ? dc.color : "var(--color-border)"}`,
+                        cursor: "pointer",
+                      }}
+                    >
+                      {d}
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          )}
 
           <button
             onClick={() => { setStarted(true); loadQuestions(); }}
@@ -238,15 +246,15 @@ export default function ExamPage() {
             <span
               className="text-xs font-bold uppercase px-2.5 py-1 rounded-full"
               style={{
-                background: DIFF_COLORS[difficulty]?.bg,
-                color: DIFF_COLORS[difficulty]?.color,
+                background: DIFF_COLORS[currentQ.difficulty]?.bg || "var(--color-surface-raised)",
+                color: DIFF_COLORS[currentQ.difficulty]?.color || "var(--color-text-muted)",
                 letterSpacing: 1,
               }}
             >
-              {difficulty}
+              {currentQ.difficulty || difficulty}
             </span>
             <span className="text-xs" style={{ color: "var(--color-text-muted)" }}>
-              {topic}
+              {currentQ.topic || topic}
             </span>
           </div>
 

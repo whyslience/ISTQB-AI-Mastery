@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 /* ═══════════════════════════════════════════════════════════════
    ISTQB Mastery — Design System (Tailwind v4)

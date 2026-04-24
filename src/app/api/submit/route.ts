@@ -3,6 +3,26 @@ import { prisma } from "@/lib/prisma";
 import { textModel } from "@/lib/gemini";
 import type { UserAnswer } from "@/types";
 
+/** Retry an async fn up to `retries` times with a delay between attempts. */
+async function withRetry<T>(
+  fn: () => Promise<T>,
+  retries = 2,
+  delayMs = 1000
+): Promise<T> {
+  let lastError: unknown;
+  for (let i = 0; i <= retries; i++) {
+    try {
+      return await fn();
+    } catch (err) {
+      lastError = err;
+      if (i < retries) {
+        await new Promise((r) => setTimeout(r, delayMs * (i + 1)));
+      }
+    }
+  }
+  throw lastError;
+}
+
 export async function POST(req: Request) {
   try {
     const { userId, answers } = (await req.json()) as {
@@ -51,9 +71,19 @@ ${wrongAnswers}
 Yêu cầu: Động viên ngắn gọn, chỉ ra điểm yếu và gợi ý chủ đề cần ôn lại (tối đa 150 từ).`
         : `Chúc mừng! Học viên đạt ${score}/${questions.length} điểm. Hãy viết một lời động viên ngắn gọn bằng tiếng Việt.`;
 
-    const result = await textModel.generateContent(feedbackPrompt);
-    const response = await result.response;
-    const aiFeedback = response.text();
+    let aiFeedback: string;
+    try {
+      const result = await withRetry(() => textModel.generateContent(feedbackPrompt));
+      const response = await result.response;
+      aiFeedback = response.text();
+    } catch (aiErr) {
+      console.warn("[/api/submit] Gemini feedback unavailable, using fallback:", aiErr);
+      // Graceful fallback so the attempt is still saved
+      aiFeedback =
+        score === questions.length
+          ? `Xuất sắc! Bạn đạt ${score}/${questions.length} điểm. Hãy tiếp tục ôn luyện để giữ vững phong độ!`
+          : `Bạn đạt ${score}/${questions.length} điểm. Hãy xem lại các câu sai và ôn luyện thêm nhé! (Phân tích chi tiết tạm thời không khả dụng – vui lòng thử lại sau.)`;
+    }
 
     const actualUserId = userId || "user-1";
 

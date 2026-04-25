@@ -85,6 +85,9 @@ export default function Home() {
           className="text-lg leading-relaxed mb-10 max-w-2xl"
           style={{ color: "var(--color-text-secondary)" }}
         >
+          Master the ISTQB certification with the most modern bilingual English-Vietnamese study platform.
+          Detailed study guides, in-depth terminology explanations, and interactive practice quizzes.
+          <br /><br />
           Chinh phục chứng chỉ ISTQB với nền tảng học tập song ngữ Anh-Việt hiện đại nhất.
           Hệ thống hướng dẫn ôn tập chi tiết, giải thích thuật ngữ chuyên sâu và bộ câu hỏi trắc nghiệm tương tác.
         </motion.p>
@@ -96,11 +99,18 @@ export default function Home() {
           className="flex flex-col sm:flex-row gap-4"
         >
           <Link href="/review" className="btn btn-primary" style={{ padding: "16px 40px", fontSize: 16 }}>
-            Start Learning / Bắt đầu Học
-            <ChevronRight style={{ width: 18, height: 18 }} />
+            <div className="flex flex-col items-start text-left">
+              <span className="text-sm font-bold flex items-center gap-2">
+                Start Learning <ChevronRight style={{ width: 14, height: 14 }} />
+              </span>
+              <span className="text-[10px] opacity-80">Bắt đầu Học</span>
+            </div>
           </Link>
           <Link href="/exam" className="btn btn-secondary" style={{ padding: "16px 40px", fontSize: 16 }}>
-            Practice Exam / Luyện Đề
+            <div className="flex flex-col items-start text-left">
+              <span className="text-sm font-bold">Practice Exam</span>
+              <span className="text-[10px] opacity-80">Luyện Đề</span>
+            </div>
           </Link>
         </motion.div>
       </section>

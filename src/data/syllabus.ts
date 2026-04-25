@@ -1,7 +1,9 @@
 export interface QuizQuestion {
-  question: string;
-  options: string[];
-  correct: string;
+  questionEn: string;
+  questionVi: string;
+  options: { en: string; vi: string }[];
+  correctEn: string;
+  correctVi: string;
   explanation: string;
 }
 
@@ -26,97 +28,113 @@ export const syllabusData: SyllabusChapter[] = [
     "titleVi": "Các Khái Niệm Cơ Bản về Kiểm Thử",
     "descriptionEn": "Bilingual study guide for Chapter 1",
     "descriptionVi": "Hướng dẫn học tập song ngữ cho Chương 1",
-    "teacherAdviceEn": "Top 5 Exam Traps / 5 Bẫy Thi Hàng đầu",
-    "teacherAdviceVi": "Testing proves no bugs exist --- This is false. Remember Principle 1: presence, not absence.",
+    "teacherAdviceEn": "Top 5 Exam Traps",
+    "teacherAdviceVi": "5 Bẫy Thi Hàng đầu: Kiểm thử chứng minh không có bug là sai. Hãy nhớ Nguyên tắc 1: hiện diện, không phải vắng mặt.",
     "hasMindmaps": true,
     "quiz": [
       {
-        "question": "Which of the following is a typical test objective?",
+        "questionEn": "Which of the following is a typical test objective?",
+        "questionVi": "Mục tiêu nào sau đây là mục tiêu kiểm thử điển hình?",
         "options": [
-          "To prove the absence of defects",
-          "To cause failures and find defects",
-          "To replace quality assurance",
-          "To perform debugging"
+          { "en": "To prove the absence of defects", "vi": "Để chứng minh sự vắng mặt của khiếm khuyết" },
+          { "en": "To cause failures and find defects", "vi": "Để gây ra thất bại và tìm khiếm khuyết" },
+          { "en": "To replace quality assurance", "vi": "Để thay thế đảm bảo chất lượng" },
+          { "en": "To perform debugging", "vi": "Để thực hiện gỡ lỗi" }
         ],
-        "correct": "To cause failures and find defects",
-        "explanation": "- **b) Correct / Đúng:** \"Causing failures and finding defects\" is explicitly listed as a typical test objective in the syllabus.  - **a) Incorrect / Sai:** Testing shows the presence, not the absence of defects (Principle 1).  - **c) Incorrect / Sai:** Testing does not replace QA; testing is a form of QC, while QA is process-oriented.  - **d) Incorrect / Sai:** Debugging is a separate activity from testing."
+        "correctEn": "To cause failures and find defects",
+        "correctVi": "Để gây ra thất bại và tìm khiếm khuyết",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\n\"Causing failures and finding defects\" is explicitly listed as a typical test objective in the syllabus.\n\"Gây ra thất bại và tìm khiếm khuyết\" được liệt kê rõ ràng là một mục tiêu kiểm thử điển hình trong giáo trình.\n\n* **a) Incorrect**\n* **a) Sai**\nTesting shows the presence, not the absence of defects (Principle 1).\nKiểm thử cho thấy sự hiện diện, không phải sự vắng mặt của khiếm khuyết (Nguyên tắc 1).\n\n* **c) Incorrect**\n* **c) Sai**\nTesting does not replace QA; testing is a form of QC, while QA is process-oriented.\nKiểm thử không thay thế QA; kiểm thử là một hình thức QC, trong khi QA định hướng quy trình.\n\n* **d) Incorrect**\n* **d) Sai**\nDebugging is a separate activity from testing.\nGỡ lỗi là một hoạt động riêng biệt với kiểm thử."
       },
       {
-        "question": "What is the main difference between testing and debugging?",
+        "questionEn": "What is the main difference between testing and debugging?",
+        "questionVi": "Sự khác biệt chính giữa kiểm thử và gỡ lỗi là gì?",
         "options": [
-          "Testing finds the root cause; debugging removes defects",
-          "Testing triggers failures and finds defects; debugging diagnoses and fixes defects",
-          "Testing is performed by developers; debugging by testers",
-          "They are the same activity with different names"
+          { "en": "Testing finds the root cause; debugging removes defects", "vi": "Kiểm thử tìm nguyên nhân gốc rễ; gỡ lỗi loại bỏ khiếm khuyết" },
+          { "en": "Testing triggers failures and finds defects; debugging diagnoses and fixes defects", "vi": "Kiểm thử kích hoạt thất bại và tìm khiếm khuyết; gỡ lỗi chẩn đoán và sửa khiếm khuyết" },
+          { "en": "Testing is performed by developers; debugging by testers", "vi": "Kiểm thử được thực hiện bởi lập trình viên; gỡ lỗi bởi kiểm thử viên" },
+          { "en": "They are the same activity with different names", "vi": "Chúng là cùng một hoạt động với các tên gọi khác nhau" }
         ],
-        "correct": "Testing triggers failures and finds defects; debugging diagnoses and fixes defects",
-        "explanation": "- **b) Correct / Đúng:** Testing discovers defects (often by triggering failures), while debugging is the process of reproducing, diagnosing, and fixing the underlying defect.  - **a) Incorrect / Sai:** Root cause analysis is part of debugging, not testing.  - **c) Incorrect / Sai:** Both activities can involve testers and developers; role is not the differentiator.  - **d) Incorrect / Sai:** They are explicitly defined as separate activities in the syllabus."
+        "correctEn": "Testing triggers failures and finds defects; debugging diagnoses and fixes defects",
+        "correctVi": "Kiểm thử kích hoạt thất bại và tìm khiếm khuyết; gỡ lỗi chẩn đoán và sửa khiếm khuyết",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\nTesting discovers defects (often by triggering failures), while debugging is the process of reproducing, diagnosing, and fixing the underlying defect.\nKiểm thử phát hiện khiếm khuyết (thường bằng cách kích hoạt thất bại), trong khi gỡ lỗi là quá trình tái hiện, chẩn đoán và sửa chữa khiếm khuyết cơ bản.\n\n* **a) Incorrect**\n* **a) Sai**\nRoot cause analysis is part of debugging, not testing.\nPhân tích nguyên nhân gốc rễ là một phần của gỡ lỗi, không phải kiểm thử.\n\n* **c) Incorrect**\n* **c) Sai**\nBoth activities can involve testers and developers; role is not the differentiator.\nCả hai hoạt động đều có thể liên quan đến kiểm thử viên và lập trình viên; vai trò không phải là yếu tố phân biệt.\n\n* **d) Incorrect**\n* **d) Sai**\nThey are explicitly defined as separate activities in the syllabus.\nChúng được định nghĩa rõ ràng là các hoạt động riêng biệt trong giáo trình."
       },
       {
-        "question": "Which sequence correctly describes the chain from human mistake to system malfunction?",
+        "questionEn": "Which sequence correctly describes the chain from human mistake to system malfunction?",
+        "questionVi": "Trình tự nào sau đây mô tả đúng chuỗi từ sai lầm của con người đến trục trặc hệ thống?",
         "options": [
-          "Defect → Error → Failure",
-          "Error → Defect → Failure",
-          "Failure → Defect → Error",
-          "Error → Failure → Defect"
+          { "en": "Defect → Error → Failure", "vi": "Khiếm khuyết → Lỗi → Thất bại" },
+          { "en": "Error → Defect → Failure", "vi": "Lỗi → Khiếm khuyết → Thất bại" },
+          { "en": "Failure → Defect → Error", "vi": "Thất bại → Khiếm khuyết → Lỗi" },
+          { "en": "Error → Failure → Defect", "vi": "Lỗi → Thất bại → Khiếm khuyết" }
         ],
-        "correct": "Error → Defect → Failure",
-        "explanation": "- **b) Correct / Đúng:** Humans make **errors** (mistakes), which create **defects** (faults in work products), which may cause **failures** when executed.  - The other options reverse the causal chain."
+        "correctEn": "Error → Defect → Failure",
+        "correctVi": "Lỗi → Khiếm khuyết → Thất bại",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\nHumans make **errors** (mistakes), which create **defects** (faults in work products), which may cause **failures** when executed.\nCon người tạo ra **lỗi** (sai sót), từ đó tạo ra **khiếm khuyết** (khuyết điểm trong sản phẩm làm việc), và có thể gây ra **thất bại** khi thực thi.\n\n* The other options reverse the causal chain.\n* Các lựa chọn khác đảo ngược chuỗi nhân quả."
       },
       {
-        "question": "Which principle states that testing everything is not feasible except in trivial cases?",
+        "questionEn": "Which principle states that testing everything is not feasible except in trivial cases?",
+        "questionVi": "Nguyên tắc nào phát biểu rằng việc kiểm thử mọi thứ là không khả thi trừ những trường hợp tầm thường?",
         "options": [
-          "Early testing saves time and money",
-          "Defects cluster together",
-          "Exhaustive testing is impossible",
-          "Tests wear out"
+          { "en": "Early testing saves time and money", "vi": "Kiểm thử sớm tiết kiệm thời gian và tiền bạc" },
+          { "en": "Defects cluster together", "vi": "Khiếm khuyết tập trung cùng nhau" },
+          { "en": "Exhaustive testing is impossible", "vi": "Kiểm thử toàn diện là không thể" },
+          { "en": "Tests wear out", "vi": "Các bài kiểm thử bị mòn" }
         ],
-        "correct": "Exhaustive testing is impossible",
-        "explanation": "- **c) Correct / Đúng:** Principle 2 explicitly states that exhaustive testing is impossible except in trivial cases.  - **a) Incorrect / Sai:** This is Principle 3, about cost of quality.  - **b) Incorrect / Sai:** This is Principle 4, about the Pareto distribution of defects.  - **d) Incorrect / Sai:** This is Principle 5, about the decreasing effectiveness of repeated tests."
+        "correctEn": "Exhaustive testing is impossible",
+        "correctVi": "Kiểm thử toàn diện là không thể",
+        "explanation": "* **c) Correct**\n* **c) Đúng**\nPrinciple 2 explicitly states that exhaustive testing is impossible except in trivial cases.\nNguyên tắc 2 nêu rõ rằng kiểm thử toàn diện là không thể trừ các trường hợp tầm thường.\n\n* **a) Incorrect**\n* **a) Sai**\nThis is Principle 3, about cost of quality.\nĐây là Nguyên tắc 3, về chi phí chất lượng.\n\n* **b) Incorrect**\n* **b) Sai**\nThis is Principle 4, about the Pareto distribution of defects.\nĐây là Nguyên tắc 4, về phân phối Pareto của các khiếm khuyết.\n\n* **d) Incorrect**\n* **d) Sai**\nThis is Principle 5, about the decreasing effectiveness of repeated tests.\nĐây là Nguyên tắc 5, về sự giảm hiệu quả của các bài kiểm thử lặp lại."
       },
       {
-        "question": "Which test activity answers the question \"How to test?\"",
+        "questionEn": "Which test activity answers the question \"How to test?\"",
+        "questionVi": "Hoạt động kiểm thử nào trả lời câu hỏi \"Kiểm thử như thế nào?\"",
         "options": [
-          "Test Analysis",
-          "Test Design",
-          "Test Implementation",
-          "Test Execution"
+          { "en": "Test Analysis", "vi": "Phân tích kiểm thử" },
+          { "en": "Test Design", "vi": "Thiết kế kiểm thử" },
+          { "en": "Test Implementation", "vi": "Triển khai kiểm thử" },
+          { "en": "Test Execution", "vi": "Thực thi kiểm thử" }
         ],
-        "correct": "Test Design",
-        "explanation": "- **b) Correct / Đúng:** Test design elaborates test conditions into test cases and defines how to test.  - **a) Incorrect / Sai:** Test analysis answers \"What to test?\"  - **c) Incorrect / Sai:** Implementation prepares the testware and environment for execution.  - **d) Incorrect / Sai:** Execution runs the tests and compares results."
+        "correctEn": "Test Design",
+        "correctVi": "Thiết kế kiểm thử",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\nTest design elaborates test conditions into test cases and defines how to test.\nThiết kế kiểm thử chi tiết hóa các điều kiện kiểm thử thành các ca kiểm thử và xác định cách kiểm thử.\n\n* **a) Incorrect**\n* **a) Sai**\nTest analysis answers \"What to test?\"\nPhân tích kiểm thử trả lời câu hỏi \"Kiểm thử cái gì?\"\n\n* **c) Incorrect**\n* **c) Sai**\nImplementation prepares the testware and environment for execution.\nTriển khai chuẩn bị tài liệu kiểm thử và môi trường để thực thi.\n\n* **d) Incorrect**\n* **d) Sai**\nExecution runs the tests and compares results.\nThực thi chạy các bài kiểm thử và so sánh kết quả."
       },
       {
-        "question": "What is a key benefit of maintaining traceability between the test basis and testware?",
+        "questionEn": "What is a key benefit of maintaining traceability between the test basis and testware?",
+        "questionVi": "Lợi ích chính của việc duy trì khả năng truy xuất nguồn gốc giữa cơ sở kiểm thử và tài liệu kiểm thử là gì?",
         "options": [
-          "It eliminates the need for regression testing",
-          "It helps evaluate coverage and assess the impact of changes",
-          "It replaces the test plan",
-          "It guarantees the absence of defects"
+          { "en": "It eliminates the need for regression testing", "vi": "Nó loại bỏ nhu cầu kiểm thử hồi quy" },
+          { "en": "It helps evaluate coverage and assess the impact of changes", "vi": "Nó giúp đánh giá độ bao phủ và tác động của thay đổi" },
+          { "en": "It replaces the test plan", "vi": "Nó thay thế kế hoạch kiểm thử" },
+          { "en": "It guarantees the absence of defects", "vi": "Nó đảm bảo sự vắng mặt của khiếm khuyết" }
         ],
-        "correct": "It helps evaluate coverage and assess the impact of changes",
-        "explanation": "- **b) Correct / Đúng:** Traceability supports coverage evaluation and impact analysis, as stated in the syllabus.  - **a) Incorrect / Sai:** Traceability does not eliminate regression testing.  - **c) Incorrect / Sai:** Traceability complements but does not replace a test plan.  - **d) Incorrect / Sai:** No activity can guarantee the absence of defects (Principle 1)."
+        "correctEn": "It helps evaluate coverage and assess the impact of changes",
+        "correctVi": "Nó giúp đánh giá độ bao phủ và tác động của thay đổi",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\nTraceability supports coverage evaluation and impact analysis, as stated in the syllabus.\nKhả năng truy xuất nguồn gốc hỗ trợ đánh giá độ bao phủ và phân tích tác động, như đã nêu trong giáo trình.\n\n* **a) Incorrect**\n* **a) Sai**\nTraceability does not eliminate regression testing.\nKhả năng truy xuất nguồn gốc không loại bỏ kiểm thử hồi quy.\n\n* **c) Incorrect**\n* **c) Sai**\nTraceability complements but does not replace a test plan.\nKhả năng truy xuất nguồn gốc bổ sung nhưng không thay thế kế hoạch kiểm thử.\n\n* **d) Incorrect**\n* **d) Sai**\nNo activity can guarantee the absence of defects (Principle 1).\nKhông có hoạt động nào có thể đảm bảo sự vắng mặt của khiếm khuyết (Nguyên tắc 1)."
       },
       {
-        "question": "Which of the following is a drawback of high independence in testing?",
+        "questionEn": "Which of the following is a drawback of high independence in testing?",
+        "questionVi": "Hạn chế nào sau đây là của tính độc lập cao trong kiểm thử?",
         "options": [
-          "Testers may verify assumptions made by stakeholders",
-          "Testers may be isolated from the development team",
-          "Testers find fewer defects than developers",
-          "Testers improve team dynamics"
+          { "en": "Testers may verify assumptions made by stakeholders", "vi": "Kiểm thử viên có thể xác minh các giả định của các bên liên quan" },
+          { "en": "Testers may be isolated from the development team", "vi": "Kiểm thử viên có thể bị cô lập khỏi nhóm phát triển" },
+          { "en": "Testers find fewer defects than developers", "vi": "Kiểm thử viên tìm thấy ít khiếm khuyết hơn lập trình viên" },
+          { "en": "Testers improve team dynamics", "vi": "Kiểm thử viên cải thiện động lực nhóm" }
         ],
-        "correct": "Testers may be isolated from the development team",
-        "explanation": "- **b) Correct / Đúng:** Isolation from the development team is an explicitly listed drawback of independence.  - **a) Incorrect / Sai:** Verifying assumptions is a benefit, not a drawback.  - **c) Incorrect / Sai:** Independent testers typically find different defects, not necessarily fewer.  - **d) Incorrect / Sai:** Isolation can harm, not improve, team dynamics."
+        "correctEn": "Testers may be isolated from the development team",
+        "correctVi": "Kiểm thử viên có thể bị cô lập khỏi nhóm phát triển",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\nIsolation from the development team is an explicitly listed drawback of independence.\nSự cô lập khỏi nhóm phát triển là một hạn chế được liệt kê rõ ràng của tính độc lập.\n\n* **a) Incorrect**\n* **a) Sai**\nVerifying assumptions is a benefit, not a drawback.\nXác minh các giả định là một lợi ích, không phải hạn chế.\n\n* **c) Incorrect**\n* **c) Sai**\nIndependent testers typically find different defects, not necessarily fewer.\nKiểm thử viên độc lập thường tìm thấy các khiếm khuyết khác nhau, không nhất thiết là ít hơn.\n\n* **d) Incorrect**\n* **d) Sai**\nIsolation can harm, not improve, team dynamics.\nSự cô lập có thể gây hại, không phải cải thiện, động lực nhóm."
       },
       {
-        "question": "The whole team approach is a practice originating from:",
+        "questionEn": "The whole team approach is a practice originating from:",
+        "questionVi": "Phương pháp tiếp cận toàn nhóm (whole team approach) là một thực tiễn bắt nguồn từ:",
         "options": [
-          "Scrum",
-          "Extreme Programming (XP)",
-          "Waterfall",
-          "V-Model"
+          { "en": "Scrum", "vi": "Scrum" },
+          { "en": "Extreme Programming (XP)", "vi": "Lập trình cực hạn (XP)" },
+          { "en": "Waterfall", "vi": "Thác nước" },
+          { "en": "V-Model", "vi": "Mô hình chữ V" }
         ],
-        "correct": "Extreme Programming (XP)",
-        "explanation": "- **b) Correct / Đúng:** The syllabus explicitly states the whole team approach comes from Extreme Programming (XP).  - **a/c/d) Incorrect / Sai:** While Scrum uses cross-functional teams, the \"whole team approach\" as a specific practice originates from XP."
+        "correctEn": "Extreme Programming (XP)",
+        "correctVi": "Lập trình cực hạn (XP)",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\nThe syllabus explicitly states the whole team approach comes from Extreme Programming (XP).\nGiáo trình nêu rõ rằng phương pháp tiếp cận toàn nhóm đến từ Lập trình cực hạn (XP).\n\n* **a/c/d) Incorrect**\n* **a/c/d) Sai**\nWhile Scrum uses cross-functional teams, the \"whole team approach\" as a specific practice originates from XP.\nMặc dù Scrum sử dụng các nhóm liên chức năng, \"phương pháp tiếp cận toàn nhóm\" như một thực tiễn cụ thể bắt nguồn từ XP."
       }
     ]
   },
@@ -127,97 +145,113 @@ export const syllabusData: SyllabusChapter[] = [
     "titleVi": "Kiểm thử trong suốt Vòng đời Phát triển Phần mềm",
     "descriptionEn": "Bilingual study guide for Chapter 2",
     "descriptionVi": "Hướng dẫn học tập song ngữ cho Chương 2",
-    "teacherAdviceEn": "Shift left eliminates late testing --- False. It adds early testing; late testing remains.",
-    "teacherAdviceVi": "TDD, ATDD, and BDD are the same --- They are similar but distinct. TDD = unit/code focus; ATDD = acceptance criteria focus; BDD = natural language behavior focus.",
+    "teacherAdviceEn": "Shift left adds early testing; late testing remains.",
+    "teacherAdviceVi": "Dịch chuyển sang trái bổ sung kiểm thử sớm nhưng không loại bỏ kiểm thử giai đoạn sau. TDD, ATDD và BDD là các phương pháp khác nhau về trọng tâm (đơn vị, chấp nhận, hành vi).",
     "hasMindmaps": false,
     "quiz": [
       {
-        "question": "Which of the following is a good testing practice that applies to all SDLCs?",
+        "questionEn": "Which of the following is a good testing practice that applies to all SDLCs?",
+        "questionVi": "Thực tiễn kiểm thử tốt nào sau đây áp dụng cho tất cả các SDLC?",
         "options": [
-          "Test documentation must be exhaustive regardless of the SDLC",
-          "Test analysis for a given test level should begin during the corresponding development phase",
-          "Only one test level should be used to avoid redundancy",
-          "Dynamic testing should only begin after system deployment"
+          { "en": "Test documentation must be exhaustive regardless of the SDLC", "vi": "Tài liệu kiểm thử phải toàn diện bất kể SDLC nào" },
+          { "en": "Test analysis for a given test level should begin during the corresponding development phase", "vi": "Phân tích kiểm thử cho một mức độ kiểm thử nhất định nên bắt đầu trong giai đoạn phát triển tương ứng" },
+          { "en": "Only one test level should be used to avoid redundancy", "vi": "Chỉ nên sử dụng một mức độ kiểm thử để tránh dư thừa" },
+          { "en": "Dynamic testing should only begin after system deployment", "vi": "Kiểm thử động chỉ nên bắt đầu sau khi triển khai hệ thống" }
         ],
-        "correct": "Test analysis for a given test level should begin during the corresponding development phase",
-        "explanation": "- **b) Correct / Đúng:** The syllabus explicitly states this as a universal good practice supporting early testing.  - **a) Incorrect / Sai:** Agile favors lightweight documentation.  - **c) Incorrect / Sai:** Multiple test levels with different objectives avoid redundancy while ensuring comprehensiveness.  - **d) Incorrect / Sai:** Dynamic testing begins when executable code is available, not after deployment."
+        "correctEn": "Test analysis for a given test level should begin during the corresponding development phase",
+        "correctVi": "Phân tích kiểm thử cho một mức độ kiểm thử nhất định nên bắt đầu trong giai đoạn phát triển tương ứng",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\nThe syllabus explicitly states this as a universal good practice supporting early testing.\nGiáo trình nêu rõ đây là một thực tiễn tốt phổ quát hỗ trợ kiểm thử sớm.\n\n* **a) Incorrect**\n* **a) Sai**\nAgile favors lightweight documentation.\nAgile ưu tiên tài liệu nhẹ nhàng.\n\n* **c) Incorrect**\n* **c) Sai**\nMultiple test levels with different objectives avoid redundancy while ensuring comprehensiveness.\nNhiều mức độ kiểm thử với các mục tiêu khác nhau giúp tránh dư thừa trong khi đảm bảo tính toàn diện.\n\n* **d) Incorrect**\n* **d) Sai**\nDynamic testing begins when executable code is available, not after deployment.\nKiểm thử động bắt đầu khi có mã thực thi, không phải sau khi triển khai."
       },
       {
-        "question": "In Behavior-Driven Development (BDD), test cases are typically written in:",
+        "questionEn": "In Behavior-Driven Development (BDD), test cases are typically written in:",
+        "questionVi": "Trong Phát triển hướng hành vi (BDD), các ca kiểm thử thường được viết bằng:",
         "options": [
-          "Machine code",
-          "SQL queries",
-          "A simple form of natural language (Given/When/Then)",
-          "UML diagrams only"
+          { "en": "Machine code", "vi": "Mã máy" },
+          { "en": "SQL queries", "vi": "Các câu truy vấn SQL" },
+          { "en": "A simple form of natural language (Given/When/Then)", "vi": "Một dạng ngôn ngữ tự nhiên đơn giản (Given/When/Then)" },
+          { "en": "UML diagrams only", "vi": "Chỉ các sơ đồ UML" }
         ],
-        "correct": "A simple form of natural language (Given/When/Then)",
-        "explanation": "- **c) Correct / Đúng:** BDD uses natural language (Given/When/Then) to express desired behavior.  - The other options are not characteristic of BDD."
+        "correctEn": "A simple form of natural language (Given/When/Then)",
+        "correctVi": "Một dạng ngôn ngữ tự nhiên đơn giản (Given/When/Then)",
+        "explanation": "* **c) Correct**\n* **c) Đúng**\nBDD uses natural language (Given/When/Then) to express desired behavior.\nBDD sử dụng ngôn ngữ tự nhiên (Given/When/Then) để thể hiện hành vi mong muốn.\n\n* The other options are not characteristic of BDD.\n* Các lựa chọn khác không phải là đặc điểm của BDD."
       },
       {
-        "question": "Which test level focuses on testing the interfaces between components?",
+        "questionEn": "Which test level focuses on testing the interfaces between components?",
+        "questionVi": "Mức độ kiểm thử nào tập trung vào việc kiểm thử các giao diện giữa các thành phần?",
         "options": [
-          "Component testing",
-          "Component integration testing",
-          "System testing",
-          "Acceptance testing"
+          { "en": "Component testing", "vi": "Kiểm thử thành phần" },
+          { "en": "Component integration testing", "vi": "Kiểm thử tích hợp thành phần" },
+          { "en": "System testing", "vi": "Kiểm thử hệ thống" },
+          { "en": "Acceptance testing", "vi": "Kiểm thử chấp nhận" }
         ],
-        "correct": "Component integration testing",
-        "explanation": "- **b) Correct / Đúng:** Component integration testing explicitly focuses on interfaces and interactions between components.  - **a) Incorrect / Sai:** Component testing focuses on components in isolation.  - **c) Incorrect / Sai:** System testing focuses on the entire system.  - **d) Incorrect / Sai:** Acceptance testing focuses on business readiness."
+        "correctEn": "Component integration testing",
+        "correctVi": "Kiểm thử tích hợp thành phần",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\nComponent integration testing explicitly focuses on interfaces and interactions between components.\nKiểm thử tích hợp thành phần tập trung rõ ràng vào các giao diện và tương tác giữa các thành phần.\n\n* **a) Incorrect**\n* **a) Sai**\nComponent testing focuses on components in isolation.\nKiểm thử thành phần tập trung vào các thành phần riêng lẻ.\n\n* **c) Incorrect**\n* **c) Sai**\nSystem testing focuses on the entire system.\nKiểm thử hệ thống tập trung vào toàn bộ hệ thống.\n\n* **d) Incorrect**\n* **d) Sai**\nAcceptance testing focuses on business readiness.\nKiểm thử chấp nhận tập trung vào sự sẵn sàng về mặt kinh doanh."
       },
       {
-        "question": "Which of the following is a non-functional quality characteristic according to ISO 25010?",
+        "questionEn": "Which of the following is a non-functional quality characteristic according to ISO 25010?",
+        "questionVi": "Đặc tính chất lượng phi chức năng nào sau đây theo tiêu chuẩn ISO 25010?",
         "options": [
-          "Functional completeness",
-          "Functional correctness",
-          "Performance efficiency",
-          "Functional appropriateness"
+          { "en": "Functional completeness", "vi": "Tính đầy đủ chức năng" },
+          { "en": "Functional correctness", "vi": "Tính đúng đắn chức năng" },
+          { "en": "Performance efficiency", "vi": "Hiệu quả hiệu suất" },
+          { "en": "Functional appropriateness", "vi": "Tính phù hợp chức năng" }
         ],
-        "correct": "Performance efficiency",
-        "explanation": "- **c) Correct / Đúng:** Performance efficiency is explicitly listed as a non-functional quality characteristic.  - **a, b, d) Incorrect / Sai:** These are functional testing objectives."
+        "correctEn": "Performance efficiency",
+        "correctVi": "Hiệu quả hiệu suất",
+        "explanation": "* **c) Correct**\n* **c) Đúng**\nPerformance efficiency is explicitly listed as a non-functional quality characteristic.\nHiệu quả hiệu suất được liệt kê rõ ràng là một đặc tính chất lượng phi chức năng.\n\n* **a, b, d) Incorrect**\n* **a, b, d) Sai**\nThese are functional testing objectives.\nĐây là các mục tiêu kiểm thử chức năng."
       },
       {
-        "question": "What is the primary purpose of regression testing?",
+        "questionEn": "What is the primary purpose of regression testing?",
+        "questionVi": "Mục đích chính của kiểm thử hồi quy là gì?",
         "options": [
-          "To confirm that a defect has been fixed",
-          "To check for adverse consequences caused by a change",
-          "To evaluate work products before execution",
-          "To perform static analysis on source code"
+          { "en": "To confirm that a defect has been fixed", "vi": "Để xác nhận rằng một khiếm khuyết đã được sửa" },
+          { "en": "To check for adverse consequences caused by a change", "vi": "Để kiểm tra các hậu quả bất lợi gây ra bởi một thay đổi" },
+          { "en": "To evaluate work products before execution", "vi": "Để đánh giá các sản phẩm làm việc trước khi thực thi" },
+          { "en": "To perform static analysis on source code", "vi": "Để thực hiện phân tích tĩnh trên mã nguồn" }
         ],
-        "correct": "To check for adverse consequences caused by a change",
-        "explanation": "- **b) Correct / Đúng:** Regression testing confirms no adverse consequences in unchanged or related areas after a change.  - **a) Incorrect / Sai:** That is confirmation testing.  - **c/d) Incorrect / Sai:** These describe static testing activities."
+        "correctEn": "To check for adverse consequences caused by a change",
+        "correctVi": "Để kiểm tra các hậu quả bất lợi gây ra bởi một thay đổi",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\nRegression testing confirms no adverse consequences in unchanged or related areas after a change.\nKiểm thử hồi quy xác nhận không có hậu quả bất lợi nào trong các khu vực không thay đổi hoặc có liên quan sau một thay đổi.\n\n* **a) Incorrect**\n* **a) Sai**\nThat is confirmation testing.\nĐó là kiểm thử xác nhận.\n\n* **c/d) Incorrect**\n* **c/d) Sai**\nThese describe static testing activities.\nĐây là mô tả các hoạt động kiểm thử tĩnh."
       },
       {
-        "question": "Which of the following best describes \"shift left\"?",
+        "questionEn": "Which of the following best describes \"shift left\"?",
+        "questionVi": "Điều nào sau đây mô tả đúng nhất về \"dịch chuyển sang trái\"?",
         "options": [
-          "Eliminating all testing activities after code implementation",
-          "Moving testing activities to earlier phases of the SDLC",
-          "Transferring testers to the left side of the office",
-          "Using only manual testing in early phases"
+          { "en": "Eliminating all testing activities after code implementation", "vi": "Loại bỏ tất cả các hoạt động kiểm thử sau khi triển khai mã" },
+          { "en": "Moving testing activities to earlier phases of the SDLC", "vi": "Di chuyển các hoạt động kiểm thử sang các giai đoạn sớm hơn của SDLC" },
+          { "en": "Transferring testers to the left side of the office", "vi": "Chuyển các kiểm thử viên sang phía bên trái của văn phòng" },
+          { "en": "Using only manual testing in early phases", "vi": "Chỉ sử dụng kiểm thử thủ công trong các giai đoạn đầu" }
         ],
-        "correct": "Moving testing activities to earlier phases of the SDLC",
-        "explanation": "- **b) Correct / Đúng:** Shift left means testing earlier in the SDLC, not removing later testing.  - **a) Incorrect / Sai:** Later testing is not eliminated.  - **c) Incorrect / Sai:** This is a literal misinterpretation.  - **d) Incorrect / Sai:** Shift left includes automated static analysis and component tests."
+        "correctEn": "Moving testing activities to earlier phases of the SDLC",
+        "correctVi": "Di chuyển các hoạt động kiểm thử sang các giai đoạn sớm hơn của SDLC",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\nShift left means testing earlier in the SDLC, not removing later testing.\nDịch chuyển sang trái có nghĩa là kiểm thử sớm hơn trong SDLC, không phải loại bỏ kiểm thử sau này.\n\n* **a) Incorrect**\n* **a) Sai**\nLater testing is not eliminated.\nKiểm thử giai đoạn sau không bị loại bỏ.\n\n* **c) Incorrect**\n* **c) Sai**\nThis is a literal misinterpretation.\nĐây là một cách hiểu sai theo nghĩa đen.\n\n* **d) Incorrect**\n* **d) Sai**\nShift left includes automated static analysis and component tests.\nDịch chuyển sang trái bao gồm phân tích tĩnh tự động và kiểm thử thành phần."
       },
       {
-        "question": "Which test level is ideally performed by the intended users?",
+        "questionEn": "Which test level is ideally performed by the intended users?",
+        "questionVi": "Mức độ kiểm thử nào lý tưởng nhất được thực hiện bởi người dùng dự kiến?",
         "options": [
-          "System testing",
-          "Component testing",
-          "Acceptance testing",
-          "Component integration testing"
+          { "en": "System testing", "vi": "Kiểm thử hệ thống" },
+          { "en": "Component testing", "vi": "Kiểm thử thành phần" },
+          { "en": "Acceptance testing", "vi": "Kiểm thử chấp nhận" },
+          { "en": "Component integration testing", "vi": "Kiểm thử tích hợp thành phần" }
         ],
-        "correct": "Acceptance testing",
-        "explanation": "- **c) Correct / Đúng:** Acceptance testing ideally involves the intended users to validate business needs.  - The other levels are typically performed by developers or independent test teams."
+        "correctEn": "Acceptance testing",
+        "correctVi": "Kiểm thử chấp nhận",
+        "explanation": "* **c) Correct**\n* **c) Đúng**\nAcceptance testing ideally involves the intended users to validate business needs.\nKiểm thử chấp nhận lý tưởng nhất là liên quan đến người dùng dự kiến để xác thực các nhu cầu kinh doanh.\n\n* The other levels are typically performed by developers or independent test teams.\n* Các mức độ khác thường được thực hiện bởi lập trình viên hoặc các nhóm kiểm thử độc lập."
       },
       {
-        "question": "Which of the following is a trigger for maintenance testing?",
+        "questionEn": "Which of the following is a trigger for maintenance testing?",
+        "questionVi": "Điều nào sau đây là yếu tố kích hoạt cho kiểm thử bảo trì?",
         "options": [
-          "Initial development of a new system",
-          "Retirement of an application",
-          "Writing the first user story",
-          "Creating the project charter"
+          { "en": "Initial development of a new system", "vi": "Phát triển ban đầu một hệ thống mới" },
+          { "en": "Retirement of an application", "vi": "Ngừng hoạt động một ứng dụng" },
+          { "en": "Writing the first user story", "vi": "Viết user story đầu tiên" },
+          { "en": "Creating the project charter", "vi": "Tạo hiến chương dự án" }
         ],
-        "correct": "Retirement of an application",
-        "explanation": "- **b) Correct / Đúng:** Retirement is explicitly listed as a trigger for maintenance testing (archiving, retrieval procedures).  - **a/c/d) Incorrect / Sai:** These are new project activities, not maintenance triggers."
+        "correctEn": "Retirement of an application",
+        "correctVi": "Ngừng hoạt động một ứng dụng",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\nRetirement is explicitly listed as a trigger for maintenance testing (archiving, retrieval procedures).\nNgừng hoạt động được liệt kê rõ ràng là yếu tố kích hoạt kiểm thử bảo trì (lưu trữ, quy trình khôi phục).\n\n* **a/c/d) Incorrect**\n* **a/c/d) Sai**\nThese are new project activities, not maintenance triggers.\nĐây là các hoạt động dự án mới, không phải yếu tố kích hoạt bảo trì."
       }
     ]
   },
@@ -228,97 +262,61 @@ export const syllabusData: SyllabusChapter[] = [
     "titleVi": "Kiểm thử Tĩnh",
     "descriptionEn": "Bilingual study guide for Chapter 3",
     "descriptionVi": "Hướng dẫn học tập song ngữ cho Chương 3",
-    "teacherAdviceEn": "Static testing only finds documentation defects --- False. It also finds code defects (unreachable code, complexity).",
-    "teacherAdviceVi": "All anomalies = defects --- False. Anomalies include questions and recommendations.",
+    "teacherAdviceEn": "Static testing also finds code defects like unreachable code and complexity.",
+    "teacherAdviceVi": "Kiểm thử tĩnh có thể phát hiện các khiếm khuyết trong code như mã không thể thực thi. Lưu ý rằng không phải tất cả bất thường đều là khiếm khuyết.",
     "hasMindmaps": false,
     "quiz": [
       {
-        "question": "Which of the following is a typical defect easier to find through static testing than dynamic testing?",
+        "questionEn": "Which of the following is a typical defect easier to find through static testing than dynamic testing?",
+        "questionVi": "Khiếm khuyết điển hình nào sau đây dễ tìm thấy qua kiểm thử tĩnh hơn là kiểm thử động?",
         "options": [
-          "Incorrect calculation result during execution",
-          "Slow response time under load",
-          "Unreachable code in the source",
-          "Memory leak during runtime"
+          { "en": "Incorrect calculation result during execution", "vi": "Kết quả tính toán sai trong quá trình thực thi" },
+          { "en": "Slow response time under load", "vi": "Thời gian phản hồi chậm khi có tải" },
+          { "en": "Unreachable code in the source", "vi": "Mã không thể thực thi trong mã nguồn" },
+          { "en": "Memory leak during runtime", "vi": "Rò rỉ bộ nhớ trong quá trình chạy" }
         ],
-        "correct": "Unreachable code in the source",
-        "explanation": "- **c) Correct / Đúng:** Unreachable code is explicitly listed as a defect detectable by static analysis but not by dynamic testing (since it never executes).  - **a/b/d) Incorrect / Sai:** These require execution and are found through dynamic testing."
+        "correctEn": "Unreachable code in the source",
+        "correctVi": "Mã không thể thực thi trong mã nguồn",
+        "explanation": "* **c) Correct**\n* **c) Đúng**\nUnreachable code is explicitly listed as a defect detectable by static analysis but not by dynamic testing (since it never executes).\nMã không thể thực thi được liệt kê rõ ràng là khiếm khuyết có thể phát hiện bằng phân tích tĩnh nhưng không bằng kiểm thử động (vì nó không bao giờ thực thi).\n\n* **a/b/d) Incorrect**\n* **a/b/d) Sai**\nThese require execution and are found through dynamic testing.\nNhững điều này yêu cầu thực thi và được tìm thấy qua kiểm thử động."
       },
       {
-        "question": "In the review process, during which activity are anomalies analyzed and their status decided?",
+        "questionEn": "In the review process, during which activity are anomalies analyzed and their status decided?",
+        "questionVi": "Trong quy trình đánh giá, hoạt động nào thực hiện phân tích các bất thường và quyết định trạng thái của chúng?",
         "options": [
-          "Planning",
-          "Individual review",
-          "Communication and analysis",
-          "Fixing and reporting"
+          { "en": "Planning", "vi": "Lập kế hoạch" },
+          { "en": "Individual review", "vi": "Đánh giá cá nhân" },
+          { "en": "Communication and analysis", "vi": "Giao tiếp và phân tích" },
+          { "en": "Fixing and reporting", "vi": "Sửa chữa và báo cáo" }
         ],
-        "correct": "Communication and analysis",
-        "explanation": "- **c) Correct / Đúng:** The communication and analysis activity involves analyzing anomalies and deciding status, ownership, and actions.  - **a) Incorrect / Sai:** Planning defines scope, not anomaly status.  - **b) Incorrect / Sai:** Individual review identifies anomalies; analysis happens later.  - **d) Incorrect / Sai:** Fixing occurs after analysis and decision-making."
+        "correctEn": "Communication and analysis",
+        "correctVi": "Giao tiếp và phân tích",
+        "explanation": "* **c) Correct**\n* **c) Đúng**\nThe communication and analysis activity involves analyzing anomalies and deciding status, ownership, and actions.\nHoạt động giao tiếp và phân tích bao gồm việc phân tích các bất thường và quyết định trạng thái, quyền sở hữu và hành động.\n\n* **a) Incorrect**\n* **a) Sai**\nPlanning defines scope, not anomaly status.\nLập kế hoạch xác định phạm vi, không phải trạng thái bất thường.\n\n* **b) Incorrect**\n* **b) Sai**\nIndividual review identifies anomalies; analysis happens later.\nĐánh giá cá nhân xác định các bất thường; phân tích diễn ra sau đó.\n\n* **d) Incorrect**\n* **d) Sai**\nFixing occurs after analysis and decision-making.\nSửa chữa diễn ra sau khi phân tích và đưa ra quyết định."
       },
       {
-        "question": "Which role is responsible for ensuring effective running of review meetings?",
+        "questionEn": "Which role is responsible for ensuring effective running of review meetings?",
+        "questionVi": "Vai trò nào chịu trách nhiệm đảm bảo việc điều hành hiệu quả các cuộc họp đánh giá?",
         "options": [
-          "Author",
-          "Manager",
-          "Moderator",
-          "Review leader"
+          { "en": "Author", "vi": "Tác giả" },
+          { "en": "Manager", "vi": "Quản lý" },
+          { "en": "Moderator", "vi": "Người điều phối" },
+          { "en": "Review leader", "vi": "Trưởng nhóm đánh giá" }
         ],
-        "correct": "Moderator",
-        "explanation": "- **c) Correct / Đúng:** The moderator ensures effective meetings, mediation, time management, and a safe environment.  - **a) Incorrect / Sai:** The author creates/fixes the work product.  - **b) Incorrect / Sai:** The manager provides resources.  - **d) Incorrect / Sai:** The review leader organizes the review but the moderator runs the meeting."
+        "correctEn": "Moderator",
+        "correctVi": "Người điều phối",
+        "explanation": "* **c) Correct**\n* **c) Đúng**\nThe moderator ensures effective meetings, mediation, time management, and a safe environment.\nNgười điều phối đảm bảo các cuộc họp hiệu quả, hòa giải, quản lý thời gian và môi trường an toàn.\n\n* **a) Incorrect**\n* **a) Sai**\nThe author creates/fixes the work product.\nTác giả tạo ra/sửa chữa sản phẩm làm việc.\n\n* **b) Incorrect**\n* **b) Sai**\nThe manager provides resources.\nQuản lý cung cấp nguồn lực.\n\n* **d) Incorrect**\n* **d) Sai**\nThe review leader organizes the review but the moderator runs the meeting.\nTrưởng nhóm đánh giá tổ chức cuộc đánh giá nhưng người điều phối điều hành cuộc họp."
       },
       {
-        "question": "Which review type is the most formal and collects metrics to improve the SDLC?",
+        "questionEn": "Which review type is the most formal and collects metrics to improve the SDLC?",
+        "questionVi": "Loại đánh giá nào là hình thức nhất và thu thập các số liệu để cải thiện SDLC?",
         "options": [
-          "Informal review",
-          "Walkthrough",
-          "Technical review",
-          "Inspection"
+          { "en": "Informal review", "vi": "Đánh giá không chính thức" },
+          { "en": "Walkthrough", "vi": "Duyệt qua" },
+          { "en": "Technical review", "vi": "Đánh giá kỹ thuật" },
+          { "en": "Inspection", "vi": "Thanh tra" }
         ],
-        "correct": "Inspection",
-        "explanation": "- **d) Correct / Đúng:** Inspection is the most formal type and explicitly collects metrics for process improvement.  - **c) Incorrect / Sai:** Technical review is formal but does not emphasize metrics collection as its primary goal.  - **a/b) Incorrect / Sai:** These are less formal."
-      },
-      {
-        "question": "Which of the following is a benefit of early and frequent stakeholder feedback?",
-        "options": [
-          "Eliminates the need for dynamic testing",
-          "Prevents misunderstandings about requirements",
-          "Removes all defects before coding begins",
-          "Replaces the test plan"
-        ],
-        "correct": "Prevents misunderstandings about requirements",
-        "explanation": "- **b) Correct / Đúng:** Early feedback prevents misunderstandings and ensures changes are implemented correctly.  - **a/c) Incorrect / Sai:** Neither eliminates dynamic testing nor removes all defects.  - **d) Incorrect / Sai:** Feedback complements but does not replace planning."
-      },
-      {
-        "question": "In an inspection, who should NOT act as the review leader or moderator?",
-        "options": [
-          "The manager",
-          "The author",
-          "A reviewer",
-          "The scribe"
-        ],
-        "correct": "The author",
-        "explanation": "- **b) Correct / Đúng:** The syllabus explicitly states the author cannot act as review leader or moderator in inspections.  - The other roles may participate in these capacities."
-      },
-      {
-        "question": "Static testing can be applied to which of the following work products?",
-        "options": [
-          "Compiled executable binaries from a third party",
-          "Source code and requirement specifications",
-          "Running production logs",
-          "Dynamic memory allocations"
-        ],
-        "correct": "Source code and requirement specifications",
-        "explanation": "- **b) Correct / Đúng:** Source code and requirements are explicitly listed as examinable work products.  - **a) Incorrect / Sai:** 3rd party executable code is inappropriate due to legal restrictions.  - **c/d) Incorrect / Sai:** These relate to dynamic execution."
-      },
-      {
-        "question": "Which success factor for reviews explicitly states that evaluation of participants should never be an objective?",
-        "options": [
-          "Choosing the appropriate review type",
-          "Defining clear objectives and measurable exit criteria",
-          "Providing adequate training",
-          "Making reviews part of the culture"
-        ],
-        "correct": "Defining clear objectives and measurable exit criteria",
-        "explanation": "- **b) Correct / Đúng:** The syllabus explicitly links \"evaluation of participants should never be an objective\" to defining clear objectives and exit criteria.  - The other options are valid success factors but do not carry this specific statement."
+        "correctEn": "Inspection",
+        "correctVi": "Thanh tra",
+        "explanation": "* **d) Correct**\n* **d) Đúng**\nInspection is the most formal type and explicitly collects metrics for process improvement.\nThanh tra là loại hình thức nhất và thu thập các số liệu rõ ràng để cải thiện quy trình.\n\n* **c) Incorrect**\n* **c) Sai**\nTechnical review is formal but does not emphasize metrics collection as its primary goal.\nĐánh giá kỹ thuật là hình thức nhưng không nhấn mạnh vào việc thu thập số liệu như mục tiêu chính.\n\n* **a/b) Incorrect**\n* **a/b) Sai**\nThese are less formal.\nĐây là các hình thức ít chính thức hơn."
       }
     ]
   },
@@ -329,119 +327,22 @@ export const syllabusData: SyllabusChapter[] = [
     "titleVi": "Phân tích và Thiết kế Kiểm thử",
     "descriptionEn": "Bilingual study guide for Chapter 4",
     "descriptionVi": "Hướng dẫn học tập song ngữ cho Chương 4",
-    "teacherAdviceEn": "EP partitions can overlap --- False. They must be disjoint.",
-    "teacherAdviceVi": "100% statement coverage = thorough testing --- False. Branch coverage is stronger.",
+    "teacherAdviceEn": "Partitions must be disjoint and non-empty. Branch coverage is stronger than statement coverage.",
+    "teacherAdviceVi": "Các phân vùng tương đương phải không chồng chéo và không để trống. Bao phủ nhánh luôn mạnh hơn bao phủ câu lệnh.",
     "hasMindmaps": false,
     "quiz": [
       {
-        "question": "In equivalence partitioning, which of the following is true about partitions?",
+        "questionEn": "In equivalence partitioning, which of the following is true about partitions?",
+        "questionVi": "Trong phân vùng tương đương, điều nào sau đây là đúng về các phân vùng?",
         "options": [
-          "They may overlap to ensure thorough testing",
-          "They must be non-empty and must not overlap",
-          "They should only include valid values",
-          "They are only applicable to output data"
+          { "en": "They may overlap to ensure thorough testing", "vi": "Chúng có thể chồng chéo để đảm bảo kiểm thử kỹ lưỡng" },
+          { "en": "They must be non-empty and must not overlap", "vi": "Chúng phải không rỗng và không được chồng chéo" },
+          { "en": "They should only include valid values", "vi": "Chúng chỉ nên bao gồm các giá trị hợp lệ" },
+          { "en": "They are only applicable to output data", "vi": "Chúng chỉ áp dụng cho dữ liệu đầu ra" }
         ],
-        "correct": "They must be non-empty and must not overlap",
-        "explanation": "- **b) Correct / Đúng:** The syllabus explicitly states partitions must not overlap and must be non-empty.  - **a) Incorrect / Sai:** Overlapping violates EP rules.  - **c) Incorrect / Sai:** Both valid and invalid partitions must be identified.  - **d) Incorrect / Sai:** EP applies to inputs, outputs, configuration, internal values, time, and interface parameters."
-      },
-      {
-        "question": "Using 3-value BVA for a range accepting values from 10 to 20, which set includes all coverage items for the lower boundary?",
-        "options": [
-          "9, 10",
-          "10, 11",
-          "9, 10, 11",
-          "8, 9, 10"
-        ],
-        "correct": "9, 10, 11",
-        "explanation": "- **c) Correct / Đúng:** 3-value BVA tests the boundary (10) and both neighbors (9 outside, 11 inside).  - **a) Incorrect / Sai:** This is 2-value BVA for the lower boundary.  - **b) Incorrect / Sai:** This misses the outside neighbor (9).  - **d) Incorrect / Sai:** Tests too far from the boundary."
-      },
-      {
-        "question": "In decision table testing, what are the coverage items?",
-        "options": [
-          "Individual conditions",
-          "Rows in the table",
-          "Columns containing feasible combinations of conditions",
-          "All actions"
-        ],
-        "correct": "Columns containing feasible combinations of conditions",
-        "explanation": "- **c) Correct / Đúng:** Coverage items are the columns (decision rules) containing feasible combinations.  - **a/b/d) Incorrect / Sai:** These are not the coverage items for decision table testing."
-      },
-      {
-        "question": "Which coverage criterion for state transition testing is the strongest?",
-        "options": [
-          "All states coverage",
-          "Valid transitions coverage",
-          "All transitions coverage",
-          "Each choice coverage"
-        ],
-        "correct": "All transitions coverage",
-        "explanation": "- **c) Correct / Đúng:** All transitions coverage includes valid and invalid transitions and subsumes the others.  - **a) Incorrect / Sai:** Weakest; can be achieved without exercising all transitions.  - **b) Incorrect / Sai:** Most widely used but weaker than all transitions.  - **d) Incorrect / Sai:** This is an EP coverage criterion, not state transition."
-      },
-      {
-        "question": "Which statement is true regarding branch coverage?",
-        "options": [
-          "100% statement coverage guarantees 100% branch coverage",
-          "Branch coverage subsumes statement coverage",
-          "Branch testing only covers conditional branches",
-          "Branch coverage is weaker than statement coverage"
-        ],
-        "correct": "Branch coverage subsumes statement coverage",
-        "explanation": "- **b) Correct / Đúng:** The syllabus explicitly states branch coverage subsumes statement coverage.  - **a) Incorrect / Sai:** The reverse is true: branch coverage guarantees statement coverage, not vice versa.  - **c) Incorrect / Sai:** Branch testing covers both unconditional and conditional branches.  - **d) Incorrect / Sai:** Branch coverage is stronger, not weaker."
-      },
-      {
-        "question": "Which test technique is most effective when specifications are inadequate and there is significant time pressure?",
-        "options": [
-          "Decision table testing",
-          "State transition testing",
-          "Exploratory testing",
-          "Statement testing"
-        ],
-        "correct": "Exploratory testing",
-        "explanation": "- **c) Correct / Đúng:** Exploratory testing is explicitly recommended for poor specifications and time pressure.  - **a/b) Incorrect / Sai:** These require structured specifications.  - **d) Incorrect / Sai:** This requires code access and is not suited for specification gaps."
-      },
-      {
-        "question": "In ATDD, which type of test cases are typically created first?",
-        "options": [
-          "Negative test cases",
-          "Non-functional test cases",
-          "Positive test cases",
-          "Regression test cases"
-        ],
-        "correct": "Positive test cases",
-        "explanation": "- **c) Correct / Đúng:** The syllabus states positive test cases confirming correct behavior are done first, followed by negative testing, then non-functional.  - **a/b) Incorrect / Sai:** These come after positive tests.  - **d) Incorrect / Sai:** Regression tests are not part of the ATDD derivation sequence."
-      },
-      {
-        "question": "What does the INVEST acronym stand for in the context of user stories?",
-        "options": [
-          "Integrated, Negotiable, Valuable, Estimable, Small, Testable",
-          "Independent, Negotiable, Valuable, Estimable, Small, Testable",
-          "Independent, Non-negotiable, Valuable, Estimable, Small, Testable",
-          "Independent, Negotiable, Verifiable, Estimable, Small, Testable"
-        ],
-        "correct": "Independent, Negotiable, Valuable, Estimable, Small, Testable",
-        "explanation": "- **b) Correct / Đúng:** Independent, Negotiable, Valuable, Estimable, Small, Testable.  - **a) Incorrect / Sai:** \"Integrated\" is wrong.  - **c) Incorrect / Sai:** \"Non-negotiable\" contradicts the correct term.  - **d) Incorrect / Sai:** \"Verifiable\" is wrong."
-      },
-      {
-        "question": "Which of the following is a weakness of white-box testing?",
-        "options": [
-          "It cannot be used for component testing",
-          "It may not detect defects of omission if a requirement is not implemented",
-          "It requires executable code to be available",
-          "It provides no objective coverage measure"
-        ],
-        "correct": "It may not detect defects of omission if a requirement is not implemented",
-        "explanation": "- **b) Correct / Đúng:** If software does not implement a requirement, white-box testing may not detect the omission.  - **a) Incorrect / Sai:** White-box is well-suited for component testing.  - **c) Incorrect / Sai:** It can be used in static testing (dry runs) before execution.  - **d) Incorrect / Sai:** It provides objective coverage measures (statement, branch)."
-      },
-      {
-        "question": "A tester uses their knowledge of common developer mistakes to anticipate defects. Which technique is this?",
-        "options": [
-          "Checklist-based testing",
-          "Error guessing",
-          "Exploratory testing",
-          "Equivalence partitioning"
-        ],
-        "correct": "Error guessing",
-        "explanation": "- **b) Correct / Đúng:** Error guessing uses tester knowledge to anticipate errors and defects.  - **a) Incorrect / Sai:** Uses predefined checklists, not personal anticipation of developer mistakes.  - **c) Incorrect / Sai:** Simultaneous design/execution, not specifically anticipation based on developer tendencies.  - **d) Incorrect / Sai:** A black-box technique based on data partitioning."
+        "correctEn": "They must be non-empty and must not overlap",
+        "correctVi": "Chúng phải không rỗng và không được chồng chéo",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\nThe syllabus explicitly states partitions must not overlap and must be non-empty.\nGiáo trình nêu rõ các phân vùng không được chồng chéo và phải không rỗng.\n\n* **a) Incorrect**\n* **a) Sai**\nOverlapping violates EP rules.\nChồng chéo vi phạm quy tắc EP.\n\n* **c) Incorrect**\n* **c) Sai**\nBoth valid and invalid partitions must be identified.\nCả phân vùng hợp lệ và không hợp lệ đều phải được xác định.\n\n* **d) Incorrect**\n* **d) Sai**\nEP applies to inputs, outputs, configuration, internal values, time, and interface parameters.\nEP áp dụng cho đầu vào, đầu ra, cấu hình, giá trị nội bộ, thời gian và các tham số giao diện."
       }
     ]
   },
@@ -452,119 +353,22 @@ export const syllabusData: SyllabusChapter[] = [
     "titleVi": "Quản lý Các Hoạt động Kiểm thử",
     "descriptionEn": "Bilingual study guide for Chapter 5",
     "descriptionVi": "Hướng dẫn học tập song ngữ cho Chương 5",
-    "teacherAdviceEn": "Entry criteria = Exit criteria --- They are opposites. Entry = start; Exit = done.",
-    "teacherAdviceVi": "Risk level = only impact --- It is likelihood × impact.",
+    "teacherAdviceEn": "Entry criteria are start conditions; exit criteria are done conditions.",
+    "teacherAdviceVi": "Tiêu chí đầu vào là điều kiện bắt đầu; tiêu chí đầu ra là điều kiện kết thúc. Rủi ro được tính bằng khả năng xảy ra nhân với tác động.",
     "hasMindmaps": false,
     "quiz": [
       {
-        "question": "Which of the following is typically included in a test plan?",
+        "questionEn": "Which of the following is typically included in a test plan?",
+        "questionVi": "Điều nào sau đây thường được bao gồm trong một kế hoạch kiểm thử?",
         "options": [
-          "Detailed code implementation",
-          "Test approach and risk register",
-          "Marketing strategy for the product",
-          "End-user training materials"
+          { "en": "Detailed code implementation", "vi": "Triển khai mã chi tiết" },
+          { "en": "Test approach and risk register", "vi": "Phương pháp tiếp cận kiểm thử và sổ đăng ký rủi ro" },
+          { "en": "Marketing strategy for the product", "vi": "Chiến lược tiếp thị cho sản phẩm" },
+          { "en": "End-user training materials", "vi": "Tài liệu đào tạo người dùng cuối" }
         ],
-        "correct": "Test approach and risk register",
-        "explanation": "- **b) Correct / Đúng:** Test approach and risk register are explicitly listed as typical test plan contents.  - **a/c/d) Incorrect / Sai:** These are outside the scope of a test plan."
-      },
-      {
-        "question": "Using three-point estimation, if a=4, m=7, and b=16 person-days, what is the final estimate E?",
-        "options": [
-          "7",
-          "8",
-          "9",
-          "10"
-        ],
-        "correct": "8",
-        "explanation": "- **b) Correct / Đúng:** E = (4 + 4×7 + 16) / 6 = (4 + 28 + 16) / 6 = 48 / 6 = 8.  - The other values are miscalculations."
-      },
-      {
-        "question": "In Agile, exit criteria are often called:",
-        "options": [
-          "Definition of Ready",
-          "Definition of Done",
-          "Sprint Backlog",
-          "Product Vision"
-        ],
-        "correct": "Definition of Done",
-        "explanation": "- **b) Correct / Đúng:** The syllabus explicitly states exit criteria are often called Definition of Done in Agile.  - **a) Incorrect / Sai:** Definition of Ready corresponds to entry criteria.  - **c/d) Incorrect / Sai:** These are not related to exit criteria."
-      },
-      {
-        "question": "Which of the following is a project risk rather than a product risk?",
-        "options": [
-          "Incorrect calculation in the billing module",
-          "Insufficient skills in the test team",
-          "Security vulnerability in user authentication",
-          "Poor user experience"
-        ],
-        "correct": "Insufficient skills in the test team",
-        "explanation": "- **b) Correct / Đúng:** Insufficient skills is a people issue affecting project management/control.  - **a/c/d) Incorrect / Sai:** These relate to product quality characteristics."
-      },
-      {
-        "question": "Which test case prioritization strategy executes tests linked to the most important requirements first?",
-        "options": [
-          "Risk-based prioritization",
-          "Coverage-based prioritization",
-          "Requirements-based prioritization",
-          "Random prioritization"
-        ],
-        "correct": "Requirements-based prioritization",
-        "explanation": "- **c) Correct / Đúng:** Requirements-based prioritization uses requirement priorities defined by stakeholders.  - **a) Incorrect / Sai:** Uses risk analysis, not requirement importance directly.  - **b) Incorrect / Sai:** Uses coverage metrics.  - **d) Incorrect / Sai:** Not a valid syllabus strategy."
-      },
-      {
-        "question": "In the testing quadrants model, which quadrant contains exploratory testing?",
-        "options": [
-          "Q1",
-          "Q2",
-          "Q3",
-          "Q4"
-        ],
-        "correct": "Q3",
-        "explanation": "- **c) Correct / Đúng:** Q3 is business-facing and critiques the product; it contains exploratory testing, usability testing, and UAT.  - **a) Incorrect / Sai:** Q1 is technology-facing, support team (component tests).  - **b) Incorrect / Sai:** Q2 is business-facing, support team (functional tests).  - **d) Incorrect / Sai:** Q4 is technology-facing, critique product (non-functional tests)."
-      },
-      {
-        "question": "Which of the following is a control directive?",
-        "options": [
-          "Collecting test metrics",
-          "Reprioritizing tests when a risk becomes an issue",
-          "Writing the test plan",
-          "Executing test cases"
-        ],
-        "correct": "Reprioritizing tests when a risk becomes an issue",
-        "explanation": "- **b) Correct / Đúng:** Reprioritizing tests based on monitoring information is a control directive.  - **a) Incorrect / Sai:** This is monitoring.  - **c) Incorrect / Sai:** This is planning.  - **d) Incorrect / Sai:** This is execution."
-      },
-      {
-        "question": "What is the primary purpose of configuration management in testing?",
-        "options": [
-          "To write test cases",
-          "To uniquely identify, version control, and track work products",
-          "To execute automated tests",
-          "To estimate test effort"
-        ],
-        "correct": "To uniquely identify, version control, and track work products",
-        "explanation": "- **b) Correct / Đúng:** CM ensures unique identification, version control, and traceability of configuration items.  - **a/c/d) Incorrect / Sai:** These are not CM functions."
-      },
-      {
-        "question": "Which of the following must be included in a defect report?",
-        "options": [
-          "The developer's home address",
-          "Expected and actual results",
-          "The marketing budget",
-          "The company's stock price"
-        ],
-        "correct": "Expected and actual results",
-        "explanation": "- **b) Correct / Đúng:** Expected and actual results are mandatory components of a defect report.  - **a/c/d) Incorrect / Sai:** These are irrelevant to defect reporting."
-      },
-      {
-        "question": "Which estimation technique involves experts making estimates in isolation, then discussing deviations, and re-estimating until consensus is reached?",
-        "options": [
-          "Extrapolation",
-          "Estimation based on ratios",
-          "Wideband Delphi",
-          "Three-point estimation"
-        ],
-        "correct": "Wideband Delphi",
-        "explanation": "- **c) Correct / Đúng:** Wideband Delphi is defined as an iterative expert-based technique with isolated estimation and consensus building.  - **a/b) Incorrect / Sai:** These are metrics-based.  - **d) Incorrect / Sai:** Uses three estimates but does not involve iterative consensus discussion."
+        "correctEn": "Test approach and risk register",
+        "correctVi": "Phương pháp tiếp cận kiểm thử và sổ đăng ký rủi ro",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\nTest approach and risk register are explicitly listed as typical test plan contents.\nPhương pháp tiếp cận kiểm thử và sổ đăng ký rủi ro được liệt kê rõ ràng là nội dung kế hoạch kiểm thử điển hình.\n\n* **a/c/d) Incorrect**\n* **a/c/d) Sai**\nThese are outside the scope of a test plan.\nNhững điều này nằm ngoài phạm vi của một kế hoạch kiểm thử."
       }
     ]
   },
@@ -575,64 +379,22 @@ export const syllabusData: SyllabusChapter[] = [
     "titleVi": "Công cụ Kiểm thử",
     "descriptionEn": "Bilingual study guide for Chapter 6",
     "descriptionVi": "Hướng dẫn học tập song ngữ cho Chương 6",
-    "teacherAdviceEn": "Automation replaces testers --- False. It supports testers and frees them for deeper work.",
-    "teacherAdviceVi": "Open source is risk-free --- False. Abandonment and update frequency are risks.",
+    "teacherAdviceEn": "Automation supports testers and frees them for deeper work.",
+    "teacherAdviceVi": "Tự động hóa hỗ trợ con người chứ không thay thế hoàn toàn. Mã nguồn mở luôn đi kèm rủi ro về việc bị bỏ rơi hoặc cập nhật quá thường xuyên.",
     "hasMindmaps": false,
     "quiz": [
       {
-        "question": "Which of the following is a potential benefit of test automation?",
+        "questionEn": "Which of the following is a potential benefit of test automation?",
+        "questionVi": "Lợi ích tiềm năng nào của tự động hóa kiểm thử sau đây?",
         "options": [
-          "Eliminating the need for test planning",
-          "Reducing test execution times and providing faster feedback",
-          "Removing all human involvement from testing",
-          "Guaranteeing the absence of defects"
+          { "en": "Eliminating the need for test planning", "vi": "Loại bỏ nhu cầu lập kế hoạch kiểm thử" },
+          { "en": "Reducing test execution times and providing faster feedback", "vi": "Giảm thời gian thực thi kiểm thử và cung cấp phản hồi nhanh hơn" },
+          { "en": "Removing all human involvement from testing", "vi": "Loại bỏ tất cả sự tham gia của con người vào kiểm thử" },
+          { "en": "Guaranteeing the absence of defects", "vi": "Đảm bảo sự vắng mặt của khiếm khuyết" }
         ],
-        "correct": "Reducing test execution times and providing faster feedback",
-        "explanation": "- **b) Correct / Đúng:** Faster execution and feedback are explicitly listed benefits.  - **a) Incorrect / Sai:** Planning remains essential.  - **c) Incorrect / Sai:** Human critical thinking is still required.  - **d) Incorrect / Sai:** No activity guarantees absence of defects."
-      },
-      {
-        "question": "Which of the following is a risk of using an open-source test tool?",
-        "options": [
-          "It is always more expensive than commercial tools",
-          "It may be abandoned with no further updates",
-          "It automatically complies with all regulatory requirements",
-          "It eliminates the need for test environment setup"
-        ],
-        "correct": "It may be abandoned with no further updates",
-        "explanation": "- **b) Correct / Đúng:** Abandonment is explicitly listed as an open-source risk.  - **a) Incorrect / Sai:** Open-source is often less expensive.  - **c) Incorrect / Sai:** Open-source does not guarantee regulatory compliance.  - **d) Incorrect / Sai:** Environment setup is still required."
-      },
-      {
-        "question": "Which tool category supports the DevOps delivery pipeline and automated build processes?",
-        "options": [
-          "Test design tool",
-          "DevOps tool",
-          "Non-functional testing tool",
-          "Static testing tool"
-        ],
-        "correct": "DevOps tool",
-        "explanation": "- **b) Correct / Đúng:** DevOps tools support CI/CD pipelines and automated builds.  - The other categories serve different primary purposes."
-      },
-      {
-        "question": "Which of the following statements about test tools is true according to the syllabus?",
-        "options": [
-          "A spreadsheet cannot be considered a test tool",
-          "Test automation removes the need for manual testing entirely",
-          "Simply acquiring a tool guarantees success",
-          "Tools require effort for introduction, maintenance, and training"
-        ],
-        "correct": "Tools require effort for introduction, maintenance, and training",
-        "explanation": "- **d) Correct / Đúng:** The syllabus explicitly states each new tool requires effort for introduction, maintenance, and training.  - **a) Incorrect / Sai:** Spreadsheets are explicitly listed as test tools.  - **b) Incorrect / Sai:** Manual testing, especially from the user perspective, remains necessary.  - **c) Incorrect / Sai:** Simply acquiring a tool does not guarantee success."
-      },
-      {
-        "question": "Over-reliance on a test tool may lead to:",
-        "options": [
-          "Improved critical thinking by testers",
-          "Ignoring the need for human critical thinking",
-          "Reduced consistency in test execution",
-          "Slower time-to-market"
-        ],
-        "correct": "Ignoring the need for human critical thinking",
-        "explanation": "- **b) Correct / Đúng:** Over-reliance on tools is explicitly listed as a risk that leads to ignoring human critical thinking.  - **a) Incorrect / Sai:** Over-reliance reduces, not improves, critical thinking.  - **c) Incorrect / Sai:** Tools increase consistency, not reduce it.  - **d) Incorrect / Sai:** Tools generally improve time-to-market."
+        "correctEn": "Reducing test execution times and providing faster feedback",
+        "correctVi": "Giảm thời gian thực thi kiểm thử và cung cấp phản hồi nhanh hơn",
+        "explanation": "* **b) Correct**\n* **b) Đúng**\nFaster execution and feedback are explicitly listed benefits.\nThực thi nhanh hơn và phản hồi nhanh hơn là các lợi ích được liệt kê rõ ràng.\n\n* **a) Incorrect**\n* **a) Sai**\nPlanning remains essential.\nLập kế hoạch vẫn là thiết yếu.\n\n* **c) Incorrect**\n* **c) Sai**\nHuman critical thinking is still required.\nTư duy phản biện của con người vẫn cần thiết.\n\n* **d) Incorrect**\n* **d) Sai**\nNo activity guarantees absence of defects.\nKhông có hoạt động nào đảm bảo vắng mặt khiếm khuyết."
       }
     ]
   }

@@ -62,11 +62,17 @@ export default function ResultsPage() {
           }} />
         </motion.div>
 
-        <h1 className="text-2xl font-extrabold mb-1">Exam Results</h1>
+        <h1 className="text-2xl font-extrabold mb-1">
+          Exam Results
+          <br />
+          <span className="text-lg opacity-60">Kết quả Bài thi</span>
+        </h1>
         <p className="text-xs font-bold uppercase mb-6" style={{
           letterSpacing: 2, color: "var(--color-text-muted)",
         }}>
           {attempt.score} / {attempt.totalQs} correct
+          <br />
+          {attempt.score} / {attempt.totalQs} câu đúng
         </p>
 
         {/* Big score */}
@@ -80,15 +86,20 @@ export default function ResultsPage() {
           {pct}%
         </motion.div>
 
-        <span
-          className="inline-block text-xs font-bold px-3 py-1 rounded-full mt-2"
-          style={{
-            background: passed ? "var(--color-success-soft)" : "var(--color-danger-soft)",
-            color: passed ? "var(--color-success)" : "var(--color-danger)",
-          }}
-        >
-          {passed ? "PASSED" : "NEEDS IMPROVEMENT"}
-        </span>
+        <div className="flex flex-col items-center gap-1 mt-2">
+          <span
+            className="inline-block text-xs font-bold px-3 py-1 rounded-full"
+            style={{
+              background: passed ? "var(--color-success-soft)" : "var(--color-danger-soft)",
+              color: passed ? "var(--color-success)" : "var(--color-danger)",
+            }}
+          >
+            {passed ? "PASSED" : "NEEDS IMPROVEMENT"}
+          </span>
+          <span className="text-[10px] font-bold opacity-60">
+            {passed ? "ĐẠT" : "CẦN CẢI THIỆN"}
+          </span>
+        </div>
       </motion.div>
 
       {/* AI Feedback */}
@@ -108,7 +119,7 @@ export default function ResultsPage() {
               <Sparkles style={{ width: 14, height: 14, color: "var(--color-purple)" }} />
             </div>
             <span className="text-xs font-bold uppercase" style={{ letterSpacing: 1.5, color: "var(--color-purple)" }}>
-              AI Feedback
+              AI Feedback / Nhận xét AI
             </span>
           </div>
           <p className="text-sm leading-[1.8]" style={{ color: "var(--color-text-secondary)" }}>
@@ -117,8 +128,12 @@ export default function ResultsPage() {
         </motion.div>
       )}
 
-      {/* Detailed Review */}
-      <h3 className="text-base font-bold mb-4 px-1">Detailed Review</h3>
+      {/* Question Analysis */}
+      <h3 className="text-base font-bold mb-4 px-1">
+        Question Analysis
+        <br />
+        <span className="text-xs opacity-60">Phân tích Câu hỏi</span>
+      </h3>
       <div className="flex flex-col gap-3 mb-12">
         {attempt.answers.map((ans: any, idx: number) => (
           <motion.div
@@ -142,9 +157,18 @@ export default function ResultsPage() {
               }
             </div>
             <div className="flex-1 min-w-0">
-              <p className="font-semibold text-sm mb-2">Question {idx + 1}</p>
+              <p className="font-semibold text-sm mb-2">
+                Question {idx + 1}
+                <br />
+                <span className="text-xs opacity-60">Câu hỏi {idx + 1}</span>
+              </p>
               <p className="text-xs mb-1">
                 <span style={{ color: "var(--color-text-muted)" }}>Your answer: </span>
+                <span className="font-semibold" style={{
+                  color: ans.isCorrect ? "var(--color-success)" : "var(--color-danger)",
+                }}>{ans.userAns}</span>
+                <br />
+                <span style={{ color: "var(--color-text-muted)" }}>Câu trả lời của bạn: </span>
                 <span className="font-semibold" style={{
                   color: ans.isCorrect ? "var(--color-success)" : "var(--color-danger)",
                 }}>{ans.userAns}</span>
@@ -152,6 +176,9 @@ export default function ResultsPage() {
               {!ans.isCorrect && (
                 <p className="text-xs">
                   <span style={{ color: "var(--color-text-muted)" }}>Correct: </span>
+                  <span className="font-semibold" style={{ color: "var(--color-success)" }}>{ans.correctAns}</span>
+                  <br />
+                  <span style={{ color: "var(--color-text-muted)" }}>Đáp án đúng: </span>
                   <span className="font-semibold" style={{ color: "var(--color-success)" }}>{ans.correctAns}</span>
                 </p>
               )}
@@ -163,10 +190,16 @@ export default function ResultsPage() {
       {/* Actions */}
       <div className="flex justify-center gap-3">
         <Link href="/" className="btn btn-secondary">
-          <Home style={{ width: 14, height: 14 }} /> Home
+          <div className="flex flex-col items-center">
+            <span className="flex items-center gap-1"><Home style={{ width: 14, height: 14 }} /> Home</span>
+            <span className="text-[10px] opacity-70">Trang chủ</span>
+          </div>
         </Link>
         <Link href="/exam" className="btn btn-primary">
-          Try Again <ArrowRight style={{ width: 14, height: 14 }} />
+          <div className="flex flex-col items-center">
+            <span className="flex items-center gap-1">Try Again <ArrowRight style={{ width: 14, height: 14 }} /></span>
+            <span className="text-[10px] opacity-70">Thử lại</span>
+          </div>
         </Link>
       </div>
     </div>

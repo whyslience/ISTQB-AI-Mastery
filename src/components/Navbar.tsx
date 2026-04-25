@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, History, Home, Moon, Sun } from "lucide-react";
+import { BookOpen, History, Home, Moon, Sun, Library, GraduationCap } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const navLinks = [
   { href: "/", label: "Home", icon: Home },
-  { href: "/review", label: "Review", icon: BookOpen },
-  { href: "/exam", label: "Exam", icon: BookOpen },
+  { href: "/review", label: "Syllabus", icon: Library },
+  { href: "/exam", label: "Exam", icon: GraduationCap },
   { href: "/history", label: "History", icon: History },
 ];
 

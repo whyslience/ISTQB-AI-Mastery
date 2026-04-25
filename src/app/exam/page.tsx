@@ -95,9 +95,15 @@ export default function ExamPage() {
           transition={{ duration: 0.5 }}
           style={{ width: "100%", maxWidth: 480 }}
         >
-          <h1 className="text-3xl font-extrabold tracking-tight mb-1">New Exam</h1>
+          <h1 className="text-3xl font-extrabold tracking-tight mb-1">
+            New Exam
+            <br />
+            <span className="text-xl opacity-60">Bài thi Mới</span>
+          </h1>
           <p className="text-sm mb-10" style={{ color: "var(--color-text-muted)" }}>
             Choose your topic and difficulty to begin.
+            <br />
+            Chọn chủ đề và độ khó để bắt đầu.
           </p>
 
           {/* Topic picker */}
@@ -105,7 +111,7 @@ export default function ExamPage() {
             className="block text-xs font-bold uppercase tracking-widest mb-3"
             style={{ color: "var(--color-text-muted)" }}
           >
-            Topic
+            Topic / Chủ đề
           </label>
           <div className="flex flex-col gap-2 mb-8">
             {TOPICS.map((t) => (
@@ -120,7 +126,18 @@ export default function ExamPage() {
                   cursor: "pointer",
                 }}
               >
-                {t}
+                <div className="flex flex-col">
+                  <span>{t}</span>
+                  <span className="text-[10px] opacity-60 italic">
+                    {t === "Full Exam" ? "Bài thi Tổng hợp" : 
+                     t === "Fundamentals of Testing" ? "Các Khái niệm Cơ bản" :
+                     t === "Testing Throughout the SDLC" ? "Kiểm thử trong Vòng đời" :
+                     t === "Static Testing" ? "Kiểm thử Tĩnh" :
+                     t === "Test Analysis and Design" ? "Phân tích và Thiết kế" :
+                     t === "Managing the Test Activities" ? "Quản lý Hoạt động Kiểm thử" :
+                     t === "Test Tools" ? "Công cụ Kiểm thử" : ""}
+                  </span>
+                </div>
               </button>
             ))}
           </div>
@@ -132,7 +149,7 @@ export default function ExamPage() {
                 className="block text-xs font-bold uppercase tracking-widest mb-3"
                 style={{ color: "var(--color-text-muted)" }}
               >
-                Difficulty
+                Difficulty / Độ khó
               </label>
               <div className="flex gap-3 mb-10">
                 {DIFFICULTIES.map((d) => {
@@ -149,7 +166,12 @@ export default function ExamPage() {
                         cursor: "pointer",
                       }}
                     >
-                      {d}
+                      <div className="flex flex-col items-center">
+                        <span>{d}</span>
+                        <span className="text-[10px] opacity-60">
+                          {d === "easy" ? "Dễ" : d === "medium" ? "Vừa" : "Khó"}
+                        </span>
+                      </div>
                     </button>
                   );
                 })}
@@ -162,7 +184,10 @@ export default function ExamPage() {
             className="btn btn-primary"
             style={{ width: "100%", padding: "16px 0", fontSize: 15, borderRadius: "var(--radius-xl)" }}
           >
-            Start Exam <ArrowRight style={{ width: 16, height: 16 }} />
+            <div className="flex flex-col items-center">
+              <span className="flex items-center gap-2">Start Exam <ArrowRight style={{ width: 16, height: 16 }} /></span>
+              <span className="text-xs opacity-70">Bắt đầu Bài thi</span>
+            </div>
           </button>
         </motion.div>
       </div>
@@ -176,7 +201,11 @@ export default function ExamPage() {
         <div style={{ animation: "float 2s ease-in-out infinite" }}>
           <Loader2 className="animate-spin" style={{ width: 32, height: 32, color: "var(--color-accent)" }} />
         </div>
-        <p className="text-sm" style={{ color: "var(--color-text-muted)" }}>AI is generating your exam…</p>
+        <p className="text-sm text-center" style={{ color: "var(--color-text-muted)" }}>
+          AI is generating your exam…
+          <br />
+          <span className="text-xs opacity-60">AI đang tạo bài thi của bạn…</span>
+        </p>
       </div>
     );
   }
@@ -187,9 +216,17 @@ export default function ExamPage() {
       <div className="flex flex-col items-center justify-center gap-5 px-5 text-center" style={{ minHeight: "100vh" }}>
         <p className="text-sm" style={{ color: "var(--color-text-secondary)", maxWidth: 360 }}>{error}</p>
         <div className="flex gap-3">
-          <button onClick={() => { setStarted(false); setError(null); }} className="btn btn-secondary">Back</button>
+          <button onClick={() => { setStarted(false); setError(null); }} className="btn btn-secondary">
+            <div className="flex flex-col items-center">
+              <span>Back</span>
+              <span className="text-[10px] opacity-60">Quay lại</span>
+            </div>
+          </button>
           <button onClick={loadQuestions} className="btn btn-primary">
-            <RefreshCw style={{ width: 14, height: 14 }} /> Retry
+            <div className="flex flex-col items-center">
+              <span className="flex items-center gap-1"><RefreshCw style={{ width: 14, height: 14 }} /> Retry</span>
+              <span className="text-[10px] opacity-60">Thử lại</span>
+            </div>
           </button>
         </div>
       </div>
@@ -227,7 +264,7 @@ export default function ExamPage() {
           className="text-xs font-medium transition-colors"
           style={{ color: "var(--color-text-muted)", cursor: "pointer", background: "none", border: "none" }}
         >
-          Exit
+          Exit / Thoát
         </button>
       </div>
 
@@ -301,7 +338,10 @@ export default function ExamPage() {
           className="btn btn-secondary"
           style={{ opacity: currentIdx === 0 ? 0.35 : 1 }}
         >
-          <ArrowLeft style={{ width: 14, height: 14 }} /> Prev
+          <div className="flex flex-col items-center">
+            <span className="flex items-center gap-1"><ArrowLeft style={{ width: 14, height: 14 }} /> Prev</span>
+            <span className="text-[10px] opacity-60">Trước</span>
+          </div>
         </button>
 
         {/* Dots */}
@@ -338,7 +378,10 @@ export default function ExamPage() {
             {submitting ? (
               <Loader2 className="animate-spin" style={{ width: 14, height: 14 }} />
             ) : (
-              <><Send style={{ width: 14, height: 14 }} /> Submit</>
+              <div className="flex flex-col items-center">
+                <span className="flex items-center gap-1"><Send style={{ width: 14, height: 14 }} /> Submit</span>
+                <span className="text-[10px] opacity-60">Nộp bài</span>
+              </div>
             )}
           </button>
         ) : (
@@ -348,7 +391,10 @@ export default function ExamPage() {
             className="btn btn-primary"
             style={{ opacity: !answers[currentQ.id] ? 0.4 : 1 }}
           >
-            Next <ArrowRight style={{ width: 14, height: 14 }} />
+            <div className="flex flex-col items-center">
+              <span className="flex items-center gap-1">Next <ArrowRight style={{ width: 14, height: 14 }} /></span>
+              <span className="text-[10px] opacity-60">Tiếp theo</span>
+            </div>
           </button>
         )}
       </div>
@@ -356,6 +402,8 @@ export default function ExamPage() {
       {answeredCount < questions.length && currentIdx === questions.length - 1 && (
         <p className="text-center text-xs mt-4" style={{ color: "var(--color-text-muted)" }}>
           Answer all {questions.length} questions to submit ({questions.length - answeredCount} remaining)
+          <br />
+          Trả lời tất cả {questions.length} câu để nộp bài (còn {questions.length - answeredCount} câu)
         </p>
       )}
     </div>

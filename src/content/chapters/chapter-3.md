@@ -1,84 +1,126 @@
+# Chapter 3: Static Testing / Chương 3: Kiểm thử Tĩnh
 
-## 1. Overview / Tổng quan
+## 3.1 Static Testing Basics / 3.1 Cơ bản về Kiểm thử Tĩnh
 
-### Overview / Tổng quan
+Unlike dynamic testing, which requires the execution of the software being tested, static testing relies on the manual examination of work products (reviews) or tool-driven evaluation of the code or other work products (static analysis).
+Khác với kiểm thử động, yêu cầu thực thi phần mềm đang được kiểm thử, kiểm thử tĩnh dựa trên việc kiểm tra thủ công các sản phẩm làm việc (đánh giá - review) hoặc đánh giá dựa trên công cụ đối với mã nguồn hoặc các sản phẩm làm việc khác (phân tích tĩnh).
 
-Static testing evaluates work products without executing the software. It includes manual reviews and tool-supported static analysis. This chapter covers the types of work products that can be examined, the value of static testing, differences from dynamic testing, the review process, review roles, review types, and success factors.
+### 3.1.1 Work Products Examinable by Static Testing / 3.1.1 Các Sản phẩm làm việc có thể Kiểm tra bằng Kiểm thử Tĩnh
 
-Kiểm thử tĩnh đánh giá sản phẩm làm việc mà không thực thi phần mềm. Nó bao gồm đánh giá thủ công và phân tích tĩnh được hỗ trợ bởi công cụ. Chương này bao gồm các loại sản phẩm làm việc có thể được kiểm tra, giá trị của kiểm thử tĩnh, sự khác biệt với kiểm thử động, quy trình đánh giá, vai trò, loại đánh giá và các yếu tố thành công.
+Almost any work product can be examined using static testing, including:
+Hầu hết mọi sản phẩm làm việc đều có thể được kiểm tra bằng kiểm thử tĩnh, bao gồm:
 
-**Syllabus Alignment / Phạm vi Giáo trình:** FL-BO4
-**Training Time / Thời gian Đào tạo:** 80 minutes
+* Requirements specifications (e.g., business requirements, functional requirements).
+* Đặc tả yêu cầu (ví dụ: yêu cầu kinh doanh, yêu cầu chức năng).
+* User stories, acceptance criteria, and backlogs.
+* User story, tiêu chí chấp nhận và danh sách tồn đọng (backlogs).
+* Design specifications (e.g., architectural designs, interface designs).
+* Đặc tả thiết kế (ví dụ: thiết kế kiến trúc, thiết kế giao diện).
+* Source code.
+* Mã nguồn.
+* Testware (e.g., test plans, test cases, test scripts).
+* Tài liệu kiểm thử (ví dụ: kế hoạch kiểm thử, ca kiểm thử, kịch bản kiểm thử).
+* User guides and other documentation.
+* Hướng dẫn sử dụng và các tài liệu khác.
+* Contracts and project plans.
+* Hợp đồng và kế hoạch dự án.
 
-## 2. Core Concepts / Các Khái niệm Cốt lõi
+### 3.1.2 Value of Static Testing / 3.1.2 Giá trị của Kiểm thử Tĩnh
 
-### 2.1 Static Testing Basics / Cơ bản về Kiểm thử Tĩnh
+Static testing provides many benefits, especially when applied early in the SDLC:
+Kiểm thử tĩnh mang lại nhiều lợi ích, đặc biệt khi được áp dụng sớm trong SDLC:
 
-#### Definition / Định nghĩa
+* Detecting and correcting defects more efficiently, and prior to dynamic test execution.
+* Phát hiện và sửa chữa khiếm khuyết hiệu quả hơn, và trước khi thực thi kiểm thử động.
+* Identifying defects that are not easily found by dynamic testing (e.g., unreachable code, inconsistent requirements).
+* Xác định các khiếm khuyết không dễ tìm thấy bằng kiểm thử động (ví dụ: mã nguồn không bao giờ được thực thi, các yêu cầu mâu thuẫn).
+* Preventing defects in design or code by identifying issues in requirements.
+* Ngăn ngừa khiếm khuyết trong thiết kế hoặc mã nguồn bằng cách xác định các vấn đề trong yêu cầu.
+* Improving the quality of work products and the communication between team members.
+* Cải thiện chất lượng sản phẩm làm việc và sự giao tiếp giữa các thành viên trong nhóm.
+* Reducing development and testing time and costs.
+* Giảm thời gian và chi phí phát triển và kiểm thử.
+* Reducing the number of defects found during dynamic testing or in operation.
+* Giảm số lượng khiếm khuyết được tìm thấy trong quá trình kiểm thử động hoặc khi vận hành.
 
-Evaluation of work products without execution. Objectives: improve quality, detect **defects**, assess readability, completeness, correctness, testability, and consistency.
+### 3.1.3 Differences between Static and Dynamic Testing / 3.1.3 Sự khác biệt giữa Kiểm thử Tĩnh và Kiểm thử Động
 
-Đánh giá sản phẩm làm việc mà không cần thực thi. Mục tiêu: cải thiện chất lượng, phát hiện **khiếm khuyết**, đánh giá khả năng đọc, tính đầy đủ, tính đúng đắn, khả năng kiểm thử và tính nhất quán.
+Static and dynamic testing have the same objective (evaluating quality and finding defects), but they are complementary.
+Kiểm thử tĩnh và kiểm thử động có cùng mục tiêu (đánh giá chất lượng và tìm kiếm khiếm khuyết), nhưng chúng bổ trợ cho nhau.
 
-#### Methods / Phương pháp
+* Static testing finds defects directly in the work products, while dynamic testing finds failures that are caused by defects.
+* Kiểm thử tĩnh tìm khiếm khuyết trực tiếp trong sản phẩm làm việc, trong khi kiểm thử động tìm thấy các lỗi (failure) gây ra bởi các khiếm khuyết.
+* Static testing can be used to improve the quality of work products that cannot be executed (e.g., requirements).
+* Kiểm thử tĩnh có thể được dùng để cải thiện chất lượng của các sản phẩm làm việc không thể thực thi (ví dụ: yêu cầu).
+* Static testing can find defects (e.g., security vulnerabilities) more efficiently than dynamic testing.
+* Kiểm thử tĩnh có thể tìm thấy các khiếm khuyết (ví dụ: lỗ hổng bảo mật) hiệu quả hơn kiểm thử động.
 
-* **Manual examination**: Reviews (ranging from informal to formal).
-* **Kiểm tra thủ công**: Các cuộc đánh giá (từ không chính thức đến chính thức).
-* **Tool-supported**: Static analysis (code analysis, spelling checkers, readability tools).
-* **Hỗ trợ bởi công cụ**: Phân tích tĩnh (phân tích mã nguồn, trình kiểm tra chính tả, công cụ đo lường độ dễ đọc).
+## 3.2 Feedback and Review Process / 3.2 Phản hồi và Quy trình Đánh giá (Review)
 
-### 2.2 Value of Static Testing / Giá trị của Kiểm thử Tĩnh
+### 3.2.1 Benefits of Early and Frequent Stakeholder Feedback / 3.2.1 Lợi ích của Phản hồi sớm và thường xuyên từ các Bên liên quan
 
-#### Early Defect Detection / Phát hiện khiếm khuyết sớm
+Frequent feedback throughout the SDLC helps ensure that the work products meet stakeholder needs and requirements. It helps prevent misunderstandings and reduces the risk of developing the wrong features.
+Phản hồi thường xuyên trong suốt SDLC giúp đảm bảo rằng các sản phẩm làm việc đáp ứng nhu cầu và yêu cầu của các bên liên quan. Nó giúp ngăn ngừa sự hiểu lầm và giảm rủi ro phát triển sai tính năng.
 
-Fulfills the principle of early testing. **Defects** found in requirements or design are far cheaper to fix than those found in code or production.
+### 3.2.2 Review Process Activities / 3.2.2 Các Hoạt động của Quy trình Đánh giá
 
-Thực hiện nguyên tắc kiểm thử sớm. Các **khiếm khuyết** được tìm thấy trong yêu cầu hoặc thiết kế có chi phí sửa chữa rẻ hơn nhiều so với khiếm khuyết được tìm thấy trong code hoặc môi trường vận hành.
+The activities of a formal review process are:
+Các hoạt động của một quy trình đánh giá chính thức là:
 
-#### Specific Defects / Các khiếm khuyết đặc thù
+* **Planning**: defining the scope, objectives, and participants.
+  **Lập kế hoạch**: định nghĩa phạm vi, mục tiêu và thành phần tham gia.
+* **Review initiation**: distributing the work products and preparing the participants.
+  **Bắt đầu đánh giá**: phân phối các sản phẩm làm việc và chuẩn bị cho những người tham gia.
+* **Individual review**: participants examine the work product individually to identify anomalies.
+  **Đánh giá cá nhân**: những người tham gia tự kiểm tra sản phẩm làm việc để xác định các điểm bất thường.
+* **Communication and analysis**: discussing the identified anomalies and deciding on their status.
+  **Trao đổi và phân tích**: thảo luận về các điểm bất thường đã xác định và quyết định trạng thái của chúng.
+* **Fixing and reporting**: fixing the defects and reporting the review results.
+  **Sửa chữa và báo cáo**: sửa chữa các khiếm khuyết và báo cáo kết quả đánh giá.
 
-Static testing can find **defects** not easily detectable by dynamic testing, such as unreachable code, design pattern violations, and inconsistencies in requirements.
+### 3.2.3 Roles and Responsibilities in Reviews / 3.2.3 Vai trò và Trách nhiệm trong Đánh giá
 
-Kiểm thử tĩnh có thể tìm thấy các **khiếm khuyết** mà kiểm thử động khó phát hiện, như mã nguồn không bao giờ được thực thi, vi phạm mẫu thiết kế và sự không nhất quán trong yêu cầu.
+Typical roles in a formal review are:
+Các vai trò điển hình trong một buổi đánh giá chính thức là:
 
-### 2.3 Static vs Dynamic Testing / Kiểm thử Tĩnh vs Động
+* **Author**: the person who created the work product being reviewed.
+  **Tác giả**: người tạo ra sản phẩm làm việc đang được đánh giá.
+* **Management**: responsible for the review planning and resource allocation.
+  **Quản lý**: chịu trách nhiệm lập kế hoạch đánh giá và phân bổ nguồn lực.
+* **Facilitator** (Moderator): ensures the review meetings run effectively.
+  **Người điều phối** (Moderator): đảm bảo các cuộc họp đánh giá diễn ra hiệu quả.
+* **Review Leader**: overall responsibility for the review.
+  **Trưởng nhóm đánh giá**: chịu trách nhiệm tổng thể cho cuộc đánh giá.
+* **Reviewers**: subject matter experts or stakeholders who examine the work product.
+  **Người đánh giá**: các chuyên gia trong lĩnh vực hoặc các bên liên quan thực hiện kiểm tra sản phẩm làm việc.
+* **Scribe** (Recorder): documents the findings and decisions made during the review meeting.
+  **Người ghi chép** (Recorder): ghi lại các phát hiện và quyết định được đưa ra trong cuộc họp đánh giá.
 
-#### Static Testing / Kiểm thử Tĩnh
+### 3.2.4 Review Types / 3.2.4 Các Loại Đánh giá
 
-Does not involve execution. Finds **defects** directly. Applicable to both executable and non-executable work products.
+* **Informal review**: no defined process, no formal documentation. Simple and low cost.
+  **Đánh giá không chính thức**: không có quy trình định nghĩa, không có tài liệu chính thức. Đơn giản và chi phí thấp.
+* **Walkthrough**: led by the author to explain the work product and gather feedback. Useful for knowledge transfer.
+  **Walkthrough**: do tác giả dẫn dắt để giải thích sản phẩm làm việc và thu thập phản hồi. Hữu ích cho việc chuyển giao kiến thức.
+* **Technical review**: led by a facilitator, focuses on technical quality and consensus.
+  **Đánh giá kỹ thuật**: do người điều phối dẫn dắt, tập trung vào chất lượng kỹ thuật và sự đồng thuận.
+* **Inspection**: the most formal type of review, with a documented process and entry/exit criteria. Uses checklists and metrics.
+  **Kiểm tra (Inspection)**: loại đánh giá chính thức nhất, với quy trình được lập tài liệu và các tiêu chí bắt đầu/kết thúc. Sử dụng danh mục kiểm tra (checklists) và các chỉ số (metrics).
 
-Không bao gồm việc thực thi. Phát hiện **khiếm khuyết** trực tiếp. Áp dụng được cho cả sản phẩm làm việc thực thi được và không thực thi được.
+### 3.2.5 Success Factors for Reviews / 3.2.5 Các Yếu tố Thành công cho Đánh giá
 
-#### Dynamic Testing / Kiểm thử Động
+Success factors include:
+Các yếu tố thành công bao gồm:
 
-Requires execution. Finds **defects** via failures. Applicable only to executable work products.
-
-Đòi hỏi thực thi phần mềm. Phát hiện **khiếm khuyết** thông qua các thất bại. Chỉ áp dụng được cho các sản phẩm làm việc có thể thực thi.
-
-## 3. Review Process / Quy trình Đánh giá
-
-### Review Activities / Các Hoạt động Đánh giá
-
-1. **Planning**: Define scope and purpose.
-1. **Lập kế hoạch**: Xác định phạm vi và mục đích.
-2. **Review Initiation**: Distribute work products and explain roles.
-2. **Khởi động đánh giá**: Phân phối sản phẩm và giải thích vai trò.
-3. **Individual Review**: Reviewers identify anomalies and questions.
-3. **Đánh giá cá nhân**: Người đánh giá xác định các bất thường và câu hỏi.
-4. **Communication and Analysis**: Discuss findings and decide on status.
-4. **Giao tiếp và Phân tích**: Thảo luận các phát hiện và quyết định trạng thái.
-5. **Fixing and Reporting**: Create **defect** reports and verify fixes.
-5. **Sửa chữa và Báo cáo**: Tạo báo cáo **khiếm khuyết** và xác minh kết quả sửa.
-
-## 4. Key Terminology / Thuật ngữ Quan trọng
-
-* **Static Testing / Kiểm thử Tĩnh**: Testing without executing the software.
-* **Kiểm thử Tĩnh**: Kiểm thử mà không thực thi phần mềm.
-* **Dynamic Testing / Kiểm thử Động**: Testing that involves executing the software.
-* **Kiểm thử Động**: Kiểm thử bao gồm việc thực thi phần mềm.
-* **Review / Đánh giá**: A static testing technique where work products are examined by people.
-* **Đánh giá**: Kỹ thuật kiểm thử tĩnh trong đó con người kiểm tra sản phẩm làm việc.
-* **Inspection / Thanh tra**: The most formal review type with defined process and metrics collection.
-* **Thanh tra**: Loại đánh giá hình thức nhất với quy trình xác định và thu thập số liệu.
-* **Walkthrough / Duyệt qua**: A review led by the author with multiple possible objectives.
-* **Duyệt qua**: Cuộc đánh giá do tác giả dẫn dắt với nhiều mục tiêu khác nhau.
+* Clearly defined objectives and scope.
+* Mục tiêu và phạm vi được định nghĩa rõ ràng.
+* Right participants with the necessary skills and knowledge.
+* Những người tham gia phù hợp với các kỹ năng và kiến thức cần thiết.
+* Participants have enough time to prepare.
+* Những người tham gia có đủ thời gian để chuẩn bị.
+* Management support and a culture of constructive criticism.
+* Sự hỗ trợ từ quản lý và một văn hóa phê bình mang tính xây dựng.
+* Using checklists to focus the review effort.
+* Sử dụng danh mục kiểm tra để tập trung nỗ lực đánh giá.
+* Continuous process improvement based on review metrics.
+* Cải tiến quy trình liên tục dựa trên các chỉ số đánh giá.

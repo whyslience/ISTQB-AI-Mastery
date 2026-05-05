@@ -1,4 +1,11 @@
-import type { SyllabusChapter } from "./syllabus";
+import type { QuizQuestion, SyllabusChapter } from "./syllabus";
+import quizCtai1 from "./questions/ctai-chapter-1.json";
+import quizCtai2 from "./questions/ctai-chapter-2.json";
+import quizCtai3 from "./questions/ctai-chapter-3.json";
+import quizCtai4 from "./questions/ctai-chapter-4.json";
+import quizCtai5 from "./questions/ctai-chapter-5.json";
+import quizCtai6 from "./questions/ctai-chapter-6.json";
+import quizCtai7 from "./questions/ctai-chapter-7.json";
 
 /**
  * ISTQB Certified Tester AI Testing (CT-AI) v2.0 GA — study track metadata.
@@ -35,7 +42,7 @@ export const ctaiSyllabusData: SyllabusChapter[] = [
     teacherAdviceVi:
       "Narrow AI là thực tế triển khai hôm nay; phân biệt ML, DL, GenAI và frontier so với general/super AI.",
     hasMindmaps: false,
-    quiz: [],
+    quiz: quizCtai1 as QuizQuestion[],
   },
   {
     id: "ctai-2",
@@ -50,7 +57,7 @@ export const ctaiSyllabusData: SyllabusChapter[] = [
     teacherAdviceVi:
       "Tiêu chí nghiệm thu thường mang tính thống kê hoặc ngưỡng, không chỉ đạt/không đạt nhị phân.",
     hasMindmaps: false,
-    quiz: [],
+    quiz: quizCtai2 as QuizQuestion[],
   },
   {
     id: "ctai-3",
@@ -65,7 +72,7 @@ export const ctaiSyllabusData: SyllabusChapter[] = [
     teacherAdviceVi:
       "Thuật ngữ ML regression ở đây là hồi quy dự đoán giá trị số — không phải regression testing trong CTFL.",
     hasMindmaps: false,
-    quiz: [],
+    quiz: quizCtai3 as QuizQuestion[],
   },
   {
     id: "ctai-4",
@@ -80,7 +87,7 @@ export const ctaiSyllabusData: SyllabusChapter[] = [
     teacherAdviceVi:
       "Nhiều hành vi AI cần kiểm thử thống kê và oracle rõ ràng, không chỉ kết quả mong đợi đơn giản.",
     hasMindmaps: false,
-    quiz: [],
+    quiz: quizCtai4 as QuizQuestion[],
   },
   {
     id: "ctai-5",
@@ -95,7 +102,7 @@ export const ctaiSyllabusData: SyllabusChapter[] = [
     teacherAdviceVi:
       "Dữ liệu sai sớm trong pipeline làm mất giá trị kiểm thử model sau — kiểm tra dữ liệu và biến đổi trước.",
     hasMindmaps: false,
-    quiz: [],
+    quiz: quizCtai5 as QuizQuestion[],
   },
   {
     id: "ctai-6",
@@ -110,7 +117,7 @@ export const ctaiSyllabusData: SyllabusChapter[] = [
     teacherAdviceVi:
       "Kiểm thử biến hình (metamorphic) hữu ích khi không có oracle đơn — liên hệ đầu ra qua đầu vào biến đổi.",
     hasMindmaps: false,
-    quiz: [],
+    quiz: quizCtai6 as QuizQuestion[],
   },
   {
     id: "ctai-7",
@@ -124,7 +131,7 @@ export const ctaiSyllabusData: SyllabusChapter[] = [
     teacherAdviceVi:
       "Chương ngắn — liên kết rủi ro vòng đời MLS với triển khai và giám sát production.",
     hasMindmaps: false,
-    quiz: [],
+    quiz: quizCtai7 as QuizQuestion[],
   },
   {
     id: "ctai-reference",

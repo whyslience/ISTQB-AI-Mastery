@@ -5,16 +5,32 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ArrowLeft, Send, Loader2, RefreshCw } from "lucide-react";
 import { useRouter } from "next/navigation";
 import type { Question } from "@/types";
+import { EXAM_TOPIC_GROUPS, EXAM_TOPICS_UI_ORDER } from "@/lib/exam-from-syllabus";
 
-const TOPICS = [
-  "Full Exam",
-  "Fundamentals of Testing",
-  "Testing Throughout the SDLC",
-  "Static Testing",
-  "Test Analysis and Design",
-  "Managing the Test Activities",
-  "Test Tools",
-];
+const TOPICS = [...EXAM_TOPICS_UI_ORDER];
+
+/** Vietnamese subtitle under each topic row (CTFL + CT-AI). */
+const TOPIC_SUBTITLE_VI: Record<string, string> = {
+  "Full Exam": "Bài thi Tổng hợp",
+  "Fundamentals of Testing": "Các Khái niệm Cơ bản",
+  "Testing Throughout the SDLC": "Kiểm thử trong Vòng đời",
+  "Static Testing": "Kiểm thử Tĩnh",
+  "Test Analysis and Design": "Phân tích và Thiết kế",
+  "Managing the Test Activities": "Quản lý Hoạt động Kiểm thử",
+  "Test Tools": "Công cụ Kiểm thử",
+  "CT-AI Full Exam": "Bài thi Tổng hợp CT-AI",
+  "CT-AI Ch1 — Introduction to Artificial Intelligence": "Chương 1 — Giới thiệu Trí tuệ Nhân tạo",
+  "CT-AI Ch2 — Quality Characteristics for AI-Based Systems": "Chương 2 — Đặc tính Chất lượng cho Hệ thống AI",
+  "CT-AI Ch3 — Machine Learning": "Chương 3 — Học Máy",
+  "CT-AI Ch4 — Testing AI-Based Systems": "Chương 4 — Kiểm thử Hệ thống Dựa trên AI",
+  "CT-AI Ch5 — Input Data Testing for MLS": "Chương 5 — Kiểm thử Dữ liệu Đầu vào cho MLS",
+  "CT-AI Ch6 — Model Testing for MLS": "Chương 6 — Kiểm thử Mô hình cho MLS",
+  "CT-AI Ch7 — MLS Development Testing": "Chương 7 — Kiểm thử Phát triển MLS",
+};
+
+function isFullExamTopic(t: string) {
+  return t === "Full Exam" || t === "CT-AI Full Exam";
+}
 
 const DIFFICULTIES = ["easy", "medium", "hard"] as const;
 const DIFF_COLORS: Record<string, { color: string; bg: string }> = {
@@ -41,7 +57,7 @@ export default function ExamPage() {
     setLoading(true);
     setError(null);
     try {
-      const isFullExam = topic === "Full Exam";
+      const isFullExam = isFullExamTopic(topic);
       const reqCount = isFullExam ? 40 : 5;
       const reqDiff = isFullExam ? "all" : difficulty;
       const res = await fetch("/api/generate", {
@@ -93,7 +109,7 @@ export default function ExamPage() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          style={{ width: "100%", maxWidth: 480 }}
+          style={{ width: "100%", maxWidth: 1040 }}
         >
           <h1 className="text-3xl font-extrabold tracking-tight mb-1">
             New Exam
@@ -113,37 +129,62 @@ export default function ExamPage() {
           >
             Topic / Chủ đề
           </label>
-          <div className="flex flex-col gap-2 mb-8">
-            {TOPICS.map((t) => (
-              <button
-                key={t}
-                onClick={() => setTopic(t)}
-                className="text-left px-4 py-3 rounded-2xl text-sm font-medium transition-all duration-200"
-                style={{
-                  background: topic === t ? "var(--color-accent-soft)" : "var(--color-surface-raised)",
-                  color: topic === t ? "var(--color-accent)" : "var(--color-text-primary)",
-                  border: `2px solid ${topic === t ? "var(--color-accent)" : "var(--color-border)"}`,
-                  cursor: "pointer",
-                }}
-              >
-                <div className="flex flex-col">
-                  <span>{t}</span>
-                  <span className="text-[10px] opacity-60 italic">
-                    {t === "Full Exam" ? "Bài thi Tổng hợp" : 
-                     t === "Fundamentals of Testing" ? "Các Khái niệm Cơ bản" :
-                     t === "Testing Throughout the SDLC" ? "Kiểm thử trong Vòng đời" :
-                     t === "Static Testing" ? "Kiểm thử Tĩnh" :
-                     t === "Test Analysis and Design" ? "Phân tích và Thiết kế" :
-                     t === "Managing the Test Activities" ? "Quản lý Hoạt động Kiểm thử" :
-                     t === "Test Tools" ? "Công cụ Kiểm thử" : ""}
-                  </span>
+          <div className="flex flex-col gap-8 xl:flex-row xl:gap-6 xl:items-start mb-8">
+            {EXAM_TOPIC_GROUPS.map((group) => {
+              const accent =
+                group.trackId === "ctfl"
+                  ? {
+                      bar: "var(--color-accent)",
+                      selBg: "var(--color-accent-soft)",
+                      selBorder: "var(--color-accent)",
+                      selColor: "var(--color-accent)",
+                    }
+                  : {
+                      bar: "var(--color-purple)",
+                      selBg: "var(--color-purple-soft)",
+                      selBorder: "var(--color-purple)",
+                      selColor: "var(--color-purple)",
+                    };
+
+              return (
+                <div key={group.trackId} className="min-w-0 flex-1">
+                  <div
+                    className="rounded-xl px-3 py-2 mb-3"
+                    style={{
+                      borderLeft: `4px solid ${accent.bar}`,
+                      background: group.trackId === "ctfl" ? "var(--color-accent-soft)" : "var(--color-purple-soft)",
+                    }}
+                  >
+                    <p className="text-sm font-bold leading-snug">{group.titleEn}</p>
+                    <p className="text-[11px] opacity-70 mt-0.5">{group.titleVi}</p>
+                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                    {group.topics.map((t) => (
+                      <button
+                        key={t}
+                        onClick={() => setTopic(t)}
+                        className="text-left px-3 py-2.5 sm:px-4 sm:py-3 rounded-2xl text-xs sm:text-sm font-medium transition-all duration-200 min-h-[4.25rem] sm:min-h-0"
+                        style={{
+                          background: topic === t ? accent.selBg : "var(--color-surface-raised)",
+                          color: topic === t ? accent.selColor : "var(--color-text-primary)",
+                          border: `2px solid ${topic === t ? accent.selBorder : "var(--color-border)"}`,
+                          cursor: "pointer",
+                        }}
+                      >
+                        <div className="flex flex-col gap-0.5">
+                          <span className="leading-snug line-clamp-3">{t}</span>
+                          <span className="text-[10px] opacity-60 italic line-clamp-2">{TOPIC_SUBTITLE_VI[t] ?? ""}</span>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
                 </div>
-              </button>
-            ))}
+              );
+            })}
           </div>
 
           {/* Difficulty picker */}
-          {topic !== "Full Exam" && (
+          {!isFullExamTopic(topic) && (
             <>
               <label
                 className="block text-xs font-bold uppercase tracking-widest mb-3"

@@ -1,0 +1,1802 @@
+[
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding supervised vs unsupervised vs reinforcement learning, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **học có giám sát / không giám sát / tăng cường**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Reinforcement learning learns exclusively from static CSV files without feedback loops.",
+        "vi": "Học tăng cường chỉ học từ CSV tĩnh không vòng phản hồi."
+      },
+      {
+        "en": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+        "vi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường."
+      },
+      {
+        "en": "ML regression in CT-AI denotes classical CTFL regression testing scope.",
+        "vi": "ML regression trong CT-AI chỉ phạm vi regression testing cổ điển của CTFL."
+      },
+      {
+        "en": "Clustering always requires externally supplied ground-truth labels for every point.",
+        "vi": "Phân cụm luôn cần nhãn chuẩn cho mọi điểm."
+      }
+    ],
+    "correctEn": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+    "correctVi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with supervised vs unsupervised vs reinforcement learning.\n* **Ôn / Study:** học có giám sát / không giám sát / tăng cường"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: train / validation / test splits.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **tách train / validation / test**.",
+    "options": [
+      {
+        "en": "Validation labels should always be merged into training immediately.",
+        "vi": "Nhãn validation luôn phải gộp ngay vào train."
+      },
+      {
+        "en": "Test set rows may be reused freely each epoch to maximize accuracy.",
+        "vi": "Hàng test có thể tái dùng tự do mỗi epoch để tối đa accuracy."
+      },
+      {
+        "en": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+        "vi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation."
+      },
+      {
+        "en": "Leakage concerns apply only to spreadsheets, not pipelines.",
+        "vi": "Lo rò chỉ áp dụng bảng tính, không áp pipeline."
+      }
+    ],
+    "correctEn": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+    "correctVi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation.",
+    "explanation": "* **Đúng / Correct:** Aligns with train / validation / test splits.\n* **Ôn / Study:** tách train / validation / test"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: ML workflow phases.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **các giai đoạn quy trình ML**.",
+    "options": [
+      {
+        "en": "Hyperparameters never interact with algorithm convergence behaviour.",
+        "vi": "Siêu tham số không tương tác hội tụ thuật toán."
+      },
+      {
+        "en": "Deployment automatically guarantees absence of drift.",
+        "vi": "Triển khai tự động đảm bảo không drift."
+      },
+      {
+        "en": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+        "vi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát."
+      },
+      {
+        "en": "Data preparation may be skipped once GPU memory is sufficient.",
+        "vi": "Có thể bỏ chuẩn bị dữ liệu khi đủ VRAM GPU."
+      }
+    ],
+    "correctEn": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+    "correctVi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML workflow phases.\n* **Ôn / Study:** các giai đoạn quy trình ML"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding confusion-matrix metrics, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **metric từ ma trận nhầm lẫn**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "F1-score cannot combine precision and recall considerations.",
+        "vi": "F1 không thể kết hợp precision và recall."
+      },
+      {
+        "en": "Accuracy alone is always sufficient for imbalanced safety-critical classifiers.",
+        "vi": "Accuracy một mình luôn đủ cho phân loại mất cân bằng an toàn."
+      },
+      {
+        "en": "Specificity ignores true negatives entirely.",
+        "vi": "Specificity bỏ qua hoàn toàn true negative."
+      },
+      {
+        "en": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+        "vi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương."
+      }
+    ],
+    "correctEn": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+    "correctVi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương.",
+    "explanation": "* **Đúng / Correct:** Aligns with confusion-matrix metrics.\n* **Ôn / Study:** metric từ ma trận nhầm lẫn"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: neural network coverage ideas.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **ý tưởng độ bao phủ mạng nơ-ron**.",
+    "options": [
+      {
+        "en": "Coverage guarantees semantic correctness of outputs.",
+        "vi": "Coverage đảm bảo đúng ngữ nghĩa đầu ra."
+      },
+      {
+        "en": "Neuron coverage replaces dataset representativeness analysis.",
+        "vi": "Neuron coverage thay phân tích đại diện tập dữ liệu."
+      },
+      {
+        "en": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+        "vi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ."
+      },
+      {
+        "en": "Backpropagation graphs forbid incremental testing strategies.",
+        "vi": "Đồ thị lan truyền ngược cấm chiến lược kiểm thử gia tăng."
+      }
+    ],
+    "correctEn": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+    "correctVi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ.",
+    "explanation": "* **Đúng / Correct:** Aligns with neural network coverage ideas.\n* **Ôn / Study:** ý tưởng độ bao phủ mạng nơ-ron"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: pretrained models, fine-tuning, RAG.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **mô hình tiền huấn luyện, fine-tuning, RAG**.",
+    "options": [
+      {
+        "en": "Pretrained weights never encode legally sensitive correlations.",
+        "vi": "Trọng số tiền huấn luyện không bao giờ mã hóa tương quan nhạy pháp lý."
+      },
+      {
+        "en": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+        "vi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi."
+      },
+      {
+        "en": "Fine-tuning removes obligation to version datasets.",
+        "vi": "Fine-tuning loại nghĩa vụ phiên bản hóa dataset."
+      },
+      {
+        "en": "RAG eliminates factual hallucinations without further testing.",
+        "vi": "RAG loại hallucination thực tế không cần kiểm thử thêm."
+      }
+    ],
+    "correctEn": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+    "correctVi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi.",
+    "explanation": "* **Đúng / Correct:** Aligns with pretrained models, fine-tuning, RAG.\n* **Ôn / Study:** mô hình tiền huấn luyện, fine-tuning, RAG"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding data preparation importance, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **tầm quan trọng chuẩn bị dữ liệu**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "EDA is decorative and never influences acceptance thresholds.",
+        "vi": "EDA mang tính trang trí và không ảnh hưởng ngưỡng nghiệm thu."
+      },
+      {
+        "en": "Synthetic augmentation removes privacy review responsibilities.",
+        "vi": "Tăng cường tổng hợp loại bỏ trách nhiệm rà soát riêng tư."
+      },
+      {
+        "en": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+        "vi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm."
+      },
+      {
+        "en": "Feature scaling guarantees fairness parity across demographic slices.",
+        "vi": "Scale đặc trưng đảm bảo công bằng nhân khẩu học."
+      }
+    ],
+    "correctEn": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+    "correctVi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm.",
+    "explanation": "* **Đúng / Correct:** Aligns with data preparation importance.\n* **Ôn / Study:** tầm quan trọng chuẩn bị dữ liệu"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: model hyperparameters vs algorithm hyperparameters.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **siêu tham số mô hình vs thuật toán**.",
+    "options": [
+      {
+        "en": "Learning rate belongs exclusively to dataset schema design.",
+        "vi": "Learning rate chỉ thuộc thiết kế schema dataset."
+      },
+      {
+        "en": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+        "vi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…)."
+      },
+      {
+        "en": "Architecture depth has no influence on overfitting tendency.",
+        "vi": "Độ sâu kiến trúc không ảnh hưởng xu hướng overfit."
+      },
+      {
+        "en": "Hyperparameter tuning invalidates independent test sets.",
+        "vi": "Tinh chỉnh siêu tham số làm mất hiệu lực tập test độc lập."
+      }
+    ],
+    "correctEn": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+    "correctVi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…).",
+    "explanation": "* **Đúng / Correct:** Aligns with model hyperparameters vs algorithm hyperparameters.\n* **Ôn / Study:** siêu tham số mô hình vs thuật toán"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: supervised vs unsupervised vs reinforcement learning.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **học có giám sát / không giám sát / tăng cường**.",
+    "options": [
+      {
+        "en": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+        "vi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường."
+      },
+      {
+        "en": "Reinforcement learning learns exclusively from static CSV files without feedback loops.",
+        "vi": "Học tăng cường chỉ học từ CSV tĩnh không vòng phản hồi."
+      },
+      {
+        "en": "Clustering always requires externally supplied ground-truth labels for every point.",
+        "vi": "Phân cụm luôn cần nhãn chuẩn cho mọi điểm."
+      },
+      {
+        "en": "ML regression in CT-AI denotes classical CTFL regression testing scope.",
+        "vi": "ML regression trong CT-AI chỉ phạm vi regression testing cổ điển của CTFL."
+      }
+    ],
+    "correctEn": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+    "correctVi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with supervised vs unsupervised vs reinforcement learning.\n* **Ôn / Study:** học có giám sát / không giám sát / tăng cường"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding train / validation / test splits, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **tách train / validation / test**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Leakage concerns apply only to spreadsheets, not pipelines.",
+        "vi": "Lo rò chỉ áp dụng bảng tính, không áp pipeline."
+      },
+      {
+        "en": "Validation labels should always be merged into training immediately.",
+        "vi": "Nhãn validation luôn phải gộp ngay vào train."
+      },
+      {
+        "en": "Test set rows may be reused freely each epoch to maximize accuracy.",
+        "vi": "Hàng test có thể tái dùng tự do mỗi epoch để tối đa accuracy."
+      },
+      {
+        "en": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+        "vi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation."
+      }
+    ],
+    "correctEn": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+    "correctVi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation.",
+    "explanation": "* **Đúng / Correct:** Aligns with train / validation / test splits.\n* **Ôn / Study:** tách train / validation / test"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: ML workflow phases.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **các giai đoạn quy trình ML**.",
+    "options": [
+      {
+        "en": "Deployment automatically guarantees absence of drift.",
+        "vi": "Triển khai tự động đảm bảo không drift."
+      },
+      {
+        "en": "Data preparation may be skipped once GPU memory is sufficient.",
+        "vi": "Có thể bỏ chuẩn bị dữ liệu khi đủ VRAM GPU."
+      },
+      {
+        "en": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+        "vi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát."
+      },
+      {
+        "en": "Hyperparameters never interact with algorithm convergence behaviour.",
+        "vi": "Siêu tham số không tương tác hội tụ thuật toán."
+      }
+    ],
+    "correctEn": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+    "correctVi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML workflow phases.\n* **Ôn / Study:** các giai đoạn quy trình ML"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: confusion-matrix metrics.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **metric từ ma trận nhầm lẫn**.",
+    "options": [
+      {
+        "en": "Accuracy alone is always sufficient for imbalanced safety-critical classifiers.",
+        "vi": "Accuracy một mình luôn đủ cho phân loại mất cân bằng an toàn."
+      },
+      {
+        "en": "Specificity ignores true negatives entirely.",
+        "vi": "Specificity bỏ qua hoàn toàn true negative."
+      },
+      {
+        "en": "F1-score cannot combine precision and recall considerations.",
+        "vi": "F1 không thể kết hợp precision và recall."
+      },
+      {
+        "en": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+        "vi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương."
+      }
+    ],
+    "correctEn": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+    "correctVi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương.",
+    "explanation": "* **Đúng / Correct:** Aligns with confusion-matrix metrics.\n* **Ôn / Study:** metric từ ma trận nhầm lẫn"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding neural network coverage ideas, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **ý tưởng độ bao phủ mạng nơ-ron**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Backpropagation graphs forbid incremental testing strategies.",
+        "vi": "Đồ thị lan truyền ngược cấm chiến lược kiểm thử gia tăng."
+      },
+      {
+        "en": "Neuron coverage replaces dataset representativeness analysis.",
+        "vi": "Neuron coverage thay phân tích đại diện tập dữ liệu."
+      },
+      {
+        "en": "Coverage guarantees semantic correctness of outputs.",
+        "vi": "Coverage đảm bảo đúng ngữ nghĩa đầu ra."
+      },
+      {
+        "en": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+        "vi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ."
+      }
+    ],
+    "correctEn": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+    "correctVi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ.",
+    "explanation": "* **Đúng / Correct:** Aligns with neural network coverage ideas.\n* **Ôn / Study:** ý tưởng độ bao phủ mạng nơ-ron"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: pretrained models, fine-tuning, RAG.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **mô hình tiền huấn luyện, fine-tuning, RAG**.",
+    "options": [
+      {
+        "en": "RAG eliminates factual hallucinations without further testing.",
+        "vi": "RAG loại hallucination thực tế không cần kiểm thử thêm."
+      },
+      {
+        "en": "Pretrained weights never encode legally sensitive correlations.",
+        "vi": "Trọng số tiền huấn luyện không bao giờ mã hóa tương quan nhạy pháp lý."
+      },
+      {
+        "en": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+        "vi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi."
+      },
+      {
+        "en": "Fine-tuning removes obligation to version datasets.",
+        "vi": "Fine-tuning loại nghĩa vụ phiên bản hóa dataset."
+      }
+    ],
+    "correctEn": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+    "correctVi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi.",
+    "explanation": "* **Đúng / Correct:** Aligns with pretrained models, fine-tuning, RAG.\n* **Ôn / Study:** mô hình tiền huấn luyện, fine-tuning, RAG"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: data preparation importance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **tầm quan trọng chuẩn bị dữ liệu**.",
+    "options": [
+      {
+        "en": "Synthetic augmentation removes privacy review responsibilities.",
+        "vi": "Tăng cường tổng hợp loại bỏ trách nhiệm rà soát riêng tư."
+      },
+      {
+        "en": "Feature scaling guarantees fairness parity across demographic slices.",
+        "vi": "Scale đặc trưng đảm bảo công bằng nhân khẩu học."
+      },
+      {
+        "en": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+        "vi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm."
+      },
+      {
+        "en": "EDA is decorative and never influences acceptance thresholds.",
+        "vi": "EDA mang tính trang trí và không ảnh hưởng ngưỡng nghiệm thu."
+      }
+    ],
+    "correctEn": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+    "correctVi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm.",
+    "explanation": "* **Đúng / Correct:** Aligns with data preparation importance.\n* **Ôn / Study:** tầm quan trọng chuẩn bị dữ liệu"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding model hyperparameters vs algorithm hyperparameters, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **siêu tham số mô hình vs thuật toán**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Architecture depth has no influence on overfitting tendency.",
+        "vi": "Độ sâu kiến trúc không ảnh hưởng xu hướng overfit."
+      },
+      {
+        "en": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+        "vi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…)."
+      },
+      {
+        "en": "Hyperparameter tuning invalidates independent test sets.",
+        "vi": "Tinh chỉnh siêu tham số làm mất hiệu lực tập test độc lập."
+      },
+      {
+        "en": "Learning rate belongs exclusively to dataset schema design.",
+        "vi": "Learning rate chỉ thuộc thiết kế schema dataset."
+      }
+    ],
+    "correctEn": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+    "correctVi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…).",
+    "explanation": "* **Đúng / Correct:** Aligns with model hyperparameters vs algorithm hyperparameters.\n* **Ôn / Study:** siêu tham số mô hình vs thuật toán"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: supervised vs unsupervised vs reinforcement learning.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **học có giám sát / không giám sát / tăng cường**.",
+    "options": [
+      {
+        "en": "Reinforcement learning learns exclusively from static CSV files without feedback loops.",
+        "vi": "Học tăng cường chỉ học từ CSV tĩnh không vòng phản hồi."
+      },
+      {
+        "en": "ML regression in CT-AI denotes classical CTFL regression testing scope.",
+        "vi": "ML regression trong CT-AI chỉ phạm vi regression testing cổ điển của CTFL."
+      },
+      {
+        "en": "Clustering always requires externally supplied ground-truth labels for every point.",
+        "vi": "Phân cụm luôn cần nhãn chuẩn cho mọi điểm."
+      },
+      {
+        "en": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+        "vi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường."
+      }
+    ],
+    "correctEn": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+    "correctVi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with supervised vs unsupervised vs reinforcement learning.\n* **Ôn / Study:** học có giám sát / không giám sát / tăng cường"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: train / validation / test splits.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **tách train / validation / test**.",
+    "options": [
+      {
+        "en": "Test set rows may be reused freely each epoch to maximize accuracy.",
+        "vi": "Hàng test có thể tái dùng tự do mỗi epoch để tối đa accuracy."
+      },
+      {
+        "en": "Leakage concerns apply only to spreadsheets, not pipelines.",
+        "vi": "Lo rò chỉ áp dụng bảng tính, không áp pipeline."
+      },
+      {
+        "en": "Validation labels should always be merged into training immediately.",
+        "vi": "Nhãn validation luôn phải gộp ngay vào train."
+      },
+      {
+        "en": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+        "vi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation."
+      }
+    ],
+    "correctEn": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+    "correctVi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation.",
+    "explanation": "* **Đúng / Correct:** Aligns with train / validation / test splits.\n* **Ôn / Study:** tách train / validation / test"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding ML workflow phases, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **các giai đoạn quy trình ML**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+        "vi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát."
+      },
+      {
+        "en": "Data preparation may be skipped once GPU memory is sufficient.",
+        "vi": "Có thể bỏ chuẩn bị dữ liệu khi đủ VRAM GPU."
+      },
+      {
+        "en": "Hyperparameters never interact with algorithm convergence behaviour.",
+        "vi": "Siêu tham số không tương tác hội tụ thuật toán."
+      },
+      {
+        "en": "Deployment automatically guarantees absence of drift.",
+        "vi": "Triển khai tự động đảm bảo không drift."
+      }
+    ],
+    "correctEn": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+    "correctVi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML workflow phases.\n* **Ôn / Study:** các giai đoạn quy trình ML"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: confusion-matrix metrics.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **metric từ ma trận nhầm lẫn**.",
+    "options": [
+      {
+        "en": "Accuracy alone is always sufficient for imbalanced safety-critical classifiers.",
+        "vi": "Accuracy một mình luôn đủ cho phân loại mất cân bằng an toàn."
+      },
+      {
+        "en": "F1-score cannot combine precision and recall considerations.",
+        "vi": "F1 không thể kết hợp precision và recall."
+      },
+      {
+        "en": "Specificity ignores true negatives entirely.",
+        "vi": "Specificity bỏ qua hoàn toàn true negative."
+      },
+      {
+        "en": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+        "vi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương."
+      }
+    ],
+    "correctEn": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+    "correctVi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương.",
+    "explanation": "* **Đúng / Correct:** Aligns with confusion-matrix metrics.\n* **Ôn / Study:** metric từ ma trận nhầm lẫn"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: neural network coverage ideas.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **ý tưởng độ bao phủ mạng nơ-ron**.",
+    "options": [
+      {
+        "en": "Neuron coverage replaces dataset representativeness analysis.",
+        "vi": "Neuron coverage thay phân tích đại diện tập dữ liệu."
+      },
+      {
+        "en": "Backpropagation graphs forbid incremental testing strategies.",
+        "vi": "Đồ thị lan truyền ngược cấm chiến lược kiểm thử gia tăng."
+      },
+      {
+        "en": "Coverage guarantees semantic correctness of outputs.",
+        "vi": "Coverage đảm bảo đúng ngữ nghĩa đầu ra."
+      },
+      {
+        "en": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+        "vi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ."
+      }
+    ],
+    "correctEn": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+    "correctVi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ.",
+    "explanation": "* **Đúng / Correct:** Aligns with neural network coverage ideas.\n* **Ôn / Study:** ý tưởng độ bao phủ mạng nơ-ron"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding pretrained models, fine-tuning, RAG, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **mô hình tiền huấn luyện, fine-tuning, RAG**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Pretrained weights never encode legally sensitive correlations.",
+        "vi": "Trọng số tiền huấn luyện không bao giờ mã hóa tương quan nhạy pháp lý."
+      },
+      {
+        "en": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+        "vi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi."
+      },
+      {
+        "en": "RAG eliminates factual hallucinations without further testing.",
+        "vi": "RAG loại hallucination thực tế không cần kiểm thử thêm."
+      },
+      {
+        "en": "Fine-tuning removes obligation to version datasets.",
+        "vi": "Fine-tuning loại nghĩa vụ phiên bản hóa dataset."
+      }
+    ],
+    "correctEn": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+    "correctVi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi.",
+    "explanation": "* **Đúng / Correct:** Aligns with pretrained models, fine-tuning, RAG.\n* **Ôn / Study:** mô hình tiền huấn luyện, fine-tuning, RAG"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: data preparation importance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **tầm quan trọng chuẩn bị dữ liệu**.",
+    "options": [
+      {
+        "en": "Synthetic augmentation removes privacy review responsibilities.",
+        "vi": "Tăng cường tổng hợp loại bỏ trách nhiệm rà soát riêng tư."
+      },
+      {
+        "en": "Feature scaling guarantees fairness parity across demographic slices.",
+        "vi": "Scale đặc trưng đảm bảo công bằng nhân khẩu học."
+      },
+      {
+        "en": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+        "vi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm."
+      },
+      {
+        "en": "EDA is decorative and never influences acceptance thresholds.",
+        "vi": "EDA mang tính trang trí và không ảnh hưởng ngưỡng nghiệm thu."
+      }
+    ],
+    "correctEn": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+    "correctVi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm.",
+    "explanation": "* **Đúng / Correct:** Aligns with data preparation importance.\n* **Ôn / Study:** tầm quan trọng chuẩn bị dữ liệu"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: model hyperparameters vs algorithm hyperparameters.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **siêu tham số mô hình vs thuật toán**.",
+    "options": [
+      {
+        "en": "Learning rate belongs exclusively to dataset schema design.",
+        "vi": "Learning rate chỉ thuộc thiết kế schema dataset."
+      },
+      {
+        "en": "Architecture depth has no influence on overfitting tendency.",
+        "vi": "Độ sâu kiến trúc không ảnh hưởng xu hướng overfit."
+      },
+      {
+        "en": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+        "vi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…)."
+      },
+      {
+        "en": "Hyperparameter tuning invalidates independent test sets.",
+        "vi": "Tinh chỉnh siêu tham số làm mất hiệu lực tập test độc lập."
+      }
+    ],
+    "correctEn": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+    "correctVi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…).",
+    "explanation": "* **Đúng / Correct:** Aligns with model hyperparameters vs algorithm hyperparameters.\n* **Ôn / Study:** siêu tham số mô hình vs thuật toán"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding supervised vs unsupervised vs reinforcement learning, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **học có giám sát / không giám sát / tăng cường**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "ML regression in CT-AI denotes classical CTFL regression testing scope.",
+        "vi": "ML regression trong CT-AI chỉ phạm vi regression testing cổ điển của CTFL."
+      },
+      {
+        "en": "Clustering always requires externally supplied ground-truth labels for every point.",
+        "vi": "Phân cụm luôn cần nhãn chuẩn cho mọi điểm."
+      },
+      {
+        "en": "Reinforcement learning learns exclusively from static CSV files without feedback loops.",
+        "vi": "Học tăng cường chỉ học từ CSV tĩnh không vòng phản hồi."
+      },
+      {
+        "en": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+        "vi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường."
+      }
+    ],
+    "correctEn": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+    "correctVi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with supervised vs unsupervised vs reinforcement learning.\n* **Ôn / Study:** học có giám sát / không giám sát / tăng cường"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: train / validation / test splits.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **tách train / validation / test**.",
+    "options": [
+      {
+        "en": "Test set rows may be reused freely each epoch to maximize accuracy.",
+        "vi": "Hàng test có thể tái dùng tự do mỗi epoch để tối đa accuracy."
+      },
+      {
+        "en": "Leakage concerns apply only to spreadsheets, not pipelines.",
+        "vi": "Lo rò chỉ áp dụng bảng tính, không áp pipeline."
+      },
+      {
+        "en": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+        "vi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation."
+      },
+      {
+        "en": "Validation labels should always be merged into training immediately.",
+        "vi": "Nhãn validation luôn phải gộp ngay vào train."
+      }
+    ],
+    "correctEn": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+    "correctVi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation.",
+    "explanation": "* **Đúng / Correct:** Aligns with train / validation / test splits.\n* **Ôn / Study:** tách train / validation / test"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: ML workflow phases.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **các giai đoạn quy trình ML**.",
+    "options": [
+      {
+        "en": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+        "vi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát."
+      },
+      {
+        "en": "Deployment automatically guarantees absence of drift.",
+        "vi": "Triển khai tự động đảm bảo không drift."
+      },
+      {
+        "en": "Data preparation may be skipped once GPU memory is sufficient.",
+        "vi": "Có thể bỏ chuẩn bị dữ liệu khi đủ VRAM GPU."
+      },
+      {
+        "en": "Hyperparameters never interact with algorithm convergence behaviour.",
+        "vi": "Siêu tham số không tương tác hội tụ thuật toán."
+      }
+    ],
+    "correctEn": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+    "correctVi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML workflow phases.\n* **Ôn / Study:** các giai đoạn quy trình ML"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding confusion-matrix metrics, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **metric từ ma trận nhầm lẫn**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Specificity ignores true negatives entirely.",
+        "vi": "Specificity bỏ qua hoàn toàn true negative."
+      },
+      {
+        "en": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+        "vi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương."
+      },
+      {
+        "en": "F1-score cannot combine precision and recall considerations.",
+        "vi": "F1 không thể kết hợp precision và recall."
+      },
+      {
+        "en": "Accuracy alone is always sufficient for imbalanced safety-critical classifiers.",
+        "vi": "Accuracy một mình luôn đủ cho phân loại mất cân bằng an toàn."
+      }
+    ],
+    "correctEn": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+    "correctVi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương.",
+    "explanation": "* **Đúng / Correct:** Aligns with confusion-matrix metrics.\n* **Ôn / Study:** metric từ ma trận nhầm lẫn"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: neural network coverage ideas.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **ý tưởng độ bao phủ mạng nơ-ron**.",
+    "options": [
+      {
+        "en": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+        "vi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ."
+      },
+      {
+        "en": "Coverage guarantees semantic correctness of outputs.",
+        "vi": "Coverage đảm bảo đúng ngữ nghĩa đầu ra."
+      },
+      {
+        "en": "Backpropagation graphs forbid incremental testing strategies.",
+        "vi": "Đồ thị lan truyền ngược cấm chiến lược kiểm thử gia tăng."
+      },
+      {
+        "en": "Neuron coverage replaces dataset representativeness analysis.",
+        "vi": "Neuron coverage thay phân tích đại diện tập dữ liệu."
+      }
+    ],
+    "correctEn": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+    "correctVi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ.",
+    "explanation": "* **Đúng / Correct:** Aligns with neural network coverage ideas.\n* **Ôn / Study:** ý tưởng độ bao phủ mạng nơ-ron"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: pretrained models, fine-tuning, RAG.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **mô hình tiền huấn luyện, fine-tuning, RAG**.",
+    "options": [
+      {
+        "en": "RAG eliminates factual hallucinations without further testing.",
+        "vi": "RAG loại hallucination thực tế không cần kiểm thử thêm."
+      },
+      {
+        "en": "Pretrained weights never encode legally sensitive correlations.",
+        "vi": "Trọng số tiền huấn luyện không bao giờ mã hóa tương quan nhạy pháp lý."
+      },
+      {
+        "en": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+        "vi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi."
+      },
+      {
+        "en": "Fine-tuning removes obligation to version datasets.",
+        "vi": "Fine-tuning loại nghĩa vụ phiên bản hóa dataset."
+      }
+    ],
+    "correctEn": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+    "correctVi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi.",
+    "explanation": "* **Đúng / Correct:** Aligns with pretrained models, fine-tuning, RAG.\n* **Ôn / Study:** mô hình tiền huấn luyện, fine-tuning, RAG"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding data preparation importance, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **tầm quan trọng chuẩn bị dữ liệu**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+        "vi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm."
+      },
+      {
+        "en": "Feature scaling guarantees fairness parity across demographic slices.",
+        "vi": "Scale đặc trưng đảm bảo công bằng nhân khẩu học."
+      },
+      {
+        "en": "EDA is decorative and never influences acceptance thresholds.",
+        "vi": "EDA mang tính trang trí và không ảnh hưởng ngưỡng nghiệm thu."
+      },
+      {
+        "en": "Synthetic augmentation removes privacy review responsibilities.",
+        "vi": "Tăng cường tổng hợp loại bỏ trách nhiệm rà soát riêng tư."
+      }
+    ],
+    "correctEn": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+    "correctVi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm.",
+    "explanation": "* **Đúng / Correct:** Aligns with data preparation importance.\n* **Ôn / Study:** tầm quan trọng chuẩn bị dữ liệu"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: model hyperparameters vs algorithm hyperparameters.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **siêu tham số mô hình vs thuật toán**.",
+    "options": [
+      {
+        "en": "Hyperparameter tuning invalidates independent test sets.",
+        "vi": "Tinh chỉnh siêu tham số làm mất hiệu lực tập test độc lập."
+      },
+      {
+        "en": "Learning rate belongs exclusively to dataset schema design.",
+        "vi": "Learning rate chỉ thuộc thiết kế schema dataset."
+      },
+      {
+        "en": "Architecture depth has no influence on overfitting tendency.",
+        "vi": "Độ sâu kiến trúc không ảnh hưởng xu hướng overfit."
+      },
+      {
+        "en": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+        "vi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…)."
+      }
+    ],
+    "correctEn": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+    "correctVi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…).",
+    "explanation": "* **Đúng / Correct:** Aligns with model hyperparameters vs algorithm hyperparameters.\n* **Ôn / Study:** siêu tham số mô hình vs thuật toán"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: supervised vs unsupervised vs reinforcement learning.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **học có giám sát / không giám sát / tăng cường**.",
+    "options": [
+      {
+        "en": "ML regression in CT-AI denotes classical CTFL regression testing scope.",
+        "vi": "ML regression trong CT-AI chỉ phạm vi regression testing cổ điển của CTFL."
+      },
+      {
+        "en": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+        "vi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường."
+      },
+      {
+        "en": "Clustering always requires externally supplied ground-truth labels for every point.",
+        "vi": "Phân cụm luôn cần nhãn chuẩn cho mọi điểm."
+      },
+      {
+        "en": "Reinforcement learning learns exclusively from static CSV files without feedback loops.",
+        "vi": "Học tăng cường chỉ học từ CSV tĩnh không vòng phản hồi."
+      }
+    ],
+    "correctEn": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+    "correctVi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with supervised vs unsupervised vs reinforcement learning.\n* **Ôn / Study:** học có giám sát / không giám sát / tăng cường"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding train / validation / test splits, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **tách train / validation / test**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Test set rows may be reused freely each epoch to maximize accuracy.",
+        "vi": "Hàng test có thể tái dùng tự do mỗi epoch để tối đa accuracy."
+      },
+      {
+        "en": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+        "vi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation."
+      },
+      {
+        "en": "Validation labels should always be merged into training immediately.",
+        "vi": "Nhãn validation luôn phải gộp ngay vào train."
+      },
+      {
+        "en": "Leakage concerns apply only to spreadsheets, not pipelines.",
+        "vi": "Lo rò chỉ áp dụng bảng tính, không áp pipeline."
+      }
+    ],
+    "correctEn": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+    "correctVi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation.",
+    "explanation": "* **Đúng / Correct:** Aligns with train / validation / test splits.\n* **Ôn / Study:** tách train / validation / test"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: ML workflow phases.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **các giai đoạn quy trình ML**.",
+    "options": [
+      {
+        "en": "Data preparation may be skipped once GPU memory is sufficient.",
+        "vi": "Có thể bỏ chuẩn bị dữ liệu khi đủ VRAM GPU."
+      },
+      {
+        "en": "Hyperparameters never interact with algorithm convergence behaviour.",
+        "vi": "Siêu tham số không tương tác hội tụ thuật toán."
+      },
+      {
+        "en": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+        "vi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát."
+      },
+      {
+        "en": "Deployment automatically guarantees absence of drift.",
+        "vi": "Triển khai tự động đảm bảo không drift."
+      }
+    ],
+    "correctEn": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+    "correctVi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML workflow phases.\n* **Ôn / Study:** các giai đoạn quy trình ML"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: confusion-matrix metrics.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **metric từ ma trận nhầm lẫn**.",
+    "options": [
+      {
+        "en": "Accuracy alone is always sufficient for imbalanced safety-critical classifiers.",
+        "vi": "Accuracy một mình luôn đủ cho phân loại mất cân bằng an toàn."
+      },
+      {
+        "en": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+        "vi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương."
+      },
+      {
+        "en": "Specificity ignores true negatives entirely.",
+        "vi": "Specificity bỏ qua hoàn toàn true negative."
+      },
+      {
+        "en": "F1-score cannot combine precision and recall considerations.",
+        "vi": "F1 không thể kết hợp precision và recall."
+      }
+    ],
+    "correctEn": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+    "correctVi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương.",
+    "explanation": "* **Đúng / Correct:** Aligns with confusion-matrix metrics.\n* **Ôn / Study:** metric từ ma trận nhầm lẫn"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding neural network coverage ideas, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **ý tưởng độ bao phủ mạng nơ-ron**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Coverage guarantees semantic correctness of outputs.",
+        "vi": "Coverage đảm bảo đúng ngữ nghĩa đầu ra."
+      },
+      {
+        "en": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+        "vi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ."
+      },
+      {
+        "en": "Backpropagation graphs forbid incremental testing strategies.",
+        "vi": "Đồ thị lan truyền ngược cấm chiến lược kiểm thử gia tăng."
+      },
+      {
+        "en": "Neuron coverage replaces dataset representativeness analysis.",
+        "vi": "Neuron coverage thay phân tích đại diện tập dữ liệu."
+      }
+    ],
+    "correctEn": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+    "correctVi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ.",
+    "explanation": "* **Đúng / Correct:** Aligns with neural network coverage ideas.\n* **Ôn / Study:** ý tưởng độ bao phủ mạng nơ-ron"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: pretrained models, fine-tuning, RAG.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **mô hình tiền huấn luyện, fine-tuning, RAG**.",
+    "options": [
+      {
+        "en": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+        "vi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi."
+      },
+      {
+        "en": "Fine-tuning removes obligation to version datasets.",
+        "vi": "Fine-tuning loại nghĩa vụ phiên bản hóa dataset."
+      },
+      {
+        "en": "Pretrained weights never encode legally sensitive correlations.",
+        "vi": "Trọng số tiền huấn luyện không bao giờ mã hóa tương quan nhạy pháp lý."
+      },
+      {
+        "en": "RAG eliminates factual hallucinations without further testing.",
+        "vi": "RAG loại hallucination thực tế không cần kiểm thử thêm."
+      }
+    ],
+    "correctEn": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+    "correctVi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi.",
+    "explanation": "* **Đúng / Correct:** Aligns with pretrained models, fine-tuning, RAG.\n* **Ôn / Study:** mô hình tiền huấn luyện, fine-tuning, RAG"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: data preparation importance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **tầm quan trọng chuẩn bị dữ liệu**.",
+    "options": [
+      {
+        "en": "Synthetic augmentation removes privacy review responsibilities.",
+        "vi": "Tăng cường tổng hợp loại bỏ trách nhiệm rà soát riêng tư."
+      },
+      {
+        "en": "EDA is decorative and never influences acceptance thresholds.",
+        "vi": "EDA mang tính trang trí và không ảnh hưởng ngưỡng nghiệm thu."
+      },
+      {
+        "en": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+        "vi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm."
+      },
+      {
+        "en": "Feature scaling guarantees fairness parity across demographic slices.",
+        "vi": "Scale đặc trưng đảm bảo công bằng nhân khẩu học."
+      }
+    ],
+    "correctEn": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+    "correctVi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm.",
+    "explanation": "* **Đúng / Correct:** Aligns with data preparation importance.\n* **Ôn / Study:** tầm quan trọng chuẩn bị dữ liệu"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding model hyperparameters vs algorithm hyperparameters, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **siêu tham số mô hình vs thuật toán**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Hyperparameter tuning invalidates independent test sets.",
+        "vi": "Tinh chỉnh siêu tham số làm mất hiệu lực tập test độc lập."
+      },
+      {
+        "en": "Learning rate belongs exclusively to dataset schema design.",
+        "vi": "Learning rate chỉ thuộc thiết kế schema dataset."
+      },
+      {
+        "en": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+        "vi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…)."
+      },
+      {
+        "en": "Architecture depth has no influence on overfitting tendency.",
+        "vi": "Độ sâu kiến trúc không ảnh hưởng xu hướng overfit."
+      }
+    ],
+    "correctEn": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+    "correctVi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…).",
+    "explanation": "* **Đúng / Correct:** Aligns with model hyperparameters vs algorithm hyperparameters.\n* **Ôn / Study:** siêu tham số mô hình vs thuật toán"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: supervised vs unsupervised vs reinforcement learning.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **học có giám sát / không giám sát / tăng cường**.",
+    "options": [
+      {
+        "en": "ML regression in CT-AI denotes classical CTFL regression testing scope.",
+        "vi": "ML regression trong CT-AI chỉ phạm vi regression testing cổ điển của CTFL."
+      },
+      {
+        "en": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+        "vi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường."
+      },
+      {
+        "en": "Clustering always requires externally supplied ground-truth labels for every point.",
+        "vi": "Phân cụm luôn cần nhãn chuẩn cho mọi điểm."
+      },
+      {
+        "en": "Reinforcement learning learns exclusively from static CSV files without feedback loops.",
+        "vi": "Học tăng cường chỉ học từ CSV tĩnh không vòng phản hồi."
+      }
+    ],
+    "correctEn": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+    "correctVi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with supervised vs unsupervised vs reinforcement learning.\n* **Ôn / Study:** học có giám sát / không giám sát / tăng cường"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: train / validation / test splits.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **tách train / validation / test**.",
+    "options": [
+      {
+        "en": "Validation labels should always be merged into training immediately.",
+        "vi": "Nhãn validation luôn phải gộp ngay vào train."
+      },
+      {
+        "en": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+        "vi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation."
+      },
+      {
+        "en": "Leakage concerns apply only to spreadsheets, not pipelines.",
+        "vi": "Lo rò chỉ áp dụng bảng tính, không áp pipeline."
+      },
+      {
+        "en": "Test set rows may be reused freely each epoch to maximize accuracy.",
+        "vi": "Hàng test có thể tái dùng tự do mỗi epoch để tối đa accuracy."
+      }
+    ],
+    "correctEn": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+    "correctVi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation.",
+    "explanation": "* **Đúng / Correct:** Aligns with train / validation / test splits.\n* **Ôn / Study:** tách train / validation / test"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding ML workflow phases, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **các giai đoạn quy trình ML**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+        "vi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát."
+      },
+      {
+        "en": "Hyperparameters never interact with algorithm convergence behaviour.",
+        "vi": "Siêu tham số không tương tác hội tụ thuật toán."
+      },
+      {
+        "en": "Data preparation may be skipped once GPU memory is sufficient.",
+        "vi": "Có thể bỏ chuẩn bị dữ liệu khi đủ VRAM GPU."
+      },
+      {
+        "en": "Deployment automatically guarantees absence of drift.",
+        "vi": "Triển khai tự động đảm bảo không drift."
+      }
+    ],
+    "correctEn": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+    "correctVi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML workflow phases.\n* **Ôn / Study:** các giai đoạn quy trình ML"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: confusion-matrix metrics.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **metric từ ma trận nhầm lẫn**.",
+    "options": [
+      {
+        "en": "Accuracy alone is always sufficient for imbalanced safety-critical classifiers.",
+        "vi": "Accuracy một mình luôn đủ cho phân loại mất cân bằng an toàn."
+      },
+      {
+        "en": "Specificity ignores true negatives entirely.",
+        "vi": "Specificity bỏ qua hoàn toàn true negative."
+      },
+      {
+        "en": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+        "vi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương."
+      },
+      {
+        "en": "F1-score cannot combine precision and recall considerations.",
+        "vi": "F1 không thể kết hợp precision và recall."
+      }
+    ],
+    "correctEn": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+    "correctVi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương.",
+    "explanation": "* **Đúng / Correct:** Aligns with confusion-matrix metrics.\n* **Ôn / Study:** metric từ ma trận nhầm lẫn"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: neural network coverage ideas.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **ý tưởng độ bao phủ mạng nơ-ron**.",
+    "options": [
+      {
+        "en": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+        "vi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ."
+      },
+      {
+        "en": "Coverage guarantees semantic correctness of outputs.",
+        "vi": "Coverage đảm bảo đúng ngữ nghĩa đầu ra."
+      },
+      {
+        "en": "Backpropagation graphs forbid incremental testing strategies.",
+        "vi": "Đồ thị lan truyền ngược cấm chiến lược kiểm thử gia tăng."
+      },
+      {
+        "en": "Neuron coverage replaces dataset representativeness analysis.",
+        "vi": "Neuron coverage thay phân tích đại diện tập dữ liệu."
+      }
+    ],
+    "correctEn": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+    "correctVi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ.",
+    "explanation": "* **Đúng / Correct:** Aligns with neural network coverage ideas.\n* **Ôn / Study:** ý tưởng độ bao phủ mạng nơ-ron"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding pretrained models, fine-tuning, RAG, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **mô hình tiền huấn luyện, fine-tuning, RAG**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+        "vi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi."
+      },
+      {
+        "en": "Fine-tuning removes obligation to version datasets.",
+        "vi": "Fine-tuning loại nghĩa vụ phiên bản hóa dataset."
+      },
+      {
+        "en": "Pretrained weights never encode legally sensitive correlations.",
+        "vi": "Trọng số tiền huấn luyện không bao giờ mã hóa tương quan nhạy pháp lý."
+      },
+      {
+        "en": "RAG eliminates factual hallucinations without further testing.",
+        "vi": "RAG loại hallucination thực tế không cần kiểm thử thêm."
+      }
+    ],
+    "correctEn": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+    "correctVi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi.",
+    "explanation": "* **Đúng / Correct:** Aligns with pretrained models, fine-tuning, RAG.\n* **Ôn / Study:** mô hình tiền huấn luyện, fine-tuning, RAG"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: data preparation importance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **tầm quan trọng chuẩn bị dữ liệu**.",
+    "options": [
+      {
+        "en": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+        "vi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm."
+      },
+      {
+        "en": "EDA is decorative and never influences acceptance thresholds.",
+        "vi": "EDA mang tính trang trí và không ảnh hưởng ngưỡng nghiệm thu."
+      },
+      {
+        "en": "Synthetic augmentation removes privacy review responsibilities.",
+        "vi": "Tăng cường tổng hợp loại bỏ trách nhiệm rà soát riêng tư."
+      },
+      {
+        "en": "Feature scaling guarantees fairness parity across demographic slices.",
+        "vi": "Scale đặc trưng đảm bảo công bằng nhân khẩu học."
+      }
+    ],
+    "correctEn": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+    "correctVi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm.",
+    "explanation": "* **Đúng / Correct:** Aligns with data preparation importance.\n* **Ôn / Study:** tầm quan trọng chuẩn bị dữ liệu"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: model hyperparameters vs algorithm hyperparameters.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **siêu tham số mô hình vs thuật toán**.",
+    "options": [
+      {
+        "en": "Learning rate belongs exclusively to dataset schema design.",
+        "vi": "Learning rate chỉ thuộc thiết kế schema dataset."
+      },
+      {
+        "en": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+        "vi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…)."
+      },
+      {
+        "en": "Hyperparameter tuning invalidates independent test sets.",
+        "vi": "Tinh chỉnh siêu tham số làm mất hiệu lực tập test độc lập."
+      },
+      {
+        "en": "Architecture depth has no influence on overfitting tendency.",
+        "vi": "Độ sâu kiến trúc không ảnh hưởng xu hướng overfit."
+      }
+    ],
+    "correctEn": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+    "correctVi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…).",
+    "explanation": "* **Đúng / Correct:** Aligns with model hyperparameters vs algorithm hyperparameters.\n* **Ôn / Study:** siêu tham số mô hình vs thuật toán"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding supervised vs unsupervised vs reinforcement learning, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **học có giám sát / không giám sát / tăng cường**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Reinforcement learning learns exclusively from static CSV files without feedback loops.",
+        "vi": "Học tăng cường chỉ học từ CSV tĩnh không vòng phản hồi."
+      },
+      {
+        "en": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+        "vi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường."
+      },
+      {
+        "en": "Clustering always requires externally supplied ground-truth labels for every point.",
+        "vi": "Phân cụm luôn cần nhãn chuẩn cho mọi điểm."
+      },
+      {
+        "en": "ML regression in CT-AI denotes classical CTFL regression testing scope.",
+        "vi": "ML regression trong CT-AI chỉ phạm vi regression testing cổ điển của CTFL."
+      }
+    ],
+    "correctEn": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+    "correctVi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with supervised vs unsupervised vs reinforcement learning.\n* **Ôn / Study:** học có giám sát / không giám sát / tăng cường"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: train / validation / test splits.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **tách train / validation / test**.",
+    "options": [
+      {
+        "en": "Leakage concerns apply only to spreadsheets, not pipelines.",
+        "vi": "Lo rò chỉ áp dụng bảng tính, không áp pipeline."
+      },
+      {
+        "en": "Test set rows may be reused freely each epoch to maximize accuracy.",
+        "vi": "Hàng test có thể tái dùng tự do mỗi epoch để tối đa accuracy."
+      },
+      {
+        "en": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+        "vi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation."
+      },
+      {
+        "en": "Validation labels should always be merged into training immediately.",
+        "vi": "Nhãn validation luôn phải gộp ngay vào train."
+      }
+    ],
+    "correctEn": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+    "correctVi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation.",
+    "explanation": "* **Đúng / Correct:** Aligns with train / validation / test splits.\n* **Ôn / Study:** tách train / validation / test"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: ML workflow phases.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **các giai đoạn quy trình ML**.",
+    "options": [
+      {
+        "en": "Deployment automatically guarantees absence of drift.",
+        "vi": "Triển khai tự động đảm bảo không drift."
+      },
+      {
+        "en": "Hyperparameters never interact with algorithm convergence behaviour.",
+        "vi": "Siêu tham số không tương tác hội tụ thuật toán."
+      },
+      {
+        "en": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+        "vi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát."
+      },
+      {
+        "en": "Data preparation may be skipped once GPU memory is sufficient.",
+        "vi": "Có thể bỏ chuẩn bị dữ liệu khi đủ VRAM GPU."
+      }
+    ],
+    "correctEn": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+    "correctVi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML workflow phases.\n* **Ôn / Study:** các giai đoạn quy trình ML"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding confusion-matrix metrics, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **metric từ ma trận nhầm lẫn**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Accuracy alone is always sufficient for imbalanced safety-critical classifiers.",
+        "vi": "Accuracy một mình luôn đủ cho phân loại mất cân bằng an toàn."
+      },
+      {
+        "en": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+        "vi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương."
+      },
+      {
+        "en": "Specificity ignores true negatives entirely.",
+        "vi": "Specificity bỏ qua hoàn toàn true negative."
+      },
+      {
+        "en": "F1-score cannot combine precision and recall considerations.",
+        "vi": "F1 không thể kết hợp precision và recall."
+      }
+    ],
+    "correctEn": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+    "correctVi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương.",
+    "explanation": "* **Đúng / Correct:** Aligns with confusion-matrix metrics.\n* **Ôn / Study:** metric từ ma trận nhầm lẫn"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: neural network coverage ideas.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **ý tưởng độ bao phủ mạng nơ-ron**.",
+    "options": [
+      {
+        "en": "Coverage guarantees semantic correctness of outputs.",
+        "vi": "Coverage đảm bảo đúng ngữ nghĩa đầu ra."
+      },
+      {
+        "en": "Backpropagation graphs forbid incremental testing strategies.",
+        "vi": "Đồ thị lan truyền ngược cấm chiến lược kiểm thử gia tăng."
+      },
+      {
+        "en": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+        "vi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ."
+      },
+      {
+        "en": "Neuron coverage replaces dataset representativeness analysis.",
+        "vi": "Neuron coverage thay phân tích đại diện tập dữ liệu."
+      }
+    ],
+    "correctEn": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+    "correctVi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ.",
+    "explanation": "* **Đúng / Correct:** Aligns with neural network coverage ideas.\n* **Ôn / Study:** ý tưởng độ bao phủ mạng nơ-ron"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: pretrained models, fine-tuning, RAG.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **mô hình tiền huấn luyện, fine-tuning, RAG**.",
+    "options": [
+      {
+        "en": "Fine-tuning removes obligation to version datasets.",
+        "vi": "Fine-tuning loại nghĩa vụ phiên bản hóa dataset."
+      },
+      {
+        "en": "RAG eliminates factual hallucinations without further testing.",
+        "vi": "RAG loại hallucination thực tế không cần kiểm thử thêm."
+      },
+      {
+        "en": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+        "vi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi."
+      },
+      {
+        "en": "Pretrained weights never encode legally sensitive correlations.",
+        "vi": "Trọng số tiền huấn luyện không bao giờ mã hóa tương quan nhạy pháp lý."
+      }
+    ],
+    "correctEn": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+    "correctVi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi.",
+    "explanation": "* **Đúng / Correct:** Aligns with pretrained models, fine-tuning, RAG.\n* **Ôn / Study:** mô hình tiền huấn luyện, fine-tuning, RAG"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding data preparation importance, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **tầm quan trọng chuẩn bị dữ liệu**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Synthetic augmentation removes privacy review responsibilities.",
+        "vi": "Tăng cường tổng hợp loại bỏ trách nhiệm rà soát riêng tư."
+      },
+      {
+        "en": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+        "vi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm."
+      },
+      {
+        "en": "Feature scaling guarantees fairness parity across demographic slices.",
+        "vi": "Scale đặc trưng đảm bảo công bằng nhân khẩu học."
+      },
+      {
+        "en": "EDA is decorative and never influences acceptance thresholds.",
+        "vi": "EDA mang tính trang trí và không ảnh hưởng ngưỡng nghiệm thu."
+      }
+    ],
+    "correctEn": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+    "correctVi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm.",
+    "explanation": "* **Đúng / Correct:** Aligns with data preparation importance.\n* **Ôn / Study:** tầm quan trọng chuẩn bị dữ liệu"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: model hyperparameters vs algorithm hyperparameters.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **siêu tham số mô hình vs thuật toán**.",
+    "options": [
+      {
+        "en": "Architecture depth has no influence on overfitting tendency.",
+        "vi": "Độ sâu kiến trúc không ảnh hưởng xu hướng overfit."
+      },
+      {
+        "en": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+        "vi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…)."
+      },
+      {
+        "en": "Hyperparameter tuning invalidates independent test sets.",
+        "vi": "Tinh chỉnh siêu tham số làm mất hiệu lực tập test độc lập."
+      },
+      {
+        "en": "Learning rate belongs exclusively to dataset schema design.",
+        "vi": "Learning rate chỉ thuộc thiết kế schema dataset."
+      }
+    ],
+    "correctEn": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+    "correctVi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…).",
+    "explanation": "* **Đúng / Correct:** Aligns with model hyperparameters vs algorithm hyperparameters.\n* **Ôn / Study:** siêu tham số mô hình vs thuật toán"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: supervised vs unsupervised vs reinforcement learning.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **học có giám sát / không giám sát / tăng cường**.",
+    "options": [
+      {
+        "en": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+        "vi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường."
+      },
+      {
+        "en": "Reinforcement learning learns exclusively from static CSV files without feedback loops.",
+        "vi": "Học tăng cường chỉ học từ CSV tĩnh không vòng phản hồi."
+      },
+      {
+        "en": "Clustering always requires externally supplied ground-truth labels for every point.",
+        "vi": "Phân cụm luôn cần nhãn chuẩn cho mọi điểm."
+      },
+      {
+        "en": "ML regression in CT-AI denotes classical CTFL regression testing scope.",
+        "vi": "ML regression trong CT-AI chỉ phạm vi regression testing cổ điển của CTFL."
+      }
+    ],
+    "correctEn": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+    "correctVi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with supervised vs unsupervised vs reinforcement learning.\n* **Ôn / Study:** học có giám sát / không giám sát / tăng cường"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding train / validation / test splits, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **tách train / validation / test**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Leakage concerns apply only to spreadsheets, not pipelines.",
+        "vi": "Lo rò chỉ áp dụng bảng tính, không áp pipeline."
+      },
+      {
+        "en": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+        "vi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation."
+      },
+      {
+        "en": "Validation labels should always be merged into training immediately.",
+        "vi": "Nhãn validation luôn phải gộp ngay vào train."
+      },
+      {
+        "en": "Test set rows may be reused freely each epoch to maximize accuracy.",
+        "vi": "Hàng test có thể tái dùng tự do mỗi epoch để tối đa accuracy."
+      }
+    ],
+    "correctEn": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+    "correctVi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation.",
+    "explanation": "* **Đúng / Correct:** Aligns with train / validation / test splits.\n* **Ôn / Study:** tách train / validation / test"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: ML workflow phases.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **các giai đoạn quy trình ML**.",
+    "options": [
+      {
+        "en": "Hyperparameters never interact with algorithm convergence behaviour.",
+        "vi": "Siêu tham số không tương tác hội tụ thuật toán."
+      },
+      {
+        "en": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+        "vi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát."
+      },
+      {
+        "en": "Deployment automatically guarantees absence of drift.",
+        "vi": "Triển khai tự động đảm bảo không drift."
+      },
+      {
+        "en": "Data preparation may be skipped once GPU memory is sufficient.",
+        "vi": "Có thể bỏ chuẩn bị dữ liệu khi đủ VRAM GPU."
+      }
+    ],
+    "correctEn": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+    "correctVi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML workflow phases.\n* **Ôn / Study:** các giai đoạn quy trình ML"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: confusion-matrix metrics.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **metric từ ma trận nhầm lẫn**.",
+    "options": [
+      {
+        "en": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+        "vi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương."
+      },
+      {
+        "en": "F1-score cannot combine precision and recall considerations.",
+        "vi": "F1 không thể kết hợp precision và recall."
+      },
+      {
+        "en": "Accuracy alone is always sufficient for imbalanced safety-critical classifiers.",
+        "vi": "Accuracy một mình luôn đủ cho phân loại mất cân bằng an toàn."
+      },
+      {
+        "en": "Specificity ignores true negatives entirely.",
+        "vi": "Specificity bỏ qua hoàn toàn true negative."
+      }
+    ],
+    "correctEn": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+    "correctVi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương.",
+    "explanation": "* **Đúng / Correct:** Aligns with confusion-matrix metrics.\n* **Ôn / Study:** metric từ ma trận nhầm lẫn"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding neural network coverage ideas, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **ý tưởng độ bao phủ mạng nơ-ron**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Neuron coverage replaces dataset representativeness analysis.",
+        "vi": "Neuron coverage thay phân tích đại diện tập dữ liệu."
+      },
+      {
+        "en": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+        "vi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ."
+      },
+      {
+        "en": "Coverage guarantees semantic correctness of outputs.",
+        "vi": "Coverage đảm bảo đúng ngữ nghĩa đầu ra."
+      },
+      {
+        "en": "Backpropagation graphs forbid incremental testing strategies.",
+        "vi": "Đồ thị lan truyền ngược cấm chiến lược kiểm thử gia tăng."
+      }
+    ],
+    "correctEn": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+    "correctVi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ.",
+    "explanation": "* **Đúng / Correct:** Aligns with neural network coverage ideas.\n* **Ôn / Study:** ý tưởng độ bao phủ mạng nơ-ron"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: pretrained models, fine-tuning, RAG.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **mô hình tiền huấn luyện, fine-tuning, RAG**.",
+    "options": [
+      {
+        "en": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+        "vi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi."
+      },
+      {
+        "en": "RAG eliminates factual hallucinations without further testing.",
+        "vi": "RAG loại hallucination thực tế không cần kiểm thử thêm."
+      },
+      {
+        "en": "Fine-tuning removes obligation to version datasets.",
+        "vi": "Fine-tuning loại nghĩa vụ phiên bản hóa dataset."
+      },
+      {
+        "en": "Pretrained weights never encode legally sensitive correlations.",
+        "vi": "Trọng số tiền huấn luyện không bao giờ mã hóa tương quan nhạy pháp lý."
+      }
+    ],
+    "correctEn": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+    "correctVi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi.",
+    "explanation": "* **Đúng / Correct:** Aligns with pretrained models, fine-tuning, RAG.\n* **Ôn / Study:** mô hình tiền huấn luyện, fine-tuning, RAG"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: data preparation importance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **tầm quan trọng chuẩn bị dữ liệu**.",
+    "options": [
+      {
+        "en": "EDA is decorative and never influences acceptance thresholds.",
+        "vi": "EDA mang tính trang trí và không ảnh hưởng ngưỡng nghiệm thu."
+      },
+      {
+        "en": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+        "vi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm."
+      },
+      {
+        "en": "Feature scaling guarantees fairness parity across demographic slices.",
+        "vi": "Scale đặc trưng đảm bảo công bằng nhân khẩu học."
+      },
+      {
+        "en": "Synthetic augmentation removes privacy review responsibilities.",
+        "vi": "Tăng cường tổng hợp loại bỏ trách nhiệm rà soát riêng tư."
+      }
+    ],
+    "correctEn": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+    "correctVi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm.",
+    "explanation": "* **Đúng / Correct:** Aligns with data preparation importance.\n* **Ôn / Study:** tầm quan trọng chuẩn bị dữ liệu"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding model hyperparameters vs algorithm hyperparameters, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **siêu tham số mô hình vs thuật toán**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Architecture depth has no influence on overfitting tendency.",
+        "vi": "Độ sâu kiến trúc không ảnh hưởng xu hướng overfit."
+      },
+      {
+        "en": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+        "vi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…)."
+      },
+      {
+        "en": "Hyperparameter tuning invalidates independent test sets.",
+        "vi": "Tinh chỉnh siêu tham số làm mất hiệu lực tập test độc lập."
+      },
+      {
+        "en": "Learning rate belongs exclusively to dataset schema design.",
+        "vi": "Learning rate chỉ thuộc thiết kế schema dataset."
+      }
+    ],
+    "correctEn": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+    "correctVi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…).",
+    "explanation": "* **Đúng / Correct:** Aligns with model hyperparameters vs algorithm hyperparameters.\n* **Ôn / Study:** siêu tham số mô hình vs thuật toán"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: supervised vs unsupervised vs reinforcement learning.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **học có giám sát / không giám sát / tăng cường**.",
+    "options": [
+      {
+        "en": "Reinforcement learning learns exclusively from static CSV files without feedback loops.",
+        "vi": "Học tăng cường chỉ học từ CSV tĩnh không vòng phản hồi."
+      },
+      {
+        "en": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+        "vi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường."
+      },
+      {
+        "en": "ML regression in CT-AI denotes classical CTFL regression testing scope.",
+        "vi": "ML regression trong CT-AI chỉ phạm vi regression testing cổ điển của CTFL."
+      },
+      {
+        "en": "Clustering always requires externally supplied ground-truth labels for every point.",
+        "vi": "Phân cụm luôn cần nhãn chuẩn cho mọi điểm."
+      }
+    ],
+    "correctEn": "Supervised learning uses labeled targets; unsupervised learning finds structure without labels; reinforcement learning learns via rewards from environment interaction.",
+    "correctVi": "Học có giám sát dùng nhãn mục tiêu; học không giám sát tìm cấu trúc không nhãn; học tăng cường học qua phần thưởng tương tác môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with supervised vs unsupervised vs reinforcement learning.\n* **Ôn / Study:** học có giám sát / không giám sát / tăng cường"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: train / validation / test splits.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **tách train / validation / test**.",
+    "options": [
+      {
+        "en": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+        "vi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation."
+      },
+      {
+        "en": "Leakage concerns apply only to spreadsheets, not pipelines.",
+        "vi": "Lo rò chỉ áp dụng bảng tính, không áp pipeline."
+      },
+      {
+        "en": "Validation labels should always be merged into training immediately.",
+        "vi": "Nhãn validation luôn phải gộp ngay vào train."
+      },
+      {
+        "en": "Test set rows may be reused freely each epoch to maximize accuracy.",
+        "vi": "Hàng test có thể tái dùng tự do mỗi epoch để tối đa accuracy."
+      }
+    ],
+    "correctEn": "Validation supports tuning; an independent test set estimates generalization and detects leakage from overfitting to validation iterations.",
+    "correctVi": "Validation hỗ trợ tinh chỉnh; tập test độc lập ước lượng khái quát và phát hiện rò do overfit quá nhiều vòng validation.",
+    "explanation": "* **Đúng / Correct:** Aligns with train / validation / test splits.\n* **Ôn / Study:** tách train / validation / test"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding ML workflow phases, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **các giai đoạn quy trình ML**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Data preparation may be skipped once GPU memory is sufficient.",
+        "vi": "Có thể bỏ chuẩn bị dữ liệu khi đủ VRAM GPU."
+      },
+      {
+        "en": "Hyperparameters never interact with algorithm convergence behaviour.",
+        "vi": "Siêu tham số không tương tác hội tụ thuật toán."
+      },
+      {
+        "en": "Deployment automatically guarantees absence of drift.",
+        "vi": "Triển khai tự động đảm bảo không drift."
+      },
+      {
+        "en": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+        "vi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát."
+      }
+    ],
+    "correctEn": "Typical workflow spans objectives, framework selection, algorithm choice, data preparation & validation, training, evaluation, tuning, independent testing, deployment, monitoring.",
+    "correctVi": "Quy trình điển hình gồm mục tiêu, chọn framework, thuật toán, chuẩn bị & kiểm tra dữ liệu, huấn luyện, đánh giá, tinh chỉnh, kiểm thử độc lập, triển khai, giám sát.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML workflow phases.\n* **Ôn / Study:** các giai đoạn quy trình ML"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: confusion-matrix metrics.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **metric từ ma trận nhầm lẫn**.",
+    "options": [
+      {
+        "en": "Accuracy alone is always sufficient for imbalanced safety-critical classifiers.",
+        "vi": "Accuracy một mình luôn đủ cho phân loại mất cân bằng an toàn."
+      },
+      {
+        "en": "F1-score cannot combine precision and recall considerations.",
+        "vi": "F1 không thể kết hợp precision và recall."
+      },
+      {
+        "en": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+        "vi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương."
+      },
+      {
+        "en": "Specificity ignores true negatives entirely.",
+        "vi": "Specificity bỏ qua hoàn toàn true negative."
+      }
+    ],
+    "correctEn": "Recall emphasizes catching positives (minimizing false negatives), while precision emphasizes correctness among predicted positives.",
+    "correctVi": "Recall nhấn bắt đủ dương (giảm false negative), precision nhấn độ tin cậy trong các dự đoán dương.",
+    "explanation": "* **Đúng / Correct:** Aligns with confusion-matrix metrics.\n* **Ôn / Study:** metric từ ma trận nhầm lẫn"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: neural network coverage ideas.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **ý tưởng độ bao phủ mạng nơ-ron**.",
+    "options": [
+      {
+        "en": "Coverage guarantees semantic correctness of outputs.",
+        "vi": "Coverage đảm bảo đúng ngữ nghĩa đầu ra."
+      },
+      {
+        "en": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+        "vi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ."
+      },
+      {
+        "en": "Neuron coverage replaces dataset representativeness analysis.",
+        "vi": "Neuron coverage thay phân tích đại diện tập dữ liệu."
+      },
+      {
+        "en": "Backpropagation graphs forbid incremental testing strategies.",
+        "vi": "Đồ thị lan truyền ngược cấm chiến lược kiểm thử gia tăng."
+      }
+    ],
+    "correctEn": "Structural coverage concepts (e.g., neuron coverage variants) complement outcome-based testing by exercising internal activation regions.",
+    "correctVi": "Khái niệm bao phủ cấu trúc (ví dụ neuron coverage) bổ sung kiểm thử dựa đầu ra bằng cách kích hoạt vùng nội bộ.",
+    "explanation": "* **Đúng / Correct:** Aligns with neural network coverage ideas.\n* **Ôn / Study:** ý tưởng độ bao phủ mạng nơ-ron"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding pretrained models, fine-tuning, RAG, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **mô hình tiền huấn luyện, fine-tuning, RAG**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Fine-tuning removes obligation to version datasets.",
+        "vi": "Fine-tuning loại nghĩa vụ phiên bản hóa dataset."
+      },
+      {
+        "en": "Pretrained weights never encode legally sensitive correlations.",
+        "vi": "Trọng số tiền huấn luyện không bao giờ mã hóa tương quan nhạy pháp lý."
+      },
+      {
+        "en": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+        "vi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi."
+      },
+      {
+        "en": "RAG eliminates factual hallucinations without further testing.",
+        "vi": "RAG loại hallucination thực tế không cần kiểm thử thêm."
+      }
+    ],
+    "correctEn": "Pretraining accelerates delivery but inherits biases; fine-tuning adapts weights; RAG augments generation with retrieved documents requiring retrieval quality tests.",
+    "correctVi": "Tiền huấn luyện rút ngắn thời gian nhưng kế thừa thiên kiếm; fine-tuning thích nghi trọng số; RAG bổ sung tài liệu truy hồi và cần kiểm tra chất lượng truy hồi.",
+    "explanation": "* **Đúng / Correct:** Aligns with pretrained models, fine-tuning, RAG.\n* **Ôn / Study:** mô hình tiền huấn luyện, fine-tuning, RAG"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: data preparation importance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **tầm quan trọng chuẩn bị dữ liệu**.",
+    "options": [
+      {
+        "en": "Feature scaling guarantees fairness parity across demographic slices.",
+        "vi": "Scale đặc trưng đảm bảo công bằng nhân khẩu học."
+      },
+      {
+        "en": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+        "vi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm."
+      },
+      {
+        "en": "Synthetic augmentation removes privacy review responsibilities.",
+        "vi": "Tăng cường tổng hợp loại bỏ trách nhiệm rà soát riêng tư."
+      },
+      {
+        "en": "EDA is decorative and never influences acceptance thresholds.",
+        "vi": "EDA mang tính trang trí và không ảnh hưởng ngưỡng nghiệm thu."
+      }
+    ],
+    "correctEn": "Garbage labels or skewed sampling undermine every downstream metric; testers validate pipelines, constraints, and leakage guards early.",
+    "correctVi": "Nhãn rác hoặc mẫu lệch làm hỏng mọi metric phía dưới; kiểm thử pipeline, ràng buộc và chống rò sớm.",
+    "explanation": "* **Đúng / Correct:** Aligns with data preparation importance.\n* **Ôn / Study:** tầm quan trọng chuẩn bị dữ liệu"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: model hyperparameters vs algorithm hyperparameters.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **siêu tham số mô hình vs thuật toán**.",
+    "options": [
+      {
+        "en": "Architecture depth has no influence on overfitting tendency.",
+        "vi": "Độ sâu kiến trúc không ảnh hưởng xu hướng overfit."
+      },
+      {
+        "en": "Learning rate belongs exclusively to dataset schema design.",
+        "vi": "Learning rate chỉ thuộc thiết kế schema dataset."
+      },
+      {
+        "en": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+        "vi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…)."
+      },
+      {
+        "en": "Hyperparameter tuning invalidates independent test sets.",
+        "vi": "Tinh chỉnh siêu tham số làm mất hiệu lực tập test độc lập."
+      }
+    ],
+    "correctEn": "Model hyperparameters define architecture capacity (e.g., layers); algorithm hyperparameters steer optimisation loops (e.g., iterations, learning rate schedules).",
+    "correctVi": "Siêu tham số mô hình định nghĩa dung lượng kiến trúc (lớp…); siêu tham số thuật toán điều khiển vòng tối ưu (vòng lặp, lịch learning rate…).",
+    "explanation": "* **Đúng / Correct:** Aligns with model hyperparameters vs algorithm hyperparameters.\n* **Ôn / Study:** siêu tham số mô hình vs thuật toán"
+  }
+]

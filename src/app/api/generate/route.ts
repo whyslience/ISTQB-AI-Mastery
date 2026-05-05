@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { pickExamQuestions, EXAM_TOPIC_TO_CHAPTER_ID } from "@/lib/exam-from-syllabus";
+import { pickExamQuestions, EXAM_TOPIC_CONFIG } from "@/lib/exam-from-syllabus";
 
 const requestSchema = z.object({
   topic: z.string().min(1),
   difficulty: z.enum(["easy", "medium", "hard", "all"]).default("all"),
-  count: z.number().int().min(1).max(50).default(5),
+  count: z.number().int().min(1).max(60).default(5),
 });
 
 export async function POST(req: Request) {
@@ -13,7 +13,7 @@ export async function POST(req: Request) {
     const body = await req.json();
     const { topic, difficulty, count } = requestSchema.parse(body);
 
-    if (!(topic in EXAM_TOPIC_TO_CHAPTER_ID)) {
+    if (!(topic in EXAM_TOPIC_CONFIG)) {
       return NextResponse.json({ error: "Unknown topic" }, { status: 400 });
     }
 

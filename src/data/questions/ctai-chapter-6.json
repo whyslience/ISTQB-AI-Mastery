@@ -1,0 +1,1777 @@
+[
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding model documentation review, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **đánh giá tài liệu mô hình**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Limitations sections must remain empty for competitive reasons.",
+        "vi": "Mục hạn chế phải để trống vì cạnh tranh."
+      },
+      {
+        "en": "Documentation accuracy is optional after MVP launch.",
+        "vi": "Độ chính xác tài liệu tuỳ chọn sau MVP."
+      },
+      {
+        "en": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+        "vi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo."
+      },
+      {
+        "en": "Change logs conflict with agile cadence and should be avoided.",
+        "vi": "Change log xung đột agile nên tránh."
+      }
+    ],
+    "correctEn": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+    "correctVi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo.",
+    "explanation": "* **Đúng / Correct:** Aligns with model documentation review.\n* **Ôn / Study:** đánh giá tài liệu mô hình"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: ML functional performance testing.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **kiểm thử hiệu năng chức năng ML**.",
+    "options": [
+      {
+        "en": "Test accuracy higher than validation always indicates better generalisation.",
+        "vi": "Test accuracy cao hơn validation luôn là khái quát tốt hơn."
+      },
+      {
+        "en": "Probabilistic calibration charts replace scenario testing.",
+        "vi": "Biểu đồ calibration thay kiểm thử kịch bản."
+      },
+      {
+        "en": "Validation metrics alone certify regulatory readiness.",
+        "vi": "Chỉ metric validation chứng nhận sẵn sàng quy định."
+      },
+      {
+        "en": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+        "vi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá."
+      }
+    ],
+    "correctEn": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+    "correctVi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML functional performance testing.\n* **Ôn / Study:** kiểm thử hiệu năng chức năng ML"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: adversarial testing.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử đối kháng**.",
+    "options": [
+      {
+        "en": "Production monitors never ingest adversarial telemetry.",
+        "vi": "Monitor production không nhận telemetry đối kháng."
+      },
+      {
+        "en": "Adversarial testing guarantees elimination of all ML vulnerabilities.",
+        "vi": "Kiểm thử đối kháng đảm bảo loại mọi lỗ hổng ML."
+      },
+      {
+        "en": "FGSM perturbations only apply to relational schemas.",
+        "vi": "Nhiễu FGSM chỉ cho schema quan hệ."
+      },
+      {
+        "en": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+        "vi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production."
+      }
+    ],
+    "correctEn": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+    "correctVi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production.",
+    "explanation": "* **Đúng / Correct:** Aligns with adversarial testing.\n* **Ôn / Study:** kiểm thử đối kháng"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding metamorphic testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **kiểm thử biến hình**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Metamorphic testing forbids comparing logits across runs.",
+        "vi": "Metamorphic cấm so logits giữa các lần chạy."
+      },
+      {
+        "en": "MT only applies to handcrafted rule engines.",
+        "vi": "MT chỉ cho rule engine thủ công."
+      },
+      {
+        "en": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+        "vi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác."
+      },
+      {
+        "en": "Relations must always preserve exact softmax probabilities bit-for-bit.",
+        "vi": "Quan hệ phải giữ xác suất softmax bit-by-bit."
+      }
+    ],
+    "correctEn": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+    "correctVi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác.",
+    "explanation": "* **Đúng / Correct:** Aligns with metamorphic testing.\n* **Ôn / Study:** kiểm thử biến hình"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: drift testing.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **kiểm thử drift**.",
+    "options": [
+      {
+        "en": "Silent drift improves customer trust automatically.",
+        "vi": "Drift âm thầm tăng tin cậy khách hàng tự động."
+      },
+      {
+        "en": "Rollback triggers are incompatible with blue/green deploys.",
+        "vi": "Kích hoạt rollback không tương thích blue/green."
+      },
+      {
+        "en": "Drift detectors must ignore seasonality by policy.",
+        "vi": "Detector drift phải bỏ qua tính thời vụ."
+      },
+      {
+        "en": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+        "vi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào."
+      }
+    ],
+    "correctEn": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+    "correctVi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào.",
+    "explanation": "* **Đúng / Correct:** Aligns with drift testing.\n* **Ôn / Study:** kiểm thử drift"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: overfitting vs underfitting signals.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **dấu hiệu overfitting và underfitting**.",
+    "options": [
+      {
+        "en": "Training loss near zero always proves deployment readiness.",
+        "vi": "Training loss gần 0 luôn chứng minh sẵn sàng triển khai."
+      },
+      {
+        "en": "Underfitting disappears automatically after GPU upgrade.",
+        "vi": "Underfitting biến mất sau nâng GPU."
+      },
+      {
+        "en": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+        "vi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản."
+      },
+      {
+        "en": "Cross-validation is unrelated to diagnosing split misuse.",
+        "vi": "Cross-validation không liên quan chẩn đoán lạm dụng tách tập."
+      }
+    ],
+    "correctEn": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+    "correctVi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản.",
+    "explanation": "* **Đúng / Correct:** Aligns with overfitting vs underfitting signals.\n* **Ôn / Study:** dấu hiệu overfitting và underfitting"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding A/B testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **kiểm thử A/B**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "A/B decisions require exactly one request sample.",
+        "vi": "Quyết định A/B cần đúng một mẫu request."
+      },
+      {
+        "en": "Safety rails violate experimentation purity and must be disabled.",
+        "vi": "Rào an toàn vi phạm độ tinh khiết thí nghiệm nên tắt."
+      },
+      {
+        "en": "A/B applies exclusively to CSS themes, not MLS.",
+        "vi": "A/B chỉ cho CSS theme, không MLS."
+      },
+      {
+        "en": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+        "vi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn."
+      }
+    ],
+    "correctEn": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+    "correctVi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with A/B testing.\n* **Ôn / Study:** kiểm thử A/B"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: back-to-back testing.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **kiểm thử back-to-back**.",
+    "options": [
+      {
+        "en": "Regression detection forbids comparing probability distributions.",
+        "vi": "Phát hiện hồi quy cấm so phân phối xác suất."
+      },
+      {
+        "en": "Inputs must differ randomly to prove robustness during back-to-back runs.",
+        "vi": "Đầu vào phải khác ngẫu nhiên khi back-to-back để chứng minh robust."
+      },
+      {
+        "en": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+        "vi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ."
+      },
+      {
+        "en": "Back-to-back replaces monitoring after canary promotion.",
+        "vi": "Back-to-back thay giám sát sau promotion canary."
+      }
+    ],
+    "correctEn": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+    "correctVi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ.",
+    "explanation": "* **Đúng / Correct:** Aligns with back-to-back testing.\n* **Ôn / Study:** kiểm thử back-to-back"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: model documentation review.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **đánh giá tài liệu mô hình**.",
+    "options": [
+      {
+        "en": "Documentation accuracy is optional after MVP launch.",
+        "vi": "Độ chính xác tài liệu tuỳ chọn sau MVP."
+      },
+      {
+        "en": "Change logs conflict with agile cadence and should be avoided.",
+        "vi": "Change log xung đột agile nên tránh."
+      },
+      {
+        "en": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+        "vi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo."
+      },
+      {
+        "en": "Limitations sections must remain empty for competitive reasons.",
+        "vi": "Mục hạn chế phải để trống vì cạnh tranh."
+      }
+    ],
+    "correctEn": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+    "correctVi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo.",
+    "explanation": "* **Đúng / Correct:** Aligns with model documentation review.\n* **Ôn / Study:** đánh giá tài liệu mô hình"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding ML functional performance testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **kiểm thử hiệu năng chức năng ML**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Probabilistic calibration charts replace scenario testing.",
+        "vi": "Biểu đồ calibration thay kiểm thử kịch bản."
+      },
+      {
+        "en": "Test accuracy higher than validation always indicates better generalisation.",
+        "vi": "Test accuracy cao hơn validation luôn là khái quát tốt hơn."
+      },
+      {
+        "en": "Validation metrics alone certify regulatory readiness.",
+        "vi": "Chỉ metric validation chứng nhận sẵn sàng quy định."
+      },
+      {
+        "en": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+        "vi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá."
+      }
+    ],
+    "correctEn": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+    "correctVi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML functional performance testing.\n* **Ôn / Study:** kiểm thử hiệu năng chức năng ML"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: adversarial testing.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **kiểm thử đối kháng**.",
+    "options": [
+      {
+        "en": "Production monitors never ingest adversarial telemetry.",
+        "vi": "Monitor production không nhận telemetry đối kháng."
+      },
+      {
+        "en": "Adversarial testing guarantees elimination of all ML vulnerabilities.",
+        "vi": "Kiểm thử đối kháng đảm bảo loại mọi lỗ hổng ML."
+      },
+      {
+        "en": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+        "vi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production."
+      },
+      {
+        "en": "FGSM perturbations only apply to relational schemas.",
+        "vi": "Nhiễu FGSM chỉ cho schema quan hệ."
+      }
+    ],
+    "correctEn": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+    "correctVi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production.",
+    "explanation": "* **Đúng / Correct:** Aligns with adversarial testing.\n* **Ôn / Study:** kiểm thử đối kháng"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: metamorphic testing.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử biến hình**.",
+    "options": [
+      {
+        "en": "Relations must always preserve exact softmax probabilities bit-for-bit.",
+        "vi": "Quan hệ phải giữ xác suất softmax bit-by-bit."
+      },
+      {
+        "en": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+        "vi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác."
+      },
+      {
+        "en": "Metamorphic testing forbids comparing logits across runs.",
+        "vi": "Metamorphic cấm so logits giữa các lần chạy."
+      },
+      {
+        "en": "MT only applies to handcrafted rule engines.",
+        "vi": "MT chỉ cho rule engine thủ công."
+      }
+    ],
+    "correctEn": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+    "correctVi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác.",
+    "explanation": "* **Đúng / Correct:** Aligns with metamorphic testing.\n* **Ôn / Study:** kiểm thử biến hình"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding drift testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **kiểm thử drift**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Rollback triggers are incompatible with blue/green deploys.",
+        "vi": "Kích hoạt rollback không tương thích blue/green."
+      },
+      {
+        "en": "Drift detectors must ignore seasonality by policy.",
+        "vi": "Detector drift phải bỏ qua tính thời vụ."
+      },
+      {
+        "en": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+        "vi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào."
+      },
+      {
+        "en": "Silent drift improves customer trust automatically.",
+        "vi": "Drift âm thầm tăng tin cậy khách hàng tự động."
+      }
+    ],
+    "correctEn": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+    "correctVi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào.",
+    "explanation": "* **Đúng / Correct:** Aligns with drift testing.\n* **Ôn / Study:** kiểm thử drift"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: overfitting vs underfitting signals.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **dấu hiệu overfitting và underfitting**.",
+    "options": [
+      {
+        "en": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+        "vi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản."
+      },
+      {
+        "en": "Underfitting disappears automatically after GPU upgrade.",
+        "vi": "Underfitting biến mất sau nâng GPU."
+      },
+      {
+        "en": "Training loss near zero always proves deployment readiness.",
+        "vi": "Training loss gần 0 luôn chứng minh sẵn sàng triển khai."
+      },
+      {
+        "en": "Cross-validation is unrelated to diagnosing split misuse.",
+        "vi": "Cross-validation không liên quan chẩn đoán lạm dụng tách tập."
+      }
+    ],
+    "correctEn": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+    "correctVi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản.",
+    "explanation": "* **Đúng / Correct:** Aligns with overfitting vs underfitting signals.\n* **Ôn / Study:** dấu hiệu overfitting và underfitting"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: A/B testing.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử A/B**.",
+    "options": [
+      {
+        "en": "A/B decisions require exactly one request sample.",
+        "vi": "Quyết định A/B cần đúng một mẫu request."
+      },
+      {
+        "en": "A/B applies exclusively to CSS themes, not MLS.",
+        "vi": "A/B chỉ cho CSS theme, không MLS."
+      },
+      {
+        "en": "Safety rails violate experimentation purity and must be disabled.",
+        "vi": "Rào an toàn vi phạm độ tinh khiết thí nghiệm nên tắt."
+      },
+      {
+        "en": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+        "vi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn."
+      }
+    ],
+    "correctEn": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+    "correctVi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with A/B testing.\n* **Ôn / Study:** kiểm thử A/B"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding back-to-back testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **kiểm thử back-to-back**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Back-to-back replaces monitoring after canary promotion.",
+        "vi": "Back-to-back thay giám sát sau promotion canary."
+      },
+      {
+        "en": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+        "vi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ."
+      },
+      {
+        "en": "Inputs must differ randomly to prove robustness during back-to-back runs.",
+        "vi": "Đầu vào phải khác ngẫu nhiên khi back-to-back để chứng minh robust."
+      },
+      {
+        "en": "Regression detection forbids comparing probability distributions.",
+        "vi": "Phát hiện hồi quy cấm so phân phối xác suất."
+      }
+    ],
+    "correctEn": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+    "correctVi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ.",
+    "explanation": "* **Đúng / Correct:** Aligns with back-to-back testing.\n* **Ôn / Study:** kiểm thử back-to-back"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: model documentation review.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **đánh giá tài liệu mô hình**.",
+    "options": [
+      {
+        "en": "Change logs conflict with agile cadence and should be avoided.",
+        "vi": "Change log xung đột agile nên tránh."
+      },
+      {
+        "en": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+        "vi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo."
+      },
+      {
+        "en": "Documentation accuracy is optional after MVP launch.",
+        "vi": "Độ chính xác tài liệu tuỳ chọn sau MVP."
+      },
+      {
+        "en": "Limitations sections must remain empty for competitive reasons.",
+        "vi": "Mục hạn chế phải để trống vì cạnh tranh."
+      }
+    ],
+    "correctEn": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+    "correctVi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo.",
+    "explanation": "* **Đúng / Correct:** Aligns with model documentation review.\n* **Ôn / Study:** đánh giá tài liệu mô hình"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: ML functional performance testing.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử hiệu năng chức năng ML**.",
+    "options": [
+      {
+        "en": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+        "vi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá."
+      },
+      {
+        "en": "Validation metrics alone certify regulatory readiness.",
+        "vi": "Chỉ metric validation chứng nhận sẵn sàng quy định."
+      },
+      {
+        "en": "Test accuracy higher than validation always indicates better generalisation.",
+        "vi": "Test accuracy cao hơn validation luôn là khái quát tốt hơn."
+      },
+      {
+        "en": "Probabilistic calibration charts replace scenario testing.",
+        "vi": "Biểu đồ calibration thay kiểm thử kịch bản."
+      }
+    ],
+    "correctEn": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+    "correctVi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML functional performance testing.\n* **Ôn / Study:** kiểm thử hiệu năng chức năng ML"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding adversarial testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **kiểm thử đối kháng**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "FGSM perturbations only apply to relational schemas.",
+        "vi": "Nhiễu FGSM chỉ cho schema quan hệ."
+      },
+      {
+        "en": "Adversarial testing guarantees elimination of all ML vulnerabilities.",
+        "vi": "Kiểm thử đối kháng đảm bảo loại mọi lỗ hổng ML."
+      },
+      {
+        "en": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+        "vi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production."
+      },
+      {
+        "en": "Production monitors never ingest adversarial telemetry.",
+        "vi": "Monitor production không nhận telemetry đối kháng."
+      }
+    ],
+    "correctEn": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+    "correctVi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production.",
+    "explanation": "* **Đúng / Correct:** Aligns with adversarial testing.\n* **Ôn / Study:** kiểm thử đối kháng"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: metamorphic testing.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **kiểm thử biến hình**.",
+    "options": [
+      {
+        "en": "Relations must always preserve exact softmax probabilities bit-for-bit.",
+        "vi": "Quan hệ phải giữ xác suất softmax bit-by-bit."
+      },
+      {
+        "en": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+        "vi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác."
+      },
+      {
+        "en": "MT only applies to handcrafted rule engines.",
+        "vi": "MT chỉ cho rule engine thủ công."
+      },
+      {
+        "en": "Metamorphic testing forbids comparing logits across runs.",
+        "vi": "Metamorphic cấm so logits giữa các lần chạy."
+      }
+    ],
+    "correctEn": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+    "correctVi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác.",
+    "explanation": "* **Đúng / Correct:** Aligns with metamorphic testing.\n* **Ôn / Study:** kiểm thử biến hình"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: drift testing.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử drift**.",
+    "options": [
+      {
+        "en": "Drift detectors must ignore seasonality by policy.",
+        "vi": "Detector drift phải bỏ qua tính thời vụ."
+      },
+      {
+        "en": "Rollback triggers are incompatible with blue/green deploys.",
+        "vi": "Kích hoạt rollback không tương thích blue/green."
+      },
+      {
+        "en": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+        "vi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào."
+      },
+      {
+        "en": "Silent drift improves customer trust automatically.",
+        "vi": "Drift âm thầm tăng tin cậy khách hàng tự động."
+      }
+    ],
+    "correctEn": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+    "correctVi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào.",
+    "explanation": "* **Đúng / Correct:** Aligns with drift testing.\n* **Ôn / Study:** kiểm thử drift"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding overfitting vs underfitting signals, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **dấu hiệu overfitting và underfitting**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Cross-validation is unrelated to diagnosing split misuse.",
+        "vi": "Cross-validation không liên quan chẩn đoán lạm dụng tách tập."
+      },
+      {
+        "en": "Underfitting disappears automatically after GPU upgrade.",
+        "vi": "Underfitting biến mất sau nâng GPU."
+      },
+      {
+        "en": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+        "vi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản."
+      },
+      {
+        "en": "Training loss near zero always proves deployment readiness.",
+        "vi": "Training loss gần 0 luôn chứng minh sẵn sàng triển khai."
+      }
+    ],
+    "correctEn": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+    "correctVi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản.",
+    "explanation": "* **Đúng / Correct:** Aligns with overfitting vs underfitting signals.\n* **Ôn / Study:** dấu hiệu overfitting và underfitting"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: A/B testing.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **kiểm thử A/B**.",
+    "options": [
+      {
+        "en": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+        "vi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn."
+      },
+      {
+        "en": "A/B decisions require exactly one request sample.",
+        "vi": "Quyết định A/B cần đúng một mẫu request."
+      },
+      {
+        "en": "A/B applies exclusively to CSS themes, not MLS.",
+        "vi": "A/B chỉ cho CSS theme, không MLS."
+      },
+      {
+        "en": "Safety rails violate experimentation purity and must be disabled.",
+        "vi": "Rào an toàn vi phạm độ tinh khiết thí nghiệm nên tắt."
+      }
+    ],
+    "correctEn": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+    "correctVi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with A/B testing.\n* **Ôn / Study:** kiểm thử A/B"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: back-to-back testing.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử back-to-back**.",
+    "options": [
+      {
+        "en": "Inputs must differ randomly to prove robustness during back-to-back runs.",
+        "vi": "Đầu vào phải khác ngẫu nhiên khi back-to-back để chứng minh robust."
+      },
+      {
+        "en": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+        "vi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ."
+      },
+      {
+        "en": "Regression detection forbids comparing probability distributions.",
+        "vi": "Phát hiện hồi quy cấm so phân phối xác suất."
+      },
+      {
+        "en": "Back-to-back replaces monitoring after canary promotion.",
+        "vi": "Back-to-back thay giám sát sau promotion canary."
+      }
+    ],
+    "correctEn": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+    "correctVi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ.",
+    "explanation": "* **Đúng / Correct:** Aligns with back-to-back testing.\n* **Ôn / Study:** kiểm thử back-to-back"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding model documentation review, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **đánh giá tài liệu mô hình**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Limitations sections must remain empty for competitive reasons.",
+        "vi": "Mục hạn chế phải để trống vì cạnh tranh."
+      },
+      {
+        "en": "Change logs conflict with agile cadence and should be avoided.",
+        "vi": "Change log xung đột agile nên tránh."
+      },
+      {
+        "en": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+        "vi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo."
+      },
+      {
+        "en": "Documentation accuracy is optional after MVP launch.",
+        "vi": "Độ chính xác tài liệu tuỳ chọn sau MVP."
+      }
+    ],
+    "correctEn": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+    "correctVi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo.",
+    "explanation": "* **Đúng / Correct:** Aligns with model documentation review.\n* **Ôn / Study:** đánh giá tài liệu mô hình"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: ML functional performance testing.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **kiểm thử hiệu năng chức năng ML**.",
+    "options": [
+      {
+        "en": "Validation metrics alone certify regulatory readiness.",
+        "vi": "Chỉ metric validation chứng nhận sẵn sàng quy định."
+      },
+      {
+        "en": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+        "vi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá."
+      },
+      {
+        "en": "Test accuracy higher than validation always indicates better generalisation.",
+        "vi": "Test accuracy cao hơn validation luôn là khái quát tốt hơn."
+      },
+      {
+        "en": "Probabilistic calibration charts replace scenario testing.",
+        "vi": "Biểu đồ calibration thay kiểm thử kịch bản."
+      }
+    ],
+    "correctEn": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+    "correctVi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML functional performance testing.\n* **Ôn / Study:** kiểm thử hiệu năng chức năng ML"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: adversarial testing.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử đối kháng**.",
+    "options": [
+      {
+        "en": "FGSM perturbations only apply to relational schemas.",
+        "vi": "Nhiễu FGSM chỉ cho schema quan hệ."
+      },
+      {
+        "en": "Production monitors never ingest adversarial telemetry.",
+        "vi": "Monitor production không nhận telemetry đối kháng."
+      },
+      {
+        "en": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+        "vi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production."
+      },
+      {
+        "en": "Adversarial testing guarantees elimination of all ML vulnerabilities.",
+        "vi": "Kiểm thử đối kháng đảm bảo loại mọi lỗ hổng ML."
+      }
+    ],
+    "correctEn": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+    "correctVi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production.",
+    "explanation": "* **Đúng / Correct:** Aligns with adversarial testing.\n* **Ôn / Study:** kiểm thử đối kháng"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding metamorphic testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **kiểm thử biến hình**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+        "vi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác."
+      },
+      {
+        "en": "MT only applies to handcrafted rule engines.",
+        "vi": "MT chỉ cho rule engine thủ công."
+      },
+      {
+        "en": "Metamorphic testing forbids comparing logits across runs.",
+        "vi": "Metamorphic cấm so logits giữa các lần chạy."
+      },
+      {
+        "en": "Relations must always preserve exact softmax probabilities bit-for-bit.",
+        "vi": "Quan hệ phải giữ xác suất softmax bit-by-bit."
+      }
+    ],
+    "correctEn": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+    "correctVi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác.",
+    "explanation": "* **Đúng / Correct:** Aligns with metamorphic testing.\n* **Ôn / Study:** kiểm thử biến hình"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: drift testing.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **kiểm thử drift**.",
+    "options": [
+      {
+        "en": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+        "vi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào."
+      },
+      {
+        "en": "Silent drift improves customer trust automatically.",
+        "vi": "Drift âm thầm tăng tin cậy khách hàng tự động."
+      },
+      {
+        "en": "Drift detectors must ignore seasonality by policy.",
+        "vi": "Detector drift phải bỏ qua tính thời vụ."
+      },
+      {
+        "en": "Rollback triggers are incompatible with blue/green deploys.",
+        "vi": "Kích hoạt rollback không tương thích blue/green."
+      }
+    ],
+    "correctEn": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+    "correctVi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào.",
+    "explanation": "* **Đúng / Correct:** Aligns with drift testing.\n* **Ôn / Study:** kiểm thử drift"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: overfitting vs underfitting signals.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **dấu hiệu overfitting và underfitting**.",
+    "options": [
+      {
+        "en": "Cross-validation is unrelated to diagnosing split misuse.",
+        "vi": "Cross-validation không liên quan chẩn đoán lạm dụng tách tập."
+      },
+      {
+        "en": "Underfitting disappears automatically after GPU upgrade.",
+        "vi": "Underfitting biến mất sau nâng GPU."
+      },
+      {
+        "en": "Training loss near zero always proves deployment readiness.",
+        "vi": "Training loss gần 0 luôn chứng minh sẵn sàng triển khai."
+      },
+      {
+        "en": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+        "vi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản."
+      }
+    ],
+    "correctEn": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+    "correctVi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản.",
+    "explanation": "* **Đúng / Correct:** Aligns with overfitting vs underfitting signals.\n* **Ôn / Study:** dấu hiệu overfitting và underfitting"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding A/B testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **kiểm thử A/B**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "A/B decisions require exactly one request sample.",
+        "vi": "Quyết định A/B cần đúng một mẫu request."
+      },
+      {
+        "en": "Safety rails violate experimentation purity and must be disabled.",
+        "vi": "Rào an toàn vi phạm độ tinh khiết thí nghiệm nên tắt."
+      },
+      {
+        "en": "A/B applies exclusively to CSS themes, not MLS.",
+        "vi": "A/B chỉ cho CSS theme, không MLS."
+      },
+      {
+        "en": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+        "vi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn."
+      }
+    ],
+    "correctEn": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+    "correctVi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with A/B testing.\n* **Ôn / Study:** kiểm thử A/B"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: back-to-back testing.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **kiểm thử back-to-back**.",
+    "options": [
+      {
+        "en": "Back-to-back replaces monitoring after canary promotion.",
+        "vi": "Back-to-back thay giám sát sau promotion canary."
+      },
+      {
+        "en": "Inputs must differ randomly to prove robustness during back-to-back runs.",
+        "vi": "Đầu vào phải khác ngẫu nhiên khi back-to-back để chứng minh robust."
+      },
+      {
+        "en": "Regression detection forbids comparing probability distributions.",
+        "vi": "Phát hiện hồi quy cấm so phân phối xác suất."
+      },
+      {
+        "en": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+        "vi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ."
+      }
+    ],
+    "correctEn": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+    "correctVi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ.",
+    "explanation": "* **Đúng / Correct:** Aligns with back-to-back testing.\n* **Ôn / Study:** kiểm thử back-to-back"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: model documentation review.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **đánh giá tài liệu mô hình**.",
+    "options": [
+      {
+        "en": "Limitations sections must remain empty for competitive reasons.",
+        "vi": "Mục hạn chế phải để trống vì cạnh tranh."
+      },
+      {
+        "en": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+        "vi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo."
+      },
+      {
+        "en": "Documentation accuracy is optional after MVP launch.",
+        "vi": "Độ chính xác tài liệu tuỳ chọn sau MVP."
+      },
+      {
+        "en": "Change logs conflict with agile cadence and should be avoided.",
+        "vi": "Change log xung đột agile nên tránh."
+      }
+    ],
+    "correctEn": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+    "correctVi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo.",
+    "explanation": "* **Đúng / Correct:** Aligns with model documentation review.\n* **Ôn / Study:** đánh giá tài liệu mô hình"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding ML functional performance testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **kiểm thử hiệu năng chức năng ML**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Validation metrics alone certify regulatory readiness.",
+        "vi": "Chỉ metric validation chứng nhận sẵn sàng quy định."
+      },
+      {
+        "en": "Test accuracy higher than validation always indicates better generalisation.",
+        "vi": "Test accuracy cao hơn validation luôn là khái quát tốt hơn."
+      },
+      {
+        "en": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+        "vi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá."
+      },
+      {
+        "en": "Probabilistic calibration charts replace scenario testing.",
+        "vi": "Biểu đồ calibration thay kiểm thử kịch bản."
+      }
+    ],
+    "correctEn": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+    "correctVi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML functional performance testing.\n* **Ôn / Study:** kiểm thử hiệu năng chức năng ML"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: adversarial testing.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **kiểm thử đối kháng**.",
+    "options": [
+      {
+        "en": "Adversarial testing guarantees elimination of all ML vulnerabilities.",
+        "vi": "Kiểm thử đối kháng đảm bảo loại mọi lỗ hổng ML."
+      },
+      {
+        "en": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+        "vi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production."
+      },
+      {
+        "en": "Production monitors never ingest adversarial telemetry.",
+        "vi": "Monitor production không nhận telemetry đối kháng."
+      },
+      {
+        "en": "FGSM perturbations only apply to relational schemas.",
+        "vi": "Nhiễu FGSM chỉ cho schema quan hệ."
+      }
+    ],
+    "correctEn": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+    "correctVi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production.",
+    "explanation": "* **Đúng / Correct:** Aligns with adversarial testing.\n* **Ôn / Study:** kiểm thử đối kháng"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: metamorphic testing.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử biến hình**.",
+    "options": [
+      {
+        "en": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+        "vi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác."
+      },
+      {
+        "en": "Metamorphic testing forbids comparing logits across runs.",
+        "vi": "Metamorphic cấm so logits giữa các lần chạy."
+      },
+      {
+        "en": "Relations must always preserve exact softmax probabilities bit-for-bit.",
+        "vi": "Quan hệ phải giữ xác suất softmax bit-by-bit."
+      },
+      {
+        "en": "MT only applies to handcrafted rule engines.",
+        "vi": "MT chỉ cho rule engine thủ công."
+      }
+    ],
+    "correctEn": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+    "correctVi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác.",
+    "explanation": "* **Đúng / Correct:** Aligns with metamorphic testing.\n* **Ôn / Study:** kiểm thử biến hình"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding drift testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **kiểm thử drift**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Rollback triggers are incompatible with blue/green deploys.",
+        "vi": "Kích hoạt rollback không tương thích blue/green."
+      },
+      {
+        "en": "Drift detectors must ignore seasonality by policy.",
+        "vi": "Detector drift phải bỏ qua tính thời vụ."
+      },
+      {
+        "en": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+        "vi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào."
+      },
+      {
+        "en": "Silent drift improves customer trust automatically.",
+        "vi": "Drift âm thầm tăng tin cậy khách hàng tự động."
+      }
+    ],
+    "correctEn": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+    "correctVi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào.",
+    "explanation": "* **Đúng / Correct:** Aligns with drift testing.\n* **Ôn / Study:** kiểm thử drift"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: overfitting vs underfitting signals.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **dấu hiệu overfitting và underfitting**.",
+    "options": [
+      {
+        "en": "Training loss near zero always proves deployment readiness.",
+        "vi": "Training loss gần 0 luôn chứng minh sẵn sàng triển khai."
+      },
+      {
+        "en": "Cross-validation is unrelated to diagnosing split misuse.",
+        "vi": "Cross-validation không liên quan chẩn đoán lạm dụng tách tập."
+      },
+      {
+        "en": "Underfitting disappears automatically after GPU upgrade.",
+        "vi": "Underfitting biến mất sau nâng GPU."
+      },
+      {
+        "en": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+        "vi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản."
+      }
+    ],
+    "correctEn": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+    "correctVi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản.",
+    "explanation": "* **Đúng / Correct:** Aligns with overfitting vs underfitting signals.\n* **Ôn / Study:** dấu hiệu overfitting và underfitting"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: A/B testing.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử A/B**.",
+    "options": [
+      {
+        "en": "A/B applies exclusively to CSS themes, not MLS.",
+        "vi": "A/B chỉ cho CSS theme, không MLS."
+      },
+      {
+        "en": "Safety rails violate experimentation purity and must be disabled.",
+        "vi": "Rào an toàn vi phạm độ tinh khiết thí nghiệm nên tắt."
+      },
+      {
+        "en": "A/B decisions require exactly one request sample.",
+        "vi": "Quyết định A/B cần đúng một mẫu request."
+      },
+      {
+        "en": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+        "vi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn."
+      }
+    ],
+    "correctEn": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+    "correctVi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with A/B testing.\n* **Ôn / Study:** kiểm thử A/B"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding back-to-back testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **kiểm thử back-to-back**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Back-to-back replaces monitoring after canary promotion.",
+        "vi": "Back-to-back thay giám sát sau promotion canary."
+      },
+      {
+        "en": "Regression detection forbids comparing probability distributions.",
+        "vi": "Phát hiện hồi quy cấm so phân phối xác suất."
+      },
+      {
+        "en": "Inputs must differ randomly to prove robustness during back-to-back runs.",
+        "vi": "Đầu vào phải khác ngẫu nhiên khi back-to-back để chứng minh robust."
+      },
+      {
+        "en": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+        "vi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ."
+      }
+    ],
+    "correctEn": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+    "correctVi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ.",
+    "explanation": "* **Đúng / Correct:** Aligns with back-to-back testing.\n* **Ôn / Study:** kiểm thử back-to-back"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: model documentation review.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **đánh giá tài liệu mô hình**.",
+    "options": [
+      {
+        "en": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+        "vi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo."
+      },
+      {
+        "en": "Documentation accuracy is optional after MVP launch.",
+        "vi": "Độ chính xác tài liệu tuỳ chọn sau MVP."
+      },
+      {
+        "en": "Change logs conflict with agile cadence and should be avoided.",
+        "vi": "Change log xung đột agile nên tránh."
+      },
+      {
+        "en": "Limitations sections must remain empty for competitive reasons.",
+        "vi": "Mục hạn chế phải để trống vì cạnh tranh."
+      }
+    ],
+    "correctEn": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+    "correctVi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo.",
+    "explanation": "* **Đúng / Correct:** Aligns with model documentation review.\n* **Ôn / Study:** đánh giá tài liệu mô hình"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: ML functional performance testing.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử hiệu năng chức năng ML**.",
+    "options": [
+      {
+        "en": "Validation metrics alone certify regulatory readiness.",
+        "vi": "Chỉ metric validation chứng nhận sẵn sàng quy định."
+      },
+      {
+        "en": "Probabilistic calibration charts replace scenario testing.",
+        "vi": "Biểu đồ calibration thay kiểm thử kịch bản."
+      },
+      {
+        "en": "Test accuracy higher than validation always indicates better generalisation.",
+        "vi": "Test accuracy cao hơn validation luôn là khái quát tốt hơn."
+      },
+      {
+        "en": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+        "vi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá."
+      }
+    ],
+    "correctEn": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+    "correctVi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML functional performance testing.\n* **Ôn / Study:** kiểm thử hiệu năng chức năng ML"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding adversarial testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **kiểm thử đối kháng**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "FGSM perturbations only apply to relational schemas.",
+        "vi": "Nhiễu FGSM chỉ cho schema quan hệ."
+      },
+      {
+        "en": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+        "vi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production."
+      },
+      {
+        "en": "Production monitors never ingest adversarial telemetry.",
+        "vi": "Monitor production không nhận telemetry đối kháng."
+      },
+      {
+        "en": "Adversarial testing guarantees elimination of all ML vulnerabilities.",
+        "vi": "Kiểm thử đối kháng đảm bảo loại mọi lỗ hổng ML."
+      }
+    ],
+    "correctEn": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+    "correctVi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production.",
+    "explanation": "* **Đúng / Correct:** Aligns with adversarial testing.\n* **Ôn / Study:** kiểm thử đối kháng"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: metamorphic testing.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **kiểm thử biến hình**.",
+    "options": [
+      {
+        "en": "MT only applies to handcrafted rule engines.",
+        "vi": "MT chỉ cho rule engine thủ công."
+      },
+      {
+        "en": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+        "vi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác."
+      },
+      {
+        "en": "Relations must always preserve exact softmax probabilities bit-for-bit.",
+        "vi": "Quan hệ phải giữ xác suất softmax bit-by-bit."
+      },
+      {
+        "en": "Metamorphic testing forbids comparing logits across runs.",
+        "vi": "Metamorphic cấm so logits giữa các lần chạy."
+      }
+    ],
+    "correctEn": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+    "correctVi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác.",
+    "explanation": "* **Đúng / Correct:** Aligns with metamorphic testing.\n* **Ôn / Study:** kiểm thử biến hình"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: drift testing.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử drift**.",
+    "options": [
+      {
+        "en": "Drift detectors must ignore seasonality by policy.",
+        "vi": "Detector drift phải bỏ qua tính thời vụ."
+      },
+      {
+        "en": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+        "vi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào."
+      },
+      {
+        "en": "Silent drift improves customer trust automatically.",
+        "vi": "Drift âm thầm tăng tin cậy khách hàng tự động."
+      },
+      {
+        "en": "Rollback triggers are incompatible with blue/green deploys.",
+        "vi": "Kích hoạt rollback không tương thích blue/green."
+      }
+    ],
+    "correctEn": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+    "correctVi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào.",
+    "explanation": "* **Đúng / Correct:** Aligns with drift testing.\n* **Ôn / Study:** kiểm thử drift"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding overfitting vs underfitting signals, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **dấu hiệu overfitting và underfitting**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Underfitting disappears automatically after GPU upgrade.",
+        "vi": "Underfitting biến mất sau nâng GPU."
+      },
+      {
+        "en": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+        "vi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản."
+      },
+      {
+        "en": "Training loss near zero always proves deployment readiness.",
+        "vi": "Training loss gần 0 luôn chứng minh sẵn sàng triển khai."
+      },
+      {
+        "en": "Cross-validation is unrelated to diagnosing split misuse.",
+        "vi": "Cross-validation không liên quan chẩn đoán lạm dụng tách tập."
+      }
+    ],
+    "correctEn": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+    "correctVi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản.",
+    "explanation": "* **Đúng / Correct:** Aligns with overfitting vs underfitting signals.\n* **Ôn / Study:** dấu hiệu overfitting và underfitting"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: A/B testing.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **kiểm thử A/B**.",
+    "options": [
+      {
+        "en": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+        "vi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn."
+      },
+      {
+        "en": "Safety rails violate experimentation purity and must be disabled.",
+        "vi": "Rào an toàn vi phạm độ tinh khiết thí nghiệm nên tắt."
+      },
+      {
+        "en": "A/B decisions require exactly one request sample.",
+        "vi": "Quyết định A/B cần đúng một mẫu request."
+      },
+      {
+        "en": "A/B applies exclusively to CSS themes, not MLS.",
+        "vi": "A/B chỉ cho CSS theme, không MLS."
+      }
+    ],
+    "correctEn": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+    "correctVi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with A/B testing.\n* **Ôn / Study:** kiểm thử A/B"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: back-to-back testing.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử back-to-back**.",
+    "options": [
+      {
+        "en": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+        "vi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ."
+      },
+      {
+        "en": "Regression detection forbids comparing probability distributions.",
+        "vi": "Phát hiện hồi quy cấm so phân phối xác suất."
+      },
+      {
+        "en": "Inputs must differ randomly to prove robustness during back-to-back runs.",
+        "vi": "Đầu vào phải khác ngẫu nhiên khi back-to-back để chứng minh robust."
+      },
+      {
+        "en": "Back-to-back replaces monitoring after canary promotion.",
+        "vi": "Back-to-back thay giám sát sau promotion canary."
+      }
+    ],
+    "correctEn": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+    "correctVi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ.",
+    "explanation": "* **Đúng / Correct:** Aligns with back-to-back testing.\n* **Ôn / Study:** kiểm thử back-to-back"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding model documentation review, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **đánh giá tài liệu mô hình**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+        "vi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo."
+      },
+      {
+        "en": "Limitations sections must remain empty for competitive reasons.",
+        "vi": "Mục hạn chế phải để trống vì cạnh tranh."
+      },
+      {
+        "en": "Documentation accuracy is optional after MVP launch.",
+        "vi": "Độ chính xác tài liệu tuỳ chọn sau MVP."
+      },
+      {
+        "en": "Change logs conflict with agile cadence and should be avoided.",
+        "vi": "Change log xung đột agile nên tránh."
+      }
+    ],
+    "correctEn": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+    "correctVi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo.",
+    "explanation": "* **Đúng / Correct:** Aligns with model documentation review.\n* **Ôn / Study:** đánh giá tài liệu mô hình"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: ML functional performance testing.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **kiểm thử hiệu năng chức năng ML**.",
+    "options": [
+      {
+        "en": "Validation metrics alone certify regulatory readiness.",
+        "vi": "Chỉ metric validation chứng nhận sẵn sàng quy định."
+      },
+      {
+        "en": "Probabilistic calibration charts replace scenario testing.",
+        "vi": "Biểu đồ calibration thay kiểm thử kịch bản."
+      },
+      {
+        "en": "Test accuracy higher than validation always indicates better generalisation.",
+        "vi": "Test accuracy cao hơn validation luôn là khái quát tốt hơn."
+      },
+      {
+        "en": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+        "vi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá."
+      }
+    ],
+    "correctEn": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+    "correctVi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML functional performance testing.\n* **Ôn / Study:** kiểm thử hiệu năng chức năng ML"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: adversarial testing.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử đối kháng**.",
+    "options": [
+      {
+        "en": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+        "vi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production."
+      },
+      {
+        "en": "Adversarial testing guarantees elimination of all ML vulnerabilities.",
+        "vi": "Kiểm thử đối kháng đảm bảo loại mọi lỗ hổng ML."
+      },
+      {
+        "en": "Production monitors never ingest adversarial telemetry.",
+        "vi": "Monitor production không nhận telemetry đối kháng."
+      },
+      {
+        "en": "FGSM perturbations only apply to relational schemas.",
+        "vi": "Nhiễu FGSM chỉ cho schema quan hệ."
+      }
+    ],
+    "correctEn": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+    "correctVi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production.",
+    "explanation": "* **Đúng / Correct:** Aligns with adversarial testing.\n* **Ôn / Study:** kiểm thử đối kháng"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding metamorphic testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **kiểm thử biến hình**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+        "vi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác."
+      },
+      {
+        "en": "Relations must always preserve exact softmax probabilities bit-for-bit.",
+        "vi": "Quan hệ phải giữ xác suất softmax bit-by-bit."
+      },
+      {
+        "en": "Metamorphic testing forbids comparing logits across runs.",
+        "vi": "Metamorphic cấm so logits giữa các lần chạy."
+      },
+      {
+        "en": "MT only applies to handcrafted rule engines.",
+        "vi": "MT chỉ cho rule engine thủ công."
+      }
+    ],
+    "correctEn": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+    "correctVi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác.",
+    "explanation": "* **Đúng / Correct:** Aligns with metamorphic testing.\n* **Ôn / Study:** kiểm thử biến hình"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: drift testing.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **kiểm thử drift**.",
+    "options": [
+      {
+        "en": "Drift detectors must ignore seasonality by policy.",
+        "vi": "Detector drift phải bỏ qua tính thời vụ."
+      },
+      {
+        "en": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+        "vi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào."
+      },
+      {
+        "en": "Silent drift improves customer trust automatically.",
+        "vi": "Drift âm thầm tăng tin cậy khách hàng tự động."
+      },
+      {
+        "en": "Rollback triggers are incompatible with blue/green deploys.",
+        "vi": "Kích hoạt rollback không tương thích blue/green."
+      }
+    ],
+    "correctEn": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+    "correctVi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào.",
+    "explanation": "* **Đúng / Correct:** Aligns with drift testing.\n* **Ôn / Study:** kiểm thử drift"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: overfitting vs underfitting signals.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **dấu hiệu overfitting và underfitting**.",
+    "options": [
+      {
+        "en": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+        "vi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản."
+      },
+      {
+        "en": "Underfitting disappears automatically after GPU upgrade.",
+        "vi": "Underfitting biến mất sau nâng GPU."
+      },
+      {
+        "en": "Training loss near zero always proves deployment readiness.",
+        "vi": "Training loss gần 0 luôn chứng minh sẵn sàng triển khai."
+      },
+      {
+        "en": "Cross-validation is unrelated to diagnosing split misuse.",
+        "vi": "Cross-validation không liên quan chẩn đoán lạm dụng tách tập."
+      }
+    ],
+    "correctEn": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+    "correctVi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản.",
+    "explanation": "* **Đúng / Correct:** Aligns with overfitting vs underfitting signals.\n* **Ôn / Study:** dấu hiệu overfitting và underfitting"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding A/B testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **kiểm thử A/B**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "A/B applies exclusively to CSS themes, not MLS.",
+        "vi": "A/B chỉ cho CSS theme, không MLS."
+      },
+      {
+        "en": "A/B decisions require exactly one request sample.",
+        "vi": "Quyết định A/B cần đúng một mẫu request."
+      },
+      {
+        "en": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+        "vi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn."
+      },
+      {
+        "en": "Safety rails violate experimentation purity and must be disabled.",
+        "vi": "Rào an toàn vi phạm độ tinh khiết thí nghiệm nên tắt."
+      }
+    ],
+    "correctEn": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+    "correctVi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with A/B testing.\n* **Ôn / Study:** kiểm thử A/B"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: back-to-back testing.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **kiểm thử back-to-back**.",
+    "options": [
+      {
+        "en": "Inputs must differ randomly to prove robustness during back-to-back runs.",
+        "vi": "Đầu vào phải khác ngẫu nhiên khi back-to-back để chứng minh robust."
+      },
+      {
+        "en": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+        "vi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ."
+      },
+      {
+        "en": "Back-to-back replaces monitoring after canary promotion.",
+        "vi": "Back-to-back thay giám sát sau promotion canary."
+      },
+      {
+        "en": "Regression detection forbids comparing probability distributions.",
+        "vi": "Phát hiện hồi quy cấm so phân phối xác suất."
+      }
+    ],
+    "correctEn": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+    "correctVi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ.",
+    "explanation": "* **Đúng / Correct:** Aligns with back-to-back testing.\n* **Ôn / Study:** kiểm thử back-to-back"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: model documentation review.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **đánh giá tài liệu mô hình**.",
+    "options": [
+      {
+        "en": "Documentation accuracy is optional after MVP launch.",
+        "vi": "Độ chính xác tài liệu tuỳ chọn sau MVP."
+      },
+      {
+        "en": "Change logs conflict with agile cadence and should be avoided.",
+        "vi": "Change log xung đột agile nên tránh."
+      },
+      {
+        "en": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+        "vi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo."
+      },
+      {
+        "en": "Limitations sections must remain empty for competitive reasons.",
+        "vi": "Mục hạn chế phải để trống vì cạnh tranh."
+      }
+    ],
+    "correctEn": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+    "correctVi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo.",
+    "explanation": "* **Đúng / Correct:** Aligns with model documentation review.\n* **Ôn / Study:** đánh giá tài liệu mô hình"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding ML functional performance testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **kiểm thử hiệu năng chức năng ML**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Validation metrics alone certify regulatory readiness.",
+        "vi": "Chỉ metric validation chứng nhận sẵn sàng quy định."
+      },
+      {
+        "en": "Probabilistic calibration charts replace scenario testing.",
+        "vi": "Biểu đồ calibration thay kiểm thử kịch bản."
+      },
+      {
+        "en": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+        "vi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá."
+      },
+      {
+        "en": "Test accuracy higher than validation always indicates better generalisation.",
+        "vi": "Test accuracy cao hơn validation luôn là khái quát tốt hơn."
+      }
+    ],
+    "correctEn": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+    "correctVi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML functional performance testing.\n* **Ôn / Study:** kiểm thử hiệu năng chức năng ML"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: adversarial testing.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **kiểm thử đối kháng**.",
+    "options": [
+      {
+        "en": "Production monitors never ingest adversarial telemetry.",
+        "vi": "Monitor production không nhận telemetry đối kháng."
+      },
+      {
+        "en": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+        "vi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production."
+      },
+      {
+        "en": "FGSM perturbations only apply to relational schemas.",
+        "vi": "Nhiễu FGSM chỉ cho schema quan hệ."
+      },
+      {
+        "en": "Adversarial testing guarantees elimination of all ML vulnerabilities.",
+        "vi": "Kiểm thử đối kháng đảm bảo loại mọi lỗ hổng ML."
+      }
+    ],
+    "correctEn": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+    "correctVi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production.",
+    "explanation": "* **Đúng / Correct:** Aligns with adversarial testing.\n* **Ôn / Study:** kiểm thử đối kháng"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: metamorphic testing.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử biến hình**.",
+    "options": [
+      {
+        "en": "Metamorphic testing forbids comparing logits across runs.",
+        "vi": "Metamorphic cấm so logits giữa các lần chạy."
+      },
+      {
+        "en": "MT only applies to handcrafted rule engines.",
+        "vi": "MT chỉ cho rule engine thủ công."
+      },
+      {
+        "en": "Relations must always preserve exact softmax probabilities bit-for-bit.",
+        "vi": "Quan hệ phải giữ xác suất softmax bit-by-bit."
+      },
+      {
+        "en": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+        "vi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác."
+      }
+    ],
+    "correctEn": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+    "correctVi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác.",
+    "explanation": "* **Đúng / Correct:** Aligns with metamorphic testing.\n* **Ôn / Study:** kiểm thử biến hình"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding drift testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **kiểm thử drift**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Drift detectors must ignore seasonality by policy.",
+        "vi": "Detector drift phải bỏ qua tính thời vụ."
+      },
+      {
+        "en": "Silent drift improves customer trust automatically.",
+        "vi": "Drift âm thầm tăng tin cậy khách hàng tự động."
+      },
+      {
+        "en": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+        "vi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào."
+      },
+      {
+        "en": "Rollback triggers are incompatible with blue/green deploys.",
+        "vi": "Kích hoạt rollback không tương thích blue/green."
+      }
+    ],
+    "correctEn": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+    "correctVi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào.",
+    "explanation": "* **Đúng / Correct:** Aligns with drift testing.\n* **Ôn / Study:** kiểm thử drift"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: overfitting vs underfitting signals.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **dấu hiệu overfitting và underfitting**.",
+    "options": [
+      {
+        "en": "Underfitting disappears automatically after GPU upgrade.",
+        "vi": "Underfitting biến mất sau nâng GPU."
+      },
+      {
+        "en": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+        "vi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản."
+      },
+      {
+        "en": "Cross-validation is unrelated to diagnosing split misuse.",
+        "vi": "Cross-validation không liên quan chẩn đoán lạm dụng tách tập."
+      },
+      {
+        "en": "Training loss near zero always proves deployment readiness.",
+        "vi": "Training loss gần 0 luôn chứng minh sẵn sàng triển khai."
+      }
+    ],
+    "correctEn": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+    "correctVi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản.",
+    "explanation": "* **Đúng / Correct:** Aligns with overfitting vs underfitting signals.\n* **Ôn / Study:** dấu hiệu overfitting và underfitting"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: A/B testing.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử A/B**.",
+    "options": [
+      {
+        "en": "A/B decisions require exactly one request sample.",
+        "vi": "Quyết định A/B cần đúng một mẫu request."
+      },
+      {
+        "en": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+        "vi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn."
+      },
+      {
+        "en": "Safety rails violate experimentation purity and must be disabled.",
+        "vi": "Rào an toàn vi phạm độ tinh khiết thí nghiệm nên tắt."
+      },
+      {
+        "en": "A/B applies exclusively to CSS themes, not MLS.",
+        "vi": "A/B chỉ cho CSS theme, không MLS."
+      }
+    ],
+    "correctEn": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+    "correctVi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with A/B testing.\n* **Ôn / Study:** kiểm thử A/B"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding back-to-back testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **kiểm thử back-to-back**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+        "vi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ."
+      },
+      {
+        "en": "Inputs must differ randomly to prove robustness during back-to-back runs.",
+        "vi": "Đầu vào phải khác ngẫu nhiên khi back-to-back để chứng minh robust."
+      },
+      {
+        "en": "Back-to-back replaces monitoring after canary promotion.",
+        "vi": "Back-to-back thay giám sát sau promotion canary."
+      },
+      {
+        "en": "Regression detection forbids comparing probability distributions.",
+        "vi": "Phát hiện hồi quy cấm so phân phối xác suất."
+      }
+    ],
+    "correctEn": "Back-to-back feeds identical inputs to baseline and candidate models to expose regressions across outputs or latencies.",
+    "correctVi": "Back-to-back đưa cùng đầu vào cho baseline và ứng viên để lộ hồi quy đầu ra hoặc độ trễ.",
+    "explanation": "* **Đúng / Correct:** Aligns with back-to-back testing.\n* **Ôn / Study:** kiểm thử back-to-back"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: model documentation review.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **đánh giá tài liệu mô hình**.",
+    "options": [
+      {
+        "en": "Change logs conflict with agile cadence and should be avoided.",
+        "vi": "Change log xung đột agile nên tránh."
+      },
+      {
+        "en": "Limitations sections must remain empty for competitive reasons.",
+        "vi": "Mục hạn chế phải để trống vì cạnh tranh."
+      },
+      {
+        "en": "Documentation accuracy is optional after MVP launch.",
+        "vi": "Độ chính xác tài liệu tuỳ chọn sau MVP."
+      },
+      {
+        "en": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+        "vi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo."
+      }
+    ],
+    "correctEn": "Review verifies model cards/datasheets align with deployed weights, thresholds, monitoring hooks, and declared limitations.",
+    "correctVi": "Đánh giá xác nhận model card/datasheet khớp trọng số triển khai, ngưỡng, hook giám sát và hạn chế khai báo.",
+    "explanation": "* **Đúng / Correct:** Aligns with model documentation review.\n* **Ôn / Study:** đánh giá tài liệu mô hình"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: ML functional performance testing.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử hiệu năng chức năng ML**.",
+    "options": [
+      {
+        "en": "Validation metrics alone certify regulatory readiness.",
+        "vi": "Chỉ metric validation chứng nhận sẵn sàng quy định."
+      },
+      {
+        "en": "Probabilistic calibration charts replace scenario testing.",
+        "vi": "Biểu đồ calibration thay kiểm thử kịch bản."
+      },
+      {
+        "en": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+        "vi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá."
+      },
+      {
+        "en": "Test accuracy higher than validation always indicates better generalisation.",
+        "vi": "Test accuracy cao hơn validation luôn là khái quát tốt hơn."
+      }
+    ],
+    "correctEn": "Independent test sets evaluate agreed metrics; large gaps versus validation signal leakage, overfitting, or evaluation bugs.",
+    "correctVi": "Tập test độc lập đánh giá metric đã thống nhất; lệch lớn so validation báo rò, overfit hoặc lỗi đánh giá.",
+    "explanation": "* **Đúng / Correct:** Aligns with ML functional performance testing.\n* **Ôn / Study:** kiểm thử hiệu năng chức năng ML"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding adversarial testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **kiểm thử đối kháng**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+        "vi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production."
+      },
+      {
+        "en": "FGSM perturbations only apply to relational schemas.",
+        "vi": "Nhiễu FGSM chỉ cho schema quan hệ."
+      },
+      {
+        "en": "Production monitors never ingest adversarial telemetry.",
+        "vi": "Monitor production không nhận telemetry đối kháng."
+      },
+      {
+        "en": "Adversarial testing guarantees elimination of all ML vulnerabilities.",
+        "vi": "Kiểm thử đối kháng đảm bảo loại mọi lỗ hổng ML."
+      }
+    ],
+    "correctEn": "Adversarial campaigns craft perturbations or leverage attack libraries to probe boundary behaviour and monitor novel threats in production.",
+    "correctVi": "Chiến dịch đối kháng tạo nhiễu hoặc dùng thư viện tấn công để thăm dò biên và giám sát đe dọa mới trên production.",
+    "explanation": "* **Đúng / Correct:** Aligns with adversarial testing.\n* **Ôn / Study:** kiểm thử đối kháng"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: metamorphic testing.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **kiểm thử biến hình**.",
+    "options": [
+      {
+        "en": "MT only applies to handcrafted rule engines.",
+        "vi": "MT chỉ cho rule engine thủ công."
+      },
+      {
+        "en": "Metamorphic testing forbids comparing logits across runs.",
+        "vi": "Metamorphic cấm so logits giữa các lần chạy."
+      },
+      {
+        "en": "Relations must always preserve exact softmax probabilities bit-for-bit.",
+        "vi": "Quan hệ phải giữ xác suất softmax bit-by-bit."
+      },
+      {
+        "en": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+        "vi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác."
+      }
+    ],
+    "correctEn": "Metamorphic relations expect predictable output transformations under input transformations when precise oracles are unavailable.",
+    "correctVi": "Quan hệ biến hình kỳ vọng biến đổi đầu ra có quy luật khi biến đổi đầu vào nếu thiếu oracle chính xác.",
+    "explanation": "* **Đúng / Correct:** Aligns with metamorphic testing.\n* **Ôn / Study:** kiểm thử biến hình"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: drift testing.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử drift**.",
+    "options": [
+      {
+        "en": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+        "vi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào."
+      },
+      {
+        "en": "Drift detectors must ignore seasonality by policy.",
+        "vi": "Detector drift phải bỏ qua tính thời vụ."
+      },
+      {
+        "en": "Rollback triggers are incompatible with blue/green deploys.",
+        "vi": "Kích hoạt rollback không tương thích blue/green."
+      },
+      {
+        "en": "Silent drift improves customer trust automatically.",
+        "vi": "Drift âm thầm tăng tin cậy khách hàng tự động."
+      }
+    ],
+    "correctEn": "Drift testing compares live data or performance profiles against baselines; triggers may retrain, rollback, or tighten safeguards.",
+    "correctVi": "Kiểm thử drift so dữ liệu live hoặc profile hiệu năng với baseline; kích hoạt có thể huấn luyện lại, rollback hoặc siết rào.",
+    "explanation": "* **Đúng / Correct:** Aligns with drift testing.\n* **Ôn / Study:** kiểm thử drift"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding overfitting vs underfitting signals, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **dấu hiệu overfitting và underfitting**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Underfitting disappears automatically after GPU upgrade.",
+        "vi": "Underfitting biến mất sau nâng GPU."
+      },
+      {
+        "en": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+        "vi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản."
+      },
+      {
+        "en": "Training loss near zero always proves deployment readiness.",
+        "vi": "Training loss gần 0 luôn chứng minh sẵn sàng triển khai."
+      },
+      {
+        "en": "Cross-validation is unrelated to diagnosing split misuse.",
+        "vi": "Cross-validation không liên quan chẩn đoán lạm dụng tách tập."
+      }
+    ],
+    "correctEn": "Overfitting shows strong validation but weak generalisation; underfitting exhibits high bias with simplistic decision boundaries.",
+    "correctVi": "Overfitting validation mạnh nhưng khái quát yếu; underfitting bias cao với biên quyết định quá đơn giản.",
+    "explanation": "* **Đúng / Correct:** Aligns with overfitting vs underfitting signals.\n* **Ôn / Study:** dấu hiệu overfitting và underfitting"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: A/B testing.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **kiểm thử A/B**.",
+    "options": [
+      {
+        "en": "A/B applies exclusively to CSS themes, not MLS.",
+        "vi": "A/B chỉ cho CSS theme, không MLS."
+      },
+      {
+        "en": "A/B decisions require exactly one request sample.",
+        "vi": "Quyết định A/B cần đúng một mẫu request."
+      },
+      {
+        "en": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+        "vi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn."
+      },
+      {
+        "en": "Safety rails violate experimentation purity and must be disabled.",
+        "vi": "Rào an toàn vi phạm độ tinh khiết thí nghiệm nên tắt."
+      }
+    ],
+    "correctEn": "A/B compares candidate models or prompts using guarded traffic splits with statistical power analysis and safety rails.",
+    "correctVi": "A/B so mô hình hoặc prompt dùng chia traffic có bảo vệ, phân tích lực thống kê và rào an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with A/B testing.\n* **Ôn / Study:** kiểm thử A/B"
+  }
+]

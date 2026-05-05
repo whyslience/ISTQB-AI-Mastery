@@ -1,0 +1,1777 @@
+[
+  {
+    "questionEn": "Select the BEST answer.\nRegarding locked vs adaptive AI systems, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **hệ AI khóa so với thích ứng**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Monitoring is redundant once training accuracy plateaus.",
+        "vi": "Giám sát thừa khi độ chính xác huấn luyện bão hòa."
+      },
+      {
+        "en": "Adaptive systems never drift because gradients disappear automatically.",
+        "vi": "Hệ thích ứng không drift vì gradient biến mất tự động."
+      },
+      {
+        "en": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+        "vi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại."
+      },
+      {
+        "en": "Locked systems forbid controlled versioned updates entirely.",
+        "vi": "Hệ khóa cấm mọi cập nhật có phiên bản có kiểm soát."
+      }
+    ],
+    "correctEn": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+    "correctVi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại.",
+    "explanation": "* **Đúng / Correct:** Aligns with locked vs adaptive AI systems.\n* **Ôn / Study:** hệ AI khóa so với thích ứng"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: statistical testing rationale.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **cơ sở kiểm thử thống kê**.",
+    "options": [
+      {
+        "en": "Confidence intervals are unrelated to risk-based prioritisation.",
+        "vi": "Khoảng tin cậy không liên quan ưu tiên theo rủi ro."
+      },
+      {
+        "en": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+        "vi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt."
+      },
+      {
+        "en": "Exhaustive enumeration is practical for every LLM prompt space.",
+        "vi": "Liệt kê vét kiệt khả thi cho mọi không gian prompt LLM."
+      },
+      {
+        "en": "Single deterministic seeds remove variability concerns permanently.",
+        "vi": "Một seed deterministic loại vĩnh viễn lo biến thiên."
+      }
+    ],
+    "correctEn": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+    "correctVi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt.",
+    "explanation": "* **Đúng / Correct:** Aligns with statistical testing rationale.\n* **Ôn / Study:** cơ sở kiểm thử thống kê"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: test oracles for AI.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **oracle kiểm thử cho AI**.",
+    "options": [
+      {
+        "en": "Metamorphic testing forbids comparing outputs across related inputs.",
+        "vi": "Kiểm thử biến hình cấm so đầu ra giữa đầu vào liên quan."
+      },
+      {
+        "en": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+        "vi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn."
+      },
+      {
+        "en": "Human evaluation is prohibited under agile MLS delivery.",
+        "vi": "Đánh giá con người bị cấm trong giao MLS agile."
+      },
+      {
+        "en": "Expected exact strings always exist for creative GenAI outputs.",
+        "vi": "Luôn có chuỗi mong đợi chính xác cho đầu ra GenAI sáng tạo."
+      }
+    ],
+    "correctEn": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+    "correctVi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with test oracles for AI.\n* **Ôn / Study:** oracle kiểm thử cho AI"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding testing LLMs / GenAI concerns, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **kiểm thử LLM / GenAI**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Grounding tests replace security penetration testing entirely.",
+        "vi": "Kiểm thử grounding thay hoàn toàn pentest."
+      },
+      {
+        "en": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+        "vi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình."
+      },
+      {
+        "en": "Prompt injection is purely a database indexing issue.",
+        "vi": "Prompt injection chỉ là vấn đề chỉ mục CSDL."
+      },
+      {
+        "en": "Latency budgets ignore streaming token partial outputs.",
+        "vi": "Ngân sách độ trễ bỏ qua token streaming một phần."
+      }
+    ],
+    "correctEn": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+    "correctVi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with testing LLMs / GenAI concerns.\n* **Ôn / Study:** kiểm thử LLM / GenAI"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: red teaming.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **red teaming**.",
+    "options": [
+      {
+        "en": "Red teaming applies only to relational databases, not LLMs.",
+        "vi": "Red teaming chỉ cho CSDL quan hệ, không cho LLM."
+      },
+      {
+        "en": "Red teaming replaces independent validation datasets.",
+        "vi": "Red teaming thay tập validation độc lập."
+      },
+      {
+        "en": "Successful red-team sessions prove regulatory compliance alone.",
+        "vi": "Phiên red-team thành công chứng minh tuân thủ quy định một mình."
+      },
+      {
+        "en": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+        "vi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng."
+      }
+    ],
+    "correctEn": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+    "correctVi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng.",
+    "explanation": "* **Đúng / Correct:** Aligns with red teaming.\n* **Ôn / Study:** red teaming"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: test levels for MLS.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **mức kiểm thử cho MLS**.",
+    "options": [
+      {
+        "en": "Unit tests on transforms absolve need for production shadow evaluation.",
+        "vi": "Unit test biến đổi miễn trừ đánh giá shadow production."
+      },
+      {
+        "en": "Integration testing forbids stubbing external APIs during MLS CI.",
+        "vi": "Kiểm thử tích hợp cấm stub API ngoài trong CI MLS."
+      },
+      {
+        "en": "Operational monitoring only captures GPU temperature curves.",
+        "vi": "Giám sát vận hành chỉ thu đường nhiệt GPU."
+      },
+      {
+        "en": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+        "vi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback."
+      }
+    ],
+    "correctEn": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+    "correctVi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback.",
+    "explanation": "* **Đúng / Correct:** Aligns with test levels for MLS.\n* **Ôn / Study:** mức kiểm thử cho MLS"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding risk-based MLS testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **kiểm thử MLS theo rủi ro**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Equal effort per line of Python is mandated regardless of risk.",
+        "vi": "Công sức đều cho mỗi dòng Python bất kể rủi ro."
+      },
+      {
+        "en": "Low-impact scenarios deserve exhaustive combinatorial matrices first.",
+        "vi": "Kịch bản tác động thấp ưu tiên ma trận tổ hợp vét kiệt trước."
+      },
+      {
+        "en": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+        "vi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn."
+      },
+      {
+        "en": "Risk registers cannot reference regulatory classifications.",
+        "vi": "Sổ đăng ký rủi ro không được tham chiếu phân loại quy định."
+      }
+    ],
+    "correctEn": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+    "correctVi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with risk-based MLS testing.\n* **Ôn / Study:** kiểm thử MLS theo rủi ro"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: exploratory LLM testing mindset.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **tư duy kiểm thử khám phá LLM**.",
+    "options": [
+      {
+        "en": "Charters eliminate learning objectives alignment.",
+        "vi": "Charter loại căn chỉnh mục tiêu học."
+      },
+      {
+        "en": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+        "vi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử."
+      },
+      {
+        "en": "Exploratory testing forbids documenting reproduction steps.",
+        "vi": "Khám phá cấm ghi bước tái hiện."
+      },
+      {
+        "en": "Only scripted tests may observe probabilistic variance.",
+        "vi": "Chỉ test kịch bản được quan sát biến thiên xác suất."
+      }
+    ],
+    "correctEn": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+    "correctVi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử.",
+    "explanation": "* **Đúng / Correct:** Aligns with exploratory LLM testing mindset.\n* **Ôn / Study:** tư duy kiểm thử khám phá LLM"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: locked vs adaptive AI systems.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **hệ AI khóa so với thích ứng**.",
+    "options": [
+      {
+        "en": "Locked systems forbid controlled versioned updates entirely.",
+        "vi": "Hệ khóa cấm mọi cập nhật có phiên bản có kiểm soát."
+      },
+      {
+        "en": "Monitoring is redundant once training accuracy plateaus.",
+        "vi": "Giám sát thừa khi độ chính xác huấn luyện bão hòa."
+      },
+      {
+        "en": "Adaptive systems never drift because gradients disappear automatically.",
+        "vi": "Hệ thích ứng không drift vì gradient biến mất tự động."
+      },
+      {
+        "en": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+        "vi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại."
+      }
+    ],
+    "correctEn": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+    "correctVi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại.",
+    "explanation": "* **Đúng / Correct:** Aligns with locked vs adaptive AI systems.\n* **Ôn / Study:** hệ AI khóa so với thích ứng"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding statistical testing rationale, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **cơ sở kiểm thử thống kê**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+        "vi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt."
+      },
+      {
+        "en": "Confidence intervals are unrelated to risk-based prioritisation.",
+        "vi": "Khoảng tin cậy không liên quan ưu tiên theo rủi ro."
+      },
+      {
+        "en": "Single deterministic seeds remove variability concerns permanently.",
+        "vi": "Một seed deterministic loại vĩnh viễn lo biến thiên."
+      },
+      {
+        "en": "Exhaustive enumeration is practical for every LLM prompt space.",
+        "vi": "Liệt kê vét kiệt khả thi cho mọi không gian prompt LLM."
+      }
+    ],
+    "correctEn": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+    "correctVi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt.",
+    "explanation": "* **Đúng / Correct:** Aligns with statistical testing rationale.\n* **Ôn / Study:** cơ sở kiểm thử thống kê"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: test oracles for AI.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **oracle kiểm thử cho AI**.",
+    "options": [
+      {
+        "en": "Human evaluation is prohibited under agile MLS delivery.",
+        "vi": "Đánh giá con người bị cấm trong giao MLS agile."
+      },
+      {
+        "en": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+        "vi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn."
+      },
+      {
+        "en": "Metamorphic testing forbids comparing outputs across related inputs.",
+        "vi": "Kiểm thử biến hình cấm so đầu ra giữa đầu vào liên quan."
+      },
+      {
+        "en": "Expected exact strings always exist for creative GenAI outputs.",
+        "vi": "Luôn có chuỗi mong đợi chính xác cho đầu ra GenAI sáng tạo."
+      }
+    ],
+    "correctEn": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+    "correctVi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with test oracles for AI.\n* **Ôn / Study:** oracle kiểm thử cho AI"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: testing LLMs / GenAI concerns.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử LLM / GenAI**.",
+    "options": [
+      {
+        "en": "Grounding tests replace security penetration testing entirely.",
+        "vi": "Kiểm thử grounding thay hoàn toàn pentest."
+      },
+      {
+        "en": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+        "vi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình."
+      },
+      {
+        "en": "Latency budgets ignore streaming token partial outputs.",
+        "vi": "Ngân sách độ trễ bỏ qua token streaming một phần."
+      },
+      {
+        "en": "Prompt injection is purely a database indexing issue.",
+        "vi": "Prompt injection chỉ là vấn đề chỉ mục CSDL."
+      }
+    ],
+    "correctEn": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+    "correctVi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with testing LLMs / GenAI concerns.\n* **Ôn / Study:** kiểm thử LLM / GenAI"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding red teaming, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **red teaming**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Red teaming replaces independent validation datasets.",
+        "vi": "Red teaming thay tập validation độc lập."
+      },
+      {
+        "en": "Red teaming applies only to relational databases, not LLMs.",
+        "vi": "Red teaming chỉ cho CSDL quan hệ, không cho LLM."
+      },
+      {
+        "en": "Successful red-team sessions prove regulatory compliance alone.",
+        "vi": "Phiên red-team thành công chứng minh tuân thủ quy định một mình."
+      },
+      {
+        "en": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+        "vi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng."
+      }
+    ],
+    "correctEn": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+    "correctVi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng.",
+    "explanation": "* **Đúng / Correct:** Aligns with red teaming.\n* **Ôn / Study:** red teaming"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: test levels for MLS.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **mức kiểm thử cho MLS**.",
+    "options": [
+      {
+        "en": "Operational monitoring only captures GPU temperature curves.",
+        "vi": "Giám sát vận hành chỉ thu đường nhiệt GPU."
+      },
+      {
+        "en": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+        "vi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback."
+      },
+      {
+        "en": "Integration testing forbids stubbing external APIs during MLS CI.",
+        "vi": "Kiểm thử tích hợp cấm stub API ngoài trong CI MLS."
+      },
+      {
+        "en": "Unit tests on transforms absolve need for production shadow evaluation.",
+        "vi": "Unit test biến đổi miễn trừ đánh giá shadow production."
+      }
+    ],
+    "correctEn": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+    "correctVi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback.",
+    "explanation": "* **Đúng / Correct:** Aligns with test levels for MLS.\n* **Ôn / Study:** mức kiểm thử cho MLS"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: risk-based MLS testing.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử MLS theo rủi ro**.",
+    "options": [
+      {
+        "en": "Risk registers cannot reference regulatory classifications.",
+        "vi": "Sổ đăng ký rủi ro không được tham chiếu phân loại quy định."
+      },
+      {
+        "en": "Low-impact scenarios deserve exhaustive combinatorial matrices first.",
+        "vi": "Kịch bản tác động thấp ưu tiên ma trận tổ hợp vét kiệt trước."
+      },
+      {
+        "en": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+        "vi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn."
+      },
+      {
+        "en": "Equal effort per line of Python is mandated regardless of risk.",
+        "vi": "Công sức đều cho mỗi dòng Python bất kể rủi ro."
+      }
+    ],
+    "correctEn": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+    "correctVi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with risk-based MLS testing.\n* **Ôn / Study:** kiểm thử MLS theo rủi ro"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding exploratory LLM testing mindset, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **tư duy kiểm thử khám phá LLM**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Charters eliminate learning objectives alignment.",
+        "vi": "Charter loại căn chỉnh mục tiêu học."
+      },
+      {
+        "en": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+        "vi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử."
+      },
+      {
+        "en": "Exploratory testing forbids documenting reproduction steps.",
+        "vi": "Khám phá cấm ghi bước tái hiện."
+      },
+      {
+        "en": "Only scripted tests may observe probabilistic variance.",
+        "vi": "Chỉ test kịch bản được quan sát biến thiên xác suất."
+      }
+    ],
+    "correctEn": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+    "correctVi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử.",
+    "explanation": "* **Đúng / Correct:** Aligns with exploratory LLM testing mindset.\n* **Ôn / Study:** tư duy kiểm thử khám phá LLM"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: locked vs adaptive AI systems.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **hệ AI khóa so với thích ứng**.",
+    "options": [
+      {
+        "en": "Locked systems forbid controlled versioned updates entirely.",
+        "vi": "Hệ khóa cấm mọi cập nhật có phiên bản có kiểm soát."
+      },
+      {
+        "en": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+        "vi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại."
+      },
+      {
+        "en": "Monitoring is redundant once training accuracy plateaus.",
+        "vi": "Giám sát thừa khi độ chính xác huấn luyện bão hòa."
+      },
+      {
+        "en": "Adaptive systems never drift because gradients disappear automatically.",
+        "vi": "Hệ thích ứng không drift vì gradient biến mất tự động."
+      }
+    ],
+    "correctEn": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+    "correctVi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại.",
+    "explanation": "* **Đúng / Correct:** Aligns with locked vs adaptive AI systems.\n* **Ôn / Study:** hệ AI khóa so với thích ứng"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: statistical testing rationale.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **cơ sở kiểm thử thống kê**.",
+    "options": [
+      {
+        "en": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+        "vi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt."
+      },
+      {
+        "en": "Single deterministic seeds remove variability concerns permanently.",
+        "vi": "Một seed deterministic loại vĩnh viễn lo biến thiên."
+      },
+      {
+        "en": "Exhaustive enumeration is practical for every LLM prompt space.",
+        "vi": "Liệt kê vét kiệt khả thi cho mọi không gian prompt LLM."
+      },
+      {
+        "en": "Confidence intervals are unrelated to risk-based prioritisation.",
+        "vi": "Khoảng tin cậy không liên quan ưu tiên theo rủi ro."
+      }
+    ],
+    "correctEn": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+    "correctVi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt.",
+    "explanation": "* **Đúng / Correct:** Aligns with statistical testing rationale.\n* **Ôn / Study:** cơ sở kiểm thử thống kê"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding test oracles for AI, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **oracle kiểm thử cho AI**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Metamorphic testing forbids comparing outputs across related inputs.",
+        "vi": "Kiểm thử biến hình cấm so đầu ra giữa đầu vào liên quan."
+      },
+      {
+        "en": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+        "vi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn."
+      },
+      {
+        "en": "Expected exact strings always exist for creative GenAI outputs.",
+        "vi": "Luôn có chuỗi mong đợi chính xác cho đầu ra GenAI sáng tạo."
+      },
+      {
+        "en": "Human evaluation is prohibited under agile MLS delivery.",
+        "vi": "Đánh giá con người bị cấm trong giao MLS agile."
+      }
+    ],
+    "correctEn": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+    "correctVi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with test oracles for AI.\n* **Ôn / Study:** oracle kiểm thử cho AI"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: testing LLMs / GenAI concerns.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **kiểm thử LLM / GenAI**.",
+    "options": [
+      {
+        "en": "Prompt injection is purely a database indexing issue.",
+        "vi": "Prompt injection chỉ là vấn đề chỉ mục CSDL."
+      },
+      {
+        "en": "Latency budgets ignore streaming token partial outputs.",
+        "vi": "Ngân sách độ trễ bỏ qua token streaming một phần."
+      },
+      {
+        "en": "Grounding tests replace security penetration testing entirely.",
+        "vi": "Kiểm thử grounding thay hoàn toàn pentest."
+      },
+      {
+        "en": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+        "vi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình."
+      }
+    ],
+    "correctEn": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+    "correctVi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with testing LLMs / GenAI concerns.\n* **Ôn / Study:** kiểm thử LLM / GenAI"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: red teaming.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **red teaming**.",
+    "options": [
+      {
+        "en": "Successful red-team sessions prove regulatory compliance alone.",
+        "vi": "Phiên red-team thành công chứng minh tuân thủ quy định một mình."
+      },
+      {
+        "en": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+        "vi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng."
+      },
+      {
+        "en": "Red teaming replaces independent validation datasets.",
+        "vi": "Red teaming thay tập validation độc lập."
+      },
+      {
+        "en": "Red teaming applies only to relational databases, not LLMs.",
+        "vi": "Red teaming chỉ cho CSDL quan hệ, không cho LLM."
+      }
+    ],
+    "correctEn": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+    "correctVi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng.",
+    "explanation": "* **Đúng / Correct:** Aligns with red teaming.\n* **Ôn / Study:** red teaming"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding test levels for MLS, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **mức kiểm thử cho MLS**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Unit tests on transforms absolve need for production shadow evaluation.",
+        "vi": "Unit test biến đổi miễn trừ đánh giá shadow production."
+      },
+      {
+        "en": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+        "vi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback."
+      },
+      {
+        "en": "Operational monitoring only captures GPU temperature curves.",
+        "vi": "Giám sát vận hành chỉ thu đường nhiệt GPU."
+      },
+      {
+        "en": "Integration testing forbids stubbing external APIs during MLS CI.",
+        "vi": "Kiểm thử tích hợp cấm stub API ngoài trong CI MLS."
+      }
+    ],
+    "correctEn": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+    "correctVi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback.",
+    "explanation": "* **Đúng / Correct:** Aligns with test levels for MLS.\n* **Ôn / Study:** mức kiểm thử cho MLS"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: risk-based MLS testing.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **kiểm thử MLS theo rủi ro**.",
+    "options": [
+      {
+        "en": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+        "vi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn."
+      },
+      {
+        "en": "Low-impact scenarios deserve exhaustive combinatorial matrices first.",
+        "vi": "Kịch bản tác động thấp ưu tiên ma trận tổ hợp vét kiệt trước."
+      },
+      {
+        "en": "Risk registers cannot reference regulatory classifications.",
+        "vi": "Sổ đăng ký rủi ro không được tham chiếu phân loại quy định."
+      },
+      {
+        "en": "Equal effort per line of Python is mandated regardless of risk.",
+        "vi": "Công sức đều cho mỗi dòng Python bất kể rủi ro."
+      }
+    ],
+    "correctEn": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+    "correctVi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with risk-based MLS testing.\n* **Ôn / Study:** kiểm thử MLS theo rủi ro"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: exploratory LLM testing mindset.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **tư duy kiểm thử khám phá LLM**.",
+    "options": [
+      {
+        "en": "Charters eliminate learning objectives alignment.",
+        "vi": "Charter loại căn chỉnh mục tiêu học."
+      },
+      {
+        "en": "Only scripted tests may observe probabilistic variance.",
+        "vi": "Chỉ test kịch bản được quan sát biến thiên xác suất."
+      },
+      {
+        "en": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+        "vi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử."
+      },
+      {
+        "en": "Exploratory testing forbids documenting reproduction steps.",
+        "vi": "Khám phá cấm ghi bước tái hiện."
+      }
+    ],
+    "correctEn": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+    "correctVi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử.",
+    "explanation": "* **Đúng / Correct:** Aligns with exploratory LLM testing mindset.\n* **Ôn / Study:** tư duy kiểm thử khám phá LLM"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding locked vs adaptive AI systems, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **hệ AI khóa so với thích ứng**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+        "vi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại."
+      },
+      {
+        "en": "Adaptive systems never drift because gradients disappear automatically.",
+        "vi": "Hệ thích ứng không drift vì gradient biến mất tự động."
+      },
+      {
+        "en": "Monitoring is redundant once training accuracy plateaus.",
+        "vi": "Giám sát thừa khi độ chính xác huấn luyện bão hòa."
+      },
+      {
+        "en": "Locked systems forbid controlled versioned updates entirely.",
+        "vi": "Hệ khóa cấm mọi cập nhật có phiên bản có kiểm soát."
+      }
+    ],
+    "correctEn": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+    "correctVi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại.",
+    "explanation": "* **Đúng / Correct:** Aligns with locked vs adaptive AI systems.\n* **Ôn / Study:** hệ AI khóa so với thích ứng"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: statistical testing rationale.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **cơ sở kiểm thử thống kê**.",
+    "options": [
+      {
+        "en": "Exhaustive enumeration is practical for every LLM prompt space.",
+        "vi": "Liệt kê vét kiệt khả thi cho mọi không gian prompt LLM."
+      },
+      {
+        "en": "Confidence intervals are unrelated to risk-based prioritisation.",
+        "vi": "Khoảng tin cậy không liên quan ưu tiên theo rủi ro."
+      },
+      {
+        "en": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+        "vi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt."
+      },
+      {
+        "en": "Single deterministic seeds remove variability concerns permanently.",
+        "vi": "Một seed deterministic loại vĩnh viễn lo biến thiên."
+      }
+    ],
+    "correctEn": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+    "correctVi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt.",
+    "explanation": "* **Đúng / Correct:** Aligns with statistical testing rationale.\n* **Ôn / Study:** cơ sở kiểm thử thống kê"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: test oracles for AI.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **oracle kiểm thử cho AI**.",
+    "options": [
+      {
+        "en": "Expected exact strings always exist for creative GenAI outputs.",
+        "vi": "Luôn có chuỗi mong đợi chính xác cho đầu ra GenAI sáng tạo."
+      },
+      {
+        "en": "Metamorphic testing forbids comparing outputs across related inputs.",
+        "vi": "Kiểm thử biến hình cấm so đầu ra giữa đầu vào liên quan."
+      },
+      {
+        "en": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+        "vi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn."
+      },
+      {
+        "en": "Human evaluation is prohibited under agile MLS delivery.",
+        "vi": "Đánh giá con người bị cấm trong giao MLS agile."
+      }
+    ],
+    "correctEn": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+    "correctVi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with test oracles for AI.\n* **Ôn / Study:** oracle kiểm thử cho AI"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding testing LLMs / GenAI concerns, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **kiểm thử LLM / GenAI**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+        "vi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình."
+      },
+      {
+        "en": "Latency budgets ignore streaming token partial outputs.",
+        "vi": "Ngân sách độ trễ bỏ qua token streaming một phần."
+      },
+      {
+        "en": "Grounding tests replace security penetration testing entirely.",
+        "vi": "Kiểm thử grounding thay hoàn toàn pentest."
+      },
+      {
+        "en": "Prompt injection is purely a database indexing issue.",
+        "vi": "Prompt injection chỉ là vấn đề chỉ mục CSDL."
+      }
+    ],
+    "correctEn": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+    "correctVi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with testing LLMs / GenAI concerns.\n* **Ôn / Study:** kiểm thử LLM / GenAI"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: red teaming.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **red teaming**.",
+    "options": [
+      {
+        "en": "Successful red-team sessions prove regulatory compliance alone.",
+        "vi": "Phiên red-team thành công chứng minh tuân thủ quy định một mình."
+      },
+      {
+        "en": "Red teaming replaces independent validation datasets.",
+        "vi": "Red teaming thay tập validation độc lập."
+      },
+      {
+        "en": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+        "vi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng."
+      },
+      {
+        "en": "Red teaming applies only to relational databases, not LLMs.",
+        "vi": "Red teaming chỉ cho CSDL quan hệ, không cho LLM."
+      }
+    ],
+    "correctEn": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+    "correctVi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng.",
+    "explanation": "* **Đúng / Correct:** Aligns with red teaming.\n* **Ôn / Study:** red teaming"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: test levels for MLS.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **mức kiểm thử cho MLS**.",
+    "options": [
+      {
+        "en": "Operational monitoring only captures GPU temperature curves.",
+        "vi": "Giám sát vận hành chỉ thu đường nhiệt GPU."
+      },
+      {
+        "en": "Unit tests on transforms absolve need for production shadow evaluation.",
+        "vi": "Unit test biến đổi miễn trừ đánh giá shadow production."
+      },
+      {
+        "en": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+        "vi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback."
+      },
+      {
+        "en": "Integration testing forbids stubbing external APIs during MLS CI.",
+        "vi": "Kiểm thử tích hợp cấm stub API ngoài trong CI MLS."
+      }
+    ],
+    "correctEn": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+    "correctVi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback.",
+    "explanation": "* **Đúng / Correct:** Aligns with test levels for MLS.\n* **Ôn / Study:** mức kiểm thử cho MLS"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding risk-based MLS testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **kiểm thử MLS theo rủi ro**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Equal effort per line of Python is mandated regardless of risk.",
+        "vi": "Công sức đều cho mỗi dòng Python bất kể rủi ro."
+      },
+      {
+        "en": "Low-impact scenarios deserve exhaustive combinatorial matrices first.",
+        "vi": "Kịch bản tác động thấp ưu tiên ma trận tổ hợp vét kiệt trước."
+      },
+      {
+        "en": "Risk registers cannot reference regulatory classifications.",
+        "vi": "Sổ đăng ký rủi ro không được tham chiếu phân loại quy định."
+      },
+      {
+        "en": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+        "vi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn."
+      }
+    ],
+    "correctEn": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+    "correctVi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with risk-based MLS testing.\n* **Ôn / Study:** kiểm thử MLS theo rủi ro"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: exploratory LLM testing mindset.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **tư duy kiểm thử khám phá LLM**.",
+    "options": [
+      {
+        "en": "Only scripted tests may observe probabilistic variance.",
+        "vi": "Chỉ test kịch bản được quan sát biến thiên xác suất."
+      },
+      {
+        "en": "Charters eliminate learning objectives alignment.",
+        "vi": "Charter loại căn chỉnh mục tiêu học."
+      },
+      {
+        "en": "Exploratory testing forbids documenting reproduction steps.",
+        "vi": "Khám phá cấm ghi bước tái hiện."
+      },
+      {
+        "en": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+        "vi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử."
+      }
+    ],
+    "correctEn": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+    "correctVi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử.",
+    "explanation": "* **Đúng / Correct:** Aligns with exploratory LLM testing mindset.\n* **Ôn / Study:** tư duy kiểm thử khám phá LLM"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: locked vs adaptive AI systems.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **hệ AI khóa so với thích ứng**.",
+    "options": [
+      {
+        "en": "Locked systems forbid controlled versioned updates entirely.",
+        "vi": "Hệ khóa cấm mọi cập nhật có phiên bản có kiểm soát."
+      },
+      {
+        "en": "Monitoring is redundant once training accuracy plateaus.",
+        "vi": "Giám sát thừa khi độ chính xác huấn luyện bão hòa."
+      },
+      {
+        "en": "Adaptive systems never drift because gradients disappear automatically.",
+        "vi": "Hệ thích ứng không drift vì gradient biến mất tự động."
+      },
+      {
+        "en": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+        "vi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại."
+      }
+    ],
+    "correctEn": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+    "correctVi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại.",
+    "explanation": "* **Đúng / Correct:** Aligns with locked vs adaptive AI systems.\n* **Ôn / Study:** hệ AI khóa so với thích ứng"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding statistical testing rationale, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **cơ sở kiểm thử thống kê**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Single deterministic seeds remove variability concerns permanently.",
+        "vi": "Một seed deterministic loại vĩnh viễn lo biến thiên."
+      },
+      {
+        "en": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+        "vi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt."
+      },
+      {
+        "en": "Confidence intervals are unrelated to risk-based prioritisation.",
+        "vi": "Khoảng tin cậy không liên quan ưu tiên theo rủi ro."
+      },
+      {
+        "en": "Exhaustive enumeration is practical for every LLM prompt space.",
+        "vi": "Liệt kê vét kiệt khả thi cho mọi không gian prompt LLM."
+      }
+    ],
+    "correctEn": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+    "correctVi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt.",
+    "explanation": "* **Đúng / Correct:** Aligns with statistical testing rationale.\n* **Ôn / Study:** cơ sở kiểm thử thống kê"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: test oracles for AI.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **oracle kiểm thử cho AI**.",
+    "options": [
+      {
+        "en": "Human evaluation is prohibited under agile MLS delivery.",
+        "vi": "Đánh giá con người bị cấm trong giao MLS agile."
+      },
+      {
+        "en": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+        "vi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn."
+      },
+      {
+        "en": "Expected exact strings always exist for creative GenAI outputs.",
+        "vi": "Luôn có chuỗi mong đợi chính xác cho đầu ra GenAI sáng tạo."
+      },
+      {
+        "en": "Metamorphic testing forbids comparing outputs across related inputs.",
+        "vi": "Kiểm thử biến hình cấm so đầu ra giữa đầu vào liên quan."
+      }
+    ],
+    "correctEn": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+    "correctVi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with test oracles for AI.\n* **Ôn / Study:** oracle kiểm thử cho AI"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: testing LLMs / GenAI concerns.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử LLM / GenAI**.",
+    "options": [
+      {
+        "en": "Prompt injection is purely a database indexing issue.",
+        "vi": "Prompt injection chỉ là vấn đề chỉ mục CSDL."
+      },
+      {
+        "en": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+        "vi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình."
+      },
+      {
+        "en": "Latency budgets ignore streaming token partial outputs.",
+        "vi": "Ngân sách độ trễ bỏ qua token streaming một phần."
+      },
+      {
+        "en": "Grounding tests replace security penetration testing entirely.",
+        "vi": "Kiểm thử grounding thay hoàn toàn pentest."
+      }
+    ],
+    "correctEn": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+    "correctVi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with testing LLMs / GenAI concerns.\n* **Ôn / Study:** kiểm thử LLM / GenAI"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding red teaming, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **red teaming**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Successful red-team sessions prove regulatory compliance alone.",
+        "vi": "Phiên red-team thành công chứng minh tuân thủ quy định một mình."
+      },
+      {
+        "en": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+        "vi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng."
+      },
+      {
+        "en": "Red teaming replaces independent validation datasets.",
+        "vi": "Red teaming thay tập validation độc lập."
+      },
+      {
+        "en": "Red teaming applies only to relational databases, not LLMs.",
+        "vi": "Red teaming chỉ cho CSDL quan hệ, không cho LLM."
+      }
+    ],
+    "correctEn": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+    "correctVi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng.",
+    "explanation": "* **Đúng / Correct:** Aligns with red teaming.\n* **Ôn / Study:** red teaming"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: test levels for MLS.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **mức kiểm thử cho MLS**.",
+    "options": [
+      {
+        "en": "Operational monitoring only captures GPU temperature curves.",
+        "vi": "Giám sát vận hành chỉ thu đường nhiệt GPU."
+      },
+      {
+        "en": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+        "vi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback."
+      },
+      {
+        "en": "Integration testing forbids stubbing external APIs during MLS CI.",
+        "vi": "Kiểm thử tích hợp cấm stub API ngoài trong CI MLS."
+      },
+      {
+        "en": "Unit tests on transforms absolve need for production shadow evaluation.",
+        "vi": "Unit test biến đổi miễn trừ đánh giá shadow production."
+      }
+    ],
+    "correctEn": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+    "correctVi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback.",
+    "explanation": "* **Đúng / Correct:** Aligns with test levels for MLS.\n* **Ôn / Study:** mức kiểm thử cho MLS"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: risk-based MLS testing.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử MLS theo rủi ro**.",
+    "options": [
+      {
+        "en": "Equal effort per line of Python is mandated regardless of risk.",
+        "vi": "Công sức đều cho mỗi dòng Python bất kể rủi ro."
+      },
+      {
+        "en": "Risk registers cannot reference regulatory classifications.",
+        "vi": "Sổ đăng ký rủi ro không được tham chiếu phân loại quy định."
+      },
+      {
+        "en": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+        "vi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn."
+      },
+      {
+        "en": "Low-impact scenarios deserve exhaustive combinatorial matrices first.",
+        "vi": "Kịch bản tác động thấp ưu tiên ma trận tổ hợp vét kiệt trước."
+      }
+    ],
+    "correctEn": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+    "correctVi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with risk-based MLS testing.\n* **Ôn / Study:** kiểm thử MLS theo rủi ro"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding exploratory LLM testing mindset, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **tư duy kiểm thử khám phá LLM**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Only scripted tests may observe probabilistic variance.",
+        "vi": "Chỉ test kịch bản được quan sát biến thiên xác suất."
+      },
+      {
+        "en": "Charters eliminate learning objectives alignment.",
+        "vi": "Charter loại căn chỉnh mục tiêu học."
+      },
+      {
+        "en": "Exploratory testing forbids documenting reproduction steps.",
+        "vi": "Khám phá cấm ghi bước tái hiện."
+      },
+      {
+        "en": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+        "vi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử."
+      }
+    ],
+    "correctEn": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+    "correctVi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử.",
+    "explanation": "* **Đúng / Correct:** Aligns with exploratory LLM testing mindset.\n* **Ôn / Study:** tư duy kiểm thử khám phá LLM"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: locked vs adaptive AI systems.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **hệ AI khóa so với thích ứng**.",
+    "options": [
+      {
+        "en": "Adaptive systems never drift because gradients disappear automatically.",
+        "vi": "Hệ thích ứng không drift vì gradient biến mất tự động."
+      },
+      {
+        "en": "Monitoring is redundant once training accuracy plateaus.",
+        "vi": "Giám sát thừa khi độ chính xác huấn luyện bão hòa."
+      },
+      {
+        "en": "Locked systems forbid controlled versioned updates entirely.",
+        "vi": "Hệ khóa cấm mọi cập nhật có phiên bản có kiểm soát."
+      },
+      {
+        "en": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+        "vi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại."
+      }
+    ],
+    "correctEn": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+    "correctVi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại.",
+    "explanation": "* **Đúng / Correct:** Aligns with locked vs adaptive AI systems.\n* **Ôn / Study:** hệ AI khóa so với thích ứng"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: statistical testing rationale.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **cơ sở kiểm thử thống kê**.",
+    "options": [
+      {
+        "en": "Exhaustive enumeration is practical for every LLM prompt space.",
+        "vi": "Liệt kê vét kiệt khả thi cho mọi không gian prompt LLM."
+      },
+      {
+        "en": "Confidence intervals are unrelated to risk-based prioritisation.",
+        "vi": "Khoảng tin cậy không liên quan ưu tiên theo rủi ro."
+      },
+      {
+        "en": "Single deterministic seeds remove variability concerns permanently.",
+        "vi": "Một seed deterministic loại vĩnh viễn lo biến thiên."
+      },
+      {
+        "en": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+        "vi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt."
+      }
+    ],
+    "correctEn": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+    "correctVi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt.",
+    "explanation": "* **Đúng / Correct:** Aligns with statistical testing rationale.\n* **Ôn / Study:** cơ sở kiểm thử thống kê"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding test oracles for AI, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **oracle kiểm thử cho AI**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+        "vi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn."
+      },
+      {
+        "en": "Expected exact strings always exist for creative GenAI outputs.",
+        "vi": "Luôn có chuỗi mong đợi chính xác cho đầu ra GenAI sáng tạo."
+      },
+      {
+        "en": "Human evaluation is prohibited under agile MLS delivery.",
+        "vi": "Đánh giá con người bị cấm trong giao MLS agile."
+      },
+      {
+        "en": "Metamorphic testing forbids comparing outputs across related inputs.",
+        "vi": "Kiểm thử biến hình cấm so đầu ra giữa đầu vào liên quan."
+      }
+    ],
+    "correctEn": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+    "correctVi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with test oracles for AI.\n* **Ôn / Study:** oracle kiểm thử cho AI"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: testing LLMs / GenAI concerns.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **kiểm thử LLM / GenAI**.",
+    "options": [
+      {
+        "en": "Grounding tests replace security penetration testing entirely.",
+        "vi": "Kiểm thử grounding thay hoàn toàn pentest."
+      },
+      {
+        "en": "Latency budgets ignore streaming token partial outputs.",
+        "vi": "Ngân sách độ trễ bỏ qua token streaming một phần."
+      },
+      {
+        "en": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+        "vi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình."
+      },
+      {
+        "en": "Prompt injection is purely a database indexing issue.",
+        "vi": "Prompt injection chỉ là vấn đề chỉ mục CSDL."
+      }
+    ],
+    "correctEn": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+    "correctVi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with testing LLMs / GenAI concerns.\n* **Ôn / Study:** kiểm thử LLM / GenAI"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: red teaming.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **red teaming**.",
+    "options": [
+      {
+        "en": "Successful red-team sessions prove regulatory compliance alone.",
+        "vi": "Phiên red-team thành công chứng minh tuân thủ quy định một mình."
+      },
+      {
+        "en": "Red teaming replaces independent validation datasets.",
+        "vi": "Red teaming thay tập validation độc lập."
+      },
+      {
+        "en": "Red teaming applies only to relational databases, not LLMs.",
+        "vi": "Red teaming chỉ cho CSDL quan hệ, không cho LLM."
+      },
+      {
+        "en": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+        "vi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng."
+      }
+    ],
+    "correctEn": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+    "correctVi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng.",
+    "explanation": "* **Đúng / Correct:** Aligns with red teaming.\n* **Ôn / Study:** red teaming"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding test levels for MLS, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **mức kiểm thử cho MLS**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+        "vi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback."
+      },
+      {
+        "en": "Integration testing forbids stubbing external APIs during MLS CI.",
+        "vi": "Kiểm thử tích hợp cấm stub API ngoài trong CI MLS."
+      },
+      {
+        "en": "Operational monitoring only captures GPU temperature curves.",
+        "vi": "Giám sát vận hành chỉ thu đường nhiệt GPU."
+      },
+      {
+        "en": "Unit tests on transforms absolve need for production shadow evaluation.",
+        "vi": "Unit test biến đổi miễn trừ đánh giá shadow production."
+      }
+    ],
+    "correctEn": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+    "correctVi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback.",
+    "explanation": "* **Đúng / Correct:** Aligns with test levels for MLS.\n* **Ôn / Study:** mức kiểm thử cho MLS"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: risk-based MLS testing.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **kiểm thử MLS theo rủi ro**.",
+    "options": [
+      {
+        "en": "Equal effort per line of Python is mandated regardless of risk.",
+        "vi": "Công sức đều cho mỗi dòng Python bất kể rủi ro."
+      },
+      {
+        "en": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+        "vi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn."
+      },
+      {
+        "en": "Risk registers cannot reference regulatory classifications.",
+        "vi": "Sổ đăng ký rủi ro không được tham chiếu phân loại quy định."
+      },
+      {
+        "en": "Low-impact scenarios deserve exhaustive combinatorial matrices first.",
+        "vi": "Kịch bản tác động thấp ưu tiên ma trận tổ hợp vét kiệt trước."
+      }
+    ],
+    "correctEn": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+    "correctVi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with risk-based MLS testing.\n* **Ôn / Study:** kiểm thử MLS theo rủi ro"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: exploratory LLM testing mindset.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **tư duy kiểm thử khám phá LLM**.",
+    "options": [
+      {
+        "en": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+        "vi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử."
+      },
+      {
+        "en": "Charters eliminate learning objectives alignment.",
+        "vi": "Charter loại căn chỉnh mục tiêu học."
+      },
+      {
+        "en": "Exploratory testing forbids documenting reproduction steps.",
+        "vi": "Khám phá cấm ghi bước tái hiện."
+      },
+      {
+        "en": "Only scripted tests may observe probabilistic variance.",
+        "vi": "Chỉ test kịch bản được quan sát biến thiên xác suất."
+      }
+    ],
+    "correctEn": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+    "correctVi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử.",
+    "explanation": "* **Đúng / Correct:** Aligns with exploratory LLM testing mindset.\n* **Ôn / Study:** tư duy kiểm thử khám phá LLM"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding locked vs adaptive AI systems, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **hệ AI khóa so với thích ứng**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Adaptive systems never drift because gradients disappear automatically.",
+        "vi": "Hệ thích ứng không drift vì gradient biến mất tự động."
+      },
+      {
+        "en": "Monitoring is redundant once training accuracy plateaus.",
+        "vi": "Giám sát thừa khi độ chính xác huấn luyện bão hòa."
+      },
+      {
+        "en": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+        "vi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại."
+      },
+      {
+        "en": "Locked systems forbid controlled versioned updates entirely.",
+        "vi": "Hệ khóa cấm mọi cập nhật có phiên bản có kiểm soát."
+      }
+    ],
+    "correctEn": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+    "correctVi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại.",
+    "explanation": "* **Đúng / Correct:** Aligns with locked vs adaptive AI systems.\n* **Ôn / Study:** hệ AI khóa so với thích ứng"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: statistical testing rationale.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **cơ sở kiểm thử thống kê**.",
+    "options": [
+      {
+        "en": "Exhaustive enumeration is practical for every LLM prompt space.",
+        "vi": "Liệt kê vét kiệt khả thi cho mọi không gian prompt LLM."
+      },
+      {
+        "en": "Single deterministic seeds remove variability concerns permanently.",
+        "vi": "Một seed deterministic loại vĩnh viễn lo biến thiên."
+      },
+      {
+        "en": "Confidence intervals are unrelated to risk-based prioritisation.",
+        "vi": "Khoảng tin cậy không liên quan ưu tiên theo rủi ro."
+      },
+      {
+        "en": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+        "vi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt."
+      }
+    ],
+    "correctEn": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+    "correctVi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt.",
+    "explanation": "* **Đúng / Correct:** Aligns with statistical testing rationale.\n* **Ôn / Study:** cơ sở kiểm thử thống kê"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: test oracles for AI.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **oracle kiểm thử cho AI**.",
+    "options": [
+      {
+        "en": "Expected exact strings always exist for creative GenAI outputs.",
+        "vi": "Luôn có chuỗi mong đợi chính xác cho đầu ra GenAI sáng tạo."
+      },
+      {
+        "en": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+        "vi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn."
+      },
+      {
+        "en": "Human evaluation is prohibited under agile MLS delivery.",
+        "vi": "Đánh giá con người bị cấm trong giao MLS agile."
+      },
+      {
+        "en": "Metamorphic testing forbids comparing outputs across related inputs.",
+        "vi": "Kiểm thử biến hình cấm so đầu ra giữa đầu vào liên quan."
+      }
+    ],
+    "correctEn": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+    "correctVi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with test oracles for AI.\n* **Ôn / Study:** oracle kiểm thử cho AI"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding testing LLMs / GenAI concerns, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **kiểm thử LLM / GenAI**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+        "vi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình."
+      },
+      {
+        "en": "Latency budgets ignore streaming token partial outputs.",
+        "vi": "Ngân sách độ trễ bỏ qua token streaming một phần."
+      },
+      {
+        "en": "Grounding tests replace security penetration testing entirely.",
+        "vi": "Kiểm thử grounding thay hoàn toàn pentest."
+      },
+      {
+        "en": "Prompt injection is purely a database indexing issue.",
+        "vi": "Prompt injection chỉ là vấn đề chỉ mục CSDL."
+      }
+    ],
+    "correctEn": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+    "correctVi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with testing LLMs / GenAI concerns.\n* **Ôn / Study:** kiểm thử LLM / GenAI"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: red teaming.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **red teaming**.",
+    "options": [
+      {
+        "en": "Successful red-team sessions prove regulatory compliance alone.",
+        "vi": "Phiên red-team thành công chứng minh tuân thủ quy định một mình."
+      },
+      {
+        "en": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+        "vi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng."
+      },
+      {
+        "en": "Red teaming applies only to relational databases, not LLMs.",
+        "vi": "Red teaming chỉ cho CSDL quan hệ, không cho LLM."
+      },
+      {
+        "en": "Red teaming replaces independent validation datasets.",
+        "vi": "Red teaming thay tập validation độc lập."
+      }
+    ],
+    "correctEn": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+    "correctVi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng.",
+    "explanation": "* **Đúng / Correct:** Aligns with red teaming.\n* **Ôn / Study:** red teaming"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: test levels for MLS.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **mức kiểm thử cho MLS**.",
+    "options": [
+      {
+        "en": "Integration testing forbids stubbing external APIs during MLS CI.",
+        "vi": "Kiểm thử tích hợp cấm stub API ngoài trong CI MLS."
+      },
+      {
+        "en": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+        "vi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback."
+      },
+      {
+        "en": "Unit tests on transforms absolve need for production shadow evaluation.",
+        "vi": "Unit test biến đổi miễn trừ đánh giá shadow production."
+      },
+      {
+        "en": "Operational monitoring only captures GPU temperature curves.",
+        "vi": "Giám sát vận hành chỉ thu đường nhiệt GPU."
+      }
+    ],
+    "correctEn": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+    "correctVi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback.",
+    "explanation": "* **Đúng / Correct:** Aligns with test levels for MLS.\n* **Ôn / Study:** mức kiểm thử cho MLS"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding risk-based MLS testing, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **kiểm thử MLS theo rủi ro**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Low-impact scenarios deserve exhaustive combinatorial matrices first.",
+        "vi": "Kịch bản tác động thấp ưu tiên ma trận tổ hợp vét kiệt trước."
+      },
+      {
+        "en": "Risk registers cannot reference regulatory classifications.",
+        "vi": "Sổ đăng ký rủi ro không được tham chiếu phân loại quy định."
+      },
+      {
+        "en": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+        "vi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn."
+      },
+      {
+        "en": "Equal effort per line of Python is mandated regardless of risk.",
+        "vi": "Công sức đều cho mỗi dòng Python bất kể rủi ro."
+      }
+    ],
+    "correctEn": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+    "correctVi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with risk-based MLS testing.\n* **Ôn / Study:** kiểm thử MLS theo rủi ro"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: exploratory LLM testing mindset.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **tư duy kiểm thử khám phá LLM**.",
+    "options": [
+      {
+        "en": "Exploratory testing forbids documenting reproduction steps.",
+        "vi": "Khám phá cấm ghi bước tái hiện."
+      },
+      {
+        "en": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+        "vi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử."
+      },
+      {
+        "en": "Charters eliminate learning objectives alignment.",
+        "vi": "Charter loại căn chỉnh mục tiêu học."
+      },
+      {
+        "en": "Only scripted tests may observe probabilistic variance.",
+        "vi": "Chỉ test kịch bản được quan sát biến thiên xác suất."
+      }
+    ],
+    "correctEn": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+    "correctVi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử.",
+    "explanation": "* **Đúng / Correct:** Aligns with exploratory LLM testing mindset.\n* **Ôn / Study:** tư duy kiểm thử khám phá LLM"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: locked vs adaptive AI systems.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **hệ AI khóa so với thích ứng**.",
+    "options": [
+      {
+        "en": "Adaptive systems never drift because gradients disappear automatically.",
+        "vi": "Hệ thích ứng không drift vì gradient biến mất tự động."
+      },
+      {
+        "en": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+        "vi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại."
+      },
+      {
+        "en": "Monitoring is redundant once training accuracy plateaus.",
+        "vi": "Giám sát thừa khi độ chính xác huấn luyện bão hòa."
+      },
+      {
+        "en": "Locked systems forbid controlled versioned updates entirely.",
+        "vi": "Hệ khóa cấm mọi cập nhật có phiên bản có kiểm soát."
+      }
+    ],
+    "correctEn": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+    "correctVi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại.",
+    "explanation": "* **Đúng / Correct:** Aligns with locked vs adaptive AI systems.\n* **Ôn / Study:** hệ AI khóa so với thích ứng"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding statistical testing rationale, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **cơ sở kiểm thử thống kê**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Single deterministic seeds remove variability concerns permanently.",
+        "vi": "Một seed deterministic loại vĩnh viễn lo biến thiên."
+      },
+      {
+        "en": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+        "vi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt."
+      },
+      {
+        "en": "Exhaustive enumeration is practical for every LLM prompt space.",
+        "vi": "Liệt kê vét kiệt khả thi cho mọi không gian prompt LLM."
+      },
+      {
+        "en": "Confidence intervals are unrelated to risk-based prioritisation.",
+        "vi": "Khoảng tin cậy không liên quan ưu tiên theo rủi ro."
+      }
+    ],
+    "correctEn": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+    "correctVi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt.",
+    "explanation": "* **Đúng / Correct:** Aligns with statistical testing rationale.\n* **Ôn / Study:** cơ sở kiểm thử thống kê"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: test oracles for AI.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **oracle kiểm thử cho AI**.",
+    "options": [
+      {
+        "en": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+        "vi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn."
+      },
+      {
+        "en": "Metamorphic testing forbids comparing outputs across related inputs.",
+        "vi": "Kiểm thử biến hình cấm so đầu ra giữa đầu vào liên quan."
+      },
+      {
+        "en": "Expected exact strings always exist for creative GenAI outputs.",
+        "vi": "Luôn có chuỗi mong đợi chính xác cho đầu ra GenAI sáng tạo."
+      },
+      {
+        "en": "Human evaluation is prohibited under agile MLS delivery.",
+        "vi": "Đánh giá con người bị cấm trong giao MLS agile."
+      }
+    ],
+    "correctEn": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+    "correctVi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with test oracles for AI.\n* **Ôn / Study:** oracle kiểm thử cho AI"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: testing LLMs / GenAI concerns.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử LLM / GenAI**.",
+    "options": [
+      {
+        "en": "Grounding tests replace security penetration testing entirely.",
+        "vi": "Kiểm thử grounding thay hoàn toàn pentest."
+      },
+      {
+        "en": "Latency budgets ignore streaming token partial outputs.",
+        "vi": "Ngân sách độ trễ bỏ qua token streaming một phần."
+      },
+      {
+        "en": "Prompt injection is purely a database indexing issue.",
+        "vi": "Prompt injection chỉ là vấn đề chỉ mục CSDL."
+      },
+      {
+        "en": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+        "vi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình."
+      }
+    ],
+    "correctEn": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+    "correctVi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with testing LLMs / GenAI concerns.\n* **Ôn / Study:** kiểm thử LLM / GenAI"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding red teaming, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **red teaming**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Red teaming applies only to relational databases, not LLMs.",
+        "vi": "Red teaming chỉ cho CSDL quan hệ, không cho LLM."
+      },
+      {
+        "en": "Red teaming replaces independent validation datasets.",
+        "vi": "Red teaming thay tập validation độc lập."
+      },
+      {
+        "en": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+        "vi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng."
+      },
+      {
+        "en": "Successful red-team sessions prove regulatory compliance alone.",
+        "vi": "Phiên red-team thành công chứng minh tuân thủ quy định một mình."
+      }
+    ],
+    "correctEn": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+    "correctVi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng.",
+    "explanation": "* **Đúng / Correct:** Aligns with red teaming.\n* **Ôn / Study:** red teaming"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: test levels for MLS.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **mức kiểm thử cho MLS**.",
+    "options": [
+      {
+        "en": "Integration testing forbids stubbing external APIs during MLS CI.",
+        "vi": "Kiểm thử tích hợp cấm stub API ngoài trong CI MLS."
+      },
+      {
+        "en": "Operational monitoring only captures GPU temperature curves.",
+        "vi": "Giám sát vận hành chỉ thu đường nhiệt GPU."
+      },
+      {
+        "en": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+        "vi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback."
+      },
+      {
+        "en": "Unit tests on transforms absolve need for production shadow evaluation.",
+        "vi": "Unit test biến đổi miễn trừ đánh giá shadow production."
+      }
+    ],
+    "correctEn": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+    "correctVi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback.",
+    "explanation": "* **Đúng / Correct:** Aligns with test levels for MLS.\n* **Ôn / Study:** mức kiểm thử cho MLS"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: risk-based MLS testing.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử MLS theo rủi ro**.",
+    "options": [
+      {
+        "en": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+        "vi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn."
+      },
+      {
+        "en": "Equal effort per line of Python is mandated regardless of risk.",
+        "vi": "Công sức đều cho mỗi dòng Python bất kể rủi ro."
+      },
+      {
+        "en": "Low-impact scenarios deserve exhaustive combinatorial matrices first.",
+        "vi": "Kịch bản tác động thấp ưu tiên ma trận tổ hợp vét kiệt trước."
+      },
+      {
+        "en": "Risk registers cannot reference regulatory classifications.",
+        "vi": "Sổ đăng ký rủi ro không được tham chiếu phân loại quy định."
+      }
+    ],
+    "correctEn": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+    "correctVi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with risk-based MLS testing.\n* **Ôn / Study:** kiểm thử MLS theo rủi ro"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding exploratory LLM testing mindset, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **tư duy kiểm thử khám phá LLM**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Exploratory testing forbids documenting reproduction steps.",
+        "vi": "Khám phá cấm ghi bước tái hiện."
+      },
+      {
+        "en": "Charters eliminate learning objectives alignment.",
+        "vi": "Charter loại căn chỉnh mục tiêu học."
+      },
+      {
+        "en": "Only scripted tests may observe probabilistic variance.",
+        "vi": "Chỉ test kịch bản được quan sát biến thiên xác suất."
+      },
+      {
+        "en": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+        "vi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử."
+      }
+    ],
+    "correctEn": "Exploratory sessions blend charters, time-boxing, note-taking on surprising behaviours, and traceability to prompts/models under test.",
+    "correctVi": "Phiên khám phá kết hợp charter, giới hạn thời gian, ghi chú hành vi lạ và truy xuất prompt/mô hình đang thử.",
+    "explanation": "* **Đúng / Correct:** Aligns with exploratory LLM testing mindset.\n* **Ôn / Study:** tư duy kiểm thử khám phá LLM"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: locked vs adaptive AI systems.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **hệ AI khóa so với thích ứng**.",
+    "options": [
+      {
+        "en": "Monitoring is redundant once training accuracy plateaus.",
+        "vi": "Giám sát thừa khi độ chính xác huấn luyện bão hòa."
+      },
+      {
+        "en": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+        "vi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại."
+      },
+      {
+        "en": "Locked systems forbid controlled versioned updates entirely.",
+        "vi": "Hệ khóa cấm mọi cập nhật có phiên bản có kiểm soát."
+      },
+      {
+        "en": "Adaptive systems never drift because gradients disappear automatically.",
+        "vi": "Hệ thích ứng không drift vì gradient biến mất tự động."
+      }
+    ],
+    "correctEn": "Locked models freeze behaviour between releases; adaptive systems continue learning online and require monitoring, guardrails, and revalidation triggers.",
+    "correctVi": "Mô hình khóa đóng băng hành vi giữa các phát hành; hệ thích ứng học trực tuyến và cần giám sát, rào chắn, kích hoạt thẩm định lại.",
+    "explanation": "* **Đúng / Correct:** Aligns with locked vs adaptive AI systems.\n* **Ôn / Study:** hệ AI khóa so với thích ứng"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: statistical testing rationale.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **cơ sở kiểm thử thống kê**.",
+    "options": [
+      {
+        "en": "Exhaustive enumeration is practical for every LLM prompt space.",
+        "vi": "Liệt kê vét kiệt khả thi cho mọi không gian prompt LLM."
+      },
+      {
+        "en": "Single deterministic seeds remove variability concerns permanently.",
+        "vi": "Một seed deterministic loại vĩnh viễn lo biến thiên."
+      },
+      {
+        "en": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+        "vi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt."
+      },
+      {
+        "en": "Confidence intervals are unrelated to risk-based prioritisation.",
+        "vi": "Khoảng tin cậy không liên quan ưu tiên theo rủi ro."
+      }
+    ],
+    "correctEn": "Huge input domains and stochastic behaviour favor sampling, confidence estimation, repeated trials, and operational telemetry—not exhaustive enumeration.",
+    "correctVi": "Miền đầu vào lớn và ngẫu nhiên ưu tiên lấy mẫu, ước lượng tin cậy, thử lặp và telemetry—không liệt kê vét kiệt.",
+    "explanation": "* **Đúng / Correct:** Aligns with statistical testing rationale.\n* **Ôn / Study:** cơ sở kiểm thử thống kê"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding test oracles for AI, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **oracle kiểm thử cho AI**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+        "vi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn."
+      },
+      {
+        "en": "Human evaluation is prohibited under agile MLS delivery.",
+        "vi": "Đánh giá con người bị cấm trong giao MLS agile."
+      },
+      {
+        "en": "Expected exact strings always exist for creative GenAI outputs.",
+        "vi": "Luôn có chuỗi mong đợi chính xác cho đầu ra GenAI sáng tạo."
+      },
+      {
+        "en": "Metamorphic testing forbids comparing outputs across related inputs.",
+        "vi": "Kiểm thử biến hình cấm so đầu ra giữa đầu vào liên quan."
+      }
+    ],
+    "correctEn": "Oracles may include metamorphic relations, reference models, probabilistic thresholds, human evaluation rubrics, or safety constraints.",
+    "correctVi": "Oracle có thể là quan hệ biến hình, mô hình tham chiếu, ngưỡng xác suất, rubric đánh giá con người hoặc ràng buộc an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with test oracles for AI.\n* **Ôn / Study:** oracle kiểm thử cho AI"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: testing LLMs / GenAI concerns.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **kiểm thử LLM / GenAI**.",
+    "options": [
+      {
+        "en": "Prompt injection is purely a database indexing issue.",
+        "vi": "Prompt injection chỉ là vấn đề chỉ mục CSDL."
+      },
+      {
+        "en": "Latency budgets ignore streaming token partial outputs.",
+        "vi": "Ngân sách độ trễ bỏ qua token streaming một phần."
+      },
+      {
+        "en": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+        "vi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình."
+      },
+      {
+        "en": "Grounding tests replace security penetration testing entirely.",
+        "vi": "Kiểm thử grounding thay hoàn toàn pentest."
+      }
+    ],
+    "correctEn": "Test design covers grounding/factuality, toxicity, bias, privacy leakage, prompt injection, tool-use safety, latency, and versioning of prompts/models.",
+    "correctVi": "Thiết kế kiểm thử gồm neo thực/tính đúng, độc, bias, rò riêng tư, prompt injection, an toàn tool, độ trễ, phiên bản prompt/mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with testing LLMs / GenAI concerns.\n* **Ôn / Study:** kiểm thử LLM / GenAI"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: red teaming.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **red teaming**.",
+    "options": [
+      {
+        "en": "Successful red-team sessions prove regulatory compliance alone.",
+        "vi": "Phiên red-team thành công chứng minh tuân thủ quy định một mình."
+      },
+      {
+        "en": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+        "vi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng."
+      },
+      {
+        "en": "Red teaming replaces independent validation datasets.",
+        "vi": "Red teaming thay tập validation độc lập."
+      },
+      {
+        "en": "Red teaming applies only to relational databases, not LLMs.",
+        "vi": "Red teaming chỉ cho CSDL quan hệ, không cho LLM."
+      }
+    ],
+    "correctEn": "Red teaming systematically probes models/prompts to surface harmful or policy-violating behaviour, often with quantitative acceptance gates.",
+    "correctVi": "Red teaming thử có hệ thống để gợi hành vi có hại/vi phạm chính sách, thường có cổng nghiệm thu định lượng.",
+    "explanation": "* **Đúng / Correct:** Aligns with red teaming.\n* **Ôn / Study:** red teaming"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding test levels for MLS, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **mức kiểm thử cho MLS**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Unit tests on transforms absolve need for production shadow evaluation.",
+        "vi": "Unit test biến đổi miễn trừ đánh giá shadow production."
+      },
+      {
+        "en": "Operational monitoring only captures GPU temperature curves.",
+        "vi": "Giám sát vận hành chỉ thu đường nhiệt GPU."
+      },
+      {
+        "en": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+        "vi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback."
+      },
+      {
+        "en": "Integration testing forbids stubbing external APIs during MLS CI.",
+        "vi": "Kiểm thử tích hợp cấm stub API ngoài trong CI MLS."
+      }
+    ],
+    "correctEn": "MLS testing aligns component, integration, system, and operational views across data pipelines, training code, serving stacks, monitoring, and rollback paths.",
+    "correctVi": "Kiểm thử MLS căn chỉnh thành phần, tích hợp, hệ thống và vận hành trên pipeline dữ liệu, mã huấn luyện, serving, giám sát, rollback.",
+    "explanation": "* **Đúng / Correct:** Aligns with test levels for MLS.\n* **Ôn / Study:** mức kiểm thử cho MLS"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: risk-based MLS testing.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **kiểm thử MLS theo rủi ro**.",
+    "options": [
+      {
+        "en": "Equal effort per line of Python is mandated regardless of risk.",
+        "vi": "Công sức đều cho mỗi dòng Python bất kể rủi ro."
+      },
+      {
+        "en": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+        "vi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn."
+      },
+      {
+        "en": "Risk registers cannot reference regulatory classifications.",
+        "vi": "Sổ đăng ký rủi ro không được tham chiếu phân loại quy định."
+      },
+      {
+        "en": "Low-impact scenarios deserve exhaustive combinatorial matrices first.",
+        "vi": "Kịch bản tác động thấp ưu tiên ma trận tổ hợp vét kiệt trước."
+      }
+    ],
+    "correctEn": "Risk-based prioritisation allocates depth where impact × likelihood is highest, combining functional ML metrics with misuse and safety scenarios.",
+    "correctVi": "Ưu tiên theo rủi ro phân bổ độ sâu nơi tác động × khả năng cao, kết hợp metric ML và kịch bản lạm dụng/an toàn.",
+    "explanation": "* **Đúng / Correct:** Aligns with risk-based MLS testing.\n* **Ôn / Study:** kiểm thử MLS theo rủi ro"
+  }
+]

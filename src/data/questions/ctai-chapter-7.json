@@ -1,0 +1,1777 @@
+[
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding MLS development risks, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **rủi ro phát triển MLS**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+        "vi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion."
+      },
+      {
+        "en": "Notebook-only workflows satisfy audit controls by default.",
+        "vi": "Quy trình chỉ notebook đáp ứng kiểm soát audit mặc định."
+      },
+      {
+        "en": "Secrets may live in training repos if encrypted with ROT13.",
+        "vi": "Bí mật có thể trong repo huấn luyện nếu ROT13."
+      },
+      {
+        "en": "Independent tests slow CI and should run quarterly only.",
+        "vi": "Test độc lập làm chậm CI chỉ chạy quý."
+      }
+    ],
+    "correctEn": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+    "correctVi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion.",
+    "explanation": "* **Đúng / Correct:** Aligns with MLS development risks.\n* **Ôn / Study:** rủi ro phát triển MLS"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: mitigations in MLS engineering.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **giảm thiểu trong kỹ thuật MLS**.",
+    "options": [
+      {
+        "en": "Peer review blocks automation and must be skipped overnight.",
+        "vi": "Peer review cản tự động nên bỏ qua ban đêm."
+      },
+      {
+        "en": "Git tags alone guarantee lineage without hashes.",
+        "vi": "Git tag một mình đảm bảo lineage không cần hash."
+      },
+      {
+        "en": "Rollback criteria should be decided only after outage.",
+        "vi": "Tiêu chí rollback chỉ quyết định sau sự cố."
+      },
+      {
+        "en": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+        "vi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước."
+      }
+    ],
+    "correctEn": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+    "correctVi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước.",
+    "explanation": "* **Đúng / Correct:** Aligns with mitigations in MLS engineering.\n* **Ôn / Study:** giảm thiểu trong kỹ thuật MLS"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: deployment testing for MLS.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử triển khai MLS**.",
+    "options": [
+      {
+        "en": "Feature stores never drift from training feature definitions.",
+        "vi": "Feature store không bao giờ lệch định nghĩa huấn luyện."
+      },
+      {
+        "en": "Kill switches are discouraged because they confuse dashboards.",
+        "vi": "Kill switch không khuyến khích vì làm rối dashboard."
+      },
+      {
+        "en": "Latency SLAs ignore cold-start container behaviour.",
+        "vi": "SLA độ trễ bỏ qua cold-start container."
+      },
+      {
+        "en": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+        "vi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ."
+      }
+    ],
+    "correctEn": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+    "correctVi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ.",
+    "explanation": "* **Đúng / Correct:** Aligns with deployment testing for MLS.\n* **Ôn / Study:** kiểm thử triển khai MLS"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding connecting lifecycle chapters, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **liên kết các chương vòng đời**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Monitoring replaces independent datasets permanently.",
+        "vi": "Giám sát thay dataset độc lập vĩnh viễn."
+      },
+      {
+        "en": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+        "vi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3)."
+      },
+      {
+        "en": "Deployment testing overrides every earlier quality gate.",
+        "vi": "Kiểm thử triển khai ghi đè mọi cổng chất lượng trước."
+      },
+      {
+        "en": "Chapter boundaries forbid traceability between artefacts.",
+        "vi": "Ran giới chương cấm truy xuất artefact."
+      }
+    ],
+    "correctEn": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+    "correctVi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3).",
+    "explanation": "* **Đúng / Correct:** Aligns with connecting lifecycle chapters.\n* **Ôn / Study:** liên kết các chương vòng đời"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: production monitoring hooks.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **hook giám sát production**.",
+    "options": [
+      {
+        "en": "Alerts should route exclusively to single laptops without redundancy.",
+        "vi": "Cảnh báo chỉ gửi một laptop không dự phòng."
+      },
+      {
+        "en": "Monitoring dashboards must omit model identifiers for mystique.",
+        "vi": "Dashboard giám sát phải bỏ định danh mô hình."
+      },
+      {
+        "en": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+        "vi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố."
+      },
+      {
+        "en": "Incident playbooks conflict with MLS governance.",
+        "vi": "Playbook sự cố xung đột quản trị MLS."
+      }
+    ],
+    "correctEn": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+    "correctVi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố.",
+    "explanation": "* **Đúng / Correct:** Aligns with production monitoring hooks.\n* **Ôn / Study:** hook giám sát production"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: environment parity.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **đồng nhất môi trường**.",
+    "options": [
+      {
+        "en": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+        "vi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production."
+      },
+      {
+        "en": "Staging may omit privacy controls to speed iteration.",
+        "vi": "Staging được bỏ kiểm soát riêng tư để nhanh."
+      },
+      {
+        "en": "Regional endpoints are irrelevant to GDPR considerations.",
+        "vi": "Endpoint vùng không liên quan GDPR."
+      },
+      {
+        "en": "Different CUDA versions never affect numerical outputs.",
+        "vi": "CUDA khác phiên bản không ảnh hưởng đầu ra số."
+      }
+    ],
+    "correctEn": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+    "correctVi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production.",
+    "explanation": "* **Đúng / Correct:** Aligns with environment parity.\n* **Ôn / Study:** đồng nhất môi trường"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding artifact signing & promotion, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **ký artefact và promotion**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Checksums are cosmetic because object stores are always trusted.",
+        "vi": "Checksum chỉ trang trí vì object store luôn tin cậy."
+      },
+      {
+        "en": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+        "vi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường."
+      },
+      {
+        "en": "Promotion pipelines never require human approval for high-risk MLS.",
+        "vi": "Pipeline promotion không cần phê duyệt người cho MLS rủi ro cao."
+      },
+      {
+        "en": "Signing slows throughput and should be disabled in regulated domains.",
+        "vi": "Ký làm chậm throughput nên tắt ở miền chịu quy định."
+      }
+    ],
+    "correctEn": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+    "correctVi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with artifact signing & promotion.\n* **Ôn / Study:** ký artefact và promotion"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: hand-off to operations.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **bàn giao cho vận hành**.",
+    "options": [
+      {
+        "en": "Operations learns architecture exclusively via hallway conversations.",
+        "vi": "Vận hành chỉ học kiến trúc qua trò chuyện hành lang."
+      },
+      {
+        "en": "SLIs duplicate marketing KPIs without distinction.",
+        "vi": "SLI trùng KPI marketing không phân biệt."
+      },
+      {
+        "en": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+        "vi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình."
+      },
+      {
+        "en": "Runbooks violate agile principles and should not exist.",
+        "vi": "Runbook vi phạm agile không nên tồn tại."
+      }
+    ],
+    "correctEn": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+    "correctVi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with hand-off to operations.\n* **Ôn / Study:** bàn giao cho vận hành"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: MLS development risks.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **rủi ro phát triển MLS**.",
+    "options": [
+      {
+        "en": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+        "vi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion."
+      },
+      {
+        "en": "Secrets may live in training repos if encrypted with ROT13.",
+        "vi": "Bí mật có thể trong repo huấn luyện nếu ROT13."
+      },
+      {
+        "en": "Independent tests slow CI and should run quarterly only.",
+        "vi": "Test độc lập làm chậm CI chỉ chạy quý."
+      },
+      {
+        "en": "Notebook-only workflows satisfy audit controls by default.",
+        "vi": "Quy trình chỉ notebook đáp ứng kiểm soát audit mặc định."
+      }
+    ],
+    "correctEn": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+    "correctVi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion.",
+    "explanation": "* **Đúng / Correct:** Aligns with MLS development risks.\n* **Ôn / Study:** rủi ro phát triển MLS"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding mitigations in MLS engineering, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **giảm thiểu trong kỹ thuật MLS**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Git tags alone guarantee lineage without hashes.",
+        "vi": "Git tag một mình đảm bảo lineage không cần hash."
+      },
+      {
+        "en": "Rollback criteria should be decided only after outage.",
+        "vi": "Tiêu chí rollback chỉ quyết định sau sự cố."
+      },
+      {
+        "en": "Peer review blocks automation and must be skipped overnight.",
+        "vi": "Peer review cản tự động nên bỏ qua ban đêm."
+      },
+      {
+        "en": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+        "vi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước."
+      }
+    ],
+    "correctEn": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+    "correctVi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước.",
+    "explanation": "* **Đúng / Correct:** Aligns with mitigations in MLS engineering.\n* **Ôn / Study:** giảm thiểu trong kỹ thuật MLS"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: deployment testing for MLS.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **kiểm thử triển khai MLS**.",
+    "options": [
+      {
+        "en": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+        "vi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ."
+      },
+      {
+        "en": "Feature stores never drift from training feature definitions.",
+        "vi": "Feature store không bao giờ lệch định nghĩa huấn luyện."
+      },
+      {
+        "en": "Latency SLAs ignore cold-start container behaviour.",
+        "vi": "SLA độ trễ bỏ qua cold-start container."
+      },
+      {
+        "en": "Kill switches are discouraged because they confuse dashboards.",
+        "vi": "Kill switch không khuyến khích vì làm rối dashboard."
+      }
+    ],
+    "correctEn": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+    "correctVi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ.",
+    "explanation": "* **Đúng / Correct:** Aligns with deployment testing for MLS.\n* **Ôn / Study:** kiểm thử triển khai MLS"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: connecting lifecycle chapters.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **liên kết các chương vòng đời**.",
+    "options": [
+      {
+        "en": "Deployment testing overrides every earlier quality gate.",
+        "vi": "Kiểm thử triển khai ghi đè mọi cổng chất lượng trước."
+      },
+      {
+        "en": "Monitoring replaces independent datasets permanently.",
+        "vi": "Giám sát thay dataset độc lập vĩnh viễn."
+      },
+      {
+        "en": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+        "vi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3)."
+      },
+      {
+        "en": "Chapter boundaries forbid traceability between artefacts.",
+        "vi": "Ran giới chương cấm truy xuất artefact."
+      }
+    ],
+    "correctEn": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+    "correctVi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3).",
+    "explanation": "* **Đúng / Correct:** Aligns with connecting lifecycle chapters.\n* **Ôn / Study:** liên kết các chương vòng đời"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding production monitoring hooks, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **hook giám sát production**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Incident playbooks conflict with MLS governance.",
+        "vi": "Playbook sự cố xung đột quản trị MLS."
+      },
+      {
+        "en": "Monitoring dashboards must omit model identifiers for mystique.",
+        "vi": "Dashboard giám sát phải bỏ định danh mô hình."
+      },
+      {
+        "en": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+        "vi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố."
+      },
+      {
+        "en": "Alerts should route exclusively to single laptops without redundancy.",
+        "vi": "Cảnh báo chỉ gửi một laptop không dự phòng."
+      }
+    ],
+    "correctEn": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+    "correctVi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố.",
+    "explanation": "* **Đúng / Correct:** Aligns with production monitoring hooks.\n* **Ôn / Study:** hook giám sát production"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: environment parity.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **đồng nhất môi trường**.",
+    "options": [
+      {
+        "en": "Different CUDA versions never affect numerical outputs.",
+        "vi": "CUDA khác phiên bản không ảnh hưởng đầu ra số."
+      },
+      {
+        "en": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+        "vi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production."
+      },
+      {
+        "en": "Regional endpoints are irrelevant to GDPR considerations.",
+        "vi": "Endpoint vùng không liên quan GDPR."
+      },
+      {
+        "en": "Staging may omit privacy controls to speed iteration.",
+        "vi": "Staging được bỏ kiểm soát riêng tư để nhanh."
+      }
+    ],
+    "correctEn": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+    "correctVi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production.",
+    "explanation": "* **Đúng / Correct:** Aligns with environment parity.\n* **Ôn / Study:** đồng nhất môi trường"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: artifact signing & promotion.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **ký artefact và promotion**.",
+    "options": [
+      {
+        "en": "Promotion pipelines never require human approval for high-risk MLS.",
+        "vi": "Pipeline promotion không cần phê duyệt người cho MLS rủi ro cao."
+      },
+      {
+        "en": "Checksums are cosmetic because object stores are always trusted.",
+        "vi": "Checksum chỉ trang trí vì object store luôn tin cậy."
+      },
+      {
+        "en": "Signing slows throughput and should be disabled in regulated domains.",
+        "vi": "Ký làm chậm throughput nên tắt ở miền chịu quy định."
+      },
+      {
+        "en": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+        "vi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường."
+      }
+    ],
+    "correctEn": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+    "correctVi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with artifact signing & promotion.\n* **Ôn / Study:** ký artefact và promotion"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding hand-off to operations, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **bàn giao cho vận hành**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Operations learns architecture exclusively via hallway conversations.",
+        "vi": "Vận hành chỉ học kiến trúc qua trò chuyện hành lang."
+      },
+      {
+        "en": "SLIs duplicate marketing KPIs without distinction.",
+        "vi": "SLI trùng KPI marketing không phân biệt."
+      },
+      {
+        "en": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+        "vi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình."
+      },
+      {
+        "en": "Runbooks violate agile principles and should not exist.",
+        "vi": "Runbook vi phạm agile không nên tồn tại."
+      }
+    ],
+    "correctEn": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+    "correctVi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with hand-off to operations.\n* **Ôn / Study:** bàn giao cho vận hành"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: MLS development risks.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **rủi ro phát triển MLS**.",
+    "options": [
+      {
+        "en": "Independent tests slow CI and should run quarterly only.",
+        "vi": "Test độc lập làm chậm CI chỉ chạy quý."
+      },
+      {
+        "en": "Notebook-only workflows satisfy audit controls by default.",
+        "vi": "Quy trình chỉ notebook đáp ứng kiểm soát audit mặc định."
+      },
+      {
+        "en": "Secrets may live in training repos if encrypted with ROT13.",
+        "vi": "Bí mật có thể trong repo huấn luyện nếu ROT13."
+      },
+      {
+        "en": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+        "vi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion."
+      }
+    ],
+    "correctEn": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+    "correctVi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion.",
+    "explanation": "* **Đúng / Correct:** Aligns with MLS development risks.\n* **Ôn / Study:** rủi ro phát triển MLS"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: mitigations in MLS engineering.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **giảm thiểu trong kỹ thuật MLS**.",
+    "options": [
+      {
+        "en": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+        "vi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước."
+      },
+      {
+        "en": "Git tags alone guarantee lineage without hashes.",
+        "vi": "Git tag một mình đảm bảo lineage không cần hash."
+      },
+      {
+        "en": "Rollback criteria should be decided only after outage.",
+        "vi": "Tiêu chí rollback chỉ quyết định sau sự cố."
+      },
+      {
+        "en": "Peer review blocks automation and must be skipped overnight.",
+        "vi": "Peer review cản tự động nên bỏ qua ban đêm."
+      }
+    ],
+    "correctEn": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+    "correctVi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước.",
+    "explanation": "* **Đúng / Correct:** Aligns with mitigations in MLS engineering.\n* **Ôn / Study:** giảm thiểu trong kỹ thuật MLS"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding deployment testing for MLS, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **kiểm thử triển khai MLS**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+        "vi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ."
+      },
+      {
+        "en": "Kill switches are discouraged because they confuse dashboards.",
+        "vi": "Kill switch không khuyến khích vì làm rối dashboard."
+      },
+      {
+        "en": "Feature stores never drift from training feature definitions.",
+        "vi": "Feature store không bao giờ lệch định nghĩa huấn luyện."
+      },
+      {
+        "en": "Latency SLAs ignore cold-start container behaviour.",
+        "vi": "SLA độ trễ bỏ qua cold-start container."
+      }
+    ],
+    "correctEn": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+    "correctVi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ.",
+    "explanation": "* **Đúng / Correct:** Aligns with deployment testing for MLS.\n* **Ôn / Study:** kiểm thử triển khai MLS"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: connecting lifecycle chapters.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **liên kết các chương vòng đời**.",
+    "options": [
+      {
+        "en": "Chapter boundaries forbid traceability between artefacts.",
+        "vi": "Ran giới chương cấm truy xuất artefact."
+      },
+      {
+        "en": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+        "vi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3)."
+      },
+      {
+        "en": "Deployment testing overrides every earlier quality gate.",
+        "vi": "Kiểm thử triển khai ghi đè mọi cổng chất lượng trước."
+      },
+      {
+        "en": "Monitoring replaces independent datasets permanently.",
+        "vi": "Giám sát thay dataset độc lập vĩnh viễn."
+      }
+    ],
+    "correctEn": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+    "correctVi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3).",
+    "explanation": "* **Đúng / Correct:** Aligns with connecting lifecycle chapters.\n* **Ôn / Study:** liên kết các chương vòng đời"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: production monitoring hooks.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **hook giám sát production**.",
+    "options": [
+      {
+        "en": "Alerts should route exclusively to single laptops without redundancy.",
+        "vi": "Cảnh báo chỉ gửi một laptop không dự phòng."
+      },
+      {
+        "en": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+        "vi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố."
+      },
+      {
+        "en": "Monitoring dashboards must omit model identifiers for mystique.",
+        "vi": "Dashboard giám sát phải bỏ định danh mô hình."
+      },
+      {
+        "en": "Incident playbooks conflict with MLS governance.",
+        "vi": "Playbook sự cố xung đột quản trị MLS."
+      }
+    ],
+    "correctEn": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+    "correctVi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố.",
+    "explanation": "* **Đúng / Correct:** Aligns with production monitoring hooks.\n* **Ôn / Study:** hook giám sát production"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding environment parity, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **đồng nhất môi trường**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+        "vi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production."
+      },
+      {
+        "en": "Different CUDA versions never affect numerical outputs.",
+        "vi": "CUDA khác phiên bản không ảnh hưởng đầu ra số."
+      },
+      {
+        "en": "Staging may omit privacy controls to speed iteration.",
+        "vi": "Staging được bỏ kiểm soát riêng tư để nhanh."
+      },
+      {
+        "en": "Regional endpoints are irrelevant to GDPR considerations.",
+        "vi": "Endpoint vùng không liên quan GDPR."
+      }
+    ],
+    "correctEn": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+    "correctVi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production.",
+    "explanation": "* **Đúng / Correct:** Aligns with environment parity.\n* **Ôn / Study:** đồng nhất môi trường"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: artifact signing & promotion.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **ký artefact và promotion**.",
+    "options": [
+      {
+        "en": "Checksums are cosmetic because object stores are always trusted.",
+        "vi": "Checksum chỉ trang trí vì object store luôn tin cậy."
+      },
+      {
+        "en": "Promotion pipelines never require human approval for high-risk MLS.",
+        "vi": "Pipeline promotion không cần phê duyệt người cho MLS rủi ro cao."
+      },
+      {
+        "en": "Signing slows throughput and should be disabled in regulated domains.",
+        "vi": "Ký làm chậm throughput nên tắt ở miền chịu quy định."
+      },
+      {
+        "en": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+        "vi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường."
+      }
+    ],
+    "correctEn": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+    "correctVi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with artifact signing & promotion.\n* **Ôn / Study:** ký artefact và promotion"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: hand-off to operations.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **bàn giao cho vận hành**.",
+    "options": [
+      {
+        "en": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+        "vi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình."
+      },
+      {
+        "en": "SLIs duplicate marketing KPIs without distinction.",
+        "vi": "SLI trùng KPI marketing không phân biệt."
+      },
+      {
+        "en": "Runbooks violate agile principles and should not exist.",
+        "vi": "Runbook vi phạm agile không nên tồn tại."
+      },
+      {
+        "en": "Operations learns architecture exclusively via hallway conversations.",
+        "vi": "Vận hành chỉ học kiến trúc qua trò chuyện hành lang."
+      }
+    ],
+    "correctEn": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+    "correctVi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with hand-off to operations.\n* **Ôn / Study:** bàn giao cho vận hành"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding MLS development risks, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **rủi ro phát triển MLS**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Independent tests slow CI and should run quarterly only.",
+        "vi": "Test độc lập làm chậm CI chỉ chạy quý."
+      },
+      {
+        "en": "Notebook-only workflows satisfy audit controls by default.",
+        "vi": "Quy trình chỉ notebook đáp ứng kiểm soát audit mặc định."
+      },
+      {
+        "en": "Secrets may live in training repos if encrypted with ROT13.",
+        "vi": "Bí mật có thể trong repo huấn luyện nếu ROT13."
+      },
+      {
+        "en": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+        "vi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion."
+      }
+    ],
+    "correctEn": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+    "correctVi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion.",
+    "explanation": "* **Đúng / Correct:** Aligns with MLS development risks.\n* **Ôn / Study:** rủi ro phát triển MLS"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: mitigations in MLS engineering.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **giảm thiểu trong kỹ thuật MLS**.",
+    "options": [
+      {
+        "en": "Peer review blocks automation and must be skipped overnight.",
+        "vi": "Peer review cản tự động nên bỏ qua ban đêm."
+      },
+      {
+        "en": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+        "vi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước."
+      },
+      {
+        "en": "Rollback criteria should be decided only after outage.",
+        "vi": "Tiêu chí rollback chỉ quyết định sau sự cố."
+      },
+      {
+        "en": "Git tags alone guarantee lineage without hashes.",
+        "vi": "Git tag một mình đảm bảo lineage không cần hash."
+      }
+    ],
+    "correctEn": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+    "correctVi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước.",
+    "explanation": "* **Đúng / Correct:** Aligns with mitigations in MLS engineering.\n* **Ôn / Study:** giảm thiểu trong kỹ thuật MLS"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: deployment testing for MLS.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử triển khai MLS**.",
+    "options": [
+      {
+        "en": "Kill switches are discouraged because they confuse dashboards.",
+        "vi": "Kill switch không khuyến khích vì làm rối dashboard."
+      },
+      {
+        "en": "Feature stores never drift from training feature definitions.",
+        "vi": "Feature store không bao giờ lệch định nghĩa huấn luyện."
+      },
+      {
+        "en": "Latency SLAs ignore cold-start container behaviour.",
+        "vi": "SLA độ trễ bỏ qua cold-start container."
+      },
+      {
+        "en": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+        "vi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ."
+      }
+    ],
+    "correctEn": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+    "correctVi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ.",
+    "explanation": "* **Đúng / Correct:** Aligns with deployment testing for MLS.\n* **Ôn / Study:** kiểm thử triển khai MLS"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding connecting lifecycle chapters, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **liên kết các chương vòng đời**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Deployment testing overrides every earlier quality gate.",
+        "vi": "Kiểm thử triển khai ghi đè mọi cổng chất lượng trước."
+      },
+      {
+        "en": "Chapter boundaries forbid traceability between artefacts.",
+        "vi": "Ran giới chương cấm truy xuất artefact."
+      },
+      {
+        "en": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+        "vi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3)."
+      },
+      {
+        "en": "Monitoring replaces independent datasets permanently.",
+        "vi": "Giám sát thay dataset độc lập vĩnh viễn."
+      }
+    ],
+    "correctEn": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+    "correctVi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3).",
+    "explanation": "* **Đúng / Correct:** Aligns with connecting lifecycle chapters.\n* **Ôn / Study:** liên kết các chương vòng đời"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: production monitoring hooks.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **hook giám sát production**.",
+    "options": [
+      {
+        "en": "Incident playbooks conflict with MLS governance.",
+        "vi": "Playbook sự cố xung đột quản trị MLS."
+      },
+      {
+        "en": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+        "vi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố."
+      },
+      {
+        "en": "Alerts should route exclusively to single laptops without redundancy.",
+        "vi": "Cảnh báo chỉ gửi một laptop không dự phòng."
+      },
+      {
+        "en": "Monitoring dashboards must omit model identifiers for mystique.",
+        "vi": "Dashboard giám sát phải bỏ định danh mô hình."
+      }
+    ],
+    "correctEn": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+    "correctVi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố.",
+    "explanation": "* **Đúng / Correct:** Aligns with production monitoring hooks.\n* **Ôn / Study:** hook giám sát production"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: environment parity.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **đồng nhất môi trường**.",
+    "options": [
+      {
+        "en": "Different CUDA versions never affect numerical outputs.",
+        "vi": "CUDA khác phiên bản không ảnh hưởng đầu ra số."
+      },
+      {
+        "en": "Regional endpoints are irrelevant to GDPR considerations.",
+        "vi": "Endpoint vùng không liên quan GDPR."
+      },
+      {
+        "en": "Staging may omit privacy controls to speed iteration.",
+        "vi": "Staging được bỏ kiểm soát riêng tư để nhanh."
+      },
+      {
+        "en": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+        "vi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production."
+      }
+    ],
+    "correctEn": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+    "correctVi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production.",
+    "explanation": "* **Đúng / Correct:** Aligns with environment parity.\n* **Ôn / Study:** đồng nhất môi trường"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding artifact signing & promotion, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **ký artefact và promotion**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Checksums are cosmetic because object stores are always trusted.",
+        "vi": "Checksum chỉ trang trí vì object store luôn tin cậy."
+      },
+      {
+        "en": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+        "vi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường."
+      },
+      {
+        "en": "Promotion pipelines never require human approval for high-risk MLS.",
+        "vi": "Pipeline promotion không cần phê duyệt người cho MLS rủi ro cao."
+      },
+      {
+        "en": "Signing slows throughput and should be disabled in regulated domains.",
+        "vi": "Ký làm chậm throughput nên tắt ở miền chịu quy định."
+      }
+    ],
+    "correctEn": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+    "correctVi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with artifact signing & promotion.\n* **Ôn / Study:** ký artefact và promotion"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: hand-off to operations.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **bàn giao cho vận hành**.",
+    "options": [
+      {
+        "en": "Runbooks violate agile principles and should not exist.",
+        "vi": "Runbook vi phạm agile không nên tồn tại."
+      },
+      {
+        "en": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+        "vi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình."
+      },
+      {
+        "en": "Operations learns architecture exclusively via hallway conversations.",
+        "vi": "Vận hành chỉ học kiến trúc qua trò chuyện hành lang."
+      },
+      {
+        "en": "SLIs duplicate marketing KPIs without distinction.",
+        "vi": "SLI trùng KPI marketing không phân biệt."
+      }
+    ],
+    "correctEn": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+    "correctVi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with hand-off to operations.\n* **Ôn / Study:** bàn giao cho vận hành"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: MLS development risks.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **rủi ro phát triển MLS**.",
+    "options": [
+      {
+        "en": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+        "vi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion."
+      },
+      {
+        "en": "Independent tests slow CI and should run quarterly only.",
+        "vi": "Test độc lập làm chậm CI chỉ chạy quý."
+      },
+      {
+        "en": "Secrets may live in training repos if encrypted with ROT13.",
+        "vi": "Bí mật có thể trong repo huấn luyện nếu ROT13."
+      },
+      {
+        "en": "Notebook-only workflows satisfy audit controls by default.",
+        "vi": "Quy trình chỉ notebook đáp ứng kiểm soát audit mặc định."
+      }
+    ],
+    "correctEn": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+    "correctVi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion.",
+    "explanation": "* **Đúng / Correct:** Aligns with MLS development risks.\n* **Ôn / Study:** rủi ro phát triển MLS"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding mitigations in MLS engineering, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **giảm thiểu trong kỹ thuật MLS**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Peer review blocks automation and must be skipped overnight.",
+        "vi": "Peer review cản tự động nên bỏ qua ban đêm."
+      },
+      {
+        "en": "Rollback criteria should be decided only after outage.",
+        "vi": "Tiêu chí rollback chỉ quyết định sau sự cố."
+      },
+      {
+        "en": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+        "vi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước."
+      },
+      {
+        "en": "Git tags alone guarantee lineage without hashes.",
+        "vi": "Git tag một mình đảm bảo lineage không cần hash."
+      }
+    ],
+    "correctEn": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+    "correctVi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước.",
+    "explanation": "* **Đúng / Correct:** Aligns with mitigations in MLS engineering.\n* **Ôn / Study:** giảm thiểu trong kỹ thuật MLS"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: deployment testing for MLS.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **kiểm thử triển khai MLS**.",
+    "options": [
+      {
+        "en": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+        "vi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ."
+      },
+      {
+        "en": "Feature stores never drift from training feature definitions.",
+        "vi": "Feature store không bao giờ lệch định nghĩa huấn luyện."
+      },
+      {
+        "en": "Kill switches are discouraged because they confuse dashboards.",
+        "vi": "Kill switch không khuyến khích vì làm rối dashboard."
+      },
+      {
+        "en": "Latency SLAs ignore cold-start container behaviour.",
+        "vi": "SLA độ trễ bỏ qua cold-start container."
+      }
+    ],
+    "correctEn": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+    "correctVi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ.",
+    "explanation": "* **Đúng / Correct:** Aligns with deployment testing for MLS.\n* **Ôn / Study:** kiểm thử triển khai MLS"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: connecting lifecycle chapters.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **liên kết các chương vòng đời**.",
+    "options": [
+      {
+        "en": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+        "vi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3)."
+      },
+      {
+        "en": "Monitoring replaces independent datasets permanently.",
+        "vi": "Giám sát thay dataset độc lập vĩnh viễn."
+      },
+      {
+        "en": "Deployment testing overrides every earlier quality gate.",
+        "vi": "Kiểm thử triển khai ghi đè mọi cổng chất lượng trước."
+      },
+      {
+        "en": "Chapter boundaries forbid traceability between artefacts.",
+        "vi": "Ran giới chương cấm truy xuất artefact."
+      }
+    ],
+    "correctEn": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+    "correctVi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3).",
+    "explanation": "* **Đúng / Correct:** Aligns with connecting lifecycle chapters.\n* **Ôn / Study:** liên kết các chương vòng đời"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding production monitoring hooks, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **hook giám sát production**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Incident playbooks conflict with MLS governance.",
+        "vi": "Playbook sự cố xung đột quản trị MLS."
+      },
+      {
+        "en": "Monitoring dashboards must omit model identifiers for mystique.",
+        "vi": "Dashboard giám sát phải bỏ định danh mô hình."
+      },
+      {
+        "en": "Alerts should route exclusively to single laptops without redundancy.",
+        "vi": "Cảnh báo chỉ gửi một laptop không dự phòng."
+      },
+      {
+        "en": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+        "vi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố."
+      }
+    ],
+    "correctEn": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+    "correctVi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố.",
+    "explanation": "* **Đúng / Correct:** Aligns with production monitoring hooks.\n* **Ôn / Study:** hook giám sát production"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: environment parity.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **đồng nhất môi trường**.",
+    "options": [
+      {
+        "en": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+        "vi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production."
+      },
+      {
+        "en": "Regional endpoints are irrelevant to GDPR considerations.",
+        "vi": "Endpoint vùng không liên quan GDPR."
+      },
+      {
+        "en": "Different CUDA versions never affect numerical outputs.",
+        "vi": "CUDA khác phiên bản không ảnh hưởng đầu ra số."
+      },
+      {
+        "en": "Staging may omit privacy controls to speed iteration.",
+        "vi": "Staging được bỏ kiểm soát riêng tư để nhanh."
+      }
+    ],
+    "correctEn": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+    "correctVi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production.",
+    "explanation": "* **Đúng / Correct:** Aligns with environment parity.\n* **Ôn / Study:** đồng nhất môi trường"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: artifact signing & promotion.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **ký artefact và promotion**.",
+    "options": [
+      {
+        "en": "Signing slows throughput and should be disabled in regulated domains.",
+        "vi": "Ký làm chậm throughput nên tắt ở miền chịu quy định."
+      },
+      {
+        "en": "Promotion pipelines never require human approval for high-risk MLS.",
+        "vi": "Pipeline promotion không cần phê duyệt người cho MLS rủi ro cao."
+      },
+      {
+        "en": "Checksums are cosmetic because object stores are always trusted.",
+        "vi": "Checksum chỉ trang trí vì object store luôn tin cậy."
+      },
+      {
+        "en": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+        "vi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường."
+      }
+    ],
+    "correctEn": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+    "correctVi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with artifact signing & promotion.\n* **Ôn / Study:** ký artefact và promotion"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding hand-off to operations, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **bàn giao cho vận hành**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+        "vi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình."
+      },
+      {
+        "en": "SLIs duplicate marketing KPIs without distinction.",
+        "vi": "SLI trùng KPI marketing không phân biệt."
+      },
+      {
+        "en": "Runbooks violate agile principles and should not exist.",
+        "vi": "Runbook vi phạm agile không nên tồn tại."
+      },
+      {
+        "en": "Operations learns architecture exclusively via hallway conversations.",
+        "vi": "Vận hành chỉ học kiến trúc qua trò chuyện hành lang."
+      }
+    ],
+    "correctEn": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+    "correctVi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with hand-off to operations.\n* **Ôn / Study:** bàn giao cho vận hành"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: MLS development risks.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **rủi ro phát triển MLS**.",
+    "options": [
+      {
+        "en": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+        "vi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion."
+      },
+      {
+        "en": "Independent tests slow CI and should run quarterly only.",
+        "vi": "Test độc lập làm chậm CI chỉ chạy quý."
+      },
+      {
+        "en": "Notebook-only workflows satisfy audit controls by default.",
+        "vi": "Quy trình chỉ notebook đáp ứng kiểm soát audit mặc định."
+      },
+      {
+        "en": "Secrets may live in training repos if encrypted with ROT13.",
+        "vi": "Bí mật có thể trong repo huấn luyện nếu ROT13."
+      }
+    ],
+    "correctEn": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+    "correctVi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion.",
+    "explanation": "* **Đúng / Correct:** Aligns with MLS development risks.\n* **Ôn / Study:** rủi ro phát triển MLS"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: mitigations in MLS engineering.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **giảm thiểu trong kỹ thuật MLS**.",
+    "options": [
+      {
+        "en": "Git tags alone guarantee lineage without hashes.",
+        "vi": "Git tag một mình đảm bảo lineage không cần hash."
+      },
+      {
+        "en": "Rollback criteria should be decided only after outage.",
+        "vi": "Tiêu chí rollback chỉ quyết định sau sự cố."
+      },
+      {
+        "en": "Peer review blocks automation and must be skipped overnight.",
+        "vi": "Peer review cản tự động nên bỏ qua ban đêm."
+      },
+      {
+        "en": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+        "vi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước."
+      }
+    ],
+    "correctEn": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+    "correctVi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước.",
+    "explanation": "* **Đúng / Correct:** Aligns with mitigations in MLS engineering.\n* **Ôn / Study:** giảm thiểu trong kỹ thuật MLS"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nRegarding deployment testing for MLS, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **kiểm thử triển khai MLS**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+        "vi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ."
+      },
+      {
+        "en": "Latency SLAs ignore cold-start container behaviour.",
+        "vi": "SLA độ trễ bỏ qua cold-start container."
+      },
+      {
+        "en": "Kill switches are discouraged because they confuse dashboards.",
+        "vi": "Kill switch không khuyến khích vì làm rối dashboard."
+      },
+      {
+        "en": "Feature stores never drift from training feature definitions.",
+        "vi": "Feature store không bao giờ lệch định nghĩa huấn luyện."
+      }
+    ],
+    "correctEn": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+    "correctVi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ.",
+    "explanation": "* **Đúng / Correct:** Aligns with deployment testing for MLS.\n* **Ôn / Study:** kiểm thử triển khai MLS"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: connecting lifecycle chapters.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **liên kết các chương vòng đời**.",
+    "options": [
+      {
+        "en": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+        "vi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3)."
+      },
+      {
+        "en": "Chapter boundaries forbid traceability between artefacts.",
+        "vi": "Ran giới chương cấm truy xuất artefact."
+      },
+      {
+        "en": "Deployment testing overrides every earlier quality gate.",
+        "vi": "Kiểm thử triển khai ghi đè mọi cổng chất lượng trước."
+      },
+      {
+        "en": "Monitoring replaces independent datasets permanently.",
+        "vi": "Giám sát thay dataset độc lập vĩnh viễn."
+      }
+    ],
+    "correctEn": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+    "correctVi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3).",
+    "explanation": "* **Đúng / Correct:** Aligns with connecting lifecycle chapters.\n* **Ôn / Study:** liên kết các chương vòng đời"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: production monitoring hooks.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **hook giám sát production**.",
+    "options": [
+      {
+        "en": "Incident playbooks conflict with MLS governance.",
+        "vi": "Playbook sự cố xung đột quản trị MLS."
+      },
+      {
+        "en": "Alerts should route exclusively to single laptops without redundancy.",
+        "vi": "Cảnh báo chỉ gửi một laptop không dự phòng."
+      },
+      {
+        "en": "Monitoring dashboards must omit model identifiers for mystique.",
+        "vi": "Dashboard giám sát phải bỏ định danh mô hình."
+      },
+      {
+        "en": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+        "vi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố."
+      }
+    ],
+    "correctEn": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+    "correctVi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố.",
+    "explanation": "* **Đúng / Correct:** Aligns with production monitoring hooks.\n* **Ôn / Study:** hook giám sát production"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding environment parity, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **đồng nhất môi trường**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Regional endpoints are irrelevant to GDPR considerations.",
+        "vi": "Endpoint vùng không liên quan GDPR."
+      },
+      {
+        "en": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+        "vi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production."
+      },
+      {
+        "en": "Different CUDA versions never affect numerical outputs.",
+        "vi": "CUDA khác phiên bản không ảnh hưởng đầu ra số."
+      },
+      {
+        "en": "Staging may omit privacy controls to speed iteration.",
+        "vi": "Staging được bỏ kiểm soát riêng tư để nhanh."
+      }
+    ],
+    "correctEn": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+    "correctVi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production.",
+    "explanation": "* **Đúng / Correct:** Aligns with environment parity.\n* **Ôn / Study:** đồng nhất môi trường"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: artifact signing & promotion.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **ký artefact và promotion**.",
+    "options": [
+      {
+        "en": "Signing slows throughput and should be disabled in regulated domains.",
+        "vi": "Ký làm chậm throughput nên tắt ở miền chịu quy định."
+      },
+      {
+        "en": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+        "vi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường."
+      },
+      {
+        "en": "Promotion pipelines never require human approval for high-risk MLS.",
+        "vi": "Pipeline promotion không cần phê duyệt người cho MLS rủi ro cao."
+      },
+      {
+        "en": "Checksums are cosmetic because object stores are always trusted.",
+        "vi": "Checksum chỉ trang trí vì object store luôn tin cậy."
+      }
+    ],
+    "correctEn": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+    "correctVi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with artifact signing & promotion.\n* **Ôn / Study:** ký artefact và promotion"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: hand-off to operations.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **bàn giao cho vận hành**.",
+    "options": [
+      {
+        "en": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+        "vi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình."
+      },
+      {
+        "en": "Runbooks violate agile principles and should not exist.",
+        "vi": "Runbook vi phạm agile không nên tồn tại."
+      },
+      {
+        "en": "SLIs duplicate marketing KPIs without distinction.",
+        "vi": "SLI trùng KPI marketing không phân biệt."
+      },
+      {
+        "en": "Operations learns architecture exclusively via hallway conversations.",
+        "vi": "Vận hành chỉ học kiến trúc qua trò chuyện hành lang."
+      }
+    ],
+    "correctEn": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+    "correctVi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with hand-off to operations.\n* **Ôn / Study:** bàn giao cho vận hành"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding MLS development risks, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **rủi ro phát triển MLS**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Secrets may live in training repos if encrypted with ROT13.",
+        "vi": "Bí mật có thể trong repo huấn luyện nếu ROT13."
+      },
+      {
+        "en": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+        "vi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion."
+      },
+      {
+        "en": "Independent tests slow CI and should run quarterly only.",
+        "vi": "Test độc lập làm chậm CI chỉ chạy quý."
+      },
+      {
+        "en": "Notebook-only workflows satisfy audit controls by default.",
+        "vi": "Quy trình chỉ notebook đáp ứng kiểm soát audit mặc định."
+      }
+    ],
+    "correctEn": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+    "correctVi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion.",
+    "explanation": "* **Đúng / Correct:** Aligns with MLS development risks.\n* **Ôn / Study:** rủi ro phát triển MLS"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: mitigations in MLS engineering.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **giảm thiểu trong kỹ thuật MLS**.",
+    "options": [
+      {
+        "en": "Git tags alone guarantee lineage without hashes.",
+        "vi": "Git tag một mình đảm bảo lineage không cần hash."
+      },
+      {
+        "en": "Rollback criteria should be decided only after outage.",
+        "vi": "Tiêu chí rollback chỉ quyết định sau sự cố."
+      },
+      {
+        "en": "Peer review blocks automation and must be skipped overnight.",
+        "vi": "Peer review cản tự động nên bỏ qua ban đêm."
+      },
+      {
+        "en": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+        "vi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước."
+      }
+    ],
+    "correctEn": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+    "correctVi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước.",
+    "explanation": "* **Đúng / Correct:** Aligns with mitigations in MLS engineering.\n* **Ôn / Study:** giảm thiểu trong kỹ thuật MLS"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: deployment testing for MLS.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử triển khai MLS**.",
+    "options": [
+      {
+        "en": "Feature stores never drift from training feature definitions.",
+        "vi": "Feature store không bao giờ lệch định nghĩa huấn luyện."
+      },
+      {
+        "en": "Kill switches are discouraged because they confuse dashboards.",
+        "vi": "Kill switch không khuyến khích vì làm rối dashboard."
+      },
+      {
+        "en": "Latency SLAs ignore cold-start container behaviour.",
+        "vi": "SLA độ trễ bỏ qua cold-start container."
+      },
+      {
+        "en": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+        "vi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ."
+      }
+    ],
+    "correctEn": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+    "correctVi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ.",
+    "explanation": "* **Đúng / Correct:** Aligns with deployment testing for MLS.\n* **Ôn / Study:** kiểm thử triển khai MLS"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding connecting lifecycle chapters, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **liên kết các chương vòng đời**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+        "vi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3)."
+      },
+      {
+        "en": "Deployment testing overrides every earlier quality gate.",
+        "vi": "Kiểm thử triển khai ghi đè mọi cổng chất lượng trước."
+      },
+      {
+        "en": "Chapter boundaries forbid traceability between artefacts.",
+        "vi": "Ran giới chương cấm truy xuất artefact."
+      },
+      {
+        "en": "Monitoring replaces independent datasets permanently.",
+        "vi": "Giám sát thay dataset độc lập vĩnh viễn."
+      }
+    ],
+    "correctEn": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+    "correctVi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3).",
+    "explanation": "* **Đúng / Correct:** Aligns with connecting lifecycle chapters.\n* **Ôn / Study:** liên kết các chương vòng đời"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: production monitoring hooks.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **hook giám sát production**.",
+    "options": [
+      {
+        "en": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+        "vi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố."
+      },
+      {
+        "en": "Monitoring dashboards must omit model identifiers for mystique.",
+        "vi": "Dashboard giám sát phải bỏ định danh mô hình."
+      },
+      {
+        "en": "Incident playbooks conflict with MLS governance.",
+        "vi": "Playbook sự cố xung đột quản trị MLS."
+      },
+      {
+        "en": "Alerts should route exclusively to single laptops without redundancy.",
+        "vi": "Cảnh báo chỉ gửi một laptop không dự phòng."
+      }
+    ],
+    "correctEn": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+    "correctVi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố.",
+    "explanation": "* **Đúng / Correct:** Aligns with production monitoring hooks.\n* **Ôn / Study:** hook giám sát production"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: environment parity.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **đồng nhất môi trường**.",
+    "options": [
+      {
+        "en": "Different CUDA versions never affect numerical outputs.",
+        "vi": "CUDA khác phiên bản không ảnh hưởng đầu ra số."
+      },
+      {
+        "en": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+        "vi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production."
+      },
+      {
+        "en": "Staging may omit privacy controls to speed iteration.",
+        "vi": "Staging được bỏ kiểm soát riêng tư để nhanh."
+      },
+      {
+        "en": "Regional endpoints are irrelevant to GDPR considerations.",
+        "vi": "Endpoint vùng không liên quan GDPR."
+      }
+    ],
+    "correctEn": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+    "correctVi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production.",
+    "explanation": "* **Đúng / Correct:** Aligns with environment parity.\n* **Ôn / Study:** đồng nhất môi trường"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding artifact signing & promotion, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **ký artefact và promotion**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Checksums are cosmetic because object stores are always trusted.",
+        "vi": "Checksum chỉ trang trí vì object store luôn tin cậy."
+      },
+      {
+        "en": "Promotion pipelines never require human approval for high-risk MLS.",
+        "vi": "Pipeline promotion không cần phê duyệt người cho MLS rủi ro cao."
+      },
+      {
+        "en": "Signing slows throughput and should be disabled in regulated domains.",
+        "vi": "Ký làm chậm throughput nên tắt ở miền chịu quy định."
+      },
+      {
+        "en": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+        "vi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường."
+      }
+    ],
+    "correctEn": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+    "correctVi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with artifact signing & promotion.\n* **Ôn / Study:** ký artefact và promotion"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nTopic focus: hand-off to operations.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **bàn giao cho vận hành**.",
+    "options": [
+      {
+        "en": "Operations learns architecture exclusively via hallway conversations.",
+        "vi": "Vận hành chỉ học kiến trúc qua trò chuyện hành lang."
+      },
+      {
+        "en": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+        "vi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình."
+      },
+      {
+        "en": "Runbooks violate agile principles and should not exist.",
+        "vi": "Runbook vi phạm agile không nên tồn tại."
+      },
+      {
+        "en": "SLIs duplicate marketing KPIs without distinction.",
+        "vi": "SLI trùng KPI marketing không phân biệt."
+      }
+    ],
+    "correctEn": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+    "correctVi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with hand-off to operations.\n* **Ôn / Study:** bàn giao cho vận hành"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: MLS development risks.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **rủi ro phát triển MLS**.",
+    "options": [
+      {
+        "en": "Secrets may live in training repos if encrypted with ROT13.",
+        "vi": "Bí mật có thể trong repo huấn luyện nếu ROT13."
+      },
+      {
+        "en": "Notebook-only workflows satisfy audit controls by default.",
+        "vi": "Quy trình chỉ notebook đáp ứng kiểm soát audit mặc định."
+      },
+      {
+        "en": "Independent tests slow CI and should run quarterly only.",
+        "vi": "Test độc lập làm chậm CI chỉ chạy quý."
+      },
+      {
+        "en": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+        "vi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion."
+      }
+    ],
+    "correctEn": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+    "correctVi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion.",
+    "explanation": "* **Đúng / Correct:** Aligns with MLS development risks.\n* **Ôn / Study:** rủi ro phát triển MLS"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding mitigations in MLS engineering, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **giảm thiểu trong kỹ thuật MLS**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Rollback criteria should be decided only after outage.",
+        "vi": "Tiêu chí rollback chỉ quyết định sau sự cố."
+      },
+      {
+        "en": "Git tags alone guarantee lineage without hashes.",
+        "vi": "Git tag một mình đảm bảo lineage không cần hash."
+      },
+      {
+        "en": "Peer review blocks automation and must be skipped overnight.",
+        "vi": "Peer review cản tự động nên bỏ qua ban đêm."
+      },
+      {
+        "en": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+        "vi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước."
+      }
+    ],
+    "correctEn": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+    "correctVi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước.",
+    "explanation": "* **Đúng / Correct:** Aligns with mitigations in MLS engineering.\n* **Ôn / Study:** giảm thiểu trong kỹ thuật MLS"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: deployment testing for MLS.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **kiểm thử triển khai MLS**.",
+    "options": [
+      {
+        "en": "Kill switches are discouraged because they confuse dashboards.",
+        "vi": "Kill switch không khuyến khích vì làm rối dashboard."
+      },
+      {
+        "en": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+        "vi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ."
+      },
+      {
+        "en": "Feature stores never drift from training feature definitions.",
+        "vi": "Feature store không bao giờ lệch định nghĩa huấn luyện."
+      },
+      {
+        "en": "Latency SLAs ignore cold-start container behaviour.",
+        "vi": "SLA độ trễ bỏ qua cold-start container."
+      }
+    ],
+    "correctEn": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+    "correctVi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ.",
+    "explanation": "* **Đúng / Correct:** Aligns with deployment testing for MLS.\n* **Ôn / Study:** kiểm thử triển khai MLS"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: connecting lifecycle chapters.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **liên kết các chương vòng đời**.",
+    "options": [
+      {
+        "en": "Deployment testing overrides every earlier quality gate.",
+        "vi": "Kiểm thử triển khai ghi đè mọi cổng chất lượng trước."
+      },
+      {
+        "en": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+        "vi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3)."
+      },
+      {
+        "en": "Monitoring replaces independent datasets permanently.",
+        "vi": "Giám sát thay dataset độc lập vĩnh viễn."
+      },
+      {
+        "en": "Chapter boundaries forbid traceability between artefacts.",
+        "vi": "Ran giới chương cấm truy xuất artefact."
+      }
+    ],
+    "correctEn": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+    "correctVi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3).",
+    "explanation": "* **Đúng / Correct:** Aligns with connecting lifecycle chapters.\n* **Ôn / Study:** liên kết các chương vòng đời"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding production monitoring hooks, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **hook giám sát production**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Alerts should route exclusively to single laptops without redundancy.",
+        "vi": "Cảnh báo chỉ gửi một laptop không dự phòng."
+      },
+      {
+        "en": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+        "vi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố."
+      },
+      {
+        "en": "Monitoring dashboards must omit model identifiers for mystique.",
+        "vi": "Dashboard giám sát phải bỏ định danh mô hình."
+      },
+      {
+        "en": "Incident playbooks conflict with MLS governance.",
+        "vi": "Playbook sự cố xung đột quản trị MLS."
+      }
+    ],
+    "correctEn": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+    "correctVi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố.",
+    "explanation": "* **Đúng / Correct:** Aligns with production monitoring hooks.\n* **Ôn / Study:** hook giám sát production"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: environment parity.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **đồng nhất môi trường**.",
+    "options": [
+      {
+        "en": "Staging may omit privacy controls to speed iteration.",
+        "vi": "Staging được bỏ kiểm soát riêng tư để nhanh."
+      },
+      {
+        "en": "Different CUDA versions never affect numerical outputs.",
+        "vi": "CUDA khác phiên bản không ảnh hưởng đầu ra số."
+      },
+      {
+        "en": "Regional endpoints are irrelevant to GDPR considerations.",
+        "vi": "Endpoint vùng không liên quan GDPR."
+      },
+      {
+        "en": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+        "vi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production."
+      }
+    ],
+    "correctEn": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+    "correctVi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production.",
+    "explanation": "* **Đúng / Correct:** Aligns with environment parity.\n* **Ôn / Study:** đồng nhất môi trường"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: artifact signing & promotion.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **ký artefact và promotion**.",
+    "options": [
+      {
+        "en": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+        "vi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường."
+      },
+      {
+        "en": "Signing slows throughput and should be disabled in regulated domains.",
+        "vi": "Ký làm chậm throughput nên tắt ở miền chịu quy định."
+      },
+      {
+        "en": "Promotion pipelines never require human approval for high-risk MLS.",
+        "vi": "Pipeline promotion không cần phê duyệt người cho MLS rủi ro cao."
+      },
+      {
+        "en": "Checksums are cosmetic because object stores are always trusted.",
+        "vi": "Checksum chỉ trang trí vì object store luôn tin cậy."
+      }
+    ],
+    "correctEn": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+    "correctVi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with artifact signing & promotion.\n* **Ôn / Study:** ký artefact và promotion"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nRegarding hand-off to operations, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **bàn giao cho vận hành**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+        "vi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình."
+      },
+      {
+        "en": "SLIs duplicate marketing KPIs without distinction.",
+        "vi": "SLI trùng KPI marketing không phân biệt."
+      },
+      {
+        "en": "Operations learns architecture exclusively via hallway conversations.",
+        "vi": "Vận hành chỉ học kiến trúc qua trò chuyện hành lang."
+      },
+      {
+        "en": "Runbooks violate agile principles and should not exist.",
+        "vi": "Runbook vi phạm agile không nên tồn tại."
+      }
+    ],
+    "correctEn": "Hand-offs bundle runbooks, SLO/SLI definitions, rollback drills, owner contacts, and linkage to model risk assessments.",
+    "correctVi": "Bàn giao gồm runbook, định nghĩa SLO/SLI, diễn tập rollback, chủ sở hữu và liên kết đánh giá rủi ro mô hình.",
+    "explanation": "* **Đúng / Correct:** Aligns with hand-off to operations.\n* **Ôn / Study:** bàn giao cho vận hành"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: MLS development risks.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **rủi ro phát triển MLS**.",
+    "options": [
+      {
+        "en": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+        "vi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion."
+      },
+      {
+        "en": "Secrets may live in training repos if encrypted with ROT13.",
+        "vi": "Bí mật có thể trong repo huấn luyện nếu ROT13."
+      },
+      {
+        "en": "Notebook-only workflows satisfy audit controls by default.",
+        "vi": "Quy trình chỉ notebook đáp ứng kiểm soát audit mặc định."
+      },
+      {
+        "en": "Independent tests slow CI and should run quarterly only.",
+        "vi": "Test độc lập làm chậm CI chỉ chạy quý."
+      }
+    ],
+    "correctEn": "Risks include irreproducible experiments, poor secret isolation, weak CI gates for data/models, and skipping independent test evidence before promotion.",
+    "correctVi": "Rủi ro gồm thí nghiệm không tái lập, cô lập bí mật kém, CI yếu cho dữ liệu/mô hình và bỏ bằng chứng test độc lập trước promotion.",
+    "explanation": "* **Đúng / Correct:** Aligns with MLS development risks.\n* **Ôn / Study:** rủi ro phát triển MLS"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: mitigations in MLS engineering.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **giảm thiểu trong kỹ thuật MLS**.",
+    "options": [
+      {
+        "en": "Git tags alone guarantee lineage without hashes.",
+        "vi": "Git tag một mình đảm bảo lineage không cần hash."
+      },
+      {
+        "en": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+        "vi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước."
+      },
+      {
+        "en": "Rollback criteria should be decided only after outage.",
+        "vi": "Tiêu chí rollback chỉ quyết định sau sự cố."
+      },
+      {
+        "en": "Peer review blocks automation and must be skipped overnight.",
+        "vi": "Peer review cản tự động nên bỏ qua ban đêm."
+      }
+    ],
+    "correctEn": "Mitigations include versioning datasets/models, peer-reviewed configs, automated data validation gates, and predefined rollback criteria.",
+    "correctVi": "Giảm thiểu gồm phiên bản dataset/mô hình, cấu hình peer review, cổng kiểm tra dữ liệu tự động và tiêu chí rollback định trước.",
+    "explanation": "* **Đúng / Correct:** Aligns with mitigations in MLS engineering.\n* **Ôn / Study:** giảm thiểu trong kỹ thuật MLS"
+  },
+  {
+    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding deployment testing for MLS, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **kiểm thử triển khai MLS**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Latency SLAs ignore cold-start container behaviour.",
+        "vi": "SLA độ trễ bỏ qua cold-start container."
+      },
+      {
+        "en": "Kill switches are discouraged because they confuse dashboards.",
+        "vi": "Kill switch không khuyến khích vì làm rối dashboard."
+      },
+      {
+        "en": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+        "vi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ."
+      },
+      {
+        "en": "Feature stores never drift from training feature definitions.",
+        "vi": "Feature store không bao giờ lệch định nghĩa huấn luyện."
+      }
+    ],
+    "correctEn": "Deployment tests validate packaging, inference latency under load, autoscaling, feature-store contracts, canaries, kill switches, and service compatibility.",
+    "correctVi": "Kiểm thử triển khai xác nhận đóng gói, độ trễ suy luận dưới tải, autoscale, hợp đồng feature store, canary, kill switch và tương thích dịch vụ.",
+    "explanation": "* **Đúng / Correct:** Aligns with deployment testing for MLS.\n* **Ôn / Study:** kiểm thử triển khai MLS"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: connecting lifecycle chapters.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **liên kết các chương vòng đời**.",
+    "options": [
+      {
+        "en": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+        "vi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3)."
+      },
+      {
+        "en": "Monitoring replaces independent datasets permanently.",
+        "vi": "Giám sát thay dataset độc lập vĩnh viễn."
+      },
+      {
+        "en": "Deployment testing overrides every earlier quality gate.",
+        "vi": "Kiểm thử triển khai ghi đè mọi cổng chất lượng trước."
+      },
+      {
+        "en": "Chapter boundaries forbid traceability between artefacts.",
+        "vi": "Ran giới chương cấm truy xuất artefact."
+      }
+    ],
+    "correctEn": "Development testing closes gaps between data preparation (Ch5), model-level evidence (Ch6), operational strategy (Ch4), and ML workflow foundations (Ch3).",
+    "correctVi": "Kiểm thử phát triển khép khoảng trống giữa chuẩn bị dữ liệu (Ch5), bằng chứng mô hình (Ch6), chiến lược vận hành (Ch4) và nền quy trình ML (Ch3).",
+    "explanation": "* **Đúng / Correct:** Aligns with connecting lifecycle chapters.\n* **Ôn / Study:** liên kết các chương vòng đời"
+  },
+  {
+    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: production monitoring hooks.",
+    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **hook giám sát production**.",
+    "options": [
+      {
+        "en": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+        "vi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố."
+      },
+      {
+        "en": "Alerts should route exclusively to single laptops without redundancy.",
+        "vi": "Cảnh báo chỉ gửi một laptop không dự phòng."
+      },
+      {
+        "en": "Monitoring dashboards must omit model identifiers for mystique.",
+        "vi": "Dashboard giám sát phải bỏ định danh mô hình."
+      },
+      {
+        "en": "Incident playbooks conflict with MLS governance.",
+        "vi": "Playbook sự cố xung đột quản trị MLS."
+      }
+    ],
+    "correctEn": "Hooks capture latency, error codes, data distributions, model versions, and alert paths integrating incident response playbooks.",
+    "correctVi": "Hook thu độ trễ, mã lỗi, phân phối dữ liệu, phiên bản mô hình và lối cảnh báo tích hợp playbook ứng phòng sự cố.",
+    "explanation": "* **Đúng / Correct:** Aligns with production monitoring hooks.\n* **Ôn / Study:** hook giám sát production"
+  },
+  {
+    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding environment parity, pick the option that matches ISTQB CT-AI guidance.",
+    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **đồng nhất môi trường**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
+    "options": [
+      {
+        "en": "Different CUDA versions never affect numerical outputs.",
+        "vi": "CUDA khác phiên bản không ảnh hưởng đầu ra số."
+      },
+      {
+        "en": "Regional endpoints are irrelevant to GDPR considerations.",
+        "vi": "Endpoint vùng không liên quan GDPR."
+      },
+      {
+        "en": "Staging may omit privacy controls to speed iteration.",
+        "vi": "Staging được bỏ kiểm soát riêng tư để nhanh."
+      },
+      {
+        "en": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+        "vi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production."
+      }
+    ],
+    "correctEn": "Parity checks align dependency locks, accelerator drivers, batch sizes, and regional endpoints between staging and production slices.",
+    "correctVi": "Kiểm tra đồng nhất căn chỉnh khóa phụ thuộc, driver GPU, batch size và endpoint vùng giữa staging và production.",
+    "explanation": "* **Đúng / Correct:** Aligns with environment parity.\n* **Ôn / Study:** đồng nhất môi trường"
+  },
+  {
+    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: artifact signing & promotion.",
+    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **ký artefact và promotion**.",
+    "options": [
+      {
+        "en": "Checksums are cosmetic because object stores are always trusted.",
+        "vi": "Checksum chỉ trang trí vì object store luôn tin cậy."
+      },
+      {
+        "en": "Promotion pipelines never require human approval for high-risk MLS.",
+        "vi": "Pipeline promotion không cần phê duyệt người cho MLS rủi ro cao."
+      },
+      {
+        "en": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+        "vi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường."
+      },
+      {
+        "en": "Signing slows throughput and should be disabled in regulated domains.",
+        "vi": "Ký làm chậm throughput nên tắt ở miền chịu quy định."
+      }
+    ],
+    "correctEn": "Signed model blobs with checksum manifests reduce tampering risk during promotion across environments.",
+    "correctVi": "Blob mô hình có ký kèm manifest checksum giảm rủi ro can thiệp khi promotion giữa môi trường.",
+    "explanation": "* **Đúng / Correct:** Aligns with artifact signing & promotion.\n* **Ôn / Study:** ký artefact và promotion"
+  }
+]

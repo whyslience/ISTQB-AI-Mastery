@@ -1,17 +1,71 @@
 import type { Question } from "@/types";
 import type { QuizQuestion } from "@/data/syllabus";
 import { syllabusData } from "@/data/syllabus";
+import { ctaiSyllabusData } from "@/data/syllabus-ai";
 
-/** Client-facing topic labels → syllabus chapter id */
-export const EXAM_TOPIC_TO_CHAPTER_ID: Record<string, string | null> = {
-  "Full Exam": null,
-  "Fundamentals of Testing": "chapter-1",
-  "Testing Throughout the SDLC": "chapter-2",
-  "Static Testing": "chapter-3",
-  "Test Analysis and Design": "chapter-4",
-  "Managing the Test Activities": "chapter-5",
-  "Test Tools": "chapter-6",
+/** Exam topic label → question pool + optional chapter filter (null = all chapters in pool). */
+export const EXAM_TOPIC_CONFIG: Record<string, { pool: "ctfl" | "ctai"; chapterId: string | null }> = {
+  "Full Exam": { pool: "ctfl", chapterId: null },
+  "Fundamentals of Testing": { pool: "ctfl", chapterId: "chapter-1" },
+  "Testing Throughout the SDLC": { pool: "ctfl", chapterId: "chapter-2" },
+  "Static Testing": { pool: "ctfl", chapterId: "chapter-3" },
+  "Test Analysis and Design": { pool: "ctfl", chapterId: "chapter-4" },
+  "Managing the Test Activities": { pool: "ctfl", chapterId: "chapter-5" },
+  "Test Tools": { pool: "ctfl", chapterId: "chapter-6" },
+
+  "CT-AI Full Exam": { pool: "ctai", chapterId: null },
+  "CT-AI Ch1 — Introduction to Artificial Intelligence": { pool: "ctai", chapterId: "ctai-1" },
+  "CT-AI Ch2 — Quality Characteristics for AI-Based Systems": { pool: "ctai", chapterId: "ctai-2" },
+  "CT-AI Ch3 — Machine Learning": { pool: "ctai", chapterId: "ctai-3" },
+  "CT-AI Ch4 — Testing AI-Based Systems": { pool: "ctai", chapterId: "ctai-4" },
+  "CT-AI Ch5 — Input Data Testing for MLS": { pool: "ctai", chapterId: "ctai-5" },
+  "CT-AI Ch6 — Model Testing for MLS": { pool: "ctai", chapterId: "ctai-6" },
+  "CT-AI Ch7 — MLS Development Testing": { pool: "ctai", chapterId: "ctai-7" },
 };
+
+/**
+ * Exam topics grouped by ISTQB certification track for `/exam` UI.
+ * Flat order is preserved: CTFL block first, then CT-AI block.
+ */
+export const EXAM_TOPIC_GROUPS: readonly {
+  trackId: "ctfl" | "ctai";
+  titleEn: string;
+  titleVi: string;
+  topics: readonly string[];
+}[] = [
+  {
+    trackId: "ctfl",
+    titleEn: "ISTQB CTFL v4.0 — Foundation Level",
+    titleVi: "ISTQB CTFL v4.0 — Trình độ Foundation",
+    topics: [
+      "Full Exam",
+      "Fundamentals of Testing",
+      "Testing Throughout the SDLC",
+      "Static Testing",
+      "Test Analysis and Design",
+      "Managing the Test Activities",
+      "Test Tools",
+    ],
+  },
+  {
+    trackId: "ctai",
+    titleEn: "ISTQB Certified Tester AI Testing v2.0",
+    titleVi: "ISTQB Certified Tester AI Testing v2.0 (CT-AI)",
+    topics: [
+      "CT-AI Full Exam",
+      "CT-AI Ch1 — Introduction to Artificial Intelligence",
+      "CT-AI Ch2 — Quality Characteristics for AI-Based Systems",
+      "CT-AI Ch3 — Machine Learning",
+      "CT-AI Ch4 — Testing AI-Based Systems",
+      "CT-AI Ch5 — Input Data Testing for MLS",
+      "CT-AI Ch6 — Model Testing for MLS",
+      "CT-AI Ch7 — MLS Development Testing",
+    ],
+  },
+];
+
+/** Topics shown on `/exam` in display order (derived from `EXAM_TOPIC_GROUPS`). */
+export const EXAM_TOPICS_UI_ORDER: readonly string[] = EXAM_TOPIC_GROUPS.flatMap((g) => [...g.topics]);
 
 function shuffle<T>(array: T[]): T[] {
   const result = [...array];
@@ -54,10 +108,18 @@ function quizToQuestion(
 
 type PoolItem = { chapterId: string; topicTitle: string; index: number; qq: QuizQuestion };
 
+function syllabusForPool(pool: "ctfl" | "ctai") {
+  return pool === "ctfl" ? syllabusData : ctaiSyllabusData;
+}
+
 function buildPool(topicLabel: string): PoolItem[] {
-  const chapterFilter = EXAM_TOPIC_TO_CHAPTER_ID[topicLabel];
+  const cfg = EXAM_TOPIC_CONFIG[topicLabel];
+  if (!cfg) return [];
+
+  const chapterFilter = cfg.chapterId;
   const pool: PoolItem[] = [];
-  for (const ch of syllabusData) {
+
+  for (const ch of syllabusForPool(cfg.pool)) {
     if (!ch.quiz?.length) continue;
     if (chapterFilter !== null && ch.id !== chapterFilter) continue;
     ch.quiz.forEach((qq, index) => {
@@ -90,11 +152,14 @@ export function pickExamQuestions(
 }
 
 export function resolveQuizByExamId(qId: string): QuizQuestion | null {
-  const m = /^chapter-(\d+):(\d+)$/.exec(qId);
-  if (!m) return null;
-  const chapterId = `chapter-${m[1]}`;
-  const idx = parseInt(m[2], 10);
-  const ch = syllabusData.find((c) => c.id === chapterId);
-  const qq = ch?.quiz?.[idx];
-  return qq ?? null;
+  const colon = qId.lastIndexOf(":");
+  if (colon <= 0) return null;
+  const chapterId = qId.slice(0, colon);
+  const idx = parseInt(qId.slice(colon + 1), 10);
+  if (!Number.isFinite(idx) || idx < 0) return null;
+
+  const ch =
+    syllabusData.find((c) => c.id === chapterId) ??
+    ctaiSyllabusData.find((c) => c.id === chapterId);
+  return ch?.quiz?.[idx] ?? null;
 }

@@ -180,7 +180,7 @@ export default function TableOfContents({
             boxShadow: '0 10px 25px -5px var(--color-accent)',
           }}
           aria-expanded={isOpen}
-          aria-label="Open table of contents"
+          aria-label="Open on-page table of contents"
         >
           {isOpen ? <X size={24} /> : <List size={24} />}
         </button>
@@ -198,27 +198,9 @@ export default function TableOfContents({
                 backdropFilter: 'blur(10px)',
               }}
             >
-              {chapterList.length > 0 && (
-                <>
-                  <h4 className="text-xs font-bold uppercase tracking-widest mb-3 text-[var(--color-text-muted)] flex items-center gap-2">
-                    <BookOpen size={14} />
-                    Chapters / Chương
-                  </h4>
-                  <ChapterNavList
-                    chapters={chapterList}
-                    currentChapterId={currentChapterId}
-                    compact
-                    onNavigate={() => setIsOpen(false)}
-                  />
-                  <div
-                    className="my-4 h-px bg-[var(--color-border)]"
-                    role="separator"
-                  />
-                </>
-              )}
               <h4 className="text-xs font-bold uppercase tracking-widest mb-3 text-[var(--color-text-muted)] flex items-center gap-2">
                 <List size={14} />
-                On this page / Trang này
+                On this page / Mục lục trang
               </h4>
               <div className="flex flex-col gap-1">
                 {headings.map((heading) => (

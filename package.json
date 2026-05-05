@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "quiz:generate": "node scripts/gen-quiz-bank.mjs",
+    "quiz:generate-ctai": "node scripts/gen-ctai-quiz-bank.mjs",
     "postinstall": "prisma generate",
     "db:push": "prisma db push",
     "db:seed": "ts-node --project tsconfig.seed.json prisma/seed.ts"

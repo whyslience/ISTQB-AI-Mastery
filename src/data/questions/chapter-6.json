@@ -1,0 +1,452 @@
+[
+  {
+    "questionEn": "A primary benefit of test automation is:",
+    "questionVi": "Lợi ích chính của tự động hóa kiểm thử là:",
+    "options": [
+      {
+        "en": "Faster feedback on software quality",
+        "vi": "Phản hồi nhanh hơn về chất lượng phần mềm"
+      },
+      {
+        "en": "Guaranteeing zero defects",
+        "vi": "Đảm bảo không khiếm khuyết"
+      },
+      {
+        "en": "Removal of all defects automatically",
+        "vi": "Tự loại mọi khiếm khuyết"
+      },
+      {
+        "en": "GPUs from monitors",
+        "vi": "GPU khỏi màn hình"
+      }
+    ],
+    "correctEn": "Faster feedback on software quality",
+    "correctVi": "Phản hồi nhanh hơn về chất lượng phần mềm",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "A common risk of test automation is:",
+    "questionVi": "Rủi ro phổ biến của tự động hóa kiểm thử:",
+    "options": [
+      {
+        "en": "Unrealistic expectations about immediate ROI",
+        "vi": "Kỳ vọng ROI ngắn hạn không thực tế"
+      },
+      {
+        "en": "Office chair squeaks",
+        "vi": "Kêu ghế văn phòng"
+      },
+      {
+        "en": "Automatic replacement of reviews",
+        "vi": "Tự thay review"
+      },
+      {
+        "en": "Author legal contracts",
+        "vi": "Soạn hợp đồng pháp lý"
+      }
+    ],
+    "correctEn": "Unrealistic expectations about immediate ROI",
+    "correctVi": "Kỳ vọng ROI ngắn hạn không thực tế",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "Test execution tools primarily:",
+    "questionVi": "Công cụ thực thi kiểm thử chủ yếu:",
+    "options": [
+      {
+        "en": "Only GPU shader languages",
+        "vi": "Chỉ ngôn ngữ shader GPU"
+      },
+      {
+        "en": "No version control for scripts",
+        "vi": "Không version control script"
+      },
+      {
+        "en": "GPUs from monitors",
+        "vi": "GPU khỏi màn hình"
+      },
+      {
+        "en": "Run automated tests and capture results",
+        "vi": "Chạy kiểm thử tự động và ghi kết quả"
+      }
+    ],
+    "correctEn": "Run automated tests and capture results",
+    "correctVi": "Chạy kiểm thử tự động và ghi kết quả",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "Coverage tools help measure:",
+    "questionVi": "Công cụ coverage giúp đo:",
+    "options": [
+      {
+        "en": "Extent of exercised code or requirements",
+        "vi": "Mức mã hoặc yêu cầu được thực thi"
+      },
+      {
+        "en": "Guaranteeing zero defects",
+        "vi": "Đảm bảo không khiếm khuyết"
+      },
+      {
+        "en": "Printer jam frequencies",
+        "vi": "Tần suất kẹt giấy máy in"
+      },
+      {
+        "en": "Automatic freeze of requirements",
+        "vi": "Tự đóng băng yêu cầu"
+      }
+    ],
+    "correctEn": "Extent of exercised code or requirements",
+    "correctVi": "Mức mã hoặc yêu cầu được thực thi",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "Data-driven testing separates:",
+    "questionVi": "Kiểm thử data-driven tách:",
+    "options": [
+      {
+        "en": "Managers from salaries",
+        "vi": "Quản lý khỏi lương"
+      },
+      {
+        "en": "Printer jam frequencies",
+        "vi": "Tần suất kẹt giấy máy in"
+      },
+      {
+        "en": "Removal of all defects automatically",
+        "vi": "Tự loại mọi khiếm khuyết"
+      },
+      {
+        "en": "Test logic from variable test data",
+        "vi": "Logic kiểm thử khỏi dữ liệu biến thiên"
+      }
+    ],
+    "correctEn": "Test logic from variable test data",
+    "correctVi": "Logic kiểm thử khỏi dữ liệu biến thiên",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "Keyword-driven testing uses:",
+    "questionVi": "Kiểm thử keyword-driven dùng:",
+    "options": [
+      {
+        "en": "Coffee acidity titration",
+        "vi": "Chuẩn độ độ axit cà phê"
+      },
+      {
+        "en": "GPUs from monitors",
+        "vi": "GPU khỏi màn hình"
+      },
+      {
+        "en": "Action keywords interpreted by automation framework",
+        "vi": "Từ khóa hành động do framework diễn giải"
+      },
+      {
+        "en": "Eliminating test planning forever",
+        "vi": "Loại lập kế hoạch kiểm thử mãi"
+      }
+    ],
+    "correctEn": "Action keywords interpreted by automation framework",
+    "correctVi": "Từ khóa hành động do framework diễn giải",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "Open-source tool risks include:",
+    "questionVi": "Rủi ro công cụ mã nguồn mở gồm:",
+    "options": [
+      {
+        "en": "Design database schemas only",
+        "vi": "Chỉ thiết kế schema CSDL"
+      },
+      {
+        "en": "Uncertain long-term maintenance or licensing nuances",
+        "vi": "Bảo trì dài hạn không chắc hoặc chi tiết giấy phép"
+      },
+      {
+        "en": "Author legal contracts",
+        "vi": "Soạn hợp đồng pháp lý"
+      },
+      {
+        "en": "Replace defect management systems",
+        "vi": "Thay hệ thống quản lý khiếm khuyết"
+      }
+    ],
+    "correctEn": "Uncertain long-term maintenance or licensing nuances",
+    "correctVi": "Bảo trì dài hạn không chắc hoặc chi tiết giấy phép",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "Cloud-based tool considerations include:",
+    "questionVi": "Cân nhắc công cụ đám mây gồm:",
+    "options": [
+      {
+        "en": "Data residency and access/security controls",
+        "vi": "Cư trú dữ liệu và kiểm soát truy cập/bảo mật"
+      },
+      {
+        "en": "No version control for scripts",
+        "vi": "Không version control script"
+      },
+      {
+        "en": "Only GPU shader languages",
+        "vi": "Chỉ ngôn ngữ shader GPU"
+      },
+      {
+        "en": "Automatic elimination of flaky tests",
+        "vi": "Tự loại test \"flaky\""
+      }
+    ],
+    "correctEn": "Data residency and access/security controls",
+    "correctVi": "Cư trú dữ liệu và kiểm soát truy cập/bảo mật",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "Successful automation typically requires:",
+    "questionVi": "Tự động hóa thành công thường cần:",
+    "options": [
+      {
+        "en": "Coffee acidity titration",
+        "vi": "Chuẩn độ độ axit cà phê"
+      },
+      {
+        "en": "Guaranteed on-prem elimination",
+        "vi": "Loại on-prem chắc chắn"
+      },
+      {
+        "en": "Maintainable tests and stable interfaces/selectors",
+        "vi": "Kiểm thử có thể bảo trì và giao diện/bộ chọn ổn định"
+      },
+      {
+        "en": "Printer jam frequencies",
+        "vi": "Tần suất kẹt giấy máy in"
+      }
+    ],
+    "correctEn": "Maintainable tests and stable interfaces/selectors",
+    "correctVi": "Kiểm thử có thể bảo trì và giao diện/bộ chọn ổn định",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "A primary benefit of test automation is:",
+    "questionVi": "Lợi ích chính của tự động hóa kiểm thử là:",
+    "options": [
+      {
+        "en": "Removing human testers entirely",
+        "vi": "Loại hết con người tester"
+      },
+      {
+        "en": "Faster feedback on software quality",
+        "vi": "Phản hồi nhanh hơn về chất lượng phần mềm"
+      },
+      {
+        "en": "Design database schemas only",
+        "vi": "Chỉ thiết kế schema CSDL"
+      },
+      {
+        "en": "Author legal contracts",
+        "vi": "Soạn hợp đồng pháp lý"
+      }
+    ],
+    "correctEn": "Faster feedback on software quality",
+    "correctVi": "Phản hồi nhanh hơn về chất lượng phần mềm",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "A common risk of test automation is:",
+    "questionVi": "Rủi ro phổ biến của tự động hóa kiểm thử:",
+    "options": [
+      {
+        "en": "Hardware from electricity",
+        "vi": "Phần cứng khỏi điện"
+      },
+      {
+        "en": "Unrealistic expectations about immediate ROI",
+        "vi": "Kỳ vọng ROI ngắn hạn không thực tế"
+      },
+      {
+        "en": "Automatic replacement of reviews",
+        "vi": "Tự thay review"
+      },
+      {
+        "en": "Office chair squeaks",
+        "vi": "Kêu ghế văn phòng"
+      }
+    ],
+    "correctEn": "Unrealistic expectations about immediate ROI",
+    "correctVi": "Kỳ vọng ROI ngắn hạn không thực tế",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "Test execution tools primarily:",
+    "questionVi": "Công cụ thực thi kiểm thử chủ yếu:",
+    "options": [
+      {
+        "en": "No CI integration ever",
+        "vi": "Không tích hợp CI"
+      },
+      {
+        "en": "Replace defect management systems",
+        "vi": "Thay hệ thống quản lý khiếm khuyết"
+      },
+      {
+        "en": "Run automated tests and capture results",
+        "vi": "Chạy kiểm thử tự động và ghi kết quả"
+      },
+      {
+        "en": "Printer driver parity only",
+        "vi": "Chỉ tương thích driver máy in"
+      }
+    ],
+    "correctEn": "Run automated tests and capture results",
+    "correctVi": "Chạy kiểm thử tự động và ghi kết quả",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "Coverage tools help measure:",
+    "questionVi": "Công cụ coverage giúp đo:",
+    "options": [
+      {
+        "en": "Printer jam frequencies",
+        "vi": "Tần suất kẹt giấy máy in"
+      },
+      {
+        "en": "Removal of all defects automatically",
+        "vi": "Tự loại mọi khiếm khuyết"
+      },
+      {
+        "en": "No CI integration ever",
+        "vi": "Không tích hợp CI"
+      },
+      {
+        "en": "Extent of exercised code or requirements",
+        "vi": "Mức mã hoặc yêu cầu được thực thi"
+      }
+    ],
+    "correctEn": "Extent of exercised code or requirements",
+    "correctVi": "Mức mã hoặc yêu cầu được thực thi",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "Data-driven testing separates:",
+    "questionVi": "Kiểm thử data-driven tách:",
+    "options": [
+      {
+        "en": "Coffee acidity titration",
+        "vi": "Chuẩn độ độ axit cà phê"
+      },
+      {
+        "en": "Test logic from variable test data",
+        "vi": "Logic kiểm thử khỏi dữ liệu biến thiên"
+      },
+      {
+        "en": "Only GPU shader languages",
+        "vi": "Chỉ ngôn ngữ shader GPU"
+      },
+      {
+        "en": "Removal of all defects automatically",
+        "vi": "Tự loại mọi khiếm khuyết"
+      }
+    ],
+    "correctEn": "Test logic from variable test data",
+    "correctVi": "Logic kiểm thử khỏi dữ liệu biến thiên",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "Keyword-driven testing uses:",
+    "questionVi": "Kiểm thử keyword-driven dùng:",
+    "options": [
+      {
+        "en": "Automatic elimination of flaky tests",
+        "vi": "Tự loại test \"flaky\""
+      },
+      {
+        "en": "Author legal contracts",
+        "vi": "Soạn hợp đồng pháp lý"
+      },
+      {
+        "en": "Action keywords interpreted by automation framework",
+        "vi": "Từ khóa hành động do framework diễn giải"
+      },
+      {
+        "en": "Replace defect management systems",
+        "vi": "Thay hệ thống quản lý khiếm khuyết"
+      }
+    ],
+    "correctEn": "Action keywords interpreted by automation framework",
+    "correctVi": "Từ khóa hành động do framework diễn giải",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "Open-source tool risks include:",
+    "questionVi": "Rủi ro công cụ mã nguồn mở gồm:",
+    "options": [
+      {
+        "en": "No CI integration ever",
+        "vi": "Không tích hợp CI"
+      },
+      {
+        "en": "Automatic ISO certification",
+        "vi": "Chứng nhận ISO tự động"
+      },
+      {
+        "en": "Removing human testers entirely",
+        "vi": "Loại hết con người tester"
+      },
+      {
+        "en": "Uncertain long-term maintenance or licensing nuances",
+        "vi": "Bảo trì dài hạn không chắc hoặc chi tiết giấy phép"
+      }
+    ],
+    "correctEn": "Uncertain long-term maintenance or licensing nuances",
+    "correctVi": "Bảo trì dài hạn không chắc hoặc chi tiết giấy phép",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "Cloud-based tool considerations include:",
+    "questionVi": "Cân nhắc công cụ đám mây gồm:",
+    "options": [
+      {
+        "en": "Guaranteeing zero defects",
+        "vi": "Đảm bảo không khiếm khuyết"
+      },
+      {
+        "en": "Guaranteed on-prem elimination",
+        "vi": "Loại on-prem chắc chắn"
+      },
+      {
+        "en": "Data residency and access/security controls",
+        "vi": "Cư trú dữ liệu và kiểm soát truy cập/bảo mật"
+      },
+      {
+        "en": "Coffee acidity titration",
+        "vi": "Chuẩn độ độ axit cà phê"
+      }
+    ],
+    "correctEn": "Data residency and access/security controls",
+    "correctVi": "Cư trú dữ liệu và kiểm soát truy cập/bảo mật",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  },
+  {
+    "questionEn": "Successful automation typically requires:",
+    "questionVi": "Tự động hóa thành công thường cần:",
+    "options": [
+      {
+        "en": "No CI integration ever",
+        "vi": "Không tích hợp CI"
+      },
+      {
+        "en": "Random binary blobs only",
+        "vi": "Chỉ blob nhị phân ngẫu nhiên"
+      },
+      {
+        "en": "Maintainable tests and stable interfaces/selectors",
+        "vi": "Kiểm thử có thể bảo trì và giao diện/bộ chọn ổn định"
+      },
+      {
+        "en": "No version control for scripts",
+        "vi": "Không version control script"
+      }
+    ],
+    "correctEn": "Maintainable tests and stable interfaces/selectors",
+    "correctVi": "Kiểm thử có thể bảo trì và giao diện/bộ chọn ổn định",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+  }
+]

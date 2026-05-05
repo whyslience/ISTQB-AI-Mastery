@@ -1,0 +1,2852 @@
+[
+  {
+    "questionEn": "Good testing practice across SDLCs includes:",
+    "questionVi": "Thực hành kiểm thử tốt trên mọi SDLC gồm:",
+    "options": [
+      {
+        "en": "Hexadecimal opcode dumps",
+        "vi": "Dump opcode hex"
+      },
+      {
+        "en": "Starting test analysis during the corresponding development phase",
+        "vi": "Bắt đầu phân tích kiểm thử trong giai đoạn phát triển tương ứng"
+      },
+      {
+        "en": "Rejecting lightweight docs in agile",
+        "vi": "Từ chối tài liệu nhẹ trong agile"
+      },
+      {
+        "en": "Remove independent testers",
+        "vi": "Bỏ tester độc lập"
+      }
+    ],
+    "correctEn": "Starting test analysis during the corresponding development phase",
+    "correctVi": "Bắt đầu phân tích kiểm thử trong giai đoạn phát triển tương ứng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "TDD primarily drives:",
+    "questionVi": "TDD chủ yếu thúc đẩy:",
+    "options": [
+      {
+        "en": "Remove independent testers",
+        "vi": "Bỏ tester độc lập"
+      },
+      {
+        "en": "Subnet bitmask trivia",
+        "vi": "Chi tiết subnet mask"
+      },
+      {
+        "en": "Unit-level tests before implementation",
+        "vi": "Kiểm thử mức đơn vị trước triển khai"
+      },
+      {
+        "en": "Compiler internal registers",
+        "vi": "Thanh ghi nội bộ compiler"
+      }
+    ],
+    "correctEn": "Unit-level tests before implementation",
+    "correctVi": "Kiểm thử mức đơn vị trước triển khai",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "ATDD emphasizes:",
+    "questionVi": "ATDD nhấn mạnh:",
+    "options": [
+      {
+        "en": "A purely functional objective",
+        "vi": "Mục tiêu thuần chức năng"
+      },
+      {
+        "en": "Moving testers’ desks leftward",
+        "vi": "Chuyển bàn tester sang trái"
+      },
+      {
+        "en": "Acceptance criteria as basis for tests",
+        "vi": "Tiêu chí chấp nhận làm cơ sở cho kiểm thử"
+      },
+      {
+        "en": "Only IDE themes",
+        "vi": "Chỉ theme IDE"
+      }
+    ],
+    "correctEn": "Acceptance criteria as basis for tests",
+    "correctVi": "Tiêu chí chấp nhận làm cơ sở cho kiểm thử",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "BDD scenarios often use:",
+    "questionVi": "Kịch bản BDD thường dùng:",
+    "options": [
+      {
+        "en": "External auditors only",
+        "vi": "Chỉ kiểm toán ngoài"
+      },
+      {
+        "en": "Single function bytecode",
+        "vi": "Bytecode một hàm"
+      },
+      {
+        "en": "Marketing funnel metrics",
+        "vi": "Chỉ số marketing funnel"
+      },
+      {
+        "en": "Given / When / Then structure",
+        "vi": "Cấu trúc Given / When / Then"
+      }
+    ],
+    "correctEn": "Given / When / Then structure",
+    "correctVi": "Cấu trúc Given / When / Then",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "DevOps culture tends to:",
+    "questionVi": "Văn hóa DevOps có xu hướng:",
+    "options": [
+      {
+        "en": "Only acceptance UI scripts",
+        "vi": "Chỉ script UI chấp nhận"
+      },
+      {
+        "en": "Integrate development, operations and quality practices",
+        "vi": "Tích hợp phát triển, vận hành và chất lượng"
+      },
+      {
+        "en": "Deleting late-phase testing",
+        "vi": "Xóa kiểm thử giai đoạn muộn"
+      },
+      {
+        "en": "Coffee machine calibration",
+        "vi": "Hiệu chuẩn máy cà phê"
+      }
+    ],
+    "correctEn": "Integrate development, operations and quality practices",
+    "correctVi": "Tích hợp phát triển, vận hành và chất lượng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "\"Shift left\" means:",
+    "questionVi": "\"Shift left\" có nghĩa:",
+    "options": [
+      {
+        "en": "Compiler internal registers",
+        "vi": "Thanh ghi nội bộ compiler"
+      },
+      {
+        "en": "Moving testers’ desks leftward",
+        "vi": "Chuyển bàn tester sang trái"
+      },
+      {
+        "en": "Coffee machine calibration",
+        "vi": "Hiệu chuẩn máy cà phê"
+      },
+      {
+        "en": "Moving testing earlier in the SDLC",
+        "vi": "Đưa kiểm thử sớm hơn trong SDLC"
+      }
+    ],
+    "correctEn": "Moving testing earlier in the SDLC",
+    "correctVi": "Đưa kiểm thử sớm hơn trong SDLC",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Retrospectives support testing by:",
+    "questionVi": "Retrospective hỗ trợ kiểm thử bằng:",
+    "options": [
+      {
+        "en": "Process improvement lessons learned",
+        "vi": "Bài học cải tiến quy trình"
+      },
+      {
+        "en": "Marketing funnel metrics",
+        "vi": "Chỉ số marketing funnel"
+      },
+      {
+        "en": "Marketing slogans",
+        "vi": "Khẩu hiệu marketing"
+      },
+      {
+        "en": "Compiler internal registers",
+        "vi": "Thanh ghi nội bộ compiler"
+      }
+    ],
+    "correctEn": "Process improvement lessons learned",
+    "correctVi": "Bài học cải tiến quy trình",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Component testing focuses on:",
+    "questionVi": "Kiểm thử thành phần tập trung vào:",
+    "options": [
+      {
+        "en": " Printer toner levels",
+        "vi": "Mực máy in"
+      },
+      {
+        "en": "Components in isolation",
+        "vi": "Thành phần cô lập"
+      },
+      {
+        "en": "Business rules only",
+        "vi": "Chỉ luật nghiệp vụ"
+      },
+      {
+        "en": "Payroll compliance only",
+        "vi": "Chỉ tuân thủ lương"
+      }
+    ],
+    "correctEn": "Components in isolation",
+    "correctVi": "Thành phần cô lập",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Component integration testing focuses on:",
+    "questionVi": "Kiểm thử tích hợp thành phần tập trung vào:",
+    "options": [
+      {
+        "en": "A copyright clause",
+        "vi": "Điều khoản bản quyền"
+      },
+      {
+        "en": "Only payroll deductions",
+        "vi": "Chỉ khấu trừ lương"
+      },
+      {
+        "en": "Interfaces between components",
+        "vi": "Giao diện giữa các thành phần"
+      },
+      {
+        "en": "Marketing slogans",
+        "vi": "Khẩu hiệu marketing"
+      }
+    ],
+    "correctEn": "Interfaces between components",
+    "correctVi": "Giao diện giữa các thành phần",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "System testing evaluates:",
+    "questionVi": "Kiểm thử hệ thống đánh giá:",
+    "options": [
+      {
+        "en": "No side-effects anywhere after change",
+        "vi": "Không tác dụng phụ sau thay đổi"
+      },
+      {
+        "en": "Removal of reviews",
+        "vi": "Bỏ review"
+      },
+      {
+        "en": "End-to-end behavior of the whole system",
+        "vi": "Hành vi đầu-cuối của toàn hệ thống"
+      },
+      {
+        "en": "Compiler internal registers",
+        "vi": "Thanh ghi nội bộ compiler"
+      }
+    ],
+    "correctEn": "End-to-end behavior of the whole system",
+    "correctVi": "Hành vi đầu-cuối của toàn hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Acceptance testing validates:",
+    "questionVi": "Kiểm thử chấp nhận xác thực:",
+    "options": [
+      {
+        "en": "Business/user readiness to accept the system",
+        "vi": "Sự sẵn sàng kinh doanh/người dùng chấp nhận hệ thống"
+      },
+      {
+        "en": "Coffee machine calibration",
+        "vi": "Hiệu chuẩn máy cà phê"
+      },
+      {
+        "en": "Deleting late-phase testing",
+        "vi": "Xóa kiểm thử giai đoạn muộn"
+      },
+      {
+        "en": "Only initial greenfield coding",
+        "vi": "Chỉ giai đoạn greenfield đầu tiên"
+      }
+    ],
+    "correctEn": "Business/user readiness to accept the system",
+    "correctVi": "Sự sẵn sàng kinh doanh/người dùng chấp nhận hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Functional testing checks:",
+    "questionVi": "Kiểm thử chức năng kiểm tra:",
+    "options": [
+      {
+        "en": "Only kindergarten schedules",
+        "vi": "Chỉ lịch mẫu giáo"
+      },
+      {
+        "en": "What the system does",
+        "vi": "Hệ thống làm gì"
+      },
+      {
+        "en": "Compiler internal registers",
+        "vi": "Thanh ghi nội bộ compiler"
+      },
+      {
+        "en": "Ban automated pipelines",
+        "vi": "Cấm pipeline tự động"
+      }
+    ],
+    "correctEn": "What the system does",
+    "correctVi": "Hệ thống làm gì",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Non-functional testing targets:",
+    "questionVi": "Kiểm thử phi chức năng nhắm vào:",
+    "options": [
+      {
+        "en": "Machine bytecode optimization",
+        "vi": "Tối ưu bytecode máy"
+      },
+      {
+        "en": "How well the system works (quality attributes)",
+        "vi": "Hệ thống hoạt động tốt đến đâu (đặc tính chất lượng)"
+      },
+      {
+        "en": "Remove configuration management",
+        "vi": "Bỏ quản lý cấu hình"
+      },
+      {
+        "en": "Only payroll deductions",
+        "vi": "Chỉ khấu trừ lương"
+      }
+    ],
+    "correctEn": "How well the system works (quality attributes)",
+    "correctVi": "Hệ thống hoạt động tốt đến đâu (đặc tính chất lượng)",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Performance efficiency in ISO/IEC 25010 is:",
+    "questionVi": "Hiệu quả hiệu năng trong ISO/IEC 25010 là:",
+    "options": [
+      {
+        "en": "Only payroll deductions",
+        "vi": "Chỉ khấu trừ lương"
+      },
+      {
+        "en": "Database normalization proofs",
+        "vi": "Chứng minh chuẩn hóa CSDL"
+      },
+      {
+        "en": "A purely functional objective",
+        "vi": "Mục tiêu thuần chức năng"
+      },
+      {
+        "en": "A non-functional characteristic",
+        "vi": "Đặc tính phi chức năng"
+      }
+    ],
+    "correctEn": "A non-functional characteristic",
+    "correctVi": "Đặc tính phi chức năng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Confirmation testing verifies:",
+    "questionVi": "Kiểm thử xác nhận xác minh:",
+    "options": [
+      {
+        "en": "A defect fix resolved the failure",
+        "vi": "Sửa khiếm khuyết đã khắc phục thất bại"
+      },
+      {
+        "en": "Only invoice totals",
+        "vi": "Chỉ tổng hóa đơn"
+      },
+      {
+        "en": "Business rules only",
+        "vi": "Chỉ luật nghiệp vụ"
+      },
+      {
+        "en": "Marketing funnel metrics",
+        "vi": "Chỉ số marketing funnel"
+      }
+    ],
+    "correctEn": "A defect fix resolved the failure",
+    "correctVi": "Sửa khiếm khuyết đã khắc phục thất bại",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Regression testing checks:",
+    "questionVi": "Kiểm thử hồi quy kiểm tra:",
+    "options": [
+      {
+        "en": "Only compiler version strings",
+        "vi": "Chuỗi phiên bản compiler"
+      },
+      {
+        "en": "Marketing slogans",
+        "vi": "Khẩu hiệu marketing"
+      },
+      {
+        "en": "Subnet bitmask trivia",
+        "vi": "Chi tiết subnet mask"
+      },
+      {
+        "en": "Unchanged areas still behave after a change",
+        "vi": "Vùng không đổi vẫn đúng sau thay đổi"
+      }
+    ],
+    "correctEn": "Unchanged areas still behave after a change",
+    "correctVi": "Vùng không đổi vẫn đúng sau thay đổi",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Maintenance testing may be triggered by:",
+    "questionVi": "Kiểm thử bảo trì có thể do:",
+    "options": [
+      {
+        "en": "Planned enhancements or retirement",
+        "vi": "Cải tiến có kế hoạch hoặc ngừng hệ thống"
+      },
+      {
+        "en": "Only invoice totals",
+        "vi": "Chỉ tổng hóa đơn"
+      },
+      {
+        "en": "Require waterfall-only gates fixed forever",
+        "vi": "Cổng waterfall cố định mãi"
+      },
+      {
+        "en": "Only Pantone colors",
+        "vi": "Chỉ màu Pantone"
+      }
+    ],
+    "correctEn": "Planned enhancements or retirement",
+    "correctVi": "Cải tiến có kế hoạch hoặc ngừng hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Testing quadrants Q1 are typically:",
+    "questionVi": "Góc Q1 thường là:",
+    "options": [
+      {
+        "en": "Only printed brochures",
+        "vi": "Chỉ brochure in"
+      },
+      {
+        "en": "Marketing banners updated",
+        "vi": "Banner marketing đã cập nhật"
+      },
+      {
+        "en": "Hiding metrics from teams",
+        "vi": "Giấu chỉ số với đội"
+      },
+      {
+        "en": "Technology-facing, supporting the team",
+        "vi": "Hướng công nghệ, hỗ trợ đội"
+      }
+    ],
+    "correctEn": "Technology-facing, supporting the team",
+    "correctVi": "Hướng công nghệ, hỗ trợ đội",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Sequential SDLC models often:",
+    "questionVi": "Mô hình SDLC tuần tự thường:",
+    "options": [
+      {
+        "en": "Treat testing as a distinct phase after development",
+        "vi": "Coi kiểm thử là giai đoạn riêng sau phát triển"
+      },
+      {
+        "en": "Database normalization proofs",
+        "vi": "Chứng minh chuẩn hóa CSDL"
+      },
+      {
+        "en": "Only acceptance UI scripts",
+        "vi": "Chỉ script UI chấp nhận"
+      },
+      {
+        "en": "Ban shift-left ideas",
+        "vi": "Cấm shift-left"
+      }
+    ],
+    "correctEn": "Treat testing as a distinct phase after development",
+    "correctVi": "Coi kiểm thử là giai đoạn riêng sau phát triển",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Iterative/incremental SDLC models often:",
+    "questionVi": "Mô hình lặp/gia tăng thường:",
+    "options": [
+      {
+        "en": "Blend testing activities throughout iterations",
+        "vi": "Trộn hoạt động kiểm thử xuyên iteration"
+      },
+      {
+        "en": "Eliminate documentation",
+        "vi": "Loại tài liệu"
+      },
+      {
+        "en": "Only acceptance UI scripts",
+        "vi": "Chỉ script UI chấp nhận"
+      },
+      {
+        "en": "Ban shift-left ideas",
+        "vi": "Cấm shift-left"
+      }
+    ],
+    "correctEn": "Blend testing activities throughout iterations",
+    "correctVi": "Trộn hoạt động kiểm thử xuyên iteration",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "System integration testing emphasizes:",
+    "questionVi": "Kiểm thử tích hợp hệ thống nhấn mạnh:",
+    "options": [
+      {
+        "en": "Interfaces between systems/packages",
+        "vi": "Giao diện giữa hệ thống/gói"
+      },
+      {
+        "en": "Compiler internal registers",
+        "vi": "Thanh ghi nội bộ compiler"
+      },
+      {
+        "en": "How secure authorization is",
+        "vi": "Phân quyền bảo mật ra sao"
+      },
+      {
+        "en": "All documents translated",
+        "vi": "Mọi tài liệu đã dịch"
+      }
+    ],
+    "correctEn": "Interfaces between systems/packages",
+    "correctVi": "Giao diện giữa hệ thống/gói",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "White-box techniques leverage:",
+    "questionVi": "Kỹ thuật hộp trắng dựa vào:",
+    "options": [
+      {
+        "en": "A payroll attribute",
+        "vi": "Thuộc tính lương"
+      },
+      {
+        "en": "Only Pantone colors",
+        "vi": "Chỉ màu Pantone"
+      },
+      {
+        "en": "Structure of code or architecture",
+        "vi": "Cấu trúc mã hoặc kiến trúc"
+      },
+      {
+        "en": "Skipping root cause",
+        "vi": "Bỏ nguyên nhân gốc"
+      }
+    ],
+    "correctEn": "Structure of code or architecture",
+    "correctVi": "Cấu trúc mã hoặc kiến trúc",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Black-box techniques derive tests from:",
+    "questionVi": "Hộp đen suy ra kiểm thử từ:",
+    "options": [
+      {
+        "en": "Skipping root cause",
+        "vi": "Bỏ nguyên nhân gốc"
+      },
+      {
+        "en": "GPU shader internals only",
+        "vi": "Chỉ nội bộ shader GPU"
+      },
+      {
+        "en": "Moving testers’ desks leftward",
+        "vi": "Chuyển bàn tester sang trái"
+      },
+      {
+        "en": "Specified behaviors without internal structure",
+        "vi": "Hành vi đặc tả không cần cấu trúc nội bộ"
+      }
+    ],
+    "correctEn": "Specified behaviors without internal structure",
+    "correctVi": "Hành vi đặc tả không cần cấu trúc nội bộ",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Good testing practice across SDLCs includes:",
+    "questionVi": "Thực hành kiểm thử tốt trên mọi SDLC gồm:",
+    "options": [
+      {
+        "en": " Printer toner levels",
+        "vi": "Mực máy in"
+      },
+      {
+        "en": "Org-chart hierarchies",
+        "vi": "Sơ đồ tổ chức"
+      },
+      {
+        "en": "Starting test analysis during the corresponding development phase",
+        "vi": "Bắt đầu phân tích kiểm thử trong giai đoạn phát triển tương ứng"
+      },
+      {
+        "en": "Only IDE themes",
+        "vi": "Chỉ theme IDE"
+      }
+    ],
+    "correctEn": "Starting test analysis during the corresponding development phase",
+    "correctVi": "Bắt đầu phân tích kiểm thử trong giai đoạn phát triển tương ứng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "TDD primarily drives:",
+    "questionVi": "TDD chủ yếu thúc đẩy:",
+    "options": [
+      {
+        "en": "How well it performs under stress",
+        "vi": "Mức chịu tải tốt đến đâu"
+      },
+      {
+        "en": "Only printed brochures",
+        "vi": "Chỉ brochure in"
+      },
+      {
+        "en": "Unit-level tests before implementation",
+        "vi": "Kiểm thử mức đơn vị trước triển khai"
+      },
+      {
+        "en": "Moving testers’ desks leftward",
+        "vi": "Chuyển bàn tester sang trái"
+      }
+    ],
+    "correctEn": "Unit-level tests before implementation",
+    "correctVi": "Kiểm thử mức đơn vị trước triển khai",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "ATDD emphasizes:",
+    "questionVi": "ATDD nhấn mạnh:",
+    "options": [
+      {
+        "en": "Removing defect reports",
+        "vi": "Xóa báo cáo khiếm khuyết"
+      },
+      {
+        "en": "Only spelling in manuals",
+        "vi": "Chỉ chính tả trong hướng dẫn"
+      },
+      {
+        "en": "Acceptance criteria as basis for tests",
+        "vi": "Tiêu chí chấp nhận làm cơ sở cho kiểm thử"
+      },
+      {
+        "en": "Only invoice totals",
+        "vi": "Chỉ tổng hóa đơn"
+      }
+    ],
+    "correctEn": "Acceptance criteria as basis for tests",
+    "correctVi": "Tiêu chí chấp nhận làm cơ sở cho kiểm thử",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "BDD scenarios often use:",
+    "questionVi": "Kịch bản BDD thường dùng:",
+    "options": [
+      {
+        "en": "External auditors only",
+        "vi": "Chỉ kiểm toán ngoài"
+      },
+      {
+        "en": "Given / When / Then structure",
+        "vi": "Cấu trúc Given / When / Then"
+      },
+      {
+        "en": "Only acceptance UI scripts",
+        "vi": "Chỉ script UI chấp nhận"
+      },
+      {
+        "en": "Only IDE themes",
+        "vi": "Chỉ theme IDE"
+      }
+    ],
+    "correctEn": "Given / When / Then structure",
+    "correctVi": "Cấu trúc Given / When / Then",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "DevOps culture tends to:",
+    "questionVi": "Văn hóa DevOps có xu hướng:",
+    "options": [
+      {
+        "en": "Business-facing critiques only",
+        "vi": "Chỉ phản biện hướng kinh doanh"
+      },
+      {
+        "en": "Deleting late-phase testing",
+        "vi": "Xóa kiểm thử giai đoạn muộn"
+      },
+      {
+        "en": "Only spelling in manuals",
+        "vi": "Chỉ chính tả trong hướng dẫn"
+      },
+      {
+        "en": "Integrate development, operations and quality practices",
+        "vi": "Tích hợp phát triển, vận hành và chất lượng"
+      }
+    ],
+    "correctEn": "Integrate development, operations and quality practices",
+    "correctVi": "Tích hợp phát triển, vận hành và chất lượng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "\"Shift left\" means:",
+    "questionVi": "\"Shift left\" có nghĩa:",
+    "options": [
+      {
+        "en": "Database normalization proofs",
+        "vi": "Chứng minh chuẩn hóa CSDL"
+      },
+      {
+        "en": "Moving testing earlier in the SDLC",
+        "vi": "Đưa kiểm thử sớm hơn trong SDLC"
+      },
+      {
+        "en": "Only the defect fix itself",
+        "vi": "Chỉ bản thân bản sửa"
+      },
+      {
+        "en": "Production deployment first",
+        "vi": "Triển khai production trước"
+      }
+    ],
+    "correctEn": "Moving testing earlier in the SDLC",
+    "correctVi": "Đưa kiểm thử sớm hơn trong SDLC",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Retrospectives support testing by:",
+    "questionVi": "Retrospective hỗ trợ kiểm thử bằng:",
+    "options": [
+      {
+        "en": "Hexadecimal opcode dumps",
+        "vi": "Dump opcode hex"
+      },
+      {
+        "en": "Only Pantone colors",
+        "vi": "Chỉ màu Pantone"
+      },
+      {
+        "en": "Office floor tiling patterns",
+        "vi": "Họa tiết gạch sàn văn phòng"
+      },
+      {
+        "en": "Process improvement lessons learned",
+        "vi": "Bài học cải tiến quy trình"
+      }
+    ],
+    "correctEn": "Process improvement lessons learned",
+    "correctVi": "Bài học cải tiến quy trình",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Component testing focuses on:",
+    "questionVi": "Kiểm thử thành phần tập trung vào:",
+    "options": [
+      {
+        "en": "End-user payroll",
+        "vi": "Lương người dùng cuối"
+      },
+      {
+        "en": "API spelling only",
+        "vi": "Chỉ chính tả API"
+      },
+      {
+        "en": "Components in isolation",
+        "vi": "Thành phần cô lập"
+      },
+      {
+        "en": "Eliminate documentation",
+        "vi": "Loại tài liệu"
+      }
+    ],
+    "correctEn": "Components in isolation",
+    "correctVi": "Thành phần cô lập",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Component integration testing focuses on:",
+    "questionVi": "Kiểm thử tích hợp thành phần tập trung vào:",
+    "options": [
+      {
+        "en": "Interfaces between components",
+        "vi": "Giao diện giữa các thành phần"
+      },
+      {
+        "en": "Require waterfall-only gates fixed forever",
+        "vi": "Cổng waterfall cố định mãi"
+      },
+      {
+        "en": "Full production traffic",
+        "vi": "Toàn bộ traffic production"
+      },
+      {
+        "en": "Hiding metrics from teams",
+        "vi": "Giấu chỉ số với đội"
+      }
+    ],
+    "correctEn": "Interfaces between components",
+    "correctVi": "Giao diện giữa các thành phần",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "System testing evaluates:",
+    "questionVi": "Kiểm thử hệ thống đánh giá:",
+    "options": [
+      {
+        "en": "How well it performs under stress",
+        "vi": "Mức chịu tải tốt đến đâu"
+      },
+      {
+        "en": "Require waterfall-only gates fixed forever",
+        "vi": "Cổng waterfall cố định mãi"
+      },
+      {
+        "en": "Org-chart hierarchies",
+        "vi": "Sơ đồ tổ chức"
+      },
+      {
+        "en": "End-to-end behavior of the whole system",
+        "vi": "Hành vi đầu-cuối của toàn hệ thống"
+      }
+    ],
+    "correctEn": "End-to-end behavior of the whole system",
+    "correctVi": "Hành vi đầu-cuối của toàn hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Acceptance testing validates:",
+    "questionVi": "Kiểm thử chấp nhận xác thực:",
+    "options": [
+      {
+        "en": "Business/user readiness to accept the system",
+        "vi": "Sự sẵn sàng kinh doanh/người dùng chấp nhận hệ thống"
+      },
+      {
+        "en": "Org-chart hierarchies",
+        "vi": "Sơ đồ tổ chức"
+      },
+      {
+        "en": "A purely functional objective",
+        "vi": "Mục tiêu thuần chức năng"
+      },
+      {
+        "en": "Coffee machine calibration",
+        "vi": "Hiệu chuẩn máy cà phê"
+      }
+    ],
+    "correctEn": "Business/user readiness to accept the system",
+    "correctVi": "Sự sẵn sàng kinh doanh/người dùng chấp nhận hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Functional testing checks:",
+    "questionVi": "Kiểm thử chức năng kiểm tra:",
+    "options": [
+      {
+        "en": "A purely functional objective",
+        "vi": "Mục tiêu thuần chức năng"
+      },
+      {
+        "en": "Only payroll deductions",
+        "vi": "Chỉ khấu trừ lương"
+      },
+      {
+        "en": "How secure authorization is",
+        "vi": "Phân quyền bảo mật ra sao"
+      },
+      {
+        "en": "What the system does",
+        "vi": "Hệ thống làm gì"
+      }
+    ],
+    "correctEn": "What the system does",
+    "correctVi": "Hệ thống làm gì",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Non-functional testing targets:",
+    "questionVi": "Kiểm thử phi chức năng nhắm vào:",
+    "options": [
+      {
+        "en": "How well the system works (quality attributes)",
+        "vi": "Hệ thống hoạt động tốt đến đâu (đặc tính chất lượng)"
+      },
+      {
+        "en": "Only IDE themes",
+        "vi": "Chỉ theme IDE"
+      },
+      {
+        "en": "All documents translated",
+        "vi": "Mọi tài liệu đã dịch"
+      },
+      {
+        "en": "Payroll compliance only",
+        "vi": "Chỉ tuân thủ lương"
+      }
+    ],
+    "correctEn": "How well the system works (quality attributes)",
+    "correctVi": "Hệ thống hoạt động tốt đến đâu (đặc tính chất lượng)",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Performance efficiency in ISO/IEC 25010 is:",
+    "questionVi": "Hiệu quả hiệu năng trong ISO/IEC 25010 là:",
+    "options": [
+      {
+        "en": "A non-functional characteristic",
+        "vi": "Đặc tính phi chức năng"
+      },
+      {
+        "en": "Office floor tiling patterns",
+        "vi": "Họa tiết gạch sàn văn phòng"
+      },
+      {
+        "en": "Ban automated pipelines",
+        "vi": "Cấm pipeline tự động"
+      },
+      {
+        "en": "Business rules only",
+        "vi": "Chỉ luật nghiệp vụ"
+      }
+    ],
+    "correctEn": "A non-functional characteristic",
+    "correctVi": "Đặc tính phi chức năng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Confirmation testing verifies:",
+    "questionVi": "Kiểm thử xác nhận xác minh:",
+    "options": [
+      {
+        "en": "Eliminate documentation",
+        "vi": "Loại tài liệu"
+      },
+      {
+        "en": "A defect fix resolved the failure",
+        "vi": "Sửa khiếm khuyết đã khắc phục thất bại"
+      },
+      {
+        "en": "All documents translated",
+        "vi": "Mọi tài liệu đã dịch"
+      },
+      {
+        "en": "Marketing banners updated",
+        "vi": "Banner marketing đã cập nhật"
+      }
+    ],
+    "correctEn": "A defect fix resolved the failure",
+    "correctVi": "Sửa khiếm khuyết đã khắc phục thất bại",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Regression testing checks:",
+    "questionVi": "Kiểm thử hồi quy kiểm tra:",
+    "options": [
+      {
+        "en": "A copyright clause",
+        "vi": "Điều khoản bản quyền"
+      },
+      {
+        "en": "Only variable names",
+        "vi": "Chỉ tên biến"
+      },
+      {
+        "en": "Unchanged areas still behave after a change",
+        "vi": "Vùng không đổi vẫn đúng sau thay đổi"
+      },
+      {
+        "en": "Office floor tiling patterns",
+        "vi": "Họa tiết gạch sàn văn phòng"
+      }
+    ],
+    "correctEn": "Unchanged areas still behave after a change",
+    "correctVi": "Vùng không đổi vẫn đúng sau thay đổi",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Maintenance testing may be triggered by:",
+    "questionVi": "Kiểm thử bảo trì có thể do:",
+    "options": [
+      {
+        "en": "Only kindergarten schedules",
+        "vi": "Chỉ lịch mẫu giáo"
+      },
+      {
+        "en": "Planned enhancements or retirement",
+        "vi": "Cải tiến có kế hoạch hoặc ngừng hệ thống"
+      },
+      {
+        "en": "Disallow retrospectives",
+        "vi": "Không cho retrospective"
+      },
+      {
+        "en": "Single developer keyboard layout",
+        "vi": "Bố cục bàn phím một developer"
+      }
+    ],
+    "correctEn": "Planned enhancements or retirement",
+    "correctVi": "Cải tiến có kế hoạch hoặc ngừng hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Testing quadrants Q1 are typically:",
+    "questionVi": "Góc Q1 thường là:",
+    "options": [
+      {
+        "en": "Technology-facing, supporting the team",
+        "vi": "Hướng công nghệ, hỗ trợ đội"
+      },
+      {
+        "en": "Compiler internal registers",
+        "vi": "Thanh ghi nội bộ compiler"
+      },
+      {
+        "en": "How secure authorization is",
+        "vi": "Phân quyền bảo mật ra sao"
+      },
+      {
+        "en": "Marketing funnel metrics",
+        "vi": "Chỉ số marketing funnel"
+      }
+    ],
+    "correctEn": "Technology-facing, supporting the team",
+    "correctVi": "Hướng công nghệ, hỗ trợ đội",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Sequential SDLC models often:",
+    "questionVi": "Mô hình SDLC tuần tự thường:",
+    "options": [
+      {
+        "en": "Deferring all testing to operation",
+        "vi": "Hoãn mọi kiểm thử đến vận hành"
+      },
+      {
+        "en": "Using exactly one test level only",
+        "vi": "Chỉ dùng đúng một mức kiểm thử"
+      },
+      {
+        "en": "Deleting late-phase testing",
+        "vi": "Xóa kiểm thử giai đoạn muộn"
+      },
+      {
+        "en": "Treat testing as a distinct phase after development",
+        "vi": "Coi kiểm thử là giai đoạn riêng sau phát triển"
+      }
+    ],
+    "correctEn": "Treat testing as a distinct phase after development",
+    "correctVi": "Coi kiểm thử là giai đoạn riêng sau phát triển",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Iterative/incremental SDLC models often:",
+    "questionVi": "Mô hình lặp/gia tăng thường:",
+    "options": [
+      {
+        "en": "Only IDE themes",
+        "vi": "Chỉ theme IDE"
+      },
+      {
+        "en": "Disallow retrospectives",
+        "vi": "Không cho retrospective"
+      },
+      {
+        "en": "Blend testing activities throughout iterations",
+        "vi": "Trộn hoạt động kiểm thử xuyên iteration"
+      },
+      {
+        "en": "Production deployment first",
+        "vi": "Triển khai production trước"
+      }
+    ],
+    "correctEn": "Blend testing activities throughout iterations",
+    "correctVi": "Trộn hoạt động kiểm thử xuyên iteration",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "System integration testing emphasizes:",
+    "questionVi": "Kiểm thử tích hợp hệ thống nhấn mạnh:",
+    "options": [
+      {
+        "en": "Feature completeness only",
+        "vi": "Chỉ đầy đủ tính năng"
+      },
+      {
+        "en": "Interfaces between systems/packages",
+        "vi": "Giao diện giữa hệ thống/gói"
+      },
+      {
+        "en": "Only spelling in manuals",
+        "vi": "Chỉ chính tả trong hướng dẫn"
+      },
+      {
+        "en": "Legal contracts only",
+        "vi": "Chỉ hợp đồng pháp lý"
+      }
+    ],
+    "correctEn": "Interfaces between systems/packages",
+    "correctVi": "Giao diện giữa hệ thống/gói",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "White-box techniques leverage:",
+    "questionVi": "Kỹ thuật hộp trắng dựa vào:",
+    "options": [
+      {
+        "en": "Structure of code or architecture",
+        "vi": "Cấu trúc mã hoặc kiến trúc"
+      },
+      {
+        "en": "How portable localization fonts are",
+        "vi": "Font đa ngôn ngữ portable"
+      },
+      {
+        "en": "Coffee machine calibration",
+        "vi": "Hiệu chuẩn máy cà phê"
+      },
+      {
+        "en": "Removing defect reports",
+        "vi": "Xóa báo cáo khiếm khuyết"
+      }
+    ],
+    "correctEn": "Structure of code or architecture",
+    "correctVi": "Cấu trúc mã hoặc kiến trúc",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Black-box techniques derive tests from:",
+    "questionVi": "Hộp đen suy ra kiểm thử từ:",
+    "options": [
+      {
+        "en": "Business rules only",
+        "vi": "Chỉ luật nghiệp vụ"
+      },
+      {
+        "en": "Specified behaviors without internal structure",
+        "vi": "Hành vi đặc tả không cần cấu trúc nội bộ"
+      },
+      {
+        "en": "Compiler internal registers",
+        "vi": "Thanh ghi nội bộ compiler"
+      },
+      {
+        "en": "Remove independent testers",
+        "vi": "Bỏ tester độc lập"
+      }
+    ],
+    "correctEn": "Specified behaviors without internal structure",
+    "correctVi": "Hành vi đặc tả không cần cấu trúc nội bộ",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Good testing practice across SDLCs includes:",
+    "questionVi": "Thực hành kiểm thử tốt trên mọi SDLC gồm:",
+    "options": [
+      {
+        "en": "Legal contracts only",
+        "vi": "Chỉ hợp đồng pháp lý"
+      },
+      {
+        "en": "Compiler internal registers",
+        "vi": "Thanh ghi nội bộ compiler"
+      },
+      {
+        "en": "Starting test analysis during the corresponding development phase",
+        "vi": "Bắt đầu phân tích kiểm thử trong giai đoạn phát triển tương ứng"
+      },
+      {
+        "en": "Disallow retrospectives",
+        "vi": "Không cho retrospective"
+      }
+    ],
+    "correctEn": "Starting test analysis during the corresponding development phase",
+    "correctVi": "Bắt đầu phân tích kiểm thử trong giai đoạn phát triển tương ứng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "TDD primarily drives:",
+    "questionVi": "TDD chủ yếu thúc đẩy:",
+    "options": [
+      {
+        "en": "Unit-level tests before implementation",
+        "vi": "Kiểm thử mức đơn vị trước triển khai"
+      },
+      {
+        "en": "Feature completeness only",
+        "vi": "Chỉ đầy đủ tính năng"
+      },
+      {
+        "en": "Database normalization proofs",
+        "vi": "Chứng minh chuẩn hóa CSDL"
+      },
+      {
+        "en": "API spelling only",
+        "vi": "Chỉ chính tả API"
+      }
+    ],
+    "correctEn": "Unit-level tests before implementation",
+    "correctVi": "Kiểm thử mức đơn vị trước triển khai",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "ATDD emphasizes:",
+    "questionVi": "ATDD nhấn mạnh:",
+    "options": [
+      {
+        "en": "Marketing slogans",
+        "vi": "Khẩu hiệu marketing"
+      },
+      {
+        "en": "Acceptance criteria as basis for tests",
+        "vi": "Tiêu chí chấp nhận làm cơ sở cho kiểm thử"
+      },
+      {
+        "en": "Only invoice totals",
+        "vi": "Chỉ tổng hóa đơn"
+      },
+      {
+        "en": "Compiler internal registers",
+        "vi": "Thanh ghi nội bộ compiler"
+      }
+    ],
+    "correctEn": "Acceptance criteria as basis for tests",
+    "correctVi": "Tiêu chí chấp nhận làm cơ sở cho kiểm thử",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "BDD scenarios often use:",
+    "questionVi": "Kịch bản BDD thường dùng:",
+    "options": [
+      {
+        "en": "Only payroll deductions",
+        "vi": "Chỉ khấu trừ lương"
+      },
+      {
+        "en": "Given / When / Then structure",
+        "vi": "Cấu trúc Given / When / Then"
+      },
+      {
+        "en": "Disallow automation",
+        "vi": "Không cho tự động"
+      },
+      {
+        "en": "Only invoice totals",
+        "vi": "Chỉ tổng hóa đơn"
+      }
+    ],
+    "correctEn": "Given / When / Then structure",
+    "correctVi": "Cấu trúc Given / When / Then",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "DevOps culture tends to:",
+    "questionVi": "Văn hóa DevOps có xu hướng:",
+    "options": [
+      {
+        "en": "Integrate development, operations and quality practices",
+        "vi": "Tích hợp phát triển, vận hành và chất lượng"
+      },
+      {
+        "en": " Printer toner levels",
+        "vi": "Mực máy in"
+      },
+      {
+        "en": "Remove configuration management",
+        "vi": "Bỏ quản lý cấu hình"
+      },
+      {
+        "en": "Remove configuration management",
+        "vi": "Bỏ quản lý cấu hình"
+      }
+    ],
+    "correctEn": "Integrate development, operations and quality practices",
+    "correctVi": "Tích hợp phát triển, vận hành và chất lượng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "\"Shift left\" means:",
+    "questionVi": "\"Shift left\" có nghĩa:",
+    "options": [
+      {
+        "en": "Moving testing earlier in the SDLC",
+        "vi": "Đưa kiểm thử sớm hơn trong SDLC"
+      },
+      {
+        "en": "Deferring all testing to operation",
+        "vi": "Hoãn mọi kiểm thử đến vận hành"
+      },
+      {
+        "en": "Eliminate all manual testing forever",
+        "vi": "Loại mọi kiểm thử thủ công mãi mãi"
+      },
+      {
+        "en": "Business rules only",
+        "vi": "Chỉ luật nghiệp vụ"
+      }
+    ],
+    "correctEn": "Moving testing earlier in the SDLC",
+    "correctVi": "Đưa kiểm thử sớm hơn trong SDLC",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Retrospectives support testing by:",
+    "questionVi": "Retrospective hỗ trợ kiểm thử bằng:",
+    "options": [
+      {
+        "en": "Require waterfall-only gates fixed forever",
+        "vi": "Cổng waterfall cố định mãi"
+      },
+      {
+        "en": "Hiding metrics from teams",
+        "vi": "Giấu chỉ số với đội"
+      },
+      {
+        "en": "No side-effects anywhere after change",
+        "vi": "Không tác dụng phụ sau thay đổi"
+      },
+      {
+        "en": "Process improvement lessons learned",
+        "vi": "Bài học cải tiến quy trình"
+      }
+    ],
+    "correctEn": "Process improvement lessons learned",
+    "correctVi": "Bài học cải tiến quy trình",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Component testing focuses on:",
+    "questionVi": "Kiểm thử thành phần tập trung vào:",
+    "options": [
+      {
+        "en": "Only Pantone colors",
+        "vi": "Chỉ màu Pantone"
+      },
+      {
+        "en": "Org-chart hierarchies",
+        "vi": "Sơ đồ tổ chức"
+      },
+      {
+        "en": "A payroll attribute",
+        "vi": "Thuộc tính lương"
+      },
+      {
+        "en": "Components in isolation",
+        "vi": "Thành phần cô lập"
+      }
+    ],
+    "correctEn": "Components in isolation",
+    "correctVi": "Thành phần cô lập",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Component integration testing focuses on:",
+    "questionVi": "Kiểm thử tích hợp thành phần tập trung vào:",
+    "options": [
+      {
+        "en": "Eliminate documentation",
+        "vi": "Loại tài liệu"
+      },
+      {
+        "en": "Ban shift-left ideas",
+        "vi": "Cấm shift-left"
+      },
+      {
+        "en": "Interfaces between components",
+        "vi": "Giao diện giữa các thành phần"
+      },
+      {
+        "en": "Marketing banners updated",
+        "vi": "Banner marketing đã cập nhật"
+      }
+    ],
+    "correctEn": "Interfaces between components",
+    "correctVi": "Giao diện giữa các thành phần",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "System testing evaluates:",
+    "questionVi": "Kiểm thử hệ thống đánh giá:",
+    "options": [
+      {
+        "en": "Only initial greenfield coding",
+        "vi": "Chỉ giai đoạn greenfield đầu tiên"
+      },
+      {
+        "en": "Business-facing critiques only",
+        "vi": "Chỉ phản biện hướng kinh doanh"
+      },
+      {
+        "en": "Legal contracts only",
+        "vi": "Chỉ hợp đồng pháp lý"
+      },
+      {
+        "en": "End-to-end behavior of the whole system",
+        "vi": "Hành vi đầu-cuối của toàn hệ thống"
+      }
+    ],
+    "correctEn": "End-to-end behavior of the whole system",
+    "correctVi": "Hành vi đầu-cuối của toàn hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Acceptance testing validates:",
+    "questionVi": "Kiểm thử chấp nhận xác thực:",
+    "options": [
+      {
+        "en": "CPU register dumps only",
+        "vi": "Chỉ dump thanh ghi CPU"
+      },
+      {
+        "en": "Only invoice totals",
+        "vi": "Chỉ tổng hóa đơn"
+      },
+      {
+        "en": "Compiler internal registers",
+        "vi": "Thanh ghi nội bộ compiler"
+      },
+      {
+        "en": "Business/user readiness to accept the system",
+        "vi": "Sự sẵn sàng kinh doanh/người dùng chấp nhận hệ thống"
+      }
+    ],
+    "correctEn": "Business/user readiness to accept the system",
+    "correctVi": "Sự sẵn sàng kinh doanh/người dùng chấp nhận hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Functional testing checks:",
+    "questionVi": "Kiểm thử chức năng kiểm tra:",
+    "options": [
+      {
+        "en": "External auditors only",
+        "vi": "Chỉ kiểm toán ngoài"
+      },
+      {
+        "en": "Database normalization proofs",
+        "vi": "Chứng minh chuẩn hóa CSDL"
+      },
+      {
+        "en": "What the system does",
+        "vi": "Hệ thống làm gì"
+      },
+      {
+        "en": "How secure authorization is",
+        "vi": "Phân quyền bảo mật ra sao"
+      }
+    ],
+    "correctEn": "What the system does",
+    "correctVi": "Hệ thống làm gì",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Non-functional testing targets:",
+    "questionVi": "Kiểm thử phi chức năng nhắm vào:",
+    "options": [
+      {
+        "en": "Only initial greenfield coding",
+        "vi": "Chỉ giai đoạn greenfield đầu tiên"
+      },
+      {
+        "en": "How well the system works (quality attributes)",
+        "vi": "Hệ thống hoạt động tốt đến đâu (đặc tính chất lượng)"
+      },
+      {
+        "en": "How well it performs under stress",
+        "vi": "Mức chịu tải tốt đến đâu"
+      },
+      {
+        "en": "Only the defect fix itself",
+        "vi": "Chỉ bản thân bản sửa"
+      }
+    ],
+    "correctEn": "How well the system works (quality attributes)",
+    "correctVi": "Hệ thống hoạt động tốt đến đâu (đặc tính chất lượng)",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Performance efficiency in ISO/IEC 25010 is:",
+    "questionVi": "Hiệu quả hiệu năng trong ISO/IEC 25010 là:",
+    "options": [
+      {
+        "en": "Only invoice totals",
+        "vi": "Chỉ tổng hóa đơn"
+      },
+      {
+        "en": "Only printed brochures",
+        "vi": "Chỉ brochure in"
+      },
+      {
+        "en": "Only the defect fix itself",
+        "vi": "Chỉ bản thân bản sửa"
+      },
+      {
+        "en": "A non-functional characteristic",
+        "vi": "Đặc tính phi chức năng"
+      }
+    ],
+    "correctEn": "A non-functional characteristic",
+    "correctVi": "Đặc tính phi chức năng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Confirmation testing verifies:",
+    "questionVi": "Kiểm thử xác nhận xác minh:",
+    "options": [
+      {
+        "en": "A defect fix resolved the failure",
+        "vi": "Sửa khiếm khuyết đã khắc phục thất bại"
+      },
+      {
+        "en": "SQL DDL only",
+        "vi": "Chỉ SQL DDL"
+      },
+      {
+        "en": "Disallow retrospectives",
+        "vi": "Không cho retrospective"
+      },
+      {
+        "en": "Ban shift-left ideas",
+        "vi": "Cấm shift-left"
+      }
+    ],
+    "correctEn": "A defect fix resolved the failure",
+    "correctVi": "Sửa khiếm khuyết đã khắc phục thất bại",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Regression testing checks:",
+    "questionVi": "Kiểm thử hồi quy kiểm tra:",
+    "options": [
+      {
+        "en": "API spelling only",
+        "vi": "Chỉ chính tả API"
+      },
+      {
+        "en": "Only spelling in manuals",
+        "vi": "Chỉ chính tả trong hướng dẫn"
+      },
+      {
+        "en": "Unchanged areas still behave after a change",
+        "vi": "Vùng không đổi vẫn đúng sau thay đổi"
+      },
+      {
+        "en": "Marketing slogans",
+        "vi": "Khẩu hiệu marketing"
+      }
+    ],
+    "correctEn": "Unchanged areas still behave after a change",
+    "correctVi": "Vùng không đổi vẫn đúng sau thay đổi",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Maintenance testing may be triggered by:",
+    "questionVi": "Kiểm thử bảo trì có thể do:",
+    "options": [
+      {
+        "en": "Disallow automation",
+        "vi": "Không cho tự động"
+      },
+      {
+        "en": "Planned enhancements or retirement",
+        "vi": "Cải tiến có kế hoạch hoặc ngừng hệ thống"
+      },
+      {
+        "en": "How secure authorization is",
+        "vi": "Phân quyền bảo mật ra sao"
+      },
+      {
+        "en": "Ban shift-left ideas",
+        "vi": "Cấm shift-left"
+      }
+    ],
+    "correctEn": "Planned enhancements or retirement",
+    "correctVi": "Cải tiến có kế hoạch hoặc ngừng hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Testing quadrants Q1 are typically:",
+    "questionVi": "Góc Q1 thường là:",
+    "options": [
+      {
+        "en": "Coffee machine calibration",
+        "vi": "Hiệu chuẩn máy cà phê"
+      },
+      {
+        "en": "Moving testers’ desks leftward",
+        "vi": "Chuyển bàn tester sang trái"
+      },
+      {
+        "en": "All documents translated",
+        "vi": "Mọi tài liệu đã dịch"
+      },
+      {
+        "en": "Technology-facing, supporting the team",
+        "vi": "Hướng công nghệ, hỗ trợ đội"
+      }
+    ],
+    "correctEn": "Technology-facing, supporting the team",
+    "correctVi": "Hướng công nghệ, hỗ trợ đội",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Sequential SDLC models often:",
+    "questionVi": "Mô hình SDLC tuần tự thường:",
+    "options": [
+      {
+        "en": "All documents translated",
+        "vi": "Mọi tài liệu đã dịch"
+      },
+      {
+        "en": "Require waterfall-only gates fixed forever",
+        "vi": "Cổng waterfall cố định mãi"
+      },
+      {
+        "en": "Treat testing as a distinct phase after development",
+        "vi": "Coi kiểm thử là giai đoạn riêng sau phát triển"
+      },
+      {
+        "en": "Remove independent testers",
+        "vi": "Bỏ tester độc lập"
+      }
+    ],
+    "correctEn": "Treat testing as a distinct phase after development",
+    "correctVi": "Coi kiểm thử là giai đoạn riêng sau phát triển",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Iterative/incremental SDLC models often:",
+    "questionVi": "Mô hình lặp/gia tăng thường:",
+    "options": [
+      {
+        "en": "Only invoice totals",
+        "vi": "Chỉ tổng hóa đơn"
+      },
+      {
+        "en": "Rejecting lightweight docs in agile",
+        "vi": "Từ chối tài liệu nhẹ trong agile"
+      },
+      {
+        "en": "All documents translated",
+        "vi": "Mọi tài liệu đã dịch"
+      },
+      {
+        "en": "Blend testing activities throughout iterations",
+        "vi": "Trộn hoạt động kiểm thử xuyên iteration"
+      }
+    ],
+    "correctEn": "Blend testing activities throughout iterations",
+    "correctVi": "Trộn hoạt động kiểm thử xuyên iteration",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "System integration testing emphasizes:",
+    "questionVi": "Kiểm thử tích hợp hệ thống nhấn mạnh:",
+    "options": [
+      {
+        "en": "Interfaces between systems/packages",
+        "vi": "Giao diện giữa hệ thống/gói"
+      },
+      {
+        "en": "Moving testers’ desks leftward",
+        "vi": "Chuyển bàn tester sang trái"
+      },
+      {
+        "en": "No side-effects anywhere after change",
+        "vi": "Không tác dụng phụ sau thay đổi"
+      },
+      {
+        "en": "Only variable names",
+        "vi": "Chỉ tên biến"
+      }
+    ],
+    "correctEn": "Interfaces between systems/packages",
+    "correctVi": "Giao diện giữa hệ thống/gói",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "White-box techniques leverage:",
+    "questionVi": "Kỹ thuật hộp trắng dựa vào:",
+    "options": [
+      {
+        "en": "Only compiler version strings",
+        "vi": "Chuỗi phiên bản compiler"
+      },
+      {
+        "en": "Disallow automation",
+        "vi": "Không cho tự động"
+      },
+      {
+        "en": "Structure of code or architecture",
+        "vi": "Cấu trúc mã hoặc kiến trúc"
+      },
+      {
+        "en": "Office floor tiling patterns",
+        "vi": "Họa tiết gạch sàn văn phòng"
+      }
+    ],
+    "correctEn": "Structure of code or architecture",
+    "correctVi": "Cấu trúc mã hoặc kiến trúc",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Black-box techniques derive tests from:",
+    "questionVi": "Hộp đen suy ra kiểm thử từ:",
+    "options": [
+      {
+        "en": "Deleting late-phase testing",
+        "vi": "Xóa kiểm thử giai đoạn muộn"
+      },
+      {
+        "en": "Assembler listings only",
+        "vi": "Chỉ listing assembler"
+      },
+      {
+        "en": "Specified behaviors without internal structure",
+        "vi": "Hành vi đặc tả không cần cấu trúc nội bộ"
+      },
+      {
+        "en": "CPU register dumps only",
+        "vi": "Chỉ dump thanh ghi CPU"
+      }
+    ],
+    "correctEn": "Specified behaviors without internal structure",
+    "correctVi": "Hành vi đặc tả không cần cấu trúc nội bộ",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Good testing practice across SDLCs includes:",
+    "questionVi": "Thực hành kiểm thử tốt trên mọi SDLC gồm:",
+    "options": [
+      {
+        "en": "Deferring all testing to operation",
+        "vi": "Hoãn mọi kiểm thử đến vận hành"
+      },
+      {
+        "en": "Subnet bitmask trivia",
+        "vi": "Chi tiết subnet mask"
+      },
+      {
+        "en": "Starting test analysis during the corresponding development phase",
+        "vi": "Bắt đầu phân tích kiểm thử trong giai đoạn phát triển tương ứng"
+      },
+      {
+        "en": "Legal contracts only",
+        "vi": "Chỉ hợp đồng pháp lý"
+      }
+    ],
+    "correctEn": "Starting test analysis during the corresponding development phase",
+    "correctVi": "Bắt đầu phân tích kiểm thử trong giai đoạn phát triển tương ứng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "TDD primarily drives:",
+    "questionVi": "TDD chủ yếu thúc đẩy:",
+    "options": [
+      {
+        "en": "Unit-level tests before implementation",
+        "vi": "Kiểm thử mức đơn vị trước triển khai"
+      },
+      {
+        "en": "Eliminate all manual testing forever",
+        "vi": "Loại mọi kiểm thử thủ công mãi mãi"
+      },
+      {
+        "en": "Only acceptance UI scripts",
+        "vi": "Chỉ script UI chấp nhận"
+      },
+      {
+        "en": "Single function bytecode",
+        "vi": "Bytecode một hàm"
+      }
+    ],
+    "correctEn": "Unit-level tests before implementation",
+    "correctVi": "Kiểm thử mức đơn vị trước triển khai",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "ATDD emphasizes:",
+    "questionVi": "ATDD nhấn mạnh:",
+    "options": [
+      {
+        "en": "Acceptance criteria as basis for tests",
+        "vi": "Tiêu chí chấp nhận làm cơ sở cho kiểm thử"
+      },
+      {
+        "en": "All documents translated",
+        "vi": "Mọi tài liệu đã dịch"
+      },
+      {
+        "en": "Only invoice totals",
+        "vi": "Chỉ tổng hóa đơn"
+      },
+      {
+        "en": "Using exactly one test level only",
+        "vi": "Chỉ dùng đúng một mức kiểm thử"
+      }
+    ],
+    "correctEn": "Acceptance criteria as basis for tests",
+    "correctVi": "Tiêu chí chấp nhận làm cơ sở cho kiểm thử",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "BDD scenarios often use:",
+    "questionVi": "Kịch bản BDD thường dùng:",
+    "options": [
+      {
+        "en": "Single function bytecode",
+        "vi": "Bytecode một hàm"
+      },
+      {
+        "en": "Given / When / Then structure",
+        "vi": "Cấu trúc Given / When / Then"
+      },
+      {
+        "en": "Org-chart hierarchies",
+        "vi": "Sơ đồ tổ chức"
+      },
+      {
+        "en": "Only IDE themes",
+        "vi": "Chỉ theme IDE"
+      }
+    ],
+    "correctEn": "Given / When / Then structure",
+    "correctVi": "Cấu trúc Given / When / Then",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "DevOps culture tends to:",
+    "questionVi": "Văn hóa DevOps có xu hướng:",
+    "options": [
+      {
+        "en": "Single function bytecode",
+        "vi": "Bytecode một hàm"
+      },
+      {
+        "en": "Integrate development, operations and quality practices",
+        "vi": "Tích hợp phát triển, vận hành và chất lượng"
+      },
+      {
+        "en": "Full production traffic",
+        "vi": "Toàn bộ traffic production"
+      },
+      {
+        "en": "Business-facing critiques only",
+        "vi": "Chỉ phản biện hướng kinh doanh"
+      }
+    ],
+    "correctEn": "Integrate development, operations and quality practices",
+    "correctVi": "Tích hợp phát triển, vận hành và chất lượng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "\"Shift left\" means:",
+    "questionVi": "\"Shift left\" có nghĩa:",
+    "options": [
+      {
+        "en": "How secure authorization is",
+        "vi": "Phân quyền bảo mật ra sao"
+      },
+      {
+        "en": "Moving testing earlier in the SDLC",
+        "vi": "Đưa kiểm thử sớm hơn trong SDLC"
+      },
+      {
+        "en": "Business-facing critiques only",
+        "vi": "Chỉ phản biện hướng kinh doanh"
+      },
+      {
+        "en": " Printer toner levels",
+        "vi": "Mực máy in"
+      }
+    ],
+    "correctEn": "Moving testing earlier in the SDLC",
+    "correctVi": "Đưa kiểm thử sớm hơn trong SDLC",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Retrospectives support testing by:",
+    "questionVi": "Retrospective hỗ trợ kiểm thử bằng:",
+    "options": [
+      {
+        "en": "A copyright clause",
+        "vi": "Điều khoản bản quyền"
+      },
+      {
+        "en": "IDE font smoothing",
+        "vi": "Làm mượt font IDE"
+      },
+      {
+        "en": "Process improvement lessons learned",
+        "vi": "Bài học cải tiến quy trình"
+      },
+      {
+        "en": "Business rules only",
+        "vi": "Chỉ luật nghiệp vụ"
+      }
+    ],
+    "correctEn": "Process improvement lessons learned",
+    "correctVi": "Bài học cải tiến quy trình",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Component testing focuses on:",
+    "questionVi": "Kiểm thử thành phần tập trung vào:",
+    "options": [
+      {
+        "en": "Full production traffic",
+        "vi": "Toàn bộ traffic production"
+      },
+      {
+        "en": "Only initial greenfield coding",
+        "vi": "Chỉ giai đoạn greenfield đầu tiên"
+      },
+      {
+        "en": "Eliminate documentation",
+        "vi": "Loại tài liệu"
+      },
+      {
+        "en": "Components in isolation",
+        "vi": "Thành phần cô lập"
+      }
+    ],
+    "correctEn": "Components in isolation",
+    "correctVi": "Thành phần cô lập",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Component integration testing focuses on:",
+    "questionVi": "Kiểm thử tích hợp thành phần tập trung vào:",
+    "options": [
+      {
+        "en": "Marketing slogans",
+        "vi": "Khẩu hiệu marketing"
+      },
+      {
+        "en": "Interfaces between components",
+        "vi": "Giao diện giữa các thành phần"
+      },
+      {
+        "en": "Ban automated pipelines",
+        "vi": "Cấm pipeline tự động"
+      },
+      {
+        "en": "Using exactly one test level only",
+        "vi": "Chỉ dùng đúng một mức kiểm thử"
+      }
+    ],
+    "correctEn": "Interfaces between components",
+    "correctVi": "Giao diện giữa các thành phần",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "System testing evaluates:",
+    "questionVi": "Kiểm thử hệ thống đánh giá:",
+    "options": [
+      {
+        "en": "Only testing after release",
+        "vi": "Chỉ kiểm thử sau phát hành"
+      },
+      {
+        "en": "End-to-end behavior of the whole system",
+        "vi": "Hành vi đầu-cuối của toàn hệ thống"
+      },
+      {
+        "en": "A copyright clause",
+        "vi": "Điều khoản bản quyền"
+      },
+      {
+        "en": "Marketing funnel metrics",
+        "vi": "Chỉ số marketing funnel"
+      }
+    ],
+    "correctEn": "End-to-end behavior of the whole system",
+    "correctVi": "Hành vi đầu-cuối của toàn hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Acceptance testing validates:",
+    "questionVi": "Kiểm thử chấp nhận xác thực:",
+    "options": [
+      {
+        "en": "Only kindergarten schedules",
+        "vi": "Chỉ lịch mẫu giáo"
+      },
+      {
+        "en": "Business/user readiness to accept the system",
+        "vi": "Sự sẵn sàng kinh doanh/người dùng chấp nhận hệ thống"
+      },
+      {
+        "en": "A purely functional objective",
+        "vi": "Mục tiêu thuần chức năng"
+      },
+      {
+        "en": "Assembler listings only",
+        "vi": "Chỉ listing assembler"
+      }
+    ],
+    "correctEn": "Business/user readiness to accept the system",
+    "correctVi": "Sự sẵn sàng kinh doanh/người dùng chấp nhận hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Functional testing checks:",
+    "questionVi": "Kiểm thử chức năng kiểm tra:",
+    "options": [
+      {
+        "en": "Eliminate all manual testing forever",
+        "vi": "Loại mọi kiểm thử thủ công mãi mãi"
+      },
+      {
+        "en": "Moving testers’ desks leftward",
+        "vi": "Chuyển bàn tester sang trái"
+      },
+      {
+        "en": "Database normalization proofs",
+        "vi": "Chứng minh chuẩn hóa CSDL"
+      },
+      {
+        "en": "What the system does",
+        "vi": "Hệ thống làm gì"
+      }
+    ],
+    "correctEn": "What the system does",
+    "correctVi": "Hệ thống làm gì",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Non-functional testing targets:",
+    "questionVi": "Kiểm thử phi chức năng nhắm vào:",
+    "options": [
+      {
+        "en": "How well it performs under stress",
+        "vi": "Mức chịu tải tốt đến đâu"
+      },
+      {
+        "en": "How well the system works (quality attributes)",
+        "vi": "Hệ thống hoạt động tốt đến đâu (đặc tính chất lượng)"
+      },
+      {
+        "en": "Only compiler version strings",
+        "vi": "Chuỗi phiên bản compiler"
+      },
+      {
+        "en": "Machine bytecode optimization",
+        "vi": "Tối ưu bytecode máy"
+      }
+    ],
+    "correctEn": "How well the system works (quality attributes)",
+    "correctVi": "Hệ thống hoạt động tốt đến đâu (đặc tính chất lượng)",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Performance efficiency in ISO/IEC 25010 is:",
+    "questionVi": "Hiệu quả hiệu năng trong ISO/IEC 25010 là:",
+    "options": [
+      {
+        "en": "GPU shader internals only",
+        "vi": "Chỉ nội bộ shader GPU"
+      },
+      {
+        "en": "A non-functional characteristic",
+        "vi": "Đặc tính phi chức năng"
+      },
+      {
+        "en": "External auditors only",
+        "vi": "Chỉ kiểm toán ngoài"
+      },
+      {
+        "en": "Machine bytecode optimization",
+        "vi": "Tối ưu bytecode máy"
+      }
+    ],
+    "correctEn": "A non-functional characteristic",
+    "correctVi": "Đặc tính phi chức năng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Confirmation testing verifies:",
+    "questionVi": "Kiểm thử xác nhận xác minh:",
+    "options": [
+      {
+        "en": "Office floor tiling patterns",
+        "vi": "Họa tiết gạch sàn văn phòng"
+      },
+      {
+        "en": "Only Pantone colors",
+        "vi": "Chỉ màu Pantone"
+      },
+      {
+        "en": "A defect fix resolved the failure",
+        "vi": "Sửa khiếm khuyết đã khắc phục thất bại"
+      },
+      {
+        "en": "Only payroll deductions",
+        "vi": "Chỉ khấu trừ lương"
+      }
+    ],
+    "correctEn": "A defect fix resolved the failure",
+    "correctVi": "Sửa khiếm khuyết đã khắc phục thất bại",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Regression testing checks:",
+    "questionVi": "Kiểm thử hồi quy kiểm tra:",
+    "options": [
+      {
+        "en": "Unchanged areas still behave after a change",
+        "vi": "Vùng không đổi vẫn đúng sau thay đổi"
+      },
+      {
+        "en": "CPU register dumps only",
+        "vi": "Chỉ dump thanh ghi CPU"
+      },
+      {
+        "en": "Eliminate all manual testing forever",
+        "vi": "Loại mọi kiểm thử thủ công mãi mãi"
+      },
+      {
+        "en": "Remove configuration management",
+        "vi": "Bỏ quản lý cấu hình"
+      }
+    ],
+    "correctEn": "Unchanged areas still behave after a change",
+    "correctVi": "Vùng không đổi vẫn đúng sau thay đổi",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Maintenance testing may be triggered by:",
+    "questionVi": "Kiểm thử bảo trì có thể do:",
+    "options": [
+      {
+        "en": "Planned enhancements or retirement",
+        "vi": "Cải tiến có kế hoạch hoặc ngừng hệ thống"
+      },
+      {
+        "en": "Only IDE themes",
+        "vi": "Chỉ theme IDE"
+      },
+      {
+        "en": "Only acceptance UI scripts",
+        "vi": "Chỉ script UI chấp nhận"
+      },
+      {
+        "en": "Only spelling in manuals",
+        "vi": "Chỉ chính tả trong hướng dẫn"
+      }
+    ],
+    "correctEn": "Planned enhancements or retirement",
+    "correctVi": "Cải tiến có kế hoạch hoặc ngừng hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Testing quadrants Q1 are typically:",
+    "questionVi": "Góc Q1 thường là:",
+    "options": [
+      {
+        "en": "Technology-facing, supporting the team",
+        "vi": "Hướng công nghệ, hỗ trợ đội"
+      },
+      {
+        "en": "Eliminate documentation",
+        "vi": "Loại tài liệu"
+      },
+      {
+        "en": "No side-effects anywhere after change",
+        "vi": "Không tác dụng phụ sau thay đổi"
+      },
+      {
+        "en": "External auditors only",
+        "vi": "Chỉ kiểm toán ngoài"
+      }
+    ],
+    "correctEn": "Technology-facing, supporting the team",
+    "correctVi": "Hướng công nghệ, hỗ trợ đội",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Sequential SDLC models often:",
+    "questionVi": "Mô hình SDLC tuần tự thường:",
+    "options": [
+      {
+        "en": "A copyright clause",
+        "vi": "Điều khoản bản quyền"
+      },
+      {
+        "en": "Org-chart hierarchies",
+        "vi": "Sơ đồ tổ chức"
+      },
+      {
+        "en": "Business rules only",
+        "vi": "Chỉ luật nghiệp vụ"
+      },
+      {
+        "en": "Treat testing as a distinct phase after development",
+        "vi": "Coi kiểm thử là giai đoạn riêng sau phát triển"
+      }
+    ],
+    "correctEn": "Treat testing as a distinct phase after development",
+    "correctVi": "Coi kiểm thử là giai đoạn riêng sau phát triển",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Iterative/incremental SDLC models often:",
+    "questionVi": "Mô hình lặp/gia tăng thường:",
+    "options": [
+      {
+        "en": "Ban shift-left ideas",
+        "vi": "Cấm shift-left"
+      },
+      {
+        "en": "Hiding metrics from teams",
+        "vi": "Giấu chỉ số với đội"
+      },
+      {
+        "en": "Blend testing activities throughout iterations",
+        "vi": "Trộn hoạt động kiểm thử xuyên iteration"
+      },
+      {
+        "en": "Marketing funnel metrics",
+        "vi": "Chỉ số marketing funnel"
+      }
+    ],
+    "correctEn": "Blend testing activities throughout iterations",
+    "correctVi": "Trộn hoạt động kiểm thử xuyên iteration",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "System integration testing emphasizes:",
+    "questionVi": "Kiểm thử tích hợp hệ thống nhấn mạnh:",
+    "options": [
+      {
+        "en": "Only lunar phases",
+        "vi": "Chỉ pha mặt trăng"
+      },
+      {
+        "en": "Coffee machine calibration",
+        "vi": "Hiệu chuẩn máy cà phê"
+      },
+      {
+        "en": "Assembler listings only",
+        "vi": "Chỉ listing assembler"
+      },
+      {
+        "en": "Interfaces between systems/packages",
+        "vi": "Giao diện giữa hệ thống/gói"
+      }
+    ],
+    "correctEn": "Interfaces between systems/packages",
+    "correctVi": "Giao diện giữa hệ thống/gói",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "White-box techniques leverage:",
+    "questionVi": "Kỹ thuật hộp trắng dựa vào:",
+    "options": [
+      {
+        "en": "Only printed brochures",
+        "vi": "Chỉ brochure in"
+      },
+      {
+        "en": "Compiler internal registers",
+        "vi": "Thanh ghi nội bộ compiler"
+      },
+      {
+        "en": "Structure of code or architecture",
+        "vi": "Cấu trúc mã hoặc kiến trúc"
+      },
+      {
+        "en": "Disallow automation",
+        "vi": "Không cho tự động"
+      }
+    ],
+    "correctEn": "Structure of code or architecture",
+    "correctVi": "Cấu trúc mã hoặc kiến trúc",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Black-box techniques derive tests from:",
+    "questionVi": "Hộp đen suy ra kiểm thử từ:",
+    "options": [
+      {
+        "en": "Deleting late-phase testing",
+        "vi": "Xóa kiểm thử giai đoạn muộn"
+      },
+      {
+        "en": "Specified behaviors without internal structure",
+        "vi": "Hành vi đặc tả không cần cấu trúc nội bộ"
+      },
+      {
+        "en": "Office floor tiling patterns",
+        "vi": "Họa tiết gạch sàn văn phòng"
+      },
+      {
+        "en": "Only invoice totals",
+        "vi": "Chỉ tổng hóa đơn"
+      }
+    ],
+    "correctEn": "Specified behaviors without internal structure",
+    "correctVi": "Hành vi đặc tả không cần cấu trúc nội bộ",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Good testing practice across SDLCs includes:",
+    "questionVi": "Thực hành kiểm thử tốt trên mọi SDLC gồm:",
+    "options": [
+      {
+        "en": "Starting test analysis during the corresponding development phase",
+        "vi": "Bắt đầu phân tích kiểm thử trong giai đoạn phát triển tương ứng"
+      },
+      {
+        "en": "Remove independent testers",
+        "vi": "Bỏ tester độc lập"
+      },
+      {
+        "en": "Remove configuration management",
+        "vi": "Bỏ quản lý cấu hình"
+      },
+      {
+        "en": "Assembler listings only",
+        "vi": "Chỉ listing assembler"
+      }
+    ],
+    "correctEn": "Starting test analysis during the corresponding development phase",
+    "correctVi": "Bắt đầu phân tích kiểm thử trong giai đoạn phát triển tương ứng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "TDD primarily drives:",
+    "questionVi": "TDD chủ yếu thúc đẩy:",
+    "options": [
+      {
+        "en": "Unit-level tests before implementation",
+        "vi": "Kiểm thử mức đơn vị trước triển khai"
+      },
+      {
+        "en": "CPU register dumps only",
+        "vi": "Chỉ dump thanh ghi CPU"
+      },
+      {
+        "en": "All documents translated",
+        "vi": "Mọi tài liệu đã dịch"
+      },
+      {
+        "en": "How well it performs under stress",
+        "vi": "Mức chịu tải tốt đến đâu"
+      }
+    ],
+    "correctEn": "Unit-level tests before implementation",
+    "correctVi": "Kiểm thử mức đơn vị trước triển khai",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "ATDD emphasizes:",
+    "questionVi": "ATDD nhấn mạnh:",
+    "options": [
+      {
+        "en": "Only acceptance UI scripts",
+        "vi": "Chỉ script UI chấp nhận"
+      },
+      {
+        "en": "GPU shader internals only",
+        "vi": "Chỉ nội bộ shader GPU"
+      },
+      {
+        "en": "Acceptance criteria as basis for tests",
+        "vi": "Tiêu chí chấp nhận làm cơ sở cho kiểm thử"
+      },
+      {
+        "en": "Only kindergarten schedules",
+        "vi": "Chỉ lịch mẫu giáo"
+      }
+    ],
+    "correctEn": "Acceptance criteria as basis for tests",
+    "correctVi": "Tiêu chí chấp nhận làm cơ sở cho kiểm thử",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "BDD scenarios often use:",
+    "questionVi": "Kịch bản BDD thường dùng:",
+    "options": [
+      {
+        "en": "Hiding metrics from teams",
+        "vi": "Giấu chỉ số với đội"
+      },
+      {
+        "en": "Compiler internal registers",
+        "vi": "Thanh ghi nội bộ compiler"
+      },
+      {
+        "en": "Given / When / Then structure",
+        "vi": "Cấu trúc Given / When / Then"
+      },
+      {
+        "en": "Ban automated pipelines",
+        "vi": "Cấm pipeline tự động"
+      }
+    ],
+    "correctEn": "Given / When / Then structure",
+    "correctVi": "Cấu trúc Given / When / Then",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "DevOps culture tends to:",
+    "questionVi": "Văn hóa DevOps có xu hướng:",
+    "options": [
+      {
+        "en": "End-user payroll",
+        "vi": "Lương người dùng cuối"
+      },
+      {
+        "en": "Integrate development, operations and quality practices",
+        "vi": "Tích hợp phát triển, vận hành và chất lượng"
+      },
+      {
+        "en": "Only kindergarten schedules",
+        "vi": "Chỉ lịch mẫu giáo"
+      },
+      {
+        "en": "Only acceptance UI scripts",
+        "vi": "Chỉ script UI chấp nhận"
+      }
+    ],
+    "correctEn": "Integrate development, operations and quality practices",
+    "correctVi": "Tích hợp phát triển, vận hành và chất lượng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "\"Shift left\" means:",
+    "questionVi": "\"Shift left\" có nghĩa:",
+    "options": [
+      {
+        "en": "Only compiler version strings",
+        "vi": "Chuỗi phiên bản compiler"
+      },
+      {
+        "en": "Moving testing earlier in the SDLC",
+        "vi": "Đưa kiểm thử sớm hơn trong SDLC"
+      },
+      {
+        "en": "Coffee machine calibration",
+        "vi": "Hiệu chuẩn máy cà phê"
+      },
+      {
+        "en": "Only payroll deductions",
+        "vi": "Chỉ khấu trừ lương"
+      }
+    ],
+    "correctEn": "Moving testing earlier in the SDLC",
+    "correctVi": "Đưa kiểm thử sớm hơn trong SDLC",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Retrospectives support testing by:",
+    "questionVi": "Retrospective hỗ trợ kiểm thử bằng:",
+    "options": [
+      {
+        "en": "Business-facing critiques only",
+        "vi": "Chỉ phản biện hướng kinh doanh"
+      },
+      {
+        "en": "Legal contracts only",
+        "vi": "Chỉ hợp đồng pháp lý"
+      },
+      {
+        "en": "Process improvement lessons learned",
+        "vi": "Bài học cải tiến quy trình"
+      },
+      {
+        "en": "Database normalization proofs",
+        "vi": "Chứng minh chuẩn hóa CSDL"
+      }
+    ],
+    "correctEn": "Process improvement lessons learned",
+    "correctVi": "Bài học cải tiến quy trình",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Component testing focuses on:",
+    "questionVi": "Kiểm thử thành phần tập trung vào:",
+    "options": [
+      {
+        "en": "How secure authorization is",
+        "vi": "Phân quyền bảo mật ra sao"
+      },
+      {
+        "en": "End-user payroll",
+        "vi": "Lương người dùng cuối"
+      },
+      {
+        "en": "Remove independent testers",
+        "vi": "Bỏ tester độc lập"
+      },
+      {
+        "en": "Components in isolation",
+        "vi": "Thành phần cô lập"
+      }
+    ],
+    "correctEn": "Components in isolation",
+    "correctVi": "Thành phần cô lập",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Component integration testing focuses on:",
+    "questionVi": "Kiểm thử tích hợp thành phần tập trung vào:",
+    "options": [
+      {
+        "en": "Interfaces between components",
+        "vi": "Giao diện giữa các thành phần"
+      },
+      {
+        "en": "GPU shader internals only",
+        "vi": "Chỉ nội bộ shader GPU"
+      },
+      {
+        "en": "Legal contracts only",
+        "vi": "Chỉ hợp đồng pháp lý"
+      },
+      {
+        "en": "Full production traffic",
+        "vi": "Toàn bộ traffic production"
+      }
+    ],
+    "correctEn": "Interfaces between components",
+    "correctVi": "Giao diện giữa các thành phần",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "System testing evaluates:",
+    "questionVi": "Kiểm thử hệ thống đánh giá:",
+    "options": [
+      {
+        "en": " Printer toner levels",
+        "vi": "Mực máy in"
+      },
+      {
+        "en": "End-to-end behavior of the whole system",
+        "vi": "Hành vi đầu-cuối của toàn hệ thống"
+      },
+      {
+        "en": "Hexadecimal opcode dumps",
+        "vi": "Dump opcode hex"
+      },
+      {
+        "en": "Only kindergarten schedules",
+        "vi": "Chỉ lịch mẫu giáo"
+      }
+    ],
+    "correctEn": "End-to-end behavior of the whole system",
+    "correctVi": "Hành vi đầu-cuối của toàn hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Acceptance testing validates:",
+    "questionVi": "Kiểm thử chấp nhận xác thực:",
+    "options": [
+      {
+        "en": "Business/user readiness to accept the system",
+        "vi": "Sự sẵn sàng kinh doanh/người dùng chấp nhận hệ thống"
+      },
+      {
+        "en": "Payroll compliance only",
+        "vi": "Chỉ tuân thủ lương"
+      },
+      {
+        "en": "IDE font smoothing",
+        "vi": "Làm mượt font IDE"
+      },
+      {
+        "en": "Single developer keyboard layout",
+        "vi": "Bố cục bàn phím một developer"
+      }
+    ],
+    "correctEn": "Business/user readiness to accept the system",
+    "correctVi": "Sự sẵn sàng kinh doanh/người dùng chấp nhận hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Functional testing checks:",
+    "questionVi": "Kiểm thử chức năng kiểm tra:",
+    "options": [
+      {
+        "en": "Full production traffic",
+        "vi": "Toàn bộ traffic production"
+      },
+      {
+        "en": "External auditors only",
+        "vi": "Chỉ kiểm toán ngoài"
+      },
+      {
+        "en": "What the system does",
+        "vi": "Hệ thống làm gì"
+      },
+      {
+        "en": "Single developer keyboard layout",
+        "vi": "Bố cục bàn phím một developer"
+      }
+    ],
+    "correctEn": "What the system does",
+    "correctVi": "Hệ thống làm gì",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Non-functional testing targets:",
+    "questionVi": "Kiểm thử phi chức năng nhắm vào:",
+    "options": [
+      {
+        "en": "Rejecting lightweight docs in agile",
+        "vi": "Từ chối tài liệu nhẹ trong agile"
+      },
+      {
+        "en": "A copyright clause",
+        "vi": "Điều khoản bản quyền"
+      },
+      {
+        "en": "How well the system works (quality attributes)",
+        "vi": "Hệ thống hoạt động tốt đến đâu (đặc tính chất lượng)"
+      },
+      {
+        "en": "GPU shader internals only",
+        "vi": "Chỉ nội bộ shader GPU"
+      }
+    ],
+    "correctEn": "How well the system works (quality attributes)",
+    "correctVi": "Hệ thống hoạt động tốt đến đâu (đặc tính chất lượng)",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Performance efficiency in ISO/IEC 25010 is:",
+    "questionVi": "Hiệu quả hiệu năng trong ISO/IEC 25010 là:",
+    "options": [
+      {
+        "en": "A non-functional characteristic",
+        "vi": "Đặc tính phi chức năng"
+      },
+      {
+        "en": "A payroll attribute",
+        "vi": "Thuộc tính lương"
+      },
+      {
+        "en": "Removing defect reports",
+        "vi": "Xóa báo cáo khiếm khuyết"
+      },
+      {
+        "en": "Moving testers’ desks leftward",
+        "vi": "Chuyển bàn tester sang trái"
+      }
+    ],
+    "correctEn": "A non-functional characteristic",
+    "correctVi": "Đặc tính phi chức năng",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Confirmation testing verifies:",
+    "questionVi": "Kiểm thử xác nhận xác minh:",
+    "options": [
+      {
+        "en": "How secure authorization is",
+        "vi": "Phân quyền bảo mật ra sao"
+      },
+      {
+        "en": "Single developer keyboard layout",
+        "vi": "Bố cục bàn phím một developer"
+      },
+      {
+        "en": "A defect fix resolved the failure",
+        "vi": "Sửa khiếm khuyết đã khắc phục thất bại"
+      },
+      {
+        "en": "Legal contracts only",
+        "vi": "Chỉ hợp đồng pháp lý"
+      }
+    ],
+    "correctEn": "A defect fix resolved the failure",
+    "correctVi": "Sửa khiếm khuyết đã khắc phục thất bại",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Regression testing checks:",
+    "questionVi": "Kiểm thử hồi quy kiểm tra:",
+    "options": [
+      {
+        "en": "Marketing funnel metrics",
+        "vi": "Chỉ số marketing funnel"
+      },
+      {
+        "en": "Unchanged areas still behave after a change",
+        "vi": "Vùng không đổi vẫn đúng sau thay đổi"
+      },
+      {
+        "en": "Production deployment first",
+        "vi": "Triển khai production trước"
+      },
+      {
+        "en": "SQL DDL only",
+        "vi": "Chỉ SQL DDL"
+      }
+    ],
+    "correctEn": "Unchanged areas still behave after a change",
+    "correctVi": "Vùng không đổi vẫn đúng sau thay đổi",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Maintenance testing may be triggered by:",
+    "questionVi": "Kiểm thử bảo trì có thể do:",
+    "options": [
+      {
+        "en": "CPU register dumps only",
+        "vi": "Chỉ dump thanh ghi CPU"
+      },
+      {
+        "en": "Planned enhancements or retirement",
+        "vi": "Cải tiến có kế hoạch hoặc ngừng hệ thống"
+      },
+      {
+        "en": "Assembler listings only",
+        "vi": "Chỉ listing assembler"
+      },
+      {
+        "en": "Legal contracts only",
+        "vi": "Chỉ hợp đồng pháp lý"
+      }
+    ],
+    "correctEn": "Planned enhancements or retirement",
+    "correctVi": "Cải tiến có kế hoạch hoặc ngừng hệ thống",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Testing quadrants Q1 are typically:",
+    "questionVi": "Góc Q1 thường là:",
+    "options": [
+      {
+        "en": "Business-facing critiques only",
+        "vi": "Chỉ phản biện hướng kinh doanh"
+      },
+      {
+        "en": "Office floor tiling patterns",
+        "vi": "Họa tiết gạch sàn văn phòng"
+      },
+      {
+        "en": "Technology-facing, supporting the team",
+        "vi": "Hướng công nghệ, hỗ trợ đội"
+      },
+      {
+        "en": "Only the defect fix itself",
+        "vi": "Chỉ bản thân bản sửa"
+      }
+    ],
+    "correctEn": "Technology-facing, supporting the team",
+    "correctVi": "Hướng công nghệ, hỗ trợ đội",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Sequential SDLC models often:",
+    "questionVi": "Mô hình SDLC tuần tự thường:",
+    "options": [
+      {
+        "en": "Treat testing as a distinct phase after development",
+        "vi": "Coi kiểm thử là giai đoạn riêng sau phát triển"
+      },
+      {
+        "en": "Skipping root cause",
+        "vi": "Bỏ nguyên nhân gốc"
+      },
+      {
+        "en": "Subnet bitmask trivia",
+        "vi": "Chi tiết subnet mask"
+      },
+      {
+        "en": "Only printed brochures",
+        "vi": "Chỉ brochure in"
+      }
+    ],
+    "correctEn": "Treat testing as a distinct phase after development",
+    "correctVi": "Coi kiểm thử là giai đoạn riêng sau phát triển",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "Iterative/incremental SDLC models often:",
+    "questionVi": "Mô hình lặp/gia tăng thường:",
+    "options": [
+      {
+        "en": "Blend testing activities throughout iterations",
+        "vi": "Trộn hoạt động kiểm thử xuyên iteration"
+      },
+      {
+        "en": "Only kindergarten schedules",
+        "vi": "Chỉ lịch mẫu giáo"
+      },
+      {
+        "en": "Database normalization proofs",
+        "vi": "Chứng minh chuẩn hóa CSDL"
+      },
+      {
+        "en": "How well it performs under stress",
+        "vi": "Mức chịu tải tốt đến đâu"
+      }
+    ],
+    "correctEn": "Blend testing activities throughout iterations",
+    "correctVi": "Trộn hoạt động kiểm thử xuyên iteration",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "System integration testing emphasizes:",
+    "questionVi": "Kiểm thử tích hợp hệ thống nhấn mạnh:",
+    "options": [
+      {
+        "en": "Using exactly one test level only",
+        "vi": "Chỉ dùng đúng một mức kiểm thử"
+      },
+      {
+        "en": "Only acceptance UI scripts",
+        "vi": "Chỉ script UI chấp nhận"
+      },
+      {
+        "en": "Org-chart hierarchies",
+        "vi": "Sơ đồ tổ chức"
+      },
+      {
+        "en": "Interfaces between systems/packages",
+        "vi": "Giao diện giữa hệ thống/gói"
+      }
+    ],
+    "correctEn": "Interfaces between systems/packages",
+    "correctVi": "Giao diện giữa hệ thống/gói",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  },
+  {
+    "questionEn": "White-box techniques leverage:",
+    "questionVi": "Kỹ thuật hộp trắng dựa vào:",
+    "options": [
+      {
+        "en": "Subnet bitmask trivia",
+        "vi": "Chi tiết subnet mask"
+      },
+      {
+        "en": "Structure of code or architecture",
+        "vi": "Cấu trúc mã hoặc kiến trúc"
+      },
+      {
+        "en": "Only the defect fix itself",
+        "vi": "Chỉ bản thân bản sửa"
+      },
+      {
+        "en": "Org-chart hierarchies",
+        "vi": "Sơ đồ tổ chức"
+      }
+    ],
+    "correctEn": "Structure of code or architecture",
+    "correctVi": "Cấu trúc mã hoặc kiến trúc",
+    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 2 (Testing Throughout the SDLC).\n* **Sai / Incorrect:** Misstates levels, types, SDLC practices, or ISO quality classification."
+  }
+]

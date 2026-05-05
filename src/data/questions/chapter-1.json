@@ -1,0 +1,3977 @@
+[
+  {
+    "questionEn": "Which is a typical test objective?",
+    "questionVi": "Mục tiêu nào là mục tiêu kiểm thử điển hình?",
+    "options": [
+      {
+        "en": "To cause failures and find defects",
+        "vi": "Để gây ra thất bại và tìm khiếm khuyết"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      }
+    ],
+    "correctEn": "To cause failures and find defects",
+    "correctVi": "Để gây ra thất bại và tìm khiếm khuyết",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Testing shows:",
+    "questionVi": "Kiểm thử cho thấy:",
+    "options": [
+      {
+        "en": "The presence of defects",
+        "vi": "Sự hiện diện của khiếm khuyết"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      }
+    ],
+    "correctEn": "The presence of defects",
+    "correctVi": "Sự hiện diện của khiếm khuyết",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Debugging focuses on:",
+    "questionVi": "Gỡ lỗi tập trung vào:",
+    "options": [
+      {
+        "en": "Removing the underlying causes of failures",
+        "vi": "Loại bỏ nguyên nhân gốc của thất bại"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      }
+    ],
+    "correctEn": "Removing the underlying causes of failures",
+    "correctVi": "Loại bỏ nguyên nhân gốc của thất bại",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "The causal chain from human mistake is:",
+    "questionVi": "Chuỗi nhân quả từ sai lầm con người là:",
+    "options": [
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Error → Defect → Failure",
+        "vi": "Lỗi → Khiếm khuyết → Thất bại"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      }
+    ],
+    "correctEn": "Error → Defect → Failure",
+    "correctVi": "Lỗi → Khiếm khuyết → Thất bại",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which principle states exhaustive testing is impossible except in trivial cases?",
+    "questionVi": "Nguyên tắc nào nêu kiểm thử toàn diện không khả thi trừ trường hợp tầm thường?",
+    "options": [
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Exhaustive testing is impossible",
+        "vi": "Kiểm thử toàn diện là không thể"
+      }
+    ],
+    "correctEn": "Exhaustive testing is impossible",
+    "correctVi": "Kiểm thử toàn diện là không thể",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "\"Absence-of-errors\" is a fallacy\" is which testing principle?",
+    "questionVi": "\"Ảo tưởng không có lỗi\" là nguyên tắc kiểm thử nào?",
+    "options": [
+      {
+        "en": "Principle 7",
+        "vi": "Nguyên tắc 7"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Principle 5",
+        "vi": "Nguyên tắc 5"
+      }
+    ],
+    "correctEn": "Principle 7",
+    "correctVi": "Nguyên tắc 7",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "\"Testing shows presence of defects\" corresponds to:",
+    "questionVi": "\"Kiểm thử cho thấy sự hiện diện khiếm khuyết\" tương ứng:",
+    "options": [
+      {
+        "en": "Principle 1",
+        "vi": "Nguyên tắc 1"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      }
+    ],
+    "correctEn": "Principle 1",
+    "correctVi": "Nguyên tắc 1",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Defect clustering is:",
+    "questionVi": "Khiếm khuyết cụm lại là:",
+    "options": [
+      {
+        "en": "Principle 4",
+        "vi": "Nguyên tắc 4"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      }
+    ],
+    "correctEn": "Principle 4",
+    "correctVi": "Nguyên tắc 4",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "The pesticide paradox warns that:",
+    "questionVi": "Nghịch lý thuốc trừ sâu cảnh báo rằng:",
+    "options": [
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Repeated identical tests lose effectiveness",
+        "vi": "Lặp lại cùng kiểm thử làm giảm hiệu quả"
+      },
+      {
+        "en": "Automation removes human testers",
+        "vi": "Tự động hóa loại con người"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      }
+    ],
+    "correctEn": "Repeated identical tests lose effectiveness",
+    "correctVi": "Lặp lại cùng kiểm thử làm giảm hiệu quả",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Early testing contributes to:",
+    "questionVi": "Kiểm thử sớm góp phần:",
+    "options": [
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Reducing costs of quality over the lifecycle",
+        "vi": "Giảm chi phí chất lượng trong vòng đời"
+      }
+    ],
+    "correctEn": "Reducing costs of quality over the lifecycle",
+    "correctVi": "Giảm chi phí chất lượng trong vòng đời",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which activity answers \"What should be tested?\"",
+    "questionVi": "Hoạt động nào trả lời \"Nên kiểm thử gì?\"",
+    "options": [
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Test analysis",
+        "vi": "Phân tích kiểm thử"
+      }
+    ],
+    "correctEn": "Test analysis",
+    "correctVi": "Phân tích kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which activity answers \"How to test?\"",
+    "questionVi": "Hoạt động nào trả lời \"Kiểm thử như thế nào?\"",
+    "options": [
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Test design",
+        "vi": "Thiết kế kiểm thử"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      }
+    ],
+    "correctEn": "Test design",
+    "correctVi": "Thiết kế kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test implementation prepares:",
+    "questionVi": "Triển khai kiểm thử chuẩn bị:",
+    "options": [
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Test procedures/scripts and environment readiness",
+        "vi": "Thủ tục/script và sẵn sàng môi trường"
+      },
+      {
+        "en": "Marketing sign-off",
+        "vi": "Marketing phê duyệt"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      }
+    ],
+    "correctEn": "Test procedures/scripts and environment readiness",
+    "correctVi": "Thủ tục/script và sẵn sàng môi trường",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Traceability supports:",
+    "questionVi": "Truy xuất nguồn gốc hỗ trợ:",
+    "options": [
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Coverage assessment and impact of changes",
+        "vi": "Đánh giá bao phủ và tác động thay đổi"
+      }
+    ],
+    "correctEn": "Coverage assessment and impact of changes",
+    "correctVi": "Đánh giá bao phủ và tác động thay đổi",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Quality assurance (QA) is primarily:",
+    "questionVi": "Đảm bảo chất lượng (QA) chủ yếu là:",
+    "options": [
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Process-focused prevention orientation",
+        "vi": "Định hướng phòng ngừa theo quy trình"
+      }
+    ],
+    "correctEn": "Process-focused prevention orientation",
+    "correctVi": "Định hướng phòng ngừa theo quy trình",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Quality control (QC) includes:",
+    "questionVi": "Kiểm soát chất lượng (QC) gồm:",
+    "options": [
+      {
+        "en": "Corrective product-oriented activities including testing",
+        "vi": "Hoạt động hướng sản phẩm, khắc phục, gồm kiểm thử"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      }
+    ],
+    "correctEn": "Corrective product-oriented activities including testing",
+    "correctVi": "Hoạt động hướng sản phẩm, khắc phục, gồm kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "A benefit of tester independence is:",
+    "questionVi": "Lợi ích của độc lập kiểm thử là:",
+    "options": [
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Different perspective may reveal failures developers overlook",
+        "vi": "Góc nhìn khác có thể phát hiện lỗi developer bỏ sót"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      }
+    ],
+    "correctEn": "Different perspective may reveal failures developers overlook",
+    "correctVi": "Góc nhìn khác có thể phát hiện lỗi developer bỏ sót",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "A drawback of high independence can be:",
+    "questionVi": "Hạn chế của độc lập cao có thể là:",
+    "options": [
+      {
+        "en": "Isolation from developers",
+        "vi": "Bị cô lập khỏi developer"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Automatic defect prevention",
+        "vi": "Tự động ngăn khiếm khuyết"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      }
+    ],
+    "correctEn": "Isolation from developers",
+    "correctVi": "Bị cô lập khỏi developer",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Whole team approach originated notably from:",
+    "questionVi": "Whole team approach nổi bật bắt nguồn từ:",
+    "options": [
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Extreme Programming (XP)",
+        "vi": "Extreme Programming (XP)"
+      }
+    ],
+    "correctEn": "Extreme Programming (XP)",
+    "correctVi": "Extreme Programming (XP)",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Verification aims at:",
+    "questionVi": "Xác minh (verification) nhằm:",
+    "options": [
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Specified requirements fulfillment",
+        "vi": "Đáp ứng yêu cầu đặc tả"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      }
+    ],
+    "correctEn": "Specified requirements fulfillment",
+    "correctVi": "Đáp ứng yêu cầu đặc tả",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Validation aims at:",
+    "questionVi": "Xác thực (validation) nhằm:",
+    "options": [
+      {
+        "en": "Stakeholder needs in operational environment",
+        "vi": "Nhu cầu bên liên quan trong môi trường vận hành"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      }
+    ],
+    "correctEn": "Stakeholder needs in operational environment",
+    "correctVi": "Nhu cầu bên liên quan trong môi trường vận hành",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Dynamic testing requires:",
+    "questionVi": "Kiểm thử động yêu cầu:",
+    "options": [
+      {
+        "en": "Database backups only",
+        "vi": "Chỉ sao lưu CSDL"
+      },
+      {
+        "en": "Executing the software",
+        "vi": "Thực thi phần mềm"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Only documents reviews",
+        "vi": "Chỉ đánh giá tài liệu"
+      }
+    ],
+    "correctEn": "Executing the software",
+    "correctVi": "Thực thi phần mềm",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Static testing includes:",
+    "questionVi": "Kiểm thử tĩnh gồm:",
+    "options": [
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Reviews and static analysis",
+        "vi": "Đánh giá và phân tích tĩnh"
+      }
+    ],
+    "correctEn": "Reviews and static analysis",
+    "correctVi": "Đánh giá và phân tích tĩnh",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Testware includes:",
+    "questionVi": "Testware gồm:",
+    "options": [
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Artifacts produced during testing (plans, cases, scripts…)",
+        "vi": "Sản phẩm làm việc của kiểm thử (kế hoạch, ca, script…)"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      }
+    ],
+    "correctEn": "Artifacts produced during testing (plans, cases, scripts…)",
+    "correctVi": "Sản phẩm làm việc của kiểm thử (kế hoạch, ca, script…)",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test monitoring primarily:",
+    "questionVi": "Giám sát kiểm thử chủ yếu:",
+    "options": [
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Gathers information on progress vs criteria",
+        "vi": "Thu thập thông tin tiến độ so với tiêu chí"
+      }
+    ],
+    "correctEn": "Gathers information on progress vs criteria",
+    "correctVi": "Thu thập thông tin tiến độ so với tiêu chí",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test basis provides:",
+    "questionVi": "Cơ sở kiểm thử cung cấp:",
+    "options": [
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Foundation for test decisions and expected results",
+        "vi": "Nền tảng cho quyết định và kết quả mong đợi"
+      },
+      {
+        "en": "Legal incorporation clauses",
+        "vi": "Điều khoản thành lập pháp lý"
+      }
+    ],
+    "correctEn": "Foundation for test decisions and expected results",
+    "correctVi": "Nền tảng cho quyết định và kết quả mong đợi",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which is a typical test objective?",
+    "questionVi": "Mục tiêu nào là mục tiêu kiểm thử điển hình?",
+    "options": [
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "To cause failures and find defects",
+        "vi": "Để gây ra thất bại và tìm khiếm khuyết"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      }
+    ],
+    "correctEn": "To cause failures and find defects",
+    "correctVi": "Để gây ra thất bại và tìm khiếm khuyết",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Testing shows:",
+    "questionVi": "Kiểm thử cho thấy:",
+    "options": [
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "The presence of defects",
+        "vi": "Sự hiện diện của khiếm khuyết"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      }
+    ],
+    "correctEn": "The presence of defects",
+    "correctVi": "Sự hiện diện của khiếm khuyết",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Debugging focuses on:",
+    "questionVi": "Gỡ lỗi tập trung vào:",
+    "options": [
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Removing the underlying causes of failures",
+        "vi": "Loại bỏ nguyên nhân gốc của thất bại"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      }
+    ],
+    "correctEn": "Removing the underlying causes of failures",
+    "correctVi": "Loại bỏ nguyên nhân gốc của thất bại",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "The causal chain from human mistake is:",
+    "questionVi": "Chuỗi nhân quả từ sai lầm con người là:",
+    "options": [
+      {
+        "en": "Error → Defect → Failure",
+        "vi": "Lỗi → Khiếm khuyết → Thất bại"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      }
+    ],
+    "correctEn": "Error → Defect → Failure",
+    "correctVi": "Lỗi → Khiếm khuyết → Thất bại",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which principle states exhaustive testing is impossible except in trivial cases?",
+    "questionVi": "Nguyên tắc nào nêu kiểm thử toàn diện không khả thi trừ trường hợp tầm thường?",
+    "options": [
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Exhaustive testing is impossible",
+        "vi": "Kiểm thử toàn diện là không thể"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      }
+    ],
+    "correctEn": "Exhaustive testing is impossible",
+    "correctVi": "Kiểm thử toàn diện là không thể",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "\"Absence-of-errors\" is a fallacy\" is which testing principle?",
+    "questionVi": "\"Ảo tưởng không có lỗi\" là nguyên tắc kiểm thử nào?",
+    "options": [
+      {
+        "en": "Principle 7",
+        "vi": "Nguyên tắc 7"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      }
+    ],
+    "correctEn": "Principle 7",
+    "correctVi": "Nguyên tắc 7",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "\"Testing shows presence of defects\" corresponds to:",
+    "questionVi": "\"Kiểm thử cho thấy sự hiện diện khiếm khuyết\" tương ứng:",
+    "options": [
+      {
+        "en": "Principle 1",
+        "vi": "Nguyên tắc 1"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      }
+    ],
+    "correctEn": "Principle 1",
+    "correctVi": "Nguyên tắc 1",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Defect clustering is:",
+    "questionVi": "Khiếm khuyết cụm lại là:",
+    "options": [
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Principle 4",
+        "vi": "Nguyên tắc 4"
+      }
+    ],
+    "correctEn": "Principle 4",
+    "correctVi": "Nguyên tắc 4",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "The pesticide paradox warns that:",
+    "questionVi": "Nghịch lý thuốc trừ sâu cảnh báo rằng:",
+    "options": [
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Repeated identical tests lose effectiveness",
+        "vi": "Lặp lại cùng kiểm thử làm giảm hiệu quả"
+      }
+    ],
+    "correctEn": "Repeated identical tests lose effectiveness",
+    "correctVi": "Lặp lại cùng kiểm thử làm giảm hiệu quả",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Early testing contributes to:",
+    "questionVi": "Kiểm thử sớm góp phần:",
+    "options": [
+      {
+        "en": "Reducing costs of quality over the lifecycle",
+        "vi": "Giảm chi phí chất lượng trong vòng đời"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      }
+    ],
+    "correctEn": "Reducing costs of quality over the lifecycle",
+    "correctVi": "Giảm chi phí chất lượng trong vòng đời",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which activity answers \"What should be tested?\"",
+    "questionVi": "Hoạt động nào trả lời \"Nên kiểm thử gì?\"",
+    "options": [
+      {
+        "en": "Test analysis",
+        "vi": "Phân tích kiểm thử"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      }
+    ],
+    "correctEn": "Test analysis",
+    "correctVi": "Phân tích kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which activity answers \"How to test?\"",
+    "questionVi": "Hoạt động nào trả lời \"Kiểm thử như thế nào?\"",
+    "options": [
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Test design",
+        "vi": "Thiết kế kiểm thử"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      }
+    ],
+    "correctEn": "Test design",
+    "correctVi": "Thiết kế kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test implementation prepares:",
+    "questionVi": "Triển khai kiểm thử chuẩn bị:",
+    "options": [
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Test procedures/scripts and environment readiness",
+        "vi": "Thủ tục/script và sẵn sàng môi trường"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      }
+    ],
+    "correctEn": "Test procedures/scripts and environment readiness",
+    "correctVi": "Thủ tục/script và sẵn sàng môi trường",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Traceability supports:",
+    "questionVi": "Truy xuất nguồn gốc hỗ trợ:",
+    "options": [
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Coverage assessment and impact of changes",
+        "vi": "Đánh giá bao phủ và tác động thay đổi"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      }
+    ],
+    "correctEn": "Coverage assessment and impact of changes",
+    "correctVi": "Đánh giá bao phủ và tác động thay đổi",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Quality assurance (QA) is primarily:",
+    "questionVi": "Đảm bảo chất lượng (QA) chủ yếu là:",
+    "options": [
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Writing user manuals",
+        "vi": "Viết hướng dẫn người dùng"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Process-focused prevention orientation",
+        "vi": "Định hướng phòng ngừa theo quy trình"
+      }
+    ],
+    "correctEn": "Process-focused prevention orientation",
+    "correctVi": "Định hướng phòng ngừa theo quy trình",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Quality control (QC) includes:",
+    "questionVi": "Kiểm soát chất lượng (QC) gồm:",
+    "options": [
+      {
+        "en": "Removing retrospectives",
+        "vi": "Bỏ retrospective"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Corrective product-oriented activities including testing",
+        "vi": "Hoạt động hướng sản phẩm, khắc phục, gồm kiểm thử"
+      }
+    ],
+    "correctEn": "Corrective product-oriented activities including testing",
+    "correctVi": "Hoạt động hướng sản phẩm, khắc phục, gồm kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "A benefit of tester independence is:",
+    "questionVi": "Lợi ích của độc lập kiểm thử là:",
+    "options": [
+      {
+        "en": "Different perspective may reveal failures developers overlook",
+        "vi": "Góc nhìn khác có thể phát hiện lỗi developer bỏ sót"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      }
+    ],
+    "correctEn": "Different perspective may reveal failures developers overlook",
+    "correctVi": "Góc nhìn khác có thể phát hiện lỗi developer bỏ sót",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "A drawback of high independence can be:",
+    "questionVi": "Hạn chế của độc lập cao có thể là:",
+    "options": [
+      {
+        "en": "Isolation from developers",
+        "vi": "Bị cô lập khỏi developer"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      }
+    ],
+    "correctEn": "Isolation from developers",
+    "correctVi": "Bị cô lập khỏi developer",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Whole team approach originated notably from:",
+    "questionVi": "Whole team approach nổi bật bắt nguồn từ:",
+    "options": [
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "COBOL maintenance standards",
+        "vi": "Chuẩn bảo trì COBOL"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Extreme Programming (XP)",
+        "vi": "Extreme Programming (XP)"
+      }
+    ],
+    "correctEn": "Extreme Programming (XP)",
+    "correctVi": "Extreme Programming (XP)",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Verification aims at:",
+    "questionVi": "Xác minh (verification) nhằm:",
+    "options": [
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Specified requirements fulfillment",
+        "vi": "Đáp ứng yêu cầu đặc tả"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      }
+    ],
+    "correctEn": "Specified requirements fulfillment",
+    "correctVi": "Đáp ứng yêu cầu đặc tả",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Validation aims at:",
+    "questionVi": "Xác thực (validation) nhằm:",
+    "options": [
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Stakeholder needs in operational environment",
+        "vi": "Nhu cầu bên liên quan trong môi trường vận hành"
+      }
+    ],
+    "correctEn": "Stakeholder needs in operational environment",
+    "correctVi": "Nhu cầu bên liên quan trong môi trường vận hành",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Dynamic testing requires:",
+    "questionVi": "Kiểm thử động yêu cầu:",
+    "options": [
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Executing the software",
+        "vi": "Thực thi phần mềm"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      }
+    ],
+    "correctEn": "Executing the software",
+    "correctVi": "Thực thi phần mềm",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Static testing includes:",
+    "questionVi": "Kiểm thử tĩnh gồm:",
+    "options": [
+      {
+        "en": "Reviews and static analysis",
+        "vi": "Đánh giá và phân tích tĩnh"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Load testing only",
+        "vi": "Chỉ kiểm thử tải"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      }
+    ],
+    "correctEn": "Reviews and static analysis",
+    "correctVi": "Đánh giá và phân tích tĩnh",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Testware includes:",
+    "questionVi": "Testware gồm:",
+    "options": [
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Artifacts produced during testing (plans, cases, scripts…)",
+        "vi": "Sản phẩm làm việc của kiểm thử (kế hoạch, ca, script…)"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      }
+    ],
+    "correctEn": "Artifacts produced during testing (plans, cases, scripts…)",
+    "correctVi": "Sản phẩm làm việc của kiểm thử (kế hoạch, ca, script…)",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test monitoring primarily:",
+    "questionVi": "Giám sát kiểm thử chủ yếu:",
+    "options": [
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Gathers information on progress vs criteria",
+        "vi": "Thu thập thông tin tiến độ so với tiêu chí"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      }
+    ],
+    "correctEn": "Gathers information on progress vs criteria",
+    "correctVi": "Thu thập thông tin tiến độ so với tiêu chí",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test basis provides:",
+    "questionVi": "Cơ sở kiểm thử cung cấp:",
+    "options": [
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Foundation for test decisions and expected results",
+        "vi": "Nền tảng cho quyết định và kết quả mong đợi"
+      }
+    ],
+    "correctEn": "Foundation for test decisions and expected results",
+    "correctVi": "Nền tảng cho quyết định và kết quả mong đợi",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which is a typical test objective?",
+    "questionVi": "Mục tiêu nào là mục tiêu kiểm thử điển hình?",
+    "options": [
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "To cause failures and find defects",
+        "vi": "Để gây ra thất bại và tìm khiếm khuyết"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      }
+    ],
+    "correctEn": "To cause failures and find defects",
+    "correctVi": "Để gây ra thất bại và tìm khiếm khuyết",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Testing shows:",
+    "questionVi": "Kiểm thử cho thấy:",
+    "options": [
+      {
+        "en": "The presence of defects",
+        "vi": "Sự hiện diện của khiếm khuyết"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      }
+    ],
+    "correctEn": "The presence of defects",
+    "correctVi": "Sự hiện diện của khiếm khuyết",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Debugging focuses on:",
+    "questionVi": "Gỡ lỗi tập trung vào:",
+    "options": [
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Removing the underlying causes of failures",
+        "vi": "Loại bỏ nguyên nhân gốc của thất bại"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      }
+    ],
+    "correctEn": "Removing the underlying causes of failures",
+    "correctVi": "Loại bỏ nguyên nhân gốc của thất bại",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "The causal chain from human mistake is:",
+    "questionVi": "Chuỗi nhân quả từ sai lầm con người là:",
+    "options": [
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Error → Defect → Failure",
+        "vi": "Lỗi → Khiếm khuyết → Thất bại"
+      }
+    ],
+    "correctEn": "Error → Defect → Failure",
+    "correctVi": "Lỗi → Khiếm khuyết → Thất bại",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which principle states exhaustive testing is impossible except in trivial cases?",
+    "questionVi": "Nguyên tắc nào nêu kiểm thử toàn diện không khả thi trừ trường hợp tầm thường?",
+    "options": [
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Exhaustive testing is impossible",
+        "vi": "Kiểm thử toàn diện là không thể"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Early testing saves time and money",
+        "vi": "Kiểm thử sớm tiết kiệm thời gian và tiền"
+      }
+    ],
+    "correctEn": "Exhaustive testing is impossible",
+    "correctVi": "Kiểm thử toàn diện là không thể",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "\"Absence-of-errors\" is a fallacy\" is which testing principle?",
+    "questionVi": "\"Ảo tưởng không có lỗi\" là nguyên tắc kiểm thử nào?",
+    "options": [
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Principle 7",
+        "vi": "Nguyên tắc 7"
+      }
+    ],
+    "correctEn": "Principle 7",
+    "correctVi": "Nguyên tắc 7",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "\"Testing shows presence of defects\" corresponds to:",
+    "questionVi": "\"Kiểm thử cho thấy sự hiện diện khiếm khuyết\" tương ứng:",
+    "options": [
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Principle 1",
+        "vi": "Nguyên tắc 1"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      }
+    ],
+    "correctEn": "Principle 1",
+    "correctVi": "Nguyên tắc 1",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Defect clustering is:",
+    "questionVi": "Khiếm khuyết cụm lại là:",
+    "options": [
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Principle 4",
+        "vi": "Nguyên tắc 4"
+      }
+    ],
+    "correctEn": "Principle 4",
+    "correctVi": "Nguyên tắc 4",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "The pesticide paradox warns that:",
+    "questionVi": "Nghịch lý thuốc trừ sâu cảnh báo rằng:",
+    "options": [
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Repeated identical tests lose effectiveness",
+        "vi": "Lặp lại cùng kiểm thử làm giảm hiệu quả"
+      },
+      {
+        "en": "More pesticides improve quality",
+        "vi": "Nhiều thuốc trừ sâu hơn cải thiện chất lượng"
+      }
+    ],
+    "correctEn": "Repeated identical tests lose effectiveness",
+    "correctVi": "Lặp lại cùng kiểm thử làm giảm hiệu quả",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Early testing contributes to:",
+    "questionVi": "Kiểm thử sớm góp phần:",
+    "options": [
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Eliminating documentation",
+        "vi": "Loại bỏ tài liệu"
+      },
+      {
+        "en": "Reducing costs of quality over the lifecycle",
+        "vi": "Giảm chi phí chất lượng trong vòng đời"
+      }
+    ],
+    "correctEn": "Reducing costs of quality over the lifecycle",
+    "correctVi": "Giảm chi phí chất lượng trong vòng đời",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which activity answers \"What should be tested?\"",
+    "questionVi": "Hoạt động nào trả lời \"Nên kiểm thử gì?\"",
+    "options": [
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Test analysis",
+        "vi": "Phân tích kiểm thử"
+      }
+    ],
+    "correctEn": "Test analysis",
+    "correctVi": "Phân tích kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which activity answers \"How to test?\"",
+    "questionVi": "Hoạt động nào trả lời \"Kiểm thử như thế nào?\"",
+    "options": [
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Test design",
+        "vi": "Thiết kế kiểm thử"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      }
+    ],
+    "correctEn": "Test design",
+    "correctVi": "Thiết kế kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test implementation prepares:",
+    "questionVi": "Triển khai kiểm thử chuẩn bị:",
+    "options": [
+      {
+        "en": "Test procedures/scripts and environment readiness",
+        "vi": "Thủ tục/script và sẵn sàng môi trường"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      }
+    ],
+    "correctEn": "Test procedures/scripts and environment readiness",
+    "correctVi": "Thủ tục/script và sẵn sàng môi trường",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Traceability supports:",
+    "questionVi": "Truy xuất nguồn gốc hỗ trợ:",
+    "options": [
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Coverage assessment and impact of changes",
+        "vi": "Đánh giá bao phủ và tác động thay đổi"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      }
+    ],
+    "correctEn": "Coverage assessment and impact of changes",
+    "correctVi": "Đánh giá bao phủ và tác động thay đổi",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Quality assurance (QA) is primarily:",
+    "questionVi": "Đảm bảo chất lượng (QA) chủ yếu là:",
+    "options": [
+      {
+        "en": "Finding defects during execution",
+        "vi": "Tìm khiếm khuyết khi thực thi"
+      },
+      {
+        "en": "Process-focused prevention orientation",
+        "vi": "Định hướng phòng ngừa theo quy trình"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Executing dynamic tests only",
+        "vi": "Chỉ thực hiện kiểm thử động"
+      }
+    ],
+    "correctEn": "Process-focused prevention orientation",
+    "correctVi": "Định hướng phòng ngừa theo quy trình",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Quality control (QC) includes:",
+    "questionVi": "Kiểm soát chất lượng (QC) gồm:",
+    "options": [
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Corrective product-oriented activities including testing",
+        "vi": "Hoạt động hướng sản phẩm, khắc phục, gồm kiểm thử"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      }
+    ],
+    "correctEn": "Corrective product-oriented activities including testing",
+    "correctVi": "Hoạt động hướng sản phẩm, khắc phục, gồm kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "A benefit of tester independence is:",
+    "questionVi": "Lợi ích của độc lập kiểm thử là:",
+    "options": [
+      {
+        "en": "Different perspective may reveal failures developers overlook",
+        "vi": "Góc nhìn khác có thể phát hiện lỗi developer bỏ sót"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      }
+    ],
+    "correctEn": "Different perspective may reveal failures developers overlook",
+    "correctVi": "Góc nhìn khác có thể phát hiện lỗi developer bỏ sót",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "A drawback of high independence can be:",
+    "questionVi": "Hạn chế của độc lập cao có thể là:",
+    "options": [
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Isolation from developers",
+        "vi": "Bị cô lập khỏi developer"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      }
+    ],
+    "correctEn": "Isolation from developers",
+    "correctVi": "Bị cô lập khỏi developer",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Whole team approach originated notably from:",
+    "questionVi": "Whole team approach nổi bật bắt nguồn từ:",
+    "options": [
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Extreme Programming (XP)",
+        "vi": "Extreme Programming (XP)"
+      }
+    ],
+    "correctEn": "Extreme Programming (XP)",
+    "correctVi": "Extreme Programming (XP)",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Verification aims at:",
+    "questionVi": "Xác minh (verification) nhằm:",
+    "options": [
+      {
+        "en": "Specified requirements fulfillment",
+        "vi": "Đáp ứng yêu cầu đặc tả"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      }
+    ],
+    "correctEn": "Specified requirements fulfillment",
+    "correctVi": "Đáp ứng yêu cầu đặc tả",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Validation aims at:",
+    "questionVi": "Xác thực (validation) nhằm:",
+    "options": [
+      {
+        "en": "Stakeholder needs in operational environment",
+        "vi": "Nhu cầu bên liên quan trong môi trường vận hành"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      }
+    ],
+    "correctEn": "Stakeholder needs in operational environment",
+    "correctVi": "Nhu cầu bên liên quan trong môi trường vận hành",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Dynamic testing requires:",
+    "questionVi": "Kiểm thử động yêu cầu:",
+    "options": [
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Executing the software",
+        "vi": "Thực thi phần mềm"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      }
+    ],
+    "correctEn": "Executing the software",
+    "correctVi": "Thực thi phần mềm",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Static testing includes:",
+    "questionVi": "Kiểm thử tĩnh gồm:",
+    "options": [
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Production monitoring only",
+        "vi": "Chỉ giám sát production"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Reviews and static analysis",
+        "vi": "Đánh giá và phân tích tĩnh"
+      }
+    ],
+    "correctEn": "Reviews and static analysis",
+    "correctVi": "Đánh giá và phân tích tĩnh",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Testware includes:",
+    "questionVi": "Testware gồm:",
+    "options": [
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Artifacts produced during testing (plans, cases, scripts…)",
+        "vi": "Sản phẩm làm việc của kiểm thử (kế hoạch, ca, script…)"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      }
+    ],
+    "correctEn": "Artifacts produced during testing (plans, cases, scripts…)",
+    "correctVi": "Sản phẩm làm việc của kiểm thử (kế hoạch, ca, script…)",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test monitoring primarily:",
+    "questionVi": "Giám sát kiểm thử chủ yếu:",
+    "options": [
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Gathers information on progress vs criteria",
+        "vi": "Thu thập thông tin tiến độ so với tiêu chí"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      }
+    ],
+    "correctEn": "Gathers information on progress vs criteria",
+    "correctVi": "Thu thập thông tin tiến độ so với tiêu chí",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test basis provides:",
+    "questionVi": "Cơ sở kiểm thử cung cấp:",
+    "options": [
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Foundation for test decisions and expected results",
+        "vi": "Nền tảng cho quyết định và kết quả mong đợi"
+      }
+    ],
+    "correctEn": "Foundation for test decisions and expected results",
+    "correctVi": "Nền tảng cho quyết định và kết quả mong đợi",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which is a typical test objective?",
+    "questionVi": "Mục tiêu nào là mục tiêu kiểm thử điển hình?",
+    "options": [
+      {
+        "en": "To cause failures and find defects",
+        "vi": "Để gây ra thất bại và tìm khiếm khuyết"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      }
+    ],
+    "correctEn": "To cause failures and find defects",
+    "correctVi": "Để gây ra thất bại và tìm khiếm khuyết",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Testing shows:",
+    "questionVi": "Kiểm thử cho thấy:",
+    "options": [
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "The presence of defects",
+        "vi": "Sự hiện diện của khiếm khuyết"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      }
+    ],
+    "correctEn": "The presence of defects",
+    "correctVi": "Sự hiện diện của khiếm khuyết",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Debugging focuses on:",
+    "questionVi": "Gỡ lỗi tập trung vào:",
+    "options": [
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Removing the underlying causes of failures",
+        "vi": "Loại bỏ nguyên nhân gốc của thất bại"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      }
+    ],
+    "correctEn": "Removing the underlying causes of failures",
+    "correctVi": "Loại bỏ nguyên nhân gốc của thất bại",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "The causal chain from human mistake is:",
+    "questionVi": "Chuỗi nhân quả từ sai lầm con người là:",
+    "options": [
+      {
+        "en": "Error → Defect → Failure",
+        "vi": "Lỗi → Khiếm khuyết → Thất bại"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      }
+    ],
+    "correctEn": "Error → Defect → Failure",
+    "correctVi": "Lỗi → Khiếm khuyết → Thất bại",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which principle states exhaustive testing is impossible except in trivial cases?",
+    "questionVi": "Nguyên tắc nào nêu kiểm thử toàn diện không khả thi trừ trường hợp tầm thường?",
+    "options": [
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Early testing saves time and money",
+        "vi": "Kiểm thử sớm tiết kiệm thời gian và tiền"
+      },
+      {
+        "en": "Defects cluster together",
+        "vi": "Khiếm khuyết cụm lại"
+      },
+      {
+        "en": "Exhaustive testing is impossible",
+        "vi": "Kiểm thử toàn diện là không thể"
+      }
+    ],
+    "correctEn": "Exhaustive testing is impossible",
+    "correctVi": "Kiểm thử toàn diện là không thể",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "\"Absence-of-errors\" is a fallacy\" is which testing principle?",
+    "questionVi": "\"Ảo tưởng không có lỗi\" là nguyên tắc kiểm thử nào?",
+    "options": [
+      {
+        "en": "Principle 7",
+        "vi": "Nguyên tắc 7"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      }
+    ],
+    "correctEn": "Principle 7",
+    "correctVi": "Nguyên tắc 7",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "\"Testing shows presence of defects\" corresponds to:",
+    "questionVi": "\"Kiểm thử cho thấy sự hiện diện khiếm khuyết\" tương ứng:",
+    "options": [
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Principle 1",
+        "vi": "Nguyên tắc 1"
+      },
+      {
+        "en": "Principle 2",
+        "vi": "Nguyên tắc 2"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      }
+    ],
+    "correctEn": "Principle 1",
+    "correctVi": "Nguyên tắc 1",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Defect clustering is:",
+    "questionVi": "Khiếm khuyết cụm lại là:",
+    "options": [
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Principle 4",
+        "vi": "Nguyên tắc 4"
+      }
+    ],
+    "correctEn": "Principle 4",
+    "correctVi": "Nguyên tắc 4",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "The pesticide paradox warns that:",
+    "questionVi": "Nghịch lý thuốc trừ sâu cảnh báo rằng:",
+    "options": [
+      {
+        "en": "More pesticides improve quality",
+        "vi": "Nhiều thuốc trừ sâu hơn cải thiện chất lượng"
+      },
+      {
+        "en": "Repeated identical tests lose effectiveness",
+        "vi": "Lặp lại cùng kiểm thử làm giảm hiệu quả"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      }
+    ],
+    "correctEn": "Repeated identical tests lose effectiveness",
+    "correctVi": "Lặp lại cùng kiểm thử làm giảm hiệu quả",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Early testing contributes to:",
+    "questionVi": "Kiểm thử sớm góp phần:",
+    "options": [
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Reducing costs of quality over the lifecycle",
+        "vi": "Giảm chi phí chất lượng trong vòng đời"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      }
+    ],
+    "correctEn": "Reducing costs of quality over the lifecycle",
+    "correctVi": "Giảm chi phí chất lượng trong vòng đời",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which activity answers \"What should be tested?\"",
+    "questionVi": "Hoạt động nào trả lời \"Nên kiểm thử gì?\"",
+    "options": [
+      {
+        "en": "Test analysis",
+        "vi": "Phân tích kiểm thử"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      }
+    ],
+    "correctEn": "Test analysis",
+    "correctVi": "Phân tích kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which activity answers \"How to test?\"",
+    "questionVi": "Hoạt động nào trả lời \"Kiểm thử như thế nào?\"",
+    "options": [
+      {
+        "en": "Test design",
+        "vi": "Thiết kế kiểm thử"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      }
+    ],
+    "correctEn": "Test design",
+    "correctVi": "Thiết kế kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test implementation prepares:",
+    "questionVi": "Triển khai kiểm thử chuẩn bị:",
+    "options": [
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Test procedures/scripts and environment readiness",
+        "vi": "Thủ tục/script và sẵn sàng môi trường"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      }
+    ],
+    "correctEn": "Test procedures/scripts and environment readiness",
+    "correctVi": "Thủ tục/script và sẵn sàng môi trường",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Traceability supports:",
+    "questionVi": "Truy xuất nguồn gốc hỗ trợ:",
+    "options": [
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Coverage assessment and impact of changes",
+        "vi": "Đánh giá bao phủ và tác động thay đổi"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      }
+    ],
+    "correctEn": "Coverage assessment and impact of changes",
+    "correctVi": "Đánh giá bao phủ và tác động thay đổi",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Quality assurance (QA) is primarily:",
+    "questionVi": "Đảm bảo chất lượng (QA) chủ yếu là:",
+    "options": [
+      {
+        "en": "Process-focused prevention orientation",
+        "vi": "Định hướng phòng ngừa theo quy trình"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      }
+    ],
+    "correctEn": "Process-focused prevention orientation",
+    "correctVi": "Định hướng phòng ngừa theo quy trình",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Quality control (QC) includes:",
+    "questionVi": "Kiểm soát chất lượng (QC) gồm:",
+    "options": [
+      {
+        "en": "Corrective product-oriented activities including testing",
+        "vi": "Hoạt động hướng sản phẩm, khắc phục, gồm kiểm thử"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      }
+    ],
+    "correctEn": "Corrective product-oriented activities including testing",
+    "correctVi": "Hoạt động hướng sản phẩm, khắc phục, gồm kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "A benefit of tester independence is:",
+    "questionVi": "Lợi ích của độc lập kiểm thử là:",
+    "options": [
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Different perspective may reveal failures developers overlook",
+        "vi": "Góc nhìn khác có thể phát hiện lỗi developer bỏ sót"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      }
+    ],
+    "correctEn": "Different perspective may reveal failures developers overlook",
+    "correctVi": "Góc nhìn khác có thể phát hiện lỗi developer bỏ sót",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "A drawback of high independence can be:",
+    "questionVi": "Hạn chế của độc lập cao có thể là:",
+    "options": [
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Isolation from developers",
+        "vi": "Bị cô lập khỏi developer"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      }
+    ],
+    "correctEn": "Isolation from developers",
+    "correctVi": "Bị cô lập khỏi developer",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Whole team approach originated notably from:",
+    "questionVi": "Whole team approach nổi bật bắt nguồn từ:",
+    "options": [
+      {
+        "en": "Extreme Programming (XP)",
+        "vi": "Extreme Programming (XP)"
+      },
+      {
+        "en": "ITIL only",
+        "vi": "Chỉ ITIL"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      }
+    ],
+    "correctEn": "Extreme Programming (XP)",
+    "correctVi": "Extreme Programming (XP)",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Verification aims at:",
+    "questionVi": "Xác minh (verification) nhằm:",
+    "options": [
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Specified requirements fulfillment",
+        "vi": "Đáp ứng yêu cầu đặc tả"
+      }
+    ],
+    "correctEn": "Specified requirements fulfillment",
+    "correctVi": "Đáp ứng yêu cầu đặc tả",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Validation aims at:",
+    "questionVi": "Xác thực (validation) nhằm:",
+    "options": [
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Stakeholder needs in operational environment",
+        "vi": "Nhu cầu bên liên quan trong môi trường vận hành"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      }
+    ],
+    "correctEn": "Stakeholder needs in operational environment",
+    "correctVi": "Nhu cầu bên liên quan trong môi trường vận hành",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Dynamic testing requires:",
+    "questionVi": "Kiểm thử động yêu cầu:",
+    "options": [
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Executing the software",
+        "vi": "Thực thi phần mềm"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      }
+    ],
+    "correctEn": "Executing the software",
+    "correctVi": "Thực thi phần mềm",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Static testing includes:",
+    "questionVi": "Kiểm thử tĩnh gồm:",
+    "options": [
+      {
+        "en": "Production monitoring only",
+        "vi": "Chỉ giám sát production"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Reviews and static analysis",
+        "vi": "Đánh giá và phân tích tĩnh"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      }
+    ],
+    "correctEn": "Reviews and static analysis",
+    "correctVi": "Đánh giá và phân tích tĩnh",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Testware includes:",
+    "questionVi": "Testware gồm:",
+    "options": [
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Artifacts produced during testing (plans, cases, scripts…)",
+        "vi": "Sản phẩm làm việc của kiểm thử (kế hoạch, ca, script…)"
+      }
+    ],
+    "correctEn": "Artifacts produced during testing (plans, cases, scripts…)",
+    "correctVi": "Sản phẩm làm việc của kiểm thử (kế hoạch, ca, script…)",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test monitoring primarily:",
+    "questionVi": "Giám sát kiểm thử chủ yếu:",
+    "options": [
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Gathers information on progress vs criteria",
+        "vi": "Thu thập thông tin tiến độ so với tiêu chí"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Removes all defects",
+        "vi": "Loại mọi khiếm khuyết"
+      }
+    ],
+    "correctEn": "Gathers information on progress vs criteria",
+    "correctVi": "Thu thập thông tin tiến độ so với tiêu chí",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test basis provides:",
+    "questionVi": "Cơ sở kiểm thử cung cấp:",
+    "options": [
+      {
+        "en": "Entertainment only",
+        "vi": "Chỉ giải trí"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Foundation for test decisions and expected results",
+        "vi": "Nền tảng cho quyết định và kết quả mong đợi"
+      }
+    ],
+    "correctEn": "Foundation for test decisions and expected results",
+    "correctVi": "Nền tảng cho quyết định và kết quả mong đợi",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which is a typical test objective?",
+    "questionVi": "Mục tiêu nào là mục tiêu kiểm thử điển hình?",
+    "options": [
+      {
+        "en": "To cause failures and find defects",
+        "vi": "Để gây ra thất bại và tìm khiếm khuyết"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      }
+    ],
+    "correctEn": "To cause failures and find defects",
+    "correctVi": "Để gây ra thất bại và tìm khiếm khuyết",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Testing shows:",
+    "questionVi": "Kiểm thử cho thấy:",
+    "options": [
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "The presence of defects",
+        "vi": "Sự hiện diện của khiếm khuyết"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      }
+    ],
+    "correctEn": "The presence of defects",
+    "correctVi": "Sự hiện diện của khiếm khuyết",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Debugging focuses on:",
+    "questionVi": "Gỡ lỗi tập trung vào:",
+    "options": [
+      {
+        "en": "Removing the underlying causes of failures",
+        "vi": "Loại bỏ nguyên nhân gốc của thất bại"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      }
+    ],
+    "correctEn": "Removing the underlying causes of failures",
+    "correctVi": "Loại bỏ nguyên nhân gốc của thất bại",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "The causal chain from human mistake is:",
+    "questionVi": "Chuỗi nhân quả từ sai lầm con người là:",
+    "options": [
+      {
+        "en": "Error → Defect → Failure",
+        "vi": "Lỗi → Khiếm khuyết → Thất bại"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      }
+    ],
+    "correctEn": "Error → Defect → Failure",
+    "correctVi": "Lỗi → Khiếm khuyết → Thất bại",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which principle states exhaustive testing is impossible except in trivial cases?",
+    "questionVi": "Nguyên tắc nào nêu kiểm thử toàn diện không khả thi trừ trường hợp tầm thường?",
+    "options": [
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Exhaustive testing is impossible",
+        "vi": "Kiểm thử toàn diện là không thể"
+      }
+    ],
+    "correctEn": "Exhaustive testing is impossible",
+    "correctVi": "Kiểm thử toàn diện là không thể",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "\"Absence-of-errors\" is a fallacy\" is which testing principle?",
+    "questionVi": "\"Ảo tưởng không có lỗi\" là nguyên tắc kiểm thử nào?",
+    "options": [
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Principle 7",
+        "vi": "Nguyên tắc 7"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      }
+    ],
+    "correctEn": "Principle 7",
+    "correctVi": "Nguyên tắc 7",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "\"Testing shows presence of defects\" corresponds to:",
+    "questionVi": "\"Kiểm thử cho thấy sự hiện diện khiếm khuyết\" tương ứng:",
+    "options": [
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Principle 1",
+        "vi": "Nguyên tắc 1"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      }
+    ],
+    "correctEn": "Principle 1",
+    "correctVi": "Nguyên tắc 1",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Defect clustering is:",
+    "questionVi": "Khiếm khuyết cụm lại là:",
+    "options": [
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Principle 4",
+        "vi": "Nguyên tắc 4"
+      }
+    ],
+    "correctEn": "Principle 4",
+    "correctVi": "Nguyên tắc 4",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "The pesticide paradox warns that:",
+    "questionVi": "Nghịch lý thuốc trừ sâu cảnh báo rằng:",
+    "options": [
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Repeated identical tests lose effectiveness",
+        "vi": "Lặp lại cùng kiểm thử làm giảm hiệu quả"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      }
+    ],
+    "correctEn": "Repeated identical tests lose effectiveness",
+    "correctVi": "Lặp lại cùng kiểm thử làm giảm hiệu quả",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Early testing contributes to:",
+    "questionVi": "Kiểm thử sớm góp phần:",
+    "options": [
+      {
+        "en": "Reducing costs of quality over the lifecycle",
+        "vi": "Giảm chi phí chất lượng trong vòng đời"
+      },
+      {
+        "en": "Eliminating documentation",
+        "vi": "Loại bỏ tài liệu"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      }
+    ],
+    "correctEn": "Reducing costs of quality over the lifecycle",
+    "correctVi": "Giảm chi phí chất lượng trong vòng đời",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which activity answers \"What should be tested?\"",
+    "questionVi": "Hoạt động nào trả lời \"Nên kiểm thử gì?\"",
+    "options": [
+      {
+        "en": "Test analysis",
+        "vi": "Phân tích kiểm thử"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      }
+    ],
+    "correctEn": "Test analysis",
+    "correctVi": "Phân tích kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which activity answers \"How to test?\"",
+    "questionVi": "Hoạt động nào trả lời \"Kiểm thử như thế nào?\"",
+    "options": [
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Test design",
+        "vi": "Thiết kế kiểm thử"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      }
+    ],
+    "correctEn": "Test design",
+    "correctVi": "Thiết kế kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test implementation prepares:",
+    "questionVi": "Triển khai kiểm thử chuẩn bị:",
+    "options": [
+      {
+        "en": "Test procedures/scripts and environment readiness",
+        "vi": "Thủ tục/script và sẵn sàng môi trường"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      }
+    ],
+    "correctEn": "Test procedures/scripts and environment readiness",
+    "correctVi": "Thủ tục/script và sẵn sàng môi trường",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Traceability supports:",
+    "questionVi": "Truy xuất nguồn gốc hỗ trợ:",
+    "options": [
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Coverage assessment and impact of changes",
+        "vi": "Đánh giá bao phủ và tác động thay đổi"
+      }
+    ],
+    "correctEn": "Coverage assessment and impact of changes",
+    "correctVi": "Đánh giá bao phủ và tác động thay đổi",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Quality assurance (QA) is primarily:",
+    "questionVi": "Đảm bảo chất lượng (QA) chủ yếu là:",
+    "options": [
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Process-focused prevention orientation",
+        "vi": "Định hướng phòng ngừa theo quy trình"
+      }
+    ],
+    "correctEn": "Process-focused prevention orientation",
+    "correctVi": "Định hướng phòng ngừa theo quy trình",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Quality control (QC) includes:",
+    "questionVi": "Kiểm soát chất lượng (QC) gồm:",
+    "options": [
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Corrective product-oriented activities including testing",
+        "vi": "Hoạt động hướng sản phẩm, khắc phục, gồm kiểm thử"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      }
+    ],
+    "correctEn": "Corrective product-oriented activities including testing",
+    "correctVi": "Hoạt động hướng sản phẩm, khắc phục, gồm kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "A benefit of tester independence is:",
+    "questionVi": "Lợi ích của độc lập kiểm thử là:",
+    "options": [
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Different perspective may reveal failures developers overlook",
+        "vi": "Góc nhìn khác có thể phát hiện lỗi developer bỏ sót"
+      }
+    ],
+    "correctEn": "Different perspective may reveal failures developers overlook",
+    "correctVi": "Góc nhìn khác có thể phát hiện lỗi developer bỏ sót",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "A drawback of high independence can be:",
+    "questionVi": "Hạn chế của độc lập cao có thể là:",
+    "options": [
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Isolation from developers",
+        "vi": "Bị cô lập khỏi developer"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      }
+    ],
+    "correctEn": "Isolation from developers",
+    "correctVi": "Bị cô lập khỏi developer",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Whole team approach originated notably from:",
+    "questionVi": "Whole team approach nổi bật bắt nguồn từ:",
+    "options": [
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Extreme Programming (XP)",
+        "vi": "Extreme Programming (XP)"
+      }
+    ],
+    "correctEn": "Extreme Programming (XP)",
+    "correctVi": "Extreme Programming (XP)",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Verification aims at:",
+    "questionVi": "Xác minh (verification) nhằm:",
+    "options": [
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Specified requirements fulfillment",
+        "vi": "Đáp ứng yêu cầu đặc tả"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      }
+    ],
+    "correctEn": "Specified requirements fulfillment",
+    "correctVi": "Đáp ứng yêu cầu đặc tả",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Validation aims at:",
+    "questionVi": "Xác thực (validation) nhằm:",
+    "options": [
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Stakeholder needs in operational environment",
+        "vi": "Nhu cầu bên liên quan trong môi trường vận hành"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      }
+    ],
+    "correctEn": "Stakeholder needs in operational environment",
+    "correctVi": "Nhu cầu bên liên quan trong môi trường vận hành",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Dynamic testing requires:",
+    "questionVi": "Kiểm thử động yêu cầu:",
+    "options": [
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Executing the software",
+        "vi": "Thực thi phần mềm"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      }
+    ],
+    "correctEn": "Executing the software",
+    "correctVi": "Thực thi phần mềm",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Static testing includes:",
+    "questionVi": "Kiểm thử tĩnh gồm:",
+    "options": [
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Only running GUI automation",
+        "vi": "Chỉ chạy tự động GUI"
+      },
+      {
+        "en": "Reviews and static analysis",
+        "vi": "Đánh giá và phân tích tĩnh"
+      }
+    ],
+    "correctEn": "Reviews and static analysis",
+    "correctVi": "Đánh giá và phân tích tĩnh",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Testware includes:",
+    "questionVi": "Testware gồm:",
+    "options": [
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Artifacts produced during testing (plans, cases, scripts…)",
+        "vi": "Sản phẩm làm việc của kiểm thử (kế hoạch, ca, script…)"
+      },
+      {
+        "en": "Only payroll records",
+        "vi": "Chỉ hồ sơ lương"
+      }
+    ],
+    "correctEn": "Artifacts produced during testing (plans, cases, scripts…)",
+    "correctVi": "Sản phẩm làm việc của kiểm thử (kế hoạch, ca, script…)",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test monitoring primarily:",
+    "questionVi": "Giám sát kiểm thử chủ yếu:",
+    "options": [
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Gathers information on progress vs criteria",
+        "vi": "Thu thập thông tin tiến độ so với tiêu chí"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      }
+    ],
+    "correctEn": "Gathers information on progress vs criteria",
+    "correctVi": "Thu thập thông tin tiến độ so với tiêu chí",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test basis provides:",
+    "questionVi": "Cơ sở kiểm thử cung cấp:",
+    "options": [
+      {
+        "en": "Foundation for test decisions and expected results",
+        "vi": "Nền tảng cho quyết định và kết quả mong đợi"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      }
+    ],
+    "correctEn": "Foundation for test decisions and expected results",
+    "correctVi": "Nền tảng cho quyết định và kết quả mong đợi",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which is a typical test objective?",
+    "questionVi": "Mục tiêu nào là mục tiêu kiểm thử điển hình?",
+    "options": [
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "To cause failures and find defects",
+        "vi": "Để gây ra thất bại và tìm khiếm khuyết"
+      }
+    ],
+    "correctEn": "To cause failures and find defects",
+    "correctVi": "Để gây ra thất bại và tìm khiếm khuyết",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Testing shows:",
+    "questionVi": "Kiểm thử cho thấy:",
+    "options": [
+      {
+        "en": "The presence of defects",
+        "vi": "Sự hiện diện của khiếm khuyết"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      }
+    ],
+    "correctEn": "The presence of defects",
+    "correctVi": "Sự hiện diện của khiếm khuyết",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Debugging focuses on:",
+    "questionVi": "Gỡ lỗi tập trung vào:",
+    "options": [
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Removing the underlying causes of failures",
+        "vi": "Loại bỏ nguyên nhân gốc của thất bại"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      }
+    ],
+    "correctEn": "Removing the underlying causes of failures",
+    "correctVi": "Loại bỏ nguyên nhân gốc của thất bại",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "The causal chain from human mistake is:",
+    "questionVi": "Chuỗi nhân quả từ sai lầm con người là:",
+    "options": [
+      {
+        "en": "Error → Defect → Failure",
+        "vi": "Lỗi → Khiếm khuyết → Thất bại"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      }
+    ],
+    "correctEn": "Error → Defect → Failure",
+    "correctVi": "Lỗi → Khiếm khuyết → Thất bại",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which principle states exhaustive testing is impossible except in trivial cases?",
+    "questionVi": "Nguyên tắc nào nêu kiểm thử toàn diện không khả thi trừ trường hợp tầm thường?",
+    "options": [
+      {
+        "en": "Exhaustive testing is impossible",
+        "vi": "Kiểm thử toàn diện là không thể"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      }
+    ],
+    "correctEn": "Exhaustive testing is impossible",
+    "correctVi": "Kiểm thử toàn diện là không thể",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "\"Absence-of-errors\" is a fallacy\" is which testing principle?",
+    "questionVi": "\"Ảo tưởng không có lỗi\" là nguyên tắc kiểm thử nào?",
+    "options": [
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Principle 7",
+        "vi": "Nguyên tắc 7"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      }
+    ],
+    "correctEn": "Principle 7",
+    "correctVi": "Nguyên tắc 7",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "\"Testing shows presence of defects\" corresponds to:",
+    "questionVi": "\"Kiểm thử cho thấy sự hiện diện khiếm khuyết\" tương ứng:",
+    "options": [
+      {
+        "en": "Principle 1",
+        "vi": "Nguyên tắc 1"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Principle 7",
+        "vi": "Nguyên tắc 7"
+      }
+    ],
+    "correctEn": "Principle 1",
+    "correctVi": "Nguyên tắc 1",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Defect clustering is:",
+    "questionVi": "Khiếm khuyết cụm lại là:",
+    "options": [
+      {
+        "en": "Principle 4",
+        "vi": "Nguyên tắc 4"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Principle 5",
+        "vi": "Nguyên tắc 5"
+      },
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      }
+    ],
+    "correctEn": "Principle 4",
+    "correctVi": "Nguyên tắc 4",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "The pesticide paradox warns that:",
+    "questionVi": "Nghịch lý thuốc trừ sâu cảnh báo rằng:",
+    "options": [
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Repeated identical tests lose effectiveness",
+        "vi": "Lặp lại cùng kiểm thử làm giảm hiệu quả"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      }
+    ],
+    "correctEn": "Repeated identical tests lose effectiveness",
+    "correctVi": "Lặp lại cùng kiểm thử làm giảm hiệu quả",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Early testing contributes to:",
+    "questionVi": "Kiểm thử sớm góp phần:",
+    "options": [
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Reducing costs of quality over the lifecycle",
+        "vi": "Giảm chi phí chất lượng trong vòng đời"
+      },
+      {
+        "en": "Deferring all reviews",
+        "vi": "Hoãn mọi review"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      }
+    ],
+    "correctEn": "Reducing costs of quality over the lifecycle",
+    "correctVi": "Giảm chi phí chất lượng trong vòng đời",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which activity answers \"What should be tested?\"",
+    "questionVi": "Hoạt động nào trả lời \"Nên kiểm thử gì?\"",
+    "options": [
+      {
+        "en": "Test analysis",
+        "vi": "Phân tích kiểm thử"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      }
+    ],
+    "correctEn": "Test analysis",
+    "correctVi": "Phân tích kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which activity answers \"How to test?\"",
+    "questionVi": "Hoạt động nào trả lời \"Kiểm thử như thế nào?\"",
+    "options": [
+      {
+        "en": "Test design",
+        "vi": "Thiết kế kiểm thử"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      }
+    ],
+    "correctEn": "Test design",
+    "correctVi": "Thiết kế kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test implementation prepares:",
+    "questionVi": "Triển khai kiểm thử chuẩn bị:",
+    "options": [
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Test procedures/scripts and environment readiness",
+        "vi": "Thủ tục/script và sẵn sàng môi trường"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      }
+    ],
+    "correctEn": "Test procedures/scripts and environment readiness",
+    "correctVi": "Thủ tục/script và sẵn sàng môi trường",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Traceability supports:",
+    "questionVi": "Truy xuất nguồn gốc hỗ trợ:",
+    "options": [
+      {
+        "en": "Traceability replaces test completion",
+        "vi": "Truy xuất nguồn gốc thay kết thúc kiểm thử"
+      },
+      {
+        "en": "Coverage assessment and impact of changes",
+        "vi": "Đánh giá bao phủ và tác động thay đổi"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      }
+    ],
+    "correctEn": "Coverage assessment and impact of changes",
+    "correctVi": "Đánh giá bao phủ và tác động thay đổi",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Quality assurance (QA) is primarily:",
+    "questionVi": "Đảm bảo chất lượng (QA) chủ yếu là:",
+    "options": [
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Process-focused prevention orientation",
+        "vi": "Định hướng phòng ngừa theo quy trình"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Finding defects during execution",
+        "vi": "Tìm khiếm khuyết khi thực thi"
+      }
+    ],
+    "correctEn": "Process-focused prevention orientation",
+    "correctVi": "Định hướng phòng ngừa theo quy trình",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Quality control (QC) includes:",
+    "questionVi": "Kiểm soát chất lượng (QC) gồm:",
+    "options": [
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Corrective product-oriented activities including testing",
+        "vi": "Hoạt động hướng sản phẩm, khắc phục, gồm kiểm thử"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      }
+    ],
+    "correctEn": "Corrective product-oriented activities including testing",
+    "correctVi": "Hoạt động hướng sản phẩm, khắc phục, gồm kiểm thử",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "A benefit of tester independence is:",
+    "questionVi": "Lợi ích của độc lập kiểm thử là:",
+    "options": [
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Different perspective may reveal failures developers overlook",
+        "vi": "Góc nhìn khác có thể phát hiện lỗi developer bỏ sót"
+      },
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      }
+    ],
+    "correctEn": "Different perspective may reveal failures developers overlook",
+    "correctVi": "Góc nhìn khác có thể phát hiện lỗi developer bỏ sót",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "A drawback of high independence can be:",
+    "questionVi": "Hạn chế của độc lập cao có thể là:",
+    "options": [
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Isolation from developers",
+        "vi": "Bị cô lập khỏi developer"
+      }
+    ],
+    "correctEn": "Isolation from developers",
+    "correctVi": "Bị cô lập khỏi developer",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Whole team approach originated notably from:",
+    "questionVi": "Whole team approach nổi bật bắt nguồn từ:",
+    "options": [
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      },
+      {
+        "en": "ITIL only",
+        "vi": "Chỉ ITIL"
+      },
+      {
+        "en": "Extreme Programming (XP)",
+        "vi": "Extreme Programming (XP)"
+      },
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      }
+    ],
+    "correctEn": "Extreme Programming (XP)",
+    "correctVi": "Extreme Programming (XP)",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Verification aims at:",
+    "questionVi": "Xác minh (verification) nhằm:",
+    "options": [
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Specified requirements fulfillment",
+        "vi": "Đáp ứng yêu cầu đặc tả"
+      }
+    ],
+    "correctEn": "Specified requirements fulfillment",
+    "correctVi": "Đáp ứng yêu cầu đặc tả",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Validation aims at:",
+    "questionVi": "Xác thực (validation) nhằm:",
+    "options": [
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Only developers ever test",
+        "vi": "Chỉ developer mới kiểm thử"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "Stakeholder needs in operational environment",
+        "vi": "Nhu cầu bên liên quan trong môi trường vận hành"
+      }
+    ],
+    "correctEn": "Stakeholder needs in operational environment",
+    "correctVi": "Nhu cầu bên liên quan trong môi trường vận hành",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Dynamic testing requires:",
+    "questionVi": "Kiểm thử động yêu cầu:",
+    "options": [
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "Test analysis answers \"How to test?\"",
+        "vi": "Phân tích kiểm thử trả lời \"Kiểm thử như thế nào?\""
+      },
+      {
+        "en": "Executing the software",
+        "vi": "Thực thi phần mềm"
+      },
+      {
+        "en": "Defect → Error → Failure",
+        "vi": "Khiếm khuyết → Lỗi → Thất bại"
+      }
+    ],
+    "correctEn": "Executing the software",
+    "correctVi": "Thực thi phần mềm",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Static testing includes:",
+    "questionVi": "Kiểm thử tĩnh gồm:",
+    "options": [
+      {
+        "en": "Exhaustive testing is mandatory",
+        "vi": "Kiểm thử toàn diện là bắt buộc"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Reviews and static analysis",
+        "vi": "Đánh giá và phân tích tĩnh"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      }
+    ],
+    "correctEn": "Reviews and static analysis",
+    "correctVi": "Đánh giá và phân tích tĩnh",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Testware includes:",
+    "questionVi": "Testware gồm:",
+    "options": [
+      {
+        "en": "Only source code",
+        "vi": "Chỉ mã nguồn"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      },
+      {
+        "en": "Artifacts produced during testing (plans, cases, scripts…)",
+        "vi": "Sản phẩm làm việc của kiểm thử (kế hoạch, ca, script…)"
+      }
+    ],
+    "correctEn": "Artifacts produced during testing (plans, cases, scripts…)",
+    "correctVi": "Sản phẩm làm việc của kiểm thử (kế hoạch, ca, script…)",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test monitoring primarily:",
+    "questionVi": "Giám sát kiểm thử chủ yếu:",
+    "options": [
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Gathers information on progress vs criteria",
+        "vi": "Thu thập thông tin tiến độ so với tiêu chí"
+      },
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "Sets salaries",
+        "vi": "Đặt lương"
+      }
+    ],
+    "correctEn": "Gathers information on progress vs criteria",
+    "correctVi": "Thu thập thông tin tiến độ so với tiêu chí",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Test basis provides:",
+    "questionVi": "Cơ sở kiểm thử cung cấp:",
+    "options": [
+      {
+        "en": "Higher independence has no drawbacks",
+        "vi": "Độc lập cao không có hạn chế"
+      },
+      {
+        "en": "Test design answers \"What to test?\"",
+        "vi": "Thiết kế kiểm thử trả lời \"Kiểm thử cái gì?\""
+      },
+      {
+        "en": "Foundation for test decisions and expected results",
+        "vi": "Nền tảng cho quyết định và kết quả mong đợi"
+      },
+      {
+        "en": "To replace quality assurance",
+        "vi": "Để thay thế đảm bảo chất lượng"
+      }
+    ],
+    "correctEn": "Foundation for test decisions and expected results",
+    "correctVi": "Nền tảng cho quyết định và kết quả mong đợi",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Which is a typical test objective?",
+    "questionVi": "Mục tiêu nào là mục tiêu kiểm thử điển hình?",
+    "options": [
+      {
+        "en": "Verification checks user operational needs",
+        "vi": "Xác minh kiểm tra nhu cầu vận hành người dùng"
+      },
+      {
+        "en": "To cause failures and find defects",
+        "vi": "Để gây ra thất bại và tìm khiếm khuyết"
+      },
+      {
+        "en": "Testing is the same as debugging",
+        "vi": "Kiểm thử giống gỡ lỗi"
+      },
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      }
+    ],
+    "correctEn": "To cause failures and find defects",
+    "correctVi": "Để gây ra thất bại và tìm khiếm khuyết",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Testing shows:",
+    "questionVi": "Kiểm thử cho thấy:",
+    "options": [
+      {
+        "en": "Validation checks specifications only",
+        "vi": "Xác thực chỉ kiểm tra đặc tả"
+      },
+      {
+        "en": "The presence of defects",
+        "vi": "Sự hiện diện của khiếm khuyết"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      },
+      {
+        "en": "Whole team approach comes from Waterfall",
+        "vi": "Whole team đến từ Waterfall"
+      }
+    ],
+    "correctEn": "The presence of defects",
+    "correctVi": "Sự hiện diện của khiếm khuyết",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  },
+  {
+    "questionEn": "Debugging focuses on:",
+    "questionVi": "Gỡ lỗi tập trung vào:",
+    "options": [
+      {
+        "en": "To prove the absence of defects",
+        "vi": "Để chứng minh sự vắng mặt của khiếm khuyết"
+      },
+      {
+        "en": "Removing the underlying causes of failures",
+        "vi": "Loại bỏ nguyên nhân gốc của thất bại"
+      },
+      {
+        "en": "Planning release parties",
+        "vi": "Lập kế hoạch tiệc phát hành"
+      },
+      {
+        "en": "Failure → Error → Defect",
+        "vi": "Thất bại → Lỗi → Khiếm khuyết"
+      }
+    ],
+    "correctEn": "Removing the underlying causes of failures",
+    "correctVi": "Loại bỏ nguyên nhân gốc của thất bại",
+    "explanation": "* **Đúng / Correct:** Matches ISTQB CTFL v4.0.1 — Chapter 1 (Fundamentals of Testing).\n* **Sai / Incorrect:** Contradicts glossary, principles, or roles described in the syllabus."
+  }
+]

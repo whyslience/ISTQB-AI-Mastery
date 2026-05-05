@@ -6,7 +6,11 @@ import { ArrowLeft, Lightbulb, ChevronLeft, ChevronRight } from "lucide-react";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { syllabusData } from "@/data/syllabus";
+import {
+  contentMarkdownSubdir,
+  getChapterTrackId,
+  resolveSyllabusChapter,
+} from "@/lib/syllabus-tracks";
 import MiniQuiz from "@/components/MiniQuiz";
 import TableOfContents from "@/components/TableOfContents";
 import { hasVietnameseChars, splitEnViPair } from "@/lib/bilingual-split";
@@ -40,18 +44,22 @@ function makeUniqueSlugFactory() {
 
 export default async function ChapterReview({ params }: { params: Promise<{ chapterId: string }> }) {
   const resolvedParams = await params;
-  const chapterIndex = syllabusData.findIndex(c => c.id === resolvedParams.chapterId);
-  const chapter = syllabusData[chapterIndex];
-  
-  if (!chapter) return notFound();
+  const resolved = resolveSyllabusChapter(resolvedParams.chapterId);
+  if (!resolved) return notFound();
 
-  const prevChapter = chapterIndex > 0 ? syllabusData[chapterIndex - 1] : null;
-  const nextChapter = chapterIndex < syllabusData.length - 1 ? syllabusData[chapterIndex + 1] : null;
+  const { chapter, chapters: syllabusList } = resolved;
+  const chapterIndex = syllabusList.findIndex((c) => c.id === chapter.id);
+
+  const prevChapter = chapterIndex > 0 ? syllabusList[chapterIndex - 1] : null;
+  const nextChapter = chapterIndex < syllabusList.length - 1 ? syllabusList[chapterIndex + 1] : null;
+
+  const trackId = getChapterTrackId(chapter.id);
 
   // Read Markdown file
   let markdownContent = "";
   try {
-    const filePath = path.join(process.cwd(), "src/content/chapters", `${chapter.id}.md`);
+    const subdir = contentMarkdownSubdir(chapter.id);
+    const filePath = path.join(process.cwd(), "src/content", subdir, `${chapter.id}.md`);
     markdownContent = fs.readFileSync(filePath, "utf-8");
   } catch (error) {
     console.error("Failed to read markdown file", error);
@@ -107,7 +115,7 @@ export default async function ChapterReview({ params }: { params: Promise<{ chap
   const nextMarkdownHeadingId = (children: ReactNode) =>
     mdHeadingIds[mdRenderHeadingIdx++] ?? slugify(String(children));
 
-  const chapterNavItems = syllabusData.map((c) => ({
+  const chapterNavItems = syllabusList.map((c) => ({
     id: c.id,
     chapterNumber: c.chapterNumber,
     titleEn: c.titleEn,
@@ -137,8 +145,11 @@ export default async function ChapterReview({ params }: { params: Promise<{ chap
 
         {/* Header Section */}
         <div className="mb-12 animate-in fade-in slide-in-from-bottom-4 duration-500">
+          <p className="text-xs font-bold uppercase tracking-widest mb-2 opacity-70" style={{ color: "var(--color-text-muted)" }}>
+            {trackId === "ctai" ? "ISTQB CT-AI v2.0" : "ISTQB CTFL v4.0.1"}
+          </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-2 text-[var(--color-accent)]">
-            Chapter {chapter.chapterNumber}: {chapter.titleEn} / {chapter.titleVi}
+            {trackId === "ctai" ? "Section" : "Chapter"} {chapter.chapterNumber}: {chapter.titleEn} / {chapter.titleVi}
           </h1>
         </div>
 

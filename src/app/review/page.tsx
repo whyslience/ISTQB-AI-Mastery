@@ -4,12 +4,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { ChevronRight, GraduationCap, Cpu, Sparkles, Lock, BookOpenCheck } from "lucide-react";
 import { syllabusData } from "@/data/syllabus";
+import { ctaiSyllabusData } from "@/data/syllabus-ai";
 import { useState } from "react";
 
 const courses = [
   { id: 'ctfl', label: 'Foundation (4.0)', icon: BookOpenCheck, active: true },
+  { id: 'ai', label: 'CT-AI (v2.0)', icon: Cpu, active: true },
   { id: 'advanced', label: 'Advanced Level', icon: GraduationCap, active: false },
-  { id: 'ai', label: 'AI Mastery', icon: Cpu, active: false },
 ];
 
 export default function SyllabusPage() {
@@ -125,10 +126,78 @@ export default function SyllabusPage() {
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="hidden md:flex flex-col items-end mr-4">
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-accent)]">Module 0{i+1}</span>
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-accent)]">Module {(i + 1).toString().padStart(2, "0")}</span>
                         <span className="text-xs font-medium opacity-50">Verified</span>
                       </div>
                       <ChevronRight className="shrink-0 transition-transform group-hover:translate-x-1" style={{ width: 24, height: 24, color: "var(--color-accent)" }} />
+                    </div>
+                  </Link>
+                </motion.div>
+              ))}
+            </motion.div>
+          ) : activeTab === "ai" ? (
+            <motion.div
+              key="ai"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              className="grid grid-cols-1 gap-4"
+            >
+              <div className="mb-4 px-2">
+                <h3 className="text-sm font-bold uppercase tracking-widest text-[var(--color-purple)]">
+                  ISTQB Certified Tester AI Testing v2.0 (GA)
+                </h3>
+                <p className="text-xs mt-2" style={{ color: "var(--color-text-muted)" }}>
+                  Bilingual summaries; canonical wording: <code className="text-[11px]">src/content/ISTQB-_CTAI_Syllabus_v2.0_Release.md</code>
+                </p>
+              </div>
+              {ctaiSyllabusData.map((chapter, i) => (
+                <motion.div
+                  key={chapter.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.04 }}
+                >
+                  <Link
+                    href={`/review/${chapter.id}`}
+                    className="card group p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
+                    style={{ borderLeft: "4px solid var(--color-purple)" }}
+                  >
+                    <div className="flex items-start gap-5">
+                      <div
+                        className="flex items-center justify-center rounded-2xl shrink-0 mt-1 transition-transform group-hover:scale-110"
+                        style={{
+                          width: 52,
+                          height: 52,
+                          background: "var(--color-purple-soft)",
+                          color: "var(--color-purple)",
+                        }}
+                      >
+                        <span className="font-black text-xl">{chapter.chapterNumber}</span>
+                      </div>
+                      <div>
+                        <h2 className="text-xl font-bold mb-1 group-hover:text-[var(--color-purple)] transition-colors">
+                          {chapter.titleEn}
+                        </h2>
+                        <h3 className="text-sm font-semibold opacity-70 mb-3" style={{ color: "var(--color-text-primary)" }}>
+                          {chapter.titleVi}
+                        </h3>
+                        <p className="text-sm line-clamp-2 leading-relaxed" style={{ color: "var(--color-text-muted)" }}>
+                          {chapter.descriptionVi}
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <div className="hidden md:flex flex-col items-end mr-4">
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-purple)]">
+                          CT-AI {(i + 1).toString().padStart(2, "0")}
+                        </span>
+                        <span className="text-xs font-medium opacity-50">v2.0</span>
+                      </div>
+                      <ChevronRight
+                        className="shrink-0 transition-transform group-hover:translate-x-1"
+                        style={{ width: 24, height: 24, color: "var(--color-purple)" }}
+                      />
                     </div>
                   </Link>
                 </motion.div>
@@ -155,9 +224,9 @@ export default function SyllabusPage() {
                 <span className="text-lg opacity-60">Kho Kiến thức Sắp ra mắt</span>
               </h2>
               <p className="text-center max-w-sm mb-8" style={{ color: "var(--color-text-secondary)" }}>
-                We are currently processing the {activeTab === 'advanced' ? 'Advanced Level' : 'AI Testing'} syllabus into our bilingual AI-powered format.
+                We are currently processing the Advanced Level syllabus into our bilingual AI-powered format.
                 <br /><br />
-                Chúng tôi đang xử lý giáo trình {activeTab === 'advanced' ? 'Advanced Level' : 'Kiểm thử AI'} sang định dạng song ngữ hỗ trợ bởi AI.
+                Chúng tôi đang xử lý giáo trình Advanced Level sang định dạng song ngữ hỗ trợ bởi AI.
               </p>
               <div className="flex gap-3">
                 <span className="px-4 py-1.5 rounded-full text-[10px] font-bold bg-purple-500/10 text-purple-500 uppercase tracking-widest border border-purple-500/20">

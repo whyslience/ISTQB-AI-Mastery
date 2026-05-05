@@ -5,7 +5,8 @@ Context for AI coding agents (Cursor, Claude Code, etc.) working in this reposit
 ## What this project is
 
 - **ISTQB CTFL v4.0.1** study companion: bilingual (EN/VI) chapter guides, chapter quizzes, timed exam practice, and optional AI feedback after submit.
-- **Canonical syllabus text:** Markdown under `src/content/chapters/` plus official exports in `src/content/ISTQB_CTFL_Syllabus_v4.0.1.*` (do not invent syllabus wording; align with v4.0.1).
+- **ISTQB CT-AI v2.0 (GA)** track: bilingual summaries under `src/content/chapters-ai/`; canonical export `src/content/ISTQB-_CTAI_Syllabus_v2.0_Release.md` (align terminology with official syllabus; exam uses official LO/BO wording).
+- **Canonical CTFL syllabus text:** Markdown under `src/content/chapters/` plus official exports in `src/content/ISTQB_CTFL_Syllabus_v4.0.1.*` (do not invent syllabus wording; align with v4.0.1).
 
 ## Stack
 
@@ -22,8 +23,11 @@ Context for AI coding agents (Cursor, Claude Code, etc.) working in this reposit
 | API | `src/app/api/` | `generate` (local bank), `submit` (grade + optional Gemini + optional DB), `history` |
 | UI | `src/components/` | `Navbar`, `MiniQuiz`, `TableOfContents` |
 | Syllabus metadata + quiz wiring | `src/data/syllabus.ts` | Imports `chapter-*.json` into each chapter’s `quiz` |
+| CT-AI track metadata | `src/data/syllabus-ai.ts` | `ctaiSyllabusData`; `quiz: []` until a question bank exists |
+| CTFL vs CT-AI resolution | `src/lib/syllabus-tracks.ts` | `resolveSyllabusChapter`, `contentMarkdownSubdir` for `/review/[chapterId]` |
 | Question bank JSON | `src/data/questions/chapter-1.json` … `chapter-6.json` | `QuizQuestion[]`; see `docs/MANUAL_QUESTIONS.md` |
 | Chapter prose | `src/content/chapters/*.md` | Bilingual headings; TOC logic in `src/lib/markdown-toc.ts`, `bilingual-split.ts` |
+| CT-AI chapter prose | `src/content/chapters-ai/ctai-*.md` | Same markdown/TOC behaviour; ids prefixed `ctai-` |
 | Types | `src/types/index.ts` | `Question` (exam transport), `Attempt`, etc. |
 | Quiz validation (optional tooling) | `src/lib/quiz-validate.ts` | Shape checks for `QuizQuestion` |
 

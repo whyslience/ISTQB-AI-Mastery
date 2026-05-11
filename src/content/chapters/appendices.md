@@ -22,7 +22,7 @@ For the full normative wording and examples, open the official syllabus PDF or `
 
 ---
 
-## Appendix B: Business Outcomes Traceability Matrix / Phụ lục B: Ma trận Truy vết Business Outcomes
+## Appendix B: Business Outcomes Traceability Matrix / Phụ lục B: Ma trận Truy xuất nguồn gốc Business Outcomes
 
 Appendix B maps each Business Outcome (FL-BO1 … FL-BO14) to the learning objectives that support it.
 

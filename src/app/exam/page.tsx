@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, ArrowLeft, Send, Loader2, RefreshCw } from "lucide-react";
+import { ArrowRight, ArrowLeft, Send, Loader2, RefreshCw, Clock } from "lucide-react";
 import { useRouter } from "next/navigation";
 import type { Question } from "@/types";
 import { EXAM_TOPIC_GROUPS, EXAM_TOPICS_UI_ORDER } from "@/lib/exam-from-syllabus";
@@ -32,18 +32,19 @@ function isFullExamTopic(t: string) {
   return t === "Full Exam" || t === "CT-AI Full Exam";
 }
 
-const DIFFICULTIES = ["easy", "medium", "hard"] as const;
+const DIFFICULTIES = ["easy", "medium", "hard", "random"] as const;
 const DIFF_COLORS: Record<string, { color: string; bg: string }> = {
   easy: { color: "var(--color-success)", bg: "var(--color-success-soft)" },
   medium: { color: "var(--color-warning)", bg: "rgba(245, 158, 11, 0.1)" },
   hard: { color: "var(--color-danger)", bg: "var(--color-danger-soft)" },
+  random: { color: "var(--color-accent)", bg: "var(--color-accent-soft)" },
 };
 
 export default function ExamPage() {
   const router = useRouter();
 
   const [topic, setTopic] = useState(TOPICS[0]);
-  const [difficulty, setDifficulty] = useState<"easy" | "medium" | "hard">("medium");
+  const [difficulty, setDifficulty] = useState<"easy" | "medium" | "hard" | "random">("medium");
   const [started, setStarted] = useState(false);
 
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -52,6 +53,21 @@ export default function ExamPage() {
   const [loading, setLoading] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  const [timeLeft, setTimeLeft] = useState(0);
+  const [timerActive, setTimerActive] = useState(false);
+
+  useEffect(() => {
+    if (!timerActive || timeLeft <= 0) return;
+    const id = setInterval(() => setTimeLeft(prev => prev - 1), 1000);
+    return () => clearInterval(id);
+  }, [timerActive, timeLeft]);
+
+  const formatTime = (secs: number) => {
+    const m = Math.floor(secs / 60);
+    const s = secs % 60;
+    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+  };
 
   const loadQuestions = useCallback(async () => {
     setLoading(true);
@@ -70,6 +86,8 @@ export default function ExamPage() {
       setQuestions(data);
       setCurrentIdx(0);
       setAnswers({});
+      setTimeLeft(isFullExam ? 60 * 60 : 10 * 60);
+      setTimerActive(true);
     } catch {
       setError("Could not load questions. Tap Retry or go Back. / Không tải được—chọn Thử lại hoặc Quay lại.");
     } finally {
@@ -210,7 +228,7 @@ export default function ExamPage() {
                       <div className="flex flex-col items-center">
                         <span>{d}</span>
                         <span className="text-[10px] opacity-60">
-                          {d === "easy" ? "Dễ" : d === "medium" ? "Vừa" : "Khó"}
+                          {d === "easy" ? "Dễ" : d === "medium" ? "Vừa" : d === "hard" ? "Khó" : "Trộn"}
                         </span>
                       </div>
                     </button>
@@ -300,13 +318,21 @@ export default function ExamPage() {
             />
           </div>
         </div>
-        <button
-          onClick={() => setStarted(false)}
-          className="text-xs font-medium transition-colors"
-          style={{ color: "var(--color-text-muted)", cursor: "pointer", background: "none", border: "none" }}
-        >
-          Exit / Thoát
-        </button>
+        <div className="flex items-center gap-4">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full" style={{ background: "var(--color-surface-raised)", color: "var(--color-text-primary)" }}>
+            <Clock style={{ width: 14, height: 14, color: timeLeft < 300 ? "var(--color-danger)" : "var(--color-accent)" }} />
+            <span className="text-xs font-bold font-mono" style={{ color: timeLeft < 300 ? "var(--color-danger)" : "inherit", letterSpacing: 1 }}>
+              {formatTime(timeLeft)}
+            </span>
+          </div>
+          <button
+            onClick={() => { setStarted(false); setTimerActive(false); }}
+            className="text-xs font-medium transition-colors"
+            style={{ color: "var(--color-text-muted)", cursor: "pointer", background: "none", border: "none" }}
+          >
+            Exit / Thoát
+          </button>
+        </div>
       </div>
 
       {/* Question card */}
@@ -336,15 +362,22 @@ export default function ExamPage() {
             </span>
           </div>
 
-          <h2 className="text-lg font-semibold leading-relaxed mb-8">{currentQ.question}</h2>
+          <div className="mb-8">
+            <h2 className="text-lg font-semibold leading-relaxed mb-1">{currentQ.question}</h2>
+            {currentQ.questionVi && (
+              <h3 className="text-sm italic opacity-80" style={{ color: "var(--color-text-secondary)" }}>
+                {currentQ.questionVi}
+              </h3>
+            )}
+          </div>
 
           <div className="flex flex-col gap-3">
             {currentQ.options.map((option, i) => {
-              const selected = answers[currentQ.id] === option;
+              const selected = answers[currentQ.id] === option.en;
               return (
                 <button
                   key={i}
-                  onClick={() => handleSelect(option)}
+                  onClick={() => handleSelect(option.en)}
                   className="flex items-center gap-4 text-left px-5 py-4 rounded-2xl transition-all duration-200"
                   style={{
                     background: selected ? "var(--color-accent-soft)" : "var(--color-surface-sunken)",
@@ -363,7 +396,10 @@ export default function ExamPage() {
                   >
                     {String.fromCharCode(65 + i)}
                   </span>
-                  <span className="text-sm leading-snug">{option}</span>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-sm leading-snug">{option.en}</span>
+                    <span className="text-xs italic opacity-70">{option.vi}</span>
+                  </div>
                 </button>
               );
             })}
@@ -385,28 +421,28 @@ export default function ExamPage() {
           </div>
         </button>
 
-        {/* Dots */}
-        <div className="flex gap-1.5">
-          {questions.map((q, i) => (
-            <button
-              key={q.id}
-              onClick={() => setCurrentIdx(i)}
-              style={{
-                width: i === currentIdx ? 20 : 8,
-                height: 8,
-                borderRadius: 999,
-                background: i === currentIdx
-                  ? "var(--color-accent)"
-                  : answers[q.id]
-                  ? "var(--color-success)"
-                  : "var(--color-border)",
-                transition: "all 0.3s",
-                cursor: "pointer",
-                border: "none",
-                padding: 0,
-              }}
-            />
-          ))}
+        {/* Navigation Grid */}
+        <div className="flex flex-1 flex-wrap justify-center gap-1.5 mx-4 max-h-[120px] overflow-y-auto">
+          {questions.map((q, i) => {
+            const isAnswered = !!answers[q.id];
+            const isCurrent = i === currentIdx;
+            return (
+              <button
+                key={q.id}
+                onClick={() => setCurrentIdx(i)}
+                className="flex items-center justify-center rounded-md text-xs font-semibold transition-all"
+                style={{
+                  width: 28, height: 28,
+                  background: isCurrent ? "var(--color-accent)" : isAnswered ? "var(--color-success)" : "var(--color-surface-raised)",
+                  color: (isCurrent || isAnswered) ? "#fff" : "var(--color-text-primary)",
+                  border: `1px solid ${isCurrent ? "var(--color-accent)" : isAnswered ? "var(--color-success)" : "var(--color-border)"}`,
+                  cursor: "pointer"
+                }}
+              >
+                {i + 1}
+              </button>
+            );
+          })}
         </div>
 
         {currentIdx === questions.length - 1 ? (

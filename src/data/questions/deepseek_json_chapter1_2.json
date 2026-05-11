@@ -1,0 +1,379 @@
+[
+  {
+    "questionEn": "During a sprint retrospective, the team discusses testing bottlenecks. They decide to involve testers earlier in requirement reviews. Which testing principle does this improvement support?",
+    "questionVi": "Trong một buổi họp rút kinh nghiệm của sprint, nhóm thảo luận về các điểm nghẽn trong kiểm thử. Họ quyết định cho kiểm thử viên tham gia sớm hơn vào việc xem xét yêu cầu. Nguyên tắc kiểm thử nào được hỗ trợ bởi cải tiến này?",
+    "options": [
+      { "en": "Testing shows the presence of defects", "vi": "Kiểm thử cho thấy sự hiện diện của khiếm khuyết" },
+      { "en": "Early testing saves time and money", "vi": "Kiểm thử sớm tiết kiệm thời gian và tiền bạc" },
+      { "en": "Defects cluster together", "vi": "Khiếm khuyết tập trung thành cụm" },
+      { "en": "Absence-of-defects fallacy", "vi": "Ngụy biện không có lỗi" }
+    ],
+    "correctEn": "Early testing saves time and money",
+    "correctVi": "Kiểm thử sớm tiết kiệm thời gian và tiền bạc",
+    "explanation": "Nguyên tắc 3 nhấn mạnh việc bắt đầu kiểm thử (cả tĩnh và động) càng sớm càng tốt giúp giảm chi phí sửa lỗi. Việc cho tester tham gia review yêu cầu là một hoạt động kiểm thử sớm (K2)."
+  },
+  {
+    "questionEn": "A tester finds a problem in a configuration file that causes the application to crash on startup. The tester logs the issue. What term best describes this problem?",
+    "questionVi": "Một kiểm thử viên tìm thấy một vấn đề trong tệp cấu hình khiến ứng dụng sập khi khởi động. Kiểm thử viên ghi lại vấn đề đó. Thuật ngữ nào mô tả tốt nhất vấn đề này?",
+    "options": [
+      { "en": "An error", "vi": "Một lỗi (error)" },
+      { "en": "A defect", "vi": "Một khiếm khuyết (defect)" },
+      { "en": "A root cause", "vi": "Một nguyên nhân gốc rễ" },
+      { "en": "A mistake", "vi": "Một sơ suất (mistake)" }
+    ],
+    "correctEn": "A defect",
+    "correctVi": "Một khiếm khuyết (defect)",
+    "explanation": "Vấn đề trong tệp cấu hình là một sai sót trong sản phẩm làm việc, tức là một defect. Việc ứng dụng sập là failure. Lỗi của con người khi tạo ra defect đó là error/mistake. Root cause là lý do cơ bản (ví dụ thiếu kiểm tra). (K2, syllabus 1.2.3)"
+  },
+  {
+    "questionEn": "A developer accidentally writes '>' instead of '<' in a condition. This is an example of:",
+    "questionVi": "Một lập trình viên vô tình viết '>' thay vì '<' trong một điều kiện. Đây là ví dụ của:",
+    "options": [
+      { "en": "An error", "vi": "Một lỗi (error)" },
+      { "en": "A failure", "vi": "Một thất bại (failure)" },
+      { "en": "A root cause", "vi": "Một nguyên nhân gốc rễ" },
+      { "en": "A test objective", "vi": "Một mục tiêu kiểm thử" }
+    ],
+    "correctEn": "An error",
+    "correctVi": "Một lỗi (error)",
+    "explanation": "Việc gõ nhầm dấu là một hành động sai của con người, gọi là error (mistake). Nó dẫn đến defect (code sai), khi thực thi sẽ gây failure. (K2, syllabus 1.2.3)"
+  },
+  {
+    "questionEn": "A system crashes when a user enters a negative value in a field that expects a positive integer. The test team reports this. The crash is a:",
+    "questionVi": "Một hệ thống sập khi người dùng nhập giá trị âm vào một trường yêu cầu số nguyên dương. Nhóm kiểm thử báo cáo điều này. Vụ sập là:",
+    "options": [
+      { "en": "A defect", "vi": "Một khiếm khuyết (defect)" },
+      { "en": "A failure", "vi": "Một thất bại (failure)" },
+      { "en": "A root cause", "vi": "Một nguyên nhân gốc rễ" },
+      { "en": "An error", "vi": "Một lỗi (error)" }
+    ],
+    "correctEn": "A failure",
+    "correctVi": "Một thất bại (failure)",
+    "explanation": "Crash là biểu hiện bên ngoài khi hệ thống không thực hiện đúng chức năng, đây là failure. Defect có thể là việc thiếu kiểm tra giá trị đầu vào. (K2, syllabus 1.2.3)"
+  },
+  {
+    "questionEn": "A project has a history of security vulnerabilities in the login module. According to defect clustering, where should the test team focus additional effort?",
+    "questionVi": "Một dự án có lịch sử về các lỗ hổng bảo mật trong module đăng nhập. Theo nguyên tắc khiếm khuyết tập trung, nhóm kiểm thử nên tập trung nỗ lực bổ sung vào đâu?",
+    "options": [
+      { "en": "On all modules equally", "vi": "Vào tất cả các module như nhau" },
+      { "en": "On the login module", "vi": "Vào module đăng nhập" },
+      { "en": "On completely new features only", "vi": "Chỉ vào các tính năng hoàn toàn mới" },
+      { "en": "On the help system", "vi": "Vào hệ thống trợ giúp" }
+    ],
+    "correctEn": "On the login module",
+    "correctVi": "Vào module đăng nhập",
+    "explanation": "Defect clustering (nguyên tắc 4) cho rằng một số ít thành phần chứa phần lớn khiếm khuyết. Do đó, nơi có nhiều lỗi trong quá khứ (module login) cần được kiểm thử kỹ hơn. (K2, syllabus 1.3)"
+  },
+  {
+    "questionEn": "A test team reuses the same regression test suite for two years without changes. Defect detection rate drops significantly. What should the team do based on the pesticide paradox?",
+    "questionVi": "Một nhóm kiểm thử tái sử dụng cùng một bộ kiểm thử hồi quy trong hai năm mà không thay đổi. Tỉ lệ phát hiện khiếm khuyết giảm đáng kể. Nhóm nên làm gì dựa trên nghịch lý thuốc trừ sâu?",
+    "options": [
+      { "en": "Execute the same tests more frequently", "vi": "Thực thi cùng các kiểm thử thường xuyên hơn" },
+      { "en": "Modify existing tests and add new ones", "vi": "Chỉnh sửa các kiểm thử hiện có và thêm các kiểm thử mới" },
+      { "en": "Stop regression testing completely", "vi": "Ngừng hoàn toàn kiểm thử hồi quy" },
+      { "en": "Switch to only manual testing", "vi": "Chuyển sang chỉ kiểm thử thủ công" }
+    ],
+    "correctEn": "Modify existing tests and add new ones",
+    "correctVi": "Chỉnh sửa các kiểm thử hiện có và thêm các kiểm thử mới",
+    "explanation": "Pesticide paradox (nguyên tắc 5) khuyến cáo nếu lặp lại cùng các kiểm thử, hiệu quả giảm. Giải pháp là thay đổi test case, cập nhật bộ kiểm thử. (K2, syllabus 1.3)"
+  },
+  {
+    "questionEn": "A medical device software is tested by an independent external team after internal testing. Despite this, a recall occurs because the device does not meet user expectations in hospitals. Which principle is overlooked?",
+    "questionVi": "Một phần mềm thiết bị y tế được kiểm thử bởi một nhóm độc lập bên ngoài sau khi kiểm thử nội bộ. Mặc dù vậy, một đợt thu hồi xảy ra vì thiết bị không đáp ứng mong đợi của người dùng trong bệnh viện. Nguyên tắc nào đã bị bỏ qua?",
+    "options": [
+      { "en": "Testing shows the presence of defects", "vi": "Kiểm thử cho thấy sự hiện diện của khiếm khuyết" },
+      { "en": "Exhaustive testing is impossible", "vi": "Kiểm thử toàn diện là không thể" },
+      { "en": "Absence-of-defects fallacy", "vi": "Ngụy biện không có lỗi" },
+      { "en": "Defects cluster together", "vi": "Khiếm khuyết tập trung thành cụm" }
+    ],
+    "correctEn": "Absence-of-defects fallacy",
+    "correctVi": "Ngụy biện không có lỗi",
+    "explanation": "Absence-of-defects fallacy (nguyên tắc 7) chỉ ra rằng ngay cả khi đã tìm và sửa hết lỗi, hệ thống vẫn có thể không đáp ứng nhu cầu người dùng. Ở đây họ đã kiểm thử kỹ nhưng không validation đủ. (K2, syllabus 1.3)"
+  },
+  {
+    "questionEn": "A test manager needs to decide which test activity should be performed first for a new project with just completed requirement specification. What should be the first activity?",
+    "questionVi": "Một quản lý kiểm thử cần quyết định hoạt động kiểm thử nào nên được thực hiện đầu tiên cho một dự án mới với đặc tả yêu cầu vừa hoàn thành. Hoạt động đầu tiên nên là gì?",
+    "options": [
+      { "en": "Test execution", "vi": "Thực thi kiểm thử" },
+      { "en": "Test implementation", "vi": "Triển khai kiểm thử" },
+      { "en": "Test analysis", "vi": "Phân tích kiểm thử" },
+      { "en": "Test completion", "vi": "Kết thúc kiểm thử" }
+    ],
+    "correctEn": "Test analysis",
+    "correctVi": "Phân tích kiểm thử",
+    "explanation": "Theo trình tự logic của quy trình kiểm thử, sau khi có cơ sở kiểm thử (requirements), bước đầu tiên là test analysis để xác định 'what to test'. Test design, implementation, execution sẽ theo sau. (K3 áp dụng, syllabus 1.4.1)"
+  },
+  {
+    "questionEn": "A tester is given the following task: 'Create test cases based on the identified test conditions and define the required test data.' Which test activity does this describe?",
+    "questionVi": "Một kiểm thử viên được giao nhiệm vụ: 'Tạo các ca kiểm thử dựa trên các điều kiện kiểm thử đã xác định và định nghĩa dữ liệu kiểm thử cần thiết.' Hoạt động kiểm thử nào mô tả điều này?",
+    "options": [
+      { "en": "Test analysis", "vi": "Phân tích kiểm thử" },
+      { "en": "Test design", "vi": "Thiết kế kiểm thử" },
+      { "en": "Test implementation", "vi": "Triển khai kiểm thử" },
+      { "en": "Test monitoring", "vi": "Giám sát kiểm thử" }
+    ],
+    "correctEn": "Test design",
+    "correctVi": "Thiết kế kiểm thử",
+    "explanation": "Test design bao gồm việc chuyển các test conditions thành test cases, và định nghĩa yêu cầu dữ liệu kiểm thử. Test implementation sau đó mới tạo thủ tục và dữ liệu cụ thể. (K2, syllabus 1.4.1)"
+  },
+  {
+    "questionEn": "The team has completed test case creation and test data preparation. They now need to arrange the test cases into test procedures and set up the test environment. Which activity should they perform?",
+    "questionVi": "Nhóm đã hoàn thành việc tạo ca kiểm thử và chuẩn bị dữ liệu kiểm thử. Họ bây giờ cần sắp xếp các ca kiểm thử thành các thủ tục kiểm thử và thiết lập môi trường kiểm thử. Họ nên thực hiện hoạt động nào?",
+    "options": [
+      { "en": "Test analysis", "vi": "Phân tích kiểm thử" },
+      { "en": "Test design", "vi": "Thiết kế kiểm thử" },
+      { "en": "Test implementation", "vi": "Triển khai kiểm thử" },
+      { "en": "Test execution", "vi": "Thực thi kiểm thử" }
+    ],
+    "correctEn": "Test implementation",
+    "correctVi": "Triển khai kiểm thử",
+    "explanation": "Test implementation bao gồm việc tạo test procedures, xây dựng môi trường, và chuẩn bị mọi thứ sẵn sàng để thực thi. (K2, syllabus 1.4.1)"
+  },
+  {
+    "questionEn": "During test execution, a tester notices that actual results do not match expected results. The tester logs the anomaly and later a developer fixes the code. After the fix, the tester re-runs the failed test. What is this re-run called?",
+    "questionVi": "Trong quá trình thực thi kiểm thử, một kiểm thử viên nhận thấy kết quả thực tế không khớp với kết quả mong đợi. Kiểm thử viên ghi lại sự bất thường và sau đó lập trình viên sửa mã. Sau khi sửa, kiểm thử viên chạy lại bài kiểm thử đã thất bại. Việc chạy lại này được gọi là gì?",
+    "options": [
+      { "en": "Regression testing", "vi": "Kiểm thử hồi quy" },
+      { "en": "Confirmation testing", "vi": "Kiểm thử xác nhận" },
+      { "en": "Static testing", "vi": "Kiểm thử tĩnh" },
+      { "en": "Debugging", "vi": "Gỡ lỗi" }
+    ],
+    "correctEn": "Confirmation testing",
+    "correctVi": "Kiểm thử xác nhận",
+    "explanation": "Chạy lại chính test case đã phát hiện lỗi để xác nhận lỗi đã được sửa là confirmation testing. Regression testing nhằm đảm bảo sửa lỗi không gây ảnh hưởng phụ. (Liên quan Chương 2, nhưng có thể xem như liên kết từ Chương 1 – K2 về test activity)."
+  },
+  {
+    "questionEn": "A tester is preparing a test completion report. Which information should be included?",
+    "questionVi": "Một kiểm thử viên đang chuẩn bị báo cáo kết thúc kiểm thử. Thông tin nào nên được bao gồm?",
+    "options": [
+      { "en": "Detailed test execution logs for every passed test", "vi": "Nhật ký thực thi chi tiết cho mọi kiểm thử đã qua" },
+      { "en": "Lessons learned and residual risks", "vi": "Bài học kinh nghiệm và rủi ro còn lại" },
+      { "en": "Individual performance reviews of developers", "vi": "Đánh giá hiệu suất cá nhân của lập trình viên" },
+      { "en": "The original test plan without any modifications", "vi": "Kế hoạch kiểm thử ban đầu không có bất kỳ chỉnh sửa nào" }
+    ],
+    "correctEn": "Lessons learned and residual risks",
+    "correctVi": "Bài học kinh nghiệm và rủi ro còn lại",
+    "explanation": "Test completion report bao gồm tóm tắt kiểm thử, đánh giá chất lượng, sai lệch so với kế hoạch, bài học kinh nghiệm, rủi ro chưa được giảm thiểu. (K2, syllabus 5.3.2 liên quan đến Chương 1 test completion)."
+  },
+  {
+    "questionEn": "An organization uses risk-based testing. During test planning, they identify a list of risks with likelihood and impact. What is this list called?",
+    "questionVi": "Một tổ chức sử dụng kiểm thử dựa trên rủi ro. Trong lúc lập kế hoạch kiểm thử, họ xác định một danh sách các rủi ro với khả năng xảy ra và tác động. Danh sách này được gọi là gì?",
+    "options": [
+      { "en": "Test charter", "vi": "Test charter" },
+      { "en": "Risk register", "vi": "Sổ đăng ký rủi ro (risk register)" },
+      { "en": "Traceability matrix", "vi": "Ma trận truy xuất" },
+      { "en": "Defect list", "vi": "Danh sách khiếm khuyết" }
+    ],
+    "correctEn": "Risk register",
+    "correctVi": "Sổ đăng ký rủi ro (risk register)",
+    "explanation": "Risk register là một phần của test planning work products, chứa danh sách rủi ro cùng likelihood, impact và thông tin giảm thiểu. (K1 recall, syllabus 1.4.3, 5.2)"
+  },
+  {
+    "questionEn": "Which work product is produced during test implementation?",
+    "questionVi": "Sản phẩm công việc nào được tạo ra trong quá trình triển khai kiểm thử?",
+    "options": [
+      { "en": "Test plan", "vi": "Kế hoạch kiểm thử" },
+      { "en": "Test conditions", "vi": "Điều kiện kiểm thử" },
+      { "en": "Automated test scripts", "vi": "Kịch bản kiểm thử tự động" },
+      { "en": "Test progress report", "vi": "Báo cáo tiến độ kiểm thử" }
+    ],
+    "correctEn": "Automated test scripts",
+    "correctVi": "Kịch bản kiểm thử tự động",
+    "explanation": "Test implementation tạo ra test procedures, manual and automated test scripts, test suites, test data. Test plan thuộc planning; test conditions thuộc analysis; progress report thuộc monitoring. (K1/K2, syllabus 1.4.3)"
+  },
+  {
+    "questionEn": "A test analyst is reviewing a requirement and finds that it is not testable because it lacks measurable acceptance criteria. What should the analyst do?",
+    "questionVi": "Một nhà phân tích kiểm thử đang xem xét một yêu cầu và thấy rằng nó không thể kiểm thử được vì thiếu các tiêu chí chấp nhận có thể đo lường. Nhà phân tích nên làm gì?",
+    "options": [
+      { "en": "Ignore it and move to the next requirement", "vi": "Bỏ qua nó và chuyển sang yêu cầu tiếp theo" },
+      { "en": "Report the defect in the test basis", "vi": "Báo cáo khiếm khuyết trong cơ sở kiểm thử" },
+      { "en": "Write the code for the developer", "vi": "Viết mã cho lập trình viên" },
+      { "en": "Automatically mark the test as passed", "vi": "Tự động đánh dấu kiểm thử là đạt" }
+    ],
+    "correctEn": "Report the defect in the test basis",
+    "correctVi": "Báo cáo khiếm khuyết trong cơ sở kiểm thử",
+    "explanation": "Trong test analysis, nếu phát hiện lỗi trong cơ sở kiểm thử (requirements), tester nên báo cáo defect. Đây là một phần của việc đánh giá test basis. (K2, syllabus 1.4.1)"
+  },
+  {
+    "questionEn": "A test team is about to start test execution. They check if the test environment is ready, all smoke tests passed, and test data is available. What are they verifying?",
+    "questionVi": "Một nhóm kiểm thử sắp bắt đầu thực thi kiểm thử. Họ kiểm tra xem môi trường kiểm thử đã sẵn sàng chưa, tất cả kiểm thử khói đã qua chưa, và dữ liệu kiểm thử đã có chưa. Họ đang xác minh điều gì?",
+    "options": [
+      { "en": "Exit criteria", "vi": "Tiêu chí kết thúc" },
+      { "en": "Entry criteria", "vi": "Tiêu chí bắt đầu" },
+      { "en": "Definition of Done", "vi": "Định nghĩa Hoàn thành" },
+      { "en": "Test completion report", "vi": "Báo cáo kết thúc kiểm thử" }
+    ],
+    "correctEn": "Entry criteria",
+    "correctVi": "Tiêu chí bắt đầu",
+    "explanation": "Entry criteria xác định các điều kiện tiên quyết để bắt đầu một hoạt động, như sẵn sàng môi trường, testware, chất lượng ban đầu. (K2, syllabus 1.4.3, liên quan đến Chương 1 và 5)."
+  },
+  {
+    "questionEn": "During a project, the test lead decides to stop system testing because the planned test cases have been executed and all found defects have been reported. The achieved coverage meets the target. What is this decision based on?",
+    "questionVi": "Trong một dự án, trưởng nhóm kiểm thử quyết định dừng kiểm thử hệ thống vì các ca kiểm thử theo kế hoạch đã được thực thi và tất cả khiếm khuyết tìm thấy đã được báo cáo. Độ bao phủ đạt được đáp ứng mục tiêu. Quyết định này dựa trên điều gì?",
+    "options": [
+      { "en": "Entry criteria", "vi": "Tiêu chí bắt đầu" },
+      { "en": "Exit criteria", "vi": "Tiêu chí kết thúc" },
+      { "en": "Risk register", "vi": "Sổ đăng ký rủi ro" },
+      { "en": "Test charter", "vi": "Test charter" }
+    ],
+    "correctEn": "Exit criteria",
+    "correctVi": "Tiêu chí kết thúc",
+    "explanation": "Exit criteria xác định khi nào một hoạt động có thể kết thúc, ví dụ như độ bao phủ đạt mục tiêu, test case đã chạy, lỗi đã được báo cáo. (K2, syllabus 1.4.3)"
+  },
+  {
+    "questionEn": "A tester is asked to provide a list of all test cases linked to a specific high-risk requirement. Which information helps to provide this quickly?",
+    "questionVi": "Một kiểm thử viên được yêu cầu cung cấp danh sách tất cả các ca kiểm thử liên kết đến một yêu cầu rủi ro cao cụ thể. Thông tin nào giúp cung cấp điều này một cách nhanh chóng?",
+    "options": [
+      { "en": "A detailed test log", "vi": "Nhật ký kiểm thử chi tiết" },
+      { "en": "The traceability between test cases and requirements", "vi": "Khả năng truy xuất giữa các ca kiểm thử và yêu cầu" },
+      { "en": "The risk register", "vi": "Sổ đăng ký rủi ro" },
+      { "en": "The test completion report", "vi": "Báo cáo kết thúc kiểm thử" }
+    ],
+    "correctEn": "The traceability between test cases and requirements",
+    "correctVi": "Khả năng truy xuất giữa các ca kiểm thử và yêu cầu",
+    "explanation": "Traceability giúp liên kết yêu cầu với test case, cho phép xác định nhanh các test case liên quan đến một yêu cầu cụ thể. (K2, syllabus 1.4.4)"
+  },
+  {
+    "questionEn": "You are a tester in a project where the test basis changes frequently. Your manager asks you to assess the impact of a recent change to a core requirement. What should you rely on?",
+    "questionVi": "Bạn là một kiểm thử viên trong một dự án mà cơ sở kiểm thử thay đổi thường xuyên. Quản lý yêu cầu bạn đánh giá tác động của một thay đổi gần đây đối với một yêu cầu cốt lõi. Bạn nên dựa vào điều gì?",
+    "options": [
+      { "en": "Test execution schedule", "vi": "Lịch thực thi kiểm thử" },
+      { "en": "Traceability matrix", "vi": "Ma trận truy xuất nguồn gốc" },
+      { "en": "Configuration management tool", "vi": "Công cụ quản lý cấu hình" },
+      { "en": "Defect report", "vi": "Báo cáo khiếm khuyết" }
+    ],
+    "correctEn": "Traceability matrix",
+    "correctVi": "Ma trận truy xuất nguồn gốc",
+    "explanation": "Traceability cho phép xác định các yếu tố bị ảnh hưởng khi thay đổi yêu cầu, giúp phân tích tác động hiệu quả. (K3 áp dụng, syllabus 1.4.4)"
+  },
+  {
+    "questionEn": "A person is responsible for test planning, monitoring, and control. However, this person also designs and executes test cases. Is this acceptable according to the roles in testing?",
+    "questionVi": "Một người chịu trách nhiệm lập kế hoạch, giám sát và kiểm soát kiểm thử. Tuy nhiên, người này cũng thiết kế và thực thi các ca kiểm thử. Điều này có chấp nhận được theo các vai trò trong kiểm thử không?",
+    "options": [
+      { "en": "No, test management and testing roles must always be separate", "vi": "Không, vai trò quản lý kiểm thử và kiểm thử luôn phải tách biệt" },
+      { "en": "Yes, one person can take on both test management and testing roles", "vi": "Có, một người có thể đảm nhận cả vai trò quản lý kiểm thử và kiểm thử" },
+      { "en": "No, because testers never plan", "vi": "Không, vì kiểm thử viên không bao giờ lập kế hoạch" },
+      { "en": "Yes, but only in sequential SDLC", "vi": "Có, nhưng chỉ trong SDLC tuần tự" }
+    ],
+    "correctEn": "Yes, one person can take on both test management and testing roles",
+    "correctVi": "Có, một người có thể đảm nhận cả vai trò quản lý kiểm thử và kiểm thử",
+    "explanation": "Syllabus 1.4.5 cho biết một người có thể đảm nhận cả hai vai trò (testing và test management) cùng một lúc, tùy thuộc vào ngữ cảnh. Không bắt buộc phải tách biệt."
+  },
+  {
+    "questionEn": "Which tester skill is most critical when explaining the impact of a severe defect to a non-technical stakeholder?",
+    "questionVi": "Kỹ năng kiểm thử viên nào là quan trọng nhất khi giải thích tác động của một khiếm khuyết nghiêm trọng cho một bên liên quan không chuyên về kỹ thuật?",
+    "options": [
+      { "en": "Programming knowledge", "vi": "Kiến thức lập trình" },
+      { "en": "Good communication skills", "vi": "Kỹ năng giao tiếp tốt" },
+      { "en": "Experience with test automation tools", "vi": "Kinh nghiệm với công cụ tự động hóa kiểm thử" },
+      { "en": "Detailed knowledge of database schema", "vi": "Kiến thức chi tiết về lược đồ cơ sở dữ liệu" }
+    ],
+    "correctEn": "Good communication skills",
+    "correctVi": "Kỹ năng giao tiếp tốt",
+    "explanation": "Kỹ năng giao tiếp là cần thiết để truyền đạt thông tin về khiếm khuyết một cách xây dựng, dễ hiểu cho các bên liên quan. (K2, syllabus 1.5.1)"
+  },
+  {
+    "questionEn": "In a whole team approach, who should write acceptance criteria?",
+    "questionVi": "Trong cách tiếp cận toàn nhóm, ai nên viết các tiêu chí chấp nhận?",
+    "options": [
+      { "en": "Only the product owner", "vi": "Chỉ Product Owner" },
+      { "en": "Only the testers", "vi": "Chỉ kiểm thử viên" },
+      { "en": "Collaboratively, with testers, developers, and business representatives", "vi": "Một cách hợp tác, với kiểm thử viên, lập trình viên và đại diện nghiệp vụ" },
+      { "en": "Only the project manager", "vi": "Chỉ quản lý dự án" }
+    ],
+    "correctEn": "Collaboratively, with testers, developers, and business representatives",
+    "correctVi": "Một cách hợp tác, với kiểm thử viên, lập trình viên và đại diện nghiệp vụ",
+    "explanation": "Whole team approach khuyến khích sự hợp tác của tất cả các thành viên, bao gồm cả việc viết acceptance criteria để đảm bảo chất lượng. (K1, syllabus 1.5.2)"
+  },
+  {
+    "questionEn": "A developer finds a defect in his own code during unit testing. Which benefit of independence is missing here?",
+    "questionVi": "Một lập trình viên tìm thấy một khiếm khuyết trong mã của chính anh ta trong lúc kiểm thử đơn vị. Lợi ích nào của tính độc lập đang bị thiếu ở đây?",
+    "options": [
+      { "en": "Different perspective may reveal different defects", "vi": "Góc nhìn khác có thể phát hiện các khiếm khuyết khác nhau" },
+      { "en": "Faster defect detection", "vi": "Phát hiện khiếm khuyết nhanh hơn" },
+      { "en": "Automation capabilities", "vi": "Khả năng tự động hóa" },
+      { "en": "Cost reduction", "vi": "Giảm chi phí" }
+    ],
+    "correctEn": "Different perspective may reveal different defects",
+    "correctVi": "Góc nhìn khác có thể phát hiện các khiếm khuyết khác nhau",
+    "explanation": "Lợi ích của độc lập là kiểm thử viên độc lập có thể phát hiện các loại lỗi mà tác giả bỏ sót do khác biệt về góc nhìn. Khi tự kiểm thử, lợi ích này không có. (K2, syllabus 1.5.3)"
+  },
+  {
+    "questionEn": "A test team is located on a different floor from the development team and rarely communicates directly. Which drawback of test independence is this illustrating?",
+    "questionVi": "Một nhóm kiểm thử ở tầng khác với nhóm phát triển và hiếm khi giao tiếp trực tiếp. Điều này minh họa cho hạn chế nào của tính độc lập kiểm thử?",
+    "options": [
+      { "en": "Isolation from developers", "vi": "Sự cô lập với lập trình viên" },
+      { "en": "Lack of testing skills", "vi": "Thiếu kỹ năng kiểm thử" },
+      { "en": "Increased test coverage", "vi": "Tăng độ bao phủ kiểm thử" },
+      { "en": "Better defect reports", "vi": "Báo cáo khiếm khuyết tốt hơn" }
+    ],
+    "correctEn": "Isolation from developers",
+    "correctVi": "Sự cô lập với lập trình viên",
+    "explanation": "Độc lập cao có thể dẫn đến cô lập, thiếu giao tiếp và hợp tác với nhóm phát triển. (K2, syllabus 1.5.3)"
+  },
+  {
+    "questionEn": "A stakeholder argues that if all tests pass, the software is ready for release. Which testing principle directly challenges this assumption?",
+    "questionVi": "Một bên liên quan lập luận rằng nếu tất cả các kiểm thử đều qua, phần mềm đã sẵn sàng để phát hành. Nguyên tắc kiểm thử nào trực tiếp thách thức giả định này?",
+    "options": [
+      { "en": "Early testing saves time and money", "vi": "Kiểm thử sớm tiết kiệm thời gian và tiền bạc" },
+      { "en": "Absence-of-defects fallacy", "vi": "Ngụy biện không có lỗi" },
+      { "en": "Defects cluster together", "vi": "Khiếm khuyết tập trung thành cụm" },
+      { "en": "Pesticide paradox", "vi": "Nghịch lý thuốc trừ sâu" }
+    ],
+    "correctEn": "Absence-of-defects fallacy",
+    "correctVi": "Ngụy biện không có lỗi",
+    "explanation": "Absence-of-defects fallacy (nguyên tắc 7) chỉ ra rằng việc không tìm thấy lỗi không có nghĩa là phần mềm sẵn sàng, vì nó có thể không đáp ứng nhu cầu người dùng. (K2, syllabus 1.3)"
+  },
+  {
+    "questionEn": "You are a test lead planning the test activities for a new project. You have limited resources. Which of the following would be the best approach to maximize defect detection within budget?",
+    "questionVi": "Bạn là trưởng nhóm kiểm thử đang lên kế hoạch cho các hoạt động kiểm thử của một dự án mới. Bạn có nguồn lực hạn chế. Đâu là cách tiếp cận tốt nhất để tối đa hóa việc phát hiện khiếm khuyết trong ngân sách?",
+    "options": [
+      { "en": "Perform exhaustive testing on all features", "vi": "Thực hiện kiểm thử toàn diện trên tất cả các tính năng" },
+      { "en": "Start static testing early and prioritize testing by risk", "vi": "Bắt đầu kiểm thử tĩnh sớm và ưu tiên kiểm thử theo rủi ro" },
+      { "en": "Only perform dynamic testing at the end", "vi": "Chỉ thực hiện kiểm thử động vào cuối" },
+      { "en": "Use only automated testing", "vi": "Chỉ sử dụng kiểm thử tự động" }
+    ],
+    "correctEn": "Start static testing early and prioritize testing by risk",
+    "correctVi": "Bắt đầu kiểm thử tĩnh sớm và ưu tiên kiểm thử theo rủi ro",
+    "explanation": "Kết hợp early testing (static testing sớm) và risk-based testing giúp tối ưu phát hiện lỗi với nguồn lực hạn chế. Exhaustive testing là không thể. (K3 áp dụng, tổng hợp nguyên tắc 2 và 3)"
+  },
+  {
+    "questionEn": "A user acceptance tester discovers that a feature, although working exactly as specified, does not solve the user's actual problem. This indicates a failure in:",
+    "questionVi": "Một kiểm thử viên chấp nhận người dùng phát hiện rằng một tính năng, mặc dù hoạt động đúng như đặc tả, không giải quyết được vấn đề thực tế của người dùng. Điều này cho thấy một thất bại trong:",
+    "options": [
+      { "en": "Verification", "vi": "Xác minh (verification)" },
+      { "en": "Validation", "vi": "Xác thực (validation)" },
+      { "en": "Debugging", "vi": "Gỡ lỗi" },
+      { "en": "Static testing", "vi": "Kiểm thử tĩnh" }
+    ],
+    "correctEn": "Validation",
+    "correctVi": "Xác thực (validation)",
+    "explanation": "Validation là kiểm tra xem hệ thống có đáp ứng nhu cầu người dùng trong môi trường vận hành không. Ở đây, verification đã đúng nhưng validation thất bại. (K2, syllabus 1.1)"
+  },
+  {
+    "questionEn": "Which of the following tasks is part of test planning?",
+    "questionVi": "Nhiệm vụ nào sau đây là một phần của lập kế hoạch kiểm thử?",
+    "options": [
+      { "en": "Executing test scripts", "vi": "Thực thi kịch bản kiểm thử" },
+      { "en": "Defining the test objectives and selecting an approach", "vi": "Xác định mục tiêu kiểm thử và chọn cách tiếp cận" },
+      { "en": "Logging defects found during testing", "vi": "Ghi lại các khiếm khuyết tìm thấy trong khi kiểm thử" },
+      { "en": "Creating test data", "vi": "Tạo dữ liệu kiểm thử" }
+    ],
+    "correctEn": "Defining the test objectives and selecting an approach",
+    "correctVi": "Xác định mục tiêu kiểm thử và chọn cách tiếp cận",
+    "explanation": "Test planning bao gồm xác định mục tiêu và chọn cách tiếp cận để đạt mục tiêu trong ràng buộc. (K2, syllabus 1.4.1)"
+  },
+  {
+    "questionEn": "A test manager reports that testing progress is behind schedule. Which test activity is this?",
+    "questionVi": "Một quản lý kiểm thử báo cáo rằng tiến độ kiểm thử đang chậm so với kế hoạch. Đây là hoạt động kiểm thử nào?",
+    "options": [
+      { "en": "Test control", "vi": "Kiểm soát kiểm thử" },
+      { "en": "Test monitoring", "vi": "Giám sát kiểm thử" },
+      { "en": "Test analysis", "vi": "Phân tích kiểm thử" },
+      { "en": "Test completion", "vi": "Kết thúc kiểm thử" }
+    ],
+    "correctEn": "Test monitoring",
+    "correctVi": "Giám sát kiểm thử",
+    "explanation": "Test monitoring là kiểm tra liên tục và so sánh tiến độ thực tế với kế hoạch. Báo cáo trạng thái là một phần của monitoring. (K2, syllabus 1.4.1)"
+  }
+]

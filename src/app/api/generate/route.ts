@@ -4,7 +4,7 @@ import { pickExamQuestions, EXAM_TOPIC_CONFIG } from "@/lib/exam-from-syllabus";
 
 const requestSchema = z.object({
   topic: z.string().min(1),
-  difficulty: z.enum(["easy", "medium", "hard", "all"]).default("all"),
+  difficulty: z.enum(["easy", "medium", "hard", "all", "random"]).default("all"),
   count: z.number().int().min(1).max(60).default(5),
 });
 

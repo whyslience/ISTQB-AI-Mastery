@@ -97,7 +97,7 @@ Một số cách tiếp cận phát triển sử dụng kiểm thử như một 
 
 DevOps is an organizational approach aiming for synergy between development (including testing) and operations. It requires a cultural shift, promotes team autonomy, fast feedback, integrated toolchains, and practices such as CI/CD so teams can build, test, and release quality code faster through a delivery pipeline.
 
-DevOps là cách tiếp cận tổ chức nhằm tạo hiệp lực giữa phát triển (gồm kiểm thử) và vận hành. Nó đòi hỏi thay đổi văn hóa, thúc đẩy tự chủ nhóm, phản hồi nhanh, chuỗi công cụ tích hợp và thực hành như CI/CD để nhóm có thể xây dựng, kiểm thử và phát hành mã chất lượng nhanh hơn qua pipeline giao hàng.
+DevOps là cách tiếp cận tổ chức nhằm tạo hiệp lực giữa phát triển (gồm kiểm thử) và vận hành. Nó đòi hỏi thay đổi văn hóa, thúc đẩy tự chủ nhóm, phản hồi nhanh, chuỗi công cụ tích hợp và thực hành như CI/CD để nhóm có thể xây dựng, kiểm thử và phát hành mã chất lượng nhanh hơn qua pipeline phát hành (delivery pipeline).
 
 From the testing perspective, some benefits include:
 

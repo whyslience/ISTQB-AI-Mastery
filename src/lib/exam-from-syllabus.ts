@@ -92,13 +92,13 @@ function quizToQuestion(
   index: number,
   qq: QuizQuestion
 ): Question {
-  const enTexts = qq.options.map((o) => o.en);
-  const options = shuffle(enTexts);
+  const options = shuffle([...qq.options]);
   return {
     id: `${chapterId}:${index}`,
     topic: topicTitle,
     difficulty: pseudoDifficulty(qq),
     question: qq.questionEn,
+    questionVi: qq.questionVi,
     options,
     correct: qq.correctEn,
     explanation: qq.explanation,
@@ -136,15 +136,22 @@ function buildPool(topicLabel: string): PoolItem[] {
 
 export function pickExamQuestions(
   topicLabel: string,
-  difficulty: "easy" | "medium" | "hard" | "all",
+  difficulty: "easy" | "medium" | "hard" | "all" | "random",
   count: number
 ): Question[] {
   let pool = buildPool(topicLabel);
   if (!pool.length) return [];
 
-  if (difficulty !== "all") {
+  if (difficulty !== "all" && difficulty !== "random") {
     const filtered = pool.filter((p) => pseudoDifficulty(p.qq) === difficulty);
-    if (filtered.length >= count) pool = filtered;
+    if (filtered.length >= count) {
+      pool = filtered;
+    } else {
+      const remaining = pool.filter((p) => pseudoDifficulty(p.qq) !== difficulty);
+      const shuffledRemaining = shuffle(remaining);
+      const needed = count - filtered.length;
+      pool = [...filtered, ...shuffledRemaining.slice(0, needed)];
+    }
   }
 
   const picked = shuffle(pool).slice(0, Math.min(count, pool.length));

@@ -3,7 +3,8 @@ export interface Question {
   topic: string;
   difficulty: "easy" | "medium" | "hard";
   question: string;
-  options: string[];
+  questionVi: string;
+  options: { en: string; vi: string }[];
   correct: string;
   explanation: string;
   createdAt: string;

@@ -600,31 +600,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with acceptance criteria examples.\n* **Ôn / Study:** ví dụ tiêu chí nghiệm thu"
   },
   {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding ISO/IEC 25059 AI functional correctness, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **ISO/IEC 25059 — AI functional correctness**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "AI functional correctness accepts bounded incorrect outputs using thresholds appropriate to probabilistic ML behaviour.",
-        "vi": "AI functional correctness chấp nhận đầu ra sai trong ngưỡng phù hợp hành vi ML xác suất."
-      },
-      {
-        "en": "Thresholds are forbidden when discussing ISO/IEC 25059 acceptance.",
-        "vi": "Không được dùng ngưỡng khi bàn nghiệm thu ISO/IEC 25059."
-      },
-      {
-        "en": "Functional correctness ignores operational misuse scenarios entirely.",
-        "vi": "Đúng chức năng bỏ qua hoàn toàn kịch bản lạm dụng vận hành."
-      },
-      {
-        "en": "AI functional correctness demands mathematically perfect outputs for every inference call.",
-        "vi": "AI functional correctness đòi đầu ra hoàn hảo toán học cho mọi lần suy luận."
-      }
-    ],
-    "correctEn": "AI functional correctness accepts bounded incorrect outputs using thresholds appropriate to probabilistic ML behaviour.",
-    "correctVi": "AI functional correctness chấp nhận đầu ra sai trong ngưỡng phù hợp hành vi ML xác suất.",
-    "explanation": "* **Đúng / Correct:** Aligns with ISO/IEC 25059 AI functional correctness.\n* **Ôn / Study:** ISO/IEC 25059 — AI functional correctness"
-  },
-  {
     "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: functional adaptability.",
     "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **functional adaptability**.",
     "options": [
@@ -823,81 +798,6 @@
     "correctEn": "AI functional correctness accepts bounded incorrect outputs using thresholds appropriate to probabilistic ML behaviour.",
     "correctVi": "AI functional correctness chấp nhận đầu ra sai trong ngưỡng phù hợp hành vi ML xác suất.",
     "explanation": "* **Đúng / Correct:** Aligns with ISO/IEC 25059 AI functional correctness.\n* **Ôn / Study:** ISO/IEC 25059 — AI functional correctness"
-  },
-  {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding functional adaptability, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **functional adaptability**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "Adaptability only applies to hardware firmware, never ML policies.",
-        "vi": "Thích ứng chỉ áp dụng firmware phần cứng, không cho chính sách ML."
-      },
-      {
-        "en": "Functional adaptability means humans rewrite every rule weekly without automation.",
-        "vi": "Functional adaptability nghĩa là con người viết lại mọi quy tắc hàng tuần không tự động."
-      },
-      {
-        "en": "Functional adaptability reflects autonomous adjustment of an AI-based system after deployment to shifting operational conditions.",
-        "vi": "Functional adaptability phản ánh khả năng điều chỉnh tự trị sau triển khai khi điều kiện vận hành thay đổi."
-      },
-      {
-        "en": "Adaptability removes monitoring obligations once accuracy exceeds 95%.",
-        "vi": "Khả năng thích ứng loại bỏ nghĩa vụ giám sát khi độ chính xác > 95%."
-      }
-    ],
-    "correctEn": "Functional adaptability reflects autonomous adjustment of an AI-based system after deployment to shifting operational conditions.",
-    "correctVi": "Functional adaptability phản ánh khả năng điều chỉnh tự trị sau triển khai khi điều kiện vận hành thay đổi.",
-    "explanation": "* **Đúng / Correct:** Aligns with functional adaptability.\n* **Ôn / Study:** functional adaptability"
-  },
-  {
-    "questionEn": "Select the BEST answer.\nTopic focus: user controllability vs intervenability.",
-    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **user controllability và intervenability**.",
-    "options": [
-      {
-        "en": "User controllability forbids kill switches during inference.",
-        "vi": "User controllability cấm kill switch trong suy luận."
-      },
-      {
-        "en": "User controllability supports timely human override of AI behaviour; intervenability (security-related) focuses on preventing harm via operator intervention.",
-        "vi": "User controllability hỗ trợ con người ghi đè kịp thời hành AI; intervenability (góc an ninh) tập trung ngăn hại qua can thiệp vận hành."
-      },
-      {
-        "en": "Intervenability implies testers never document rollback paths.",
-        "vi": "Intervenability có nghĩa kiểm thử không bao giờ tài liệu hóa đường rollback."
-      },
-      {
-        "en": "Both terms refer exclusively to GPU thermal throttling metrics.",
-        "vi": "Cả hai thuật ngữ chỉ chỉ số thermal throttle của GPU."
-      }
-    ],
-    "correctEn": "User controllability supports timely human override of AI behaviour; intervenability (security-related) focuses on preventing harm via operator intervention.",
-    "correctVi": "User controllability hỗ trợ con người ghi đè kịp thời hành AI; intervenability (góc an ninh) tập trung ngăn hại qua can thiệp vận hành.",
-    "explanation": "* **Đúng / Correct:** Aligns with user controllability vs intervenability.\n* **Ôn / Study:** user controllability và intervenability"
-  },
-  {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: AI robustness.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **AI robustness**.",
-    "options": [
-      {
-        "en": "Adversarial inputs are hypothetical and never appear after deployment.",
-        "vi": "Đầu vào đối kháng chỉ là giả thuyết và không xuất hiện sau triển khai."
-      },
-      {
-        "en": "Robustness testing should ignore invalid or malformed inputs entirely.",
-        "vi": "Kiểm thử robustness nên bỏ qua hoàn toàn đầu vào không hợp lệ."
-      },
-      {
-        "en": "Robustness is identical to meeting accessibility contrast ratios only.",
-        "vi": "Robustness đồng nhất chỉ với đạt tỷ lệ tương phản accessibility."
-      },
-      {
-        "en": "AI robustness addresses maintaining acceptable correctness under noisy inputs, adversarial perturbations, interference, or misuse attempts.",
-        "vi": "AI robustness giữ mức đúng chấp nhận được khi đầu vào nhiễu, nhiễu đối kháng, can thiệp hoặc lạm dụng."
-      }
-    ],
-    "correctEn": "AI robustness addresses maintaining acceptable correctness under noisy inputs, adversarial perturbations, interference, or misuse attempts.",
-    "correctVi": "AI robustness giữ mức đúng chấp nhận được khi đầu vào nhiễu, nhiễu đối kháng, can thiệp hoặc lạm dụng.",
-    "explanation": "* **Đúng / Correct:** Aligns with AI robustness.\n* **Ôn / Study:** AI robustness"
   },
   {
     "questionEn": "Select the BEST answer.\nRegarding transparency, pick the option that matches ISTQB CT-AI guidance.",
@@ -1200,56 +1100,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with acceptance criteria examples.\n* **Ôn / Study:** ví dụ tiêu chí nghiệm thu"
   },
   {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding ISO/IEC 25059 AI functional correctness, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **ISO/IEC 25059 — AI functional correctness**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "AI functional correctness demands mathematically perfect outputs for every inference call.",
-        "vi": "AI functional correctness đòi đầu ra hoàn hảo toán học cho mọi lần suy luận."
-      },
-      {
-        "en": "Functional correctness ignores operational misuse scenarios entirely.",
-        "vi": "Đúng chức năng bỏ qua hoàn toàn kịch bản lạm dụng vận hành."
-      },
-      {
-        "en": "AI functional correctness accepts bounded incorrect outputs using thresholds appropriate to probabilistic ML behaviour.",
-        "vi": "AI functional correctness chấp nhận đầu ra sai trong ngưỡng phù hợp hành vi ML xác suất."
-      },
-      {
-        "en": "Thresholds are forbidden when discussing ISO/IEC 25059 acceptance.",
-        "vi": "Không được dùng ngưỡng khi bàn nghiệm thu ISO/IEC 25059."
-      }
-    ],
-    "correctEn": "AI functional correctness accepts bounded incorrect outputs using thresholds appropriate to probabilistic ML behaviour.",
-    "correctVi": "AI functional correctness chấp nhận đầu ra sai trong ngưỡng phù hợp hành vi ML xác suất.",
-    "explanation": "* **Đúng / Correct:** Aligns with ISO/IEC 25059 AI functional correctness.\n* **Ôn / Study:** ISO/IEC 25059 — AI functional correctness"
-  },
-  {
-    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: functional adaptability.",
-    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **functional adaptability**.",
-    "options": [
-      {
-        "en": "Adaptability removes monitoring obligations once accuracy exceeds 95%.",
-        "vi": "Khả năng thích ứng loại bỏ nghĩa vụ giám sát khi độ chính xác > 95%."
-      },
-      {
-        "en": "Functional adaptability reflects autonomous adjustment of an AI-based system after deployment to shifting operational conditions.",
-        "vi": "Functional adaptability phản ánh khả năng điều chỉnh tự trị sau triển khai khi điều kiện vận hành thay đổi."
-      },
-      {
-        "en": "Adaptability only applies to hardware firmware, never ML policies.",
-        "vi": "Thích ứng chỉ áp dụng firmware phần cứng, không cho chính sách ML."
-      },
-      {
-        "en": "Functional adaptability means humans rewrite every rule weekly without automation.",
-        "vi": "Functional adaptability nghĩa là con người viết lại mọi quy tắc hàng tuần không tự động."
-      }
-    ],
-    "correctEn": "Functional adaptability reflects autonomous adjustment of an AI-based system after deployment to shifting operational conditions.",
-    "correctVi": "Functional adaptability phản ánh khả năng điều chỉnh tự trị sau triển khai khi điều kiện vận hành thay đổi.",
-    "explanation": "* **Đúng / Correct:** Aligns with functional adaptability.\n* **Ôn / Study:** functional adaptability"
-  },
-  {
     "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: user controllability vs intervenability.",
     "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **user controllability và intervenability**.",
     "options": [
@@ -1325,56 +1175,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with transparency.\n* **Ôn / Study:** transparency"
   },
   {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: societal and ethical risk mitigation.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **giảm thiểu rủi ro xã hội và đạo đức**.",
-    "options": [
-      {
-        "en": "Mitigation spans fairness, accountability, privacy, human oversight, sustainability expectations tied to quality-in-use.",
-        "vi": "Giảm thiểu gồm công bằng, trách nhiệm, riêng tư, giám sát con người, kỳ vọng bền vững gắn chất lượng khi dùng."
-      },
-      {
-        "en": "Fairness metrics are optional whenever latency budgets are tight.",
-        "vi": "Metric công bằng là tuỳ chọn khi ngân sách độ trễ chặt."
-      },
-      {
-        "en": "Ethical risk mitigation stops after model approval sign-off.",
-        "vi": "Giảm thiểu rủi ro đạo đức dừng sau ký duyệt mô hình."
-      },
-      {
-        "en": "Privacy testing conflicts with bias testing and must never be combined.",
-        "vi": "Kiểm thử riêng tư xung đột kiểm thử bias và không được kết hợp."
-      }
-    ],
-    "correctEn": "Mitigation spans fairness, accountability, privacy, human oversight, sustainability expectations tied to quality-in-use.",
-    "correctVi": "Giảm thiểu gồm công bằng, trách nhiệm, riêng tư, giám sát con người, kỳ vọng bền vững gắn chất lượng khi dùng.",
-    "explanation": "* **Đúng / Correct:** Aligns with societal and ethical risk mitigation.\n* **Ôn / Study:** giảm thiểu rủi ro xã hội và đạo đức"
-  },
-  {
-    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding AI safety challenges, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **thách thức an toàn khi dùng AI**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "Self-learning systems cannot change behaviour post-deployment by definition.",
-        "vi": "Hệ tự học theo định nghĩa không đổi hành vi sau triển khai."
-      },
-      {
-        "en": "Safety-critical ML never exhibits non-deterministic behaviour once frozen.",
-        "vi": "ML an toàn không bao giờ không deterministic sau khi đóng băng."
-      },
-      {
-        "en": "Explainability concerns disappear automatically for models under 1M parameters.",
-        "vi": "Lo giải thích biến mất tự động với mô hình dưới 1M tham số."
-      },
-      {
-        "en": "Safety-related AI faces vague goals encoded indirectly in data, non-determinism, self-learning drift away from tested baselines, and evolving regulations.",
-        "vi": "AI liên quan an toàn gặp mục tiêu mơ hồ qua dữ liệu, không deterministic, drift học lệch baseline đã kiểm thử, và quy định đổi."
-      }
-    ],
-    "correctEn": "Safety-related AI faces vague goals encoded indirectly in data, non-determinism, self-learning drift away from tested baselines, and evolving regulations.",
-    "correctVi": "AI liên quan an toàn gặp mục tiêu mơ hồ qua dữ liệu, không deterministic, drift học lệch baseline đã kiểm thử, và quy định đổi.",
-    "explanation": "* **Đúng / Correct:** Aligns with AI safety challenges.\n* **Ôn / Study:** thách thức an toàn khi dùng AI"
-  },
-  {
     "questionEn": "Select the BEST answer.\nTopic focus: acceptance criteria examples.",
     "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **ví dụ tiêu chí nghiệm thu**.",
     "options": [
@@ -1398,31 +1198,6 @@
     "correctEn": "Acceptance criteria often include probabilistic targets (accuracy/recall), latency under faults, fairness thresholds, or operational intervention times.",
     "correctVi": "Tiêu chí nghiệm thu thường có mục tiêu xác suất (accuracy/recall), độ trễ khi lỗi, ngưỡng công bằng, hoặc thời gian can thiệp vận hành.",
     "explanation": "* **Đúng / Correct:** Aligns with acceptance criteria examples.\n* **Ôn / Study:** ví dụ tiêu chí nghiệm thu"
-  },
-  {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: ISO/IEC 25059 AI functional correctness.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **ISO/IEC 25059 — AI functional correctness**.",
-    "options": [
-      {
-        "en": "AI functional correctness accepts bounded incorrect outputs using thresholds appropriate to probabilistic ML behaviour.",
-        "vi": "AI functional correctness chấp nhận đầu ra sai trong ngưỡng phù hợp hành vi ML xác suất."
-      },
-      {
-        "en": "AI functional correctness demands mathematically perfect outputs for every inference call.",
-        "vi": "AI functional correctness đòi đầu ra hoàn hảo toán học cho mọi lần suy luận."
-      },
-      {
-        "en": "Functional correctness ignores operational misuse scenarios entirely.",
-        "vi": "Đúng chức năng bỏ qua hoàn toàn kịch bản lạm dụng vận hành."
-      },
-      {
-        "en": "Thresholds are forbidden when discussing ISO/IEC 25059 acceptance.",
-        "vi": "Không được dùng ngưỡng khi bàn nghiệm thu ISO/IEC 25059."
-      }
-    ],
-    "correctEn": "AI functional correctness accepts bounded incorrect outputs using thresholds appropriate to probabilistic ML behaviour.",
-    "correctVi": "AI functional correctness chấp nhận đầu ra sai trong ngưỡng phù hợp hành vi ML xác suất.",
-    "explanation": "* **Đúng / Correct:** Aligns with ISO/IEC 25059 AI functional correctness.\n* **Ôn / Study:** ISO/IEC 25059 — AI functional correctness"
   },
   {
     "questionEn": "Which of the following statements is MOST accurate?\nRegarding functional adaptability, pick the option that matches ISTQB CT-AI guidance.",
@@ -1550,31 +1325,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with societal and ethical risk mitigation.\n* **Ôn / Study:** giảm thiểu rủi ro xã hội và đạo đức"
   },
   {
-    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: AI safety challenges.",
-    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **thách thức an toàn khi dùng AI**.",
-    "options": [
-      {
-        "en": "Safety-related AI faces vague goals encoded indirectly in data, non-determinism, self-learning drift away from tested baselines, and evolving regulations.",
-        "vi": "AI liên quan an toàn gặp mục tiêu mơ hồ qua dữ liệu, không deterministic, drift học lệch baseline đã kiểm thử, và quy định đổi."
-      },
-      {
-        "en": "Explainability concerns disappear automatically for models under 1M parameters.",
-        "vi": "Lo giải thích biến mất tự động với mô hình dưới 1M tham số."
-      },
-      {
-        "en": "Self-learning systems cannot change behaviour post-deployment by definition.",
-        "vi": "Hệ tự học theo định nghĩa không đổi hành vi sau triển khai."
-      },
-      {
-        "en": "Safety-critical ML never exhibits non-deterministic behaviour once frozen.",
-        "vi": "ML an toàn không bao giờ không deterministic sau khi đóng băng."
-      }
-    ],
-    "correctEn": "Safety-related AI faces vague goals encoded indirectly in data, non-determinism, self-learning drift away from tested baselines, and evolving regulations.",
-    "correctVi": "AI liên quan an toàn gặp mục tiêu mơ hồ qua dữ liệu, không deterministic, drift học lệch baseline đã kiểm thử, và quy định đổi.",
-    "explanation": "* **Đúng / Correct:** Aligns with AI safety challenges.\n* **Ôn / Study:** thách thức an toàn khi dùng AI"
-  },
-  {
     "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding acceptance criteria examples, pick the option that matches ISTQB CT-AI guidance.",
     "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **ví dụ tiêu chí nghiệm thu**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
     "options": [
@@ -1600,31 +1350,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with acceptance criteria examples.\n* **Ôn / Study:** ví dụ tiêu chí nghiệm thu"
   },
   {
-    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: ISO/IEC 25059 AI functional correctness.",
-    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **ISO/IEC 25059 — AI functional correctness**.",
-    "options": [
-      {
-        "en": "Thresholds are forbidden when discussing ISO/IEC 25059 acceptance.",
-        "vi": "Không được dùng ngưỡng khi bàn nghiệm thu ISO/IEC 25059."
-      },
-      {
-        "en": "AI functional correctness demands mathematically perfect outputs for every inference call.",
-        "vi": "AI functional correctness đòi đầu ra hoàn hảo toán học cho mọi lần suy luận."
-      },
-      {
-        "en": "Functional correctness ignores operational misuse scenarios entirely.",
-        "vi": "Đúng chức năng bỏ qua hoàn toàn kịch bản lạm dụng vận hành."
-      },
-      {
-        "en": "AI functional correctness accepts bounded incorrect outputs using thresholds appropriate to probabilistic ML behaviour.",
-        "vi": "AI functional correctness chấp nhận đầu ra sai trong ngưỡng phù hợp hành vi ML xác suất."
-      }
-    ],
-    "correctEn": "AI functional correctness accepts bounded incorrect outputs using thresholds appropriate to probabilistic ML behaviour.",
-    "correctVi": "AI functional correctness chấp nhận đầu ra sai trong ngưỡng phù hợp hành vi ML xác suất.",
-    "explanation": "* **Đúng / Correct:** Aligns with ISO/IEC 25059 AI functional correctness.\n* **Ôn / Study:** ISO/IEC 25059 — AI functional correctness"
-  },
-  {
     "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: functional adaptability.",
     "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **functional adaptability**.",
     "options": [
@@ -1648,56 +1373,6 @@
     "correctEn": "Functional adaptability reflects autonomous adjustment of an AI-based system after deployment to shifting operational conditions.",
     "correctVi": "Functional adaptability phản ánh khả năng điều chỉnh tự trị sau triển khai khi điều kiện vận hành thay đổi.",
     "explanation": "* **Đúng / Correct:** Aligns with functional adaptability.\n* **Ôn / Study:** functional adaptability"
-  },
-  {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding user controllability vs intervenability, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **user controllability và intervenability**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "User controllability supports timely human override of AI behaviour; intervenability (security-related) focuses on preventing harm via operator intervention.",
-        "vi": "User controllability hỗ trợ con người ghi đè kịp thời hành AI; intervenability (góc an ninh) tập trung ngăn hại qua can thiệp vận hành."
-      },
-      {
-        "en": "Intervenability implies testers never document rollback paths.",
-        "vi": "Intervenability có nghĩa kiểm thử không bao giờ tài liệu hóa đường rollback."
-      },
-      {
-        "en": "User controllability forbids kill switches during inference.",
-        "vi": "User controllability cấm kill switch trong suy luận."
-      },
-      {
-        "en": "Both terms refer exclusively to GPU thermal throttling metrics.",
-        "vi": "Cả hai thuật ngữ chỉ chỉ số thermal throttle của GPU."
-      }
-    ],
-    "correctEn": "User controllability supports timely human override of AI behaviour; intervenability (security-related) focuses on preventing harm via operator intervention.",
-    "correctVi": "User controllability hỗ trợ con người ghi đè kịp thời hành AI; intervenability (góc an ninh) tập trung ngăn hại qua can thiệp vận hành.",
-    "explanation": "* **Đúng / Correct:** Aligns with user controllability vs intervenability.\n* **Ôn / Study:** user controllability và intervenability"
-  },
-  {
-    "questionEn": "Select the BEST answer.\nTopic focus: AI robustness.",
-    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **AI robustness**.",
-    "options": [
-      {
-        "en": "AI robustness addresses maintaining acceptable correctness under noisy inputs, adversarial perturbations, interference, or misuse attempts.",
-        "vi": "AI robustness giữ mức đúng chấp nhận được khi đầu vào nhiễu, nhiễu đối kháng, can thiệp hoặc lạm dụng."
-      },
-      {
-        "en": "Adversarial inputs are hypothetical and never appear after deployment.",
-        "vi": "Đầu vào đối kháng chỉ là giả thuyết và không xuất hiện sau triển khai."
-      },
-      {
-        "en": "Robustness is identical to meeting accessibility contrast ratios only.",
-        "vi": "Robustness đồng nhất chỉ với đạt tỷ lệ tương phản accessibility."
-      },
-      {
-        "en": "Robustness testing should ignore invalid or malformed inputs entirely.",
-        "vi": "Kiểm thử robustness nên bỏ qua hoàn toàn đầu vào không hợp lệ."
-      }
-    ],
-    "correctEn": "AI robustness addresses maintaining acceptable correctness under noisy inputs, adversarial perturbations, interference, or misuse attempts.",
-    "correctVi": "AI robustness giữ mức đúng chấp nhận được khi đầu vào nhiễu, nhiễu đối kháng, can thiệp hoặc lạm dụng.",
-    "explanation": "* **Đúng / Correct:** Aligns with AI robustness.\n* **Ôn / Study:** AI robustness"
   },
   {
     "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: transparency.",
@@ -1748,55 +1423,5 @@
     "correctEn": "Mitigation spans fairness, accountability, privacy, human oversight, sustainability expectations tied to quality-in-use.",
     "correctVi": "Giảm thiểu gồm công bằng, trách nhiệm, riêng tư, giám sát con người, kỳ vọng bền vững gắn chất lượng khi dùng.",
     "explanation": "* **Đúng / Correct:** Aligns with societal and ethical risk mitigation.\n* **Ôn / Study:** giảm thiểu rủi ro xã hội và đạo đức"
-  },
-  {
-    "questionEn": "Select the BEST answer.\nTopic focus: AI safety challenges.",
-    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **thách thức an toàn khi dùng AI**.",
-    "options": [
-      {
-        "en": "Self-learning systems cannot change behaviour post-deployment by definition.",
-        "vi": "Hệ tự học theo định nghĩa không đổi hành vi sau triển khai."
-      },
-      {
-        "en": "Explainability concerns disappear automatically for models under 1M parameters.",
-        "vi": "Lo giải thích biến mất tự động với mô hình dưới 1M tham số."
-      },
-      {
-        "en": "Safety-critical ML never exhibits non-deterministic behaviour once frozen.",
-        "vi": "ML an toàn không bao giờ không deterministic sau khi đóng băng."
-      },
-      {
-        "en": "Safety-related AI faces vague goals encoded indirectly in data, non-determinism, self-learning drift away from tested baselines, and evolving regulations.",
-        "vi": "AI liên quan an toàn gặp mục tiêu mơ hồ qua dữ liệu, không deterministic, drift học lệch baseline đã kiểm thử, và quy định đổi."
-      }
-    ],
-    "correctEn": "Safety-related AI faces vague goals encoded indirectly in data, non-determinism, self-learning drift away from tested baselines, and evolving regulations.",
-    "correctVi": "AI liên quan an toàn gặp mục tiêu mơ hồ qua dữ liệu, không deterministic, drift học lệch baseline đã kiểm thử, và quy định đổi.",
-    "explanation": "* **Đúng / Correct:** Aligns with AI safety challenges.\n* **Ôn / Study:** thách thức an toàn khi dùng AI"
-  },
-  {
-    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: acceptance criteria examples.",
-    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **ví dụ tiêu chí nghiệm thu**.",
-    "options": [
-      {
-        "en": "Acceptance criteria often include probabilistic targets (accuracy/recall), latency under faults, fairness thresholds, or operational intervention times.",
-        "vi": "Tiêu chí nghiệm thu thường có mục tiêu xác suất (accuracy/recall), độ trễ khi lỗi, ngưỡng công bằng, hoặc thời gian can thiệp vận hành."
-      },
-      {
-        "en": "ISO/IEC 25059 forbids expressing acceptance criteria using percentages.",
-        "vi": "ISO/IEC 25059 cấm diễn đạt tiêu chí nghiệm thu bằng phần trăm."
-      },
-      {
-        "en": "Operational dashboards replace acceptance criteria entirely.",
-        "vi": "Dashboard vận hành thay thế hoàn toàn tiêu chí nghiệm thu."
-      },
-      {
-        "en": "Acceptance criteria must be identical for batch and streaming inference.",
-        "vi": "Tiêu chí nghiệm thu phải giống hệt cho batch và streaming inference."
-      }
-    ],
-    "correctEn": "Acceptance criteria often include probabilistic targets (accuracy/recall), latency under faults, fairness thresholds, or operational intervention times.",
-    "correctVi": "Tiêu chí nghiệm thu thường có mục tiêu xác suất (accuracy/recall), độ trễ khi lỗi, ngưỡng công bằng, hoặc thời gian can thiệp vận hành.",
-    "explanation": "* **Đúng / Correct:** Aligns with acceptance criteria examples.\n* **Ôn / Study:** ví dụ tiêu chí nghiệm thu"
   }
 ]

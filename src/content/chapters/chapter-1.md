@@ -6,7 +6,7 @@
 
 coverage, debugging, defect, error, failure, quality, quality assurance, root cause, test analysis, test basis, test case, test completion, test condition, test control, test data, test design, test execution, test implementation, test monitoring, test object, test objective, test planning, test procedure, test process, test result, testing, testware, traceability, validation, verification
 
-độ bao phủ, gỡ lỗi, khiếm khuyết, lỗi (error), thất bại (failure), chất lượng, đảm bảo chất lượng, nguyên nhân gốc, phân tích kiểm thử, cơ sở kiểm thử, ca kiểm thử, kết thúc kiểm thử, điều kiện kiểm thử, kiểm soát kiểm thử, dữ liệu kiểm thử, thiết kế kiểm thử, thực thi kiểm thử, triển khai kiểm thử, giám sát kiểm thử, đối tượng kiểm thử, mục tiêu kiểm thử, lập kế hoạch kiểm thử, quy trình kiểm thử (thủ tục), quy trình kiểm thử (process), kết quả kiểm thử, kiểm thử, tài liệu kiểm thử (testware), truy xuất nguồn gốc, xác thực (validation), xác minh (verification)
+độ bao phủ, gỡ lỗi, khiếm khuyết, lỗi (error), thất bại (failure), chất lượng, đảm bảo chất lượng, nguyên nhân gốc, phân tích kiểm thử, cơ sở kiểm thử, ca kiểm thử, kết thúc kiểm thử, điều kiện kiểm thử, kiểm soát kiểm thử, dữ liệu kiểm thử, thiết kế kiểm thử, thực thi kiểm thử, triển khai kiểm thử, giám sát kiểm thử, đối tượng kiểm thử, mục tiêu kiểm thử, lập kế hoạch kiểm thử, thủ tục kiểm thử (procedure), quy trình kiểm thử (process), kết quả kiểm thử, kiểm thử, tài liệu kiểm thử (testware), truy xuất nguồn gốc, xác thực (validation), xác minh (verification)
 
 ## Learning Objectives for Chapter 1 / Mục tiêu học tập Chương 1
 
@@ -43,7 +43,7 @@ coverage, debugging, defect, error, failure, quality, quality assurance, root ca
 
 ## 1.1 What is Testing? / Kiểm thử là gì?
 
-Software systems are an integral part of our daily life. Most people have had experience with software that did not work as expected. Software that does not work correctly can lead to many problems, including loss of money, time, or business reputation, and even injury or death. Software testing assesses software quality and helps reducing the risk of software failure in operation.
+Software systems are an integral part of our daily life. Most people have had experience with software that did not work as expected. Software that does not work correctly can lead to many problems, including loss of money, time, or business reputation, and even injury or death. Software testing assesses software quality and helps reduce the risk of software failure in operation.
 
 Hệ thống phần mềm là một phần không thể thiếu trong cuộc sống hàng ngày của chúng ta. Hầu hết mọi người đều đã từng có kinh nghiệm với phần mềm hoạt động không đúng như mong đợi. Phần mềm hoạt động không chính xác có thể dẫn đến nhiều vấn đề, bao gồm mất mát tiền bạc, thời gian hoặc uy tín kinh doanh, thậm chí gây thương tích hoặc tử vong. Kiểm thử phần mềm đánh giá chất lượng phần mềm và giúp giảm thiểu rủi ro thất bại của phần mềm khi vận hành.
 
@@ -226,7 +226,7 @@ Các tập hợp hoạt động sau đây là phổ biến trong nhiều quy tr�
 * Test design: involves how to test by transforming test conditions into test cases and other testware (e.g., test charters).
 * Thiết kế kiểm thử: bao gồm việc xác định kiểm thử như thế nào bằng cách chuyển đổi các điều kiện kiểm thử thành các ca kiểm thử và các tài liệu kiểm thử khác (ví dụ: điều lệ kiểm thử).
 * Test implementation: involves having everything in place for test execution by creating or acquiring the testware necessary for test execution (e.g., test data, test procedures).
-* Triển khai kiểm thử: bao gồm việc chuẩn bị mọi thứ sẵn sàng cho việc thực thi kiểm thử bằng cách tạo hoặc thu thập các tài liệu kiểm thử cần thiết cho việc thực thi kiểm thử (ví dụ: dữ liệu kiểm thử, quy trình kiểm thử).
+* Triển khai kiểm thử: bao gồm việc chuẩn bị mọi thứ sẵn sàng cho việc thực thi kiểm thử bằng cách tạo hoặc thu thập các tài liệu kiểm thử cần thiết (ví dụ: dữ liệu kiểm thử, thủ tục kiểm thử).
 * Test execution: involves running the tests in accordance with the test execution schedule.
 * Thực thi kiểm thử: bao gồm việc chạy các bài kiểm thử theo lịch trình thực thi kiểm thử.
 * Test completion: involves finalizing all testing activities and making the test results and testware available for future use.

@@ -675,56 +675,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with data pipeline testing.\n* **Ôn / Study:** kiểm thử pipeline dữ liệu"
   },
   {
-    "questionEn": "Select the BEST answer.\nRegarding representativeness, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **đại diện**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "Concept drift never interacts with business KPI acceptance.",
-        "vi": "Concept drift không tương tác KPI nghiệm thu."
-      },
-      {
-        "en": "Weekend traffic may be ignored when training weekday-only models without disclosure.",
-        "vi": "Traffic cuối tuần có thể bỏ qua khi huấn luyện chỉ ngày làm không cần tiết lộ."
-      },
-      {
-        "en": "Representativeness only matters for image pixels, not tabular features.",
-        "vi": "Đại diện chỉ cho pixel ảnh, không cho đặc trưng bảng."
-      },
-      {
-        "en": "Operational score distributions should match training assumptions; drift detectors compare live batches against reference profiles.",
-        "vi": "Phân phối điểm vận hành nên khớp giả định huấn luyện; detector drift so batch live với profile tham chiếu."
-      }
-    ],
-    "correctEn": "Operational score distributions should match training assumptions; drift detectors compare live batches against reference profiles.",
-    "correctVi": "Phân phối điểm vận hành nên khớp giả định huấn luyện; detector drift so batch live với profile tham chiếu.",
-    "explanation": "* **Đúng / Correct:** Aligns with representativeness.\n* **Ôn / Study:** đại diện"
-  },
-  {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: dataset constraint testing.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **kiểm thử ràng buộc tập dữ liệu**.",
-    "options": [
-      {
-        "en": "Documented constraints (freshness, cardinality, legal categories) become executable assertions in CI and monitoring hooks.",
-        "vi": "Ràng buộc tài liệu hóa (độ mới, bản số, danh mục pháp lý) thành assertion trong CI và hook giám sát."
-      },
-      {
-        "en": "Legal categories never influence sampling quotas.",
-        "vi": "Danh mục pháp lý không ảnh hưởng quota mẫu."
-      },
-      {
-        "en": "Constraints belong exclusively to marketing consent banners.",
-        "vi": "Ràng buộc chỉ thuộc banner đồng ý marketing."
-      },
-      {
-        "en": "Automated assertions slow science and must be avoided.",
-        "vi": "Assertion tự động làm chậm khoa học nên tránh."
-      }
-    ],
-    "correctEn": "Documented constraints (freshness, cardinality, legal categories) become executable assertions in CI and monitoring hooks.",
-    "correctVi": "Ràng buộc tài liệu hóa (độ mới, bản số, danh mục pháp lý) thành assertion trong CI và hook giám sát.",
-    "explanation": "* **Đúng / Correct:** Aligns with dataset constraint testing.\n* **Ôn / Study:** kiểm thử ràng buộc tập dữ liệu"
-  },
-  {
     "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: label correctness.",
     "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **đúng nhãn**.",
     "options": [
@@ -750,31 +700,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with label correctness.\n* **Ôn / Study:** đúng nhãn"
   },
   {
-    "questionEn": "Which of the following statements is MOST accurate?\nRegarding historical / sampling bias, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **thiên kiến lịch sử / mẫu**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "Random shuffling removes need for domain stratification.",
-        "vi": "Xáo trộn ngẫu nhiên loại stratification miền."
-      },
-      {
-        "en": "Sampling bias affects batch norm layers only.",
-        "vi": "Thiên kiến mẫu chỉ ảnh hưởng lớp batch norm."
-      },
-      {
-        "en": "Bias disappears when datasets exceed one terabyte.",
-        "vi": "Bias biến mất khi dataset > 1TB."
-      },
-      {
-        "en": "Historical bias encodes past inequities into training corpora; sampling bias arises when collection excludes critical segments of the operational population.",
-        "vi": "Thiên kiến lịch sử mã hóa bất công quá khứ vào corpus; thiên kiến mẫu khi thu thập loại bỏ phân khúc quan trọng của quần thể vận hành."
-      }
-    ],
-    "correctEn": "Historical bias encodes past inequities into training corpora; sampling bias arises when collection excludes critical segments of the operational population.",
-    "correctVi": "Thiên kiến lịch sử mã hóa bất công quá khứ vào corpus; thiên kiến mẫu khi thu thập loại bỏ phân khúc quan trọng của quần thể vận hành.",
-    "explanation": "* **Đúng / Correct:** Aligns with historical / sampling bias.\n* **Ôn / Study:** thiên kiến lịch sử / mẫu"
-  },
-  {
     "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: data leakage between splits.",
     "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **rò rỉ giữa các tách dữ liệu**.",
     "options": [
@@ -798,31 +723,6 @@
     "correctEn": "Leakage occurs when duplicate entities, future information, or preprocessing computed on full datasets contaminates train/test separation.",
     "correctVi": "Rò xảy ra khi thực thể trùng, thông tin tương lai hoặc tiền xử lý trên toàn bộ dữ liệu làm nhiễu tách train/test.",
     "explanation": "* **Đúng / Correct:** Aligns with data leakage between splits.\n* **Ôn / Study:** rò rỉ giữa các tách dữ liệu"
-  },
-  {
-    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: input data risks.",
-    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **rủi ro dữ liệu đầu vào**.",
-    "options": [
-      {
-        "en": "Clean validation curves prove dataset integrity automatically.",
-        "vi": "Đường validation sạch chứng minh tự động toàn vẹn dataset."
-      },
-      {
-        "en": "Biased sampling, label noise, leakage across splits, pipeline defects, and poisoning corrupt MLS conclusions before model testing matters.",
-        "vi": "Mẫu thiên kiến, nhãn nhiễu, rò giữa tách tập, lỗi pipeline và đầu độc làm hỏng kết luận MLS trước khi kiểm thử mô hình."
-      },
-      {
-        "en": "Poisoned rows always crash training jobs visibly.",
-        "vi": "Dòng đầu độc luôn làm crash huấn luyện rõ ràng."
-      },
-      {
-        "en": "Pipeline YAML removes need for schema evolution tests.",
-        "vi": "YAML pipeline loại kiểm thử tiến hóa schema."
-      }
-    ],
-    "correctEn": "Biased sampling, label noise, leakage across splits, pipeline defects, and poisoning corrupt MLS conclusions before model testing matters.",
-    "correctVi": "Mẫu thiên kiến, nhãn nhiễu, rò giữa tách tập, lỗi pipeline và đầu độc làm hỏng kết luận MLS trước khi kiểm thử mô hình.",
-    "explanation": "* **Đúng / Correct:** Aligns with input data risks.\n* **Ôn / Study:** rủi ro dữ liệu đầu vào"
   },
   {
     "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding bias testing, pick the option that matches ISTQB CT-AI guidance.",
@@ -1075,31 +975,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with data pipeline testing.\n* **Ôn / Study:** kiểm thử pipeline dữ liệu"
   },
   {
-    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: representativeness.",
-    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **đại diện**.",
-    "options": [
-      {
-        "en": "Representativeness only matters for image pixels, not tabular features.",
-        "vi": "Đại diện chỉ cho pixel ảnh, không cho đặc trưng bảng."
-      },
-      {
-        "en": "Operational score distributions should match training assumptions; drift detectors compare live batches against reference profiles.",
-        "vi": "Phân phối điểm vận hành nên khớp giả định huấn luyện; detector drift so batch live với profile tham chiếu."
-      },
-      {
-        "en": "Weekend traffic may be ignored when training weekday-only models without disclosure.",
-        "vi": "Traffic cuối tuần có thể bỏ qua khi huấn luyện chỉ ngày làm không cần tiết lộ."
-      },
-      {
-        "en": "Concept drift never interacts with business KPI acceptance.",
-        "vi": "Concept drift không tương tác KPI nghiệm thu."
-      }
-    ],
-    "correctEn": "Operational score distributions should match training assumptions; drift detectors compare live batches against reference profiles.",
-    "correctVi": "Phân phối điểm vận hành nên khớp giả định huấn luyện; detector drift so batch live với profile tham chiếu.",
-    "explanation": "* **Đúng / Correct:** Aligns with representativeness.\n* **Ôn / Study:** đại diện"
-  },
-  {
     "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: dataset constraint testing.",
     "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử ràng buộc tập dữ liệu**.",
     "options": [
@@ -1148,131 +1023,6 @@
     "correctEn": "Label QA uses audits, adjudication rules, inter-rater reliability, correction workflows, and fuzz checks on encoding conventions.",
     "correctVi": "QA nhãn dùng audit, quy tắc phân xử, độ tin cậy giữa người gán nhãn, quy trình sửa và fuzz quy ước mã hóa.",
     "explanation": "* **Đúng / Correct:** Aligns with label correctness.\n* **Ôn / Study:** đúng nhãn"
-  },
-  {
-    "questionEn": "Select the BEST answer.\nTopic focus: historical / sampling bias.",
-    "questionVi": "Chọn đáp án TỐT NHẤT.\nTrọng tâm: **thiên kiến lịch sử / mẫu**.",
-    "options": [
-      {
-        "en": "Random shuffling removes need for domain stratification.",
-        "vi": "Xáo trộn ngẫu nhiên loại stratification miền."
-      },
-      {
-        "en": "Sampling bias affects batch norm layers only.",
-        "vi": "Thiên kiến mẫu chỉ ảnh hưởng lớp batch norm."
-      },
-      {
-        "en": "Historical bias encodes past inequities into training corpora; sampling bias arises when collection excludes critical segments of the operational population.",
-        "vi": "Thiên kiến lịch sử mã hóa bất công quá khứ vào corpus; thiên kiến mẫu khi thu thập loại bỏ phân khúc quan trọng của quần thể vận hành."
-      },
-      {
-        "en": "Bias disappears when datasets exceed one terabyte.",
-        "vi": "Bias biến mất khi dataset > 1TB."
-      }
-    ],
-    "correctEn": "Historical bias encodes past inequities into training corpora; sampling bias arises when collection excludes critical segments of the operational population.",
-    "correctVi": "Thiên kiến lịch sử mã hóa bất công quá khứ vào corpus; thiên kiến mẫu khi thu thập loại bỏ phân khúc quan trọng của quần thể vận hành.",
-    "explanation": "* **Đúng / Correct:** Aligns with historical / sampling bias.\n* **Ôn / Study:** thiên kiến lịch sử / mẫu"
-  },
-  {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: data leakage between splits.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **rò rỉ giữa các tách dữ liệu**.",
-    "options": [
-      {
-        "en": "Temporal splits eliminate every leakage pathway automatically.",
-        "vi": "Tách thời gian loại mọi đường rò tự động."
-      },
-      {
-        "en": "Leakage occurs when duplicate entities, future information, or preprocessing computed on full datasets contaminates train/test separation.",
-        "vi": "Rò xảy ra khi thực thể trùng, thông tin tương lai hoặc tiền xử lý trên toàn bộ dữ liệu làm nhiễu tách train/test."
-      },
-      {
-        "en": "Leakage detection belongs solely to compliance officers.",
-        "vi": "Phát hiện rò chỉ thuộc compliance officer."
-      },
-      {
-        "en": "Scaling fit on train+test together is always acceptable practice.",
-        "vi": "Fit scaler trên train+test luôn được phép."
-      }
-    ],
-    "correctEn": "Leakage occurs when duplicate entities, future information, or preprocessing computed on full datasets contaminates train/test separation.",
-    "correctVi": "Rò xảy ra khi thực thể trùng, thông tin tương lai hoặc tiền xử lý trên toàn bộ dữ liệu làm nhiễu tách train/test.",
-    "explanation": "* **Đúng / Correct:** Aligns with data leakage between splits.\n* **Ôn / Study:** rò rỉ giữa các tách dữ liệu"
-  },
-  {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding input data risks, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **rủi ro dữ liệu đầu vào**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "Clean validation curves prove dataset integrity automatically.",
-        "vi": "Đường validation sạch chứng minh tự động toàn vẹn dataset."
-      },
-      {
-        "en": "Poisoned rows always crash training jobs visibly.",
-        "vi": "Dòng đầu độc luôn làm crash huấn luyện rõ ràng."
-      },
-      {
-        "en": "Pipeline YAML removes need for schema evolution tests.",
-        "vi": "YAML pipeline loại kiểm thử tiến hóa schema."
-      },
-      {
-        "en": "Biased sampling, label noise, leakage across splits, pipeline defects, and poisoning corrupt MLS conclusions before model testing matters.",
-        "vi": "Mẫu thiên kiến, nhãn nhiễu, rò giữa tách tập, lỗi pipeline và đầu độc làm hỏng kết luận MLS trước khi kiểm thử mô hình."
-      }
-    ],
-    "correctEn": "Biased sampling, label noise, leakage across splits, pipeline defects, and poisoning corrupt MLS conclusions before model testing matters.",
-    "correctVi": "Mẫu thiên kiến, nhãn nhiễu, rò giữa tách tập, lỗi pipeline và đầu độc làm hỏng kết luận MLS trước khi kiểm thử mô hình.",
-    "explanation": "* **Đúng / Correct:** Aligns with input data risks.\n* **Ôn / Study:** rủi ro dữ liệu đầu vào"
-  },
-  {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: bias testing.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **kiểm thử bias**.",
-    "options": [
-      {
-        "en": "Mitigations never require regression checks on non-target slices.",
-        "vi": "Giảm thiểu không cần kiểm tra hồi quy trên lát không phải mục tiêu."
-      },
-      {
-        "en": "Bias testing slices metrics across demographic or operational cohorts and validates mitigations do not unfairly harm other cohorts’ accuracy.",
-        "vi": "Kiểm thử bias xẻ metric theo nhóm nhân khẩu/vận hành và xác nhận giảm thiểu không làm tổn hại oan độ chính xác nhóm khác."
-      },
-      {
-        "en": "Synthetic fairness labels replace stakeholder review.",
-        "vi": "Nhãn fairness tổng hợp thay stakeholder review."
-      },
-      {
-        "en": "Fairness can be proven by a single global accuracy score.",
-        "vi": "Công bằng chứng minh bằng một accuracy toàn cục."
-      }
-    ],
-    "correctEn": "Bias testing slices metrics across demographic or operational cohorts and validates mitigations do not unfairly harm other cohorts’ accuracy.",
-    "correctVi": "Kiểm thử bias xẻ metric theo nhóm nhân khẩu/vận hành và xác nhận giảm thiểu không làm tổn hại oan độ chính xác nhóm khác.",
-    "explanation": "* **Đúng / Correct:** Aligns with bias testing.\n* **Ôn / Study:** kiểm thử bias"
-  },
-  {
-    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: data pipeline testing.",
-    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử pipeline dữ liệu**.",
-    "options": [
-      {
-        "en": "Manual spot checks once per year suffice for regulated MLS.",
-        "vi": "Kiểm tra tay một lần/năm đủ cho MLS chịu quy định."
-      },
-      {
-        "en": "Replay tests duplicate production traffic illegally by definition.",
-        "vi": "Phát lại traffic production luôn bất hợp pháp theo định nghĩa."
-      },
-      {
-        "en": "Ordering of transforms has no effect on downstream leakage.",
-        "vi": "Thứ tự biến đổi không ảnh hưởng rò phía dưới."
-      },
-      {
-        "en": "Automated checks validate transforms (ranges, idempotence where needed), joins, replay of production samples, and failure alarms.",
-        "vi": "Kiểm tra tự động xác nhận biến đổi (miền giá trị, idempotent khi cần), join, phát lại mẫu production và báo động lỗi."
-      }
-    ],
-    "correctEn": "Automated checks validate transforms (ranges, idempotence where needed), joins, replay of production samples, and failure alarms.",
-    "correctVi": "Kiểm tra tự động xác nhận biến đổi (miền giá trị, idempotent khi cần), join, phát lại mẫu production và báo động lỗi.",
-    "explanation": "* **Đúng / Correct:** Aligns with data pipeline testing.\n* **Ôn / Study:** kiểm thử pipeline dữ liệu"
   },
   {
     "questionEn": "Which of the following statements is MOST accurate?\nRegarding representativeness, pick the option that matches ISTQB CT-AI guidance.",
@@ -1375,56 +1125,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with historical / sampling bias.\n* **Ôn / Study:** thiên kiến lịch sử / mẫu"
   },
   {
-    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: data leakage between splits.",
-    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **rò rỉ giữa các tách dữ liệu**.",
-    "options": [
-      {
-        "en": "Temporal splits eliminate every leakage pathway automatically.",
-        "vi": "Tách thời gian loại mọi đường rò tự động."
-      },
-      {
-        "en": "Leakage detection belongs solely to compliance officers.",
-        "vi": "Phát hiện rò chỉ thuộc compliance officer."
-      },
-      {
-        "en": "Leakage occurs when duplicate entities, future information, or preprocessing computed on full datasets contaminates train/test separation.",
-        "vi": "Rò xảy ra khi thực thể trùng, thông tin tương lai hoặc tiền xử lý trên toàn bộ dữ liệu làm nhiễu tách train/test."
-      },
-      {
-        "en": "Scaling fit on train+test together is always acceptable practice.",
-        "vi": "Fit scaler trên train+test luôn được phép."
-      }
-    ],
-    "correctEn": "Leakage occurs when duplicate entities, future information, or preprocessing computed on full datasets contaminates train/test separation.",
-    "correctVi": "Rò xảy ra khi thực thể trùng, thông tin tương lai hoặc tiền xử lý trên toàn bộ dữ liệu làm nhiễu tách train/test.",
-    "explanation": "* **Đúng / Correct:** Aligns with data leakage between splits.\n* **Ôn / Study:** rò rỉ giữa các tách dữ liệu"
-  },
-  {
-    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: input data risks.",
-    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **rủi ro dữ liệu đầu vào**.",
-    "options": [
-      {
-        "en": "Clean validation curves prove dataset integrity automatically.",
-        "vi": "Đường validation sạch chứng minh tự động toàn vẹn dataset."
-      },
-      {
-        "en": "Poisoned rows always crash training jobs visibly.",
-        "vi": "Dòng đầu độc luôn làm crash huấn luyện rõ ràng."
-      },
-      {
-        "en": "Pipeline YAML removes need for schema evolution tests.",
-        "vi": "YAML pipeline loại kiểm thử tiến hóa schema."
-      },
-      {
-        "en": "Biased sampling, label noise, leakage across splits, pipeline defects, and poisoning corrupt MLS conclusions before model testing matters.",
-        "vi": "Mẫu thiên kiến, nhãn nhiễu, rò giữa tách tập, lỗi pipeline và đầu độc làm hỏng kết luận MLS trước khi kiểm thử mô hình."
-      }
-    ],
-    "correctEn": "Biased sampling, label noise, leakage across splits, pipeline defects, and poisoning corrupt MLS conclusions before model testing matters.",
-    "correctVi": "Mẫu thiên kiến, nhãn nhiễu, rò giữa tách tập, lỗi pipeline và đầu độc làm hỏng kết luận MLS trước khi kiểm thử mô hình.",
-    "explanation": "* **Đúng / Correct:** Aligns with input data risks.\n* **Ôn / Study:** rủi ro dữ liệu đầu vào"
-  },
-  {
     "questionEn": "Select the BEST answer.\nRegarding bias testing, pick the option that matches ISTQB CT-AI guidance.",
     "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **kiểm thử bias**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
     "options": [
@@ -1475,56 +1175,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with data pipeline testing.\n* **Ôn / Study:** kiểm thử pipeline dữ liệu"
   },
   {
-    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: representativeness.",
-    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **đại diện**.",
-    "options": [
-      {
-        "en": "Representativeness only matters for image pixels, not tabular features.",
-        "vi": "Đại diện chỉ cho pixel ảnh, không cho đặc trưng bảng."
-      },
-      {
-        "en": "Weekend traffic may be ignored when training weekday-only models without disclosure.",
-        "vi": "Traffic cuối tuần có thể bỏ qua khi huấn luyện chỉ ngày làm không cần tiết lộ."
-      },
-      {
-        "en": "Operational score distributions should match training assumptions; drift detectors compare live batches against reference profiles.",
-        "vi": "Phân phối điểm vận hành nên khớp giả định huấn luyện; detector drift so batch live với profile tham chiếu."
-      },
-      {
-        "en": "Concept drift never interacts with business KPI acceptance.",
-        "vi": "Concept drift không tương tác KPI nghiệm thu."
-      }
-    ],
-    "correctEn": "Operational score distributions should match training assumptions; drift detectors compare live batches against reference profiles.",
-    "correctVi": "Phân phối điểm vận hành nên khớp giả định huấn luyện; detector drift so batch live với profile tham chiếu.",
-    "explanation": "* **Đúng / Correct:** Aligns with representativeness.\n* **Ôn / Study:** đại diện"
-  },
-  {
-    "questionEn": "Select the BEST answer.\nRegarding dataset constraint testing, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **kiểm thử ràng buộc tập dữ liệu**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "Automated assertions slow science and must be avoided.",
-        "vi": "Assertion tự động làm chậm khoa học nên tránh."
-      },
-      {
-        "en": "Documented constraints (freshness, cardinality, legal categories) become executable assertions in CI and monitoring hooks.",
-        "vi": "Ràng buộc tài liệu hóa (độ mới, bản số, danh mục pháp lý) thành assertion trong CI và hook giám sát."
-      },
-      {
-        "en": "Legal categories never influence sampling quotas.",
-        "vi": "Danh mục pháp lý không ảnh hưởng quota mẫu."
-      },
-      {
-        "en": "Constraints belong exclusively to marketing consent banners.",
-        "vi": "Ràng buộc chỉ thuộc banner đồng ý marketing."
-      }
-    ],
-    "correctEn": "Documented constraints (freshness, cardinality, legal categories) become executable assertions in CI and monitoring hooks.",
-    "correctVi": "Ràng buộc tài liệu hóa (độ mới, bản số, danh mục pháp lý) thành assertion trong CI và hook giám sát.",
-    "explanation": "* **Đúng / Correct:** Aligns with dataset constraint testing.\n* **Ôn / Study:** kiểm thử ràng buộc tập dữ liệu"
-  },
-  {
     "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: label correctness.",
     "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **đúng nhãn**.",
     "options": [
@@ -1548,31 +1198,6 @@
     "correctEn": "Label QA uses audits, adjudication rules, inter-rater reliability, correction workflows, and fuzz checks on encoding conventions.",
     "correctVi": "QA nhãn dùng audit, quy tắc phân xử, độ tin cậy giữa người gán nhãn, quy trình sửa và fuzz quy ước mã hóa.",
     "explanation": "* **Đúng / Correct:** Aligns with label correctness.\n* **Ôn / Study:** đúng nhãn"
-  },
-  {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: historical / sampling bias.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **thiên kiến lịch sử / mẫu**.",
-    "options": [
-      {
-        "en": "Random shuffling removes need for domain stratification.",
-        "vi": "Xáo trộn ngẫu nhiên loại stratification miền."
-      },
-      {
-        "en": "Bias disappears when datasets exceed one terabyte.",
-        "vi": "Bias biến mất khi dataset > 1TB."
-      },
-      {
-        "en": "Historical bias encodes past inequities into training corpora; sampling bias arises when collection excludes critical segments of the operational population.",
-        "vi": "Thiên kiến lịch sử mã hóa bất công quá khứ vào corpus; thiên kiến mẫu khi thu thập loại bỏ phân khúc quan trọng của quần thể vận hành."
-      },
-      {
-        "en": "Sampling bias affects batch norm layers only.",
-        "vi": "Thiên kiến mẫu chỉ ảnh hưởng lớp batch norm."
-      }
-    ],
-    "correctEn": "Historical bias encodes past inequities into training corpora; sampling bias arises when collection excludes critical segments of the operational population.",
-    "correctVi": "Thiên kiến lịch sử mã hóa bất công quá khứ vào corpus; thiên kiến mẫu khi thu thập loại bỏ phân khúc quan trọng của quần thể vận hành.",
-    "explanation": "* **Đúng / Correct:** Aligns with historical / sampling bias.\n* **Ôn / Study:** thiên kiến lịch sử / mẫu"
   },
   {
     "questionEn": "Which of the following statements is MOST accurate?\nRegarding data leakage between splits, pick the option that matches ISTQB CT-AI guidance.",
@@ -1698,56 +1323,6 @@
     "correctEn": "Operational score distributions should match training assumptions; drift detectors compare live batches against reference profiles.",
     "correctVi": "Phân phối điểm vận hành nên khớp giả định huấn luyện; detector drift so batch live với profile tham chiếu.",
     "explanation": "* **Đúng / Correct:** Aligns with representativeness.\n* **Ôn / Study:** đại diện"
-  },
-  {
-    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: dataset constraint testing.",
-    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **kiểm thử ràng buộc tập dữ liệu**.",
-    "options": [
-      {
-        "en": "Legal categories never influence sampling quotas.",
-        "vi": "Danh mục pháp lý không ảnh hưởng quota mẫu."
-      },
-      {
-        "en": "Documented constraints (freshness, cardinality, legal categories) become executable assertions in CI and monitoring hooks.",
-        "vi": "Ràng buộc tài liệu hóa (độ mới, bản số, danh mục pháp lý) thành assertion trong CI và hook giám sát."
-      },
-      {
-        "en": "Automated assertions slow science and must be avoided.",
-        "vi": "Assertion tự động làm chậm khoa học nên tránh."
-      },
-      {
-        "en": "Constraints belong exclusively to marketing consent banners.",
-        "vi": "Ràng buộc chỉ thuộc banner đồng ý marketing."
-      }
-    ],
-    "correctEn": "Documented constraints (freshness, cardinality, legal categories) become executable assertions in CI and monitoring hooks.",
-    "correctVi": "Ràng buộc tài liệu hóa (độ mới, bản số, danh mục pháp lý) thành assertion trong CI và hook giám sát.",
-    "explanation": "* **Đúng / Correct:** Aligns with dataset constraint testing.\n* **Ôn / Study:** kiểm thử ràng buộc tập dữ liệu"
-  },
-  {
-    "questionEn": "Select the BEST answer.\nRegarding label correctness, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **đúng nhãn**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "Inter-rater metrics are irrelevant for subjective labels.",
-        "vi": "Metric giữa người gán không liên quan nhãn chủ quan."
-      },
-      {
-        "en": "Majority vote among interns removes gold-standard requirements.",
-        "vi": "Biểu quyết đông thực tập sinh loại chuẩn vàng."
-      },
-      {
-        "en": "Label QA uses audits, adjudication rules, inter-rater reliability, correction workflows, and fuzz checks on encoding conventions.",
-        "vi": "QA nhãn dùng audit, quy tắc phân xử, độ tin cậy giữa người gán nhãn, quy trình sửa và fuzz quy ước mã hóa."
-      },
-      {
-        "en": "Label bugs surface only during inference GPU profiling.",
-        "vi": "Lỗi nhãn chỉ lộ khi profiling GPU inference."
-      }
-    ],
-    "correctEn": "Label QA uses audits, adjudication rules, inter-rater reliability, correction workflows, and fuzz checks on encoding conventions.",
-    "correctVi": "QA nhãn dùng audit, quy tắc phân xử, độ tin cậy giữa người gán nhãn, quy trình sửa và fuzz quy ước mã hóa.",
-    "explanation": "* **Đúng / Correct:** Aligns with label correctness.\n* **Ôn / Study:** đúng nhãn"
   },
   {
     "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: historical / sampling bias.",

@@ -825,56 +825,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with conventional vs AI-based systems.\n* **Ôn / Study:** hệ thống truyền thống so với hệ dựa trên AI"
   },
   {
-    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding narrow, general, and super AI, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **narrow AI, general AI và super AI**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "Frontier GenAI proves general AI already passes every human intellectual task reliably.",
-        "vi": "GenAI frontier chứng minh general AI đã vượt mọi nhiệm trí tuệ của người một cách tin cậy."
-      },
-      {
-        "en": "Super AI is synonymous with narrow AI used for spam filtering.",
-        "vi": "Super AI đồng nghĩa với narrow AI dùng để lọc spam."
-      },
-      {
-        "en": "General AI is deployed widely today in every production LLM without restrictions.",
-        "vi": "General AI đã triển khai rộng rãi hôm nay trong mọi LLM production không hạn chế."
-      },
-      {
-        "en": "Narrow AI targets specific tasks; general AI remains theoretical today; super AI describes hypothetical superintelligence beyond humans.",
-        "vi": "Narrow AI phục vụ nhiệm vụ cụ thể; general AI hiện vẫn mang tính lý thuyết; super AI mô tả siêu trí thông minh giả thuyết vượt con người."
-      }
-    ],
-    "correctEn": "Narrow AI targets specific tasks; general AI remains theoretical today; super AI describes hypothetical superintelligence beyond humans.",
-    "correctVi": "Narrow AI phục vụ nhiệm vụ cụ thể; general AI hiện vẫn mang tính lý thuyết; super AI mô tả siêu trí thông minh giả thuyết vượt con người.",
-    "explanation": "* **Đúng / Correct:** Aligns with narrow, general, and super AI.\n* **Ôn / Study:** narrow AI, general AI và super AI"
-  },
-  {
-    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: AI technology hierarchy (AI ⊃ ML ⊃ DL).",
-    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **phân cấp công nghệ AI ⊃ ML ⊃ DL**.",
-    "options": [
-      {
-        "en": "Unsupervised clustering cannot be considered part of machine learning.",
-        "vi": "Phân cụm không giám sát không được xem là một phần của học máy."
-      },
-      {
-        "en": "Machine learning is a branch of AI; deep learning is typically a subset of ML using deep neural networks.",
-        "vi": "Học máy là nhánh của AI; học sâu thường là tập con của ML dùng mạng nơ-ron sâu."
-      },
-      {
-        "en": "AI and ML are interchangeable labels with identical scope in the syllabus.",
-        "vi": "AI và ML là nhãn hoán đổi được với phạm vi giống hệt trong giáo trình."
-      },
-      {
-        "en": "Deep learning is the outer umbrella that fully replaces AI and ML as separate fields.",
-        "vi": "Deep learning là ô lớn nhất thay thế hoàn toàn AI và ML như các lĩnh vực riêng."
-      }
-    ],
-    "correctEn": "Machine learning is a branch of AI; deep learning is typically a subset of ML using deep neural networks.",
-    "correctVi": "Học máy là nhánh của AI; học sâu thường là tập con của ML dùng mạng nơ-ron sâu.",
-    "explanation": "* **Đúng / Correct:** Aligns with AI technology hierarchy (AI ⊃ ML ⊃ DL).\n* **Ôn / Study:** phân cấp công nghệ AI ⊃ ML ⊃ DL"
-  },
-  {
     "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: generative AI (GenAI).",
     "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **generative AI (GenAI)**.",
     "options": [
@@ -898,31 +848,6 @@
     "correctEn": "GenAI systems learn from data to synthesize new content (text, images, audio, video) similar in nature to training examples.",
     "correctVi": "Hệ GenAI học từ dữ liệu để tổng hợp nội dung mới (văn bản, hình, âm thanh, video) có bản chất tương tự ví dụ huấn luyện.",
     "explanation": "* **Đúng / Correct:** Aligns with generative AI (GenAI).\n* **Ôn / Study:** generative AI (GenAI)"
-  },
-  {
-    "questionEn": "Select the BEST answer.\nRegarding hardware for ML workloads, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **phần cứng cho khối lượng công việc ML**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "Edge devices never run quantized or distilled ML models.",
-        "vi": "Thiết biện không bao giờ chạy mô hình ML đã lượng tử hóa hay distill."
-      },
-      {
-        "en": "ASICs are mandated for every exploratory Jupyter notebook on a laptop.",
-        "vi": "ASIC bắt buộc cho mọi notebook Jupyter khám phá trên laptop."
-      },
-      {
-        "en": "CPUs are universally faster than GPUs for every large neural network training job.",
-        "vi": "CPU luôn nhanh hơn GPU cho mọi tác vụ huấn luyện mạng nơ-ron lớn."
-      },
-      {
-        "en": "GPUs accelerate parallel tensor math common in training and inference of neural networks; CPUs remain useful for general orchestration.",
-        "vi": "GPU tăng tốc phép toán tensor song song thường gặp khi huấn luyện và suy luận mạng nơ-ron; CPU vẫn hữu ích cho điều phối chung."
-      }
-    ],
-    "correctEn": "GPUs accelerate parallel tensor math common in training and inference of neural networks; CPUs remain useful for general orchestration.",
-    "correctVi": "GPU tăng tốc phép toán tensor song song thường gặp khi huấn luyện và suy luận mạng nơ-ron; CPU vẫn hữu ích cho điều phối chung.",
-    "explanation": "* **Đúng / Correct:** Aligns with hardware for ML workloads.\n* **Ôn / Study:** phần cứng cho khối lượng công việc ML"
   },
   {
     "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: development and hosting options.",
@@ -975,31 +900,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with ML frameworks.\n* **Ôn / Study:** framework ML"
   },
   {
-    "questionEn": "Which of the following statements is MOST accurate?\nRegarding regulations and standards affecting AI testing, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **quy định và chuẩn ảnh hưởng kiểm thử AI**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "Regulations and standards influence evidence expectations: documentation, risk class, transparency, logging, and lifecycle controls.",
-        "vi": "Quy định và chuẩn ảnh hưởng kỳ vọng bằng chứng: tài liệu, phân loại rủi ro, minh bạch, logging và kiểm soát vòng đời."
-      },
-      {
-        "en": "EU AI Act concepts remove the need for statistical acceptance criteria.",
-        "vi": "Khái niệm EU AI Act loại bỏ nhu cầu tiêu chí nghiệm thu thống kê."
-      },
-      {
-        "en": "Risk-based testing becomes irrelevant once a model achieves high accuracy on validation data.",
-        "vi": "Kiểm thử theo rủi ro trở nên không liên quan khi mô hình đạt độ chính xác cao trên validation."
-      },
-      {
-        "en": "ISO/IEC 23894 forbids any adversarial or metamorphic testing technique.",
-        "vi": "ISO/IEC 23894 cấm mọi kỹ thuật kiểm thử đối kháng hay biến hình."
-      }
-    ],
-    "correctEn": "Regulations and standards influence evidence expectations: documentation, risk class, transparency, logging, and lifecycle controls.",
-    "correctVi": "Quy định và chuẩn ảnh hưởng kỳ vọng bằng chứng: tài liệu, phân loại rủi ro, minh bạch, logging và kiểm soát vòng đời.",
-    "explanation": "* **Đúng / Correct:** Aligns with regulations and standards affecting AI testing.\n* **Ôn / Study:** quy định và chuẩn ảnh hưởng kiểm thử AI"
-  },
-  {
     "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: conventional vs AI-based systems.",
     "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **hệ thống truyền thống so với hệ dựa trên AI**.",
     "options": [
@@ -1048,31 +948,6 @@
     "correctEn": "Narrow AI targets specific tasks; general AI remains theoretical today; super AI describes hypothetical superintelligence beyond humans.",
     "correctVi": "Narrow AI phục vụ nhiệm vụ cụ thể; general AI hiện vẫn mang tính lý thuyết; super AI mô tả siêu trí thông minh giả thuyết vượt con người.",
     "explanation": "* **Đúng / Correct:** Aligns with narrow, general, and super AI.\n* **Ôn / Study:** narrow AI, general AI và super AI"
-  },
-  {
-    "questionEn": "Which of the following statements is MOST accurate?\nRegarding AI technology hierarchy (AI ⊃ ML ⊃ DL), pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **phân cấp công nghệ AI ⊃ ML ⊃ DL**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "Machine learning is a branch of AI; deep learning is typically a subset of ML using deep neural networks.",
-        "vi": "Học máy là nhánh của AI; học sâu thường là tập con của ML dùng mạng nơ-ron sâu."
-      },
-      {
-        "en": "Deep learning is the outer umbrella that fully replaces AI and ML as separate fields.",
-        "vi": "Deep learning là ô lớn nhất thay thế hoàn toàn AI và ML như các lĩnh vực riêng."
-      },
-      {
-        "en": "Unsupervised clustering cannot be considered part of machine learning.",
-        "vi": "Phân cụm không giám sát không được xem là một phần của học máy."
-      },
-      {
-        "en": "AI and ML are interchangeable labels with identical scope in the syllabus.",
-        "vi": "AI và ML là nhãn hoán đổi được với phạm vi giống hệt trong giáo trình."
-      }
-    ],
-    "correctEn": "Machine learning is a branch of AI; deep learning is typically a subset of ML using deep neural networks.",
-    "correctVi": "Học máy là nhánh của AI; học sâu thường là tập con của ML dùng mạng nơ-ron sâu.",
-    "explanation": "* **Đúng / Correct:** Aligns with AI technology hierarchy (AI ⊃ ML ⊃ DL).\n* **Ôn / Study:** phân cấp công nghệ AI ⊃ ML ⊃ DL"
   },
   {
     "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: generative AI (GenAI).",
@@ -1125,31 +1000,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with hardware for ML workloads.\n* **Ôn / Study:** phần cứng cho khối lượng công việc ML"
   },
   {
-    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nRegarding development and hosting options, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nVới chủ đề **phương án phát triển và hosting**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "Hybrid approaches may keep sensitive preprocessing on-premises while scaling training or serving in controlled cloud environments.",
-        "vi": "Cách tiếp cận hybrid có thể giữ tiền xử lý nhạy cảm on-prem trong khi mở rộng huấn luyện hoặc phục vụ trên cloud có kiểm soát."
-      },
-      {
-        "en": "Local laptops alone remove the need for reproducible experiment tracking.",
-        "vi": "Chỉ laptop cục bộ là loại bỏ nhu cầu theo dõi thí nghiệm có thể tái lập."
-      },
-      {
-        "en": "Hybrid models forbid any use of cloud GPUs under all regulatory regimes.",
-        "vi": "Mô hình hybrid cấm mọi việc dùng GPU cloud trong mọi khung quy định."
-      },
-      {
-        "en": "Public cloud hosting mathematically guarantees identical security posture for every dataset without governance.",
-        "vi": "Hosting đám công cộng đảm bảo toán học cùng mức an toàn cho mọi tập dữ liệu không cần quản trị."
-      }
-    ],
-    "correctEn": "Hybrid approaches may keep sensitive preprocessing on-premises while scaling training or serving in controlled cloud environments.",
-    "correctVi": "Cách tiếp cận hybrid có thể giữ tiền xử lý nhạy cảm on-prem trong khi mở rộng huấn luyện hoặc phục vụ trên cloud có kiểm soát.",
-    "explanation": "* **Đúng / Correct:** Aligns with development and hosting options.\n* **Ôn / Study:** phương án phát triển và hosting"
-  },
-  {
     "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: ML frameworks.",
     "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **framework ML**.",
     "options": [
@@ -1198,56 +1048,6 @@
     "correctEn": "Regulations and standards influence evidence expectations: documentation, risk class, transparency, logging, and lifecycle controls.",
     "correctVi": "Quy định và chuẩn ảnh hưởng kỳ vọng bằng chứng: tài liệu, phân loại rủi ro, minh bạch, logging và kiểm soát vòng đời.",
     "explanation": "* **Đúng / Correct:** Aligns with regulations and standards affecting AI testing.\n* **Ôn / Study:** quy định và chuẩn ảnh hưởng kiểm thử AI"
-  },
-  {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nRegarding conventional vs AI-based systems, pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nVới chủ đề **hệ thống truyền thống so với hệ dựa trên AI**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "Conventional systems always learn from operational logs exactly like supervised ML models.",
-        "vi": "Hệ truyền thống luôn học từ log vận hành giống hệt mô hình ML có giám sát."
-      },
-      {
-        "en": "AI-based systems often learn patterns from data and may behave probabilistically, while conventional systems typically follow explicit deterministic logic.",
-        "vi": "Hệ dựa trên AI thường học quy luật từ dữ liệu và có thể hành xử xác suất, còn hệ truyền thống thường theo logic tường minh và deterministic."
-      },
-      {
-        "en": "AI-based systems must always be fully explainable by inspecting each line of imperative source code.",
-        "vi": "Hệ AI luôn phải giải thích đầy đủ chỉ bằng cách đọc từng dòng mã mệnh lệnh."
-      },
-      {
-        "en": "Probabilistic reasoning applies only to conventional transaction systems, never to ML components.",
-        "vi": "Suy luận xác suất chỉ áp dụng cho hệ giao dịch truyền thống, không bao giờ cho thành phần ML."
-      }
-    ],
-    "correctEn": "AI-based systems often learn patterns from data and may behave probabilistically, while conventional systems typically follow explicit deterministic logic.",
-    "correctVi": "Hệ dựa trên AI thường học quy luật từ dữ liệu và có thể hành xử xác suất, còn hệ truyền thống thường theo logic tường minh và deterministic.",
-    "explanation": "* **Đúng / Correct:** Aligns with conventional vs AI-based systems.\n* **Ôn / Study:** hệ thống truyền thống so với hệ dựa trên AI"
-  },
-  {
-    "questionEn": "Which of the following statements is MOST accurate?\nTopic focus: narrow, general, and super AI.",
-    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nTrọng tâm: **narrow AI, general AI và super AI**.",
-    "options": [
-      {
-        "en": "Narrow AI targets specific tasks; general AI remains theoretical today; super AI describes hypothetical superintelligence beyond humans.",
-        "vi": "Narrow AI phục vụ nhiệm vụ cụ thể; general AI hiện vẫn mang tính lý thuyết; super AI mô tả siêu trí thông minh giả thuyết vượt con người."
-      },
-      {
-        "en": "Super AI is synonymous with narrow AI used for spam filtering.",
-        "vi": "Super AI đồng nghĩa với narrow AI dùng để lọc spam."
-      },
-      {
-        "en": "Frontier GenAI proves general AI already passes every human intellectual task reliably.",
-        "vi": "GenAI frontier chứng minh general AI đã vượt mọi nhiệm trí tuệ của người một cách tin cậy."
-      },
-      {
-        "en": "General AI is deployed widely today in every production LLM without restrictions.",
-        "vi": "General AI đã triển khai rộng rãi hôm nay trong mọi LLM production không hạn chế."
-      }
-    ],
-    "correctEn": "Narrow AI targets specific tasks; general AI remains theoretical today; super AI describes hypothetical superintelligence beyond humans.",
-    "correctVi": "Narrow AI phục vụ nhiệm vụ cụ thể; general AI hiện vẫn mang tính lý thuyết; super AI mô tả siêu trí thông minh giả thuyết vượt con người.",
-    "explanation": "* **Đúng / Correct:** Aligns with narrow, general, and super AI.\n* **Ôn / Study:** narrow AI, general AI và super AI"
   },
   {
     "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: AI technology hierarchy (AI ⊃ ML ⊃ DL).",
@@ -1325,31 +1125,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with hardware for ML workloads.\n* **Ôn / Study:** phần cứng cho khối lượng công việc ML"
   },
   {
-    "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: development and hosting options.",
-    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nÁp dụng thực hành kiểm thử MLS cho: **phương án phát triển và hosting**.",
-    "options": [
-      {
-        "en": "Hybrid models forbid any use of cloud GPUs under all regulatory regimes.",
-        "vi": "Mô hình hybrid cấm mọi việc dùng GPU cloud trong mọi khung quy định."
-      },
-      {
-        "en": "Public cloud hosting mathematically guarantees identical security posture for every dataset without governance.",
-        "vi": "Hosting đám công cộng đảm bảo toán học cùng mức an toàn cho mọi tập dữ liệu không cần quản trị."
-      },
-      {
-        "en": "Local laptops alone remove the need for reproducible experiment tracking.",
-        "vi": "Chỉ laptop cục bộ là loại bỏ nhu cầu theo dõi thí nghiệm có thể tái lập."
-      },
-      {
-        "en": "Hybrid approaches may keep sensitive preprocessing on-premises while scaling training or serving in controlled cloud environments.",
-        "vi": "Cách tiếp cận hybrid có thể giữ tiền xử lý nhạy cảm on-prem trong khi mở rộng huấn luyện hoặc phục vụ trên cloud có kiểm soát."
-      }
-    ],
-    "correctEn": "Hybrid approaches may keep sensitive preprocessing on-premises while scaling training or serving in controlled cloud environments.",
-    "correctVi": "Cách tiếp cận hybrid có thể giữ tiền xử lý nhạy cảm on-prem trong khi mở rộng huấn luyện hoặc phục vụ trên cloud có kiểm soát.",
-    "explanation": "* **Đúng / Correct:** Aligns with development and hosting options.\n* **Ôn / Study:** phương án phát triển và hosting"
-  },
-  {
     "questionEn": "Select the BEST answer.\nRegarding ML frameworks, pick the option that matches ISTQB CT-AI guidance.",
     "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **framework ML**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
     "options": [
@@ -1373,31 +1148,6 @@
     "correctEn": "Major frameworks provide tensor APIs, automatic differentiation, data loaders, and integrations for training and exporting models.",
     "correctVi": "Framework lớn cung cấp API tensor, vi phân tự động, bộ nạp dữ liệu và tích hợp huấn luyện/xuất mô hình.",
     "explanation": "* **Đúng / Correct:** Aligns with ML frameworks.\n* **Ôn / Study:** framework ML"
-  },
-  {
-    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: regulations and standards affecting AI testing.",
-    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **quy định và chuẩn ảnh hưởng kiểm thử AI**.",
-    "options": [
-      {
-        "en": "Regulations and standards influence evidence expectations: documentation, risk class, transparency, logging, and lifecycle controls.",
-        "vi": "Quy định và chuẩn ảnh hưởng kỳ vọng bằng chứng: tài liệu, phân loại rủi ro, minh bạch, logging và kiểm soát vòng đời."
-      },
-      {
-        "en": "ISO/IEC 23894 forbids any adversarial or metamorphic testing technique.",
-        "vi": "ISO/IEC 23894 cấm mọi kỹ thuật kiểm thử đối kháng hay biến hình."
-      },
-      {
-        "en": "EU AI Act concepts remove the need for statistical acceptance criteria.",
-        "vi": "Khái niệm EU AI Act loại bỏ nhu cầu tiêu chí nghiệm thu thống kê."
-      },
-      {
-        "en": "Risk-based testing becomes irrelevant once a model achieves high accuracy on validation data.",
-        "vi": "Kiểm thử theo rủi ro trở nên không liên quan khi mô hình đạt độ chính xác cao trên validation."
-      }
-    ],
-    "correctEn": "Regulations and standards influence evidence expectations: documentation, risk class, transparency, logging, and lifecycle controls.",
-    "correctVi": "Quy định và chuẩn ảnh hưởng kỳ vọng bằng chứng: tài liệu, phân loại rủi ro, minh bạch, logging và kiểm soát vòng đời.",
-    "explanation": "* **Đúng / Correct:** Aligns with regulations and standards affecting AI testing.\n* **Ôn / Study:** quy định và chuẩn ảnh hưởng kiểm thử AI"
   },
   {
     "questionEn": "Which of the following statements is MOST accurate?\nConsider MLS testing practice for: conventional vs AI-based systems.",
@@ -1525,56 +1275,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with hardware for ML workloads.\n* **Ôn / Study:** phần cứng cho khối lượng công việc ML"
   },
   {
-    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: development and hosting options.",
-    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **phương án phát triển và hosting**.",
-    "options": [
-      {
-        "en": "Hybrid approaches may keep sensitive preprocessing on-premises while scaling training or serving in controlled cloud environments.",
-        "vi": "Cách tiếp cận hybrid có thể giữ tiền xử lý nhạy cảm on-prem trong khi mở rộng huấn luyện hoặc phục vụ trên cloud có kiểm soát."
-      },
-      {
-        "en": "Public cloud hosting mathematically guarantees identical security posture for every dataset without governance.",
-        "vi": "Hosting đám công cộng đảm bảo toán học cùng mức an toàn cho mọi tập dữ liệu không cần quản trị."
-      },
-      {
-        "en": "Local laptops alone remove the need for reproducible experiment tracking.",
-        "vi": "Chỉ laptop cục bộ là loại bỏ nhu cầu theo dõi thí nghiệm có thể tái lập."
-      },
-      {
-        "en": "Hybrid models forbid any use of cloud GPUs under all regulatory regimes.",
-        "vi": "Mô hình hybrid cấm mọi việc dùng GPU cloud trong mọi khung quy định."
-      }
-    ],
-    "correctEn": "Hybrid approaches may keep sensitive preprocessing on-premises while scaling training or serving in controlled cloud environments.",
-    "correctVi": "Cách tiếp cận hybrid có thể giữ tiền xử lý nhạy cảm on-prem trong khi mở rộng huấn luyện hoặc phục vụ trên cloud có kiểm soát.",
-    "explanation": "* **Đúng / Correct:** Aligns with development and hosting options.\n* **Ôn / Study:** phương án phát triển và hosting"
-  },
-  {
-    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nConsider MLS testing practice for: ML frameworks.",
-    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nÁp dụng thực hành kiểm thử MLS cho: **framework ML**.",
-    "options": [
-      {
-        "en": "All frameworks enforce identical hyperparameter defaults optimal for every domain.",
-        "vi": "Mọi framework áp mặc định siêu tham số giống nhau và tối ưu cho mọi miền."
-      },
-      {
-        "en": "Frameworks replace the need for validation datasets and independent testing.",
-        "vi": "Framework thay thế nhu cầu tập validation và kiểm thử độc lập."
-      },
-      {
-        "en": "Major frameworks provide tensor APIs, automatic differentiation, data loaders, and integrations for training and exporting models.",
-        "vi": "Framework lớn cung cấp API tensor, vi phân tự động, bộ nạp dữ liệu và tích hợp huấn luyện/xuất mô hình."
-      },
-      {
-        "en": "Framework choice eliminates regulatory obligations such as traceability or documentation.",
-        "vi": "Chọn framework loại bỏ nghĩa vụ quy định như truy xuất hay tài liệu hóa."
-      }
-    ],
-    "correctEn": "Major frameworks provide tensor APIs, automatic differentiation, data loaders, and integrations for training and exporting models.",
-    "correctVi": "Framework lớn cung cấp API tensor, vi phân tự động, bộ nạp dữ liệu và tích hợp huấn luyện/xuất mô hình.",
-    "explanation": "* **Đúng / Correct:** Aligns with ML frameworks.\n* **Ôn / Study:** framework ML"
-  },
-  {
     "questionEn": "Select the BEST answer.\nRegarding regulations and standards affecting AI testing, pick the option that matches ISTQB CT-AI guidance.",
     "questionVi": "Chọn đáp án TỐT NHẤT.\nVới chủ đề **quy định và chuẩn ảnh hưởng kiểm thử AI**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
     "options": [
@@ -1598,81 +1298,6 @@
     "correctEn": "Regulations and standards influence evidence expectations: documentation, risk class, transparency, logging, and lifecycle controls.",
     "correctVi": "Quy định và chuẩn ảnh hưởng kỳ vọng bằng chứng: tài liệu, phân loại rủi ro, minh bạch, logging và kiểm soát vòng đời.",
     "explanation": "* **Đúng / Correct:** Aligns with regulations and standards affecting AI testing.\n* **Ôn / Study:** quy định và chuẩn ảnh hưởng kiểm thử AI"
-  },
-  {
-    "questionEn": "Which option is TRUE regarding AI-based systems and testing?\nTopic focus: conventional vs AI-based systems.",
-    "questionVi": "Ý nào ĐÚNG về hệ thống dựa trên AI và kiểm thử?\nTrọng tâm: **hệ thống truyền thống so với hệ dựa trên AI**.",
-    "options": [
-      {
-        "en": "Conventional systems always learn from operational logs exactly like supervised ML models.",
-        "vi": "Hệ truyền thống luôn học từ log vận hành giống hệt mô hình ML có giám sát."
-      },
-      {
-        "en": "Probabilistic reasoning applies only to conventional transaction systems, never to ML components.",
-        "vi": "Suy luận xác suất chỉ áp dụng cho hệ giao dịch truyền thống, không bao giờ cho thành phần ML."
-      },
-      {
-        "en": "AI-based systems must always be fully explainable by inspecting each line of imperative source code.",
-        "vi": "Hệ AI luôn phải giải thích đầy đủ chỉ bằng cách đọc từng dòng mã mệnh lệnh."
-      },
-      {
-        "en": "AI-based systems often learn patterns from data and may behave probabilistically, while conventional systems typically follow explicit deterministic logic.",
-        "vi": "Hệ dựa trên AI thường học quy luật từ dữ liệu và có thể hành xử xác suất, còn hệ truyền thống thường theo logic tường minh và deterministic."
-      }
-    ],
-    "correctEn": "AI-based systems often learn patterns from data and may behave probabilistically, while conventional systems typically follow explicit deterministic logic.",
-    "correctVi": "Hệ dựa trên AI thường học quy luật từ dữ liệu và có thể hành xử xác suất, còn hệ truyền thống thường theo logic tường minh và deterministic.",
-    "explanation": "* **Đúng / Correct:** Aligns with conventional vs AI-based systems.\n* **Ôn / Study:** hệ thống truyền thống so với hệ dựa trên AI"
-  },
-  {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nConsider MLS testing practice for: narrow, general, and super AI.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nÁp dụng thực hành kiểm thử MLS cho: **narrow AI, general AI và super AI**.",
-    "options": [
-      {
-        "en": "Narrow AI targets specific tasks; general AI remains theoretical today; super AI describes hypothetical superintelligence beyond humans.",
-        "vi": "Narrow AI phục vụ nhiệm vụ cụ thể; general AI hiện vẫn mang tính lý thuyết; super AI mô tả siêu trí thông minh giả thuyết vượt con người."
-      },
-      {
-        "en": "Frontier GenAI proves general AI already passes every human intellectual task reliably.",
-        "vi": "GenAI frontier chứng minh general AI đã vượt mọi nhiệm trí tuệ của người một cách tin cậy."
-      },
-      {
-        "en": "Super AI is synonymous with narrow AI used for spam filtering.",
-        "vi": "Super AI đồng nghĩa với narrow AI dùng để lọc spam."
-      },
-      {
-        "en": "General AI is deployed widely today in every production LLM without restrictions.",
-        "vi": "General AI đã triển khai rộng rãi hôm nay trong mọi LLM production không hạn chế."
-      }
-    ],
-    "correctEn": "Narrow AI targets specific tasks; general AI remains theoretical today; super AI describes hypothetical superintelligence beyond humans.",
-    "correctVi": "Narrow AI phục vụ nhiệm vụ cụ thể; general AI hiện vẫn mang tính lý thuyết; super AI mô tả siêu trí thông minh giả thuyết vượt con người.",
-    "explanation": "* **Đúng / Correct:** Aligns with narrow, general, and super AI.\n* **Ôn / Study:** narrow AI, general AI và super AI"
-  },
-  {
-    "questionEn": "Which of the following statements is MOST accurate?\nRegarding AI technology hierarchy (AI ⊃ ML ⊃ DL), pick the option that matches ISTQB CT-AI guidance.",
-    "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **phân cấp công nghệ AI ⊃ ML ⊃ DL**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
-    "options": [
-      {
-        "en": "Deep learning is the outer umbrella that fully replaces AI and ML as separate fields.",
-        "vi": "Deep learning là ô lớn nhất thay thế hoàn toàn AI và ML như các lĩnh vực riêng."
-      },
-      {
-        "en": "Machine learning is a branch of AI; deep learning is typically a subset of ML using deep neural networks.",
-        "vi": "Học máy là nhánh của AI; học sâu thường là tập con của ML dùng mạng nơ-ron sâu."
-      },
-      {
-        "en": "AI and ML are interchangeable labels with identical scope in the syllabus.",
-        "vi": "AI và ML là nhãn hoán đổi được với phạm vi giống hệt trong giáo trình."
-      },
-      {
-        "en": "Unsupervised clustering cannot be considered part of machine learning.",
-        "vi": "Phân cụm không giám sát không được xem là một phần của học máy."
-      }
-    ],
-    "correctEn": "Machine learning is a branch of AI; deep learning is typically a subset of ML using deep neural networks.",
-    "correctVi": "Học máy là nhánh của AI; học sâu thường là tập con của ML dùng mạng nơ-ron sâu.",
-    "explanation": "* **Đúng / Correct:** Aligns with AI technology hierarchy (AI ⊃ ML ⊃ DL).\n* **Ôn / Study:** phân cấp công nghệ AI ⊃ ML ⊃ DL"
   },
   {
     "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: generative AI (GenAI).",
@@ -1700,31 +1325,6 @@
     "explanation": "* **Đúng / Correct:** Aligns with generative AI (GenAI).\n* **Ôn / Study:** generative AI (GenAI)"
   },
   {
-    "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: hardware for ML workloads.",
-    "questionVi": "Chọn đáp án TỐT NHẤT.\nÁp dụng thực hành kiểm thử MLS cho: **phần cứng cho khối lượng công việc ML**.",
-    "options": [
-      {
-        "en": "CPUs are universally faster than GPUs for every large neural network training job.",
-        "vi": "CPU luôn nhanh hơn GPU cho mọi tác vụ huấn luyện mạng nơ-ron lớn."
-      },
-      {
-        "en": "ASICs are mandated for every exploratory Jupyter notebook on a laptop.",
-        "vi": "ASIC bắt buộc cho mọi notebook Jupyter khám phá trên laptop."
-      },
-      {
-        "en": "Edge devices never run quantized or distilled ML models.",
-        "vi": "Thiết biện không bao giờ chạy mô hình ML đã lượng tử hóa hay distill."
-      },
-      {
-        "en": "GPUs accelerate parallel tensor math common in training and inference of neural networks; CPUs remain useful for general orchestration.",
-        "vi": "GPU tăng tốc phép toán tensor song song thường gặp khi huấn luyện và suy luận mạng nơ-ron; CPU vẫn hữu ích cho điều phối chung."
-      }
-    ],
-    "correctEn": "GPUs accelerate parallel tensor math common in training and inference of neural networks; CPUs remain useful for general orchestration.",
-    "correctVi": "GPU tăng tốc phép toán tensor song song thường gặp khi huấn luyện và suy luận mạng nơ-ron; CPU vẫn hữu ích cho điều phối chung.",
-    "explanation": "* **Đúng / Correct:** Aligns with hardware for ML workloads.\n* **Ôn / Study:** phần cứng cho khối lượng công việc ML"
-  },
-  {
     "questionEn": "Which of the following statements is MOST accurate?\nRegarding development and hosting options, pick the option that matches ISTQB CT-AI guidance.",
     "questionVi": "Phát biểu nào sau đây là CHÍNH XÁC NHẤT?\nVới chủ đề **phương án phát triển và hosting**, chọn phương án phù hợp giáo trình ISTQB CT-AI.",
     "options": [
@@ -1748,31 +1348,6 @@
     "correctEn": "Hybrid approaches may keep sensitive preprocessing on-premises while scaling training or serving in controlled cloud environments.",
     "correctVi": "Cách tiếp cận hybrid có thể giữ tiền xử lý nhạy cảm on-prem trong khi mở rộng huấn luyện hoặc phục vụ trên cloud có kiểm soát.",
     "explanation": "* **Đúng / Correct:** Aligns with development and hosting options.\n* **Ôn / Study:** phương án phát triển và hosting"
-  },
-  {
-    "questionEn": "Which statement BEST matches ISTQB CT-AI syllabus concepts?\nTopic focus: ML frameworks.",
-    "questionVi": "Phát biểu nào NHẤT phù hợp với khái niệm trong giáo trình ISTQB CT-AI?\nTrọng tâm: **framework ML**.",
-    "options": [
-      {
-        "en": "All frameworks enforce identical hyperparameter defaults optimal for every domain.",
-        "vi": "Mọi framework áp mặc định siêu tham số giống nhau và tối ưu cho mọi miền."
-      },
-      {
-        "en": "Major frameworks provide tensor APIs, automatic differentiation, data loaders, and integrations for training and exporting models.",
-        "vi": "Framework lớn cung cấp API tensor, vi phân tự động, bộ nạp dữ liệu và tích hợp huấn luyện/xuất mô hình."
-      },
-      {
-        "en": "Framework choice eliminates regulatory obligations such as traceability or documentation.",
-        "vi": "Chọn framework loại bỏ nghĩa vụ quy định như truy xuất hay tài liệu hóa."
-      },
-      {
-        "en": "Frameworks replace the need for validation datasets and independent testing.",
-        "vi": "Framework thay thế nhu cầu tập validation và kiểm thử độc lập."
-      }
-    ],
-    "correctEn": "Major frameworks provide tensor APIs, automatic differentiation, data loaders, and integrations for training and exporting models.",
-    "correctVi": "Framework lớn cung cấp API tensor, vi phân tự động, bộ nạp dữ liệu và tích hợp huấn luyện/xuất mô hình.",
-    "explanation": "* **Đúng / Correct:** Aligns with ML frameworks.\n* **Ôn / Study:** framework ML"
   },
   {
     "questionEn": "Select the BEST answer.\nConsider MLS testing practice for: regulations and standards affecting AI testing.",

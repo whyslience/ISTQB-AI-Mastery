@@ -6,7 +6,7 @@
 
 defect management, defect report, entry criteria, exit criteria, product risk, project risk, risk, risk analysis, risk assessment, risk control, risk identification, risk level, risk management, risk mitigation, risk monitoring, risk-based testing, test approach, test completion report, test control, test monitoring, test plan, test planning, test progress report, test pyramid, test strategy, testing quadrants
 
-quản lý khiếm khuyết, báo cáo lỗi, tiêu chí đầu vào, tiêu chí đầu ra, rủi ro sản phẩm, rủi ro dự án, rủi ro, phân tích rủi ro, đánh giá rủi ro, kiểm soát rủi ro, nhận diện rủi ro, mức rủi ro, quản lý rủi ro, giảm thiểu rủi ro, giám sát rủi ro, kiểm thử dựa trên rủi ro, phương pháp kiểm thử, báo cáo kết thúc kiểm thử, kiểm soát kiểm thử, giám sát kiểm thử, kế hoạch kiểm thử, lập kế hoạch kiểm thử, báo cáo tiến độ kiểm thử, tháp kiểm thử (test pyramid), chiến lược kiểm thử, bốn góc phần tư kiểm thử (testing quadrants)
+quản lý khiếm khuyết, báo cáo khiếm khuyết, tiêu chí đầu vào, tiêu chí đầu ra, rủi ro sản phẩm, rủi ro dự án, rủi ro, phân tích rủi ro, đánh giá rủi ro, kiểm soát rủi ro, nhận diện rủi ro, mức rủi ro, quản lý rủi ro, giảm thiểu rủi ro, giám sát rủi ro, kiểm thử dựa trên rủi ro, phương pháp kiểm thử, báo cáo kết thúc kiểm thử, kiểm soát kiểm thử, giám sát kiểm thử, kế hoạch kiểm thử, lập kế hoạch kiểm thử, báo cáo tiến độ kiểm thử, tháp kiểm thử (test pyramid), chiến lược kiểm thử, bốn góc phần tư kiểm thử (testing quadrants)
 
 ## Learning Objectives for Chapter 5 / Mục tiêu học tập Chương 5
 
@@ -85,12 +85,10 @@ Trong phát triển Agile, người kiểm thử đóng góp vào:
 * Identifying risks and planning for their mitigation.
 * Xác định rủi ro và lập kế hoạch giảm thiểu rủi ro.
 
-### 5.1.3 Entry Criteria and Exit Criteria / Tiêu chí Bắt đầu và Tiêu chí Kết thúc
-
 * **Entry criteria**: define the preconditions for starting a test activity (e.g., availability of test environment, test basis).
-  **Tiêu chí bắt đầu**: định nghĩa các điều kiện tiên quyết để bắt đầu một hoạt động kiểm thử (ví dụ: sự sẵn có của môi trường kiểm thử, cơ sở kiểm thử).
+  **Tiêu chí đầu vào**: định nghĩa các điều kiện tiên quyết để bắt đầu một hoạt động kiểm thử (ví dụ: sự sẵn có của môi trường kiểm thử, cơ sở kiểm thử).
 * **Exit criteria**: define the conditions that must be met to complete a test activity (e.g., coverage achieved, no high-priority defects remaining).
-  **Tiêu chí kết thúc**: định nghĩa các điều kiện phải được thỏa mãn để hoàn thành một hoạt động kiểm thử (ví dụ: độ bao phủ đạt được, không còn khiếm khuyết ưu tiên cao nào sót lại).
+  **Tiêu chí đầu ra**: định nghĩa các điều kiện phải được thỏa mãn để hoàn thành một hoạt động kiểm thử (ví dụ: độ bao phủ đạt được, không còn khiếm khuyết ưu tiên cao nào sót lại).
 
 ### 5.1.4 Estimation Techniques / Các Kỹ thuật Ước lượng
 
@@ -280,7 +278,7 @@ Chỉ số kiểm thử thể hiện tiến độ so với lịch và ngân sác
 
 **Test completion reports** summarize a test level, cycle, or iteration when work is done and exit criteria are ideally met; they may include test summary, evaluation vs plan, deviations, impediments, metrics, open risks/defects, and lessons learned. Audiences differ: frequent informal updates within a team vs formal completion reports using a standard.
 
-**Báo cáo kết thúc kiểm thử** tóm tắt một mức, chu kỳ hoặc iteration khi kết thúc và thường kỳ vọng đạt tiêu chí ra; có thể gồm tóm tắt kiểm thử, đánh giá so với kế hoạch, lệch so với kế hoạch, trở ngại, chỉ số, rủi ro/khiếm khuyết mở và bài học. Đối tượng nhận báo cáo khác nhau: cập nhật thường xuyên trong đội vs báo cáo hoàn thành trên mẫu chuẩn.
+**Báo cáo kết thúc kiểm thử** tóm tắt một mức, chu kỳ hoặc iteration khi kết thúc và thường kỳ vọng đạt tiêu chí đầu ra; có thể gồm tóm tắt kiểm thử, đánh giá so với kế hoạch, lệch so với kế hoạch, trở ngại, chỉ số, rủi ro/khiếm khuyết mở và bài học. Đối tượng nhận báo cáo khác nhau: cập nhật thường xuyên trong đội so với báo cáo hoàn thành trên mẫu chuẩn.
 
 ### 5.3.3 Communicating the Status of Testing / Truyền đạt Trạng thái Kiểm thử
 
@@ -316,13 +314,13 @@ To support testing properly, CM ensures that:
 Để hỗ trợ kiểm thử đúng cách, CM đảm bảo:
 
 * All configuration items, including **test items** (parts of the test object), are uniquely identified, version-controlled, tracked for changes, and related to other items so **traceability** is maintained through the test process.
-* Mọi mục cấu hình, gồm **hạng mục kiểm thử** (phần của đối tượng kiểm thử), được định danh duy nhất, kiểm soát phiên bản, theo dõi thay đổi và liên kết với mục khác để duy trì **tính truy vết** trong suốt quy trình kiểm thử.
+* Mọi mục cấu hình, gồm **hạng mục kiểm thử** (phần của đối tượng kiểm thử), được định danh duy nhất, kiểm soát phiên bản, theo dõi thay đổi và liên kết với mục khác để duy trì **truy xuất nguồn gốc** trong suốt quy trình kiểm thử.
 * All identified documentation and software items are referenced unambiguously in testware.
 * Mọi tài liệu và phần mềm đã xác định được tham chiếu rõ ràng trong testware.
 
 Continuous integration, delivery, deployment, and the associated testing are often part of an automated DevOps pipeline (see section 2.1.4), where automated CM is usually included.
 
-Tích hợp/giao triển liên tục và kiểm thử kèm theo thường nằm trong pipeline DevOps tự động (xem mục 2.1.4), trong đó thường có CM tự động.
+Tích hợp, phát hành, triển khai liên tục và kiểm thử kèm theo thường nằm trong pipeline DevOps tự động (xem mục 2.1.4), trong đó thường có CM tự động.
 
 ## 5.5 Defect Management / Quản lý Khiếm khuyết
 

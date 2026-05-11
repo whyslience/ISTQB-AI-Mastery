@@ -47,7 +47,7 @@ Hầu hết mọi sản phẩm làm việc đều có thể được kiểm tra 
 * Source code.
 * Mã nguồn.
 * Testware (e.g., test plans, test cases, test scripts).
-* Tài liệu kiểm thử (ví dụ: kế hoạch kiểm thử, ca kiểm thử, kịch bản kiểm thử).
+* Tài liệu kiểm thử - testware (ví dụ: kế hoạch kiểm thử, ca kiểm thử, kịch bản kiểm thử).
 * User guides and other documentation.
 * Hướng dẫn sử dụng và các tài liệu khác.
 * Contracts and project plans.
@@ -138,7 +138,7 @@ Các vai trò điển hình trong một buổi đánh giá chính thức là:
 * **Technical review**: led by a facilitator, focuses on technical quality and consensus.
   **Đánh giá kỹ thuật**: do người điều phối dẫn dắt, tập trung vào chất lượng kỹ thuật và sự đồng thuận.
 * **Inspection**: the most formal type of review, with a documented process and entry/exit criteria. Uses checklists and metrics.
-  **Kiểm tra (Inspection)**: loại đánh giá chính thức nhất, với quy trình được lập tài liệu và các tiêu chí bắt đầu/kết thúc. Sử dụng danh mục kiểm tra (checklists) và các chỉ số (metrics).
+  **Kiểm tra (Inspection)**: loại đánh giá chính thức nhất, với quy trình được lập tài liệu và các tiêu chí đầu vào/đầu ra. Sử dụng danh mục kiểm tra (checklists) và các chỉ số (metrics).
 
 ### 3.2.5 Success Factors for Reviews / Các Yếu tố Thành công cho Đánh giá
 

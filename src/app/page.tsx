@@ -47,7 +47,33 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center px-5">
       {/* ── Hero ──────────────────────────────────────────── */}
-      <section className="flex flex-col items-center text-center pt-36 pb-20 max-w-4xl">
+      <section className="relative flex flex-col items-center text-center pt-36 pb-20 max-w-4xl w-full">
+        {/* Animated Background Mesh */}
+        <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none flex justify-center items-center">
+          <motion.div
+            animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3], rotate: [0, 90, 0] }}
+            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+            className="absolute w-[600px] h-[600px] sm:w-[800px] sm:h-[800px] rounded-full"
+            style={{
+              background: "radial-gradient(circle, var(--color-accent-soft) 0%, transparent 60%)",
+              filter: "blur(60px)",
+              top: "-100px",
+              left: "-10%",
+            }}
+          />
+          <motion.div
+            animate={{ scale: [1, 1.3, 1], opacity: [0.2, 0.5, 0.2], rotate: [0, -90, 0] }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            className="absolute w-[500px] h-[500px] sm:w-[700px] sm:h-[700px] rounded-full"
+            style={{
+              background: "radial-gradient(circle, var(--color-purple-soft) 0%, transparent 60%)",
+              filter: "blur(60px)",
+              bottom: "-100px",
+              right: "-10%",
+            }}
+          />
+        </div>
+
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -98,20 +124,24 @@ export default function Home() {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="flex flex-col sm:flex-row gap-4"
         >
-          <Link href="/review" className="btn btn-primary" style={{ padding: "16px 40px", fontSize: 16 }}>
-            <div className="flex flex-col items-start text-left">
-              <span className="text-sm font-bold flex items-center gap-2">
-                Start Learning <ChevronRight style={{ width: 14, height: 14 }} />
-              </span>
-              <span className="text-[10px] opacity-80">Bắt đầu Học</span>
-            </div>
-          </Link>
-          <Link href="/exam" className="btn btn-secondary" style={{ padding: "16px 40px", fontSize: 16 }}>
-            <div className="flex flex-col items-start text-left">
-              <span className="text-sm font-bold">Practice Exam</span>
-              <span className="text-[10px] opacity-80">Luyện Đề</span>
-            </div>
-          </Link>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link href="/review" className="btn btn-primary" style={{ padding: "16px 40px", fontSize: 16 }}>
+              <div className="flex flex-col items-start text-left">
+                <span className="text-sm font-bold flex items-center gap-2">
+                  Start Learning <ChevronRight style={{ width: 14, height: 14 }} />
+                </span>
+                <span className="text-[10px] opacity-80">Bắt đầu Học</span>
+              </div>
+            </Link>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <Link href="/exam" className="btn btn-secondary" style={{ padding: "16px 40px", fontSize: 16 }}>
+              <div className="flex flex-col items-start text-left">
+                <span className="text-sm font-bold">Practice Exam</span>
+                <span className="text-[10px] opacity-80">Luyện Đề</span>
+              </div>
+            </Link>
+          </motion.div>
         </motion.div>
       </section>
 
@@ -123,9 +153,11 @@ export default function Home() {
             custom={i}
             initial="hidden"
             whileInView="visible"
+            whileHover={{ scale: 1.02, translateY: -4 }}
             viewport={{ once: true }}
             variants={fadeUp as any}
-            className="card p-8 group cursor-default relative overflow-hidden"
+            className="card p-8 group relative overflow-hidden"
+            style={{ cursor: "pointer" }}
           >
             <div
               className="flex items-center justify-center rounded-2xl mb-6 transition-transform duration-300 group-hover:scale-110"

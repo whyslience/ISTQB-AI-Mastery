@@ -37,7 +37,7 @@ Các công cụ kiểm thử có thể được phân loại dựa trên các ho
 * **Static testing tools**: support static analysis and reviews.
   **Công cụ kiểm thử tĩnh**: hỗ trợ phân tích tĩnh và đánh giá (reviews).
 * **Test design and implementation tools**: support the creation of test cases, test data, and test procedures.
-  **Công cụ thiết kế và triển khai kiểm thử**: hỗ trợ việc tạo các ca kiểm thử, dữ liệu kiểm thử và quy trình kiểm thử.
+  **Công cụ thiết kế và triển khai kiểm thử**: hỗ trợ việc tạo các ca kiểm thử, dữ liệu kiểm thử và thủ tục kiểm thử (test procedures).
 * **Test execution and logging tools**: support the running of tests and logging of results.
   **Công cụ thực thi và ghi nhật ký kiểm thử**: hỗ trợ việc chạy các bài kiểm thử và ghi lại kết quả.
 * **Performance testing and monitoring tools**: support non-functional testing and system monitoring.

@@ -6,7 +6,7 @@
 
 acceptance criteria, acceptance test-driven development, black-box test technique, boundary value analysis, branch coverage, checklist-based testing, collaboration-based test approach, coverage, coverage item, decision table testing, equivalence partitioning, error guessing, experience-based test technique, exploratory testing, state transition testing, statement coverage, test technique, white-box test technique
 
-tiêu chí chấp nhận, ATDD, kỹ thuật hộp đen, phân tích giá trị biên, bao phủ nhánh, kiểm thử dựa trên checklist, tiếp cận kiểm thử hợp tác, độ bao phủ, mục bao phủ, kiểm thử bảng quyết định, phân vùng tương đương, đoán lỗi, kỹ thuật dựa trên kinh nghiệm, kiểm thử khám phá, kiểm thử chuyển trạng thái, bao phủ câu lệnh, kỹ thuật kiểm thử, kỹ thuật hộp trắng
+tiêu chí chấp nhận, ATDD, kỹ thuật hộp đen, phân tích giá trị biên, bao phủ nhánh, kiểm thử dựa trên danh mục (checklist), tiếp cận kiểm thử hợp tác, độ bao phủ, mục bao phủ, kiểm thử bảng quyết định, phân vùng tương đương, đoán lỗi, kỹ thuật dựa trên kinh nghiệm, kiểm thử khám phá, kiểm thử chuyển trạng thái, bao phủ câu lệnh, kỹ thuật kiểm thử, kỹ thuật hộp trắng
 
 ## Learning Objectives for Chapter 4 / Mục tiêu học tập Chương 4
 
@@ -170,11 +170,11 @@ Simultaneous test design and test execution. It is highly creative and unscripte
 
 Thiết kế kiểm thử và thực thi kiểm thử diễn ra đồng thời. Nó mang tính sáng tạo cao và không có kịch bản trước. Nó thường được dẫn dắt bởi các điều lệ kiểm thử (test charters).
 
-### 4.4.3 Checklist-based Testing / Kiểm thử dựa trên Danh mục (Checklist-based Testing)
+### 4.4.3 Checklist-based Testing / Kiểm thử dựa trên Danh mục kiểm tra (Checklist-based Testing)
 
 Testers use a checklist of items to be tested. Checklists are often based on experience or knowledge of standards.
 
-Người kiểm thử sử dụng một danh mục các mục cần kiểm thử. Các danh mục này thường dựa trên kinh nghiệm hoặc kiến thức về các tiêu chuẩn.
+Người kiểm thử sử dụng một danh mục các mục cần kiểm thử (checklist). Các danh mục này thường dựa trên kinh nghiệm hoặc kiến thức về các tiêu chuẩn.
 
 ## 4.5 Collaboration-based Test Approaches / Các Cách tiếp cận Kiểm thử dựa trên sự Hợp tác
 

@@ -56,6 +56,7 @@ export default function ExamPage() {
 
   const [timeLeft, setTimeLeft] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
+  const [showVi, setShowVi] = useState(false);
 
   useEffect(() => {
     if (!timerActive || timeLeft <= 0) return;
@@ -319,6 +320,17 @@ export default function ExamPage() {
           </div>
         </div>
         <div className="flex items-center gap-4">
+          <button
+            onClick={() => setShowVi(!showVi)}
+            className="text-xs font-medium px-3 py-1.5 rounded-full transition-colors"
+            style={{
+              background: showVi ? "var(--color-accent-soft)" : "var(--color-surface-sunken)",
+              color: showVi ? "var(--color-accent)" : "var(--color-text-muted)",
+              border: `1px solid ${showVi ? "var(--color-accent)" : "var(--color-border)"}`,
+            }}
+          >
+            VI: {showVi ? "ON" : "OFF"}
+          </button>
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full" style={{ background: "var(--color-surface-raised)", color: "var(--color-text-primary)" }}>
             <Clock style={{ width: 14, height: 14, color: timeLeft < 300 ? "var(--color-danger)" : "var(--color-accent)" }} />
             <span className="text-xs font-bold font-mono" style={{ color: timeLeft < 300 ? "var(--color-danger)" : "inherit", letterSpacing: 1 }}>
@@ -364,7 +376,7 @@ export default function ExamPage() {
 
           <div className="mb-8">
             <h2 className="text-lg font-semibold leading-relaxed mb-1">{currentQ.question}</h2>
-            {currentQ.questionVi && (
+            {showVi && currentQ.questionVi && (
               <h3 className="text-sm italic opacity-80" style={{ color: "var(--color-text-secondary)" }}>
                 {currentQ.questionVi}
               </h3>
@@ -398,7 +410,7 @@ export default function ExamPage() {
                   </span>
                   <div className="flex flex-col gap-1">
                     <span className="text-sm leading-snug">{option.en}</span>
-                    <span className="text-xs italic opacity-70">{option.vi}</span>
+                    {showVi && option.vi && <span className="text-xs italic opacity-70">{option.vi}</span>}
                   </div>
                 </button>
               );

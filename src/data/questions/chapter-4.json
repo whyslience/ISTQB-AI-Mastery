@@ -1,1152 +1,2227 @@
 [
   {
-    "questionEn": "Equivalence partitions must be:",
-    "questionVi": "Phân vùng tương đương phải:",
+    "questionEn": "Which of the following is a black‑box test technique?",
+    "questionVi": "Kỹ thuật nào sau đây là kỹ thuật kiểm thử hộp đen?",
     "options": [
-      {
-        "en": "Only shoe polish brands",
-        "vi": "Chỉ nhãn xi giày"
-      },
-      {
-        "en": "SQL indexing trivia only",
-        "vi": "Chỉ trivia chỉ mục SQL"
-      },
-      {
-        "en": "Non-empty and mutually disjoint",
-        "vi": "Không rỗng và không chồng chéo"
-      },
-      {
-        "en": "Coffee grind sizes only",
-        "vi": "Chỉ cỡ xay cà phê"
-      }
-    ],
-    "correctEn": "Non-empty and mutually disjoint",
-    "correctVi": "Không rỗng và không chồng chéo",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
-  },
-  {
-    "questionEn": "Boundary value analysis often pairs with:",
-    "questionVi": "Phân tích giá trị biên thường đi cùng:",
-    "options": [
-      {
-        "en": "Networks never corrupt packets",
-        "vi": "Mạng không hỏng gói"
-      },
-      {
-        "en": "Only catastrophic failures",
-        "vi": "Chỉ thảm họa"
-      },
       {
         "en": "Equivalence partitioning",
         "vi": "Phân vùng tương đương"
       },
       {
-        "en": "Hide charters",
-        "vi": "Giấu charter"
+        "en": "Statement testing",
+        "vi": "Kiểm thử câu lệnh"
+      },
+      {
+        "en": "Error guessing",
+        "vi": "Đoán lỗi"
+      },
+      {
+        "en": "Branch testing",
+        "vi": "Kiểm thử nhánh"
       }
     ],
     "correctEn": "Equivalence partitioning",
     "correctVi": "Phân vùng tương đương",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "explanation": "Equivalence partitioning is a specification‑based (black‑box) technique. Statement testing and branch testing are white‑box techniques; error guessing is an experience‑based technique. (Syllabus 4.1, 4.2.1, 4.3, 4.4.1)\n\nPhân vùng tương đương là kỹ thuật dựa trên đặc tả (hộp đen). Kiểm thử câu lệnh và kiểm thử nhánh là kỹ thuật hộp trắng; đoán lỗi là kỹ thuật dựa trên kinh nghiệm."
   },
   {
-    "questionEn": "For ordered integer domain 1–10 inclusive, typical boundary values include:",
-    "questionVi": "Miền nguyên có thứ tự 1–10, giá trị biên điển hình gồm:",
+    "questionEn": "What is the main focus of boundary value analysis (BVA)?",
+    "questionVi": "Trọng tâm chính của phân tích giá trị biên (BVA) là gì?",
     "options": [
       {
-        "en": "Shipping untested builds",
-        "vi": "Ship bản chưa kiểm thử"
+        "en": "Testing values at the edges of equivalence partitions",
+        "vi": "Kiểm thử các giá trị ở biên của phân vùng tương đương"
       },
       {
-        "en": "Secret to executives only",
-        "vi": "Bí mật chỉ BGĐ"
+        "en": "Testing random values within partitions",
+        "vi": "Kiểm thử các giá trị ngẫu nhiên trong phân vùng"
       },
       {
-        "en": "Only barcode checksums",
-        "vi": "Chỉ checksum mã vạch"
+        "en": "Verifying all paths through the code",
+        "vi": "Xác minh mọi đường dẫn qua mã nguồn"
       },
       {
-        "en": "0, 1, 10, 11",
-        "vi": "0, 1, 10, 11"
+        "en": "Reviewing requirements for completeness",
+        "vi": "Xem xét yêu cầu về tính đầy đủ"
       }
     ],
-    "correctEn": "0, 1, 10, 11",
-    "correctVi": "0, 1, 10, 11",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Testing values at the edges of equivalence partitions",
+    "correctVi": "Kiểm thử các giá trị ở biên của phân vùng tương đương",
+    "explanation": "BVA targets the boundary values of ordered partitions because defects often occur at boundaries. (Syllabus 4.2.2)\n\nBVA nhắm vào các giá trị biên của các phân vùng có thứ tự vì lỗi thường xảy ra ở biên."
   },
   {
-    "questionEn": "Decision tables model:",
-    "questionVi": "Bảng quyết định mô hình hóa:",
+    "questionEn": "In state transition testing, which coverage criterion is the weakest?",
+    "questionVi": "Trong kiểm thử chuyển trạng thái, tiêu chí bao phủ nào yếu nhất?",
     "options": [
       {
-        "en": "Combinations of conditions and resulting actions",
-        "vi": "Tổ hợp điều kiện và hành động kết quả"
+        "en": "All states coverage",
+        "vi": "Bao phủ tất cả trạng thái"
       },
       {
-        "en": "Ignoring defects",
-        "vi": "Bỏ qua khiếm khuyết"
+        "en": "Valid transitions coverage",
+        "vi": "Bao phủ chuyển tiếp hợp lệ"
       },
       {
-        "en": "Users never mistype",
-        "vi": "Người dùng không gõ nhầm"
+        "en": "All transitions coverage",
+        "vi": "Bao phủ tất cả chuyển tiếp"
       },
       {
-        "en": "Only opcode dumps",
-        "vi": "Chỉ dump opcode"
+        "en": "0-switch coverage",
+        "vi": "Bao phủ 0-switch"
       }
     ],
-    "correctEn": "Combinations of conditions and resulting actions",
-    "correctVi": "Tổ hợp điều kiện và hành động kết quả",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "All states coverage",
+    "correctVi": "Bao phủ tất cả trạng thái",
+    "explanation": "All states coverage only requires that every state is visited, which can be achieved without exercising all transitions. Valid transitions coverage (0‑switch) is stronger; all transitions coverage is the most thorough. (Syllabus 4.2.4)\n\nBao phủ tất cả trạng thái chỉ yêu cầu mỗi trạng thái được ghé thăm, có thể đạt được mà không cần thực hiện tất cả các chuyển tiếp. Bao phủ chuyển tiếp hợp lệ mạnh hơn, bao phủ tất cả chuyển tiếp là triệt để nhất."
   },
   {
-    "questionEn": "State transition testing focuses on:",
-    "questionVi": "Kiểm thử chuyển trạng thái tập trung vào:",
+    "questionEn": "Which of the following is an experience‑based test technique?",
+    "questionVi": "Kỹ thuật nào sau đây là kỹ thuật dựa trên kinh nghiệm?",
     "options": [
       {
-        "en": "Secret to executives only",
-        "vi": "Bí mật chỉ BGĐ"
+        "en": "Error guessing",
+        "vi": "Đoán lỗi"
       },
       {
-        "en": "RAM timing diagrams only",
-        "vi": "Chỉ timing RAM"
+        "en": "Decision table testing",
+        "vi": "Kiểm thử bảng quyết định"
       },
       {
-        "en": "Purely subjective slogans",
-        "vi": "Khẩu hiệu chủ quan"
+        "en": "Statement testing",
+        "vi": "Kiểm thử câu lệnh"
       },
       {
-        "en": "Valid transitions and guards between states",
-        "vi": "Chuyển trạng thái hợp lệ và điều kiện"
+        "en": "Equivalence partitioning",
+        "vi": "Phân vùng tương đương"
       }
     ],
-    "correctEn": "Valid transitions and guards between states",
-    "correctVi": "Chuyển trạng thái hợp lệ và điều kiện",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Error guessing",
+    "correctVi": "Đoán lỗi",
+    "explanation": "Error guessing is an experience‑based technique; the others are black‑box (decision table, EP) or white‑box (statement). (Syllabus 4.4.1)\n\nĐoán lỗi là kỹ thuật dựa trên kinh nghiệm; các kỹ thuật còn lại là hộp đen (bảng quyết định, phân vùng tương đương) hoặc hộp trắng (câu lệnh)."
   },
   {
-    "questionEn": "Use-case testing derives tests from:",
-    "questionVi": "Kiểm thử use case suy ra từ:",
+    "questionEn": "What does a '–' (dash) in a condition cell of a decision table indicate?",
+    "questionVi": "Ký hiệu '–' (dấu gạch ngang) trong ô điều kiện của bảng quyết định cho biết điều gì?",
     "options": [
       {
-        "en": "Interactions between actors and system",
-        "vi": "Tương tác tác nhân và hệ thống"
+        "en": "The condition is irrelevant for the action outcome",
+        "vi": "Điều kiện không ảnh hưởng đến kết quả hành động"
       },
       {
-        "en": "Random cosmic integers only",
-        "vi": "Chỉ số nguyên ngẫu nhiên vũ trụ"
+        "en": "The condition is false",
+        "vi": "Điều kiện sai"
       },
       {
-        "en": "Ignoring defects",
-        "vi": "Bỏ qua khiếm khuyết"
+        "en": "The condition is true",
+        "vi": "Điều kiện đúng"
       },
       {
-        "en": "Every printer driver installed",
-        "vi": "Mọi driver máy in"
+        "en": "The condition is infeasible",
+        "vi": "Điều kiện không khả thi"
       }
     ],
-    "correctEn": "Interactions between actors and system",
-    "correctVi": "Tương tác tác nhân và hệ thống",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "The condition is irrelevant for the action outcome",
+    "correctVi": "Điều kiện không ảnh hưởng đến kết quả hành động",
+    "explanation": "A dash signifies that the condition's value doesn't affect the outcome. 'N/A' is used for infeasible combinations. (Syllabus 4.2.3)\n\nDấu gạch ngang nghĩa là giá trị của điều kiện không ảnh hưởng đến kết quả. 'N/A' được dùng cho tổ hợp không khả thi."
   },
   {
-    "questionEn": "Exploratory testing simultaneously:",
-    "questionVi": "Kiểm thử khám phá đồng thời:",
+    "questionEn": "Which of the following is a coverage item for statement testing?",
+    "questionVi": "Mục bao phủ cho kiểm thử câu lệnh là gì?",
     "options": [
       {
-        "en": "Removing exploratory charters",
-        "vi": "Bỏ charter khám phá"
+        "en": "Executable statements",
+        "vi": "Các câu lệnh thực thi được"
       },
       {
-        "en": "Only golden stickers",
-        "vi": "Chỉ sticker vàng"
+        "en": "Decision outcomes",
+        "vi": "Kết quả quyết định"
       },
       {
-        "en": "Learns, designs and executes tests",
-        "vi": "Học, thiết kế và thực thi kiểm thử"
+        "en": "Boundary values",
+        "vi": "Giá trị biên"
       },
       {
-        "en": "Astrological charts only",
-        "vi": "Chỉ biểu đồ chiêm tinh"
+        "en": "Transitions",
+        "vi": "Chuyển tiếp"
       }
     ],
-    "correctEn": "Learns, designs and executes tests",
-    "correctVi": "Học, thiết kế và thực thi kiểm thử",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Executable statements",
+    "correctVi": "Các câu lệnh thực thi được",
+    "explanation": "Statement testing uses executable statements as coverage items. (Syllabus 4.3.1)\n\nKiểm thử câu lệnh dùng các câu lệnh thực thi được làm mục bao phủ."
   },
   {
-    "questionEn": "Acceptance criteria should ideally be:",
-    "questionVi": "Tiêu chí chấp nhận lý tưởng nên:",
+    "questionEn": "What is a test charter used for in exploratory testing?",
+    "questionVi": "Charter kiểm thử được dùng để làm gì trong kiểm thử khám phá?",
     "options": [
       {
-        "en": "Every path in program forever",
-        "vi": "Mọi đường đi chương trình mãi mãi"
+        "en": "To define test objectives for a session",
+        "vi": "Để xác định mục tiêu kiểm thử cho một phiên"
       },
       {
-        "en": "Compiler mascot colors",
-        "vi": "Màu mascot compiler"
+        "en": "To document code structure",
+        "vi": "Để ghi lại cấu trúc mã"
       },
       {
-        "en": "Testable and clear",
-        "vi": "Có thể kiểm thử và rõ ràng"
+        "en": "To list all possible test cases",
+        "vi": "Để liệt kê mọi ca kiểm thử có thể"
       },
       {
-        "en": "RAM timing diagrams only",
-        "vi": "Chỉ timing RAM"
+        "en": "To measure branch coverage",
+        "vi": "Để đo bao phủ nhánh"
       }
     ],
-    "correctEn": "Testable and clear",
-    "correctVi": "Có thể kiểm thử và rõ ràng",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "To define test objectives for a session",
+    "correctVi": "Để xác định mục tiêu kiểm thử cho một phiên",
+    "explanation": "In session‑based exploratory testing, a test charter contains test objectives to guide the session. (Syllabus 4.4.2)\n\nTrong kiểm thử khám phá theo phiên, charter kiểm thử chứa các mục tiêu kiểm thử để định hướng phiên."
   },
   {
-    "questionEn": "Error guessing leverages:",
-    "questionVi": "Đoán lỗi tận dụng:",
+    "questionEn": "Which of the following is NOT a characteristic of good user stories according to the INVEST model?",
+    "questionVi": "Đặc điểm nào sau đây KHÔNG thuộc mô hình INVEST cho user story tốt?",
     "options": [
       {
-        "en": "Only lunar phases",
-        "vi": "Chỉ pha trăng"
+        "en": "Dependent",
+        "vi": "Phụ thuộc"
       },
       {
-        "en": "Avoiding logs",
-        "vi": "Tránh log"
+        "en": "Negotiable",
+        "vi": "Có thể thương lượng"
       },
       {
-        "en": "Tester experience and intuition about failures",
-        "vi": "Kinh nghiệm và trực giác tester về lỗi"
+        "en": "Valuable",
+        "vi": "Có giá trị"
       },
       {
-        "en": "Only astrology signs",
-        "vi": "Chỉ cung hoàng đạo"
+        "en": "Estimable",
+        "vi": "Có thể ước lượng"
       }
     ],
-    "correctEn": "Tester experience and intuition about failures",
-    "correctVi": "Kinh nghiệm và trực giác tester về lỗi",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Dependent",
+    "correctVi": "Phụ thuộc",
+    "explanation": "INVEST stands for Independent, Negotiable, Valuable, Estimable, Small, Testable. 'Dependent' is the opposite. (Syllabus 4.5.1)\n\nINVEST là viết tắt của Independent (Độc lập), Negotiable (Có thể thương lượng), Valuable (Có giá trị), Estimable (Có thể ước lượng), Small (Nhỏ), Testable (Có thể kiểm thử). 'Phụ thuộc' là trái ngược."
   },
   {
-    "questionEn": "Collaboration-based testing may involve:",
-    "questionVi": "Kiểm thử hợp tác có thể gồm:",
+    "questionEn": "In ATDD, who typically participates in the specification workshop?",
+    "questionVi": "Trong ATDD, ai thường tham gia hội thảo đặc tả?",
     "options": [
       {
-        "en": "Crowdsourcing diverse perspectives",
-        "vi": "Crowdsourcing góc nhìn đa dạng"
+        "en": "Customers, developers, and testers",
+        "vi": "Khách hàng, nhà phát triển và kiểm thử viên"
       },
       {
-        "en": "Hiding actions",
-        "vi": "Giấu hành động"
+        "en": "Only developers",
+        "vi": "Chỉ nhà phát triển"
       },
       {
-        "en": "GPU VRAM vendors only",
-        "vi": "Chỉ hãng VRAM GPU"
+        "en": "Only testers",
+        "vi": "Chỉ kiểm thử viên"
       },
       {
-        "en": "Infinite in length",
-        "vi": "Vô hạn độ dài"
+        "en": "Only project managers",
+        "vi": "Chỉ quản lý dự án"
       }
     ],
-    "correctEn": "Crowdsourcing diverse perspectives",
-    "correctVi": "Crowdsourcing góc nhìn đa dạng",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Customers, developers, and testers",
+    "correctVi": "Khách hàng, nhà phát triển và kiểm thử viên",
+    "explanation": "ATDD involves team members with different perspectives (customers, developers, testers) to create test cases before implementation. (Syllabus 4.5.3)\n\nATDD yêu cầu các thành viên nhóm với các góc nhìn khác nhau (khách hàng, nhà phát triển, kiểm thử viên) để tạo ca kiểm thử trước khi triển khai."
   },
   {
-    "questionEn": "Statement coverage requires:",
-    "questionVi": "Bao phủ câu lệnh yêu cầu:",
+    "questionEn": "Which statement about equivalence partitions is true?",
+    "questionVi": "Phát biểu nào sau đây về phân vùng tương đương là đúng?",
     "options": [
       {
-        "en": "Users never mistype",
-        "vi": "Người dùng không gõ nhầm"
+        "en": "Partitions must be non‑empty and should not overlap",
+        "vi": "Các phân vùng phải không rỗng và không được chồng chéo"
       },
       {
-        "en": "Removing ELSE rules arbitrarily",
-        "vi": "Xóa ELSE tuỳ tiện"
+        "en": "Partitions can overlap to ensure completeness",
+        "vi": "Các phân vùng có thể chồng chéo để đảm bảo đầy đủ"
       },
       {
-        "en": "Each executable statement executed at least once",
-        "vi": "Mỗi câu lệnh thực thi ít nhất một lần"
+        "en": "Each partition must contain at least two values",
+        "vi": "Mỗi phân vùng phải chứa ít nhất hai giá trị"
       },
       {
-        "en": "Only bingo cards",
-        "vi": "Chỉ thẻ bingo"
+        "en": "Partitions are only defined for input values",
+        "vi": "Phân vùng chỉ được xác định cho giá trị đầu vào"
       }
     ],
-    "correctEn": "Each executable statement executed at least once",
-    "correctVi": "Mỗi câu lệnh thực thi ít nhất một lần",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Partitions must be non‑empty and should not overlap",
+    "correctVi": "Các phân vùng phải không rỗng và không được chồng chéo",
+    "explanation": "Equivalence partitions must be non‑empty sets and must not overlap. They can also be defined for outputs, internal values, etc. (Syllabus 4.2.1)\n\nCác phân vùng tương đương phải là tập không rỗng và không chồng chéo. Chúng cũng có thể được xác định cho đầu ra, giá trị nội bộ, v.v."
   },
   {
-    "questionEn": "Branch/decision coverage is generally:",
-    "questionVi": "Bao phủ nhánh/quyết định nhìn chung:",
+    "questionEn": "How does branch coverage differ from statement coverage?",
+    "questionVi": "Bao phủ nhánh khác với bao phủ câu lệnh như thế nào?",
     "options": [
       {
-        "en": "Only concert ticket stubs",
-        "vi": "Chỉ vé concert"
+        "en": "Branch coverage exercises both true and false outcomes of decisions, while statement coverage only ensures each line is executed",
+        "vi": "Bao phủ nhánh thực thi cả hai kết quả đúng/sai của quyết định, trong khi bao phủ câu lệnh chỉ đảm bảo mỗi dòng được thực thi"
       },
       {
-        "en": "Removing exploratory charters",
-        "vi": "Bỏ charter khám phá"
+        "en": "Statement coverage is stronger than branch coverage",
+        "vi": "Bao phủ câu lệnh mạnh hơn bao phủ nhánh"
       },
       {
-        "en": "GPU thermal curves",
-        "vi": "Đường cong nhiệt GPU"
+        "en": "Branch coverage is only used for white‑box testing, while statement coverage is black‑box",
+        "vi": "Bao phủ nhánh chỉ dùng cho kiểm thử hộp trắng, còn bao phủ câu lệnh là hộp đen"
       },
       {
-        "en": "Stronger than statement coverage",
-        "vi": "Mạnh hơn bao phủ câu lệnh"
+        "en": "Branch coverage ensures all paths are tested",
+        "vi": "Bao phủ nhánh đảm bảo mọi đường dẫn được kiểm thử"
       }
     ],
-    "correctEn": "Stronger than statement coverage",
-    "correctVi": "Mạnh hơn bao phủ câu lệnh",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Branch coverage exercises both true and false outcomes of decisions, while statement coverage only ensures each line is executed",
+    "correctVi": "Bao phủ nhánh thực thi cả hai kết quả đúng/sai của quyết định, trong khi bao phủ câu lệnh chỉ đảm bảo mỗi dòng được thực thi",
+    "explanation": "Branch coverage requires testing the true and false outcomes of each decision, thereby subsuming statement coverage. 100% branch coverage implies 100% statement coverage, but not vice versa. (Syllabus 4.3.1, 4.3.2)\n\nBao phủ nhánh yêu cầu kiểm thử cả hai kết quả của mỗi quyết định, nhờ đó bao hàm bao phủ câu lệnh. 100% bao phủ nhánh kéo theo 100% bao phủ câu lệnh, nhưng không ngược lại."
   },
   {
-    "questionEn": "Test charters often guide:",
-    "questionVi": "Charter kiểm thử thường định hướng:",
+    "questionEn": "Which of the following best explains the value of white‑box testing?",
+    "questionVi": "Điều nào sau đây giải thích đúng nhất giá trị của kiểm thử hộp trắng?",
     "options": [
       {
-        "en": "Only CEO favorite numbers",
-        "vi": "Chỉ số CEO thích"
+        "en": "It can detect defects even when the specification is incomplete",
+        "vi": "Nó có thể phát hiện lỗi ngay cả khi đặc tả không đầy đủ"
       },
       {
-        "en": "GPU fan curves only",
-        "vi": "Chỉ đường cong quạt GPU"
+        "en": "It guarantees that the software meets all user needs",
+        "vi": "Nó đảm bảo phần mềm đáp ứng mọi nhu cầu người dùng"
       },
       {
-        "en": "All paths always identical",
-        "vi": "Mọi đường luôn giống nhau"
+        "en": "It always finds more defects than black‑box testing",
+        "vi": "Nó luôn tìm được nhiều lỗi hơn kiểm thử hộp đen"
       },
       {
-        "en": "Session-based exploratory testing scope",
-        "vi": "Phạm vi exploratory theo phiên"
+        "en": "It eliminates the need for regression testing",
+        "vi": "Nó loại bỏ nhu cầu kiểm thử hồi quy"
       }
     ],
-    "correctEn": "Session-based exploratory testing scope",
-    "correctVi": "Phạm vi exploratory theo phiên",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "It can detect defects even when the specification is incomplete",
+    "correctVi": "Nó có thể phát hiện lỗi ngay cả khi đặc tả không đầy đủ",
+    "explanation": "White‑box techniques use the implementation to derive tests, so they can find defects even when specifications are vague or missing. However, they cannot detect omission defects. (Syllabus 4.3.3)\n\nKỹ thuật hộp trắng dùng cài đặt để suy ra kiểm thử, do đó có thể tìm lỗi ngay cả khi đặc tả không rõ ràng. Nhưng chúng không phát hiện được lỗi thiếu sót."
   },
   {
-    "questionEn": "Black-box techniques derive tests from:",
-    "questionVi": "Kỹ thuật hộp đen suy kiểm thử từ:",
+    "questionEn": "When is exploratory testing most useful?",
+    "questionVi": "Kiểm thử khám phá hữu ích nhất khi nào?",
     "options": [
       {
-        "en": "SQL indexing trivia only",
-        "vi": "Chỉ trivia chỉ mục SQL"
+        "en": "When specifications are inadequate or time pressure is high",
+        "vi": "Khi đặc tả không đầy đủ hoặc áp lực thời gian cao"
       },
       {
-        "en": "Only for outputs never inputs",
-        "vi": "Chỉ đầu ra không đầu vào"
+        "en": "When all requirements are perfectly documented",
+        "vi": "Khi mọi yêu cầu được ghi lại hoàn hảo"
       },
       {
-        "en": "Astrological charts only",
-        "vi": "Chỉ biểu đồ chiêm tinh"
+        "en": "When regression test suites are fully automated",
+        "vi": "Khi bộ kiểm thử hồi quy được tự động hóa hoàn toàn"
       },
       {
-        "en": "Specified behaviors and data",
-        "vi": "Hành vi và dữ liệu được đặc tả"
+        "en": "Only during unit testing",
+        "vi": "Chỉ trong kiểm thử đơn vị"
       }
     ],
-    "correctEn": "Specified behaviors and data",
-    "correctVi": "Hành vi và dữ liệu được đặc tả",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "When specifications are inadequate or time pressure is high",
+    "correctVi": "Khi đặc tả không đầy đủ hoặc áp lực thời gian cao",
+    "explanation": "Exploratory testing is beneficial when there are few or inadequate specifications, and when there is significant time pressure. It also complements formal techniques. (Syllabus 4.4.2)\n\nKiểm thử khám phá có lợi khi có ít hoặc đặc tả không đầy đủ, và khi có áp lực thời gian lớn. Nó cũng bổ trợ cho các kỹ thuật hình thức."
   },
   {
-    "questionEn": "A test condition is:",
-    "questionVi": "Điều kiện kiểm thử là:",
+    "questionEn": "What is the main difference between error guessing and checklist‑based testing?",
+    "questionVi": "Sự khác biệt chính giữa đoán lỗi và kiểm thử dựa trên danh sách kiểm tra là gì?",
     "options": [
       {
-        "en": "Stopping all automation",
-        "vi": "Dừng mọi tự động"
+        "en": "Error guessing relies on the tester's intuition and experience; checklist‑based testing uses a predefined list of test conditions",
+        "vi": "Đoán lỗi dựa vào trực giác và kinh nghiệm của kiểm thử viên; kiểm thử theo danh sách dùng một danh sách điều kiện kiểm thử được xác định trước"
       },
       {
-        "en": "An aspect verifiable in a test",
-        "vi": "Khía cạnh có thể kiểm chứng trong một kiểm thử"
+        "en": "Checklist‑based testing does not require any tester skill",
+        "vi": "Kiểm thử theo danh sách không cần kỹ năng của kiểm thử viên"
       },
       {
-        "en": "Hiding actions",
-        "vi": "Giấu hành động"
+        "en": "Error guessing always uses automated tools",
+        "vi": "Đoán lỗi luôn dùng công cụ tự động"
       },
       {
-        "en": "Only mascot ear shapes",
-        "vi": "Chỉ tai mascot"
+        "en": "There is no difference; they are the same technique",
+        "vi": "Không có khác biệt; chúng là cùng một kỹ thuật"
       }
     ],
-    "correctEn": "An aspect verifiable in a test",
-    "correctVi": "Khía cạnh có thể kiểm chứng trong một kiểm thử",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Error guessing relies on the tester's intuition and experience; checklist‑based testing uses a predefined list of test conditions",
+    "correctVi": "Đoán lỗi dựa vào trực giác và kinh nghiệm của kiểm thử viên; kiểm thử theo danh sách dùng một danh sách điều kiện kiểm thử được xác định trước",
+    "explanation": "Error guessing uses the tester's knowledge to anticipate errors. Checklist‑based testing uses a prepared checklist of test conditions, though checklists are often built from experience. (Syllabus 4.4.1, 4.4.3)\n\nĐoán lỗi dùng kiến thức của người kiểm thử để dự đoán lỗi. Kiểm thử theo danh sách sử dụng danh sách điều kiện kiểm thử được chuẩn bị sẵn, thường được xây dựng từ kinh nghiệm."
   },
   {
-    "questionEn": "Test cases realize:",
-    "questionVi": "Ca kiểm thử cụ thể hóa:",
+    "questionEn": "Which of the following is a benefit of the whole team approach in the context of user story writing?",
+    "questionVi": "Lợi ích nào sau đây của phương pháp toàn nhóm trong việc viết user story?",
     "options": [
       {
-        "en": "Basic smoke sanity sometimes",
-        "vi": "Đôi khi smoke/sanity cơ bản"
+        "en": "It provides a shared vision by combining business, development, and testing perspectives",
+        "vi": "Nó cung cấp tầm nhìn chung bằng cách kết hợp góc nhìn kinh doanh, phát triển và kiểm thử"
       },
       {
-        "en": "Only 5",
-        "vi": "Chỉ 5"
+        "en": "It ensures that only testers write the acceptance criteria",
+        "vi": "Nó đảm bảo chỉ có kiểm thử viên viết tiêu chí chấp nhận"
       },
       {
-        "en": "Purchase orders for furniture",
-        "vi": "Đơn mua nội thất"
+        "en": "It replaces the need for any review process",
+        "vi": "Nó thay thế nhu cầu về bất kỳ quy trình xem xét nào"
       },
       {
-        "en": "Test conditions with concrete inputs and expected results",
-        "vi": "Điều kiện với đầu vào và kết quả mong đợi cụ thể"
+        "en": "It eliminates the need for developers to understand the requirements",
+        "vi": "Nó loại bỏ nhu cầu nhà phát triển phải hiểu yêu cầu"
       }
     ],
-    "correctEn": "Test conditions with concrete inputs and expected results",
-    "correctVi": "Điều kiện với đầu vào và kết quả mong đợi cụ thể",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "It provides a shared vision by combining business, development, and testing perspectives",
+    "correctVi": "Nó cung cấp tầm nhìn chung bằng cách kết hợp góc nhìn kinh doanh, phát triển và kiểm thử",
+    "explanation": "Collaborative user story writing uses brainstorming and three perspectives (business, development, testing) to achieve a shared understanding. (Syllabus 4.5.1)\n\nViết user story hợp tác sử dụng động não và ba góc nhìn (kinh doanh, phát triển, kiểm thử) để đạt được sự hiểu biết chung."
   },
   {
-    "questionEn": "Prioritization often combines:",
-    "questionVi": "Ưu tiên thường kết hợp:",
+    "questionEn": "Which of the following best describes the 'Conversation' aspect of the 3 C's of user stories?",
+    "questionVi": "Mô tả nào sau đây đúng nhất về khía cạnh 'Conversation' (Hội thoại) trong 3 chữ C của user story?",
     "options": [
       {
-        "en": "Replace automation",
-        "vi": "Thay tự động"
+        "en": "It explains how the software will be used and can be documented or verbal",
+        "vi": "Nó giải thích cách phần mềm sẽ được sử dụng và có thể được ghi lại hoặc bằng lời nói"
       },
       {
-        "en": "Risk, coverage and deadlines",
-        "vi": "Rủi ro, bao phủ và deadline"
+        "en": "It is the physical card representing the story",
+        "vi": "Nó là thẻ vật lý đại diện cho story"
       },
       {
-        "en": "Printer fonts only",
-        "vi": "Chỉ font máy in"
+        "en": "It is the formal sign‑off by the product owner",
+        "vi": "Nó là sự phê duyệt chính thức của product owner"
       },
       {
-        "en": "Compiler mascot colors",
-        "vi": "Màu mascot compiler"
+        "en": "It is the list of acceptance criteria only",
+        "vi": "Nó chỉ là danh sách tiêu chí chấp nhận"
       }
     ],
-    "correctEn": "Risk, coverage and deadlines",
-    "correctVi": "Rủi ro, bao phủ và deadline",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "It explains how the software will be used and can be documented or verbal",
+    "correctVi": "Nó giải thích cách phần mềm sẽ được sử dụng và có thể được ghi lại hoặc bằng lời nói",
+    "explanation": "The 3 C's are Card (the medium), Conversation (explains usage), and Confirmation (acceptance criteria). (Syllabus 4.5.1)\n\n3 chữ C gồm Card (thẻ), Conversation (hội thoại giải thích cách dùng), và Confirmation (tiêu chí chấp nhận)."
   },
   {
-    "questionEn": "\"Happy path\" scenarios cover:",
-    "questionVi": "Kịch bản \"happy path\" bao phủ:",
+    "questionEn": "In ATDD, when are the test cases typically created?",
+    "questionVi": "Trong ATDD, các ca kiểm thử thường được tạo ra khi nào?",
     "options": [
       {
-        "en": "Only catastrophic failures",
-        "vi": "Chỉ thảm họa"
+        "en": "Before implementing the user story",
+        "vi": "Trước khi triển khai user story"
       },
       {
-        "en": "Expected valid flows without anomalies",
-        "vi": "Luồng hợp lệ mong đợi không bất thường"
+        "en": "After the code is written",
+        "vi": "Sau khi viết mã"
       },
       {
-        "en": "Only cosmic rays",
-        "vi": "Chỉ tia vũ trụ"
+        "en": "During the release retrospective",
+        "vi": "Trong buổi hồi tưởng phát hành"
       },
       {
-        "en": "Only GPU shaders",
-        "vi": "Chỉ shader GPU"
+        "en": "Only after user acceptance testing",
+        "vi": "Chỉ sau kiểm thử chấp nhận người dùng"
       }
     ],
-    "correctEn": "Expected valid flows without anomalies",
-    "correctVi": "Luồng hợp lệ mong đợi không bất thường",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Before implementing the user story",
+    "correctVi": "Trước khi triển khai user story",
+    "explanation": "ATDD is a test‑first approach: test cases are created prior to implementing the user story, based on acceptance criteria. (Syllabus 4.5.3)\n\nATDD là cách tiếp cận viết kiểm thử trước: ca kiểm thử được tạo trước khi triển khai user story, dựa trên tiêu chí chấp nhận."
   },
   {
-    "questionEn": "Negative tests deliberately use:",
-    "questionVi": "Kiểm thử âm cố ý dùng:",
+    "questionEn": "Which acceptance criteria format is typical for Behavior‑Driven Development (BDD)?",
+    "questionVi": "Định dạng tiêu chí chấp nhận nào điển hình cho Phát triển Hướng Hành vi (BDD)?",
     "options": [
       {
-        "en": "Hide charters",
-        "vi": "Giấu charter"
+        "en": "Given/When/Then",
+        "vi": "Given/When/Then"
       },
       {
-        "en": "Invalid inputs or exceptional conditions",
-        "vi": "Đầu vào không hợp lệ hoặc điều kiện ngoại lệ"
+        "en": "Bullet point verification list",
+        "vi": "Danh sách xác minh dạng gạch đầu dòng"
       },
       {
-        "en": "Criteria are poetic only",
-        "vi": "Tiêu chí chỉ thơ"
+        "en": "Tabular input‑output mapping",
+        "vi": "Ánh xạ đầu vào - đầu ra dạng bảng"
       },
       {
-        "en": "Weaker than statement coverage",
-        "vi": "Yếu hơn bao phủ câu lệnh"
+        "en": "State diagram",
+        "vi": "Sơ đồ trạng thái"
       }
     ],
-    "correctEn": "Invalid inputs or exceptional conditions",
-    "correctVi": "Đầu vào không hợp lệ hoặc điều kiện ngoại lệ",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Given/When/Then",
+    "correctVi": "Given/When/Then",
+    "explanation": "BDD uses the Given/When/Then format to express desired behaviour. Bullet points and tabular forms are rule‑oriented alternatives. (Syllabus 4.5.2)\n\nBDD dùng định dạng Given/When/Then để diễn tả hành vi mong muốn. Danh sách gạch đầu dòng và dạng bảng là các lựa chọn theo hướng quy tắc."
   },
   {
-    "questionEn": "Combinatorial testing aims to:",
-    "questionVi": "Kiểm thử tổ hợp nhằm:",
+    "questionEn": "What is the primary objective of a specification workshop in ATDD?",
+    "questionVi": "Mục tiêu chính của hội thảo đặc tả trong ATDD là gì?",
     "options": [
       {
-        "en": "Cover interactions among parameters efficiently",
-        "vi": "Bao phủ tương tác tham số hiệu quả"
+        "en": "To analyze, discuss, and write acceptance criteria and resolve incompleteness or ambiguities",
+        "vi": "Phân tích, thảo luận và viết tiêu chí chấp nhận, giải quyết sự không đầy đủ hoặc mơ hồ"
       },
       {
-        "en": "Only production passwords",
-        "vi": "Chỉ mật khẩu production"
+        "en": "To write the entire source code",
+        "vi": "Viết toàn bộ mã nguồn"
       },
       {
-        "en": "No defects exist by fiat",
-        "vi": "Không có khiếm khuyết theo lệnh"
+        "en": "To execute all regression tests",
+        "vi": "Thực thi tất cả kiểm thử hồi quy"
       },
       {
-        "en": "Only certified happy inputs",
-        "vi": "Chỉ đầu vào happy đã chứng nhận"
+        "en": "To assign bug fixes to developers",
+        "vi": "Gán sửa lỗi cho nhà phát triển"
       }
     ],
-    "correctEn": "Cover interactions among parameters efficiently",
-    "correctVi": "Bao phủ tương tác tham số hiệu quả",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "To analyze, discuss, and write acceptance criteria and resolve incompleteness or ambiguities",
+    "correctVi": "Phân tích, thảo luận và viết tiêu chí chấp nhận, giải quyết sự không đầy đủ hoặc mơ hồ",
+    "explanation": "In the specification workshop, the team analyzes the user story and its acceptance criteria, resolving any defects in the story. (Syllabus 4.5.3)\n\nTrong hội thảo đặc tả, nhóm phân tích user story và tiêu chí chấp nhận của nó, giải quyết bất kỳ khiếm khuyết nào trong story."
   },
   {
-    "questionEn": "Coverage gaps indicate:",
-    "questionVi": "Lỗ hổng bao phủ cho thấy:",
+    "questionEn": "Which of the following is true about checklist‑based testing?",
+    "questionVi": "Điều nào sau đây đúng về kiểm thử dựa trên danh sách kiểm tra?",
     "options": [
       {
-        "en": "Perfect quality achieved",
-        "vi": "Đạt chất lượng hoàn hảo"
+        "en": "Checklists should be regularly updated based on defect analysis",
+        "vi": "Danh sách kiểm tra nên được cập nhật thường xuyên dựa trên phân tích lỗi"
       },
       {
-        "en": "CPU speed infinite",
-        "vi": "CPU vô hạn tốc độ"
+        "en": "Checklists must never be changed once created",
+        "vi": "Danh sách kiểm tra không bao giờ được thay đổi sau khi tạo"
       },
       {
-        "en": "Areas not yet exercised by tests",
-        "vi": "Vùng chưa được kiểm thử"
+        "en": "Checklists can only be used for functional testing",
+        "vi": "Danh sách kiểm tra chỉ dùng cho kiểm thử chức năng"
       },
       {
-        "en": "Only golden stickers",
-        "vi": "Chỉ sticker vàng"
+        "en": "Checklists replace the need for other test techniques",
+        "vi": "Danh sách kiểm tra thay thế các kỹ thuật kiểm thử khác"
       }
     ],
-    "correctEn": "Areas not yet exercised by tests",
-    "correctVi": "Vùng chưa được kiểm thử",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Checklists should be regularly updated based on defect analysis",
+    "correctVi": "Danh sách kiểm tra nên được cập nhật thường xuyên dựa trên phân tích lỗi",
+    "explanation": "Checklists can become less effective over time; they should be updated based on defect analysis, while avoiding excessive length. (Syllabus 4.4.3)\n\nDanh sách kiểm tra có thể giảm hiệu quả theo thời gian; cần được cập nhật dựa trên phân tích lỗi, đồng thời tránh quá dài."
   },
   {
-    "questionEn": "Experience-based techniques include:",
-    "questionVi": "Kỹ thuật dựa kinh nghiệm gồm:",
+    "questionEn": "Which of the following is a common structure for acceptance criteria?",
+    "questionVi": "Cấu trúc phổ biến nào cho tiêu chí chấp nhận?",
     "options": [
       {
-        "en": "Only payroll overtime",
-        "vi": "Chỉ làm thêm lương"
+        "en": "Scenario‑oriented (e.g., Given/When/Then) and rule‑oriented (e.g., bullet point list)",
+        "vi": "Hướng kịch bản (ví dụ: Given/When/Then) và hướng quy tắc (ví dụ: danh sách gạch đầu dòng)"
       },
       {
-        "en": "Only cosmological constants",
-        "vi": "Chỉ hằng số vũ trụ học"
+        "en": "Only state transition diagrams",
+        "vi": "Chỉ sơ đồ chuyển trạng thái"
       },
       {
-        "en": "Error guessing and exploratory testing",
-        "vi": "Đoán lỗi và exploratory"
+        "en": "Only decision tables",
+        "vi": "Chỉ bảng quyết định"
       },
       {
-        "en": "Only splash screen hues",
-        "vi": "Chỉ sắc splash"
+        "en": "Always in the format of user story alone",
+        "vi": "Luôn ở định dạng user story đơn thuần"
       }
     ],
-    "correctEn": "Error guessing and exploratory testing",
-    "correctVi": "Đoán lỗi và exploratory",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Scenario‑oriented (e.g., Given/When/Then) and rule‑oriented (e.g., bullet point list)",
+    "correctVi": "Hướng kịch bản (ví dụ: Given/When/Then) và hướng quy tắc (ví dụ: danh sách gạch đầu dòng)",
+    "explanation": "Acceptance criteria can be documented in scenario‑oriented (Given/When/Then) or rule‑oriented (bullet list, tabular) formats. (Syllabus 4.5.2)\n\nTiêu chí chấp nhận có thể được ghi nhận theo hướng kịch bản (Given/When/Then) hoặc hướng quy tắc (danh sách, bảng)."
   },
   {
-    "questionEn": "Test basis for acceptance tests often includes:",
-    "questionVi": "Cơ sở kiểm thử chấp nhận thường gồm:",
+    "questionEn": "What does achieving 100% statement coverage guarantee?",
+    "questionVi": "Đạt được 100% bao phủ câu lệnh đảm bảo điều gì?",
     "options": [
       {
-        "en": "CPU microcode only",
-        "vi": "Chỉ microcode CPU"
+        "en": "Every executable statement has been executed at least once",
+        "vi": "Mỗi câu lệnh thực thi được đã được thực thi ít nhất một lần"
       },
       {
-        "en": "User stories and acceptance criteria",
-        "vi": "User story và tiêu chí chấp nhận"
+        "en": "All defects in the code have been found",
+        "vi": "Mọi lỗi trong mã đã được tìm thấy"
       },
       {
-        "en": "Runs only automated scripts",
-        "vi": "Chỉ chạy script tự động"
+        "en": "All possible data combinations have been tested",
+        "vi": "Mọi tổ hợp dữ liệu đã được kiểm thử"
       },
       {
-        "en": "Only barcode checksums",
-        "vi": "Chỉ checksum mã vạch"
+        "en": "All branches have been tested in both directions",
+        "vi": "Mọi nhánh đã được kiểm thử cả hai hướng"
       }
     ],
-    "correctEn": "User stories and acceptance criteria",
-    "correctVi": "User story và tiêu chí chấp nhận",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Every executable statement has been executed at least once",
+    "correctVi": "Mỗi câu lệnh thực thi được đã được thực thi ít nhất một lần",
+    "explanation": "100% statement coverage means every executable statement ran at least once, but it does not guarantee finding all defects or exercising all branches. (Syllabus 4.3.1)\n\n100% bao phủ câu lệnh nghĩa là mỗi câu lệnh thực thi được đã chạy ít nhất một lần, nhưng không đảm bảo tìm thấy mọi lỗi hay thực thi mọi nhánh."
   },
   {
-    "questionEn": "Partitioning invalid classes matters because:",
-    "questionVi": "Phân vùng lớp không hợp lệ quan trọng vì:",
+    "questionEn": "Why might a tester choose 3‑value BVA over 2‑value BVA?",
+    "questionVi": "Tại sao kiểm thử viên có thể chọn BVA 3 giá trị thay vì BVA 2 giá trị?",
     "options": [
       {
-        "en": "Weaker than statement coverage",
-        "vi": "Yếu hơn bao phủ câu lệnh"
+        "en": "3‑value BVA can detect boundary displacement defects that 2‑value BVA might miss",
+        "vi": "BVA 3 giá trị có thể phát hiện lỗi sai lệch biên mà BVA 2 giá trị có thể bỏ sót"
       },
       {
-        "en": "Invalid inputs never occur",
-        "vi": "Đầu vào sai không bao giờ xảy ra"
+        "en": "3‑value BVA requires fewer test cases",
+        "vi": "BVA 3 giá trị cần ít ca kiểm thử hơn"
       },
       {
-        "en": "Systems must handle erroneous inputs safely",
-        "vi": "Hệ thống phải xử lý đầu vào sai an toàn"
+        "en": "2‑value BVA can only be used for integer inputs",
+        "vi": "BVA 2 giá trị chỉ dùng được cho đầu vào số nguyên"
+      },
+      {
+        "en": "3‑value BVA does not require the partitions to be ordered",
+        "vi": "BVA 3 giá trị không yêu cầu phân vùng có thứ tự"
+      }
+    ],
+    "correctEn": "3‑value BVA can detect boundary displacement defects that 2‑value BVA might miss",
+    "correctVi": "BVA 3 giá trị có thể phát hiện lỗi sai lệch biên mà BVA 2 giá trị có thể bỏ sót",
+    "explanation": "3‑value BVA tests the boundary value and both neighbours, making it more rigorous and able to detect certain defects (e.g., incorrect relational operators) that 2‑value might miss. (Syllabus 4.2.2)\n\nBVA 3 giá trị kiểm thử biên và cả hai láng giềng, chặt chẽ hơn và có thể phát hiện một số lỗi (ví dụ toán tử quan hệ sai) mà BVA 2 giá trị bỏ sót."
+  },
+  {
+    "questionEn": "In a state transition diagram, what does the label 'event [guard] / action' represent?",
+    "questionVi": "Trong sơ đồ chuyển trạng thái, nhãn 'event [guard] / action' thể hiện điều gì?",
+    "options": [
+      {
+        "en": "A transition that occurs on event, provided the guard condition is true, and results in the specified action",
+        "vi": "Một chuyển tiếp xảy ra khi có sự kiện, với điều kiện guard đúng, và dẫn đến hành động được chỉ định"
+      },
+      {
+        "en": "A state that performs the action when event occurs regardless of guard",
+        "vi": "Một trạng thái thực hiện hành động khi sự kiện xảy ra bất kể guard"
+      },
+      {
+        "en": "A guard condition that must be false for the transition",
+        "vi": "Một điều kiện guard phải sai để chuyển tiếp"
+      },
+      {
+        "en": "Only the event name; guard and action are optional and never used",
+        "vi": "Chỉ tên sự kiện; guard và hành động là tùy chọn và không bao giờ được dùng"
+      }
+    ],
+    "correctEn": "A transition that occurs on event, provided the guard condition is true, and results in the specified action",
+    "correctVi": "Một chuyển tiếp xảy ra khi có sự kiện, với điều kiện guard đúng, và dẫn đến hành động được chỉ định",
+    "explanation": "The syntax is: event [guard condition] / action. Guard and action are optional; the transition fires if the event occurs and the guard is true. (Syllabus 4.2.4)\n\nCú pháp: sự kiện [điều kiện guard] / hành động. Guard và hành động là tùy chọn; chuyển tiếp xảy ra nếu sự kiện xảy ra và guard đúng."
+  },
+  {
+    "questionEn": "What is a defect masking effect in state transition testing?",
+    "questionVi": "Hiệu ứng che khuất lỗi (defect masking) trong kiểm thử chuyển trạng thái là gì?",
+    "options": [
+      {
+        "en": "One defect prevents the detection of another defect",
+        "vi": "Một lỗi ngăn cản việc phát hiện lỗi khác"
+      },
+      {
+        "en": "The state diagram does not show all invalid transitions",
+        "vi": "Sơ đồ trạng thái không hiển thị tất cả chuyển tiếp không hợp lệ"
+      },
+      {
+        "en": "All transitions are executed in a single test case",
+        "vi": "Tất cả chuyển tiếp được thực thi trong một ca kiểm thử"
+      },
+      {
+        "en": "Coverage is measured incorrectly",
+        "vi": "Bao phủ được đo không chính xác"
+      }
+    ],
+    "correctEn": "One defect prevents the detection of another defect",
+    "correctVi": "Một lỗi ngăn cản việc phát hiện lỗi khác",
+    "explanation": "Defect masking occurs when one defect prevents another from being observed. Testing only one invalid transition per test case helps avoid this. (Syllabus 4.2.4)\n\nChe khuất lỗi xảy ra khi một lỗi ngăn không cho lỗi khác được quan sát. Chỉ kiểm thử một chuyển tiếp không hợp lệ trong mỗi ca giúp tránh điều này."
+  },
+  {
+    "questionEn": "Which of the following is a typical risk of test automation that applies to using tools for test design?",
+    "questionVi": "Đâu là rủi ro điển hình của tự động hóa kiểm thử áp dụng cho việc dùng công cụ thiết kế kiểm thử?",
+    "options": [
+      {
+        "en": "Unrealistic expectations about the tool's capability",
+        "vi": "Kỳ vọng không thực tế về khả năng của công cụ"
+      },
+      {
+        "en": "The tool always increases the number of defects found",
+        "vi": "Công cụ luôn làm tăng số lỗi tìm thấy"
+      },
+      {
+        "en": "No training is needed for the tool",
+        "vi": "Không cần đào tạo cho công cụ"
+      },
+      {
+        "en": "The tool eliminates the need for manual testing",
+        "vi": "Công cụ loại bỏ nhu cầu kiểm thử thủ công"
+      }
+    ],
+    "correctEn": "Unrealistic expectations about the tool's capability",
+    "correctVi": "Kỳ vọng không thực tế về khả năng của công cụ",
+    "explanation": "A common risk is unrealistic expectations, e.g., believing a tool will replace human design completely. (Syllabus 6.2; also relevant to test design tools)\n\nRủi ro phổ biến là kỳ vọng không thực tế, ví dụ tin rằng công cụ sẽ thay thế hoàn toàn thiết kế của con người."
+  },
+  {
+    "questionEn": "Which of the following is an advantage of decision table testing?",
+    "questionVi": "Lợi thế của kiểm thử bảng quyết định là gì?",
+    "options": [
+      {
+        "en": "It provides a systematic way to identify all meaningful condition combinations",
+        "vi": "Nó cung cấp cách có hệ thống để xác định mọi tổ hợp điều kiện có nghĩa"
+      },
+      {
+        "en": "It always generates fewer test cases than any other technique",
+        "vi": "Nó luôn tạo ra ít ca kiểm thử hơn bất kỳ kỹ thuật nào khác"
+      },
+      {
+        "en": "It can only be used with Boolean conditions",
+        "vi": "Nó chỉ dùng được với điều kiện Boolean"
+      },
+      {
+        "en": "It does not require understanding the business rules",
+        "vi": "Nó không yêu cầu hiểu các quy tắc nghiệp vụ"
+      }
+    ],
+    "correctEn": "It provides a systematic way to identify all meaningful condition combinations",
+    "correctVi": "Nó cung cấp cách có hệ thống để xác định mọi tổ hợp điều kiện có nghĩa",
+    "explanation": "Decision tables help systematically identify all combinations of conditions, including those that might be overlooked. (Syllabus 4.2.3)\n\nBảng quyết định giúp xác định có hệ thống mọi tổ hợp điều kiện, kể cả những tổ hợp dễ bị bỏ sót."
+  },
+  {
+    "questionEn": "A field accepts an integer age from 18 to 65 inclusive. Which set of test inputs achieves 100% coverage for 2‑value BVA?",
+    "questionVi": "Một trường chấp nhận số nguyên tuổi từ 18 đến 65. Tập giá trị kiểm thử nào đạt 100% bao phủ cho BVA 2 giá trị?",
+    "options": [
+      {
+        "en": "17, 18, 65, 66",
+        "vi": "17, 18, 65, 66"
+      },
+      {
+        "en": "18, 65",
+        "vi": "18, 65"
+      },
+      {
+        "en": "17, 18, 64, 65",
+        "vi": "17, 18, 64, 65"
+      },
+      {
+        "en": "19, 66",
+        "vi": "19, 66"
+      }
+    ],
+    "correctEn": "17, 18, 65, 66",
+    "correctVi": "17, 18, 65, 66",
+    "explanation": "2‑value BVA requires testing each boundary value (18, 65) and their closest neighbours from adjacent partitions (17 from invalid low, 66 from invalid high). So {17,18,65,66}. (Syllabus 4.2.2)\n\nBVA 2 giá trị yêu cầu kiểm thử mỗi giá trị biên (18, 65) và láng giềng gần nhất thuộc phân vùng kế cận (17 thấp không hợp lệ, 66 cao không hợp lệ). Vậy tập {17,18,65,66}."
+  },
+  {
+    "questionEn": "Using the same age field (18–65), which set achieves 100% coverage for 3‑value BVA?",
+    "questionVi": "Với cùng trường tuổi (18–65), tập nào đạt 100% bao phủ cho BVA 3 giá trị?",
+    "options": [
+      {
+        "en": "17, 18, 19, 64, 65, 66",
+        "vi": "17, 18, 19, 64, 65, 66"
+      },
+      {
+        "en": "17, 18, 65, 66",
+        "vi": "17, 18, 65, 66"
+      },
+      {
+        "en": "18, 19, 64, 65",
+        "vi": "18, 19, 64, 65"
+      },
+      {
+        "en": "16, 17, 18, 65, 66, 67",
+        "vi": "16, 17, 18, 65, 66, 67"
+      }
+    ],
+    "correctEn": "17, 18, 19, 64, 65, 66",
+    "correctVi": "17, 18, 19, 64, 65, 66",
+    "explanation": "3‑value BVA requires the boundary values (18, 65) and both neighbours: for 18 → 17, 18, 19; for 65 → 64, 65, 66. Thus {17,18,19,64,65,66}. (Syllabus 4.2.2)\n\nBVA 3 giá trị yêu cầu giá trị biên (18, 65) và cả hai láng giềng: với 18 → 17, 18, 19; với 65 → 64, 65, 66. Vậy tập {17,18,19,64,65,66}."
+  },
+  {
+    "questionEn": "A system gives a discount of 5% for orders ≥ $100 and < $500, and 10% for orders ≥ $500. No discount below $100. Using EP, how many partitions are needed for the order amount?",
+    "questionVi": "Một hệ thống giảm giá 5% cho đơn hàng ≥ $100 và < $500, 10% cho đơn ≥ $500. Không giảm giá dưới $100. Dùng phân vùng tương đương, cần bao nhiêu phân vùng cho số tiền đơn hàng?",
+    "options": [
+      {
+        "en": "Three partitions: invalid (<100), 5% discount (100–499), 10% discount (≥500)",
+        "vi": "Ba phân vùng: không hợp lệ (<100), giảm 5% (100–499), giảm 10% (≥500)"
+      },
+      {
+        "en": "Two partitions: <$100 and ≥$100",
+        "vi": "Hai phân vùng: <$100 và ≥$100"
+      },
+      {
+        "en": "Four partitions: <0, 0–99, 100–499, ≥500",
+        "vi": "Bốn phân vùng: <0, 0–99, 100–499, ≥500"
+      },
+      {
+        "en": "One partition per dollar amount",
+        "vi": "Mỗi giá trị đô la là một phân vùng"
+      }
+    ],
+    "correctEn": "Three partitions: invalid (<100), 5% discount (100–499), 10% discount (≥500)",
+    "correctVi": "Ba phân vùng: không hợp lệ (<100), giảm 5% (100–499), giảm 10% (≥500)",
+    "explanation": "Valid partitions: 100–499 (5%), 500+ (10%). Optionally, an invalid partition for amounts <100 (assuming negative also invalid but can be combined). The given valid partitions are correct based on the discount logic. (Syllabus 4.2.1)\n\nCác phân vùng hợp lệ: 100–499 (5%), 500+ (10%). Có thể có phân vùng không hợp lệ cho <100. Ba phân vùng phản ánh đúng các hành vi chiết khấu."
+  },
+  {
+    "questionEn": "For the same discount system, which test values achieve 100% each choice coverage if we consider two parameters: 'order amount' (valid partitions: 100‑499, 500+) and 'member status' (member, non‑member) with no interaction defined?",
+    "questionVi": "Với cùng hệ thống giảm giá, giá trị kiểm thử nào đạt bao phủ mỗi lựa chọn nếu có hai tham số: 'số tiền đơn' (phân vùng 100‑499, 500+) và 'trạng thái thành viên' (thành viên, không thành viên)?",
+    "options": [
+      {
+        "en": "Two tests covering each partition at least once: (150, member) and (600, non‑member) would cover all partitions",
+        "vi": "Hai ca kiểm thử bao phủ mỗi phân vùng ít nhất một lần: (150, thành viên) và (600, không thành viên) sẽ bao phủ tất cả phân vùng"
+      },
+      {
+        "en": "Four tests for all combinations",
+        "vi": "Bốn ca cho mọi tổ hợp"
+      },
+      {
+        "en": "One test only because parameters are independent",
+        "vi": "Một ca vì các tham số độc lập"
+      },
+      {
+        "en": "No test needed for non‑member",
+        "vi": "Không cần ca kiểm thử cho không thành viên"
+      }
+    ],
+    "correctEn": "Two tests covering each partition at least once: (150, member) and (600, non‑member) would cover all partitions",
+    "correctVi": "Hai ca kiểm thử bao phủ mỗi phân vùng ít nhất một lần: (150, thành viên) và (600, không thành viên) sẽ bao phủ tất cả phân vùng",
+    "explanation": "Each Choice coverage requires each partition from each set to be exercised at least once, not all combinations. So two tests can cover all partitions. (Syllabus 4.2.1)\n\nBao phủ Each Choice yêu cầu thực thi mỗi phân vùng từ mỗi tập ít nhất một lần, không phải mọi tổ hợp. Vì vậy hai ca có thể bao phủ tất cả."
+  },
+  {
+    "questionEn": "A decision table has two conditions: 'Customer is gold member (T/F)' and 'Order total > $1000 (T/F)'. The actions: 'Free shipping' if gold member or order >1000, otherwise 'Standard shipping'. How many test cases are needed for 100% coverage of the feasible rules?",
+    "questionVi": "Bảng quyết định có hai điều kiện: 'Khách hàng là thành viên vàng (Đ/S)' và 'Tổng đơn > $1000 (Đ/S)'. Hành động: 'Miễn phí vận chuyển' nếu thành viên vàng hoặc đơn >1000, nếu không 'Vận chuyển thường'. Cần bao nhiêu ca kiểm thử để đạt 100% bao phủ các luật khả thi?",
+    "options": [
+      {
+        "en": "4",
+        "vi": "4"
+      },
+      {
+        "en": "3",
+        "vi": "3"
+      },
+      {
+        "en": "2",
+        "vi": "2"
+      },
+      {
+        "en": "1",
+        "vi": "1"
+      }
+    ],
+    "correctEn": "4",
+    "correctVi": "4",
+    "explanation": "A full decision table with 2 conditions has 4 combinations. None are infeasible, so 4 test cases are needed. (Syllabus 4.2.3)\n\nBảng quyết định đầy đủ với 2 điều kiện có 4 tổ hợp. Không có tổ hợp không khả thi, do đó cần 4 ca kiểm thử."
+  },
+  {
+    "questionEn": "In the same decision table, the rule (Gold=F, Order>1000=T) gives Free shipping. Which of the following is a minimized representation if the 'Gold' condition does not affect the outcome when Order>1000 is true?",
+    "questionVi": "Trong cùng bảng quyết định, luật (Vàng=Sai, Đơn>1000=Đúng) cho Miễn phí vận chuyển. Biểu diễn tối thiểu nào sau đây nếu điều kiện 'Vàng' không ảnh hưởng khi Đơn>1000 đúng?",
+    "options": [
+      {
+        "en": "Merge the two rules where Gold=F, Order>1000=T and Gold=T, Order>1000=T into a single rule with Gold=‘–’ and Order>1000=T",
+        "vi": "Gộp hai luật Gold=F, Order>1000=T và Gold=T, Order>1000=T thành một luật với Gold=‘–’ và Order>1000=T"
+      },
+      {
+        "en": "Delete the rule with Gold=T, Order>1000=T",
+        "vi": "Xóa luật Gold=T, Order>1000=T"
+      },
+      {
+        "en": "Add a new condition 'Platinum'",
+        "vi": "Thêm điều kiện mới 'Platinum'"
+      },
+      {
+        "en": "Change the action to Standard shipping for all rules",
+        "vi": "Đổi hành động thành Vận chuyển thường cho mọi luật"
+      }
+    ],
+    "correctEn": "Merge the two rules where Gold=F, Order>1000=T and Gold=T, Order>1000=T into a single rule with Gold=‘–’ and Order>1000=T",
+    "correctVi": "Gộp hai luật Gold=F, Order>1000=T và Gold=T, Order>1000=T thành một luật với Gold=‘–’ và Order>1000=T",
+    "explanation": "Minimization merges columns where a condition value doesn't affect the outcome, using ‘–’ to denote irrelevance. (Syllabus 4.2.3)\n\nTối thiểu hóa gộp các cột mà giá trị điều kiện không ảnh hưởng đến kết quả, dùng ‘–’ để chỉ không quan trọng."
+  },
+  {
+    "questionEn": "Consider the state diagram: States S1 (initial), S2, S3. Event A from S1 to S2; event B from S2 to S3; event C from S3 to S1. There is also an invalid transition: event B from S1 is undefined. Which test sequence achieves 100% valid transitions coverage?",
+    "questionVi": "Xét sơ đồ trạng thái: S1 (khởi đầu), S2, S3. Sự kiện A từ S1→S2; B từ S2→S3; C từ S3→S1. Có chuyển tiếp không hợp lệ: sự kiện B từ S1 không được định nghĩa. Trình tự nào đạt 100% bao phủ chuyển tiếp hợp lệ?",
+    "options": [
+      {
+        "en": "A, B, C",
+        "vi": "A, B, C"
+      },
+      {
+        "en": "A, B",
+        "vi": "A, B"
+      },
+      {
+        "en": "B, C",
+        "vi": "B, C"
+      },
+      {
+        "en": "A, C",
+        "vi": "A, C"
+      }
+    ],
+    "correctEn": "A, B, C",
+    "correctVi": "A, B, C",
+    "explanation": "Valid transitions are A (S1→S2), B (S2→S3), C (S3→S1). The sequence A,B,C exercises all three. (Syllabus 4.2.4)\n\nCác chuyển tiếp hợp lệ: A, B, C. Dãy A,B,C thực thi cả ba."
+  },
+  {
+    "questionEn": "To achieve 100% all transitions coverage on the same state diagram, what additional testing is required beyond the valid transitions?",
+    "questionVi": "Để đạt 100% bao phủ tất cả chuyển tiếp trên cùng sơ đồ, cần kiểm thử gì thêm ngoài các chuyển tiếp hợp lệ?",
+    "options": [
+      {
+        "en": "Attempt to trigger the invalid transition (B from S1) while avoiding defect masking",
+        "vi": "Cố gắng kích hoạt chuyển tiếp không hợp lệ (B từ S1) đồng thời tránh che khuất lỗi"
+      },
+      {
+        "en": "Execute each transition multiple times",
+        "vi": "Thực thi mỗi chuyển tiếp nhiều lần"
+      },
+      {
+        "en": "Add a new state S4",
+        "vi": "Thêm trạng thái S4 mới"
       },
       {
         "en": "No further testing needed",
         "vi": "Không cần kiểm thử thêm"
       }
     ],
-    "correctEn": "Systems must handle erroneous inputs safely",
-    "correctVi": "Hệ thống phải xử lý đầu vào sai an toàn",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Attempt to trigger the invalid transition (B from S1) while avoiding defect masking",
+    "correctVi": "Cố gắng kích hoạt chuyển tiếp không hợp lệ (B từ S1) đồng thời tránh che khuất lỗi",
+    "explanation": "All transitions coverage includes both valid and invalid transitions. Invalid transitions must be exercised (at least attempted) in separate test cases to avoid defect masking. (Syllabus 4.2.4)\n\nBao phủ tất cả chuyển tiếp bao gồm cả chuyển tiếp hợp lệ và không hợp lệ. Các chuyển tiếp không hợp lệ phải được thử (cố gắng thực thi) trong các ca riêng để tránh che khuất lỗi."
   },
   {
-    "questionEn": "Two-value BVA often tests:",
-    "questionVi": "BVA hai giá trị thường kiểm tra:",
+    "questionEn": "Given the code snippet: if (grade > 60) { result = 'Pass'; } else { result = 'Fail'; } What is the minimum number of test cases required to achieve 100% statement coverage?",
+    "questionVi": "Cho đoạn mã: if (grade > 60) { result = 'Pass'; } else { result = 'Fail'; }. Cần tối thiểu bao nhiêu ca kiểm thử để đạt 100% bao phủ câu lệnh?",
     "options": [
       {
-        "en": "Always identical to test case",
-        "vi": "Luôn giống ca kiểm thử"
+        "en": "2",
+        "vi": "2"
       },
       {
-        "en": "Only catastrophic failures",
-        "vi": "Chỉ thảm họa"
+        "en": "1",
+        "vi": "1"
       },
       {
-        "en": "The boundary and one value inside the partition",
-        "vi": "Biên và một giá trị trong phân vùng"
+        "en": "3",
+        "vi": "3"
       },
       {
-        "en": "Only splash screen hues",
-        "vi": "Chỉ sắc splash"
+        "en": "4",
+        "vi": "4"
       }
     ],
-    "correctEn": "The boundary and one value inside the partition",
-    "correctVi": "Biên và một giá trị trong phân vùng",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "2",
+    "correctVi": "2",
+    "explanation": "Two test cases are needed: one where grade > 60 (exercises the 'Pass' branch) and one where grade ≤ 60 (exercises the 'Fail' branch). This covers all executable statements. (Syllabus 4.3.1)\n\nCần hai ca: một với grade > 60 (thực thi nhánh 'Pass'), một với grade ≤ 60 (thực thi nhánh 'Fail'). Điều này bao phủ mọi câu lệnh thực thi được."
   },
   {
-    "questionEn": "Decision table completeness aims for:",
-    "questionVi": "Đầy đủ bảng quyết định nhằm:",
+    "questionEn": "For the same code, how many test cases are needed for 100% branch coverage?",
+    "questionVi": "Với cùng đoạn mã, cần bao nhiêu ca kiểm thử để đạt 100% bao phủ nhánh?",
     "options": [
       {
-        "en": "All meaningful condition combinations considered",
-        "vi": "Xét mọi tổ hợp điều kiện có nghĩa"
+        "en": "2",
+        "vi": "2"
       },
       {
-        "en": "RAM size zero",
-        "vi": "RAM bằng 0"
+        "en": "1",
+        "vi": "1"
       },
       {
-        "en": "Overlapping for thoroughness",
-        "vi": "Chồng chéo để kỹ hơn"
+        "en": "3",
+        "vi": "3"
       },
       {
-        "en": "Only lunar phases",
-        "vi": "Chỉ pha trăng"
+        "en": "4",
+        "vi": "4"
       }
     ],
-    "correctEn": "All meaningful condition combinations considered",
-    "correctVi": "Xét mọi tổ hợp điều kiện có nghĩa",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "2",
+    "correctVi": "2",
+    "explanation": "Branch coverage requires testing both the true and false outcomes of the if statement. Two test cases (grade>60 and grade≤60) achieve this. (Syllabus 4.3.2)\n\nBao phủ nhánh yêu cầu kiểm thử cả hai kết quả đúng/sai của câu lệnh if. Hai ca kiểm thử đạt được điều này."
   },
   {
-    "questionEn": "Coverage of acceptance scenarios ties to:",
-    "questionVi": "Bao phủ kịch bản chấp nhận gắn với:",
+    "questionEn": "A program has the following statements: 1) read a; 2) if a>0 then 3) print 'positive' else 4) print 'non‑positive'. Which test input alone will NOT achieve 100% statement coverage?",
+    "questionVi": "Chương trình có các lệnh: 1) read a; 2) if a>0 then 3) print 'positive' else 4) print 'non‑positive'. Đầu vào kiểm thử nào MỘT MÌNH sẽ KHÔNG đạt 100% bao phủ câu lệnh?",
     "options": [
       {
-        "en": "Business objectives and agreed criteria",
-        "vi": "Mục tiêu kinh doanh và tiêu chí thống nhất"
+        "en": "a = 0",
+        "vi": "a = 0"
       },
       {
-        "en": "Only sticky notes randomly",
-        "vi": "Chỉ sticky note ngẫu nhiên"
+        "en": "a = 5",
+        "vi": "a = 5"
       },
       {
-        "en": "Removing automation",
-        "vi": "Bỏ tự động"
+        "en": "Both a=5 and a=0 together",
+        "vi": "Cả a=5 và a=0 cùng nhau"
       },
       {
-        "en": "Desk lamp wattage only",
-        "vi": "Chỉ watt đèn bàn"
+        "en": "a = -1",
+        "vi": "a = -1"
       }
     ],
-    "correctEn": "Business objectives and agreed criteria",
-    "correctVi": "Mục tiêu kinh doanh và tiêu chí thống nhất",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "a = 0",
+    "correctVi": "a = 0",
+    "explanation": "Testing with a=0 executes the else branch, skipping the statement 'print positive'. Thus statement coverage is incomplete with a single test. a=5 skips the else. A set of two tests is needed. (Syllabus 4.3.1)\n\nVới a=0 chỉ thực thi nhánh else, bỏ qua lệnh 'print positive'. Với a=5 bỏ qua else. Cần hai ca để bao phủ đầy đủ."
   },
   {
-    "questionEn": "Test design should consider:",
-    "questionVi": "Thiết kế kiểm thử nên xét:",
+    "questionEn": "You are testing a login screen. Username must be 6–12 characters, alphanumeric only. Password must be 8–20 characters, any characters. Using EP, which of the following sets of test data provides one test per valid partition for each field?",
+    "questionVi": "Bạn đang kiểm thử màn hình đăng nhập. Tên đăng nhập dài 6–12 ký tự, chỉ chữ-số. Mật khẩu dài 8–20 ký tự, ký tự bất kỳ. Dùng EP, tập dữ liệu nào cung cấp mỗi ca cho mỗi phân vùng hợp lệ cho từng trường?",
     "options": [
       {
-        "en": "Some statements executed",
-        "vi": "Một số câu được thực thi"
+        "en": "Username: 'User123' (7 chars), Password: 'Pass@1234' (9 chars)",
+        "vi": "Username: 'User123' (7 ký tự), Password: 'Pass@1234' (9 ký tự)"
       },
       {
-        "en": "Every pixel on screen",
-        "vi": "Mọi pixel màn hình"
+        "en": "Username: 'U1' (2 chars), Password: 'Pwd' (3 chars)",
+        "vi": "Username: 'U1' (2 ký tự), Password: 'Pwd' (3 ký tự)"
       },
       {
-        "en": "Employee gym memberships",
-        "vi": "Thẻ gym nhân viên"
+        "en": "Username: 'User1234567890' (13 chars), Password: 'Pass123' (7 chars)",
+        "vi": "Username: 'User1234567890' (13 ký tự), Password: 'Pass123' (7 ký tự)"
       },
       {
-        "en": "Test environments and data realism",
-        "vi": "Môi trường và tính thực tế dữ liệu"
+        "en": "Username: '' (empty), Password: '' (empty)",
+        "vi": "Username: '' (rỗng), Password: '' (rỗng)"
       }
     ],
-    "correctEn": "Test environments and data realism",
-    "correctVi": "Môi trường và tính thực tế dữ liệu",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Username: 'User123' (7 chars), Password: 'Pass@1234' (9 chars)",
+    "correctVi": "Username: 'User123' (7 ký tự), Password: 'Pass@1234' (9 ký tự)",
+    "explanation": "The valid partition for username is length 6–12 alphanumeric. 'User123' fits. Password valid: length 8–20, any chars. 'Pass@1234' fits. The others are in invalid partitions. (Syllabus 4.2.1)\n\nPhân vùng hợp lệ cho username: độ dài 6–12 chữ-số. 'User123' phù hợp. Mật khẩu hợp lệ: 8–20 ký tự bất kỳ. 'Pass@1234' phù hợp. Các lựa chọn khác thuộc phân vùng không hợp lệ."
   },
   {
-    "questionEn": "Techniques suitable for workflow rules often include:",
-    "questionVi": "Kỹ thuật phù hợp luật quy trình thường gồm:",
+    "questionEn": "For the same login screen, which set of inputs represents valid test of invalid partitions for both fields (one test per invalid partition)?",
+    "questionVi": "Với cùng màn hình, tập đầu vào nào kiểm thử đại diện cho phân vùng không hợp lệ của cả hai trường (mỗi ca một phân vùng không hợp lệ)?",
     "options": [
       {
-        "en": "Deleting logs",
-        "vi": "Xóa log"
+        "en": "Username: 'ab' (too short), Password: '1234567' (too short)",
+        "vi": "Username: 'ab' (quá ngắn), Password: '1234567' (quá ngắn)"
       },
       {
-        "en": "Decision tables and state transition",
-        "vi": "Bảng quyết định và chuyển trạng thái"
+        "en": "Username: 'ValidUser' (8 chars), Password: 'ValidPass1' (9 chars)",
+        "vi": "Username: 'ValidUser' (8 ký tự), Password: 'ValidPass1' (9 ký tự)"
       },
       {
-        "en": "Only concert ticket stubs",
-        "vi": "Chỉ vé concert"
+        "en": "Username: 'User123' (ok), Password: 'short' (too short)",
+        "vi": "Username: 'User123' (ok), Password: 'short' (quá ngắn)"
       },
       {
-        "en": "Every branch both ways always",
-        "vi": "Mọi nhánh hai hướng luôn luôn"
+        "en": "Username: 'User123' (ok), Password: 'ValidPass1' (ok)",
+        "vi": "Username: 'User123' (ok), Password: 'ValidPass1' (ok)"
       }
     ],
-    "correctEn": "Decision tables and state transition",
-    "correctVi": "Bảng quyết định và chuyển trạng thái",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Username: 'ab' (too short), Password: '1234567' (too short)",
+    "correctVi": "Username: 'ab' (quá ngắn), Password: '1234567' (quá ngắn)",
+    "explanation": "Invalid partitions: username <6 or >12, non‑alphanumeric; password <8 or >20. Option A has both fields too short, testing those invalid partitions. (Syllabus 4.2.1)\n\nPhân vùng không hợp lệ: username <6 hoặc >12, không phải chữ-số; password <8 hoặc >20. Lựa chọn A có cả hai trường quá ngắn, kiểm thử các phân vùng đó."
   },
   {
-    "questionEn": "Equivalence class testing selects:",
-    "questionVi": "Kiểm thử lớp tương đương chọn:",
+    "questionEn": "A function calculates tax: income ≤ 10,000 → tax 0; 10,001–40,000 → 20% of income; >40,000 → 40% of income. Income is integer. What are the boundary values for the middle partition using 2‑value BVA?",
+    "questionVi": "Hàm tính thuế: thu nhập ≤ 10.000 → thuế 0; 10.001–40.000 → 20% thu nhập; >40.000 → 40%. Thu nhập là số nguyên. Giá trị biên cho phân vùng giữa theo BVA 2 giá trị là gì?",
     "options": [
       {
-        "en": "Coffee grind sizes only",
-        "vi": "Chỉ cỡ xay cà phê"
+        "en": "10000, 10001, 40000, 40001",
+        "vi": "10000, 10001, 40000, 40001"
       },
       {
-        "en": "Stopping all automation",
-        "vi": "Dừng mọi tự động"
+        "en": "10001, 40000",
+        "vi": "10001, 40000"
       },
       {
-        "en": "Basic smoke sanity sometimes",
-        "vi": "Đôi khi smoke/sanity cơ bản"
+        "en": "10000, 10001, 39999, 40000",
+        "vi": "10000, 10001, 39999, 40000"
       },
       {
-        "en": "Representatives expected to behave equivalently",
-        "vi": "Đại diện được kỳ vọng hành vi tương đương"
+        "en": "9999, 10000, 10001, 40000",
+        "vi": "9999, 10000, 10001, 40000"
       }
     ],
-    "correctEn": "Representatives expected to behave equivalently",
-    "correctVi": "Đại diện được kỳ vọng hành vi tương đương",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "10000, 10001, 40000, 40001",
+    "correctVi": "10000, 10001, 40000, 40001",
+    "explanation": "For partition 10001–40000, boundaries are 10001 (lower) and 40000 (upper). 2‑value BVA requires the boundary and its adjacent neighbour: for lower boundary: 10000 and 10001; for upper: 40000 and 40001. Hence {10000,10001,40000,40001}. (Syllabus 4.2.2)\n\nVới phân vùng 10001–40000, biên dưới 10001, biên trên 40000. BVA 2 giá trị yêu cầu giá trị biên và láng giềng: biên dưới → 10000, 10001; biên trên → 40000, 40001."
   },
   {
-    "questionEn": "Iterative refinement of tests occurs when:",
-    "questionVi": "Tinh chỉnh lặp các ca kiểm thử khi:",
+    "questionEn": "A user story states: 'As a customer, I want to withdraw money so that I can get cash.' The acceptance criteria include: 'The account balance must be at least the withdrawal amount after the transaction.' In ATDD, which test case would be a negative test?",
+    "questionVi": "Một user story: 'Là khách hàng, tôi muốn rút tiền để có tiền mặt.' Tiêu chí chấp nhận: 'Số dư tài khoản sau giao dịch phải ít nhất bằng số tiền rút.' Trong ATDD, ca kiểm thử nào là kiểm thử âm?",
     "options": [
       {
-        "en": "Shipping untested builds",
-        "vi": "Ship bản chưa kiểm thử"
+        "en": "Withdraw $200 when balance is $100",
+        "vi": "Rút $200 khi số dư là $100"
       },
       {
-        "en": "New risks or information emerge",
-        "vi": "Xuất hiện rủi ro hoặc thông tin mới"
+        "en": "Withdraw $100 when balance is $500",
+        "vi": "Rút $100 khi số dư là $500"
       },
       {
-        "en": "SQL indexing trivia only",
-        "vi": "Chỉ trivia chỉ mục SQL"
+        "en": "Withdraw $0",
+        "vi": "Rút $0"
       },
       {
-        "en": "Managers forbid learning",
-        "vi": "Quản lý cấm học"
+        "en": "Check balance after withdrawal equal to initial minus amount",
+        "vi": "Kiểm tra số dư sau rút bằng ban đầu trừ số tiền"
       }
     ],
-    "correctEn": "New risks or information emerge",
-    "correctVi": "Xuất hiện rủi ro hoặc thông tin mới",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Withdraw $200 when balance is $100",
+    "correctVi": "Rút $200 khi số dư là $100",
+    "explanation": "A negative test uses invalid or exceptional conditions. Trying to withdraw more than the balance is an invalid scenario. The other options are positive tests. (Syllabus 4.5.3)\n\nKiểm thử âm dùng điều kiện không hợp lệ hoặc ngoại lệ. Rút quá số dư là tình huống không hợp lệ. Các lựa chọn khác là kiểm thử dương."
   },
   {
-    "questionEn": "Traceability from criteria to tests helps:",
-    "questionVi": "Truy vết từ tiêu chí đến kiểm thử giúp:",
+    "questionEn": "During ATDD, after the specification workshop, the team writes test cases for a story about a search feature. Which of the following should be covered first?",
+    "questionVi": "Trong ATDD, sau hội thảo đặc tả, nhóm viết ca kiểm thử cho tính năng tìm kiếm. Điều gì nên được bao phủ trước tiên?",
     "options": [
       {
-        "en": "Deleting defect databases",
-        "vi": "Xóa CSDL khiếm khuyết"
+        "en": "Positive tests confirming correct behaviour without exceptions",
+        "vi": "Kiểm thử dương xác nhận hành vi đúng không có ngoại lệ"
       },
       {
-        "en": "Networks never corrupt packets",
-        "vi": "Mạng không hỏng gói"
+        "en": "Negative tests with invalid inputs",
+        "vi": "Kiểm thử âm với đầu vào không hợp lệ"
       },
       {
-        "en": "Prove coverage of agreed scope",
-        "vi": "Chứng minh bao phủ phạm vi thống nhất"
+        "en": "Non‑functional performance tests",
+        "vi": "Kiểm thử phi chức năng về hiệu năng"
       },
       {
-        "en": "Only RGB histograms",
-        "vi": "Chỉ histogram RGB"
+        "en": "Security penetration tests",
+        "vi": "Kiểm thử thâm nhập bảo mật"
       }
     ],
-    "correctEn": "Prove coverage of agreed scope",
-    "correctVi": "Chứng minh bao phủ phạm vi thống nhất",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Positive tests confirming correct behaviour without exceptions",
+    "correctVi": "Kiểm thử dương xác nhận hành vi đúng không có ngoại lệ",
+    "explanation": "Typically, the first test cases are positive, covering correct behaviour. After that, negative tests and non‑functional characteristics are addressed. (Syllabus 4.5.3)\n\nThông thường, ca kiểm thử đầu tiên là dương, bao phủ hành vi đúng. Sau đó mới đến kiểm thử âm và phi chức năng."
   },
   {
-    "questionEn": "A concrete expected result should be:",
-    "questionVi": "Kết quả mong đợi cụ thể nên:",
+    "questionEn": "What is the main difference between extended‑entry and limited‑entry decision tables?",
+    "questionVi": "Sự khác biệt chính giữa bảng quyết định mở rộng và bảng quyết định giới hạn là gì?",
     "options": [
       {
-        "en": "Only RGB histograms",
-        "vi": "Chỉ histogram RGB"
+        "en": "Extended‑entry tables allow conditions and actions to take multiple values, not just Boolean",
+        "vi": "Bảng mở rộng cho phép điều kiện và hành động nhận nhiều giá trị, không chỉ Boolean"
       },
       {
-        "en": "Observable and evaluable",
-        "vi": "Quan sát được và đánh giá được"
+        "en": "Limited‑entry tables can only have two columns",
+        "vi": "Bảng giới hạn chỉ có hai cột"
       },
       {
-        "en": "CPU pipeline hazards only",
-        "vi": "Chỉ hazard pipeline CPU"
+        "en": "Extended‑entry tables are never minimized",
+        "vi": "Bảng mở rộng không bao giờ được tối thiểu hóa"
       },
       {
-        "en": "No defects exist by fiat",
-        "vi": "Không có khiếm khuyết theo lệnh"
+        "en": "Limited‑entry tables are only used for state machines",
+        "vi": "Bảng giới hạn chỉ dùng cho máy trạng thái"
       }
     ],
-    "correctEn": "Observable and evaluable",
-    "correctVi": "Quan sát được và đánh giá được",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Extended‑entry tables allow conditions and actions to take multiple values, not just Boolean",
+    "correctVi": "Bảng mở rộng cho phép điều kiện và hành động nhận nhiều giá trị, không chỉ Boolean",
+    "explanation": "Limited‑entry tables use Boolean (true/false) values; extended‑entry tables may use ranges, partitions, or discrete values. (Syllabus 4.2.3)\n\nBảng giới hạn dùng giá trị Boolean (đúng/sai); bảng mở rộng có thể dùng khoảng, phân vùng, hoặc giá trị rời rạc."
   },
   {
-    "questionEn": "Domain analysis precedes:",
-    "questionVi": "Phân tích miền đứng trước:",
+    "questionEn": "Convert the following statement into a test case for ATDD: 'Given the user is on the login page, when they enter valid credentials and click login, then they are redirected to the dashboard.' Which test input and expected result are correct?",
+    "questionVi": "Chuyển phát biểu sau thành ca kiểm thử cho ATDD: 'Given người dùng ở trang đăng nhập, when họ nhập thông tin hợp lệ và bấm đăng nhập, then được chuyển đến trang tổng quan.' Đầu vào và kết quả mong đợi nào đúng?",
     "options": [
       {
-        "en": "Avoiding logs",
-        "vi": "Tránh log"
+        "en": "Input: valid username and password; expected: redirect to dashboard page",
+        "vi": "Đầu vào: tên đăng nhập và mật khẩu hợp lệ; mong đợi: chuyển đến trang tổng quan"
       },
       {
-        "en": "Hiding actions",
-        "vi": "Giấu hành động"
+        "en": "Input: valid username, empty password; expected: error message",
+        "vi": "Đầu vào: tên đăng nhập hợp lệ, mật khẩu rỗng; mong đợi: thông báo lỗi"
       },
       {
-        "en": "Infinite in length",
-        "vi": "Vô hạn độ dài"
+        "en": "Input: invalid username, valid password; expected: redirect to dashboard",
+        "vi": "Đầu vào: tên đăng nhập không hợp lệ, mật khẩu hợp lệ; mong đợi: chuyển đến trang tổng quan"
       },
       {
-        "en": "Selecting partitions and boundary tests",
-        "vi": "Chọn phân vùng và kiểm thử biên"
+        "en": "Input: blank page; expected: nothing happens",
+        "vi": "Đầu vào: trang trắng; mong đợi: không có gì xảy ra"
       }
     ],
-    "correctEn": "Selecting partitions and boundary tests",
-    "correctVi": "Chọn phân vùng và kiểm thử biên",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Input: valid username and password; expected: redirect to dashboard page",
+    "correctVi": "Đầu vào: tên đăng nhập và mật khẩu hợp lệ; mong đợi: chuyển đến trang tổng quan",
+    "explanation": "The scenario describes a positive flow: valid credentials lead to the dashboard. Option A matches. (Syllabus 4.5.3)\n\nKịch bản mô tả luồng dương: thông tin hợp lệ dẫn đến trang tổng quan. Lựa chọn A phù hợp."
   },
   {
-    "questionEn": "Collaborative workshops for examples support:",
-    "questionVi": "Workshop hợp tác cho ví dụ hỗ trợ:",
+    "questionEn": "Which statement about error guessing is true?",
+    "questionVi": "Phát biểu nào đúng về đoán lỗi?",
     "options": [
       {
-        "en": "Only astrology signs",
-        "vi": "Chỉ cung hoàng đạo"
+        "en": "It is a technique that uses the tester's knowledge of past failures and common developer mistakes",
+        "vi": "Đó là kỹ thuật sử dụng kiến thức của kiểm thử viên về các lỗi trong quá khứ và sai lầm phổ biến của nhà phát triển"
       },
       {
-        "en": "Only CEO favorite numbers",
-        "vi": "Chỉ số CEO thích"
+        "en": "It guarantees finding all defects",
+        "vi": "Nó đảm bảo tìm thấy mọi lỗi"
       },
       {
-        "en": "ATDD/BDD style executable specifications",
-        "vi": "Đặc tả thực thi kiểu ATDD/BDD"
+        "en": "It is a white‑box technique",
+        "vi": "Nó là kỹ thuật hộp trắng"
       },
       {
-        "en": "Purchase orders for furniture",
-        "vi": "Đơn mua nội thất"
+        "en": "It can only be applied at the system test level",
+        "vi": "Nó chỉ áp dụng được ở mức kiểm thử hệ thống"
       }
     ],
-    "correctEn": "ATDD/BDD style executable specifications",
-    "correctVi": "Đặc tả thực thi kiểu ATDD/BDD",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "It is a technique that uses the tester's knowledge of past failures and common developer mistakes",
+    "correctVi": "Đó là kỹ thuật sử dụng kiến thức của kiểm thử viên về các lỗi trong quá khứ và sai lầm phổ biến của nhà phát triển",
+    "explanation": "Error guessing leverages tester experience to anticipate errors; it is experience‑based, not white‑box, and does not guarantee completeness. (Syllabus 4.4.1)\n\nĐoán lỗi tận dụng kinh nghiệm để dự đoán lỗi; là kỹ thuật dựa trên kinh nghiệm, không phải hộp trắng, và không đảm bảo đầy đủ."
   },
   {
-    "questionEn": "Risk-based prioritization prefers tests targeting:",
-    "questionVi": "Ưu tiên theo rủi ro thích kiểm thử nhắm:",
+    "questionEn": "In exploratory testing, what is the purpose of a debriefing session?",
+    "questionVi": "Trong kiểm thử khám phá, mục đích của phiên debriefing là gì?",
     "options": [
       {
-        "en": "Higher assessed product risk areas",
-        "vi": "Vùng rủi ro sản phẩm đánh giá cao hơn"
+        "en": "To discuss the test session results between tester and stakeholders",
+        "vi": "Thảo luận kết quả phiên kiểm thử giữa kiểm thử viên và các bên liên quan"
       },
       {
-        "en": "Invoice stamps only",
-        "vi": "Chỉ tem hóa đơn"
+        "en": "To write new code",
+        "vi": "Viết mã mới"
       },
       {
-        "en": "Only catastrophic failures",
-        "vi": "Chỉ thảm họa"
+        "en": "To execute automated scripts",
+        "vi": "Thực thi kịch bản tự động"
       },
       {
-        "en": "Only exhaustive enumeration",
-        "vi": "Chỉ liệt kê toàn diện"
+        "en": "To create the test plan",
+        "vi": "Tạo kế hoạch kiểm thử"
       }
     ],
-    "correctEn": "Higher assessed product risk areas",
-    "correctVi": "Vùng rủi ro sản phẩm đánh giá cao hơn",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "To discuss the test session results between tester and stakeholders",
+    "correctVi": "Thảo luận kết quả phiên kiểm thử giữa kiểm thử viên và các bên liên quan",
+    "explanation": "After a session‑based exploratory test, a debriefing occurs to share findings and observations. (Syllabus 4.4.2)\n\nSau phiên kiểm thử khám phá theo phiên, có cuộc họp debriefing để chia sẻ kết quả và quan sát."
   },
   {
-    "questionEn": "Coverage of requirements via EP/BVA requires:",
-    "questionVi": "Bao phủ yêu cầu qua EP/BVA cần:",
+    "questionEn": "A system classifies a temperature reading: 'Cold' if <10°C, 'Normal' if 10‑30°C, 'Hot' if >30°C. Which test values achieve 100% EP coverage?",
+    "questionVi": "Hệ thống phân loại nhiệt độ: 'Lạnh' nếu <10°C, 'Bình thường' nếu 10‑30°C, 'Nóng' nếu >30°C. Giá trị kiểm thử nào đạt 100% bao phủ EP?",
     "options": [
       {
-        "en": "Mapping tests back to requirement IDs",
-        "vi": "Ánh xạ kiểm thử ngược ID yêu cầu"
+        "en": "5, 20, 35",
+        "vi": "5, 20, 35"
       },
       {
-        "en": "Deleting test environments",
-        "vi": "Xóa môi trường kiểm thử"
+        "en": "10, 20, 30",
+        "vi": "10, 20, 30"
       },
       {
-        "en": "Printer margins only",
-        "vi": "Chỉ lề máy in"
+        "en": "-5, 10, 30, 40",
+        "vi": "-5, 10, 30, 40"
       },
       {
-        "en": "Avoiding logs",
-        "vi": "Tránh log"
+        "en": "0, 10, 30, 40",
+        "vi": "0, 10, 30, 40"
       }
     ],
-    "correctEn": "Mapping tests back to requirement IDs",
-    "correctVi": "Ánh xạ kiểm thử ngược ID yêu cầu",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "5, 20, 35",
+    "correctVi": "5, 20, 35",
+    "explanation": "Three partitions: <10 (Cold), 10‑30 (Normal), >30 (Hot). One value from each: 5 (Cold), 20 (Normal), 35 (Hot). 100% EP coverage is achieved by covering each partition at least once. (Syllabus 4.2.1)\n\nBa phân vùng: <10 (Lạnh), 10‑30 (Bình thường), >30 (Nóng). Mỗi phân vùng một giá trị: 5, 20, 35. Đạt 100% EP."
   },
   {
-    "questionEn": "Path-sensitive defects appear when:",
-    "questionVi": "Khiếm khuyết nhạy đường đi xuất hiện khi:",
+    "questionEn": "For the same temperature classification, which set of values represents 100% 2‑value BVA?",
+    "questionVi": "Với cùng phân loại nhiệt độ, tập giá trị nào thể hiện 100% BVA 2 giá trị?",
     "options": [
       {
-        "en": "Different sequences lead to different faulty behavior",
-        "vi": "Trình tự khác cho hành vi lỗi khác"
+        "en": "9, 10, 30, 31",
+        "vi": "9, 10, 30, 31"
       },
       {
-        "en": "Deleting defect databases",
-        "vi": "Xóa CSDL khiếm khuyết"
+        "en": "10, 20, 30",
+        "vi": "10, 20, 30"
       },
       {
-        "en": "Zero residual risk",
-        "vi": "Rủi ro dư bằng 0"
+        "en": "8, 9, 10, 29, 30, 31",
+        "vi": "8, 9, 10, 29, 30, 31"
       },
       {
-        "en": "Networks never corrupt packets",
-        "vi": "Mạng không hỏng gói"
+        "en": "10, 11, 29, 30",
+        "vi": "10, 11, 29, 30"
       }
     ],
-    "correctEn": "Different sequences lead to different faulty behavior",
-    "correctVi": "Trình tự khác cho hành vi lỗi khác",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "9, 10, 30, 31",
+    "correctVi": "9, 10, 30, 31",
+    "explanation": "Partitions boundaries: Cold (<10) and Normal (10‑30) — boundary 10; Normal and Hot (>30) — boundary 30. 2‑value: test 9 and 10 for lower boundary; 30 and 31 for upper. So 9,10,30,31. (Syllabus 4.2.2)\n\nBiên: giữa Lạnh và Bình thường là 10, giữa Bình thường và Nóng là 30. 2‑value: 9,10 và 30,31."
   },
   {
-    "questionEn": "Test idea catalogs help:",
-    "questionVi": "Danh mục ý tưởng kiểm thử giúp:",
+    "questionEn": "Which of the following best describes the relationship between statement coverage and branch coverage?",
+    "questionVi": "Mô tả nào sau đây đúng nhất về mối quan hệ giữa bao phủ câu lệnh và bao phủ nhánh?",
     "options": [
       {
-        "en": "Lottery numbers only",
-        "vi": "Chỉ số xổ số"
+        "en": "100% branch coverage implies 100% statement coverage, but not vice versa",
+        "vi": "100% bao phủ nhánh kéo theo 100% bao phủ câu lệnh, nhưng không ngược lại"
       },
       {
-        "en": "Invalid inputs never occur",
-        "vi": "Đầu vào sai không bao giờ xảy ra"
+        "en": "100% statement coverage implies 100% branch coverage",
+        "vi": "100% bao phủ câu lệnh kéo theo 100% bao phủ nhánh"
       },
       {
-        "en": "Reuse domain-specific defect triggers",
-        "vi": "Tái sử dụng kích hoạt khiếm khuyết theo miền"
+        "en": "They are identical",
+        "vi": "Chúng giống hệt nhau"
       },
       {
-        "en": "Astrological charts only",
-        "vi": "Chỉ biểu đồ chiêm tinh"
+        "en": "Neither has any relationship",
+        "vi": "Không có mối quan hệ nào"
       }
     ],
-    "correctEn": "Reuse domain-specific defect triggers",
-    "correctVi": "Tái sử dụng kích hoạt khiếm khuyết theo miền",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "100% branch coverage implies 100% statement coverage, but not vice versa",
+    "correctVi": "100% bao phủ nhánh kéo theo 100% bao phủ câu lệnh, nhưng không ngược lại",
+    "explanation": "Branch coverage subsumes statement coverage because exercising all decision outcomes guarantees that all statements are reached. (Syllabus 4.3.2)\n\nBao phủ nhánh bao hàm bao phủ câu lệnh vì thực thi tất cả kết quả quyết định đảm bảo mọi câu lệnh đều được chạm tới."
   },
   {
-    "questionEn": "Statement coverage does NOT guarantee:",
-    "questionVi": "Bao phủ câu lệnh KHÔNG đảm bảo:",
+    "questionEn": "What is a key limitation of white‑box testing?",
+    "questionVi": "Hạn chế chính của kiểm thử hộp trắng là gì?",
     "options": [
       {
-        "en": "Only payroll overtime",
-        "vi": "Chỉ làm thêm lương"
+        "en": "It may not detect missing functionality (defects of omission)",
+        "vi": "Nó có thể không phát hiện được chức năng bị thiếu (lỗi thiếu sót)"
       },
       {
-        "en": "All decisions evaluated both ways",
-        "vi": "Mọi quyết định được đánh giá hai hướng"
+        "en": "It cannot be automated",
+        "vi": "Nó không thể tự động hóa"
       },
       {
-        "en": "Only marketing personas",
-        "vi": "Chỉ persona marketing"
+        "en": "It requires no knowledge of the code",
+        "vi": "Nó không yêu cầu kiến thức về mã nguồn"
       },
       {
-        "en": "Purchase orders for furniture",
-        "vi": "Đơn mua nội thất"
+        "en": "It is only useful for acceptance testing",
+        "vi": "Nó chỉ hữu ích cho kiểm thử chấp nhận"
       }
     ],
-    "correctEn": "All decisions evaluated both ways",
-    "correctVi": "Mọi quyết định được đánh giá hai hướng",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "It may not detect missing functionality (defects of omission)",
+    "correctVi": "Nó có thể không phát hiện được chức năng bị thiếu (lỗi thiếu sót)",
+    "explanation": "If a requirement is not implemented, white‑box testing may not reveal the omission because it focuses on the existing code structure. (Syllabus 4.3.3)\n\nNếu một yêu cầu không được cài đặt, kiểm thử hộp trắng có thể không phát hiện ra sự thiếu sót vì nó tập trung vào cấu trúc mã hiện có."
   },
   {
-    "questionEn": "Model-based testing uses:",
-    "questionVi": "Kiểm thử dựa trên mô hình dùng:",
+    "questionEn": "How does checklist‑based testing differ from error guessing?",
+    "questionVi": "Kiểm thử dựa trên danh sách khác với đoán lỗi như thế nào?",
     "options": [
       {
-        "en": "Deleting defect databases",
-        "vi": "Xóa CSDL khiếm khuyết"
+        "en": "Checklist‑based testing uses a systematic list of test conditions; error guessing is more ad‑hoc and relies on intuition",
+        "vi": "Kiểm thử theo danh sách dùng danh sách điều kiện kiểm thử có hệ thống; đoán lỗi tùy hứng hơn và dựa vào trực giác"
       },
       {
-        "en": "Printer fonts only",
-        "vi": "Chỉ font máy in"
+        "en": "Checklist‑based testing never uses past defect data",
+        "vi": "Kiểm thử theo danh sách không bao giờ dùng dữ liệu lỗi quá khứ"
       },
       {
-        "en": "Abstract models to derive concrete tests",
-        "vi": "Mô hình trừu tượng để suy ca cụ thể"
+        "en": "Error guessing always produces more test cases",
+        "vi": "Đoán lỗi luôn tạo ra nhiều ca kiểm thử hơn"
       },
       {
-        "en": "Tool instrumentation possible",
-        "vi": "Có thể gắn công cụ"
+        "en": "They are the same",
+        "vi": "Chúng giống nhau"
       }
     ],
-    "correctEn": "Abstract models to derive concrete tests",
-    "correctVi": "Mô hình trừu tượng để suy ca cụ thể",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Checklist‑based testing uses a systematic list of test conditions; error guessing is more ad‑hoc and relies on intuition",
+    "correctVi": "Kiểm thử theo danh sách dùng danh sách điều kiện kiểm thử có hệ thống; đoán lỗi tùy hứng hơn và dựa vào trực giác",
+    "explanation": "Checklist‑based testing provides structured guidance; error guessing is less formal and experience‑driven. (Syllabus 4.4.1, 4.4.3)\n\nKiểm thử theo danh sách cung cấp hướng dẫn có cấu trúc; đoán lỗi ít hình thức hơn và dựa vào kinh nghiệm."
   },
   {
-    "questionEn": "Testing \"alternate flows\" in use cases targets:",
-    "questionVi": "Kiểm thử luồng thay thế trong use case nhắm:",
+    "questionEn": "In the context of user stories, what does the 'Testable' characteristic of INVEST mean?",
+    "questionVi": "Trong ngữ cảnh user story, đặc tính 'Có thể kiểm thử' (Testable) của INVEST nghĩa là gì?",
     "options": [
       {
-        "en": "Wallpaper resolutions only",
-        "vi": "Chỉ độ phân giải hình nền"
+        "en": "The story's acceptance criteria can be used to verify the implementation",
+        "vi": "Các tiêu chí chấp nhận của story có thể được dùng để xác minh cài đặt"
       },
       {
-        "en": "Exceptions and recovery behaviors",
-        "vi": "Ngoại lệ và hành vi phục hồi"
+        "en": "The story can be implemented in one day",
+        "vi": "Story có thể được triển khai trong một ngày"
       },
       {
-        "en": "Only celebrity ages",
-        "vi": "Chỉ tuổi người nổi tiếng"
+        "en": "The story is independent of other stories",
+        "vi": "Story độc lập với các story khác"
       },
       {
-        "en": "Renaming tests randomly",
-        "vi": "Đổi tên test ngẫu nhiên"
+        "en": "The story has a detailed design document",
+        "vi": "Story có tài liệu thiết kế chi tiết"
       }
     ],
-    "correctEn": "Exceptions and recovery behaviors",
-    "correctVi": "Ngoại lệ và hành vi phục hồi",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "The story's acceptance criteria can be used to verify the implementation",
+    "correctVi": "Các tiêu chí chấp nhận của story có thể được dùng để xác minh cài đặt",
+    "explanation": "Testable means that the story has clear acceptance criteria that can be objectively verified. (Syllabus 4.5.1, INVEST model)\n\nTestable nghĩa là story có tiêu chí chấp nhận rõ ràng có thể xác minh một cách khách quan."
   },
   {
-    "questionEn": "Equivalence partitioning applies to:",
-    "questionVi": "Phân vùng tương đương áp dụng cho:",
+    "questionEn": "Which of the following is an appropriate use of ATDD?",
+    "questionVi": "Đâu là cách sử dụng phù hợp của ATDD?",
     "options": [
       {
-        "en": "Only shoe polish brands",
-        "vi": "Chỉ nhãn xi giày"
+        "en": "Deriving executable requirements from acceptance criteria before coding",
+        "vi": "Suy ra các yêu cầu thực thi từ tiêu chí chấp nhận trước khi viết mã"
       },
       {
-        "en": "Networks never corrupt packets",
-        "vi": "Mạng không hỏng gói"
+        "en": "Replacing all manual test cases with automated scripts after release",
+        "vi": "Thay thế mọi ca kiểm thử thủ công bằng kịch bản tự động sau phát hành"
       },
       {
-        "en": "Inputs, outputs, time, interfaces and internal values",
-        "vi": "Đầu vào, đầu ra, thời gian, giao diện, giá trị nội bộ"
+        "en": "Writing code first and then creating unit tests",
+        "vi": "Viết mã trước rồi tạo kiểm thử đơn vị"
       },
       {
-        "en": "Deleting requirement IDs",
-        "vi": "Xóa ID yêu cầu"
+        "en": "Performing only exploratory testing",
+        "vi": "Chỉ thực hiện kiểm thử khám phá"
       }
     ],
-    "correctEn": "Inputs, outputs, time, interfaces and internal values",
-    "correctVi": "Đầu vào, đầu ra, thời gian, giao diện, giá trị nội bộ",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Deriving executable requirements from acceptance criteria before coding",
+    "correctVi": "Suy ra các yêu cầu thực thi từ tiêu chí chấp nhận trước khi viết mã",
+    "explanation": "ATDD is a test‑first approach where test cases (examples) are derived from acceptance criteria before the code is implemented. (Syllabus 4.5.3)\n\nATDD là cách tiếp cận kiểm thử trước, trong đó các ca kiểm thử (ví dụ) được suy ra từ tiêu chí chấp nhận trước khi mã được cài đặt."
   },
   {
-    "questionEn": "Weak areas after exploratory sessions feed:",
-    "questionVi": "Vùng yếu sau phiên exploratory đưa vào:",
+    "questionEn": "What is a fault attack?",
+    "questionVi": "Tấn công lỗi (fault attack) là gì?",
     "options": [
       {
-        "en": "Compiler opcode tables only",
-        "vi": "Chỉ bảng opcode compiler"
+        "en": "A systematic list of possible errors, defects, and failures used in error guessing",
+        "vi": "Danh sách có hệ thống các lỗi, khiếm khuyết và thất bại có thể dùng trong đoán lỗi"
       },
       {
-        "en": "Charter refinements and scripted regression seeds",
-        "vi": "Tinh chỉnh charter và hạt giống hồi quy có script"
+        "en": "A type of security penetration test",
+        "vi": "Một loại kiểm thử thâm nhập bảo mật"
       },
       {
-        "en": "Payroll overtime rules only",
-        "vi": "Chỉ quy tắc làm thêm lương"
+        "en": "A tool for automated white‑box testing",
+        "vi": "Công cụ kiểm thử hộp trắng tự động"
       },
       {
-        "en": "Disallows human intuition",
-        "vi": "Không cho trực giác con người"
+        "en": "A review technique",
+        "vi": "Kỹ thuật xem xét"
       }
     ],
-    "correctEn": "Charter refinements and scripted regression seeds",
-    "correctVi": "Tinh chỉnh charter và hạt giống hồi quy có script",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "A systematic list of possible errors, defects, and failures used in error guessing",
+    "correctVi": "Danh sách có hệ thống các lỗi, khiếm khuyết và thất bại có thể dùng trong đoán lỗi",
+    "explanation": "Fault attacks involve creating a list of potential errors to design tests that expose defects, a method of implementing error guessing. (Syllabus 4.4.1)\n\nTấn công lỗi bao gồm việc tạo danh sách các lỗi tiềm năng để thiết kế kiểm thử phát hiện khiếm khuyết, một cách triển khai đoán lỗi."
   },
   {
-    "questionEn": "Testability of acceptance criteria improves when:",
-    "questionVi": "Khả năng kiểm thử tiêu chí chấp nhận tốt hơn khi:",
+    "questionEn": "A system requires a date input in format DD/MM/YYYY. Valid years: 2000–2099. Invalid: any other. Using EP, which of the following test dates would cover the valid partition?",
+    "questionVi": "Hệ thống yêu cầu ngày nhập định dạng DD/MM/YYYY. Năm hợp lệ: 2000–2099. Không hợp lệ: còn lại. Dùng EP, ngày nào sau đây sẽ bao phủ phân vùng hợp lệ?",
     "options": [
       {
-        "en": "Only GPU shaders",
-        "vi": "Chỉ shader GPU"
+        "en": "15/03/2050",
+        "vi": "15/03/2050"
       },
       {
-        "en": "Only lunar phases",
-        "vi": "Chỉ pha trăng"
+        "en": "29/02/1999",
+        "vi": "29/02/1999"
       },
       {
-        "en": "Coffee grind sizes only",
-        "vi": "Chỉ cỡ xay cà phê"
+        "en": "31/12/2100",
+        "vi": "31/12/2100"
       },
       {
-        "en": "Criteria are measurable and unambiguous",
-        "vi": "Tiêu chí đo được và không mơ hồ"
+        "en": "00/00/0000",
+        "vi": "00/00/0000"
       }
     ],
-    "correctEn": "Criteria are measurable and unambiguous",
-    "correctVi": "Tiêu chí đo được và không mơ hồ",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "15/03/2050",
+    "correctVi": "15/03/2050",
+    "explanation": "Only 15/03/2050 falls within the valid year range. The others are outside 2000‑2099 or have invalid day/month. (Syllabus 4.2.1)\n\nChỉ 15/03/2050 nằm trong khoảng năm hợp lệ. Các ngày khác ngoài 2000‑2099 hoặc có ngày/tháng không hợp lệ."
   },
   {
-    "questionEn": "Branch coverage ensures:",
-    "questionVi": "Bao phủ nhánh đảm bảo:",
+    "questionEn": "Which of the following is NOT a typical defect that static analysis can find in code?",
+    "questionVi": "Loại lỗi nào sau đây KHÔNG phải là lỗi điển hình mà phân tích tĩnh có thể tìm thấy trong mã?",
     "options": [
       {
-        "en": "Every SQL cartesian join",
-        "vi": "Mọi join Descartes SQL"
+        "en": "Missing functionality compared to user stories",
+        "vi": "Thiếu chức năng so với user story"
       },
       {
-        "en": "Desk plant taxonomy",
-        "vi": "Phân loại cây bàn"
+        "en": "Unreachable code",
+        "vi": "Mã không thể với tới được"
       },
       {
-        "en": "Printer fonts only",
-        "vi": "Chỉ font máy in"
+        "en": "Undeclared variables",
+        "vi": "Biến chưa khai báo"
       },
       {
-        "en": "Each outcome of decision points exercised",
-        "vi": "Mỗi kết quả điểm quyết định được thực thi"
+        "en": "Buffer overflow vulnerabilities",
+        "vi": "Lỗ hổng tràn bộ đệm"
       }
     ],
-    "correctEn": "Each outcome of decision points exercised",
-    "correctVi": "Mỗi kết quả điểm quyết định được thực thi",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 4 (Test Analysis & Design).\n* **Sai / Incorrect:** Misstates black-box techniques, coverage, or acceptance concepts."
+    "correctEn": "Missing functionality compared to user stories",
+    "correctVi": "Thiếu chức năng so với user story",
+    "explanation": "Static analysis finds structural defects (unreachable code, undeclared variables, potential overflows). It cannot detect missing functionality (omission defects) without a specification. (Syllabus 3.1, relevant to white‑box value)\n\nPhân tích tĩnh tìm các lỗi cấu trúc, không thể phát hiện thiếu chức năng nếu không có đặc tả."
+  },
+  {
+    "questionEn": "What is an example of a guard condition in a state diagram?",
+    "questionVi": "Ví dụ về điều kiện guard trong sơ đồ trạng thái là gì?",
+    "options": [
+      {
+        "en": "[balance >= amount] on a 'withdraw' event",
+        "vi": "[số dư >= số tiền] trên sự kiện 'rút tiền'"
+      },
+      {
+        "en": "The state name 'Logged In'",
+        "vi": "Tên trạng thái 'Đã đăng nhập'"
+      },
+      {
+        "en": "The event 'login'",
+        "vi": "Sự kiện 'đăng nhập'"
+      },
+      {
+        "en": "The action 'display error'",
+        "vi": "Hành động 'hiển thị lỗi'"
+      }
+    ],
+    "correctEn": "[balance >= amount] on a 'withdraw' event",
+    "correctVi": "[số dư >= số tiền] trên sự kiện 'rút tiền'",
+    "explanation": "A guard condition (in brackets) must be true for the transition to occur. Example: withdraw [balance >= amount]. (Syllabus 4.2.4)\n\nĐiều kiện guard (trong ngoặc vuông) phải đúng để chuyển tiếp xảy ra. Ví dụ: rút tiền [số dư >= số tiền]."
+  },
+  {
+    "questionEn": "Which of the following best describes the purpose of the confirmation aspect (the third C) in user stories?",
+    "questionVi": "Mô tả nào sau đây đúng nhất về mục đích của khía cạnh xác nhận (chữ C thứ ba) trong user story?",
+    "options": [
+      {
+        "en": "It defines the acceptance criteria that will confirm the story is correctly implemented",
+        "vi": "Nó xác định tiêu chí chấp nhận để xác nhận story được cài đặt đúng"
+      },
+      {
+        "en": "It confirms that the card is physically present",
+        "vi": "Nó xác nhận thẻ vật lý có mặt"
+      },
+      {
+        "en": "It describes the conversation between developers",
+        "vi": "Nó mô tả hội thoại giữa các nhà phát triển"
+      },
+      {
+        "en": "It guarantees the story will be finished on time",
+        "vi": "Nó đảm bảo story sẽ hoàn thành đúng hạn"
+      }
+    ],
+    "correctEn": "It defines the acceptance criteria that will confirm the story is correctly implemented",
+    "correctVi": "Nó xác định tiêu chí chấp nhận để xác nhận story được cài đặt đúng",
+    "explanation": "Confirmation refers to the acceptance criteria that verify the story. (Syllabus 4.5.1)\n\nXác nhận đề cập đến tiêu chí chấp nhận để xác minh story."
+  },
+  {
+    "questionEn": "Which test technique is best suited for testing business rules with many interacting conditions?",
+    "questionVi": "Kỹ thuật kiểm thử nào phù hợp nhất để kiểm thử quy tắc nghiệp vụ có nhiều điều kiện tương tác?",
+    "options": [
+      {
+        "en": "Decision table testing",
+        "vi": "Kiểm thử bảng quyết định"
+      },
+      {
+        "en": "Statement testing",
+        "vi": "Kiểm thử câu lệnh"
+      },
+      {
+        "en": "Equivalence partitioning",
+        "vi": "Phân vùng tương đương"
+      },
+      {
+        "en": "Error guessing",
+        "vi": "Đoán lỗi"
+      }
+    ],
+    "correctEn": "Decision table testing",
+    "correctVi": "Kiểm thử bảng quyết định",
+    "explanation": "Decision tables are specifically designed to model complex logic and combinations of conditions. (Syllabus 4.2.3)\n\nBảng quyết định được thiết kế để mô hình hóa logic phức tạp và tổ hợp điều kiện."
+  },
+  {
+    "questionEn": "A program has this logic: if (x > 0 and y < 10) { output 'A'; } else { output 'B'; }. What is the minimum number of test cases for 100% statement coverage?",
+    "questionVi": "Chương trình có logic: if (x > 0 and y < 10) { output 'A'; } else { output 'B'; }. Số ca kiểm thử tối thiểu để đạt 100% bao phủ câu lệnh là bao nhiêu?",
+    "options": [
+      {
+        "en": "2",
+        "vi": "2"
+      },
+      {
+        "en": "1",
+        "vi": "1"
+      },
+      {
+        "en": "3",
+        "vi": "3"
+      },
+      {
+        "en": "4",
+        "vi": "4"
+      }
+    ],
+    "correctEn": "2",
+    "correctVi": "2",
+    "explanation": "Two test cases: one where the condition is true (x>0 and y<10) executes 'A'; one where false executes 'B'. This covers all statements. (Syllabus 4.3.1)\n\nHai ca: một với điều kiện đúng thực thi 'A', một với sai thực thi 'B'. Bao phủ mọi câu lệnh."
+  },
+  {
+    "questionEn": "For the same code, what is the minimum number of test cases for 100% branch coverage?",
+    "questionVi": "Với đoạn mã trên, số ca kiểm thử tối thiểu để đạt 100% bao phủ nhánh là bao nhiêu?",
+    "options": [
+      {
+        "en": "2",
+        "vi": "2"
+      },
+      {
+        "en": "1",
+        "vi": "1"
+      },
+      {
+        "en": "3",
+        "vi": "3"
+      },
+      {
+        "en": "4",
+        "vi": "4"
+      }
+    ],
+    "correctEn": "2",
+    "correctVi": "2",
+    "explanation": "There is one decision (if) with two outcomes; two test cases cover both branches. (Syllabus 4.3.2)\n\nCó một quyết định với hai kết quả; hai ca bao phủ cả hai nhánh."
+  },
+  {
+    "questionEn": "How does the test pyramid model reflect test isolation?",
+    "questionVi": "Mô hình kim tự tháp kiểm thử phản ánh sự cô lập kiểm thử như thế nào?",
+    "options": [
+      {
+        "en": "Lower layers have higher isolation (smaller scope), top layers have lower isolation",
+        "vi": "Các lớp dưới có độ cô lập cao hơn (phạm vi nhỏ hơn), lớp trên cùng có độ cô lập thấp hơn"
+      },
+      {
+        "en": "All layers have the same isolation",
+        "vi": "Mọi lớp có độ cô lập như nhau"
+      },
+      {
+        "en": "Top layers are completely isolated",
+        "vi": "Các lớp trên cùng được cô lập hoàn toàn"
+      },
+      {
+        "en": "Isolation is not a concept in the test pyramid",
+        "vi": "Cô lập không phải là khái niệm trong kim tự tháp"
+      }
+    ],
+    "correctEn": "Lower layers have higher isolation (smaller scope), top layers have lower isolation",
+    "correctVi": "Các lớp dưới có độ cô lập cao hơn (phạm vi nhỏ hơn), lớp trên cùng có độ cô lập thấp hơn",
+    "explanation": "The pyramid shows that lower layers (unit tests) are more isolated and fast; upper layers (end‑to‑end) depend on many components and are slower. (Syllabus 5.1.6, relevant to test design context)\n\nKim tự tháp cho thấy các lớp dưới (kiểm thử đơn vị) cô lập hơn và nhanh; lớp trên phụ thuộc nhiều thành phần hơn."
+  },
+  {
+    "questionEn": "Which testing quadrant includes component tests and component integration tests?",
+    "questionVi": "Góc phần tư kiểm thử nào bao gồm kiểm thử thành phần và kiểm thử tích hợp thành phần?",
+    "options": [
+      {
+        "en": "Quadrant Q1 (technology facing, support the team)",
+        "vi": "Góc Q1 (hướng công nghệ, hỗ trợ nhóm)"
+      },
+      {
+        "en": "Quadrant Q2 (business facing, support the team)",
+        "vi": "Góc Q2 (hướng kinh doanh, hỗ trợ nhóm)"
+      },
+      {
+        "en": "Quadrant Q3 (business facing, critique product)",
+        "vi": "Góc Q3 (hướng kinh doanh, phê bình sản phẩm)"
+      },
+      {
+        "en": "Quadrant Q4 (technology facing, critique product)",
+        "vi": "Góc Q4 (hướng công nghệ, phê bình sản phẩm)"
+      }
+    ],
+    "correctEn": "Quadrant Q1 (technology facing, support the team)",
+    "correctVi": "Góc Q1 (hướng công nghệ, hỗ trợ nhóm)",
+    "explanation": "Q1 contains component tests and component integration tests, which are technology‑facing and guide development. (Syllabus 5.1.7, relevant to test analysis)\n\nQ1 chứa kiểm thử thành phần và tích hợp thành phần, hướng công nghệ và dẫn dắt phát triển."
+  },
+  {
+    "questionEn": "During user story writing, what does the 'Negotiable' characteristic imply?",
+    "questionVi": "Trong quá trình viết user story, đặc tính 'Có thể thương lượng' ngụ ý gì?",
+    "options": [
+      {
+        "en": "The details of the story can be discussed and adjusted between stakeholders",
+        "vi": "Chi tiết của story có thể được thảo luận và điều chỉnh giữa các bên liên quan"
+      },
+      {
+        "en": "The story must be finalised before any conversation",
+        "vi": "Story phải được hoàn thiện trước bất kỳ cuộc trò chuyện nào"
+      },
+      {
+        "en": "The story can be removed at any time without notice",
+        "vi": "Story có thể bị xóa bất cứ lúc nào mà không cần thông báo"
+      },
+      {
+        "en": "The story's estimate is fixed and cannot change",
+        "vi": "Ước lượng của story là cố định và không thể thay đổi"
+      }
+    ],
+    "correctEn": "The details of the story can be discussed and adjusted between stakeholders",
+    "correctVi": "Chi tiết của story có thể được thảo luận và điều chỉnh giữa các bên liên quan",
+    "explanation": "Negotiable means that the story is not a fixed contract; details can be negotiated during development. (INVEST, Syllabus 4.5.1)\n\nCó thể thương lượng nghĩa là story không phải hợp đồng cố định; chi tiết có thể được thương lượng trong quá trình phát triển."
+  },
+  {
+    "questionEn": "Given a decision table with three conditions and one action. The full table has 8 rules. After removing two infeasible combinations, how many test cases are needed for 100% coverage?",
+    "questionVi": "Cho bảng quyết định với ba điều kiện và một hành động. Bảng đầy đủ có 8 luật. Sau khi loại bỏ hai tổ hợp không khả thi, cần bao nhiêu ca kiểm thử để đạt 100% bao phủ?",
+    "options": [
+      {
+        "en": "6",
+        "vi": "6"
+      },
+      {
+        "en": "8",
+        "vi": "8"
+      },
+      {
+        "en": "4",
+        "vi": "4"
+      },
+      {
+        "en": "2",
+        "vi": "2"
+      }
+    ],
+    "correctEn": "6",
+    "correctVi": "6",
+    "explanation": "Coverage items are feasible columns. 8 - 2 infeasible = 6 feasible rules, so 6 test cases. (Syllabus 4.2.3)\n\nMục bao phủ là các cột khả thi. 8 - 2 = 6 luật khả thi, cần 6 ca kiểm thử."
+  },
+  {
+    "questionEn": "What is the purpose of minimization in decision tables?",
+    "questionVi": "Mục đích của việc tối thiểu hóa bảng quyết định là gì?",
+    "options": [
+      {
+        "en": "To reduce the number of test cases by merging columns where conditions don’t affect the outcome",
+        "vi": "Giảm số ca kiểm thử bằng cách gộp các cột mà điều kiện không ảnh hưởng đến kết quả"
+      },
+      {
+        "en": "To remove all invalid test cases",
+        "vi": "Loại bỏ mọi ca kiểm thử không hợp lệ"
+      },
+      {
+        "en": "To add more conditions",
+        "vi": "Thêm nhiều điều kiện hơn"
+      },
+      {
+        "en": "To convert the table into a state diagram",
+        "vi": "Chuyển bảng thành sơ đồ trạng thái"
+      }
+    ],
+    "correctEn": "To reduce the number of test cases by merging columns where conditions don’t affect the outcome",
+    "correctVi": "Giảm số ca kiểm thử bằng cách gộp các cột mà điều kiện không ảnh hưởng đến kết quả",
+    "explanation": "Minimization simplifies the table by merging rules with identical actions where a condition value is irrelevant, reducing test cases while maintaining coverage of logic. (Syllabus 4.2.3)\n\nTối thiểu hóa đơn giản bảng bằng cách gộp các luật có hành động giống nhau khi giá trị điều kiện không quan trọng, giảm số ca kiểm thử."
+  },
+  {
+    "questionEn": "A state machine for a lamp: OFF state; ON state. Event 'toggle' from OFF to ON, and from ON to OFF. Which of the following achieves 100% valid transitions coverage?",
+    "questionVi": "Máy trạng thái cho đèn: trạng thái TẮT và BẬT. Sự kiện 'bật/tắt' từ TẮT sang BẬT và từ BẬT sang TẮT. Trình tự nào đạt 100% bao phủ chuyển tiếp hợp lệ?",
+    "options": [
+      {
+        "en": "toggle (OFF→ON), toggle (ON→OFF)",
+        "vi": "bật/tắt (TẮT→BẬT), bật/tắt (BẬT→TẮT)"
+      },
+      {
+        "en": "toggle (OFF→ON) only",
+        "vi": "Chỉ bật/tắt (TẮT→BẬT)"
+      },
+      {
+        "en": "toggle (ON→OFF) only",
+        "vi": "Chỉ bật/tắt (BẬT→TẮT)"
+      },
+      {
+        "en": "No test needed",
+        "vi": "Không cần kiểm thử"
+      }
+    ],
+    "correctEn": "toggle (OFF→ON), toggle (ON→OFF)",
+    "correctVi": "bật/tắt (TẮT→BẬT), bật/tắt (BẬT→TẮT)",
+    "explanation": "Two valid transitions exist: OFF→ON and ON→OFF. A sequence that exercises both is needed. (Syllabus 4.2.4)\n\nCó hai chuyển tiếp hợp lệ: TẮT→BẬT và BẬT→TẮT. Cần dãy thực thi cả hai."
+  },
+  {
+    "questionEn": "For the lamp, if an invalid transition 'toggle when already ON is not defined in the ON state' (i.e., no self‑loop), what is needed for 100% all transitions coverage?",
+    "questionVi": "Với đèn, nếu chuyển tiếp không hợp lệ 'bật/tắt khi đã BẬT không định nghĩa ở trạng thái BẬT' (không có vòng tự), cần gì để đạt 100% bao phủ tất cả chuyển tiếp?",
+    "options": [
+      {
+        "en": "Attempt the invalid toggle from ON state and observe the handling",
+        "vi": "Cố gắng chuyển tiếp không hợp lệ từ trạng thái BẬT và quan sát cách xử lý"
+      },
+      {
+        "en": "Only test valid transitions",
+        "vi": "Chỉ kiểm thử chuyển tiếp hợp lệ"
+      },
+      {
+        "en": "Add a new state",
+        "vi": "Thêm trạng thái mới"
+      },
+      {
+        "en": "Ignore it",
+        "vi": "Bỏ qua"
+      }
+    ],
+    "correctEn": "Attempt the invalid toggle from ON state and observe the handling",
+    "correctVi": "Cố gắng chuyển tiếp không hợp lệ từ trạng thái BẬT và quan sát cách xử lý",
+    "explanation": "All transitions coverage includes invalid transitions. They should be exercised to ensure proper error handling, with care to avoid defect masking. (Syllabus 4.2.4)\n\nBao phủ tất cả chuyển tiếp bao gồm chuyển tiếp không hợp lệ. Phải thực thi để đảm bảo xử lý lỗi đúng, tránh che khuất lỗi."
+  },
+  {
+    "questionEn": "A team is writing acceptance criteria in a rule‑oriented format. Which of the following is an example?",
+    "questionVi": "Nhóm đang viết tiêu chí chấp nhận theo định dạng hướng quy tắc. Ví dụ nào sau đây phù hợp?",
+    "options": [
+      {
+        "en": "• The system shall display an error message if the password is less than 8 characters",
+        "vi": "• Hệ thống sẽ hiển thị thông báo lỗi nếu mật khẩu ít hơn 8 ký tự"
+      },
+      {
+        "en": "Given the user is logged in, when they click 'logout', then they are redirected to the home page",
+        "vi": "Given người dùng đã đăng nhập, when họ nhấn 'đăng xuất', then được chuyển đến trang chủ"
+      },
+      {
+        "en": "As a user, I want to reset my password",
+        "vi": "Là người dùng, tôi muốn đặt lại mật khẩu"
+      },
+      {
+        "en": "Event 'submit' triggers state change",
+        "vi": "Sự kiện 'gửi' kích hoạt thay đổi trạng thái"
+      }
+    ],
+    "correctEn": "• The system shall display an error message if the password is less than 8 characters",
+    "correctVi": "• Hệ thống sẽ hiển thị thông báo lỗi nếu mật khẩu ít hơn 8 ký tự",
+    "explanation": "Rule‑oriented criteria use bullet points or tables stating conditions and expected outcomes. The Given/When/Then is scenario‑oriented. (Syllabus 4.5.2)\n\nTiêu chí hướng quy tắc dùng danh sách gạch đầu dòng hoặc bảng. Given/When/Then là hướng kịch bản."
+  },
+  {
+    "questionEn": "When is a state table particularly advantageous over a state diagram?",
+    "questionVi": "Khi nào bảng trạng thái đặc biệt có lợi thế hơn sơ đồ trạng thái?",
+    "options": [
+      {
+        "en": "When we want to explicitly show invalid transitions",
+        "vi": "Khi muốn hiển thị rõ ràng các chuyển tiếp không hợp lệ"
+      },
+      {
+        "en": "When the system has only one state",
+        "vi": "Khi hệ thống chỉ có một trạng thái"
+      },
+      {
+        "en": "When there are no events",
+        "vi": "Khi không có sự kiện"
+      },
+      {
+        "en": "When drawing pictures is prohibited",
+        "vi": "Khi bị cấm vẽ hình"
+      }
+    ],
+    "correctEn": "When we want to explicitly show invalid transitions",
+    "correctVi": "Khi muốn hiển thị rõ ràng các chuyển tiếp không hợp lệ",
+    "explanation": "A state table explicitly represents invalid transitions as empty cells, making them easy to identify. (Syllabus 4.2.4)\n\nBảng trạng thái biểu diễn rõ ràng các chuyển tiếp không hợp lệ dưới dạng ô trống, dễ nhận diện."
+  },
+  {
+    "questionEn": "Which of the following is an essential skill for exploratory testing?",
+    "questionVi": "Kỹ năng thiết yếu nào cho kiểm thử khám phá?",
+    "options": [
+      {
+        "en": "Analytical thinking and creativity",
+        "vi": "Tư duy phân tích và sáng tạo"
+      },
+      {
+        "en": "Typing speed",
+        "vi": "Tốc độ đánh máy"
+      },
+      {
+        "en": "Memorization of code",
+        "vi": "Ghi nhớ mã"
+      },
+      {
+        "en": "Ability to work in isolation",
+        "vi": "Khả năng làm việc độc lập"
+      }
+    ],
+    "correctEn": "Analytical thinking and creativity",
+    "correctVi": "Tư duy phân tích và sáng tạo",
+    "explanation": "Exploratory testing effectiveness depends on analytical skills, curiosity, and creativeness. (Syllabus 4.4.2, 1.5.1)\n\nHiệu quả kiểm thử khám phá phụ thuộc vào kỹ năng phân tích, tò mò và sáng tạo."
+  },
+  {
+    "questionEn": "In the ATDD process, after positive tests are created, what is the next recommended step?",
+    "questionVi": "Trong quy trình ATDD, sau khi tạo ca kiểm thử dương, bước tiếp theo được khuyến nghị là gì?",
+    "options": [
+      {
+        "en": "Perform negative testing",
+        "vi": "Thực hiện kiểm thử âm"
+      },
+      {
+        "en": "Deploy to production",
+        "vi": "Triển khai lên production"
+      },
+      {
+        "en": "Stop testing",
+        "vi": "Dừng kiểm thử"
+      },
+      {
+        "en": "Write the user story",
+        "vi": "Viết user story"
+      }
+    ],
+    "correctEn": "Perform negative testing",
+    "correctVi": "Thực hiện kiểm thử âm",
+    "explanation": "After positive test cases, the team should cover negative scenarios, then non‑functional characteristics. (Syllabus 4.5.3)\n\nSau ca kiểm thử dương, nhóm nên bao phủ kịch bản âm, rồi đến phi chức năng."
+  },
+  {
+    "questionEn": "Why is it important that acceptance criteria are testable?",
+    "questionVi": "Tại sao tiêu chí chấp nhận có thể kiểm thử lại quan trọng?",
+    "options": [
+      {
+        "en": "So that the implementation can be objectively verified",
+        "vi": "Để việc cài đặt có thể được xác minh khách quan"
+      },
+      {
+        "en": "To reduce the number of test cases",
+        "vi": "Để giảm số ca kiểm thử"
+      },
+      {
+        "en": "To eliminate the need for testers",
+        "vi": "Để loại bỏ nhu cầu về kiểm thử viên"
+      },
+      {
+        "en": "To ensure the story can be estimated",
+        "vi": "Để đảm bảo story có thể ước lượng"
+      }
+    ],
+    "correctEn": "So that the implementation can be objectively verified",
+    "correctVi": "Để việc cài đặt có thể được xác minh khách quan",
+    "explanation": "Testable acceptance criteria allow objective measurement of whether the story’s implementation meets expectations. (Syllabus 4.5.2)\n\nTiêu chí có thể kiểm thử cho phép đo lường khách quan liệu cài đặt của story có đáp ứng mong đợi."
+  },
+  {
+    "questionEn": "What distinguishes session‑based exploratory testing from unstructured exploratory testing?",
+    "questionVi": "Điều gì phân biệt kiểm thử khám phá theo phiên với kiểm thử khám phá không có cấu trúc?",
+    "options": [
+      {
+        "en": "It uses a test charter and a defined time box",
+        "vi": "Nó dùng charter kiểm thử và khung thời gian xác định"
+      },
+      {
+        "en": "It requires automation tools",
+        "vi": "Nó yêu cầu công cụ tự động"
+      },
+      {
+        "en": "It does not involve test execution",
+        "vi": "Nó không liên quan đến thực thi kiểm thử"
+      },
+      {
+        "en": "It is the same as ad‑hoc testing",
+        "vi": "Nó giống kiểm thử ad‑hoc"
+      }
+    ],
+    "correctEn": "It uses a test charter and a defined time box",
+    "correctVi": "Nó dùng charter kiểm thử và khung thời gian xác định",
+    "explanation": "Session‑based testing gives structure through charters and time boxes, while unstructured testing is more ad‑hoc. (Syllabus 4.4.2)\n\nKiểm thử theo phiên cung cấp cấu trúc qua charter và khung thời gian, trong khi kiểm thử không cấu trúc thì tùy hứng hơn."
+  },
+  {
+    "questionEn": "A system calculates shipping cost: free if destination is domestic and weight <5kg; $10 if domestic and weight ≥5kg; $25 if international. Using a decision table, how many rules are needed before minimization?",
+    "questionVi": "Hệ thống tính phí vận chuyển: miễn phí nếu nội địa và cân nặng <5kg; $10 nếu nội địa và ≥5kg; $25 nếu quốc tế. Cần bao nhiêu luật trước khi tối thiểu hóa?",
+    "options": [
+      {
+        "en": "4",
+        "vi": "4"
+      },
+      {
+        "en": "3",
+        "vi": "3"
+      },
+      {
+        "en": "2",
+        "vi": "2"
+      },
+      {
+        "en": "6",
+        "vi": "6"
+      }
+    ],
+    "correctEn": "4",
+    "correctVi": "4",
+    "explanation": "Conditions: Destination (domestic/international) and Weight (<5kg, ≥5kg) -> 2x2=4 combinations. (Syllabus 4.2.3)\n\nĐiều kiện: Điểm đến (nội địa/quốc tế) và Cân nặng (<5, ≥5) -> 2x2=4 tổ hợp."
+  },
+  {
+    "questionEn": "After minimization, how many distinct rules can represent the shipping cost logic?",
+    "questionVi": "Sau khi tối thiểu hóa, có thể biểu diễn logic phí vận chuyển bằng bao nhiêu luật riêng biệt?",
+    "options": [
+      {
+        "en": "3 rules, because weight is irrelevant for international (all cost $25)",
+        "vi": "3 luật, vì cân nặng không quan trọng với quốc tế (tất cả đều $25)"
+      },
+      {
+        "en": "4 rules",
+        "vi": "4 luật"
+      },
+      {
+        "en": "2 rules",
+        "vi": "2 luật"
+      },
+      {
+        "en": "1 rule",
+        "vi": "1 luật"
+      }
+    ],
+    "correctEn": "3 rules, because weight is irrelevant for international (all cost $25)",
+    "correctVi": "3 luật, vì cân nặng không quan trọng với quốc tế (tất cả đều $25)",
+    "explanation": "When destination is international, weight condition doesn't affect outcome, so those two rules can be merged into one with weight = ‘–’. Leaving 3 rules. (Syllabus 4.2.3)\n\nKhi quốc tế, cân nặng không ảnh hưởng, nên gộp hai luật thành một với cân nặng = ‘–’. Còn lại 3 luật."
+  },
+  {
+    "questionEn": "Using EP on the shipping example, what are the valid partitions for the 'destination' parameter?",
+    "questionVi": "Dùng EP cho ví dụ vận chuyển, các phân vùng hợp lệ cho tham số 'điểm đến' là gì?",
+    "options": [
+      {
+        "en": "Domestic and International",
+        "vi": "Nội địa và Quốc tế"
+      },
+      {
+        "en": "Domestic, International, and Unknown",
+        "vi": "Nội địa, Quốc tế và Không xác định"
+      },
+      {
+        "en": "Only Domestic",
+        "vi": "Chỉ Nội địa"
+      },
+      {
+        "en": "Only International",
+        "vi": "Chỉ Quốc tế"
+      }
+    ],
+    "correctEn": "Domestic and International",
+    "correctVi": "Nội địa và Quốc tế",
+    "explanation": "The specified values are domestic and international; these are valid partitions. (Syllabus 4.2.1)\n\nCác giá trị được chỉ định là nội địa và quốc tế; đó là các phân vùng hợp lệ."
+  },
+  {
+    "questionEn": "Which of the following is an example of the 'Card' in the 3 C's of user stories?",
+    "questionVi": "Ví dụ nào sau đây là 'Card' trong 3 chữ C của user story?",
+    "options": [
+      {
+        "en": "An index card with the story description",
+        "vi": "Một thẻ ghi chú với mô tả story"
+      },
+      {
+        "en": "A conversation about the story",
+        "vi": "Một cuộc trò chuyện về story"
+      },
+      {
+        "en": "A set of acceptance criteria",
+        "vi": "Một tập tiêu chí chấp nhận"
+      },
+      {
+        "en": "A test case",
+        "vi": "Một ca kiểm thử"
+      }
+    ],
+    "correctEn": "An index card with the story description",
+    "correctVi": "Một thẻ ghi chú với mô tả story",
+    "explanation": "Card is the physical or electronic medium capturing the story description. (Syllabus 4.5.1)\n\nCard là phương tiện vật lý hoặc điện tử chứa mô tả story."
+  },
+  {
+    "questionEn": "In exploratory testing, what is the role of the test session sheet?",
+    "questionVi": "Trong kiểm thử khám phá, vai trò của phiếu phiên kiểm thử là gì?",
+    "options": [
+      {
+        "en": "To document the steps followed and discoveries made during the session",
+        "vi": "Ghi lại các bước đã thực hiện và những phát hiện trong phiên"
+      },
+      {
+        "en": "To record the test plan",
+        "vi": "Ghi lại kế hoạch kiểm thử"
+      },
+      {
+        "en": "To log defects in the defect management system",
+        "vi": "Ghi lỗi vào hệ thống quản lý khiếm khuyết"
+      },
+      {
+        "en": "To serve as the user story",
+        "vi": "Dùng làm user story"
+      }
+    ],
+    "correctEn": "To document the steps followed and discoveries made during the session",
+    "correctVi": "Ghi lại các bước đã thực hiện và những phát hiện trong phiên",
+    "explanation": "Test session sheets are used to document the tester’s activities and findings for later debriefing. (Syllabus 4.4.2)\n\nPhiếu phiên dùng để ghi lại hoạt động và phát hiện của kiểm thử viên cho cuộc debriefing sau."
+  },
+  {
+    "questionEn": "Which of the following is a true statement about decision table testing?",
+    "questionVi": "Phát biểu nào sau đây đúng về kiểm thử bảng quyết định?",
+    "options": [
+      {
+        "en": "It helps identify gaps and contradictions in requirements",
+        "vi": "Nó giúp phát hiện lỗ hổng và mâu thuẫn trong yêu cầu"
+      },
+      {
+        "en": "It can never be minimized",
+        "vi": "Nó không bao giờ được tối thiểu hóa"
+      },
+      {
+        "en": "It is only applicable to integer inputs",
+        "vi": "Nó chỉ áp dụng cho đầu vào số nguyên"
+      },
+      {
+        "en": "It replaces equivalence partitioning",
+        "vi": "Nó thay thế phân vùng tương đương"
+      }
+    ],
+    "correctEn": "It helps identify gaps and contradictions in requirements",
+    "correctVi": "Nó giúp phát hiện lỗ hổng và mâu thuẫn trong yêu cầu",
+    "explanation": "Decision tables systematically review all condition combinations, helping to spot missing or contradictory requirements. (Syllabus 4.2.3)\n\nBảng quyết định xem xét có hệ thống mọi tổ hợp điều kiện, giúp phát hiện yêu cầu thiếu hoặc mâu thuẫn."
+  },
+  {
+    "questionEn": "Which of the following is a characteristic of white‑box testing?",
+    "questionVi": "Đặc điểm nào sau đây là của kiểm thử hộp trắng?",
+    "options": [
+      {
+        "en": "Test cases are based on the internal structure of the test object",
+        "vi": "Ca kiểm thử dựa trên cấu trúc bên trong của đối tượng kiểm thử"
+      },
+      {
+        "en": "It cannot be performed at component level",
+        "vi": "Nó không thể thực hiện ở mức thành phần"
+      },
+      {
+        "en": "It does not require knowledge of programming",
+        "vi": "Nó không yêu cầu kiến thức lập trình"
+      },
+      {
+        "en": "It only tests the user interface",
+        "vi": "Nó chỉ kiểm thử giao diện người dùng"
+      }
+    ],
+    "correctEn": "Test cases are based on the internal structure of the test object",
+    "correctVi": "Ca kiểm thử dựa trên cấu trúc bên trong của đối tượng kiểm thử",
+    "explanation": "White‑box testing (structure‑based) derives tests from the implementation (code, architecture, etc.). (Syllabus 4.3)\n\nKiểm thử hộp trắng dựa trên cấu trúc bên trong để tạo ca kiểm thử."
+  },
+  {
+    "questionEn": "What is the value of performing static analysis on source code before dynamic testing?",
+    "questionVi": "Giá trị của việc thực hiện phân tích tĩnh trên mã nguồn trước khi kiểm thử động là gì?",
+    "options": [
+      {
+        "en": "It can detect certain defects (e.g., unreachable code) early and cheaply",
+        "vi": "Nó có thể phát hiện sớm và rẻ một số lỗi (ví dụ mã không thể với tới)"
+      },
+      {
+        "en": "It replaces all dynamic testing",
+        "vi": "Nó thay thế mọi kiểm thử động"
+      },
+      {
+        "en": "It guarantees no runtime errors",
+        "vi": "Nó đảm bảo không có lỗi thời gian chạy"
+      },
+      {
+        "en": "It only checks compliance with coding standards",
+        "vi": "Nó chỉ kiểm tra tuân thủ chuẩn mã hóa"
+      }
+    ],
+    "correctEn": "It can detect certain defects (e.g., unreachable code) early and cheaply",
+    "correctVi": "Nó có thể phát hiện sớm và rẻ một số lỗi (ví dụ mã không thể với tới)",
+    "explanation": "Static analysis finds defects like unreachable code, undeclared variables, etc., without executing the software, often at lower cost. (Syllabus 3.1.2, relates to white‑box value)\n\nPhân tích tĩnh tìm lỗi mà không cần chạy phần mềm, thường với chi phí thấp hơn."
+  },
+  {
+    "questionEn": "You have a state diagram with states A, B, C. Transitions: A->B on event X, B->C on event Y, C->A on event Z. If you start in A, which sequence achieves 100% all states coverage?",
+    "questionVi": "Sơ đồ trạng thái có A, B, C. Chuyển tiếp: A->B trên X, B->C trên Y, C->A trên Z. Bắt đầu từ A, dãy nào đạt 100% bao phủ tất cả trạng thái?",
+    "options": [
+      {
+        "en": "X, Y, Z",
+        "vi": "X, Y, Z"
+      },
+      {
+        "en": "X, Y",
+        "vi": "X, Y"
+      },
+      {
+        "en": "Z, Y",
+        "vi": "Z, Y"
+      },
+      {
+        "en": "X only",
+        "vi": "Chỉ X"
+      }
+    ],
+    "correctEn": "X, Y, Z",
+    "correctVi": "X, Y, Z",
+    "explanation": "Sequence X (A->B), Y (B->C), Z (C->A) visits all states A,B,C. (Syllabus 4.2.4)\n\nDãy X (A->B), Y (B->C), Z (C->A) ghé thăm tất cả trạng thái A,B,C."
+  },
+  {
+    "questionEn": "Which test case would exercise the invalid transition in the state table where from state A, event Y is not defined (empty cell)?",
+    "questionVi": "Ca kiểm thử nào sẽ thực thi chuyển tiếp không hợp lệ trong bảng trạng thái khi từ trạng thái A, sự kiện Y không được định nghĩa (ô trống)?",
+    "options": [
+      {
+        "en": "Start in A, trigger event Y",
+        "vi": "Bắt đầu ở A, kích hoạt sự kiện Y"
+      },
+      {
+        "en": "Start in A, trigger event X",
+        "vi": "Bắt đầu ở A, kích hoạt sự kiện X"
+      },
+      {
+        "en": "Start in B, trigger event Y",
+        "vi": "Bắt đầu ở B, kích hoạt sự kiện Y"
+      },
+      {
+        "en": "Start in C, trigger event Z",
+        "vi": "Bắt đầu ở C, kích hoạt sự kiện Z"
+      }
+    ],
+    "correctEn": "Start in A, trigger event Y",
+    "correctVi": "Bắt đầu ở A, kích hoạt sự kiện Y",
+    "explanation": "The invalid transition is from A on Y. So a test must attempt this event from state A. (Syllabus 4.2.4)\n\nChuyển tiếp không hợp lệ là từ A với Y. Ca kiểm thử phải cố gắng kích hoạt sự kiện này từ A."
+  },
+  {
+    "questionEn": "In the context of risk‑based testing, how can test analysis and design be prioritized?",
+    "questionVi": "Trong kiểm thử dựa trên rủi ro, làm thế nào để ưu tiên phân tích và thiết kế kiểm thử?",
+    "options": [
+      {
+        "en": "By focusing test design on areas with highest product risk",
+        "vi": "Tập trung thiết kế kiểm thử vào vùng có rủi ro sản phẩm cao nhất"
+      },
+      {
+        "en": "By always testing the simplest features first",
+        "vi": "Luôn kiểm thử tính năng đơn giản nhất trước"
+      },
+      {
+        "en": "By randomly selecting test conditions",
+        "vi": "Chọn ngẫu nhiên điều kiện kiểm thử"
+      },
+      {
+        "en": "By ignoring low risk areas completely",
+        "vi": "Bỏ qua hoàn toàn vùng rủi ro thấp"
+      }
+    ],
+    "correctEn": "By focusing test design on areas with highest product risk",
+    "correctVi": "Tập trung thiết kế kiểm thử vào vùng có rủi ro sản phẩm cao nhất",
+    "explanation": "Risk‑based prioritization orders test design and execution so that higher risk areas are covered first. (Syllabus 5.2.3, related to test analysis)\n\nƯu tiên dựa trên rủi ro thiết kế và thực thi sao cho vùng rủi ro cao được bao phủ trước."
+  },
+  {
+    "questionEn": "A system validates a code that must be exactly 4 digits, all numeric. Which EP partitions are correct?",
+    "questionVi": "Hệ thống xác thực mã phải đúng 4 chữ số. Phân vùng tương đương nào đúng?",
+    "options": [
+      {
+        "en": "Valid: exactly 4 digits; Invalid: less than 4 digits, more than 4 digits, non‑numeric",
+        "vi": "Hợp lệ: đúng 4 chữ số; Không hợp lệ: ít hơn 4, nhiều hơn 4, không phải số"
+      },
+      {
+        "en": "Only valid partition: 4 digits",
+        "vi": "Chỉ phân vùng hợp lệ: 4 chữ số"
+      },
+      {
+        "en": "Only one invalid partition for any other input",
+        "vi": "Chỉ một phân vùng không hợp lệ cho mọi đầu vào khác"
+      },
+      {
+        "en": "No partitions can be defined",
+        "vi": "Không thể xác định phân vùng"
+      }
+    ],
+    "correctEn": "Valid: exactly 4 digits; Invalid: less than 4 digits, more than 4 digits, non‑numeric",
+    "correctVi": "Hợp lệ: đúng 4 chữ số; Không hợp lệ: ít hơn 4, nhiều hơn 4, không phải số",
+    "explanation": "Multiple invalid partitions can be identified: length <4, length >4, non‑numeric characters. They may be tested separately. (Syllabus 4.2.1)\n\nCó thể xác định nhiều phân vùng không hợp lệ: độ dài <4, >4, ký tự không phải số. Chúng có thể được kiểm thử riêng."
+  },
+  {
+    "questionEn": "During collaborative user story writing, a tester asks, 'How would we test this story?' What is the primary benefit of this question?",
+    "questionVi": "Trong viết user story hợp tác, kiểm thử viên hỏi 'Làm thế nào chúng ta kiểm thử story này?'. Lợi ích chính của câu hỏi này là gì?",
+    "options": [
+      {
+        "en": "It exposes ambiguities and helps clarify acceptance criteria",
+        "vi": "Nó phơi bày sự mơ hồ và giúp làm rõ tiêu chí chấp nhận"
+      },
+      {
+        "en": "It delays the development process",
+        "vi": "Nó làm chậm quá trình phát triển"
+      },
+      {
+        "en": "It replaces the need for a specification workshop",
+        "vi": "Nó thay thế hội thảo đặc tả"
+      },
+      {
+        "en": "It determines the programming language to use",
+        "vi": "Nó xác định ngôn ngữ lập trình sử dụng"
+      }
+    ],
+    "correctEn": "It exposes ambiguities and helps clarify acceptance criteria",
+    "correctVi": "Nó phơi bày sự mơ hồ và giúp làm rõ tiêu chí chấp nhận",
+    "explanation": "Asking about testability can reveal unclear requirements and lead to better acceptance criteria. (Syllabus 4.5.1, INVEST Testable)\n\nHỏi về khả năng kiểm thử có thể tiết lộ yêu cầu không rõ ràng và dẫn đến tiêu chí chấp nhận tốt hơn."
+  },
+  {
+    "questionEn": "What is the relationship between equivalence partitioning and boundary value analysis?",
+    "questionVi": "Mối quan hệ giữa phân vùng tương đương và phân tích giá trị biên là gì?",
+    "options": [
+      {
+        "en": "BVA is applied to the boundaries identified from equivalence partitions",
+        "vi": "BVA được áp dụng lên các biên được xác định từ phân vùng tương đương"
+      },
+      {
+        "en": "They are completely independent techniques",
+        "vi": "Chúng là các kỹ thuật hoàn toàn độc lập"
+      },
+      {
+        "en": "EP replaces BVA when partitions are unordered",
+        "vi": "EP thay thế BVA khi phân vùng không có thứ tự"
+      },
+      {
+        "en": "BVA can only be used after executing EP tests",
+        "vi": "BVA chỉ có thể dùng sau khi thực thi các kiểm thử EP"
+      }
+    ],
+    "correctEn": "BVA is applied to the boundaries identified from equivalence partitions",
+    "correctVi": "BVA được áp dụng lên các biên được xác định từ phân vùng tương đương",
+    "explanation": "BVA is built upon EP: once partitions are identified (and ordered), their boundaries are tested. (Syllabus 4.2.2)\n\nBVA dựa trên EP: sau khi xác định phân vùng (có thứ tự), kiểm thử biên của chúng."
   }
 ]

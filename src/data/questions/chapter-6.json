@@ -1,227 +1,2502 @@
 [
   {
-    "questionEn": "A primary benefit of test automation is:",
-    "questionVi": "Lợi ích chính của tự động hóa kiểm thử là:",
+    "questionEn": "Which of the following is a valid benefit of test automation according to ISTQB CTFL v4.0?",
+    "questionVi": "Lợi ích hợp lệ nào sau đây của tự động hóa kiểm thử theo ISTQB CTFL v4.0?",
     "options": [
       {
-        "en": "Faster feedback on software quality",
-        "vi": "Phản hồi nhanh hơn về chất lượng phần mềm"
+        "en": "Guarantees that no defects remain in the software",
+        "vi": "Đảm bảo không còn khiếm khuyết trong phần mềm"
       },
       {
-        "en": "Guaranteeing zero defects",
-        "vi": "Đảm bảo không khiếm khuyết"
+        "en": "Reduces repetitive manual work and provides faster feedback",
+        "vi": "Giảm công việc thủ công lặp đi lặp lại và cung cấp phản hồi nhanh hơn"
       },
       {
-        "en": "Removal of all defects automatically",
-        "vi": "Tự loại mọi khiếm khuyết"
+        "en": "Eliminates the need for any manual testing",
+        "vi": "Loại bỏ nhu cầu kiểm thử thủ công"
       },
       {
-        "en": "GPUs from monitors",
-        "vi": "GPU khỏi màn hình"
+        "en": "Automatically fixes all defects found",
+        "vi": "Tự động sửa tất cả khiếm khuyết tìm thấy"
       }
     ],
-    "correctEn": "Faster feedback on software quality",
-    "correctVi": "Phản hồi nhanh hơn về chất lượng phần mềm",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+    "correctEn": "Reduces repetitive manual work and provides faster feedback",
+    "correctVi": "Giảm công việc thủ công lặp đi lặp lại và cung cấp phản hồi nhanh hơn",
+    "explanation": "The ISTQB CTFL v4.0 syllabus (Chapter 6.2) lists benefits: time saved by reducing repetitive manual work, faster feedback, etc. It does not guarantee zero defects, eliminate manual testing, or automatically fix defects."
   },
   {
-    "questionEn": "A common risk of test automation is:",
-    "questionVi": "Rủi ro phổ biến của tự động hóa kiểm thử:",
+    "questionEn": "A test management tool typically supports:",
+    "questionVi": "Công cụ quản lý kiểm thử thường hỗ trợ:",
     "options": [
       {
-        "en": "Unrealistic expectations about immediate ROI",
-        "vi": "Kỳ vọng ROI ngắn hạn không thực tế"
+        "en": "Execution of automated test scripts only",
+        "vi": "Chỉ thực thi kịch bản kiểm thử tự động"
       },
       {
-        "en": "Office chair squeaks",
-        "vi": "Kêu ghế văn phòng"
+        "en": "Requirements traceability, test case management, and defect tracking",
+        "vi": "Truy xuất nguồn gốc yêu cầu, quản lý ca kiểm thử và theo dõi khiếm khuyết"
       },
       {
-        "en": "Automatic replacement of reviews",
-        "vi": "Tự thay review"
+        "en": "Static analysis of source code",
+        "vi": "Phân tích tĩnh mã nguồn"
       },
       {
-        "en": "Author legal contracts",
-        "vi": "Soạn hợp đồng pháp lý"
+        "en": "Performance testing only",
+        "vi": "Chỉ kiểm thử hiệu năng"
       }
     ],
-    "correctEn": "Unrealistic expectations about immediate ROI",
-    "correctVi": "Kỳ vọng ROI ngắn hạn không thực tế",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+    "correctEn": "Requirements traceability, test case management, and defect tracking",
+    "correctVi": "Truy xuất nguồn gốc yêu cầu, quản lý ca kiểm thử và theo dõi khiếm khuyết",
+    "explanation": "Section 6.1: Test management tools increase test process efficiency by facilitating management of SDLC, requirements, tests, defects, configuration."
   },
   {
-    "questionEn": "Test execution tools primarily:",
-    "questionVi": "Công cụ thực thi kiểm thử chủ yếu:",
+    "questionEn": "Which of the following is a risk of test automation?",
+    "questionVi": "Rủi ro nào sau đây của tự động hóa kiểm thử?",
     "options": [
       {
-        "en": "Only GPU shader languages",
-        "vi": "Chỉ ngôn ngữ shader GPU"
+        "en": "Unrealistic expectations about the benefits of a tool",
+        "vi": "Kỳ vọng không thực tế về lợi ích của công cụ"
       },
       {
-        "en": "No version control for scripts",
-        "vi": "Không version control script"
+        "en": "Complete removal of regression defects",
+        "vi": "Loại bỏ hoàn toàn khiếm khuyết hồi quy"
       },
       {
-        "en": "GPUs from monitors",
-        "vi": "GPU khỏi màn hình"
+        "en": "Faster test execution always saves money",
+        "vi": "Thực thi kiểm thử nhanh hơn luôn tiết kiệm tiền"
       },
       {
-        "en": "Run automated tests and capture results",
-        "vi": "Chạy kiểm thử tự động và ghi kết quả"
+        "en": "Automation guarantees 100% code coverage",
+        "vi": "Tự động hóa đảm bảo độ bao phủ mã 100%"
       }
     ],
-    "correctEn": "Run automated tests and capture results",
-    "correctVi": "Chạy kiểm thử tự động và ghi kết quả",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+    "correctEn": "Unrealistic expectations about the benefits of a tool",
+    "correctVi": "Kỳ vọng không thực tế về lợi ích của công cụ",
+    "explanation": "Section 6.2 lists as potential risk: 'Unrealistic expectations about the benefits of a tool (including functionality and ease of use).'"
   },
   {
-    "questionEn": "Coverage tools help measure:",
-    "questionVi": "Công cụ coverage giúp đo:",
+    "questionEn": "Static testing tools are used to:",
+    "questionVi": "Công cụ kiểm thử tĩnh được sử dụng để:",
     "options": [
       {
-        "en": "Extent of exercised code or requirements",
-        "vi": "Mức mã hoặc yêu cầu được thực thi"
+        "en": "Execute automated regression tests",
+        "vi": "Thực thi kiểm thử hồi quy tự động"
       },
       {
-        "en": "Guaranteeing zero defects",
-        "vi": "Đảm bảo không khiếm khuyết"
+        "en": "Support reviews and static analysis (e.g., coding standards, syntax checks)",
+        "vi": "Hỗ trợ đánh giá và phân tích tĩnh (ví dụ: chuẩn mã, kiểm tra cú pháp)"
       },
       {
-        "en": "Printer jam frequencies",
-        "vi": "Tần suất kẹt giấy máy in"
+        "en": "Generate test data for performance testing",
+        "vi": "Sinh dữ liệu kiểm thử cho kiểm thử hiệu năng"
       },
       {
-        "en": "Automatic freeze of requirements",
-        "vi": "Tự đóng băng yêu cầu"
+        "en": "Manage test environments",
+        "vi": "Quản lý môi trường kiểm thử"
       }
     ],
-    "correctEn": "Extent of exercised code or requirements",
-    "correctVi": "Mức mã hoặc yêu cầu được thực thi",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+    "correctEn": "Support reviews and static analysis (e.g., coding standards, syntax checks)",
+    "correctVi": "Hỗ trợ đánh giá và phân tích tĩnh (ví dụ: chuẩn mã, kiểm tra cú pháp)",
+    "explanation": "Section 6.1: Static testing tools support the tester in performing reviews and static analysis."
   },
   {
-    "questionEn": "Data-driven testing separates:",
-    "questionVi": "Kiểm thử data-driven tách:",
+    "questionEn": "When applying shift-left, test automation should be used to:",
+    "questionVi": "Khi áp dụng shift-left, tự động hóa kiểm thử nên được dùng để:",
     "options": [
       {
-        "en": "Managers from salaries",
-        "vi": "Quản lý khỏi lương"
+        "en": "Only run tests after system integration",
+        "vi": "Chỉ chạy kiểm thử sau tích hợp hệ thống"
       },
       {
-        "en": "Printer jam frequencies",
-        "vi": "Tần suất kẹt giấy máy in"
+        "en": "Provide fast feedback as part of continuous integration (CI)",
+        "vi": "Cung cấp phản hồi nhanh như một phần của tích hợp liên tục (CI)"
       },
       {
-        "en": "Removal of all defects automatically",
-        "vi": "Tự loại mọi khiếm khuyết"
+        "en": "Replace all manual exploratory testing",
+        "vi": "Thay thế mọi kiểm thử thăm dò thủ công"
       },
       {
-        "en": "Test logic from variable test data",
-        "vi": "Logic kiểm thử khỏi dữ liệu biến thiên"
+        "en": "Delay testing until the end of the lifecycle",
+        "vi": "Trì hoãn kiểm thử cho đến cuối vòng đời"
       }
     ],
-    "correctEn": "Test logic from variable test data",
-    "correctVi": "Logic kiểm thử khỏi dữ liệu biến thiên",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+    "correctEn": "Provide fast feedback as part of continuous integration (CI)",
+    "correctVi": "Cung cấp phản hồi nhanh như một phần của tích hợp liên tục (CI)",
+    "explanation": "Section 2.1.4 (DevOps) and 2.1.5 (Shift left) mention that CI promotes shift left and fast feedback on code quality, with automated tests."
   },
   {
-    "questionEn": "Keyword-driven testing uses:",
-    "questionVi": "Kiểm thử keyword-driven dùng:",
+    "questionEn": "Which test tool would you use to measure how much of the code has been exercised by tests?",
+    "questionVi": "Bạn sẽ dùng công cụ kiểm thử nào để đo lượng mã đã được thực thi bởi các kiểm thử?",
     "options": [
       {
-        "en": "Coffee acidity titration",
-        "vi": "Chuẩn độ độ axit cà phê"
+        "en": "Test management tool",
+        "vi": "Công cụ quản lý kiểm thử"
       },
       {
-        "en": "GPUs from monitors",
-        "vi": "GPU khỏi màn hình"
+        "en": "Test execution and test coverage tool",
+        "vi": "Công cụ thực thi và đo độ bao phủ kiểm thử"
       },
       {
-        "en": "Action keywords interpreted by automation framework",
-        "vi": "Từ khóa hành động do framework diễn giải"
+        "en": "Static analysis tool",
+        "vi": "Công cụ phân tích tĩnh"
       },
       {
-        "en": "Eliminating test planning forever",
-        "vi": "Loại lập kế hoạch kiểm thử mãi"
+        "en": "Collaboration tool",
+        "vi": "Công cụ cộng tác"
       }
     ],
-    "correctEn": "Action keywords interpreted by automation framework",
-    "correctVi": "Từ khóa hành động do framework diễn giải",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+    "correctEn": "Test execution and test coverage tool",
+    "correctVi": "Công cụ thực thi và đo độ bao phủ kiểm thử",
+    "explanation": "Section 6.1: 'Test execution and test coverage tools – facilitate automated test execution and coverage measurement.'"
   },
   {
-    "questionEn": "Open-source tool risks include:",
-    "questionVi": "Rủi ro công cụ mã nguồn mở gồm:",
+    "questionEn": "A major risk when relying on an open-source test automation tool is:",
+    "questionVi": "Một rủi ro lớn khi phụ thuộc vào công cụ tự động hóa kiểm thử mã nguồn mở là:",
     "options": [
       {
-        "en": "Design database schemas only",
-        "vi": "Chỉ thiết kế schema CSDL"
+        "en": "The tool may be abandoned, leading to no updates or security patches",
+        "vi": "Công cụ có thể bị bỏ rơi, dẫn đến không có bản cập nhật hoặc vá bảo mật"
       },
       {
-        "en": "Uncertain long-term maintenance or licensing nuances",
-        "vi": "Bảo trì dài hạn không chắc hoặc chi tiết giấy phép"
+        "en": "The tool always requires an expensive commercial license",
+        "vi": "Công cụ luôn yêu cầu giấy phép thương mại đắt tiền"
       },
       {
-        "en": "Author legal contracts",
-        "vi": "Soạn hợp đồng pháp lý"
+        "en": "Open-source tools cannot integrate with CI/CD pipelines",
+        "vi": "Công cụ mã nguồn mở không thể tích hợp với pipeline CI/CD"
       },
       {
-        "en": "Replace defect management systems",
-        "vi": "Thay hệ thống quản lý khiếm khuyết"
+        "en": "It guarantees 100% defect detection",
+        "vi": "Nó đảm bảo phát hiện khiếm khuyết 100%"
       }
     ],
-    "correctEn": "Uncertain long-term maintenance or licensing nuances",
-    "correctVi": "Bảo trì dài hạn không chắc hoặc chi tiết giấy phép",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+    "correctEn": "The tool may be abandoned, leading to no updates or security patches",
+    "correctVi": "Công cụ có thể bị bỏ rơi, dẫn đến không có bản cập nhật hoặc vá bảo mật",
+    "explanation": "Section 6.2: 'Using an open-source software which may be abandoned, meaning that no further updates are available.'"
   },
   {
-    "questionEn": "Cloud-based tool considerations include:",
-    "questionVi": "Cân nhắc công cụ đám mây gồm:",
+    "questionEn": "Which of the following is a benefit of using test automation in a DevOps environment?",
+    "questionVi": "Lợi ích nào sau đây của việc sử dụng tự động hóa kiểm thử trong môi trường DevOps?",
     "options": [
       {
-        "en": "Data residency and access/security controls",
-        "vi": "Cư trú dữ liệu và kiểm soát truy cập/bảo mật"
+        "en": "Manual regression testing becomes unnecessary",
+        "vi": "Kiểm thử hồi quy thủ công trở nên không cần thiết"
       },
       {
-        "en": "No version control for scripts",
-        "vi": "Không version control script"
+        "en": "Faster feedback on code quality and reduced regression risk",
+        "vi": "Phản hồi nhanh hơn về chất lượng mã và giảm rủi ro hồi quy"
       },
       {
-        "en": "Only GPU shader languages",
-        "vi": "Chỉ ngôn ngữ shader GPU"
+        "en": "Test automation replaces the need for code reviews",
+        "vi": "Tự động hóa kiểm thử thay thế nhu cầu đánh giá mã"
       },
       {
-        "en": "Automatic elimination of flaky tests",
-        "vi": "Tự loại test \"flaky\""
+        "en": "Testers no longer need to design test cases",
+        "vi": "Người kiểm thử không cần thiết kế ca kiểm thử nữa"
       }
     ],
-    "correctEn": "Data residency and access/security controls",
-    "correctVi": "Cư trú dữ liệu và kiểm soát truy cập/bảo mật",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+    "correctEn": "Faster feedback on code quality and reduced regression risk",
+    "correctVi": "Phản hồi nhanh hơn về chất lượng mã và giảm rủi ro hồi quy",
+    "explanation": "Section 2.1.4: DevOps benefits include fast feedback on code quality and the risk of regression is minimized due to automated regression tests."
   },
   {
-    "questionEn": "Successful automation typically requires:",
-    "questionVi": "Tự động hóa thành công thường cần:",
+    "questionEn": "A test design and test implementation tool is typically used to:",
+    "questionVi": "Công cụ thiết kế và triển khai kiểm thử thường được dùng để:",
     "options": [
       {
-        "en": "Coffee acidity titration",
-        "vi": "Chuẩn độ độ axit cà phê"
+        "en": "Monitor test progress and generate dashboards",
+        "vi": "Theo dõi tiến độ kiểm thử và tạo bảng điều khiển"
       },
       {
-        "en": "Guaranteed on-prem elimination",
-        "vi": "Loại on-prem chắc chắn"
+        "en": "Generate test cases, test data, and test procedures",
+        "vi": "Sinh ca kiểm thử, dữ liệu kiểm thử và thủ tục kiểm thử"
       },
       {
-        "en": "Maintainable tests and stable interfaces/selectors",
-        "vi": "Kiểm thử có thể bảo trì và giao diện/bộ chọn ổn định"
+        "en": "Execute load tests",
+        "vi": "Thực thi kiểm thử tải"
       },
       {
-        "en": "Printer jam frequencies",
-        "vi": "Tần suất kẹt giấy máy in"
+        "en": "Manage team communication",
+        "vi": "Quản lý giao tiếp nhóm"
       }
     ],
-    "correctEn": "Maintainable tests and stable interfaces/selectors",
-    "correctVi": "Kiểm thử có thể bảo trì và giao diện/bộ chọn ổn định",
-    "explanation": "* **Đúng / Correct:** ISTQB CTFL v4.0.1 — Chapter 6 (Test Tools).\n* **Sai / Incorrect:** Misstates automation benefits/risks or common tool categories."
+    "correctEn": "Generate test cases, test data, and test procedures",
+    "correctVi": "Sinh ca kiểm thử, dữ liệu kiểm thử và thủ tục kiểm thử",
+    "explanation": "Section 6.1: 'Test design and test implementation tools – facilitate generation of test cases, test data and test procedures.'"
+  },
+  {
+    "questionEn": "Which statement about test automation is TRUE according to the ISTQB syllabus?",
+    "questionVi": "Phát biểu nào về tự động hóa kiểm thử là ĐÚNG theo giáo trình ISTQB?",
+    "options": [
+      {
+        "en": "Test automation guarantees 100% branch coverage",
+        "vi": "Tự động hóa kiểm thử đảm bảo độ bao phủ nhánh 100%"
+      },
+      {
+        "en": "Test automation requires no maintenance effort",
+        "vi": "Tự động hóa kiểm thử không yêu cầu nỗ lực bảo trì"
+      },
+      {
+        "en": "Automated tests can become less effective at detecting new defects if repeated without changes",
+        "vi": "Kiểm thử tự động có thể trở nên kém hiệu quả trong việc phát hiện khiếm khuyết mới nếu lặp lại mà không thay đổi"
+      },
+      {
+        "en": "Automation eliminates the need for any manual testing",
+        "vi": "Tự động hóa loại bỏ nhu cầu kiểm thử thủ công"
+      }
+    ],
+    "correctEn": "Automated tests can become less effective at detecting new defects if repeated without changes",
+    "correctVi": "Kiểm thử tự động có thể trở nên kém hiệu quả trong việc phát hiện khiếm khuyết mới nếu lặp lại mà không thay đổi",
+    "explanation": "Section 1.3 Testing Principle 5: 'Tests wear out. If the same tests are repeated many times, they become increasingly ineffective in detecting new defects.' This applies to automated tests as well."
+  },
+  {
+    "questionEn": "Which tool is most suitable for measuring response time of a web application under load?",
+    "questionVi": "Công cụ nào phù hợp nhất để đo thời gian phản hồi của ứng dụng web dưới tải?",
+    "options": [
+      {
+        "en": "Test management tool",
+        "vi": "Công cụ quản lý kiểm thử"
+      },
+      {
+        "en": "Static analysis tool",
+        "vi": "Công cụ phân tích tĩnh"
+      },
+      {
+        "en": "Non-functional testing tool (performance testing tool)",
+        "vi": "Công cụ kiểm thử phi chức năng (công cụ kiểm thử hiệu năng)"
+      },
+      {
+        "en": "Collaboration tool",
+        "vi": "Công cụ cộng tác"
+      }
+    ],
+    "correctEn": "Non-functional testing tool (performance testing tool)",
+    "correctVi": "Công cụ kiểm thử phi chức năng (công cụ kiểm thử hiệu năng)",
+    "explanation": "Section 6.1: 'Non-functional testing tools – allow the tester to perform non-functional testing that is difficult or impossible to perform manually.' Performance testing is a type of non-functional testing."
+  },
+  {
+    "questionEn": "A project team wants to automate regression tests. What is a key success factor?",
+    "questionVi": "Một nhóm dự án muốn tự động hóa kiểm thử hồi quy. Yếu tố thành công chính là gì?",
+    "options": [
+      {
+        "en": "Automate all test cases, including exploratory tests",
+        "vi": "Tự động hóa mọi ca kiểm thử, bao gồm kiểm thử thăm dò"
+      },
+      {
+        "en": "Ensure test scripts are maintainable and interfaces are stable",
+        "vi": "Đảm bảo kịch bản kiểm thử có thể bảo trì và giao diện ổn định"
+      },
+      {
+        "en": "Avoid any manual testing to save cost",
+        "vi": "Tránh mọi kiểm thử thủ công để tiết kiệm chi phí"
+      },
+      {
+        "en": "Rely solely on capture-replay tools without review",
+        "vi": "Chỉ dựa vào công cụ ghi-phát lại mà không xem xét"
+      }
+    ],
+    "correctEn": "Ensure test scripts are maintainable and interfaces are stable",
+    "correctVi": "Đảm bảo kịch bản kiểm thử có thể bảo trì và giao diện ổn định",
+    "explanation": "Although not explicitly stated in the short syllabus, good automation practices (derived from benefits/risks) require maintainable tests. The syllabus mentions that poor maintenance can be a risk."
+  },
+  {
+    "questionEn": "According to the syllabus, what is a potential risk when a tool vendor goes out of business?",
+    "questionVi": "Theo giáo trình, rủi ro tiềm ẩn khi nhà cung cấp công cụ ngừng kinh doanh là gì?",
+    "options": [
+      {
+        "en": "The tool becomes open-source automatically",
+        "vi": "Công cụ tự động trở thành mã nguồn mở"
+      },
+      {
+        "en": "No further support, upgrades, or defect fixes are available",
+        "vi": "Không còn hỗ trợ, nâng cấp hoặc sửa lỗi"
+      },
+      {
+        "en": "The tool will still be supported by the community",
+        "vi": "Công cụ vẫn được cộng đồng hỗ trợ"
+      },
+      {
+        "en": "All test scripts become invalid",
+        "vi": "Mọi kịch bản kiểm thử trở nên không hợp lệ"
+      }
+    ],
+    "correctEn": "No further support, upgrades, or defect fixes are available",
+    "correctVi": "Không còn hỗ trợ, nâng cấp hoặc sửa lỗi",
+    "explanation": "Section 6.2: 'The dependency on the tool vendor which may go out of business, retire the tool, sell the tool to a different vendor or provide poor support (e.g., responses to queries, upgrades, and defect fixes).'"
+  },
+  {
+    "questionEn": "Which of the following is a typical use of a collaboration tool in testing?",
+    "questionVi": "Trường hợp sử dụng điển hình của công cụ cộng tác trong kiểm thử là?",
+    "options": [
+      {
+        "en": "Automatically generating test cases from requirements",
+        "vi": "Tự động sinh ca kiểm thử từ yêu cầu"
+      },
+      {
+        "en": "Facilitating communication and sharing information among team members",
+        "vi": "Tạo điều kiện giao tiếp và chia sẻ thông tin giữa các thành viên nhóm"
+      },
+      {
+        "en": "Executing performance tests",
+        "vi": "Thực thi kiểm thử hiệu năng"
+      },
+      {
+        "en": "Measuring code coverage",
+        "vi": "Đo độ bao phủ mã"
+      }
+    ],
+    "correctEn": "Facilitating communication and sharing information among team members",
+    "correctVi": "Tạo điều kiện giao tiếp và chia sẻ thông tin giữa các thành viên nhóm",
+    "explanation": "Section 6.1: 'Collaboration tools – facilitate communication.'"
+  },
+  {
+    "questionEn": "What is a common misconception about test automation that leads to project failure?",
+    "questionVi": "Quan niệm sai lầm phổ biến về tự động hóa kiểm thử dẫn đến thất bại dự án là gì?",
+    "options": [
+      {
+        "en": "Automation requires skilled testers",
+        "vi": "Tự động hóa đòi hỏi người kiểm thử có kỹ năng"
+      },
+      {
+        "en": "Automated tests need maintenance",
+        "vi": "Kiểm thử tự động cần bảo trì"
+      },
+      {
+        "en": "Automation will immediately reduce testing time and cost without initial investment",
+        "vi": "Tự động hóa sẽ ngay lập tức giảm thời gian và chi phí kiểm thử mà không cần đầu tư ban đầu"
+      },
+      {
+        "en": "Some tests cannot be automated",
+        "vi": "Một số kiểm thử không thể tự động hóa"
+      }
+    ],
+    "correctEn": "Automation will immediately reduce testing time and cost without initial investment",
+    "correctVi": "Tự động hóa sẽ ngay lập tức giảm thời gian và chi phí kiểm thử mà không cần đầu tư ban đầu",
+    "explanation": "Section 6.2 lists 'Inaccurate estimations of time, costs, effort required to introduce a tool' as a risk. Unrealistic expectations about immediate ROI is a common misconception."
+  },
+  {
+    "questionEn": "A tester wants to ensure that all requirements are linked to test cases. Which tool type is most appropriate?",
+    "questionVi": "Một người kiểm thử muốn đảm bảo mọi yêu cầu được liên kết với ca kiểm thử. Loại công cụ nào phù hợp nhất?",
+    "options": [
+      {
+        "en": "Test management tool",
+        "vi": "Công cụ quản lý kiểm thử"
+      },
+      {
+        "en": "Static analysis tool",
+        "vi": "Công cụ phân tích tĩnh"
+      },
+      {
+        "en": "Test execution tool",
+        "vi": "Công cụ thực thi kiểm thử"
+      },
+      {
+        "en": "DevOps tool for CI/CD",
+        "vi": "Công cụ DevOps cho CI/CD"
+      }
+    ],
+    "correctEn": "Test management tool",
+    "correctVi": "Công cụ quản lý kiểm thử",
+    "explanation": "Section 6.1: Test management tools facilitate management of requirements, tests, defects, and traceability."
+  },
+  {
+    "questionEn": "Which statement about capture-replay tools is correct?",
+    "questionVi": "Phát biểu nào về công cụ ghi-phát lại là đúng?",
+    "options": [
+      {
+        "en": "They always produce robust and maintainable test scripts",
+        "vi": "Chúng luôn tạo ra kịch bản kiểm thử mạnh mẽ và dễ bảo trì"
+      },
+      {
+        "en": "They can be useful for creating initial test scripts but scripts often require maintenance",
+        "vi": "Chúng có thể hữu ích để tạo kịch bản kiểm thử ban đầu nhưng kịch bản thường cần bảo trì"
+      },
+      {
+        "en": "They replace the need for any test design",
+        "vi": "Chúng thay thế nhu cầu thiết kế kiểm thử"
+      },
+      {
+        "en": "They work perfectly for all types of applications",
+        "vi": "Chúng hoạt động hoàn hảo cho mọi loại ứng dụng"
+      }
+    ],
+    "correctEn": "They can be useful for creating initial test scripts but scripts often require maintenance",
+    "correctVi": "Chúng có thể hữu ích để tạo kịch bản kiểm thử ban đầu nhưng kịch bản thường cần bảo trì",
+    "explanation": "Although not explicitly detailed, the syllabus implies that automation requires maintenance. Capture-replay tools often produce fragile scripts that need fixing when the UI changes."
+  },
+  {
+    "questionEn": "According to the syllabus, what is one way test automation can improve objectivity?",
+    "questionVi": "Theo giáo trình, một cách tự động hóa kiểm thử có thể cải thiện tính khách quan là gì?",
+    "options": [
+      {
+        "en": "By eliminating the need for testers",
+        "vi": "Bằng cách loại bỏ nhu cầu về người kiểm thử"
+      },
+      {
+        "en": "By providing consistent results and objective coverage measures",
+        "vi": "Bằng cách cung cấp kết quả nhất quán và đo lường độ bao phủ khách quan"
+      },
+      {
+        "en": "By allowing testers to skip test design",
+        "vi": "Bằng cách cho phép người kiểm thử bỏ qua thiết kế kiểm thử"
+      },
+      {
+        "en": "By automatically fixing defects",
+        "vi": "Bằng cách tự động sửa khiếm khuyết"
+      }
+    ],
+    "correctEn": "By providing consistent results and objective coverage measures",
+    "correctVi": "Bằng cách cung cấp kết quả nhất quán và đo lường độ bao phủ khách quan",
+    "explanation": "Section 6.2 benefits: 'More objective assessment (e.g., coverage) and providing measures that are too complicated for humans to determine' and 'Prevention of simple human errors through greater consistency and repeatability.'"
+  },
+  {
+    "questionEn": "Which test tool is most relevant for ensuring compliance with coding standards?",
+    "questionVi": "Công cụ kiểm thử nào liên quan nhất để đảm bảo tuân thủ chuẩn mã?",
+    "options": [
+      {
+        "en": "Test execution tool",
+        "vi": "Công cụ thực thi kiểm thử"
+      },
+      {
+        "en": "Static analysis tool",
+        "vi": "Công cụ phân tích tĩnh"
+      },
+      {
+        "en": "Performance testing tool",
+        "vi": "Công cụ kiểm thử hiệu năng"
+      },
+      {
+        "en": "Test management tool",
+        "vi": "Công cụ quản lý kiểm thử"
+      }
+    ],
+    "correctEn": "Static analysis tool",
+    "correctVi": "Công cụ phân tích tĩnh",
+    "explanation": "Section 6.1: Static testing tools support reviews and static analysis, including checking adherence to coding standards."
+  },
+  {
+    "questionEn": "A team uses a tool to automatically build, deploy, and test every code commit. This is an example of:",
+    "questionVi": "Một nhóm sử dụng công cụ để tự động build, triển khai và kiểm thử mọi lần commit mã. Đây là ví dụ về:",
+    "options": [
+      {
+        "en": "Manual testing",
+        "vi": "Kiểm thử thủ công"
+      },
+      {
+        "en": "Static analysis",
+        "vi": "Phân tích tĩnh"
+      },
+      {
+        "en": "Continuous Integration/Continuous Delivery (CI/CD) supported by DevOps tools",
+        "vi": "Tích hợp liên tục/Giao hàng liên tục (CI/CD) được hỗ trợ bởi công cụ DevOps"
+      },
+      {
+        "en": "Acceptance testing",
+        "vi": "Kiểm thử chấp nhận"
+      }
+    ],
+    "correctEn": "Continuous Integration/Continuous Delivery (CI/CD) supported by DevOps tools",
+    "correctVi": "Tích hợp liên tục/Giao hàng liên tục (CI/CD) được hỗ trợ bởi công cụ DevOps",
+    "explanation": "Section 6.1: 'DevOps tools – support the DevOps delivery pipeline, workflow tracking, automated build process(es), CI/CD.'"
+  },
+  {
+    "questionEn": "What is a potential drawback of having a high level of test automation?",
+    "questionVi": "Nhược điểm tiềm ẩn của việc có mức độ tự động hóa kiểm thử cao là gì?",
+    "options": [
+      {
+        "en": "Reduced need for test design skills",
+        "vi": "Giảm nhu cầu về kỹ năng thiết kế kiểm thử"
+      },
+      {
+        "en": "Relying too much on the tool and ignoring human critical thinking",
+        "vi": "Phụ thuộc quá nhiều vào công cụ và bỏ qua tư duy phản biện của con người"
+      },
+      {
+        "en": "Faster feedback",
+        "vi": "Phản hồi nhanh hơn"
+      },
+      {
+        "en": "Consistent test execution",
+        "vi": "Thực thi kiểm thử nhất quán"
+      }
+    ],
+    "correctEn": "Relying too much on the tool and ignoring human critical thinking",
+    "correctVi": "Phụ thuộc quá nhiều vào công cụ và bỏ qua tư duy phản biện của con người",
+    "explanation": "Section 6.2: 'Relying on a tool too much, e.g., ignoring the need of human critical thinking.'"
+  },
+  {
+    "questionEn": "Which of the following is NOT a typical benefit of test automation?",
+    "questionVi": "Điều nào sau đây KHÔNG phải là lợi ích điển hình của tự động hóa kiểm thử?",
+    "options": [
+      {
+        "en": "Reduced time for repetitive manual work",
+        "vi": "Giảm thời gian cho công việc thủ công lặp đi lặp lại"
+      },
+      {
+        "en": "Prevention of simple human errors",
+        "vi": "Ngăn ngừa lỗi đơn giản của con người"
+      },
+      {
+        "en": "Automatic generation of all test cases from requirements",
+        "vi": "Tự động sinh tất cả ca kiểm thử từ yêu cầu"
+      },
+      {
+        "en": "Faster execution of regression tests",
+        "vi": "Thực thi kiểm thử hồi quy nhanh hơn"
+      }
+    ],
+    "correctEn": "Automatic generation of all test cases from requirements",
+    "correctVi": "Tự động sinh tất cả ca kiểm thử từ yêu cầu",
+    "explanation": "While test design tools may generate some test cases, they do not automatically generate all test cases from requirements without human input. The syllabus does not claim this as a benefit."
+  },
+  {
+    "questionEn": "A test tool that creates virtual services to simulate dependent systems is an example of:",
+    "questionVi": "Công cụ kiểm thử tạo dịch vụ ảo để mô phỏng hệ thống phụ thuộc là ví dụ về:",
+    "options": [
+      {
+        "en": "Test management tool",
+        "vi": "Công cụ quản lý kiểm thử"
+      },
+      {
+        "en": "Static analysis tool",
+        "vi": "Công cụ phân tích tĩnh"
+      },
+      {
+        "en": "Tool supporting scalability and deployment standardization (e.g., service virtualization)",
+        "vi": "Công cụ hỗ trợ khả năng mở rộng và chuẩn hóa triển khai (ví dụ: ảo hóa dịch vụ)"
+      },
+      {
+        "en": "Collaboration tool",
+        "vi": "Công cụ cộng tác"
+      }
+    ],
+    "correctEn": "Tool supporting scalability and deployment standardization (e.g., service virtualization)",
+    "correctVi": "Công cụ hỗ trợ khả năng mở rộng và chuẩn hóa triển khai (ví dụ: ảo hóa dịch vụ)",
+    "explanation": "Section 6.1: 'Tools supporting scalability and deployment standardization (e.g., virtual machines, containerization tools)'. Service virtualization is a related concept."
+  },
+  {
+    "questionEn": "According to the syllabus, what is a risk related to using a test tool that is not compatible with the development platform?",
+    "questionVi": "Theo giáo trình, rủi ro liên quan đến việc sử dụng công cụ kiểm thử không tương thích với nền tảng phát triển là gì?",
+    "options": [
+      {
+        "en": "Improved integration",
+        "vi": "Tích hợp được cải thiện"
+      },
+      {
+        "en": "The automation tool is not compatible with the development platform",
+        "vi": "Công cụ tự động hóa không tương thích với nền tảng phát triển"
+      },
+      {
+        "en": "Faster test execution",
+        "vi": "Thực thi kiểm thử nhanh hơn"
+      },
+      {
+        "en": "Reduced need for test maintenance",
+        "vi": "Giảm nhu cầu bảo trì kiểm thử"
+      }
+    ],
+    "correctEn": "The automation tool is not compatible with the development platform",
+    "correctVi": "Công cụ tự động hóa không tương thích với nền tảng phát triển",
+    "explanation": "Section 6.2 lists as a risk: 'The automation tool is not compatible with the development platform.'"
+  },
+  {
+    "questionEn": "Which metric is typically collected by a test execution coverage tool?",
+    "questionVi": "Chỉ số nào thường được thu thập bởi công cụ đo độ bao phủ thực thi kiểm thử?",
+    "options": [
+      {
+        "en": "Number of test cases written",
+        "vi": "Số lượng ca kiểm thử được viết"
+      },
+      {
+        "en": "Percentage of code statements or branches executed",
+        "vi": "Phần trăm câu lệnh hoặc nhánh mã được thực thi"
+      },
+      {
+        "en": "Number of defects found",
+        "vi": "Số lượng khiếm khuyết tìm thấy"
+      },
+      {
+        "en": "Test execution time",
+        "vi": "Thời gian thực thi kiểm thử"
+      }
+    ],
+    "correctEn": "Percentage of code statements or branches executed",
+    "correctVi": "Phần trăm câu lệnh hoặc nhánh mã được thực thi",
+    "explanation": "Coverage tools measure coverage, such as statement coverage or branch coverage, as mentioned in section 4.3 and 6.1."
+  },
+  {
+    "questionEn": "A tester uses a spreadsheet to record test results and track defects. According to the syllabus, the spreadsheet is considered:",
+    "questionVi": "Một người kiểm thử sử dụng bảng tính để ghi kết quả kiểm thử và theo dõi khiếm khuyết. Theo giáo trình, bảng tính được coi là:",
+    "options": [
+      {
+        "en": "Not a test tool",
+        "vi": "Không phải công cụ kiểm thử"
+      },
+      {
+        "en": "A test tool in the context of testing",
+        "vi": "Một công cụ kiểm thử trong bối cảnh kiểm thử"
+      },
+      {
+        "en": "Only a reporting tool",
+        "vi": "Chỉ là công cụ báo cáo"
+      },
+      {
+        "en": "An invalid test tool",
+        "vi": "Một công cụ kiểm thử không hợp lệ"
+      }
+    ],
+    "correctEn": "A test tool in the context of testing",
+    "correctVi": "Một công cụ kiểm thử trong bối cảnh kiểm thử",
+    "explanation": "Section 6.1: 'Any other tool that assists in testing (e.g., a spreadsheet is a test tool in the context of testing).'"
+  },
+  {
+    "questionEn": "Which of the following is a valid reason to choose manual testing over automated testing?",
+    "questionVi": "Lý do hợp lệ nào sau đây để chọn kiểm thử thủ công thay vì tự động hóa?",
+    "options": [
+      {
+        "en": "The test needs to be executed hundreds of times",
+        "vi": "Kiểm thử cần được thực thi hàng trăm lần"
+      },
+      {
+        "en": "The test is exploratory and requires human intuition and adaptability",
+        "vi": "Kiểm thử mang tính thăm dò và cần trực giác cùng khả năng thích ứng của con người"
+      },
+      {
+        "en": "The test requires precise measurements of response time",
+        "vi": "Kiểm thử yêu cầu đo lường chính xác thời gian phản hồi"
+      },
+      {
+        "en": "The test is a regression test that rarely changes",
+        "vi": "Kiểm thử là kiểm thử hồi quy hiếm khi thay đổi"
+      }
+    ],
+    "correctEn": "The test is exploratory and requires human intuition and adaptability",
+    "correctVi": "Kiểm thử mang tính thăm dò và cần trực giác cùng khả năng thích ứng của con người",
+    "explanation": "Section 6.2 risk: 'Using a test tool when manual testing is more appropriate.' Exploratory testing is often more effective manually. Also section 4.4.2 describes exploratory testing as a manual technique."
+  },
+  {
+    "questionEn": "What is a key consideration when introducing a test automation tool into an organization?",
+    "questionVi": "Điều cần cân nhắc chính khi đưa công cụ tự động hóa kiểm thử vào tổ chức là gì?",
+    "options": [
+      {
+        "en": "The tool will immediately save money without any effort",
+        "vi": "Công cụ sẽ ngay lập tức tiết kiệm tiền mà không cần nỗ lực"
+      },
+      {
+        "en": "The existing manual test process may need to be changed to accommodate automation",
+        "vi": "Quy trình kiểm thử thủ công hiện tại có thể cần thay đổi để phù hợp với tự động hóa"
+      },
+      {
+        "en": "Testers no longer need to understand test design",
+        "vi": "Người kiểm thử không cần hiểu thiết kế kiểm thử nữa"
+      },
+      {
+        "en": "Automation eliminates the need for test metrics",
+        "vi": "Tự động hóa loại bỏ nhu cầu về chỉ số kiểm thử"
+      }
+    ],
+    "correctEn": "The existing manual test process may need to be changed to accommodate automation",
+    "correctVi": "Quy trình kiểm thử thủ công hiện tại có thể cần thay đổi để phù hợp với tự động hóa",
+    "explanation": "Section 6.2 risk: 'Inaccurate estimations of time, costs, effort required to introduce a tool, maintain test scripts and change the existing manual test process.'"
+  },
+  {
+    "questionEn": "In a DevOps pipeline, automated tests are typically triggered by:",
+    "questionVi": "Trong pipeline DevOps, kiểm thử tự động thường được kích hoạt bởi:",
+    "options": [
+      {
+        "en": "Manual request from the test manager",
+        "vi": "Yêu cầu thủ công từ quản lý kiểm thử"
+      },
+      {
+        "en": "Every code commit or at scheduled intervals",
+        "vi": "Mỗi lần commit mã hoặc theo lịch trình định kỳ"
+      },
+      {
+        "en": "Only at the end of the project",
+        "vi": "Chỉ khi kết thúc dự án"
+      },
+      {
+        "en": "When a defect is found in production",
+        "vi": "Khi phát hiện khiếm khuyết trên môi trường production"
+      }
+    ],
+    "correctEn": "Every code commit or at scheduled intervals",
+    "correctVi": "Mỗi lần commit mã hoặc theo lịch trình định kỳ",
+    "explanation": "Section 2.1.4 describes continuous integration (CI) where automated builds and tests are triggered frequently, often on each commit, to provide fast feedback."
+  },
+  {
+    "questionEn": "Which of the following is a benefit of using containers (e.g., Docker) in testing?",
+    "questionVi": "Lợi ích nào sau đây của việc sử dụng container (ví dụ Docker) trong kiểm thử?",
+    "options": [
+      {
+        "en": "Eliminates the need for test automation",
+        "vi": "Loại bỏ nhu cầu tự động hóa kiểm thử"
+      },
+      {
+        "en": "Provides consistent and reproducible test environments across different stages",
+        "vi": "Cung cấp môi trường kiểm thử nhất quán và tái lập qua các giai đoạn khác nhau"
+      },
+      {
+        "en": "Replaces all manual testing",
+        "vi": "Thay thế mọi kiểm thử thủ công"
+      },
+      {
+        "en": "Guarantees zero defects",
+        "vi": "Đảm bảo không có khiếm khuyết"
+      }
+    ],
+    "correctEn": "Provides consistent and reproducible test environments across different stages",
+    "correctVi": "Cung cấp môi trường kiểm thử nhất quán và tái lập qua các giai đoạn khác nhau",
+    "explanation": "Section 6.1 mentions tools supporting scalability and deployment standardization (e.g., containerization tools) which help create consistent environments."
+  },
+  {
+    "questionEn": "A risk associated with test automation is that automated tests may:",
+    "questionVi": "Rủi ro liên quan đến tự động hóa kiểm thử là kiểm thử tự động có thể:",
+    "options": [
+      {
+        "en": "Always detect all defects",
+        "vi": "Luôn phát hiện mọi khiếm khuyết"
+      },
+      {
+        "en": "Provide faster feedback than manual testing",
+        "vi": "Cung cấp phản hồi nhanh hơn kiểm thử thủ công"
+      },
+      {
+        "en": "Become less effective over time if not maintained",
+        "vi": "Trở nên kém hiệu quả theo thời gian nếu không được bảo trì"
+      },
+      {
+        "en": "Eliminate the need for regression testing",
+        "vi": "Loại bỏ nhu cầu kiểm thử hồi quy"
+      }
+    ],
+    "correctEn": "Become less effective over time if not maintained",
+    "correctVi": "Trở nên kém hiệu quả theo thời gian nếu không được bảo trì",
+    "explanation": "Combination of testing principle 5 (tests wear out) and the need for maintenance of automated tests. Unmaintained automated tests can become brittle or miss new defects."
+  },
+  {
+    "questionEn": "Which tool would be most helpful for tracking the status of thousands of test cases across multiple releases?",
+    "questionVi": "Công cụ nào hữu ích nhất để theo dõi trạng thái của hàng nghìn ca kiểm thử qua nhiều phiên bản?",
+    "options": [
+      {
+        "en": "Static analysis tool",
+        "vi": "Công cụ phân tích tĩnh"
+      },
+      {
+        "en": "Test management tool",
+        "vi": "Công cụ quản lý kiểm thử"
+      },
+      {
+        "en": "Unit test framework",
+        "vi": "Khung kiểm thử đơn vị"
+      },
+      {
+        "en": "Collaboration tool",
+        "vi": "Công cụ cộng tác"
+      }
+    ],
+    "correctEn": "Test management tool",
+    "correctVi": "Công cụ quản lý kiểm thử",
+    "explanation": "Test management tools are designed to handle large numbers of test cases, traceability, and reporting across releases."
+  },
+  {
+    "questionEn": "According to the syllabus, what is a risk of using open-source test tools?",
+    "questionVi": "Theo giáo trình, rủi ro của việc sử dụng công cụ kiểm thử mã nguồn mở là gì?",
+    "options": [
+      {
+        "en": "They always require a commercial license",
+        "vi": "Chúng luôn yêu cầu giấy phép thương mại"
+      },
+      {
+        "en": "They cannot be used for performance testing",
+        "vi": "Chúng không thể dùng cho kiểm thử hiệu năng"
+      },
+      {
+        "en": "They may be abandoned, with no further updates",
+        "vi": "Chúng có thể bị bỏ rơi, không có bản cập nhật tiếp theo"
+      },
+      {
+        "en": "They guarantee 100% security",
+        "vi": "Chúng đảm bảo bảo mật 100%"
+      }
+    ],
+    "correctEn": "They may be abandoned, with no further updates",
+    "correctVi": "Chúng có thể bị bỏ rơi, không có bản cập nhật tiếp theo",
+    "explanation": "Section 6.2: 'Using an open-source software which may be abandoned, meaning that no further updates are available.'"
+  },
+  {
+    "questionEn": "A key benefit of test automation that supports shift-left is:",
+    "questionVi": "Lợi ích chính của tự động hóa kiểm thử hỗ trợ shift-left là:",
+    "options": [
+      {
+        "en": "Delaying testing until after release",
+        "vi": "Trì hoãn kiểm thử cho đến sau khi phát hành"
+      },
+      {
+        "en": "Early and frequent defect detection through fast feedback",
+        "vi": "Phát hiện khiếm khuyết sớm và thường xuyên thông qua phản hồi nhanh"
+      },
+      {
+        "en": "Replacing all manual test design",
+        "vi": "Thay thế mọi thiết kế kiểm thử thủ công"
+      },
+      {
+        "en": "Eliminating the need for static testing",
+        "vi": "Loại bỏ nhu cầu kiểm thử tĩnh"
+      }
+    ],
+    "correctEn": "Early and frequent defect detection through fast feedback",
+    "correctVi": "Phát hiện khiếm khuyết sớm và thường xuyên thông qua phản hồi nhanh",
+    "explanation": "Shift-left involves testing earlier. Automation enables fast feedback as part of CI, helping detect defects early (section 2.1.5 and 2.1.4)."
+  },
+  {
+    "questionEn": "Which of the following is an example of a static testing tool?",
+    "questionVi": "Ví dụ nào sau đây là công cụ kiểm thử tĩnh?",
+    "options": [
+      {
+        "en": "Selenium WebDriver",
+        "vi": "Selenium WebDriver"
+      },
+      {
+        "en": "JMeter",
+        "vi": "JMeter"
+      },
+      {
+        "en": "SonarQube (for code quality and static analysis)",
+        "vi": "SonarQube (dùng cho chất lượng mã và phân tích tĩnh)"
+      },
+      {
+        "en": "JIRA",
+        "vi": "JIRA"
+      }
+    ],
+    "correctEn": "SonarQube (for code quality and static analysis)",
+    "correctVi": "SonarQube (dùng cho chất lượng mã và phân tích tĩnh)",
+    "explanation": "Section 6.1: Static testing tools support static analysis. SonarQube is a popular static analysis tool. Selenium is for execution, JMeter for performance, JIRA for management."
+  },
+  {
+    "questionEn": "A team has unstable test automation that often fails due to minor UI changes. This indicates lack of:",
+    "questionVi": "Một nhóm có tự động hóa kiểm thử không ổn định, thường thất bại do thay đổi giao diện nhỏ. Điều này cho thấy thiếu:",
+    "options": [
+      {
+        "en": "Test automation",
+        "vi": "Tự động hóa kiểm thử"
+      },
+      {
+        "en": "Robust test design and maintainable selectors",
+        "vi": "Thiết kế kiểm thử mạnh mẽ và bộ chọn có thể bảo trì"
+      },
+      {
+        "en": "Manual testing",
+        "vi": "Kiểm thử thủ công"
+      },
+      {
+        "en": "Defect tracking",
+        "vi": "Theo dõi khiếm khuyết"
+      }
+    ],
+    "correctEn": "Robust test design and maintainable selectors",
+    "correctVi": "Thiết kế kiểm thử mạnh mẽ và bộ chọn có thể bảo trì",
+    "explanation": "The syllabus risk section implies that automation requires effort to maintain. Brittle automation often results from poor design and lack of maintainability."
+  },
+  {
+    "questionEn": "What is a typical challenge when introducing test automation into an organization?",
+    "questionVi": "Thách thức điển hình khi đưa tự động hóa kiểm thử vào tổ chức là gì?",
+    "options": [
+      {
+        "en": "Testers will have less work to do",
+        "vi": "Người kiểm thử sẽ có ít việc hơn"
+      },
+      {
+        "en": "Developing and maintaining test scripts requires additional skill and effort",
+        "vi": "Phát triển và bảo trì kịch bản kiểm thử đòi hỏi thêm kỹ năng và nỗ lực"
+      },
+      {
+        "en": "Automation always fails",
+        "vi": "Tự động hóa luôn thất bại"
+      },
+      {
+        "en": "Test automation removes the need for test planning",
+        "vi": "Tự động hóa kiểm thử loại bỏ nhu cầu lập kế hoạch kiểm thử"
+      }
+    ],
+    "correctEn": "Developing and maintaining test scripts requires additional skill and effort",
+    "correctVi": "Phát triển và bảo trì kịch bản kiểm thử đòi hỏi thêm kỹ năng và nỗ lực",
+    "explanation": "Section 6.2 risk: 'Inaccurate estimations of time, costs, effort required to introduce a tool, maintain test scripts.'"
+  },
+  {
+    "questionEn": "According to the syllabus, test execution tools can also be used to:",
+    "questionVi": "Theo giáo trình, công cụ thực thi kiểm thử cũng có thể được dùng để:",
+    "options": [
+      {
+        "en": "Write requirements",
+        "vi": "Viết yêu cầu"
+      },
+      {
+        "en": "Capture and replay user actions, and compare results",
+        "vi": "Ghi và phát lại thao tác người dùng, và so sánh kết quả"
+      },
+      {
+        "en": "Replace all test design",
+        "vi": "Thay thế mọi thiết kế kiểm thử"
+      },
+      {
+        "en": "Manage project budgets",
+        "vi": "Quản lý ngân sách dự án"
+      }
+    ],
+    "correctEn": "Capture and replay user actions, and compare results",
+    "correctVi": "Ghi và phát lại thao tác người dùng, và so sánh kết quả",
+    "explanation": "Test execution tools typically include capture/replay capabilities to automate user interactions and verify expected results."
+  },
+  {
+    "questionEn": "When should a team consider using a test design tool (e.g., model-based testing tool)?",
+    "questionVi": "Khi nào nhóm nên cân nhắc sử dụng công cụ thiết kế kiểm thử (ví dụ: công cụ kiểm thử dựa trên mô hình)?",
+    "options": [
+      {
+        "en": "When there are no requirements",
+        "vi": "Khi không có yêu cầu"
+      },
+      {
+        "en": "To automatically generate test cases from models and reduce manual effort",
+        "vi": "Để tự động sinh ca kiểm thử từ mô hình và giảm nỗ lực thủ công"
+      },
+      {
+        "en": "To execute tests",
+        "vi": "Để thực thi kiểm thử"
+      },
+      {
+        "en": "To replace defect management",
+        "vi": "Để thay thế quản lý khiếm khuyết"
+      }
+    ],
+    "correctEn": "To automatically generate test cases from models and reduce manual effort",
+    "correctVi": "Để tự động sinh ca kiểm thử từ mô hình và giảm nỗ lực thủ công",
+    "explanation": "Section 6.1: Test design and test implementation tools facilitate generation of test cases. Model-based testing is an example."
+  },
+  {
+    "questionEn": "Which of the following is a benefit of test automation related to reporting?",
+    "questionVi": "Lợi ích nào sau đây của tự động hóa kiểm thử liên quan đến báo cáo?",
+    "options": [
+      {
+        "en": "Automated generation of graphs and metrics about test progress",
+        "vi": "Tạo biểu đồ và chỉ số tự động về tiến độ kiểm thử"
+      },
+      {
+        "en": "Elimination of all test documentation",
+        "vi": "Loại bỏ mọi tài liệu kiểm thử"
+      },
+      {
+        "en": "Manual creation of status reports",
+        "vi": "Tạo báo cáo trạng thái thủ công"
+      },
+      {
+        "en": "Reducing team communication",
+        "vi": "Giảm giao tiếp nhóm"
+      }
+    ],
+    "correctEn": "Automated generation of graphs and metrics about test progress",
+    "correctVi": "Tạo biểu đồ và chỉ số tự động về tiến độ kiểm thử",
+    "explanation": "Section 6.2 benefit: 'Easier access to information about testing to support test management and test reporting (e.g., statistics, graphs, and aggregated data).'"
+  },
+  {
+    "questionEn": "A team uses a tool to run the same set of 500 regression tests after each build. This is an example of using:",
+    "questionVi": "Một nhóm sử dụng công cụ để chạy cùng bộ 500 kiểm thử hồi quy sau mỗi lần build. Đây là ví dụ về sử dụng:",
+    "options": [
+      {
+        "en": "Manual testing",
+        "vi": "Kiểm thử thủ công"
+      },
+      {
+        "en": "Test execution automation",
+        "vi": "Tự động hóa thực thi kiểm thử"
+      },
+      {
+        "en": "Static analysis",
+        "vi": "Phân tích tĩnh"
+      },
+      {
+        "en": "Exploratory testing",
+        "vi": "Kiểm thử thăm dò"
+      }
+    ],
+    "correctEn": "Test execution automation",
+    "correctVi": "Tự động hóa thực thi kiểm thử",
+    "explanation": "Running tests repeatedly and automatically is the purpose of test execution tools, as per section 6.1."
+  },
+  {
+    "questionEn": "What is a potential risk of using a test tool that does not comply with regulatory standards?",
+    "questionVi": "Rủi ro tiềm ẩn khi sử dụng công cụ kiểm thử không tuân thủ chuẩn quy định là gì?",
+    "options": [
+      {
+        "en": "Faster test execution",
+        "vi": "Thực thi kiểm thử nhanh hơn"
+      },
+      {
+        "en": "Improved test coverage",
+        "vi": "Độ bao phủ kiểm thử được cải thiện"
+      },
+      {
+        "en": "Choosing an unsuitable tool that did not comply with the regulatory requirements and/or safety standards",
+        "vi": "Chọn công cụ không phù hợp, không tuân thủ yêu cầu quy định và/hoặc chuẩn an toàn"
+      },
+      {
+        "en": "Better defect detection",
+        "vi": "Phát hiện khiếm khuyết tốt hơn"
+      }
+    ],
+    "correctEn": "Choosing an unsuitable tool that did not comply with the regulatory requirements and/or safety standards",
+    "correctVi": "Chọn công cụ không phù hợp, không tuân thủ yêu cầu quy định và/hoặc chuẩn an toàn",
+    "explanation": "Section 6.2 lists as a risk: 'Choosing an unsuitable tool that did not comply with the regulatory requirements and/or safety standards.'"
+  },
+  {
+    "questionEn": "In the context of test automation, what does 'test wear out' mean?",
+    "questionVi": "Trong bối cảnh tự động hóa kiểm thử, 'kiểm thử bị mài mòn' có nghĩa là gì?",
+    "options": [
+      {
+        "en": "Test scripts physically degrade over time",
+        "vi": "Kịch bản kiểm thử bị suy giảm vật lý theo thời gian"
+      },
+      {
+        "en": "Repeated execution of the same tests becomes less effective at finding new defects",
+        "vi": "Thực thi lặp đi lặp lại các kiểm thử giống nhau trở nên kém hiệu quả trong việc tìm khiếm khuyết mới"
+      },
+      {
+        "en": "Tests become obsolete after one execution",
+        "vi": "Kiểm thử trở nên lỗi thời sau một lần thực thi"
+      },
+      {
+        "en": "Test automation eliminates the need for test design",
+        "vi": "Tự động hóa kiểm thử loại bỏ nhu cầu thiết kế kiểm thử"
+      }
+    ],
+    "correctEn": "Repeated execution of the same tests becomes less effective at finding new defects",
+    "correctVi": "Thực thi lặp đi lặp lại các kiểm thử giống nhau trở nên kém hiệu quả trong việc tìm khiếm khuyết mới",
+    "explanation": "This is testing principle 5 (section 1.3) which applies to both manual and automated tests. It emphasizes the need to update tests."
+  },
+  {
+    "questionEn": "A project wants to implement continuous testing. Which tool category is essential?",
+    "questionVi": "Một dự án muốn triển khai kiểm thử liên tục. Loại công cụ nào là cần thiết?",
+    "options": [
+      {
+        "en": "Spreadsheet",
+        "vi": "Bảng tính"
+      },
+      {
+        "en": "DevOps tools supporting CI/CD pipeline and test automation",
+        "vi": "Công cụ DevOps hỗ trợ pipeline CI/CD và tự động hóa kiểm thử"
+      },
+      {
+        "en": "Only test management tools",
+        "vi": "Chỉ công cụ quản lý kiểm thử"
+      },
+      {
+        "en": "Static analysis tools only",
+        "vi": "Chỉ công cụ phân tích tĩnh"
+      }
+    ],
+    "correctEn": "DevOps tools supporting CI/CD pipeline and test automation",
+    "correctVi": "Công cụ DevOps hỗ trợ pipeline CI/CD và tự động hóa kiểm thử",
+    "explanation": "Continuous testing requires automated test execution integrated into the CI/CD pipeline, which is supported by DevOps tools (section 2.1.4 and 6.1)."
+  },
+  {
+    "questionEn": "Which of the following is NOT a risk of test automation according to the syllabus?",
+    "questionVi": "Điều nào sau đây KHÔNG phải là rủi ro của tự động hóa kiểm thử theo giáo trình?",
+    "options": [
+      {
+        "en": "Unrealistic expectations about the benefits of a tool",
+        "vi": "Kỳ vọng không thực tế về lợi ích của công cụ"
+      },
+      {
+        "en": "Inaccurate estimations of time, costs, effort required to introduce a tool",
+        "vi": "Ước lượng không chính xác về thời gian, chi phí, nỗ lực cần để đưa công cụ vào"
+      },
+      {
+        "en": "The tool vendor may go out of business",
+        "vi": "Nhà cung cấp công cụ có thể ngừng kinh doanh"
+      },
+      {
+        "en": "Test automation guarantees 100% defect removal",
+        "vi": "Tự động hóa kiểm thử đảm bảo loại bỏ 100% khiếm khuyết"
+      }
+    ],
+    "correctEn": "Test automation guarantees 100% defect removal",
+    "correctVi": "Tự động hóa kiểm thử đảm bảo loại bỏ 100% khiếm khuyết",
+    "explanation": "The syllabus does not claim automation guarantees 100% defect removal; that is a misconception. The other options are listed as risks in section 6.2."
+  },
+  {
+    "questionEn": "A test tool that integrates with defect tracking and requirements management is typically a:",
+    "questionVi": "Một công cụ kiểm thử tích hợp với theo dõi khiếm khuyết và quản lý yêu cầu thường là:",
+    "options": [
+      {
+        "en": "Test execution tool",
+        "vi": "Công cụ thực thi kiểm thử"
+      },
+      {
+        "en": "Test management tool",
+        "vi": "Công cụ quản lý kiểm thử"
+      },
+      {
+        "en": "Static analysis tool",
+        "vi": "Công cụ phân tích tĩnh"
+      },
+      {
+        "en": "Non-functional testing tool",
+        "vi": "Công cụ kiểm thử phi chức năng"
+      }
+    ],
+    "correctEn": "Test management tool",
+    "correctVi": "Công cụ quản lý kiểm thử",
+    "explanation": "Section 6.1: Test management tools facilitate management of SDLC, requirements, tests, defects, configuration – often integrating these areas."
+  },
+  {
+    "questionEn": "What is a common reason why test automation fails to provide expected ROI?",
+    "questionVi": "Lý do phổ biến khiến tự động hóa kiểm thử không mang lại ROI như kỳ vọng là gì?",
+    "options": [
+      {
+        "en": "Test scripts are not maintained and become brittle",
+        "vi": "Kịch bản kiểm thử không được bảo trì và trở nên mong manh"
+      },
+      {
+        "en": "Automation always works perfectly",
+        "vi": "Tự động hóa luôn hoạt động hoàn hảo"
+      },
+      {
+        "en": "Manual testing is always cheaper",
+        "vi": "Kiểm thử thủ công luôn rẻ hơn"
+      },
+      {
+        "en": "Tools are easy to use without training",
+        "vi": "Công cụ dễ sử dụng mà không cần đào tạo"
+      }
+    ],
+    "correctEn": "Test scripts are not maintained and become brittle",
+    "correctVi": "Kịch bản kiểm thử không được bảo trì và trở nên mong manh",
+    "explanation": "Lack of maintenance leads to high cost of fixing tests, reducing ROI. This aligns with the risk of inaccurate effort estimation and need for ongoing maintenance."
+  },
+  {
+    "questionEn": "Which statement about test automation in Agile projects is correct?",
+    "questionVi": "Phát biểu nào về tự động hóa kiểm thử trong dự án Agile là đúng?",
+    "options": [
+      {
+        "en": "Agile projects cannot benefit from test automation",
+        "vi": "Dự án Agile không thể hưởng lợi từ tự động hóa kiểm thử"
+      },
+      {
+        "en": "Test automation is critical for regression testing due to frequent changes",
+        "vi": "Tự động hóa kiểm thử rất quan trọng cho kiểm thử hồi quy do thay đổi thường xuyên"
+      },
+      {
+        "en": "Agile projects only use manual testing",
+        "vi": "Dự án Agile chỉ dùng kiểm thử thủ công"
+      },
+      {
+        "en": "Automation replaces the need for unit testing",
+        "vi": "Tự động hóa thay thế nhu cầu kiểm thử đơn vị"
+      }
+    ],
+    "correctEn": "Test automation is critical for regression testing due to frequent changes",
+    "correctVi": "Tự động hóa kiểm thử rất quan trọng cho kiểm thử hồi quy do thay đổi thường xuyên",
+    "explanation": "Section 2.1.1 mentions that frequent delivery requires extensive regression testing, and automation is favored in Agile. Also section 2.2.3 notes regression test suites are strong candidates for automation."
+  },
+  {
+    "questionEn": "What is a key difference between a test execution tool and a test management tool?",
+    "questionVi": "Điểm khác biệt chính giữa công cụ thực thi kiểm thử và công cụ quản lý kiểm thử là gì?",
+    "options": [
+      {
+        "en": "Test execution tools run tests; test management tools organize and track test artifacts",
+        "vi": "Công cụ thực thi kiểm thử chạy kiểm thử; công cụ quản lý kiểm thử tổ chức và theo dõi các tạo phẩm kiểm thử"
+      },
+      {
+        "en": "Test management tools execute tests; test execution tools manage requirements",
+        "vi": "Công cụ quản lý kiểm thử thực thi kiểm thử; công cụ thực thi kiểm thử quản lý yêu cầu"
+      },
+      {
+        "en": "They are the same",
+        "vi": "Chúng giống nhau"
+      },
+      {
+        "en": "Test execution tools are only for performance testing",
+        "vi": "Công cụ thực thi kiểm thử chỉ dành cho kiểm thử hiệu năng"
+      }
+    ],
+    "correctEn": "Test execution tools run tests; test management tools organize and track test artifacts",
+    "correctVi": "Công cụ thực thi kiểm thử chạy kiểm thử; công cụ quản lý kiểm thử tổ chức và theo dõi các tạo phẩm kiểm thử",
+    "explanation": "Based on section 6.1 classification: test management tools manage; test execution tools execute."
+  },
+  {
+    "questionEn": "Which of the following is a typical example of a non-functional testing tool?",
+    "questionVi": "Ví dụ điển hình nào sau đây là công cụ kiểm thử phi chức năng?",
+    "options": [
+      {
+        "en": "JUnit (unit testing framework)",
+        "vi": "JUnit (khung kiểm thử đơn vị)"
+      },
+      {
+        "en": "Selenium (web automation)",
+        "vi": "Selenium (tự động hóa web)"
+      },
+      {
+        "en": "JMeter (performance/load testing)",
+        "vi": "JMeter (kiểm thử hiệu năng/tải)"
+      },
+      {
+        "en": "JIRA (issue tracking)",
+        "vi": "JIRA (theo dõi vấn đề)"
+      }
+    ],
+    "correctEn": "JMeter (performance/load testing)",
+    "correctVi": "JMeter (kiểm thử hiệu năng/tải)",
+    "explanation": "Section 6.1: Non-functional testing tools. JMeter is widely used for performance testing. JUnit and Selenium are functional/execution tools, JIRA is management."
+  },
+  {
+    "questionEn": "A test automation tool that allows testers to define test cases in a table with inputs and expected outputs is using which approach?",
+    "questionVi": "Một công cụ tự động hóa kiểm thử cho phép người kiểm thử định nghĩa ca kiểm thử trong bảng với đầu vào và đầu ra kỳ vọng đang sử dụng cách tiếp cận nào?",
+    "options": [
+      {
+        "en": "Data-driven testing",
+        "vi": "Kiểm thử điều khiển bởi dữ liệu"
+      },
+      {
+        "en": "Keyword-driven testing",
+        "vi": "Kiểm thử điều khiển bởi từ khóa"
+      },
+      {
+        "en": "Capture-replay",
+        "vi": "Ghi-phát lại"
+      },
+      {
+        "en": "Exploratory testing",
+        "vi": "Kiểm thử thăm dò"
+      }
+    ],
+    "correctEn": "Data-driven testing",
+    "correctVi": "Kiểm thử điều khiển bởi dữ liệu",
+    "explanation": "Data-driven testing separates test logic from test data, often using tables. Although not explicitly defined in v4.0, it is a common automation pattern."
+  },
+  {
+    "questionEn": "According to the syllabus, which tool is used to support the DevOps delivery pipeline?",
+    "questionVi": "Theo giáo trình, công cụ nào được sử dụng để hỗ trợ pipeline giao hàng DevOps?",
+    "options": [
+      {
+        "en": "Spreadsheet",
+        "vi": "Bảng tính"
+      },
+      {
+        "en": "DevOps tools (e.g., Jenkins, GitLab CI)",
+        "vi": "Công cụ DevOps (ví dụ Jenkins, GitLab CI)"
+      },
+      {
+        "en": "Defect tracking tool only",
+        "vi": "Chỉ công cụ theo dõi khiếm khuyết"
+      },
+      {
+        "en": "Test design tool",
+        "vi": "Công cụ thiết kế kiểm thử"
+      }
+    ],
+    "correctEn": "DevOps tools (e.g., Jenkins, GitLab CI)",
+    "correctVi": "Công cụ DevOps (ví dụ Jenkins, GitLab CI)",
+    "explanation": "Section 6.1: 'DevOps tools – support the DevOps delivery pipeline, workflow tracking, automated build process(es), CI/CD.'"
+  },
+  {
+    "questionEn": "What is a potential consequence of unrealistic expectations about test automation?",
+    "questionVi": "Hậu quả tiềm ẩn của kỳ vọng không thực tế về tự động hóa kiểm thử là gì?",
+    "options": [
+      {
+        "en": "The team may abandon automation prematurely when it doesn't meet impossible goals",
+        "vi": "Nhóm có thể từ bỏ tự động hóa sớm khi nó không đáp ứng các mục tiêu bất khả thi"
+      },
+      {
+        "en": "The tool will work perfectly from day one",
+        "vi": "Công cụ sẽ hoạt động hoàn hảo ngay từ ngày đầu"
+      },
+      {
+        "en": "Defect detection increases automatically",
+        "vi": "Phát hiện khiếm khuyết tăng tự động"
+      },
+      {
+        "en": "Test maintenance becomes zero",
+        "vi": "Bảo trì kiểm thử bằng không"
+      }
+    ],
+    "correctEn": "The team may abandon automation prematurely when it doesn't meet impossible goals",
+    "correctVi": "Nhóm có thể từ bỏ tự động hóa sớm khi nó không đáp ứng các mục tiêu bất khả thi",
+    "explanation": "Unrealistic expectations (section 6.2 risk) can lead to disappointment and project failure, including premature abandonment of automation efforts."
+  },
+  {
+    "questionEn": "Which of the following is a benefit of using virtual machines or containers in testing?",
+    "questionVi": "Lợi ích nào sau đây của việc sử dụng máy ảo hoặc container trong kiểm thử?",
+    "options": [
+      {
+        "en": "They eliminate the need for test automation",
+        "vi": "Chúng loại bỏ nhu cầu tự động hóa kiểm thử"
+      },
+      {
+        "en": "They allow consistent and isolated test environments, reducing configuration issues",
+        "vi": "Chúng cho phép môi trường kiểm thử nhất quán và cách ly, giảm vấn đề cấu hình"
+      },
+      {
+        "en": "They only work for performance testing",
+        "vi": "Chúng chỉ hoạt động cho kiểm thử hiệu năng"
+      },
+      {
+        "en": "They replace the need for test cases",
+        "vi": "Chúng thay thế nhu cầu về ca kiểm thử"
+      }
+    ],
+    "correctEn": "They allow consistent and isolated test environments, reducing configuration issues",
+    "correctVi": "Chúng cho phép môi trường kiểm thử nhất quán và cách ly, giảm vấn đề cấu hình",
+    "explanation": "Section 6.1: Tools supporting scalability and deployment standardization (e.g., virtual machines, containerization) help create reproducible environments."
+  },
+  {
+    "questionEn": "A tester uses a tool to automatically generate test data for boundary value analysis. This tool belongs to which category?",
+    "questionVi": "Một người kiểm thử sử dụng công cụ để tự động sinh dữ liệu kiểm thử cho phân tích giá trị biên. Công cụ này thuộc loại nào?",
+    "options": [
+      {
+        "en": "Test execution tool",
+        "vi": "Công cụ thực thi kiểm thử"
+      },
+      {
+        "en": "Test design and test implementation tool",
+        "vi": "Công cụ thiết kế và triển khai kiểm thử"
+      },
+      {
+        "en": "Static analysis tool",
+        "vi": "Công cụ phân tích tĩnh"
+      },
+      {
+        "en": "Test management tool",
+        "vi": "Công cụ quản lý kiểm thử"
+      }
+    ],
+    "correctEn": "Test design and test implementation tool",
+    "correctVi": "Công cụ thiết kế và triển khai kiểm thử",
+    "explanation": "Section 6.1: Test design and test implementation tools facilitate generation of test cases, test data and test procedures."
+  },
+  {
+    "questionEn": "Which of the following is a valid benefit of test automation that directly supports risk-based testing?",
+    "questionVi": "Lợi ích hợp lệ nào sau đây của tự động hóa kiểm thử hỗ trợ trực tiếp kiểm thử dựa trên rủi ro?",
+    "options": [
+      {
+        "en": "Automation allows quick execution of high-risk test cases first",
+        "vi": "Tự động hóa cho phép thực thi nhanh các ca kiểm thử rủi ro cao trước"
+      },
+      {
+        "en": "Automation eliminates the need for risk analysis",
+        "vi": "Tự động hóa loại bỏ nhu cầu phân tích rủi ro"
+      },
+      {
+        "en": "Automation guarantees that all risks are covered",
+        "vi": "Tự động hóa đảm bảo mọi rủi ro được bao phủ"
+      },
+      {
+        "en": "Automation makes risk assessment obsolete",
+        "vi": "Tự động hóa làm cho đánh giá rủi ro trở nên lỗi thời"
+      }
+    ],
+    "correctEn": "Automation allows quick execution of high-risk test cases first",
+    "correctVi": "Tự động hóa cho phép thực thi nhanh các ca kiểm thử rủi ro cao trước",
+    "explanation": "Fast feedback and execution speed (benefits section 6.2) enable prioritized execution, which aligns with risk-based testing (section 5.2)."
+  },
+  {
+    "questionEn": "According to the syllabus, what is a benefit of test automation regarding consistency?",
+    "questionVi": "Theo giáo trình, lợi ích của tự động hóa kiểm thử liên quan đến tính nhất quán là gì?",
+    "options": [
+      {
+        "en": "Automated tests are always subjective",
+        "vi": "Kiểm thử tự động luôn mang tính chủ quan"
+      },
+      {
+        "en": "Automated tests produce the same results each time they are run under the same conditions",
+        "vi": "Kiểm thử tự động tạo ra kết quả giống nhau mỗi lần chạy trong cùng điều kiện"
+      },
+      {
+        "en": "Automated tests eliminate the need for expected results",
+        "vi": "Kiểm thử tự động loại bỏ nhu cầu về kết quả kỳ vọng"
+      },
+      {
+        "en": "Automated tests change results randomly",
+        "vi": "Kiểm thử tự động thay đổi kết quả ngẫu nhiên"
+      }
+    ],
+    "correctEn": "Automated tests produce the same results each time they are run under the same conditions",
+    "correctVi": "Kiểm thử tự động tạo ra kết quả giống nhau mỗi lần chạy trong cùng điều kiện",
+    "explanation": "Section 6.2 benefit: 'Prevention of simple human errors through greater consistency and repeatability.'"
+  },
+  {
+    "questionEn": "A team wants to introduce test automation but has legacy code with poor testability. What should they do first?",
+    "questionVi": "Một nhóm muốn đưa tự động hóa kiểm thử nhưng có mã kế thừa với khả năng kiểm thử kém. Họ nên làm gì trước?",
+    "options": [
+      {
+        "en": "Automate everything immediately",
+        "vi": "Tự động hóa mọi thứ ngay lập tức"
+      },
+      {
+        "en": "Improve testability through refactoring and adding test hooks, then automate incrementally",
+        "vi": "Cải thiện khả năng kiểm thử thông qua tái cấu trúc và thêm móc kiểm thử, sau đó tự động hóa dần"
+      },
+      {
+        "en": "Abandon automation entirely",
+        "vi": "Từ bỏ hoàn toàn tự động hóa"
+      },
+      {
+        "en": "Only automate UI tests",
+        "vi": "Chỉ tự động hóa kiểm thử giao diện"
+      }
+    ],
+    "correctEn": "Improve testability through refactoring and adding test hooks, then automate incrementally",
+    "correctVi": "Cải thiện khả năng kiểm thử thông qua tái cấu trúc và thêm móc kiểm thử, sau đó tự động hóa dần",
+    "explanation": "The syllabus doesn't explicitly say this, but good practice in automation (implied by risks) requires testable code. Without testability, automation will be difficult and costly."
+  },
+  {
+    "questionEn": "Which of the following is a typical test execution tool?",
+    "questionVi": "Công cụ nào sau đây là công cụ thực thi kiểm thử điển hình?",
+    "options": [
+      {
+        "en": "A tool that runs test scripts and compares actual results to expected results",
+        "vi": "Công cụ chạy kịch bản kiểm thử và so sánh kết quả thực tế với kết quả kỳ vọng"
+      },
+      {
+        "en": "A tool that only manages requirements",
+        "vi": "Công cụ chỉ quản lý yêu cầu"
+      },
+      {
+        "en": "A tool that creates test plans",
+        "vi": "Công cụ tạo kế hoạch kiểm thử"
+      },
+      {
+        "en": "A tool for code review",
+        "vi": "Công cụ đánh giá mã"
+      }
+    ],
+    "correctEn": "A tool that runs test scripts and compares actual results to expected results",
+    "correctVi": "Công cụ chạy kịch bản kiểm thử và so sánh kết quả thực tế với kết quả kỳ vọng",
+    "explanation": "This description matches test execution tools as per section 6.1."
+  },
+  {
+    "questionEn": "According to the syllabus, which of the following is a benefit of test automation?",
+    "questionVi": "Theo giáo trình, điều nào sau đây là lợi ích của tự động hóa kiểm thử?",
+    "options": [
+      {
+        "en": "More time for testers to design new, deeper and more effective tests",
+        "vi": "Nhiều thời gian hơn cho người kiểm thử để thiết kế các kiểm thử mới, sâu hơn và hiệu quả hơn"
+      },
+      {
+        "en": "Elimination of all manual testing",
+        "vi": "Loại bỏ mọi kiểm thử thủ công"
+      },
+      {
+        "en": "Guarantee of 100% test coverage",
+        "vi": "Đảm bảo độ bao phủ kiểm thử 100%"
+      },
+      {
+        "en": "Removal of the need for test planning",
+        "vi": "Loại bỏ nhu cầu lập kế hoạch kiểm thử"
+      }
+    ],
+    "correctEn": "More time for testers to design new, deeper and more effective tests",
+    "correctVi": "Nhiều thời gian hơn cho người kiểm thử để thiết kế các kiểm thử mới, sâu hơn và hiệu quả hơn",
+    "explanation": "Section 6.2: 'More time for testers to design new, deeper and more effective tests.'"
+  },
+  {
+    "questionEn": "What is a common risk of using a test automation tool that is 'not compatible with the development platform'?",
+    "questionVi": "Rủi ro phổ biến khi sử dụng công cụ tự động hóa kiểm thử 'không tương thích với nền tảng phát triển' là gì?",
+    "options": [
+      {
+        "en": "Tests may fail to run or produce unreliable results",
+        "vi": "Kiểm thử có thể không chạy hoặc tạo ra kết quả không đáng tin cậy"
+      },
+      {
+        "en": "The tool will work better",
+        "vi": "Công cụ sẽ hoạt động tốt hơn"
+      },
+      {
+        "en": "Developers will love the tool",
+        "vi": "Nhà phát triển sẽ yêu thích công cụ"
+      },
+      {
+        "en": "Test execution will be faster",
+        "vi": "Thực thi kiểm thử sẽ nhanh hơn"
+      }
+    ],
+    "correctEn": "Tests may fail to run or produce unreliable results",
+    "correctVi": "Kiểm thử có thể không chạy hoặc tạo ra kết quả không đáng tin cậy",
+    "explanation": "Incompatibility leads to technical issues, making automation ineffective or unreliable, as per section 6.2 risk."
+  },
+  {
+    "questionEn": "A team uses a spreadsheet to manually calculate test coverage percentages. According to the syllabus, this spreadsheet is considered:",
+    "questionVi": "Một nhóm sử dụng bảng tính để tính toán thủ công phần trăm độ bao phủ kiểm thử. Theo giáo trình, bảng tính này được coi là:",
+    "options": [
+      {
+        "en": "Not a test tool because it's manual",
+        "vi": "Không phải công cụ kiểm thử vì nó thủ công"
+      },
+      {
+        "en": "A test tool in the context of testing",
+        "vi": "Một công cụ kiểm thử trong bối cảnh kiểm thử"
+      },
+      {
+        "en": "Invalid for testing",
+        "vi": "Không hợp lệ cho kiểm thử"
+      },
+      {
+        "en": "Only for project management",
+        "vi": "Chỉ dùng cho quản lý dự án"
+      }
+    ],
+    "correctEn": "A test tool in the context of testing",
+    "correctVi": "Một công cụ kiểm thử trong bối cảnh kiểm thử",
+    "explanation": "Section 6.1 explicitly states that any tool assisting in testing, including a spreadsheet, is a test tool in that context."
+  },
+  {
+    "questionEn": "Which of the following is a risk associated with test automation that relates to vendor dependency?",
+    "questionVi": "Rủi ro nào sau đây liên quan đến tự động hóa kiểm thử liên quan đến phụ thuộc nhà cung cấp?",
+    "options": [
+      {
+        "en": "The vendor may provide free training",
+        "vi": "Nhà cung cấp có thể cung cấp đào tạo miễn phí"
+      },
+      {
+        "en": "The vendor may retire the tool or go out of business",
+        "vi": "Nhà cung cấp có thể ngừng cung cấp công cụ hoặc ngừng kinh doanh"
+      },
+      {
+        "en": "The vendor will always support the tool forever",
+        "vi": "Nhà cung cấp sẽ luôn hỗ trợ công cụ mãi mãi"
+      },
+      {
+        "en": "Vendor dependency has no risk",
+        "vi": "Phụ thuộc nhà cung cấp không có rủi ro"
+      }
+    ],
+    "correctEn": "The vendor may retire the tool or go out of business",
+    "correctVi": "Nhà cung cấp có thể ngừng cung cấp công cụ hoặc ngừng kinh doanh",
+    "explanation": "Section 6.2 specifies dependency on tool vendor as a risk."
+  },
+  {
+    "questionEn": "In the context of test automation, what does 'test data generation tool' help with?",
+    "questionVi": "Trong bối cảnh tự động hóa kiểm thử, 'công cụ sinh dữ liệu kiểm thử' giúp ích gì?",
+    "options": [
+      {
+        "en": "Creating large volumes of realistic test data",
+        "vi": "Tạo khối lượng lớn dữ liệu kiểm thử thực tế"
+      },
+      {
+        "en": "Executing test scripts",
+        "vi": "Thực thi kịch bản kiểm thử"
+      },
+      {
+        "en": "Managing defects",
+        "vi": "Quản lý khiếm khuyết"
+      },
+      {
+        "en": "Performing static analysis",
+        "vi": "Thực hiện phân tích tĩnh"
+      }
+    ],
+    "correctEn": "Creating large volumes of realistic test data",
+    "correctVi": "Tạo khối lượng lớn dữ liệu kiểm thử thực tế",
+    "explanation": "Test data generation is part of test design and implementation tools (section 6.1), facilitating creation of test data needed for testing."
+  },
+  {
+    "questionEn": "Which statement about the 'absence-of-defects fallacy' in relation to test automation is correct?",
+    "questionVi": "Phát biểu nào về 'ngụy biện không có khiếm khuyết' liên quan đến tự động hóa kiểm thử là đúng?",
+    "options": [
+      {
+        "en": "Automation guarantees that no defects exist if all tests pass",
+        "vi": "Tự động hóa đảm bảo không có khiếm khuyết nếu mọi kiểm thử đều qua"
+      },
+      {
+        "en": "Even with full test automation, the system may still fail to meet user needs",
+        "vi": "Ngay cả với tự động hóa kiểm thử đầy đủ, hệ thống vẫn có thể không đáp ứng nhu cầu người dùng"
+      },
+      {
+        "en": "Automated tests always find all defects",
+        "vi": "Kiểm thử tự động luôn tìm thấy mọi khiếm khuyết"
+      },
+      {
+        "en": "If automated tests pass, the software is bug-free",
+        "vi": "Nếu kiểm thử tự động qua, phần mềm không có lỗi"
+      }
+    ],
+    "correctEn": "Even with full test automation, the system may still fail to meet user needs",
+    "correctVi": "Ngay cả với tự động hóa kiểm thử đầy đủ, hệ thống vẫn có thể không đáp ứng nhu cầu người dùng",
+    "explanation": "Testing principle 7 (section 1.3) states that thorough testing (including automation) does not guarantee success; validation is still needed."
+  },
+  {
+    "questionEn": "A test tool that simulates the behavior of a missing or incomplete component is called a:",
+    "questionVi": "Công cụ kiểm thử mô phỏng hành vi của một thành phần bị thiếu hoặc chưa hoàn chỉnh được gọi là:",
+    "options": [
+      {
+        "en": "Test management tool",
+        "vi": "Công cụ quản lý kiểm thử"
+      },
+      {
+        "en": "Test execution tool",
+        "vi": "Công cụ thực thi kiểm thử"
+      },
+      {
+        "en": "Stub or simulator (part of test environment tools)",
+        "vi": "Stub hoặc bộ mô phỏng (một phần của công cụ môi trường kiểm thử)"
+      },
+      {
+        "en": "Static analysis tool",
+        "vi": "Công cụ phân tích tĩnh"
+      }
+    ],
+    "correctEn": "Stub or simulator (part of test environment tools)",
+    "correctVi": "Stub hoặc bộ mô phỏng (một phần của công cụ môi trường kiểm thử)",
+    "explanation": "Section 1.4.3 mentions stubs, drivers, simulators, and service virtualizations as test environment items. Tools that create these support testing."
+  },
+  {
+    "questionEn": "Which of the following is a key factor when deciding to automate a test?",
+    "questionVi": "Yếu tố chính nào sau đây khi quyết định tự động hóa một kiểm thử?",
+    "options": [
+      {
+        "en": "The test will be run only once",
+        "vi": "Kiểm thử sẽ chỉ chạy một lần"
+      },
+      {
+        "en": "The test needs to be executed frequently and repeatedly",
+        "vi": "Kiểm thử cần được thực thi thường xuyên và lặp đi lặp lại"
+      },
+      {
+        "en": "The test is highly exploratory",
+        "vi": "Kiểm thử mang tính thăm dò cao"
+      },
+      {
+        "en": "The test requires human intuition",
+        "vi": "Kiểm thử đòi hỏi trực giác con người"
+      }
+    ],
+    "correctEn": "The test needs to be executed frequently and repeatedly",
+    "correctVi": "Kiểm thử cần được thực thi thường xuyên và lặp đi lặp lại",
+    "explanation": "Automation is most beneficial for repetitive tasks (regression tests). One-off or exploratory tests are less suitable."
+  },
+  {
+    "questionEn": "According to the syllabus, what is a risk of using test automation that is often underestimated?",
+    "questionVi": "Theo giáo trình, rủi ro của việc sử dụng tự động hóa kiểm thử thường bị đánh giá thấp là gì?",
+    "options": [
+      {
+        "en": "The initial script development time and ongoing maintenance effort",
+        "vi": "Thời gian phát triển kịch bản ban đầu và nỗ lực bảo trì liên tục"
+      },
+      {
+        "en": "The tool license cost",
+        "vi": "Chi phí giấy phép công cụ"
+      },
+      {
+        "en": "The need for manual testing",
+        "vi": "Nhu cầu kiểm thử thủ công"
+      },
+      {
+        "en": "The speed of test execution",
+        "vi": "Tốc độ thực thi kiểm thử"
+      }
+    ],
+    "correctEn": "The initial script development time and ongoing maintenance effort",
+    "correctVi": "Thời gian phát triển kịch bản ban đầu và nỗ lực bảo trì liên tục",
+    "explanation": "Section 6.2 includes 'Inaccurate estimations of time, costs, effort required to introduce a tool, maintain test scripts' as a risk."
+  },
+  {
+    "questionEn": "A team implements a test automation solution that runs 1000 tests in 10 minutes. Previously, manual execution took 2 days. This is an example of which benefit?",
+    "questionVi": "Một nhóm triển khai giải pháp tự động hóa kiểm thử chạy 1000 kiểm thử trong 10 phút. Trước đây, thực thi thủ công mất 2 ngày. Đây là ví dụ về lợi ích nào?",
+    "options": [
+      {
+        "en": "Reduced test execution time",
+        "vi": "Giảm thời gian thực thi kiểm thử"
+      },
+      {
+        "en": "Elimination of all defects",
+        "vi": "Loại bỏ mọi khiếm khuyết"
+      },
+      {
+        "en": "Improved test design",
+        "vi": "Cải thiện thiết kế kiểm thử"
+      },
+      {
+        "en": "Reduced need for test planning",
+        "vi": "Giảm nhu cầu lập kế hoạch kiểm thử"
+      }
+    ],
+    "correctEn": "Reduced test execution time",
+    "correctVi": "Giảm thời gian thực thi kiểm thử",
+    "explanation": "Section 6.2 benefit: 'Reduced test execution times to provide earlier defect detection, faster feedback and faster time to market.'"
+  },
+  {
+    "questionEn": "Which of the following is a typical challenge when using capture-replay tools for GUI automation?",
+    "questionVi": "Thách thức điển hình khi sử dụng công cụ ghi-phát lại để tự động hóa GUI là gì?",
+    "options": [
+      {
+        "en": "Captured scripts are often fragile and break easily when the GUI changes",
+        "vi": "Kịch bản ghi được thường mong manh và dễ hỏng khi GUI thay đổi"
+      },
+      {
+        "en": "They always produce highly maintainable scripts",
+        "vi": "Chúng luôn tạo ra kịch bản dễ bảo trì"
+      },
+      {
+        "en": "They require no maintenance",
+        "vi": "Chúng không cần bảo trì"
+      },
+      {
+        "en": "They work perfectly for all applications",
+        "vi": "Chúng hoạt động hoàn hảo cho mọi ứng dụng"
+      }
+    ],
+    "correctEn": "Captured scripts are often fragile and break easily when the GUI changes",
+    "correctVi": "Kịch bản ghi được thường mong manh và dễ hỏng khi GUI thay đổi",
+    "explanation": "This is a well-known risk of capture-replay tools, leading to high maintenance costs, which aligns with the general risk of maintenance effort (section 6.2)."
+  },
+  {
+    "questionEn": "What is the main purpose of a continuous integration (CI) tool in relation to testing?",
+    "questionVi": "Mục đích chính của công cụ tích hợp liên tục (CI) liên quan đến kiểm thử là gì?",
+    "options": [
+      {
+        "en": "To run tests automatically on every code commit and provide fast feedback",
+        "vi": "Để chạy kiểm thử tự động trên mỗi lần commit mã và cung cấp phản hồi nhanh"
+      },
+      {
+        "en": "To replace all manual testers",
+        "vi": "Để thay thế mọi người kiểm thử thủ công"
+      },
+      {
+        "en": "To write test cases automatically",
+        "vi": "Để viết ca kiểm thử tự động"
+      },
+      {
+        "en": "To eliminate the need for regression testing",
+        "vi": "Để loại bỏ nhu cầu kiểm thử hồi quy"
+      }
+    ],
+    "correctEn": "To run tests automatically on every code commit and provide fast feedback",
+    "correctVi": "Để chạy kiểm thử tự động trên mỗi lần commit mã và cung cấp phản hồi nhanh",
+    "explanation": "CI tools are part of DevOps (section 2.1.4) and enable automated testing and fast feedback."
+  },
+  {
+    "questionEn": "According to the syllabus, what is a risk when replacing manual testing with test automation?",
+    "questionVi": "Theo giáo trình, rủi ro khi thay thế kiểm thử thủ công bằng tự động hóa kiểm thử là gì?",
+    "options": [
+      {
+        "en": "Manual testing is always faster",
+        "vi": "Kiểm thử thủ công luôn nhanh hơn"
+      },
+      {
+        "en": "Some types of testing (e.g., exploratory) may be less effective when fully automated",
+        "vi": "Một số loại kiểm thử (ví dụ: thăm dò) có thể kém hiệu quả khi tự động hóa hoàn toàn"
+      },
+      {
+        "en": "Automation always catches more defects",
+        "vi": "Tự động hóa luôn phát hiện nhiều khiếm khuyết hơn"
+      },
+      {
+        "en": "Manual testing requires no skills",
+        "vi": "Kiểm thử thủ công không cần kỹ năng"
+      }
+    ],
+    "correctEn": "Some types of testing (e.g., exploratory) may be less effective when fully automated",
+    "correctVi": "Một số loại kiểm thử (ví dụ: thăm dò) có thể kém hiệu quả khi tự động hóa hoàn toàn",
+    "explanation": "Section 6.2 risk: 'Using a test tool when manual testing is more appropriate.' Exploratory testing is better done manually."
+  },
+  {
+    "questionEn": "A test automation framework that separates test logic from test data is called:",
+    "questionVi": "Khung tự động hóa kiểm thử tách biệt logic kiểm thử khỏi dữ liệu kiểm thử được gọi là:",
+    "options": [
+      {
+        "en": "Data-driven framework",
+        "vi": "Khung điều khiển bởi dữ liệu"
+      },
+      {
+        "en": "Keyword-driven framework",
+        "vi": "Khung điều khiển bởi từ khóa"
+      },
+      {
+        "en": "Modular framework",
+        "vi": "Khung mô-đun"
+      },
+      {
+        "en": "Hybrid framework",
+        "vi": "Khung kết hợp"
+      }
+    ],
+    "correctEn": "Data-driven framework",
+    "correctVi": "Khung điều khiển bởi dữ liệu",
+    "explanation": "Data-driven testing uses external data sources, separating test scripts from data. Though not in v4.0 syllabus, it's a standard automation concept."
+  },
+  {
+    "questionEn": "Which of the following is a benefit of using a test execution coverage tool?",
+    "questionVi": "Lợi ích nào sau đây của việc sử dụng công cụ đo độ bao phủ thực thi kiểm thử?",
+    "options": [
+      {
+        "en": "It shows which parts of the code have not been exercised",
+        "vi": "Nó cho thấy phần nào của mã chưa được thực thi"
+      },
+      {
+        "en": "It automatically fixes uncovered code",
+        "vi": "Nó tự động sửa mã chưa được bao phủ"
+      },
+      {
+        "en": "It replaces the need for test design",
+        "vi": "Nó thay thế nhu cầu thiết kế kiểm thử"
+      },
+      {
+        "en": "It guarantees 100% branch coverage",
+        "vi": "Nó đảm bảo độ bao phủ nhánh 100%"
+      }
+    ],
+    "correctEn": "It shows which parts of the code have not been exercised",
+    "correctVi": "Nó cho thấy phần nào của mã chưa được thực thi",
+    "explanation": "Coverage tools measure coverage, helping identify untested parts (section 6.1). They don't fix code or guarantee coverage; they provide information."
+  },
+  {
+    "questionEn": "A project team decides to introduce a test automation tool. According to the syllabus, what should they do to mitigate the risk of tool abandonment?",
+    "questionVi": "Một nhóm dự án quyết định đưa công cụ tự động hóa kiểm thử vào. Theo giáo trình, họ nên làm gì để giảm thiểu rủi ro công cụ bị bỏ rơi?",
+    "options": [
+      {
+        "en": "Choose only open-source tools",
+        "vi": "Chỉ chọn công cụ mã nguồn mở"
+      },
+      {
+        "en": "Avoid any vendor tools",
+        "vi": "Tránh mọi công cụ của nhà cung cấp"
+      },
+      {
+        "en": "Evaluate the tool's vendor stability, community support, and long-term roadmap",
+        "vi": "Đánh giá sự ổn định của nhà cung cấp công cụ, hỗ trợ cộng đồng và lộ trình dài hạn"
+      },
+      {
+        "en": "Assume the tool will be supported forever",
+        "vi": "Giả định công cụ sẽ được hỗ trợ mãi mãi"
+      }
+    ],
+    "correctEn": "Evaluate the tool's vendor stability, community support, and long-term roadmap",
+    "correctVi": "Đánh giá sự ổn định của nhà cung cấp công cụ, hỗ trợ cộng đồng và lộ trình dài hạn",
+    "explanation": "To mitigate vendor-related risks, due diligence is needed. The syllabus mentions the risk but doesn't explicitly list mitigation; this is a logical best practice."
+  },
+  {
+    "questionEn": "According to the syllabus, which of the following is a benefit of test automation related to defect detection?",
+    "questionVi": "Theo giáo trình, lợi ích nào sau đây của tự động hóa kiểm thử liên quan đến phát hiện khiếm khuyết?",
+    "options": [
+      {
+        "en": "Earlier defect detection due to faster test execution",
+        "vi": "Phát hiện khiếm khuyết sớm hơn nhờ thực thi kiểm thử nhanh hơn"
+      },
+      {
+        "en": "Automatic defect fixing",
+        "vi": "Sửa khiếm khuyết tự động"
+      },
+      {
+        "en": "Elimination of all defects",
+        "vi": "Loại bỏ mọi khiếm khuyết"
+      },
+      {
+        "en": "Defects are prevented entirely",
+        "vi": "Khiếm khuyết được ngăn ngừa hoàn toàn"
+      }
+    ],
+    "correctEn": "Earlier defect detection due to faster test execution",
+    "correctVi": "Phát hiện khiếm khuyết sớm hơn nhờ thực thi kiểm thử nhanh hơn",
+    "explanation": "Section 6.2 benefit: 'Reduced test execution times to provide earlier defect detection, faster feedback.'"
+  },
+  {
+    "questionEn": "What is a key success factor for test automation in a rapidly changing user interface?",
+    "questionVi": "Yếu tố thành công chính cho tự động hóa kiểm thử trong giao diện người dùng thay đổi nhanh là gì?",
+    "options": [
+      {
+        "en": "Using robust object identification and a page object pattern to reduce maintenance",
+        "vi": "Sử dụng nhận dạng đối tượng mạnh mẽ và mẫu page object để giảm bảo trì"
+      },
+      {
+        "en": "Automating all tests at once",
+        "vi": "Tự động hóa mọi kiểm thử cùng lúc"
+      },
+      {
+        "en": "Avoiding any abstraction layers",
+        "vi": "Tránh mọi lớp trừu tượng"
+      },
+      {
+        "en": "Using capture-replay only",
+        "vi": "Chỉ sử dụng ghi-phát lại"
+      }
+    ],
+    "correctEn": "Using robust object identification and a page object pattern to reduce maintenance",
+    "correctVi": "Sử dụng nhận dạng đối tượng mạnh mẽ và mẫu page object để giảm bảo trì",
+    "explanation": "Good design practices improve maintainability, addressing the risk of high maintenance effort (section 6.2)."
+  },
+  {
+    "questionEn": "According to the syllabus, what is a benefit of using test automation for regression testing?",
+    "questionVi": "Theo giáo trình, lợi ích của việc sử dụng tự động hóa kiểm thử cho kiểm thử hồi quy là gì?",
+    "options": [
+      {
+        "en": "It allows frequent and fast execution of regression tests without manual effort",
+        "vi": "Nó cho phép thực thi thường xuyên và nhanh chóng các kiểm thử hồi quy mà không cần nỗ lực thủ công"
+      },
+      {
+        "en": "It eliminates the need for impact analysis",
+        "vi": "Nó loại bỏ nhu cầu phân tích tác động"
+      },
+      {
+        "en": "It guarantees that no new defects are introduced",
+        "vi": "Nó đảm bảo không có khiếm khuyết mới được đưa vào"
+      },
+      {
+        "en": "It replaces all other test levels",
+        "vi": "Nó thay thế mọi cấp độ kiểm thử khác"
+      }
+    ],
+    "correctEn": "It allows frequent and fast execution of regression tests without manual effort",
+    "correctVi": "Nó cho phép thực thi thường xuyên và nhanh chóng các kiểm thử hồi quy mà không cần nỗ lực thủ công",
+    "explanation": "Section 2.2.3 notes regression test suites are strong candidates for automation, and section 6.2 confirms time saved by reducing repetitive manual work."
+  },
+  {
+    "questionEn": "Which of the following is a typical feature of a test management tool?",
+    "questionVi": "Tính năng điển hình nào sau đây của công cụ quản lý kiểm thử?",
+    "options": [
+      {
+        "en": "Ability to create and assign test cases, track execution status, and generate reports",
+        "vi": "Khả năng tạo và gán ca kiểm thử, theo dõi trạng thái thực thi và tạo báo cáo"
+      },
+      {
+        "en": "Running performance tests",
+        "vi": "Chạy kiểm thử hiệu năng"
+      },
+      {
+        "en": "Analyzing source code for security vulnerabilities",
+        "vi": "Phân tích mã nguồn để tìm lỗ hổng bảo mật"
+      },
+      {
+        "en": "Simulating network latency",
+        "vi": "Mô phỏng độ trễ mạng"
+      }
+    ],
+    "correctEn": "Ability to create and assign test cases, track execution status, and generate reports",
+    "correctVi": "Khả năng tạo và gán ca kiểm thử, theo dõi trạng thái thực thi và tạo báo cáo",
+    "explanation": "Test management tools focus on organizing and tracking test artifacts, as per section 6.1."
+  },
+  {
+    "questionEn": "A team is using a tool that automatically checks for coding standard violations. This is a:",
+    "questionVi": "Một nhóm đang sử dụng công cụ tự động kiểm tra vi phạm chuẩn mã. Đây là:",
+    "options": [
+      {
+        "en": "Static analysis tool",
+        "vi": "Công cụ phân tích tĩnh"
+      },
+      {
+        "en": "Dynamic testing tool",
+        "vi": "Công cụ kiểm thử động"
+      },
+      {
+        "en": "Test execution tool",
+        "vi": "Công cụ thực thi kiểm thử"
+      },
+      {
+        "en": "Performance testing tool",
+        "vi": "Công cụ kiểm thử hiệu năng"
+      }
+    ],
+    "correctEn": "Static analysis tool",
+    "correctVi": "Công cụ phân tích tĩnh",
+    "explanation": "Section 6.1: Static testing tools support reviews and static analysis, including coding standards."
+  },
+  {
+    "questionEn": "According to the syllabus, which of the following is a risk of test automation related to open-source tools?",
+    "questionVi": "Theo giáo trình, rủi ro nào sau đây của tự động hóa kiểm thử liên quan đến công cụ mã nguồn mở?",
+    "options": [
+      {
+        "en": "The tool may be abandoned, leading to no further updates",
+        "vi": "Công cụ có thể bị bỏ rơi, dẫn đến không có bản cập nhật"
+      },
+      {
+        "en": "Open-source tools are always insecure",
+        "vi": "Công cụ mã nguồn mở luôn không an toàn"
+      },
+      {
+        "en": "They always require a commercial license",
+        "vi": "Chúng luôn yêu cầu giấy phép thương mại"
+      },
+      {
+        "en": "They cannot be used for serious projects",
+        "vi": "Chúng không thể dùng cho dự án nghiêm túc"
+      }
+    ],
+    "correctEn": "The tool may be abandoned, leading to no further updates",
+    "correctVi": "Công cụ có thể bị bỏ rơi, dẫn đến không có bản cập nhật",
+    "explanation": "Section 6.2: 'Using an open-source software which may be abandoned, meaning that no further updates are available.'"
+  },
+  {
+    "questionEn": "Which tool would you use to simulate thousands of users accessing a web application?",
+    "questionVi": "Bạn sẽ dùng công cụ nào để mô phỏng hàng nghìn người dùng truy cập ứng dụng web?",
+    "options": [
+      {
+        "en": "Test management tool",
+        "vi": "Công cụ quản lý kiểm thử"
+      },
+      {
+        "en": "Static analysis tool",
+        "vi": "Công cụ phân tích tĩnh"
+      },
+      {
+        "en": "Non-functional testing tool (load/performance tool)",
+        "vi": "Công cụ kiểm thử phi chức năng (công cụ tải/hiệu năng)"
+      },
+      {
+        "en": "Unit test framework",
+        "vi": "Khung kiểm thử đơn vị"
+      }
+    ],
+    "correctEn": "Non-functional testing tool (load/performance tool)",
+    "correctVi": "Công cụ kiểm thử phi chức năng (công cụ tải/hiệu năng)",
+    "explanation": "Load testing is a type of non-functional testing, as per section 6.1."
+  },
+  {
+    "questionEn": "What is a common mistake when first introducing test automation?",
+    "questionVi": "Sai lầm phổ biến khi lần đầu đưa tự động hóa kiểm thử vào là gì?",
+    "options": [
+      {
+        "en": "Attempting to automate everything at once without a clear strategy",
+        "vi": "Cố gắng tự động hóa mọi thứ cùng lúc mà không có chiến lược rõ ràng"
+      },
+      {
+        "en": "Starting with a small pilot project",
+        "vi": "Bắt đầu với dự án thí điểm nhỏ"
+      },
+      {
+        "en": "Focusing on maintainable test scripts",
+        "vi": "Tập trung vào kịch bản kiểm thử có thể bảo trì"
+      },
+      {
+        "en": "Involving testers in tool selection",
+        "vi": "Cho người kiểm thử tham gia chọn công cụ"
+      }
+    ],
+    "correctEn": "Attempting to automate everything at once without a clear strategy",
+    "correctVi": "Cố gắng tự động hóa mọi thứ cùng lúc mà không có chiến lược rõ ràng",
+    "explanation": "Unrealistic expectations and inaccurate effort estimation (section 6.2) often lead to attempting too much too soon, causing failure."
+  },
+  {
+    "questionEn": "According to the syllabus, test automation can help achieve which testing principle?",
+    "questionVi": "Theo giáo trình, tự động hóa kiểm thử có thể giúp đạt được nguyên lý kiểm thử nào?",
+    "options": [
+      {
+        "en": "Exhaustive testing is impossible (by focusing automation on high-risk areas)",
+        "vi": "Kiểm thử kiệt xuất là không thể (bằng cách tập trung tự động hóa vào vùng rủi ro cao)"
+      },
+      {
+        "en": "Absence-of-defects fallacy",
+        "vi": "Ngụy biện không có khiếm khuyết"
+      },
+      {
+        "en": "Tests wear out (automation prevents wear out)",
+        "vi": "Kiểm thử bị mài mòn (tự động hóa ngăn mài mòn)"
+      },
+      {
+        "en": "Early testing (automation enables early testing)",
+        "vi": "Kiểm thử sớm (tự động hóa cho phép kiểm thử sớm)"
+      }
+    ],
+    "correctEn": "Exhaustive testing is impossible (by focusing automation on high-risk areas)",
+    "correctVi": "Kiểm thử kiệt xuất là không thể (bằng cách tập trung tự động hóa vào vùng rủi ro cao)",
+    "explanation": "Automation helps in efficient test execution, allowing focus on risk areas, but does not make exhaustive testing possible. However, the best answer aligns with principle 2."
+  },
+  {
+    "questionEn": "Which of the following is a benefit of using a test data generation tool?",
+    "questionVi": "Lợi ích nào sau đây của việc sử dụng công cụ sinh dữ liệu kiểm thử?",
+    "options": [
+      {
+        "en": "Creates large datasets covering many test scenarios quickly",
+        "vi": "Tạo bộ dữ liệu lớn bao phủ nhiều kịch bản kiểm thử nhanh chóng"
+      },
+      {
+        "en": "Eliminates the need for test cases",
+        "vi": "Loại bỏ nhu cầu về ca kiểm thử"
+      },
+      {
+        "en": "Automatically fixes defects",
+        "vi": "Tự động sửa khiếm khuyết"
+      },
+      {
+        "en": "Replaces all manual testing",
+        "vi": "Thay thế mọi kiểm thử thủ công"
+      }
+    ],
+    "correctEn": "Creates large datasets covering many test scenarios quickly",
+    "correctVi": "Tạo bộ dữ liệu lớn bao phủ nhiều kịch bản kiểm thử nhanh chóng",
+    "explanation": "Test data generation tools facilitate test design and implementation (section 6.1), making test data creation faster and more comprehensive."
+  },
+  {
+    "questionEn": "A team uses a test automation tool that allows them to define keywords representing user actions. This is an example of:",
+    "questionVi": "Một nhóm sử dụng công cụ tự động hóa kiểm thử cho phép họ định nghĩa từ khóa đại diện cho hành động người dùng. Đây là ví dụ về:",
+    "options": [
+      {
+        "en": "Keyword-driven testing",
+        "vi": "Kiểm thử điều khiển bởi từ khóa"
+      },
+      {
+        "en": "Data-driven testing",
+        "vi": "Kiểm thử điều khiển bởi dữ liệu"
+      },
+      {
+        "en": "Capture-replay",
+        "vi": "Ghi-phát lại"
+      },
+      {
+        "en": "Exploratory testing",
+        "vi": "Kiểm thử thăm dò"
+      }
+    ],
+    "correctEn": "Keyword-driven testing",
+    "correctVi": "Kiểm thử điều khiển bởi từ khóa",
+    "explanation": "Keyword-driven testing abstracts actions into keywords, promoting reusability and maintainability."
+  },
+  {
+    "questionEn": "According to the syllabus, what is a potential risk when test automation is not compatible with the development platform?",
+    "questionVi": "Theo giáo trình, rủi ro tiềm ẩn khi tự động hóa kiểm thử không tương thích với nền tảng phát triển là gì?",
+    "options": [
+      {
+        "en": "The automation tool may not be able to interact with the application correctly",
+        "vi": "Công cụ tự động hóa có thể không tương tác chính xác với ứng dụng"
+      },
+      {
+        "en": "The tool will work better",
+        "vi": "Công cụ sẽ hoạt động tốt hơn"
+      },
+      {
+        "en": "Developers will have to write more code",
+        "vi": "Nhà phát triển sẽ phải viết nhiều mã hơn"
+      },
+      {
+        "en": "Test automation becomes unnecessary",
+        "vi": "Tự động hóa kiểm thử trở nên không cần thiết"
+      }
+    ],
+    "correctEn": "The automation tool may not be able to interact with the application correctly",
+    "correctVi": "Công cụ tự động hóa có thể không tương tác chính xác với ứng dụng",
+    "explanation": "Incompatibility leads to technical issues, making automation unreliable or impossible, as per section 6.2 risk."
+  },
+  {
+    "questionEn": "Which of the following is a benefit of test automation that helps with test reporting?",
+    "questionVi": "Lợi ích nào sau đây của tự động hóa kiểm thử giúp ích cho báo cáo kiểm thử?",
+    "options": [
+      {
+        "en": "Automated collection of metrics and generation of dashboards",
+        "vi": "Thu thập chỉ số tự động và tạo bảng điều khiển"
+      },
+      {
+        "en": "Manual data entry",
+        "vi": "Nhập dữ liệu thủ công"
+      },
+      {
+        "en": "Elimination of all reports",
+        "vi": "Loại bỏ mọi báo cáo"
+      },
+      {
+        "en": "Reduced need for communication",
+        "vi": "Giảm nhu cầu giao tiếp"
+      }
+    ],
+    "correctEn": "Automated collection of metrics and generation of dashboards",
+    "correctVi": "Thu thập chỉ số tự động và tạo bảng điều khiển",
+    "explanation": "Section 6.2 benefit: 'Easier access to information about testing to support test management and test reporting (e.g., statistics, graphs, and aggregated data).'"
+  },
+  {
+    "questionEn": "What is a key factor to consider when selecting a test automation tool?",
+    "questionVi": "Yếu tố chính cần cân nhắc khi chọn công cụ tự động hóa kiểm thử là gì?",
+    "options": [
+      {
+        "en": "The tool must be compatible with the technology stack and support required test types",
+        "vi": "Công cụ phải tương thích với ngăn xếp công nghệ và hỗ trợ các loại kiểm thử cần thiết"
+      },
+      {
+        "en": "The tool should be as cheap as possible regardless of features",
+        "vi": "Công cụ nên rẻ nhất có thể bất kể tính năng"
+      },
+      {
+        "en": "The tool must be open-source",
+        "vi": "Công cụ phải là mã nguồn mở"
+      },
+      {
+        "en": "The tool must replace all manual testing",
+        "vi": "Công cụ phải thay thế mọi kiểm thử thủ công"
+      }
+    ],
+    "correctEn": "The tool must be compatible with the technology stack and support required test types",
+    "correctVi": "Công cụ phải tương thích với ngăn xếp công nghệ và hỗ trợ các loại kiểm thử cần thiết",
+    "explanation": "Compatibility is a key risk (section 6.2); thus, selection must consider technical fit."
+  },
+  {
+    "questionEn": "According to the syllabus, test automation is particularly beneficial for:",
+    "questionVi": "Theo giáo trình, tự động hóa kiểm thử đặc biệt có lợi cho:",
+    "options": [
+      {
+        "en": "Regression testing due to its repetitive nature",
+        "vi": "Kiểm thử hồi quy do tính lặp đi lặp lại của nó"
+      },
+      {
+        "en": "Exploratory testing",
+        "vi": "Kiểm thử thăm dò"
+      },
+      {
+        "en": "Usability testing",
+        "vi": "Kiểm thử khả dụng"
+      },
+      {
+        "en": "One-time tests",
+        "vi": "Kiểm thử một lần"
+      }
+    ],
+    "correctEn": "Regression testing due to its repetitive nature",
+    "correctVi": "Kiểm thử hồi quy do tính lặp đi lặp lại của nó",
+    "explanation": "Regression tests are executed many times, making them ideal for automation (section 2.2.3 and 6.2)."
+  },
+  {
+    "questionEn": "Which of the following is a risk that can lead to test automation project failure?",
+    "questionVi": "Rủi ro nào sau đây có thể dẫn đến thất bại dự án tự động hóa kiểm thử?",
+    "options": [
+      {
+        "en": "Underestimating the effort required to maintain automated tests",
+        "vi": "Đánh giá thấp nỗ lực cần để bảo trì kiểm thử tự động"
+      },
+      {
+        "en": "Overestimating the maintenance effort",
+        "vi": "Đánh giá quá cao nỗ lực bảo trì"
+      },
+      {
+        "en": "Having too few test cases to automate",
+        "vi": "Có quá ít ca kiểm thử để tự động hóa"
+      },
+      {
+        "en": "Using a tool that is too expensive",
+        "vi": "Sử dụng công cụ quá đắt"
+      }
+    ],
+    "correctEn": "Underestimating the effort required to maintain automated tests",
+    "correctVi": "Đánh giá thấp nỗ lực cần để bảo trì kiểm thử tự động",
+    "explanation": "Section 6.2 risk: 'Inaccurate estimations of time, costs, effort required to introduce a tool, maintain test scripts.'"
+  },
+  {
+    "questionEn": "A test automation framework that uses a table of input values and expected outputs is most likely:",
+    "questionVi": "Khung tự động hóa kiểm thử sử dụng bảng giá trị đầu vào và đầu ra kỳ vọng thường là:",
+    "options": [
+      {
+        "en": "Data-driven",
+        "vi": "Điều khiển bởi dữ liệu"
+      },
+      {
+        "en": "Keyword-driven",
+        "vi": "Điều khiển bởi từ khóa"
+      },
+      {
+        "en": "Behavior-driven",
+        "vi": "Điều khiển bởi hành vi"
+      },
+      {
+        "en": "Capture-replay",
+        "vi": "Ghi-phát lại"
+      }
+    ],
+    "correctEn": "Data-driven",
+    "correctVi": "Điều khiển bởi dữ liệu",
+    "explanation": "Data-driven testing separates test data from test logic, often using tables."
+  },
+  {
+    "questionEn": "According to the syllabus, what is a benefit of test automation for non-functional testing?",
+    "questionVi": "Theo giáo trình, lợi ích của tự động hóa kiểm thử cho kiểm thử phi chức năng là gì?",
+    "options": [
+      {
+        "en": "It allows performing tests that are difficult or impossible to do manually (e.g., load, stress)",
+        "vi": "Nó cho phép thực hiện các kiểm thử khó hoặc không thể làm thủ công (ví dụ: tải, stress)"
+      },
+      {
+        "en": "It eliminates the need for any non-functional testing",
+        "vi": "Nó loại bỏ nhu cầu kiểm thử phi chức năng"
+      },
+      {
+        "en": "It replaces security testing",
+        "vi": "Nó thay thế kiểm thử bảo mật"
+      },
+      {
+        "en": "It makes non-functional testing obsolete",
+        "vi": "Nó làm cho kiểm thử phi chức năng trở nên lỗi thời"
+      }
+    ],
+    "correctEn": "It allows performing tests that are difficult or impossible to do manually (e.g., load, stress)",
+    "correctVi": "Nó cho phép thực hiện các kiểm thử khó hoặc không thể làm thủ công (ví dụ: tải, stress)",
+    "explanation": "Section 6.1: Non-functional testing tools allow testers to perform non-functional testing that is difficult or impossible to perform manually."
+  },
+  {
+    "questionEn": "What is the primary benefit of using a test automation tool that integrates with CI/CD?",
+    "questionVi": "Lợi ích chính của việc sử dụng công cụ tự động hóa kiểm thử tích hợp với CI/CD là gì?",
+    "options": [
+      {
+        "en": "Automated tests run on every check-in, providing rapid feedback",
+        "vi": "Kiểm thử tự động chạy trên mọi lần check-in, cung cấp phản hồi nhanh"
+      },
+      {
+        "en": "It eliminates the need for code reviews",
+        "vi": "Nó loại bỏ nhu cầu đánh giá mã"
+      },
+      {
+        "en": "It guarantees zero defects",
+        "vi": "Nó đảm bảo không có khiếm khuyết"
+      },
+      {
+        "en": "It removes the need for testers",
+        "vi": "Nó loại bỏ nhu cầu về người kiểm thử"
+      }
+    ],
+    "correctEn": "Automated tests run on every check-in, providing rapid feedback",
+    "correctVi": "Kiểm thử tự động chạy trên mọi lần check-in, cung cấp phản hồi nhanh",
+    "explanation": "CI/CD integration enables fast feedback (section 2.1.4 and 6.2)."
+  },
+  {
+    "questionEn": "According to the syllabus, which of the following is a benefit of test automation regarding human error?",
+    "questionVi": "Theo giáo trình, lợi ích nào sau đây của tự động hóa kiểm thử liên quan đến lỗi con người?",
+    "options": [
+      {
+        "en": "Prevents simple human errors through consistency and repeatability",
+        "vi": "Ngăn ngừa lỗi đơn giản của con người nhờ tính nhất quán và khả năng lặp lại"
+      },
+      {
+        "en": "Automation makes more errors",
+        "vi": "Tự động hóa tạo ra nhiều lỗi hơn"
+      },
+      {
+        "en": "Humans are not needed",
+        "vi": "Con người không cần thiết"
+      },
+      {
+        "en": "Errors are automatically fixed",
+        "vi": "Lỗi được tự động sửa"
+      }
+    ],
+    "correctEn": "Prevents simple human errors through consistency and repeatability",
+    "correctVi": "Ngăn ngừa lỗi đơn giản của con người nhờ tính nhất quán và khả năng lặp lại",
+    "explanation": "Section 6.2 benefit: 'Prevention of simple human errors through greater consistency and repeatability.'"
+  },
+  {
+    "questionEn": "Which of the following tools would be used to measure code coverage in a Java application?",
+    "questionVi": "Công cụ nào sau đây sẽ được dùng để đo độ bao phủ mã trong ứng dụng Java?",
+    "options": [
+      {
+        "en": "JaCoCo (coverage tool)",
+        "vi": "JaCoCo (công cụ đo độ bao phủ)"
+      },
+      {
+        "en": "JIRA",
+        "vi": "JIRA"
+      },
+      {
+        "en": "Selenium",
+        "vi": "Selenium"
+      },
+      {
+        "en": "JMeter",
+        "vi": "JMeter"
+      }
+    ],
+    "correctEn": "JaCoCo (coverage tool)",
+    "correctVi": "JaCoCo (công cụ đo độ bao phủ)",
+    "explanation": "JaCoCo is a test execution coverage tool (section 6.1)."
+  },
+  {
+    "questionEn": "A project manager expects that test automation will completely eliminate the need for manual testing. This is an example of:",
+    "questionVi": "Một quản lý dự án kỳ vọng rằng tự động hóa kiểm thử sẽ loại bỏ hoàn toàn nhu cầu kiểm thử thủ công. Đây là ví dụ về:",
+    "options": [
+      {
+        "en": "Unrealistic expectation, a risk of test automation",
+        "vi": "Kỳ vọng không thực tế, một rủi ro của tự động hóa kiểm thử"
+      },
+      {
+        "en": "A realistic goal",
+        "vi": "Một mục tiêu thực tế"
+      },
+      {
+        "en": "A benefit of test automation",
+        "vi": "Một lợi ích của tự động hóa kiểm thử"
+      },
+      {
+        "en": "A mandatory requirement",
+        "vi": "Một yêu cầu bắt buộc"
+      }
+    ],
+    "correctEn": "Unrealistic expectation, a risk of test automation",
+    "correctVi": "Kỳ vọng không thực tế, một rủi ro của tự động hóa kiểm thử",
+    "explanation": "Section 6.2 lists 'Unrealistic expectations about the benefits of a tool' as a risk. Automation complements, not replaces, manual testing."
+  },
+  {
+    "questionEn": "According to the syllabus, which of the following is a benefit of test automation related to test reporting?",
+    "questionVi": "Theo giáo trình, lợi ích nào sau đây của tự động hóa kiểm thử liên quan đến báo cáo kiểm thử?",
+    "options": [
+      {
+        "en": "Provides easily accessible test progress data and graphs",
+        "vi": "Cung cấp dữ liệu và biểu đồ tiến độ kiểm thử dễ truy cập"
+      },
+      {
+        "en": "Eliminates the need for any reporting",
+        "vi": "Loại bỏ nhu cầu báo cáo"
+      },
+      {
+        "en": "Makes reports less accurate",
+        "vi": "Làm cho báo cáo kém chính xác hơn"
+      },
+      {
+        "en": "Requires manual report generation",
+        "vi": "Yêu cầu tạo báo cáo thủ công"
+      }
+    ],
+    "correctEn": "Provides easily accessible test progress data and graphs",
+    "correctVi": "Cung cấp dữ liệu và biểu đồ tiến độ kiểm thử dễ truy cập",
+    "explanation": "Section 6.2 benefit: 'Easier access to information about testing to support test management and test reporting (e.g., statistics, graphs, and aggregated data).'"
+  },
+  {
+    "questionEn": "What is a key risk when using automated test scripts that are poorly designed?",
+    "questionVi": "Rủi ro chính khi sử dụng kịch bản kiểm thử tự động được thiết kế kém là gì?",
+    "options": [
+      {
+        "en": "High maintenance costs and false positive/negative results",
+        "vi": "Chi phí bảo trì cao và kết quả dương/âm giả"
+      },
+      {
+        "en": "They always pass",
+        "vi": "Chúng luôn qua"
+      },
+      {
+        "en": "They run too fast",
+        "vi": "Chúng chạy quá nhanh"
+      },
+      {
+        "en": "They eliminate the need for test design",
+        "vi": "Chúng loại bỏ nhu cầu thiết kế kiểm thử"
+      }
+    ],
+    "correctEn": "High maintenance costs and false positive/negative results",
+    "correctVi": "Chi phí bảo trì cao và kết quả dương/âm giả",
+    "explanation": "Poor design leads to brittleness, effort maintenance (section 6.2 risk), and unreliable results."
+  },
+  {
+    "questionEn": "Which of the following is a typical example of a collaboration tool used in testing?",
+    "questionVi": "Ví dụ điển hình nào sau đây là công cụ cộng tác được dùng trong kiểm thử?",
+    "options": [
+      {
+        "en": "Slack or Microsoft Teams for team communication",
+        "vi": "Slack hoặc Microsoft Teams để giao tiếp nhóm"
+      },
+      {
+        "en": "JUnit",
+        "vi": "JUnit"
+      },
+      {
+        "en": "Selenium",
+        "vi": "Selenium"
+      },
+      {
+        "en": "SonarQube",
+        "vi": "SonarQube"
+      }
+    ],
+    "correctEn": "Slack or Microsoft Teams for team communication",
+    "correctVi": "Slack hoặc Microsoft Teams để giao tiếp nhóm",
+    "explanation": "Section 6.1: Collaboration tools facilitate communication."
   }
 ]

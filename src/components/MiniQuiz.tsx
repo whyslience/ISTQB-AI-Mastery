@@ -10,6 +10,7 @@ import type { QuizQuestion } from "@/data/syllabus";
 export default function MiniQuiz({ quiz }: { quiz: QuizQuestion[] }) {
   const [quizAnswers, setQuizAnswers] = useState<Record<number, string>>({});
   const [showResults, setShowResults] = useState(false);
+  const [showVi, setShowVi] = useState(false);
 
   if (!quiz || quiz.length === 0) return null;
 
@@ -26,7 +27,20 @@ export default function MiniQuiz({ quiz }: { quiz: QuizQuestion[] }) {
   return (
     <div className="mb-10 w-full">
       <div className="flex items-center justify-between mb-6">
-        <h3 className="text-2xl font-bold">Practice Questions / Mini-Quiz</h3>
+        <div className="flex items-center gap-4">
+          <h3 className="text-2xl font-bold">Practice Questions / Mini-Quiz</h3>
+          <button
+            onClick={() => setShowVi(!showVi)}
+            className="text-xs font-medium px-3 py-1.5 rounded-full transition-colors"
+            style={{
+              background: showVi ? "var(--color-accent-soft)" : "var(--color-surface-sunken)",
+              color: showVi ? "var(--color-accent)" : "var(--color-text-muted)",
+              border: `1px solid ${showVi ? "var(--color-accent)" : "var(--color-border)"}`,
+            }}
+          >
+            VI: {showVi ? "ON" : "OFF"}
+          </button>
+        </div>
         {showResults && (
           <span className="px-3 py-1 text-sm font-bold rounded-full bg-[var(--color-accent-soft)] text-[var(--color-accent)]">
             Score: {getScore()} / {quiz.length}
@@ -42,7 +56,7 @@ export default function MiniQuiz({ quiz }: { quiz: QuizQuestion[] }) {
           return (
             <div key={qIndex} className="p-6 rounded-2xl bg-[var(--color-surface-sunken)] border border-[var(--color-border)]">
               <h4 className="text-base font-semibold mb-1 leading-relaxed">{qIndex + 1}. {q.questionEn}</h4>
-              {showResults && (
+              {showVi && q.questionVi && (
                 <h5 className="text-sm font-medium mb-4 opacity-70 italic text-[var(--color-text-secondary)]">
                   {q.questionVi}
                 </h5>
@@ -95,7 +109,7 @@ export default function MiniQuiz({ quiz }: { quiz: QuizQuestion[] }) {
                         {showResults && showAsCorrect && <CheckCircle2 className="shrink-0 ml-3" style={{ color: "var(--color-success)" }} />}
                         {showResults && showAsWrong && <XCircle className="shrink-0 ml-3" style={{ color: "var(--color-danger)" }} />}
                       </div>
-                      {showResults && (
+                      {showVi && opt.vi && (
                         <span className="text-xs opacity-70 mt-1 italic">{opt.vi}</span>
                       )}
                     </button>

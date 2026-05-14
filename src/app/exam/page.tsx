@@ -2,7 +2,8 @@
 
 import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, ArrowLeft, Send, Loader2, RefreshCw, Clock } from "lucide-react";
+import { ArrowRight, ArrowLeft, Send, Loader2, RefreshCw } from "lucide-react";
+import { getOrCreateSessionId } from "@/lib/session";
 import { useRouter } from "next/navigation";
 import type { Question } from "@/types";
 import { EXAM_TOPIC_GROUPS, EXAM_TOPICS_UI_ORDER } from "@/lib/exam-from-syllabus";
@@ -46,6 +47,8 @@ export default function ExamPage() {
   const [topic, setTopic] = useState(TOPICS[0]);
   const [difficulty, setDifficulty] = useState<"easy" | "medium" | "hard" | "random">("medium");
   const [started, setStarted] = useState(false);
+  const [configStep, setConfigStep] = useState<1 | 2 | 3>(1);
+  const [selectedTrack, setSelectedTrack] = useState<"ctfl" | "ctai">("ctfl");
 
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -64,10 +67,85 @@ export default function ExamPage() {
     return () => clearInterval(id);
   }, [timerActive, timeLeft]);
 
+  useEffect(() => {
+    if (timerActive && timeLeft === 0 && !submitting) {
+      setTimerActive(false);
+      alert("Time is up! Your exam will be submitted automatically. / Hết giờ! Bài thi của bạn sẽ được nộp tự động.");
+      handleSubmit();
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timeLeft, timerActive, submitting]);
+
+  useEffect(() => {
+    if (!started || questions.length === 0 || submitting) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+
+      const key = e.key.toLowerCase();
+      const currentQ = questions[currentIdx];
+
+      if (['a', 'b', 'c', 'd'].includes(key)) {
+        const optionIdx = key.charCodeAt(0) - 97;
+        if (currentQ.options[optionIdx]) {
+          setAnswers((prev) => ({ ...prev, [currentQ.id]: currentQ.options[optionIdx].en }));
+        }
+      } else if (key === 'arrowleft' || key === 'j') {
+        if (currentIdx > 0) setCurrentIdx(p => p - 1);
+      } else if (key === 'arrowright' || key === 'k') {
+        if (currentIdx < questions.length - 1 && answers[currentQ.id]) {
+          setCurrentIdx(p => p + 1);
+        }
+      } else if (key === 'enter' || key === ' ') {
+        e.preventDefault();
+        if (currentIdx < questions.length - 1 && answers[currentQ.id]) {
+          setCurrentIdx(p => p + 1);
+        } else if (currentIdx === questions.length - 1 && Object.keys(answers).length === questions.length) {
+          handleSubmit();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [started, questions, currentIdx, answers, submitting]);
+
   const formatTime = (secs: number) => {
     const m = Math.floor(secs / 60);
     const s = secs % 60;
     return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+  };
+
+  // SVG circular timer
+  const TimerRing = ({ secs, total }: { secs: number; total: number }) => {
+    const size = 52;
+    const stroke = 3.5;
+    const r = (size - stroke) / 2;
+    const circ = 2 * Math.PI * r;
+    const pct = total > 0 ? secs / total : 0;
+    const dash = circ * pct;
+    const ringColor = secs < 300 ? "var(--color-danger)" : secs < total * 0.2 ? "var(--color-warning)" : "var(--color-accent)";
+    return (
+      <div className="relative flex items-center justify-center" style={{ width: size, height: size }}>
+        <svg width={size} height={size} style={{ transform: "rotate(-90deg)", position: "absolute" }}>
+          <circle cx={size/2} cy={size/2} r={r} fill="none" stroke="var(--color-border)" strokeWidth={stroke} />
+          <circle
+            cx={size/2} cy={size/2} r={r} fill="none"
+            stroke={ringColor}
+            strokeWidth={stroke}
+            strokeDasharray={`${dash} ${circ}`}
+            strokeLinecap="round"
+            style={{ transition: "stroke-dasharray 0.5s ease, stroke 0.5s ease" }}
+          />
+        </svg>
+        <div className="flex flex-col items-center z-10" style={{ lineHeight: 1.1 }}>
+          <span className="text-[10px] font-mono font-bold" style={{ color: ringColor, letterSpacing: 0.5 }}>
+            {formatTime(secs)}
+          </span>
+        </div>
+      </div>
+    );
   };
 
   const loadQuestions = useCallback(async () => {
@@ -107,7 +185,7 @@ export default function ExamPage() {
       const res = await fetch("/api/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userId: "user-1", answers: formatted }),
+        body: JSON.stringify({ userId: getOrCreateSessionId(), answers: formatted }),
       });
       if (!res.ok) throw new Error("Submit failed");
       const data = await res.json();
@@ -141,76 +219,104 @@ export default function ExamPage() {
             Chọn chủ đề và độ khó để bắt đầu.
           </p>
 
-          {/* Topic picker */}
-          <label
-            className="block text-xs font-bold uppercase tracking-widest mb-3"
-            style={{ color: "var(--color-text-muted)" }}
-          >
-            Topic / Chủ đề
-          </label>
-          <div className="flex flex-col gap-8 xl:flex-row xl:gap-6 xl:items-start mb-8">
-            {EXAM_TOPIC_GROUPS.map((group) => {
-              const accent =
-                group.trackId === "ctfl"
-                  ? {
-                      bar: "var(--color-accent)",
-                      selBg: "var(--color-accent-soft)",
-                      selBorder: "var(--color-accent)",
-                      selColor: "var(--color-accent)",
-                    }
-                  : {
-                      bar: "var(--color-purple)",
-                      selBg: "var(--color-purple-soft)",
-                      selBorder: "var(--color-purple)",
-                      selColor: "var(--color-purple)",
-                    };
+          {/* Step 1: Track */}
+          {configStep === 1 && (
+            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
+              <label className="block text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "var(--color-text-muted)" }}>
+                Step 1: Select Track
+              </label>
+              <div className="flex flex-col gap-4 mb-8">
+                {EXAM_TOPIC_GROUPS.map((group) => {
+                  const isCtfl = group.trackId === "ctfl";
+                  return (
+                    <button
+                      key={group.trackId}
+                      onClick={() => {
+                        setSelectedTrack(group.trackId);
+                        setConfigStep(2);
+                      }}
+                      className="text-left px-5 py-4 rounded-2xl transition-all duration-200"
+                      style={{
+                        background: "var(--color-surface-raised)",
+                        border: `2px solid var(--color-border)`,
+                        borderLeft: `6px solid ${isCtfl ? "var(--color-accent)" : "var(--color-purple)"}`,
+                      }}
+                    >
+                      <h3 className="text-lg font-bold">{group.titleEn}</h3>
+                      <p className="text-xs opacity-70 mt-1">{group.titleVi}</p>
+                    </button>
+                  );
+                })}
+              </div>
+            </motion.div>
+          )}
 
-              return (
-                <div key={group.trackId} className="min-w-0 flex-1">
-                  <div
-                    className="rounded-xl px-3 py-2 mb-3"
-                    style={{
-                      borderLeft: `4px solid ${accent.bar}`,
-                      background: group.trackId === "ctfl" ? "var(--color-accent-soft)" : "var(--color-purple-soft)",
-                    }}
-                  >
-                    <p className="text-sm font-bold leading-snug">{group.titleEn}</p>
-                    <p className="text-[11px] opacity-70 mt-0.5">{group.titleVi}</p>
+          {/* Step 2: Topic */}
+          {configStep === 2 && (
+            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
+              <div className="flex items-center gap-3 mb-3">
+                <button onClick={() => setConfigStep(1)} className="text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]">
+                  <ArrowLeft style={{ width: 16, height: 16 }} />
+                </button>
+                <label className="block text-xs font-bold uppercase tracking-widest" style={{ color: "var(--color-text-muted)" }}>
+                  Step 2: Select Topic / Chủ đề
+                </label>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                {EXAM_TOPIC_GROUPS.find(g => g.trackId === selectedTrack)?.topics.map((t) => {
+                  const isCtfl = selectedTrack === "ctfl";
+                  const accentColor = isCtfl ? "var(--color-accent)" : "var(--color-purple)";
+                  const bgSoft = isCtfl ? "var(--color-accent-soft)" : "var(--color-purple-soft)";
+                  return (
+                    <button
+                      key={t}
+                      onClick={() => {
+                        setTopic(t);
+                        if (isFullExamTopic(t)) {
+                          setConfigStep(3); // skip difficulty for full exam
+                        } else {
+                          setConfigStep(3);
+                        }
+                      }}
+                      className="text-left px-4 py-3 rounded-2xl text-sm font-medium transition-all duration-200"
+                      style={{
+                        background: topic === t ? bgSoft : "var(--color-surface-raised)",
+                        color: topic === t ? accentColor : "var(--color-text-primary)",
+                        border: `2px solid ${topic === t ? accentColor : "var(--color-border)"}`,
+                      }}
+                    >
+                      <span className="leading-snug block mb-1">{t}</span>
+                      <span className="text-[10px] opacity-60 italic line-clamp-2">{TOPIC_SUBTITLE_VI[t] ?? ""}</span>
+                    </button>
+                  );
+                })}
+              </div>
+              {isFullExamTopic(topic) && (
+                <button
+                  onClick={() => { setStarted(true); loadQuestions(); }}
+                  className="btn btn-primary"
+                  style={{ width: "100%", padding: "16px 0", fontSize: 15, borderRadius: "var(--radius-xl)" }}
+                >
+                  <div className="flex flex-col items-center">
+                    <span className="flex items-center gap-2">Start Exam <ArrowRight style={{ width: 16, height: 16 }} /></span>
+                    <span className="text-xs opacity-70">Bắt đầu Bài thi</span>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    {group.topics.map((t) => (
-                      <button
-                        key={t}
-                        onClick={() => setTopic(t)}
-                        className="text-left px-3 py-2.5 sm:px-4 sm:py-3 rounded-2xl text-xs sm:text-sm font-medium transition-all duration-200 min-h-[4.25rem] sm:min-h-0"
-                        style={{
-                          background: topic === t ? accent.selBg : "var(--color-surface-raised)",
-                          color: topic === t ? accent.selColor : "var(--color-text-primary)",
-                          border: `2px solid ${topic === t ? accent.selBorder : "var(--color-border)"}`,
-                          cursor: "pointer",
-                        }}
-                      >
-                        <div className="flex flex-col gap-0.5">
-                          <span className="leading-snug line-clamp-3">{t}</span>
-                          <span className="text-[10px] opacity-60 italic line-clamp-2">{TOPIC_SUBTITLE_VI[t] ?? ""}</span>
-                        </div>
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+                </button>
+              )}
+            </motion.div>
+          )}
 
           {/* Difficulty picker */}
-          {!isFullExamTopic(topic) && (
-            <>
-              <label
-                className="block text-xs font-bold uppercase tracking-widest mb-3"
-                style={{ color: "var(--color-text-muted)" }}
-              >
-                Difficulty / Độ khó
-              </label>
+          {configStep === 3 && !isFullExamTopic(topic) && (
+            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
+              <div className="flex items-center gap-3 mb-3">
+                <button onClick={() => setConfigStep(2)} className="text-[var(--color-text-muted)] hover:text-[var(--color-text-primary)]">
+                  <ArrowLeft style={{ width: 16, height: 16 }} />
+                </button>
+                <label className="block text-xs font-bold uppercase tracking-widest" style={{ color: "var(--color-text-muted)" }}>
+                  Step 3: Difficulty / Độ khó
+                </label>
+              </div>
               <div className="flex gap-3 mb-10">
                 {DIFFICULTIES.map((d) => {
                   const dc = DIFF_COLORS[d];
@@ -236,19 +342,18 @@ export default function ExamPage() {
                   );
                 })}
               </div>
-            </>
+              <button
+                onClick={() => { setStarted(true); loadQuestions(); }}
+                className="btn btn-primary"
+                style={{ width: "100%", padding: "16px 0", fontSize: 15, borderRadius: "var(--radius-xl)" }}
+              >
+                <div className="flex flex-col items-center">
+                  <span className="flex items-center gap-2">Start Exam <ArrowRight style={{ width: 16, height: 16 }} /></span>
+                  <span className="text-xs opacity-70">Bắt đầu Bài thi</span>
+                </div>
+              </button>
+            </motion.div>
           )}
-
-          <button
-            onClick={() => { setStarted(true); loadQuestions(); }}
-            className="btn btn-primary"
-            style={{ width: "100%", padding: "16px 0", fontSize: 15, borderRadius: "var(--radius-xl)" }}
-          >
-            <div className="flex flex-col items-center">
-              <span className="flex items-center gap-2">Start Exam <ArrowRight style={{ width: 16, height: 16 }} /></span>
-              <span className="text-xs opacity-70">Bắt đầu Bài thi</span>
-            </div>
-          </button>
         </motion.div>
       </div>
     );
@@ -302,7 +407,7 @@ export default function ExamPage() {
   // ── Exam UI ─────────────────────────────────────────────────
   return (
     <div className="flex flex-col px-5 pt-24 pb-12" style={{ minHeight: "100vh", maxWidth: 680, margin: "0 auto" }}>
-      {/* Progress bar */}
+      {/* Progress bar & toolbar */}
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center gap-3">
           <span className="text-xs font-bold" style={{ color: "var(--color-text-muted)", letterSpacing: 2 }}>
@@ -313,13 +418,13 @@ export default function ExamPage() {
             background: "var(--color-border)", borderRadius: 999, overflow: "hidden"
           }}>
             <motion.div
-              style={{ height: "100%", background: "var(--color-accent)", borderRadius: 999 }}
+              style={{ height: "100%", background: "linear-gradient(90deg, var(--color-accent), var(--color-purple))", borderRadius: 999 }}
               animate={{ width: `${progress}%` }}
               transition={{ duration: 0.3 }}
             />
           </div>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
           <button
             onClick={() => setShowVi(!showVi)}
             className="text-xs font-medium px-3 py-1.5 rounded-full transition-colors"
@@ -331,11 +436,8 @@ export default function ExamPage() {
           >
             VI: {showVi ? "ON" : "OFF"}
           </button>
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full" style={{ background: "var(--color-surface-raised)", color: "var(--color-text-primary)" }}>
-            <Clock style={{ width: 14, height: 14, color: timeLeft < 300 ? "var(--color-danger)" : "var(--color-accent)" }} />
-            <span className="text-xs font-bold font-mono" style={{ color: timeLeft < 300 ? "var(--color-danger)" : "inherit", letterSpacing: 1 }}>
-              {formatTime(timeLeft)}
-            </span>
+          <div className={timeLeft > 0 && timeLeft < 300 ? 'animate-pulse' : ''}>
+            <TimerRing secs={timeLeft} total={isFullExamTopic(topic) ? 3600 : 600} />
           </div>
           <button
             onClick={() => { setStarted(false); setTimerActive(false); }}
@@ -375,7 +477,7 @@ export default function ExamPage() {
           </div>
 
           <div className="mb-8">
-            <h2 className="text-lg font-semibold leading-relaxed mb-1">{currentQ.question}</h2>
+            <h2 className="text-xl font-semibold leading-relaxed mb-1" style={{ lineHeight: 1.6 }}>{currentQ.question}</h2>
             {showVi && currentQ.questionVi && (
               <h3 className="text-sm italic opacity-80" style={{ color: "var(--color-text-secondary)" }}>
                 {currentQ.questionVi}
@@ -390,18 +492,29 @@ export default function ExamPage() {
                 <button
                   key={i}
                   onClick={() => handleSelect(option.en)}
-                  className="flex items-center gap-4 text-left px-5 py-4 rounded-2xl transition-all duration-200"
+                  className="flex items-center gap-4 text-left px-4 sm:px-5 py-3 sm:py-4 rounded-2xl transition-all duration-200 relative overflow-hidden"
                   style={{
                     background: selected ? "var(--color-accent-soft)" : "var(--color-surface-sunken)",
                     border: `2px solid ${selected ? "var(--color-accent)" : "var(--color-border)"}`,
+                    boxShadow: selected ? "inset 0 0 0 1px var(--color-accent-medium), 0 0 12px var(--color-accent-glow)" : "none",
                     cursor: "pointer",
+                    minHeight: "3.5rem",
                   }}
                 >
+                  {/* Left gradient accent bar when selected */}
+                  {selected && (
+                    <span
+                      className="absolute left-0 top-0 bottom-0 w-1 rounded-l-2xl"
+                      style={{ background: "linear-gradient(180deg, var(--color-accent), var(--color-purple))" }}
+                    />
+                  )}
                   <span
                     className="flex items-center justify-center shrink-0 rounded-full text-xs font-bold"
                     style={{
                       width: 28, height: 28,
-                      background: selected ? "var(--color-accent)" : "var(--color-border)",
+                      background: selected
+                        ? "linear-gradient(135deg, var(--color-accent), var(--color-purple))"
+                        : "var(--color-border)",
                       color: selected ? "#fff" : "var(--color-text-muted)",
                       transition: "all 0.2s",
                     }}
@@ -433,8 +546,9 @@ export default function ExamPage() {
           </div>
         </button>
 
-        {/* Navigation Grid */}
-        <div className="flex flex-1 flex-wrap justify-center gap-1.5 mx-4 max-h-[120px] overflow-y-auto">
+        {/* Navigation Dots Grid — grid-cols-8 + horizontal scroll on mobile */}
+        <div className="flex-1 mx-2 sm:mx-4 overflow-x-auto">
+          <div className="grid grid-cols-8 sm:grid-cols-10 gap-1 sm:gap-1.5 py-1">
           {questions.map((q, i) => {
             const isAnswered = !!answers[q.id];
             const isCurrent = i === currentIdx;
@@ -442,19 +556,30 @@ export default function ExamPage() {
               <button
                 key={q.id}
                 onClick={() => setCurrentIdx(i)}
-                className="flex items-center justify-center rounded-md text-xs font-semibold transition-all"
+                className="flex items-center justify-center rounded-full text-[10px] font-bold transition-all duration-200"
                 style={{
                   width: 28, height: 28,
-                  background: isCurrent ? "var(--color-accent)" : isAnswered ? "var(--color-success)" : "var(--color-surface-raised)",
-                  color: (isCurrent || isAnswered) ? "#fff" : "var(--color-text-primary)",
-                  border: `1px solid ${isCurrent ? "var(--color-accent)" : isAnswered ? "var(--color-success)" : "var(--color-border)"}`,
-                  cursor: "pointer"
+                  background: isCurrent
+                    ? "linear-gradient(135deg, var(--color-accent), var(--color-purple))"
+                    : isAnswered
+                      ? "var(--color-success)"
+                      : "var(--color-surface-raised)",
+                  color: (isCurrent || isAnswered) ? "#fff" : "var(--color-text-muted)",
+                  border: isCurrent
+                    ? "2px solid transparent"
+                    : isAnswered
+                      ? "2px solid var(--color-success)"
+                      : "2px solid var(--color-border)",
+                  boxShadow: isCurrent ? "0 0 0 3px var(--color-accent-soft)" : "none",
+                  cursor: "pointer",
+                  animation: isCurrent ? "pulse-ring 2s ease infinite" : "none",
                 }}
               >
                 {i + 1}
               </button>
             );
           })}
+          </div>
         </div>
 
         {currentIdx === questions.length - 1 ? (

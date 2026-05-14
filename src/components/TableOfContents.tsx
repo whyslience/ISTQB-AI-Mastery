@@ -168,8 +168,14 @@ export default function TableOfContents({
         />
       </div>
 
-      {/* Mobile / small tablet: FAB + sheet */}
-      <div className="lg:hidden fixed bottom-8 right-8 z-50">
+      {/* Mobile / small tablet: FAB + sheet — with iOS safe-area insets */}
+      <div
+        className="lg:hidden fixed z-50"
+        style={{
+          bottom: "calc(1.5rem + env(safe-area-inset-bottom, 0px))",
+          right: "max(1rem, env(safe-area-inset-right, 1rem))",
+        }}
+      >
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}

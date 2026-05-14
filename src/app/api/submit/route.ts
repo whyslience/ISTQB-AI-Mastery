@@ -46,6 +46,8 @@ export async function POST(req: Request) {
         userAns: a.userAns,
         isCorrect,
         correctAns,
+        questionTextEn: q?.questionEn,
+        questionTextVi: q?.questionVi,
       };
     });
 
@@ -71,21 +73,30 @@ ${wrongAnswers}
 Yêu cầu: Động viên ngắn gọn, chỉ ra điểm yếu và gợi ý chủ đề cần ôn lại (tối đa 150 từ).`
         : `Chúc mừng! Học viên đạt ${score}/${totalQs} điểm. Hãy viết một lời động viên ngắn gọn bằng tiếng Việt.`;
 
-    let aiFeedback: string;
-    try {
-      const result = await withRetry(() => textModel.generateContent(feedbackPrompt));
-      const response = await result.response;
-      aiFeedback = response.text();
-    } catch (aiErr) {
-      console.warn("[/api/submit] Gemini feedback unavailable, using fallback:", aiErr);
-      aiFeedback =
-        score === totalQs
-          ? `Xuất sắc! Bạn đạt ${score}/${totalQs} điểm. Hãy tiếp tục ôn luyện để giữ vững phong độ!`
-          : `Bạn đạt ${score}/${totalQs} điểm. Hãy xem lại các câu sai và ôn luyện thêm nhé! (Phân tích chi tiết tạm thời không khả dụng – vui lòng thử lại sau.)`;
+    // Skip AI feedback entirely when no API key is configured.
+    // The results page guards with {attempt.aiFeedback && ...} so the section stays hidden.
+    let aiFeedback: string | null = null;
+    if (process.env.GEMINI_API_KEY) {
+      try {
+        const result = await withRetry(() => textModel.generateContent(feedbackPrompt));
+        const response = await result.response;
+        aiFeedback = response.text();
+      } catch (aiErr) {
+        console.warn("[/api/submit] Gemini feedback unavailable:", aiErr);
+        // Leave aiFeedback as null — UI section will stay hidden.
+      }
     }
 
     const actualUserId = userId || "user-1";
-    const payload = {
+    const payload: {
+      id: string;
+      userId: string;
+      score: number;
+      totalQs: number;
+      answers: typeof detailedAnswers;
+      aiFeedback: string | null;
+      createdAt: string;
+    } = {
       id: `local-${Date.now()}`,
       userId: actualUserId,
       score,

@@ -76,14 +76,34 @@ function shuffle<T>(array: T[]): T[] {
   return result;
 }
 
-function pseudoDifficulty(q: QuizQuestion): Question["difficulty"] {
-  let h = 0;
-  const s = q.questionEn;
-  for (let i = 0; i < s.length; i++) {
-    h = (Math.imul(31, h) + s.charCodeAt(i)) | 0;
-  }
-  const b = Math.abs(h) % 3;
-  return b === 0 ? "easy" : b === 1 ? "medium" : "hard";
+/**
+ * Resolves difficulty for a question:
+ * 1. Uses the stored `difficulty` field if present (set manually or by gen script).
+ * 2. Falls back to rule-based heuristics:
+ *    - EXCEPT/NOT/"which is NOT" phrasing → hard
+ *    - "best describes" / "most appropriate" / "primary" → medium
+ *    - short question (< 12 words) + short explanation < 200 chars → easy
+ *    - otherwise → medium
+ * 3. Last resort: deterministic hash (preserves old behaviour for untouched questions).
+ */
+function resolveDifficulty(q: QuizQuestion): Question["difficulty"] {
+  // 1. Explicit field wins
+  if (q.difficulty) return q.difficulty;
+
+  // 2. Rule-based heuristics
+  const qLower = q.questionEn.toLowerCase();
+  const words = q.questionEn.trim().split(/\s+/).length;
+
+  const isHardKeyword = /\b(except|which is not|which of the following is not|not a |cannot |never )/.test(qLower);
+  if (isHardKeyword) return "hard";
+
+  const isMediumKeyword = /\b(best describes|most appropriate|primary goal|main purpose|primarily|typically|generally)/.test(qLower);
+  if (isMediumKeyword) return "medium";
+
+  if (words <= 15 && q.explanation.length < 220) return "easy";
+  if (words >= 40 || q.explanation.length > 500) return "hard";
+
+  return "medium";
 }
 
 function quizToQuestion(
@@ -96,7 +116,7 @@ function quizToQuestion(
   return {
     id: `${chapterId}:${index}`,
     topic: topicTitle,
-    difficulty: pseudoDifficulty(qq),
+    difficulty: resolveDifficulty(qq),
     question: qq.questionEn,
     questionVi: qq.questionVi,
     options,
@@ -143,11 +163,11 @@ export function pickExamQuestions(
   if (!pool.length) return [];
 
   if (difficulty !== "all" && difficulty !== "random") {
-    const filtered = pool.filter((p) => pseudoDifficulty(p.qq) === difficulty);
+    const filtered = pool.filter((p) => resolveDifficulty(p.qq) === difficulty);
     if (filtered.length >= count) {
       pool = filtered;
     } else {
-      const remaining = pool.filter((p) => pseudoDifficulty(p.qq) !== difficulty);
+      const remaining = pool.filter((p) => resolveDifficulty(p.qq) !== difficulty);
       const shuffledRemaining = shuffle(remaining);
       const needed = count - filtered.length;
       pool = [...filtered, ...shuffledRemaining.slice(0, needed)];

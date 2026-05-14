@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
@@ -7,6 +7,12 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin", "vietnamese"],
   weight: ["400", "500", "600", "700", "800"],
+});
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +25,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={inter.variable} suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${outfit.variable}`} suppressHydrationWarning>
       <body>
         <Navbar />
         <main className="min-h-screen">{children}</main>

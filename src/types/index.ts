@@ -15,6 +15,8 @@ export interface UserAnswer {
   userAns: string;
   isCorrect?: boolean;
   correctAns?: string;
+  questionTextEn?: string;
+  questionTextVi?: string;
 }
 
 export interface Attempt {

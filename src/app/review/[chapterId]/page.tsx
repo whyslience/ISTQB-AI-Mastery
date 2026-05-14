@@ -1,8 +1,9 @@
 import fs from "fs";
 import path from "path";
 import type { ReactNode } from "react";
+import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, Lightbulb, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowLeft, Lightbulb, ChevronLeft, ChevronRight, Clock } from "lucide-react";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -12,13 +13,19 @@ import {
   resolveSyllabusChapter,
 } from "@/lib/syllabus-tracks";
 import MiniQuiz from "@/components/MiniQuiz";
+import ErrorBoundary from "@/components/ErrorBoundary";
 import TableOfContents from "@/components/TableOfContents";
+import ReadingProgress from "@/components/ReadingProgress";
+import ChapterTracker from "@/components/ChapterTracker";
 import { hasVietnameseChars, splitEnViPair } from "@/lib/bilingual-split";
 import {
   findLearningObjectivesSectionRange,
   lineNumberAtIndex,
   shouldSkipHeadingInToc,
 } from "@/lib/markdown-toc";
+import { syllabusData } from "@/data/syllabus";
+import { ctaiSyllabusData } from "@/data/syllabus-ai";
+import { estimateReadingTime } from "@/lib/reading-time";
 
 function slugify(text: string) {
   return text
@@ -39,6 +46,31 @@ function makeUniqueSlugFactory() {
     const n = (counts.get(base) ?? 0) + 1;
     counts.set(base, n);
     return n === 1 ? base : `${base}-${n}`;
+  };
+}
+
+/** ISR: revalidate every hour; build-time params cover all chapters. */
+export const revalidate = 3600;
+
+/** Pre-render all CTFL + CT-AI chapter pages at build time as static HTML. */
+export async function generateStaticParams() {
+  const ctflIds = syllabusData.map((ch) => ({ chapterId: ch.id }));
+  const ctaiIds = ctaiSyllabusData.map((ch) => ({ chapterId: ch.id }));
+  return [...ctflIds, ...ctaiIds];
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ chapterId: string }> }): Promise<Metadata> {
+  const resolvedParams = await params;
+  const resolved = resolveSyllabusChapter(resolvedParams.chapterId);
+  if (!resolved) return {};
+  
+  const { chapter } = resolved;
+  const trackId = getChapterTrackId(chapter.id);
+  const trackName = trackId === "ctai" ? "Section" : "Chapter";
+  
+  return {
+    title: `${trackName} ${chapter.chapterNumber}: ${chapter.titleEn} | ISTQB Mastery`,
+    description: chapter.descriptionVi?.substring(0, 160) || `ISTQB ${chapter.titleEn} review guide with AI quizzes.`,
   };
 }
 
@@ -124,6 +156,8 @@ export default async function ChapterReview({ params }: { params: Promise<{ chap
 
   return (
     <div className="flex flex-col items-center px-5 pt-32 pb-24 relative lg:px-6 lg:pl-[15.5rem] lg:pr-[15.5rem] xl:pl-[17rem] xl:pr-[17rem]">
+      <ReadingProgress />
+      <ChapterTracker chapterId={chapter.id} />
       <TableOfContents
         headings={headings}
         chapters={chapterNavItems}
@@ -148,9 +182,18 @@ export default async function ChapterReview({ params }: { params: Promise<{ chap
           <p className="text-xs font-bold uppercase tracking-widest mb-2 opacity-70" style={{ color: "var(--color-text-muted)" }}>
             {trackId === "ctai" ? "ISTQB CT-AI v2.0" : "ISTQB CTFL v4.0.1"}
           </p>
-          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-2 text-[var(--color-accent)]">
+          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-3 text-[var(--color-accent)] font-display">
             {trackId === "ctai" ? "Section" : "Chapter"} {chapter.chapterNumber}: {chapter.titleEn} / {chapter.titleVi}
           </h1>
+          {/* Reading time estimate */}
+          {markdownContent && (
+            <div className="flex items-center gap-1.5">
+              <Clock style={{ width: 12, height: 12 }} />
+              <span className="text-xs font-medium" style={{ color: "var(--color-text-muted)" }}>
+                ~{estimateReadingTime(markdownContent)} min read · {estimateReadingTime(markdownContent)} phút đọc
+              </span>
+            </div>
+          )}
         </div>
 
         {/* Teacher's Advice */}
@@ -262,16 +305,18 @@ export default async function ChapterReview({ params }: { params: Promise<{ chap
           </ReactMarkdown>
         </div>
 
-        {/* Interactive Mini Quiz */}
+        {/* Interactive Mini Quiz — wrapped in ErrorBoundary to prevent chapter-level crash */}
         {chapter.quiz && chapter.quiz.length > 0 && quizHeadingId && (
           <div id="practice-quiz" className="mt-20 pt-10 border-t border-[var(--color-border)]">
             <h2
               id={quizHeadingId}
-              className="text-[var(--color-accent)] text-3xl font-bold mb-8"
+              className="text-[var(--color-accent)] text-3xl font-bold mb-8 font-display"
             >
               {mdHeadingCount + 1}. Practice Questions / Câu hỏi Luyện tập
             </h2>
-            <MiniQuiz quiz={chapter.quiz} />
+            <ErrorBoundary fallbackLabel="Quiz failed to load. Try refreshing.">
+              <MiniQuiz quiz={chapter.quiz} chapterId={chapter.id} />
+            </ErrorBoundary>
           </div>
         )}
 

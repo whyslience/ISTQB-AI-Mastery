@@ -12,6 +12,8 @@ export interface QuizQuestion {
   correctEn: string;
   correctVi: string;
   explanation: string;
+  /** Optional: 'easy' | 'medium' | 'hard' — when present, overrides the pseudo-hash difficulty. */
+  difficulty?: "easy" | "medium" | "hard";
 }
 
 export interface SyllabusChapter {

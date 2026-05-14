@@ -2,10 +2,11 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { ChevronRight, GraduationCap, Cpu, Sparkles, Lock, BookOpenCheck } from "lucide-react";
+import { ChevronRight, GraduationCap, Cpu, Sparkles, Lock, BookOpenCheck, CheckCircle2, BookOpen, Clock } from "lucide-react";
 import { syllabusData } from "@/data/syllabus";
 import { ctaiSyllabusData } from "@/data/syllabus-ai";
 import { useState } from "react";
+import { useChapterProgress } from "@/hooks/useChapterProgress";
 
 const courses = [
   { id: 'ctfl', label: 'Foundation (4.0)', icon: BookOpenCheck, active: true },
@@ -15,6 +16,7 @@ const courses = [
 
 export default function SyllabusPage() {
   const [activeTab, setActiveTab] = useState('ctfl');
+  const { progress } = useChapterProgress();
 
   return (
     <div className="flex flex-col items-center px-5 pt-36 pb-32">
@@ -57,22 +59,27 @@ export default function SyllabusPage() {
         </div>
 
         {/* --- Course Tabs --- */}
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-12 relative">
           {courses.map((course) => (
             <button
               key={course.id}
               onClick={() => setActiveTab(course.id)}
-              className="flex items-center gap-2 px-6 py-3 rounded-2xl text-sm font-bold transition-all duration-300 relative overflow-hidden"
+              disabled={!course.active}
+              className="flex items-center gap-2 px-6 py-3 rounded-full text-sm font-bold transition-all duration-300 relative overflow-hidden"
               style={{
-                background: activeTab === course.id ? "var(--color-accent)" : "var(--color-surface-raised)",
+                background: activeTab === course.id
+                  ? "linear-gradient(135deg, var(--color-accent), var(--color-purple))"
+                  : "var(--color-surface-raised)",
                 color: activeTab === course.id ? "#fff" : "var(--color-text-secondary)",
-                boxShadow: activeTab === course.id ? "0 8px 24px var(--color-accent-soft)" : "none",
+                boxShadow: activeTab === course.id ? "var(--shadow-neon)" : "none",
+                border: activeTab === course.id ? "2px solid transparent" : "2px solid var(--color-border)",
+                opacity: !course.active ? 0.5 : 1,
               }}
             >
-              <course.icon style={{ width: 18, height: 18 }} />
+              <course.icon style={{ width: 16, height: 16 }} />
               {course.label}
               {!course.active && (
-                <span className="ml-1 text-[10px] bg-white/20 px-1.5 py-0.5 rounded uppercase tracking-wider">Soon</span>
+                <span className="ml-1 text-[10px] bg-white/20 px-1.5 py-0.5 rounded-full uppercase tracking-wider">Soon</span>
               )}
             </button>
           ))}
@@ -100,34 +107,55 @@ export default function SyllabusPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.05 }}
                 >
-                  <Link 
-                    href={`/review/${chapter.id}`} 
+                  <Link
+                    href={`/review/${chapter.id}`}
                     className="card group p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-all duration-300 hover:shadow-2xl hover:-translate-y-1"
                     style={{ borderLeft: "4px solid var(--color-accent)" }}
                   >
                     <div className="flex items-start gap-5">
-                      <div 
-                        className="flex items-center justify-center rounded-2xl shrink-0 mt-1 transition-transform group-hover:scale-110"
-                        style={{ width: 52, height: 52, background: "var(--color-accent-soft)", color: "var(--color-accent)" }}
+                      {/* Circular gradient chapter badge */}
+                      <div
+                        className="flex items-center justify-center rounded-full shrink-0 mt-1 transition-transform group-hover:scale-110"
+                        style={{
+                          width: 52, height: 52,
+                          background: "linear-gradient(135deg, var(--color-accent), var(--color-purple))",
+                          color: "#fff",
+                          boxShadow: "0 4px 12px var(--color-accent-glow)",
+                        }}
                       >
-                        <span className="font-black text-xl">{chapter.chapterNumber}</span>
+                        <span className="font-black text-xl font-display">{chapter.chapterNumber}</span>
                       </div>
                       <div>
-                        <h2 className="text-xl font-bold mb-1 group-hover:text-[var(--color-accent)] transition-colors">
+                        <h2 className="text-xl font-bold font-display mb-1 group-hover:text-[var(--color-accent)] transition-colors">
                           {chapter.titleEn}
                         </h2>
-                        <h3 className="text-sm font-semibold opacity-70 mb-3" style={{ color: "var(--color-text-primary)" }}>
+                        <h3 className="text-sm font-semibold opacity-70 mb-2" style={{ color: "var(--color-text-primary)" }}>
                           {chapter.titleVi}
                         </h3>
-                        <p className="text-sm line-clamp-2 leading-relaxed" style={{ color: "var(--color-text-muted)" }}>
+                        <p className="text-sm line-clamp-1 sm:line-clamp-2 leading-relaxed mb-3" style={{ color: "var(--color-text-muted)" }}>
                           {chapter.descriptionVi}
                         </p>
+                        {/* Micro-tags */}
+                        <div className="flex flex-wrap gap-2">
+                          {chapter.quiz.length > 0 && (
+                            <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ background: "var(--color-accent-soft)", color: "var(--color-accent)" }}>
+                              <BookOpen style={{ width: 9, height: 9 }} />{chapter.quiz.length} questions
+                            </span>
+                          )}
+                        </div>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
                       <div className="hidden md:flex flex-col items-end mr-4">
                         <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-accent)]">Module {(i + 1).toString().padStart(2, "0")}</span>
-                        <span className="text-xs font-medium opacity-50">Verified</span>
+                        {progress[chapter.id]?.read ? (
+                          <div className="flex items-center gap-1 mt-1 text-[var(--color-success)]">
+                            <CheckCircle2 style={{ width: 14, height: 14 }} />
+                            <span className="text-xs font-bold">{progress[chapter.id]?.quizScore != null ? `${progress[chapter.id]?.quizScore}%` : 'Read'}</span>
+                          </div>
+                        ) : (
+                          <span className="text-xs font-medium opacity-40 mt-1">Not read</span>
+                        )}
                       </div>
                       <ChevronRight className="shrink-0 transition-transform group-hover:translate-x-1" style={{ width: 24, height: 24, color: "var(--color-accent)" }} />
                     </div>
@@ -165,26 +193,30 @@ export default function SyllabusPage() {
                   >
                     <div className="flex items-start gap-5">
                       <div
-                        className="flex items-center justify-center rounded-2xl shrink-0 mt-1 transition-transform group-hover:scale-110"
+                        className="flex items-center justify-center rounded-full shrink-0 mt-1 transition-transform group-hover:scale-110"
                         style={{
-                          width: 52,
-                          height: 52,
-                          background: "var(--color-purple-soft)",
-                          color: "var(--color-purple)",
+                          width: 52, height: 52,
+                          background: "linear-gradient(135deg, var(--color-purple), #c084fc)",
+                          color: "#fff",
+                          boxShadow: "0 4px 12px rgba(168,85,247,0.25)",
                         }}
                       >
-                        <span className="font-black text-xl">{chapter.chapterNumber}</span>
+                        <span className="font-black text-xl font-display">{chapter.chapterNumber}</span>
                       </div>
                       <div>
-                        <h2 className="text-xl font-bold mb-1 group-hover:text-[var(--color-purple)] transition-colors">
+                        <h2 className="text-xl font-bold font-display mb-1 group-hover:text-[var(--color-purple)] transition-colors">
                           {chapter.titleEn}
                         </h2>
-                        <h3 className="text-sm font-semibold opacity-70 mb-3" style={{ color: "var(--color-text-primary)" }}>
+                        <h3 className="text-sm font-semibold opacity-70 mb-2" style={{ color: "var(--color-text-primary)" }}>
                           {chapter.titleVi}
                         </h3>
-                        <p className="text-sm line-clamp-2 leading-relaxed" style={{ color: "var(--color-text-muted)" }}>
+                        <p className="text-sm line-clamp-1 sm:line-clamp-2 leading-relaxed mb-3" style={{ color: "var(--color-text-muted)" }}>
                           {chapter.descriptionVi}
                         </p>
+                        {/* CT-AI module tag */}
+                        <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-full" style={{ background: "var(--color-purple-soft)", color: "var(--color-purple)" }}>
+                          <Cpu style={{ width: 9, height: 9 }} />CT-AI v2.0
+                        </span>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -192,7 +224,14 @@ export default function SyllabusPage() {
                         <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--color-purple)]">
                           CT-AI {(i + 1).toString().padStart(2, "0")}
                         </span>
-                        <span className="text-xs font-medium opacity-50">v2.0</span>
+                        {progress[chapter.id]?.read ? (
+                          <div className="flex items-center gap-1 mt-1 text-[var(--color-success)]">
+                            <CheckCircle2 style={{ width: 14, height: 14 }} />
+                            <span className="text-xs font-bold">{progress[chapter.id]?.quizScore != null ? `${progress[chapter.id]?.quizScore}%` : 'Read'}</span>
+                          </div>
+                        ) : (
+                          <span className="text-xs font-medium opacity-40 mt-1">Not read</span>
+                        )}
                       </div>
                       <ChevronRight
                         className="shrink-0 transition-transform group-hover:translate-x-1"
@@ -230,7 +269,7 @@ export default function SyllabusPage() {
               </p>
               <div className="flex gap-3">
                 <span className="px-4 py-1.5 rounded-full text-[10px] font-bold bg-purple-500/10 text-purple-500 uppercase tracking-widest border border-purple-500/20">
-                  Coming Q3 2024
+                  In Development
                 </span>
                 <span className="px-4 py-1.5 rounded-full text-[10px] font-bold bg-blue-500/10 text-blue-500 uppercase tracking-widest border border-blue-500/20">
                   AI Integrated

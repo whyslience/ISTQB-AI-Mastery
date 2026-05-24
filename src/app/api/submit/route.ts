@@ -3,6 +3,8 @@ import { prisma } from "@/lib/prisma";
 import { textModel } from "@/lib/gemini";
 import type { UserAnswer } from "@/types";
 import { resolveQuizByExamId } from "@/lib/exam-from-syllabus";
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "../auth/[...nextauth]/route";
 
 /** Retry an async fn up to `retries` times with a delay between attempts. */
 async function withRetry<T>(
@@ -26,6 +28,7 @@ async function withRetry<T>(
 
 export async function POST(req: Request) {
   try {
+    const session = await getServerSession(authOptions);
     const { userId, answers } = (await req.json()) as {
       userId: string;
       answers: { qId: string; userAns: string }[];
@@ -87,7 +90,7 @@ Yêu cầu: Động viên ngắn gọn, chỉ ra điểm yếu và gợi ý ch�
       }
     }
 
-    const actualUserId = userId || "user-1";
+    const actualUserId = (session?.user as any)?.id || userId || "user-1";
     const payload: {
       id: string;
       userId: string;

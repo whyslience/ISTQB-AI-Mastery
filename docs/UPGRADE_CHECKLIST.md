@@ -287,11 +287,11 @@
 
 ---
 
-## 🏗️ Giai đoạn 4 — Architecture & Performance
+## 🚀 Giai đoạn 4 — Architecture & Performance
 
 > ~2–3 tuần · Production-grade improvements
 
-- [x] **[4.1] Lazy load question bank per chapter**
+- [ ] **[4.1] Lazy load question bank per chapter**
   - File: `src/lib/exam-from-syllabus.ts`
   - Đổi `import` tĩnh → `dynamic import()` theo chapterId
   - Giảm initial bundle size (~800KB JSON hiện load all-at-once)
@@ -331,9 +331,9 @@
 
 ## 🔮 Giai đoạn 5 — Backlog Dài hạn
 
-- [x] **Flashcard mode** — lật thẻ thuật ngữ/định nghĩa từ markdown chapters
-- [x] **Global search** (`/search`) — full-text qua syllabus + question bank
-- [x] **Quick quiz mode** — 10 câu ngẫu nhiên, xem đáp án ngay, không timer
+- [ ] **Flashcard mode** — lật thẻ thuật ngữ/định nghĩa từ markdown chapters
+- [ ] **Global search** (`/search`) — full-text qua syllabus + question bank
+- [ ] **Quick quiz mode** — 10 câu ngẫu nhiên, xem đáp án ngay, không timer
 - [ ] **Chia sẻ kết quả** — generate OG image card có thể share
 - [ ] **User auth** — NextAuth.js (Google/GitHub), sync history đa thiết bị
 - [ ] **Leaderboard ẩn danh** — bảng điểm tuần để tạo động lực
@@ -344,10 +344,10 @@
 
 ## 📱 Mobile UX — Issues cần fix
 
-- [x] TOC FAB bottom-right quá sát edge trên iOS — đổi sang `bottom-6 right-4` + `env(safe-area-inset-*)`
-- [x] Question nav grid trong exam overflow trên màn nhỏ — dùng `grid-cols-8` + horizontal scroll
-- [x] Bilingual chapter cards quá cao trên mobile — truncate VI description 1 line, expand on tap
-- [x] Option buttons trong exam quá cao trên `sm` — giảm `min-height` xuống `3.5rem`
+- [ ] TOC FAB bottom-right quá sát edge trên iOS — đổi sang `bottom-6 right-4` + `env(safe-area-inset-*)`
+- [ ] Question nav grid trong exam overflow trên màn nhỏ — dùng `grid-cols-8` + horizontal scroll
+- [ ] Bilingual chapter cards quá cao trên mobile — truncate VI description 1 line, expand on tap
+- [ ] Option buttons trong exam quá cao trên `sm` — giảm `min-height` xuống `3.5rem`
 
 ---
 

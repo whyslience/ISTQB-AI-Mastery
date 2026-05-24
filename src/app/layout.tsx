@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import AuthProvider from "@/components/SessionProvider";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -27,8 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable}`} suppressHydrationWarning>
       <body>
-        <Navbar />
-        <main className="min-h-screen">{children}</main>
+        <AuthProvider>
+          <Navbar />
+          <main className="min-h-screen">{children}</main>
+        </AuthProvider>
       </body>
     </html>
   );

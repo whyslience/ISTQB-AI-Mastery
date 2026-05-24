@@ -37,15 +37,22 @@ export default function QuickQuizPage() {
     setDone(false);
 
     try {
-      let url = "/api/generate?topic=Full+Exam&difficulty=random&count=10";
+      let reqCount = 10;
       if (m === "weak") {
         const weakIds = getWeak(10);
         if (weakIds.length > 0) {
-          // Fetch via generate then filter — simpler than a custom endpoint
-          url = "/api/generate?topic=Full+Exam&difficulty=random&count=30";
+          reqCount = 30;
         }
       }
-      const res = await fetch(url);
+      const res = await fetch("/api/generate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          topic: "Full Exam",
+          difficulty: "random",
+          count: reqCount,
+        }),
+      });
       const data = await res.json();
       let pool: QuickQuestion[] = Array.isArray(data) ? data : data.questions ?? [];
       if (m === "weak") {

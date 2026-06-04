@@ -362,15 +362,56 @@ export default function ExamPage() {
   // ── Loading ─────────────────────────────────────────────────
   if (loading) {
     return (
-      <div className="flex flex-col items-center justify-center gap-4" style={{ minHeight: "100vh" }}>
-        <div style={{ animation: "float 2s ease-in-out infinite" }}>
-          <Loader2 className="animate-spin" style={{ width: 32, height: 32, color: "var(--color-accent)" }} />
+      <div className="flex flex-col px-5 pt-28 pb-12 w-full animate-pulse" style={{ minHeight: "100vh", maxWidth: 680, margin: "0 auto" }}>
+        {/* Mock progress bar & toolbar */}
+        <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center gap-3">
+            <div className="h-4 w-12 bg-[var(--color-surface-raised)] border border-[var(--color-border)] rounded-md" />
+            <div style={{ width: 100, height: 4, background: "var(--color-surface-raised)", borderRadius: 999 }} />
+          </div>
+          <div className="flex items-center gap-3">
+            <div className="h-7 w-16 bg-[var(--color-surface-raised)] border border-[var(--color-border)] rounded-full" />
+            <div className="h-[52px] w-[52px] rounded-full bg-[var(--color-surface-raised)] border border-[var(--color-border)]" />
+            <div className="h-4 w-16 bg-[var(--color-surface-raised)] border border-[var(--color-border)] rounded-md" />
+          </div>
         </div>
-        <p className="text-sm text-center" style={{ color: "var(--color-text-muted)" }}>
-          Loading questions…
-          <br />
-          <span className="text-xs opacity-60">Đang tải câu hỏi…</span>
-        </p>
+
+        {/* Mock Question card */}
+        <div className="card flex-1 mb-8" style={{ padding: "36px 32px" }}>
+          <div className="flex items-center gap-2 mb-6">
+            <div className="h-6 w-16 bg-[var(--color-surface-sunken)] border border-[var(--color-border)] rounded-full" />
+            <div className="h-4 w-32 bg-[var(--color-surface-sunken)] rounded-md" />
+          </div>
+
+          <div className="mb-8 space-y-2">
+            <div className="h-6 w-full bg-[var(--color-surface-sunken)] rounded-md" />
+            <div className="h-6 w-4/5 bg-[var(--color-surface-sunken)] rounded-md" />
+            <div className="h-4 w-2/3 bg-[var(--color-surface-sunken)] rounded-md opacity-50" />
+          </div>
+
+          <div className="flex flex-col gap-3">
+            {[1, 2, 3, 4].map((i) => (
+              <div
+                key={i}
+                className="flex items-center gap-4 px-5 rounded-2xl bg-[var(--color-surface-sunken)] border border-[var(--color-border)]"
+                style={{ minHeight: "3.5rem" }}
+              >
+                <div className="w-7 h-7 rounded-full bg-[var(--color-surface-raised)] shrink-0" />
+                <div className="flex-1 space-y-1.5">
+                  <div className="h-4 w-3/4 bg-[var(--color-surface-raised)] rounded-md" />
+                  <div className="h-3 w-1/2 bg-[var(--color-surface-raised)] rounded-md opacity-50" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Mock Navigation */}
+        <div className="flex items-center justify-between gap-4">
+          <div className="h-12 w-20 bg-[var(--color-surface-raised)] border border-[var(--color-border)] rounded-full" />
+          <div className="flex-1 h-8 bg-[var(--color-surface-raised)] border border-[var(--color-border)] rounded-full mx-4" />
+          <div className="h-12 w-20 bg-[var(--color-surface-raised)] border border-[var(--color-border)] rounded-full" />
+        </div>
       </div>
     );
   }

@@ -209,36 +209,76 @@ export default function LoginPage() {
                 className="flex flex-col gap-3 mt-4 overflow-hidden"
               >
                 <div className="relative">
-                  <Mail className="absolute left-3.5 top-1/2 -translate-y-1/2 opacity-40" style={{ width: 14, height: 14 }} />
+                  <Mail 
+                    className="absolute left-3.5 top-1/2 -translate-y-1/2 transition-colors duration-200" 
+                    style={{ 
+                      width: 14, 
+                      height: 14, 
+                      color: error && !email ? "var(--color-danger)" : "var(--color-text-muted)",
+                      opacity: error && !email ? 0.8 : 0.4 
+                    }} 
+                  />
                   <input
                     type="email"
                     value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                      if (error) setError(null);
+                    }}
                     placeholder="Email"
-                    className="w-full pl-10 pr-4 py-3 rounded-xl border text-xs outline-none bg-[var(--color-surface-sunken)] transition-colors focus:border-[var(--color-accent)]"
-                    style={{ borderColor: "var(--color-border)", color: "var(--color-text-primary)" }}
+                    className={`w-full pl-10 pr-4 py-3 rounded-xl border text-xs outline-none bg-[var(--color-surface-sunken)] transition-all duration-200 focus:bg-[var(--color-surface-raised)] focus:ring-2 ${
+                      error && !email 
+                        ? "border-[var(--color-danger)] focus:ring-[var(--color-danger-soft)]" 
+                        : "border-[var(--color-border)] focus:border-[var(--color-accent)] focus:ring-[var(--color-accent-soft)]"
+                    }`}
+                    style={{ color: "var(--color-text-primary)" }}
                   />
+                  {error && !email && (
+                    <span className="text-[10px] text-[var(--color-danger)] mt-1 block pl-1 font-semibold">
+                      Email is required / Vui lòng nhập Email
+                    </span>
+                  )}
                 </div>
                 <div className="relative">
-                  <Lock className="absolute left-3.5 top-1/2 -translate-y-1/2 opacity-40" style={{ width: 14, height: 14 }} />
+                  <Lock 
+                    className="absolute left-3.5 top-1/2 -translate-y-1/2 transition-colors duration-200" 
+                    style={{ 
+                      width: 14, 
+                      height: 14, 
+                      color: error && !password ? "var(--color-danger)" : "var(--color-text-muted)",
+                      opacity: error && !password ? 0.8 : 0.4 
+                    }} 
+                  />
                   <input
                     type="password"
                     value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    onChange={(e) => {
+                      setPassword(e.target.value);
+                      if (error) setError(null);
+                    }}
                     placeholder="Password / Mật khẩu"
-                    className="w-full pl-10 pr-4 py-3 rounded-xl border text-xs outline-none bg-[var(--color-surface-sunken)] transition-colors focus:border-[var(--color-accent)]"
-                    style={{ borderColor: "var(--color-border)", color: "var(--color-text-primary)" }}
+                    className={`w-full pl-10 pr-4 py-3 rounded-xl border text-xs outline-none bg-[var(--color-surface-sunken)] transition-all duration-200 focus:bg-[var(--color-surface-raised)] focus:ring-2 ${
+                      error && !password 
+                        ? "border-[var(--color-danger)] focus:ring-[var(--color-danger-soft)]" 
+                        : "border-[var(--color-border)] focus:border-[var(--color-accent)] focus:ring-[var(--color-accent-soft)]"
+                    }`}
+                    style={{ color: "var(--color-text-primary)" }}
                   />
+                  {error && !password && (
+                    <span className="text-[10px] text-[var(--color-danger)] mt-1 block pl-1 font-semibold">
+                      Password is required / Vui lòng nhập mật khẩu
+                    </span>
+                  )}
                 </div>
                 <button
                   type="submit"
                   disabled={loading}
-                  className="btn btn-primary py-3 rounded-xl text-xs font-bold w-full"
+                  className="btn btn-primary py-3 rounded-xl text-xs font-bold w-full transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
                 >
                   {loading ? (
                     <Loader2 className="animate-spin" style={{ width: 12, height: 12 }} />
                   ) : (
-                    <span className="flex items-center gap-1"><LogIn style={{ width: 12, height: 12 }} /> Sign In / Đăng nhập</span>
+                    <span className="flex items-center justify-center gap-1"><LogIn style={{ width: 12, height: 12 }} /> Sign In / Đăng nhập</span>
                   )}
                 </button>
               </motion.form>

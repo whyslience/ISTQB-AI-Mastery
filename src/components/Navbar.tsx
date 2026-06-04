@@ -348,11 +348,11 @@ export default function Navbar() {
               aria-label="Search"
               className="flex items-center justify-center rounded-xl transition-all duration-200"
               style={{
-                width: 32, height: 32,
+                width: 48, height: 48,
                 color: pathname === "/search" ? "var(--color-accent)" : "var(--color-text-muted)",
               }}
             >
-              <Search style={{ width: 16, height: 16 }} />
+              <Search style={{ width: 18, height: 18 }} />
             </Link>
 
             <button
@@ -360,14 +360,15 @@ export default function Navbar() {
               aria-label="Toggle theme"
               className="flex items-center justify-center rounded-xl transition-all duration-200"
               style={{
-                width: 32,
-                height: 32,
+                width: 48,
+                height: 48,
                 color: "var(--color-text-muted)",
                 background: "transparent",
                 border: "none",
+                cursor: "pointer",
               }}
             >
-              {mounted && (dark ? <Sun style={{ width: 16, height: 16 }} /> : <Moon style={{ width: 16, height: 16 }} />)}
+              {mounted && (dark ? <Sun style={{ width: 18, height: 18 }} /> : <Moon style={{ width: 18, height: 18 }} />)}
             </button>
 
             {mounted && (
@@ -377,10 +378,11 @@ export default function Navbar() {
                   aria-label="Profile"
                   className="flex items-center justify-center rounded-full transition-all duration-200 relative border hover:scale-105 shrink-0"
                   style={{
-                    width: 32,
-                    height: 32,
+                    width: 44,
+                    height: 44,
                     borderColor: rank.color,
                     boxShadow: rank.borderGlow,
+                    marginRight: 4,
                   }}
                 >
                   {session.user?.image && !avatarError ? (
@@ -395,15 +397,16 @@ export default function Navbar() {
                       className="w-full h-full rounded-full flex items-center justify-center bg-[var(--color-accent-soft)]"
                       style={{ color: "var(--color-accent)" }}
                     >
-                      <User style={{ width: 14, height: 14 }} />
+                      <User style={{ width: 16, height: 16 }} />
                     </div>
                   )}
                   <div 
-                    className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full flex items-center justify-center text-[8px] shadow-sm border"
+                    className="absolute -bottom-1 -right-1 w-4.5 h-4.5 rounded-full flex items-center justify-center text-[9px] shadow-sm border"
                     style={{ 
                       background: dark ? "rgba(20, 20, 35, 0.9)" : "rgba(255, 255, 255, 0.95)",
                       borderColor: rank.color,
                       lineHeight: 1,
+                      fontSize: 8,
                     }}
                   >
                     {rank.icon}
@@ -412,13 +415,15 @@ export default function Navbar() {
               ) : (
                 <Link
                   href="/login"
-                  className="flex items-center justify-center rounded-xl text-xs font-bold transition-all duration-200 px-2.5 py-1.5"
+                  className="flex items-center justify-center rounded-xl text-xs font-bold transition-all duration-200 px-3"
                   style={{
+                    width: 48,
+                    height: 48,
                     color: pathname === "/login" ? "var(--color-accent)" : "var(--color-text-muted)",
                     background: pathname === "/login" ? "var(--color-accent-soft)" : "transparent",
                   }}
                 >
-                  <User style={{ width: 14, height: 14 }} />
+                  <User style={{ width: 18, height: 18 }} />
                 </Link>
               )
             )}
@@ -428,8 +433,9 @@ export default function Navbar() {
 
       {/* Mobile Bottom Navigation Bar (Visible on screen widths < 640px) */}
       <nav
-        className="sm:hidden fixed bottom-4 left-4 right-4 z-50 flex items-center justify-around py-2 rounded-2xl border"
+        className="sm:hidden fixed bottom-4 left-4 right-4 z-50 flex items-center justify-around rounded-2xl border"
         style={{
+          height: 64,
           backgroundColor: dark
             ? "rgba(10, 10, 20, 0.8)"
             : "rgba(255, 255, 255, 0.85)",
@@ -447,8 +453,9 @@ export default function Navbar() {
             <Link
               key={href}
               href={href}
-              className="flex flex-col items-center justify-center gap-0.5 py-1 px-2 rounded-xl transition-all duration-200"
+              className="flex-1 flex flex-col items-center justify-center gap-0.5 rounded-xl transition-all duration-200"
               style={{
+                height: "100%",
                 color: active ? "var(--color-accent)" : "var(--color-text-muted)",
               }}
             >
@@ -457,7 +464,7 @@ export default function Navbar() {
               {/* Active dot indicator */}
               {active && (
                 <span 
-                  className="w-1 h-1 rounded-full mt-0.5" 
+                  className="w-1.5 h-1.5 rounded-full mt-0.5" 
                   style={{ background: "linear-gradient(135deg, var(--color-accent), var(--color-purple))" }}
                 />
               )}

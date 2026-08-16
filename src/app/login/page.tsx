@@ -4,17 +4,20 @@ import { signIn, useSession } from "next-auth/react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { Sparkles, Loader2, LogIn, Lock, Mail, Cpu, ChevronRight } from "lucide-react";
+import { Sparkles, Loader2, LogIn, Lock, Mail, Cpu, ChevronRight, User, UserPlus } from "lucide-react";
 
 export default function LoginPage() {
   const { data: session, status } = useSession();
   const router = useRouter();
 
+  const [mode, setMode] = useState<"login" | "register">("login");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
+  const [successMsg, setSuccessMsg] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-  const [showCredentials, setShowCredentials] = useState(false);
+  const [showCredentials, setShowCredentials] = useState(true);
 
   useEffect(() => {
     if (status === "authenticated" && session) {
@@ -22,38 +25,77 @@ export default function LoginPage() {
     }
   }, [status, session, router]);
 
-  const handleCredentialsLogin = async (e: React.FormEvent) => {
+  const handleCredentialsSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !password) {
-      setError("Vui lòng điền đầy đủ thông tin · Please fill in all fields");
+      setError("Vui lòng điền đầy đủ thông tin · Please fill in all required fields");
       return;
     }
 
     setLoading(true);
     setError(null);
+    setSuccessMsg(null);
 
-    try {
-      const res = await signIn("credentials", {
-        redirect: false,
-        email,
-        password,
-      });
+    if (mode === "register") {
+      try {
+        const res = await fetch("/api/auth/register", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, password }),
+        });
+        const data = await res.json();
 
-      if (res?.error) {
-        setError("Email hoặc Mật khẩu không chính xác · Invalid Email or Password");
-      } else {
-        router.push("/");
+        if (!res.ok) {
+          setError(data.error || "Đăng ký thất bại · Registration failed");
+          setLoading(false);
+          return;
+        }
+
+        setSuccessMsg("Tài khoản đã được tạo! Đang tự động đăng nhập… · Account created! Logging in…");
+
+        // Auto sign in after registration
+        const loginRes = await signIn("credentials", {
+          redirect: false,
+          email,
+          password,
+        });
+
+        if (loginRes?.error) {
+          setError("Tạo tài khoản thành công nhưng không thể tự đăng nhập. Vui lòng thử lại. · Account created. Please sign in.");
+          setMode("login");
+        } else {
+          router.push("/");
+        }
+      } catch {
+        setError("Đã xảy ra lỗi kết nối khi đăng ký · Connection error during registration");
+      } finally {
+        setLoading(false);
       }
-    } catch {
-      setError("Đã xảy ra lỗi kết nối · Connection error");
-    } finally {
-      setLoading(false);
+    } else {
+      try {
+        const res = await signIn("credentials", {
+          redirect: false,
+          email,
+          password,
+        });
+
+        if (res?.error) {
+          setError("Email hoặc Mật khẩu không chính xác · Invalid Email or Password");
+        } else {
+          router.push("/");
+        }
+      } catch {
+        setError("Đã xảy ra lỗi kết nối · Connection error");
+      } finally {
+        setLoading(false);
+      }
     }
   };
 
   const handleDevLogin = async () => {
     setLoading(true);
     setError(null);
+    setSuccessMsg(null);
     try {
       const res = await signIn("credentials", {
         redirect: false,
@@ -127,10 +169,10 @@ export default function LoginPage() {
             ISTQB Mastery Platform
           </div>
           <h1 className="text-3xl font-extrabold font-display mb-1 text-[var(--color-accent)]">
-            Sign In / Đăng Nhập
+            {mode === "login" ? "Sign In / Đăng Nhập" : "Register / Tạo Tài Khoản"}
           </h1>
           <p className="text-xs" style={{ color: "var(--color-text-muted)" }}>
-            Google-First login for secure bilingual study
+            Google-First & Direct Credentials authentication
           </p>
         </div>
 
@@ -142,6 +184,17 @@ export default function LoginPage() {
             style={{ background: "var(--color-danger-soft)", borderColor: "var(--color-danger)", color: "var(--color-text-primary)" }}
           >
             {error}
+          </motion.div>
+        )}
+
+        {successMsg && (
+          <motion.div
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mb-5 p-4 rounded-xl text-xs font-medium border"
+            style={{ background: "rgba(34, 197, 94, 0.1)", borderColor: "var(--color-success)", color: "var(--color-success)" }}
+          >
+            {successMsg}
           </motion.div>
         )}
 
@@ -188,100 +241,146 @@ export default function LoginPage() {
             Quick Dev Login / Đăng nhập Thử nghiệm
           </button>
 
-          {/* Credentials Toggle Accordion */}
+          {/* Credentials Toggle Section */}
           <div className="mt-4 border-t border-[var(--color-border)] pt-5">
             <button
               onClick={() => setShowCredentials(!showCredentials)}
-              className="text-xs font-semibold flex items-center justify-center gap-1.5 mx-auto transition-colors"
+              className="text-xs font-semibold flex items-center justify-center gap-1.5 mx-auto transition-colors mb-4"
               style={{ color: "var(--color-text-secondary)" }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "var(--color-accent)")}
               onMouseLeave={(e) => (e.currentTarget.style.color = "var(--color-text-secondary)")}
             >
-              <span>Or log in with Password / Hoặc nhập mật khẩu</span>
+              <span>Email & Password Options / Tùy chọn Mật khẩu</span>
               <ChevronRight style={{ width: 12, height: 12, transform: showCredentials ? "rotate(90deg)" : "none", transition: "transform 0.2s" }} />
             </button>
 
             {showCredentials && (
-              <motion.form
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: "auto", opacity: 1 }}
-                onSubmit={handleCredentialsLogin}
-                className="flex flex-col gap-3 mt-4 overflow-hidden"
-              >
-                <div className="relative">
-                  <Mail 
-                    className="absolute left-3.5 top-1/2 -translate-y-1/2 transition-colors duration-200" 
-                    style={{ 
-                      width: 14, 
-                      height: 14, 
-                      color: error && !email ? "var(--color-danger)" : "var(--color-text-muted)",
-                      opacity: error && !email ? 0.8 : 0.4 
-                    }} 
-                  />
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => {
-                      setEmail(e.target.value);
-                      if (error) setError(null);
+              <div className="flex flex-col gap-4">
+                {/* Mode Selector Tabs */}
+                <div className="flex p-1 rounded-xl bg-[var(--color-surface-sunken)] border border-[var(--color-border)] text-xs font-bold">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setMode("login");
+                      setError(null);
+                      setSuccessMsg(null);
                     }}
-                    placeholder="Email"
-                    className={`w-full pl-10 pr-4 py-3 rounded-xl border text-xs outline-none bg-[var(--color-surface-sunken)] transition-all duration-200 focus:bg-[var(--color-surface-raised)] focus:ring-2 ${
-                      error && !email 
-                        ? "border-[var(--color-danger)] focus:ring-[var(--color-danger-soft)]" 
-                        : "border-[var(--color-border)] focus:border-[var(--color-accent)] focus:ring-[var(--color-accent-soft)]"
-                    }`}
-                    style={{ color: "var(--color-text-primary)" }}
-                  />
-                  {error && !email && (
-                    <span className="text-[10px] text-[var(--color-danger)] mt-1 block pl-1 font-semibold">
-                      Email is required / Vui lòng nhập Email
-                    </span>
-                  )}
-                </div>
-                <div className="relative">
-                  <Lock 
-                    className="absolute left-3.5 top-1/2 -translate-y-1/2 transition-colors duration-200" 
-                    style={{ 
-                      width: 14, 
-                      height: 14, 
-                      color: error && !password ? "var(--color-danger)" : "var(--color-text-muted)",
-                      opacity: error && !password ? 0.8 : 0.4 
-                    }} 
-                  />
-                  <input
-                    type="password"
-                    value={password}
-                    onChange={(e) => {
-                      setPassword(e.target.value);
-                      if (error) setError(null);
+                    className="flex-1 py-2 rounded-lg transition-all flex items-center justify-center gap-1.5"
+                    style={{
+                      background: mode === "login" ? "var(--color-surface-raised)" : "transparent",
+                      color: mode === "login" ? "var(--color-accent)" : "var(--color-text-muted)",
+                      boxShadow: mode === "login" ? "0 2px 8px rgba(0,0,0,0.1)" : "none",
                     }}
-                    placeholder="Password / Mật khẩu"
-                    className={`w-full pl-10 pr-4 py-3 rounded-xl border text-xs outline-none bg-[var(--color-surface-sunken)] transition-all duration-200 focus:bg-[var(--color-surface-raised)] focus:ring-2 ${
-                      error && !password 
-                        ? "border-[var(--color-danger)] focus:ring-[var(--color-danger-soft)]" 
-                        : "border-[var(--color-border)] focus:border-[var(--color-accent)] focus:ring-[var(--color-accent-soft)]"
-                    }`}
-                    style={{ color: "var(--color-text-primary)" }}
-                  />
-                  {error && !password && (
-                    <span className="text-[10px] text-[var(--color-danger)] mt-1 block pl-1 font-semibold">
-                      Password is required / Vui lòng nhập mật khẩu
-                    </span>
-                  )}
+                  >
+                    <LogIn style={{ width: 13, height: 13 }} />
+                    Đăng nhập
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setMode("register");
+                      setError(null);
+                      setSuccessMsg(null);
+                    }}
+                    className="flex-1 py-2 rounded-lg transition-all flex items-center justify-center gap-1.5"
+                    style={{
+                      background: mode === "register" ? "var(--color-surface-raised)" : "transparent",
+                      color: mode === "register" ? "var(--color-accent)" : "var(--color-text-muted)",
+                      boxShadow: mode === "register" ? "0 2px 8px rgba(0,0,0,0.1)" : "none",
+                    }}
+                  >
+                    <UserPlus style={{ width: 13, height: 13 }} />
+                    Tạo tài khoản
+                  </button>
                 </div>
-                <button
-                  type="submit"
-                  disabled={loading}
-                  className="btn btn-primary py-3 rounded-xl text-xs font-bold w-full transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
-                >
-                  {loading ? (
-                    <Loader2 className="animate-spin" style={{ width: 12, height: 12 }} />
-                  ) : (
-                    <span className="flex items-center justify-center gap-1"><LogIn style={{ width: 12, height: 12 }} /> Sign In / Đăng nhập</span>
+
+                <form onSubmit={handleCredentialsSubmit} className="flex flex-col gap-3">
+                  {mode === "register" && (
+                    <div className="relative">
+                      <User
+                        className="absolute left-3.5 top-1/2 -translate-y-1/2 opacity-40"
+                        style={{ width: 14, height: 14, color: "var(--color-text-muted)" }}
+                      />
+                      <input
+                        type="text"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        placeholder="Full Name / Họ và tên (Tùy chọn)"
+                        className="w-full pl-10 pr-4 py-3 rounded-xl border border-[var(--color-border)] text-xs outline-none bg-[var(--color-surface-sunken)] transition-all duration-200 focus:bg-[var(--color-surface-raised)] focus:border-[var(--color-accent)] focus:ring-2 focus:ring-[var(--color-accent-soft)]"
+                        style={{ color: "var(--color-text-primary)" }}
+                      />
+                    </div>
                   )}
-                </button>
-              </motion.form>
+
+                  <div className="relative">
+                    <Mail
+                      className="absolute left-3.5 top-1/2 -translate-y-1/2 transition-colors duration-200"
+                      style={{
+                        width: 14,
+                        height: 14,
+                        color: error && !email ? "var(--color-danger)" : "var(--color-text-muted)",
+                        opacity: error && !email ? 0.8 : 0.4,
+                      }}
+                    />
+                    <input
+                      type="email"
+                      value={email}
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                        if (error) setError(null);
+                      }}
+                      placeholder="Email"
+                      className={`w-full pl-10 pr-4 py-3 rounded-xl border text-xs outline-none bg-[var(--color-surface-sunken)] transition-all duration-200 focus:bg-[var(--color-surface-raised)] focus:ring-2 ${
+                        error && !email
+                          ? "border-[var(--color-danger)] focus:ring-[var(--color-danger-soft)]"
+                          : "border-[var(--color-border)] focus:border-[var(--color-accent)] focus:ring-[var(--color-accent-soft)]"
+                      }`}
+                      style={{ color: "var(--color-text-primary)" }}
+                    />
+                  </div>
+
+                  <div className="relative">
+                    <Lock
+                      className="absolute left-3.5 top-1/2 -translate-y-1/2 transition-colors duration-200"
+                      style={{
+                        width: 14,
+                        height: 14,
+                        color: error && !password ? "var(--color-danger)" : "var(--color-text-muted)",
+                        opacity: error && !password ? 0.8 : 0.4,
+                      }}
+                    />
+                    <input
+                      type="password"
+                      value={password}
+                      onChange={(e) => {
+                        setPassword(e.target.value);
+                        if (error) setError(null);
+                      }}
+                      placeholder={mode === "register" ? "Password / Mật khẩu (≥ 6 ký tự)" : "Password / Mật khẩu"}
+                      className={`w-full pl-10 pr-4 py-3 rounded-xl border text-xs outline-none bg-[var(--color-surface-sunken)] transition-all duration-200 focus:bg-[var(--color-surface-raised)] focus:ring-2 ${
+                        error && !password
+                          ? "border-[var(--color-danger)] focus:ring-[var(--color-danger-soft)]"
+                          : "border-[var(--color-border)] focus:border-[var(--color-accent)] focus:ring-[var(--color-accent-soft)]"
+                      }`}
+                      style={{ color: "var(--color-text-primary)" }}
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="btn btn-primary py-3 rounded-xl text-xs font-bold w-full transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] mt-1"
+                  >
+                    {loading ? (
+                      <Loader2 className="animate-spin" style={{ width: 12, height: 12 }} />
+                    ) : mode === "register" ? (
+                      <span className="flex items-center justify-center gap-1.5"><UserPlus style={{ width: 13, height: 13 }} /> Register / Tạo tài khoản</span>
+                    ) : (
+                      <span className="flex items-center justify-center gap-1.5"><LogIn style={{ width: 13, height: 13 }} /> Sign In / Đăng nhập</span>
+                    )}
+                  </button>
+                </form>
+              </div>
             )}
           </div>
         </div>
